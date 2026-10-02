@@ -1843,16 +1843,10 @@ main.page.page--home {
   inset: 0;
   z-index: 10000;
   overflow: hidden;
-  background-color: #050505;
-  background-image:
-    linear-gradient(rgba(5, 5, 5, 0.14), rgba(5, 5, 5, 0.14)),
-    url('/splash.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #050505;
   color: var(--accent);
   opacity: 1;
-  transition: opacity 0.42s ease;
+  transition: opacity 0.5s ease;
   pointer-events: auto;
 }
 
@@ -1864,16 +1858,61 @@ main.page.page--home {
 .splash__inner {
   position: absolute;
   inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding: max(1rem, var(--safe-t)) max(1rem, var(--safe-r)) max(1rem, var(--safe-b)) max(1rem, var(--safe-l));
+}
+
+/* The source art contains the mark and name. Contain keeps the complete
+   composition readable instead of letting a tall viewport crop it. */
+.splash__art {
+  display: block;
+  width: min(100%, 80rem);
+  max-height: 64vh;
+  height: auto;
+  object-fit: contain;
+  flex: 0 1 auto;
+  filter: drop-shadow(0 1rem 2rem rgba(0, 0, 0, 0.24));
+}
+
+.splash__content {
+  position: relative;
+  z-index: 1;
+  margin-top: clamp(0.85rem, 3vh, 1.75rem);
+}
+
+.splash__slogan {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: clamp(0.85rem, 2.5vw, 1.15rem);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.045em;
+  color: var(--accent);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
+}
+
+.splash__slogan-text {
+  white-space: pre-wrap;
+}
+
+.splash__slogan-char {
+  display: inline-block;
+  white-space: pre;
 }
 
 .splash__spinner {
   position: absolute;
   left: 50%;
-  bottom: max(2.5rem, calc(var(--safe-b) + 2rem));
+  top: 70%;
+  z-index: 1;
   width: 46px;
   height: 46px;
   margin: 0;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   color: var(--accent);
   filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.55));
 }
@@ -1902,6 +1941,47 @@ main.page.page--home {
 
 @keyframes splash-spinner-rotate {
   to { transform: rotate(360deg); }
+}
+
+/* Entrance: the slogan resolves one letter at a time after the art settles. */
+.splash--play .splash__art {
+  animation: splash-art-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both;
+}
+
+.splash--play .splash__slogan {
+  animation: splash-slogan-in 0.45s ease-out 0.95s both;
+}
+
+.splash--play .splash__slogan-char {
+  animation: splash-letter-reveal 0.55s cubic-bezier(0.22, 1, 0.36, 1) var(--letter-delay) both;
+}
+
+.splash--reduced .splash__art,
+.splash--reduced .splash__slogan,
+.splash--reduced .splash__slogan-char,
+.splash--reduced .splash__spinner svg {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+@keyframes splash-art-in {
+  from { opacity: 0; transform: scale(0.985); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes splash-slogan-in {
+  from { opacity: 0; transform: translateY(0.35rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes splash-letter-reveal {
+  from { opacity: 0; transform: translateY(0.45em); filter: blur(3px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@media (min-width: 768px) {
+  .splash__spinner { top: 76%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

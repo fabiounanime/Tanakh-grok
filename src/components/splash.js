@@ -5,6 +5,9 @@
  */
 
 const STORAGE_KEY = 'tanakh-splash-seen';
+const SLOGAN = 'Sua fé, direto da fonte';
+const SPLASH_DURATION_MS = 6000;
+
 function prefersReducedMotion() {
   return (
     typeof matchMedia === 'function' &&
@@ -28,9 +31,29 @@ function markShown() {
   }
 }
 
+function prepareSlogan(el) {
+  const slogan = el?.querySelector('.splash__slogan');
+  const visual = slogan?.querySelector('.splash__slogan-text');
+  if (!slogan || !visual || visual.dataset.lettersReady === '1') return;
+
+  visual.dataset.lettersReady = '1';
+  visual.textContent = '';
+  Array.from(SLOGAN).forEach((character, index) => {
+    const letter = document.createElement('span');
+    letter.className = 'splash__slogan-char';
+    letter.setAttribute('aria-hidden', 'true');
+    letter.style.setProperty('--letter-delay', `${1.05 + index * 0.045}s`);
+    letter.textContent = character;
+    visual.appendChild(letter);
+  });
+}
+
 function ensureSplash() {
   let el = document.getElementById('splash');
-  if (el) return el;
+  if (el) {
+    prepareSlogan(el);
+    return el;
+  }
 
   el = document.createElement('div');
   el.id = 'splash';
@@ -40,6 +63,12 @@ function ensureSplash() {
   el.setAttribute('aria-label', 'Bíblia Origens');
   el.innerHTML = `
     <div class="splash__inner">
+      <img class="splash__art" src="/splash.jpg" alt="" width="2816" height="1536" fetchpriority="high" decoding="async" />
+      <div class="splash__content">
+        <p class="splash__slogan" aria-label="${SLOGAN}">
+          <span class="splash__slogan-text" aria-hidden="true">${SLOGAN}</span>
+        </p>
+      </div>
       <div class="splash__spinner" role="status" aria-label="Carregando">
         <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
           <circle class="splash__spinner-track" cx="24" cy="24" r="18" />
@@ -49,6 +78,7 @@ function ensureSplash() {
     </div>
   `;
   document.body.appendChild(el);
+  prepareSlogan(el);
   return el;
 }
 
@@ -82,10 +112,9 @@ export function runSplash() {
     splash.classList.add('splash--play');
   }
 
-  // Keep the full, non-reduced splash close to three seconds: enough time
-  // for the mark, name, slogan, and loader to read without feeling stalled.
-  const holdMs = reduced ? 450 : 2550;
-  const fadeMs = reduced ? 200 : 450;
+  // Hold long enough for the full art and letter reveal to be read, then fade.
+  const fadeMs = reduced ? 200 : 500;
+  const holdMs = reduced ? 500 : SPLASH_DURATION_MS - fadeMs;
 
   return new Promise((resolve) => {
     window.setTimeout(() => {
@@ -97,3 +126,5 @@ export function runSplash() {
     }, holdMs);
   });
 }
+
+export { SLOGAN };
