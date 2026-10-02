@@ -8,7 +8,9 @@ const listeners = new Set();
 
 export function parseHash() {
   const raw = (location.hash || '#/').replace(/^#/, '') || '/';
-  const parts = raw.split('/').filter(Boolean);
+  const [pathPart, queryPart = ''] = raw.split('?');
+  const parts = pathPart.split('/').filter(Boolean);
+  const query = new URLSearchParams(queryPart);
 
   if (parts.length === 0) {
     return { name: 'home', params: {} };
@@ -21,9 +23,16 @@ export function parseHash() {
   }
   if (parts[0] === 'ler' && parts[1] && parts[2]) {
     const chapter = Number(parts[2]);
+    const verseRaw = query.get('v');
+    const verseNum = verseRaw != null ? Number(verseRaw) : NaN;
+    const verse = Number.isFinite(verseNum) && verseNum > 0 ? verseNum : null;
     return {
       name: 'reading',
-      params: { bookId: parts[1], chapter: Number.isFinite(chapter) ? chapter : 1 },
+      params: {
+        bookId: parts[1],
+        chapter: Number.isFinite(chapter) ? chapter : 1,
+        verse,
+      },
     };
   }
   if (parts[0] === 'devocionais') {

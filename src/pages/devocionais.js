@@ -92,7 +92,7 @@ export function renderDevocionalEdit(root, { id, isNew }) {
     const refsHtml = draft.verseRefs.length
       ? draft.verseRefs
           .map((r, i) => {
-            const href = routes.reading(r.bookId, r.chapter);
+            const href = routes.readingVerse(r.bookId, r.chapter, r.verse);
             return `
             <li class="devo-ref" data-ref-idx="${i}">
               <a class="devo-ref__link" href="${href}">

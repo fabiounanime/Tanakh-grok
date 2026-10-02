@@ -123,7 +123,10 @@ function render(route) {
       break;
   }
 
-  window.scrollTo(0, 0);
+  // Keep deep-linked verse in view (reading ?v=)
+  if (!(route.name === 'reading' && route.params?.verse)) {
+    window.scrollTo(0, 0);
+  }
 }
 
 // Splash overlays the shell; Home (and other routes) mount underneath.

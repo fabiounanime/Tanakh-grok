@@ -4,19 +4,19 @@ import { getSavedMarks, formatRelativeWhen } from '../utils/storage.js';
 const FALLBACK_MARKINGS = [
   {
     ref: 'Gênesis 1:3',
-    href: routes.reading('gen', 1),
+    href: routes.readingVerse('gen', 1, 3),
     snippet: 'E disse Deus: Haja luz; e houve luz.',
     when: 'Exemplo',
   },
   {
     ref: 'João 1:5',
-    href: routes.reading('jhn', 1),
+    href: routes.readingVerse('jhn', 1, 5),
     snippet: 'E a luz resplandece nas trevas…',
     when: 'Exemplo',
   },
   {
     ref: 'Gênesis 1:1',
-    href: routes.reading('gen', 1),
+    href: routes.readingVerse('gen', 1, 1),
     snippet: 'No princípio criou Deus os céus e a terra.',
     when: 'Exemplo',
   },
@@ -25,17 +25,17 @@ const FALLBACK_MARKINGS = [
 const ENCOURAGING = [
   {
     ref: 'João 1:4',
-    href: routes.reading('jhn', 1),
+    href: routes.readingVerse('jhn', 1, 4),
     text: 'Nele estava a vida, e a vida era a luz dos homens.',
   },
   {
     ref: 'Gênesis 1:4',
-    href: routes.reading('gen', 1),
+    href: routes.readingVerse('gen', 1, 4),
     text: 'E viu Deus que a luz era boa.',
   },
   {
     ref: 'João 1:1',
-    href: routes.reading('jhn', 1),
+    href: routes.readingVerse('jhn', 1, 1),
     text: 'No princípio era o Verbo, e o Verbo estava com Deus.',
   },
 ];
@@ -45,7 +45,7 @@ export function renderHome(root) {
   const markingsSrc = saved.length
     ? saved.map((m) => ({
         ref: m.ref,
-        href: routes.reading(m.bookId, m.chapter),
+        href: routes.readingVerse(m.bookId, m.chapter, m.verse),
         snippet: m.snippet,
         when: formatRelativeWhen(m.savedAt),
       }))

@@ -43,7 +43,7 @@ export function renderFavorites(root) {
               const when = formatRelativeWhen(m.savedAt || m.markedAt);
               return `
               <article class="mark-card mark-card--row">
-                <a class="mark-card__link" href="${routes.reading(m.bookId, m.chapter)}">
+                <a class="mark-card__link" href="${routes.readingVerse(m.bookId, m.chapter, m.verse)}">
                   <div class="mark-card__top">
                     <span class="mark-card__ref">${escapeHtml(m.ref)}</span>
                     ${when ? `<span class="mark-card__when">${escapeHtml(when)}</span>` : ''}

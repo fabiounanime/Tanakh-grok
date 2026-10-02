@@ -24,7 +24,7 @@ const TAB_LABELS = {
   transliteration: 'Transliteração',
 };
 
-export function renderReading(root, { bookId, chapter }) {
+export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = null } = {}) {
   const book = getBookById(bookId);
   if (!book) {
     root.innerHTML = `
@@ -42,7 +42,12 @@ export function renderReading(root, { bookId, chapter }) {
   const verses = getVerses(book.id, cap);
   let activeTab = getSavedTab();
   let sheetVerse = null;
-  let activeVerse = verses[0]?.verse ?? null;
+  const deepLink =
+    deepLinkVerse != null && verses.some((v) => v.verse === Number(deepLinkVerse))
+      ? Number(deepLinkVerse)
+      : null;
+  let activeVerse = deepLink ?? verses[0]?.verse ?? null;
+  let pendingDeepLink = deepLink;
 
   const paint = () => {
     const prevDisabled = cap <= 1;
@@ -105,13 +110,15 @@ export function renderReading(root, { bookId, chapter }) {
         .map((v) => {
           const text = v[field] || '—';
           const marked = isMarked(book.id, cap, v.verse);
+          const isActive = activeVerse === v.verse;
           return `
             <span
-              class="verse${marked ? ' verse--marked' : ''}"
+              class="verse${marked ? ' verse--marked' : ''}${isActive ? ' verse--active' : ''}"
               data-verse="${v.verse}"
               role="button"
               tabindex="0"
               aria-posinset="${v.verse}"
+              aria-current="${isActive ? 'true' : 'false'}"
               aria-label="Versículo ${v.verse}"
             ><sup class="v-num" aria-hidden="true">${v.verse}</sup><span class="v-text" lang="${langAttr(
               activeTab,
@@ -352,14 +359,22 @@ export function renderReading(root, { bookId, chapter }) {
     };
   }
 
-  function focusVerse(verseNum) {
+  function focusVerse(verseNum, { behavior = 'smooth' } = {}) {
     if (!verses.some((v) => v.verse === verseNum)) return;
     activeVerse = verseNum;
+    root.querySelectorAll('.verse--active').forEach((el) => {
+      el.classList.remove('verse--active');
+      el.setAttribute('aria-current', 'false');
+    });
     const target = root.querySelector(`[data-verse="${verseNum}"]`);
     const jump = root.querySelector('[data-verse-jump]');
     if (jump) jump.value = String(verseNum);
+    if (target) {
+      target.classList.add('verse--active');
+      target.setAttribute('aria-current', 'true');
+    }
     syncVerseNavigation();
-    target?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    target?.scrollIntoView({ behavior, block: 'center' });
     target?.focus({ preventScroll: true });
   }
 
@@ -503,6 +518,15 @@ export function renderReading(root, { bookId, chapter }) {
   }
 
   paint();
+
+  if (pendingDeepLink != null) {
+    const targetVerse = pendingDeepLink;
+    pendingDeepLink = null;
+    // After paint + main.js scroll reset: jump then settle on the verse
+    const go = () => focusVerse(targetVerse, { behavior: 'auto' });
+    requestAnimationFrame(() => requestAnimationFrame(go));
+    setTimeout(go, 120);
+  }
 }
 
 function tabConfig(tab, originalLang) {
