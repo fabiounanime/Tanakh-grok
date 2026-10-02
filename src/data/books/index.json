@@ -195,7 +195,7 @@
       "testament": "AT",
       "chapters": 8,
       "verses": 117,
-      "ptVerses": 0,
+      "ptVerses": 117,
       "defaultLang": "he"
     },
     {
@@ -294,7 +294,7 @@
       "testament": "AT",
       "chapters": 7,
       "verses": 105,
-      "ptVerses": 0,
+      "ptVerses": 105,
       "defaultLang": "he"
     },
     {
@@ -483,7 +483,7 @@
       "testament": "NT",
       "chapters": 6,
       "verses": 113,
-      "ptVerses": 0,
+      "ptVerses": 113,
       "defaultLang": "el"
     },
     {
@@ -537,7 +537,7 @@
       "testament": "NT",
       "chapters": 5,
       "verses": 105,
-      "ptVerses": 0,
+      "ptVerses": 105,
       "defaultLang": "el"
     },
     {
@@ -597,9 +597,11 @@
   ],
   "ptComplete": [
     "rut",
+    "sng",
     "jol",
     "oba",
     "jon",
+    "mic",
     "nam",
     "hab",
     "zep",
@@ -611,10 +613,12 @@
     "col",
     "1th",
     "2th",
+    "1ti",
     "2ti",
     "tit",
     "phm",
     "jas",
+    "1pe",
     "2pe",
     "1jn",
     "2jn",
@@ -645,7 +649,6 @@
     "psa",
     "pro",
     "ecc",
-    "sng",
     "isa",
     "jer",
     "lam",
@@ -653,7 +656,6 @@
     "dan",
     "hos",
     "amo",
-    "mic",
     "zec",
     "mat",
     "mrk",
@@ -662,9 +664,7 @@
     "rom",
     "1co",
     "2co",
-    "1ti",
     "heb",
-    "1pe",
     "rev"
   ]
 }
