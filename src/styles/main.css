@@ -18,12 +18,36 @@
   --radius-sm: 12px;
   --radius-pill: 999px;
   --nav-h: 72px;
+  --nav-side: 88px;
   --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-l: env(safe-area-inset-left, 0px);
   --font-ui: 'Inter', system-ui, -apple-system, sans-serif;
   --font-reading: 'Inter', system-ui, sans-serif;
   --font-hebrew: 'Noto Sans Hebrew', 'Times New Roman', serif;
   --font-greek: 'Noto Serif', Georgia, serif;
   --app-max: 430px;
+  --content-pad: 1rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --app-max: 720px;
+    --content-pad: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --app-max: 1100px;
+    --content-pad: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --app-max: 1280px;
+    --content-pad: 2rem;
+  }
 }
 
 *,
@@ -67,16 +91,26 @@ button:disabled {
   cursor: default;
 }
 
-#app {
+#app,
+.app-shell {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: var(--app-max);
   margin: 0 auto;
   background: var(--bg);
   padding-bottom: calc(var(--nav-h) + var(--safe-b));
   box-shadow: 0 0 0 1px #111;
   position: relative;
+}
+
+.page-root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
 }
 
 /* —— Layout shell —— */
@@ -140,7 +174,7 @@ main.page {
   flex: 1;
   width: 100%;
   margin: 0 auto;
-  padding: 1rem 1rem 1.5rem;
+  padding: 1rem var(--content-pad) 1.5rem;
 }
 
 .page--home {
@@ -946,5 +980,233 @@ main.page {
 
   .verse-chip-card {
     flex-basis: 55%;
+  }
+}
+
+/* Tablet ~768+ : wider shell, denser Home/Bíblia */
+@media (min-width: 768px) {
+  body {
+    background: #000;
+  }
+
+  .greeting h1 {
+    font-size: 1.85rem;
+  }
+
+  .hero-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 1rem;
+    padding: 1.35rem 1.5rem 1.4rem;
+  }
+
+  .hero-card__body {
+    max-width: 36ch;
+  }
+
+  .hero-card__art {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    height: 100px;
+    justify-self: end;
+  }
+
+  .mark-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .verse-chip-card {
+    flex-basis: calc(42% - 0.4rem);
+  }
+
+  .book-tiles {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .book-tiles > li {
+    display: contents;
+  }
+
+  .chapter-grid {
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+    gap: 0.65rem;
+  }
+
+  .page--reading .verse-list,
+  .page .verse-list {
+    max-width: 42rem;
+    margin-inline: auto;
+  }
+
+  .tabs {
+    max-width: 42rem;
+    margin-inline: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  .reading-toolbar {
+    max-width: 42rem;
+    margin-inline: auto;
+  }
+
+  .toast {
+    max-width: calc(var(--app-max) - 2.5rem);
+  }
+}
+
+/* Desktop ~1024+ : side nav + wider content */
+@media (min-width: 1024px) {
+  body {
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 193, 7, 0.06), transparent 55%),
+      #000;
+  }
+
+  #app,
+  .app-shell {
+    flex-direction: row;
+    align-items: stretch;
+    max-width: var(--app-max);
+    min-height: 100dvh;
+    padding-bottom: 0;
+    margin: 0 auto;
+    border-inline: 1px solid #111;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.55);
+  }
+
+  .page-root {
+    order: 2;
+    flex: 1;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  .bottom-nav {
+    position: sticky;
+    top: 0;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    order: 1;
+    width: var(--nav-side);
+    max-width: none;
+    height: 100dvh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0.35rem;
+    padding: 1.25rem 0.55rem calc(1rem + var(--safe-b));
+    padding-left: calc(0.55rem + var(--safe-l));
+    border-top: none;
+    border-right: 1px solid #1a1a1a;
+    background: #0a0a0a;
+  }
+
+  .bottom-nav a {
+    flex: 0 0 auto;
+    padding: 0.65rem 0.25rem;
+    font-size: 0.68rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .bottom-nav a:hover {
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .bottom-nav a.active:not(.nav-home) {
+    background: var(--accent-soft);
+  }
+
+  .bottom-nav a.nav-home {
+    top: 0;
+    margin: 0.35rem 0 0.5rem;
+    order: -1;
+  }
+
+  .bottom-nav .nav-home-btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .bottom-nav .nav-home-label {
+    font-size: 0.68rem;
+  }
+
+  main.page {
+    padding: 1.25rem var(--content-pad) 2.5rem;
+    max-width: 960px;
+  }
+
+  .page--home {
+    max-width: 960px;
+  }
+
+  .page--biblia {
+    max-width: 960px;
+  }
+
+  .mark-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .book-tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-card__body {
+    max-width: 44ch;
+  }
+
+  .toast {
+    left: calc(50% + (var(--nav-side) / 2));
+    bottom: 1.5rem;
+    max-width: 28rem;
+  }
+
+  .app-header {
+    padding-inline: var(--content-pad);
+  }
+}
+
+/* Widescreen ~1280+ */
+@media (min-width: 1280px) {
+  main.page,
+  .page--home,
+  .page--biblia {
+    max-width: 1080px;
+  }
+
+  .book-tiles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .verse-chip-card {
+    flex-basis: calc(31% - 0.5rem);
+  }
+
+  .greeting h1 {
+    font-size: 2rem;
+  }
+
+  .page--reading .verse-list,
+  .page .verse-list,
+  .tabs,
+  .reading-toolbar {
+    max-width: 48rem;
+  }
+
+  .verse-list .v-text {
+    font-size: 1.3rem;
+  }
+
+  .verse-list.lang-he .v-text {
+    font-size: 1.55rem;
   }
 }

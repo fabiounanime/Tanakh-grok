@@ -1,5 +1,18 @@
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-400-italic.css';
+import '@fontsource/inter/latin-500.css';
+import '@fontsource/inter/latin-600.css';
+import '@fontsource/inter/latin-700.css';
+import '@fontsource/noto-sans-hebrew/hebrew-400.css';
+import '@fontsource/noto-sans-hebrew/hebrew-500.css';
+import '@fontsource/noto-serif/greek-400.css';
+import '@fontsource/noto-serif/greek-600.css';
+import '@fontsource/noto-serif/latin-400.css';
+import '@fontsource/noto-serif/latin-400-italic.css';
+import '@fontsource/noto-serif/latin-600.css';
 import './styles/main.css';
 import { startRouter, onRouteChange, parseHash, routes } from './utils/router.js';
+import { registerSW } from 'virtual:pwa-register';
 import { renderHome } from './pages/home.js';
 import { renderBiblia } from './pages/biblia.js';
 import { renderBook } from './pages/book.js';
@@ -9,6 +22,8 @@ import { renderSettings } from './pages/settings.js';
 import { renderPlaceholder } from './pages/placeholder.js';
 
 const app = document.getElementById('app');
+
+registerSW({ immediate: true });
 
 const ICO = {
   biblia: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5c4-2 8-2 8 0v14c0-2 4-2 8 0V5c-4-2-8-2-8 0"/><path d="M12 5v14"/></svg>`,
@@ -20,28 +35,29 @@ const ICO = {
 
 function ensureShell() {
   if (document.getElementById('page-root')) return;
+  app.classList.add('app-shell');
   app.innerHTML = `
-    <div id="page-root"></div>
+    <div id="page-root" class="page-root"></div>
     <nav class="bottom-nav" aria-label="Navegação principal">
       <a href="${routes.biblia()}" data-nav="biblia">
         <span class="nav-ico" aria-hidden="true">${ICO.biblia}</span>
-        <span>Bíblia</span>
+        <span class="nav-label">Bíblia</span>
       </a>
       <a href="${routes.agenda()}" data-nav="agenda">
         <span class="nav-ico" aria-hidden="true">${ICO.agenda}</span>
-        <span>Agenda</span>
+        <span class="nav-label">Agenda</span>
       </a>
       <a href="${routes.home()}" data-nav="home" class="nav-home">
         <span class="nav-home-btn" aria-hidden="true">${ICO.home}</span>
-        <span class="nav-home-label">Home</span>
+        <span class="nav-home-label nav-label">Home</span>
       </a>
       <a href="${routes.mensagens()}" data-nav="mensagens">
         <span class="nav-ico" aria-hidden="true">${ICO.mensagens}</span>
-        <span>Mensagens</span>
+        <span class="nav-label">Mensagens</span>
       </a>
       <a href="${routes.conta()}" data-nav="conta">
         <span class="nav-ico" aria-hidden="true">${ICO.conta}</span>
-        <span>Conta</span>
+        <span class="nav-label">Conta</span>
       </a>
     </nav>
   `;

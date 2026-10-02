@@ -6,7 +6,7 @@ App web de leitura bíblica (Antigo + Novo Testamento), tema escuro com acentos 
 - **Transliteração** — leitura fonética (LTR)  
 - **Português** — tradução fiel de demonstração (sem marca de editora)
 
-Interface em **português (pt-BR)**, mobile-first (~390–430px).
+Interface em **português (pt-BR)**, mobile-first, com layout responsivo para tablet e widescreen. Também é um **PWA** (Progressive Web App).
 
 ## Como executar
 
@@ -17,6 +17,26 @@ npm run dev
 ```
 
 Abra `http://127.0.0.1:5173` (ou o endereço indicado pelo Vite).
+
+## PWA (instalar no dispositivo)
+
+O build gera *service worker* + *web app manifest* (`vite-plugin-pwa`) em modo **offline-first**. Em produção (HTTPS, ex.: Cloudflare Pages):
+
+1. Abra o site **uma vez online** (Chrome/Edge no Android/desktop ou Safari no iOS).
+2. Na primeira visita o service worker **pré-cacheia** o shell, JS (inclui dados de livros/versículos), CSS, fontes locais e ícones.
+3. Use **Instalar aplicativo** / **Adicionar à Tela de Início**.
+4. Depois disso, **Home**, lista da **Bíblia** e **leitura** (ex.: Gênesis 1 e amostras) funcionam **sem internet**.
+
+Nome do app: **Bíblia Tanakh** (nome curto: **Tanakh**). Tema: fundo escuro `#050505` com acento dourado. Fontes (Inter, Noto Sans Hebrew, Noto Serif) vêm empacotadas no build — sem CDN.
+
+## Layout responsivo
+
+| Faixa | Comportamento |
+|-------|----------------|
+| Mobile | Shell ~430px, navegação inferior |
+| Tablet (~768+) | Conteúdo mais largo; Home/Bíblia em grades |
+| Desktop (~1024+) | Navegação lateral + área de conteúdo ampla |
+| Widescreen (~1280+) | Grade de livros em 3 colunas; leitura mais confortável |
 
 ## Telas e rotas
 
@@ -32,7 +52,7 @@ Abra `http://127.0.0.1:5173` (ou o endereço indicado pelo Vite).
 | `#/favoritos` | Placeholder |
 | `#/ajustes` | Placeholder |
 
-Navegação inferior: **Bíblia · Agenda · Home · Mensagens · Conta** (Home central destacado).
+Navegação: **Bíblia · Agenda · Home · Mensagens · Conta** (Home destacado; vira barra lateral no desktop).
 
 ## Dados de demonstração
 
@@ -40,7 +60,7 @@ Navegação inferior: **Bíblia · Agenda · Home · Mensagens · Conta** (Home 
 
 ## Deploy (GitHub → Cloudflare Pages)
 
-O app usa **hash router** (`#/…`), então não é necessário fallback SPA (`_redirects`). Basta publicar o build estático.
+O app usa **hash router** (`#/…`), então não é necessário fallback SPA (`_redirects`). Basta publicar o build estático (HTTPS já coberto pelo Pages — exigência do PWA).
 
 ### Passo a passo
 
@@ -64,5 +84,5 @@ Arquivo `wrangler.toml` documenta `pages_build_output_dir = "dist"` para referê
 ```bash
 npm install
 npm run build
-npm run preview   # opcional: testar dist/
+npm run preview   # opcional: testar dist/ (inclui PWA)
 ```

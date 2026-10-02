@@ -17,7 +17,7 @@ export function renderReading(root, { bookId, chapter }) {
         <button class="btn-icon" type="button" data-back aria-label="Voltar">←</button>
         <h1>Não encontrado</h1>
       </header>
-      <main class="page"><p class="hint">Livro inválido.</p></main>
+      <main class="page page--reading"><p class="hint">Livro inválido.</p></main>
     `;
     root.querySelector('[data-back]')?.addEventListener('click', () => navigate('/'));
     return;
