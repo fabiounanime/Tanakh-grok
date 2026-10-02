@@ -22,7 +22,7 @@
   --safe-b: env(safe-area-inset-bottom, 0px);
   --safe-l: env(safe-area-inset-left, 0px);
   --font-ui: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-reading: 'Inter', system-ui, sans-serif;
+  --font-reading: 'Noto Serif', Georgia, 'Times New Roman', serif;
   --font-hebrew: 'Noto Sans Hebrew', 'Times New Roman', serif;
   --font-greek: 'Noto Serif', Georgia, serif;
   --app-max: 430px;
@@ -807,6 +807,10 @@ main.page {
 }
 
 /* —— Reading —— */
+.page--reading {
+  padding-bottom: 2rem;
+}
+
 .reading-toolbar {
   display: flex;
   align-items: center;
@@ -850,6 +854,129 @@ main.page {
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
 }
 
+/* Book-like page */
+.bible-page {
+  background:
+    linear-gradient(180deg, rgba(255, 193, 7, 0.04), transparent 40%),
+    var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 4px 12px 12px 4px;
+  box-shadow:
+    inset 3px 0 0 rgba(255, 193, 7, 0.18),
+    0 8px 28px rgba(0, 0, 0, 0.35);
+  padding: 1.75rem clamp(1.15rem, 4vw, 2.5rem) 2.25rem;
+  margin: 0 auto;
+}
+
+.chapter-heading {
+  margin: 0 0 1.35rem;
+  text-align: center;
+  font-family: var(--font-reading);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  border-bottom: 1px solid rgba(255, 193, 7, 0.28);
+  padding-bottom: 0.85rem;
+}
+
+.chapter-heading__book {
+  display: block;
+  font-size: 0.78rem;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 0.35rem;
+}
+
+.chapter-heading__num {
+  display: block;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--accent);
+}
+
+.bible-columns {
+  column-gap: 2rem;
+}
+
+.verse-flow {
+  margin: 0;
+  font-family: var(--font-reading);
+  font-size: 1.12rem;
+  line-height: 1.85;
+  color: var(--ink);
+  text-align: justify;
+  hyphens: auto;
+  orphans: 3;
+  widows: 3;
+}
+
+.verse {
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.15s;
+}
+
+.verse:hover,
+.verse:focus-visible {
+  background: rgba(255, 193, 7, 0.1);
+  outline: none;
+}
+
+.verse--marked {
+  background: rgba(255, 193, 7, 0.16);
+  box-shadow: inset 0 -2px 0 rgba(255, 193, 7, 0.55);
+}
+
+.verse .v-num {
+  font-family: var(--font-ui);
+  font-size: 0.65em;
+  font-weight: 700;
+  color: var(--accent);
+  vertical-align: super;
+  line-height: 0;
+  margin-inline-end: 0.15em;
+  margin-inline-start: 0.05em;
+  font-variant-numeric: tabular-nums;
+  user-select: none;
+}
+
+.verse .v-text {
+  font-family: inherit;
+}
+
+.bible-page.lang-he .verse-flow {
+  font-family: var(--font-hebrew);
+  font-size: 1.35rem;
+  line-height: 2;
+  text-align: right;
+  direction: rtl;
+  unicode-bidi: plaintext;
+}
+
+.bible-page.lang-el .verse-flow {
+  font-family: var(--font-greek);
+  font-size: 1.22rem;
+  text-align: justify;
+  direction: ltr;
+}
+
+.bible-page.lang-translit .verse-flow {
+  font-family: var(--font-ui);
+  font-size: 1.02rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  text-align: left;
+  direction: ltr;
+}
+
+.bible-page.lang-pt .verse-flow {
+  direction: ltr;
+}
+
+/* Legacy list (kept for safety if referenced) */
 .verse-list {
   list-style: none;
   margin: 0;
@@ -878,36 +1005,6 @@ main.page {
   font-size: 1.15rem;
   line-height: 1.65;
   color: var(--ink);
-}
-
-.verse-list.lang-he .v-text {
-  font-family: var(--font-hebrew);
-  font-size: 1.4rem;
-  line-height: 1.8;
-  direction: rtl;
-  text-align: right;
-  unicode-bidi: plaintext;
-}
-
-.verse-list.lang-el .v-text {
-  font-family: var(--font-greek);
-  font-size: 1.25rem;
-  direction: ltr;
-  text-align: left;
-}
-
-.verse-list.lang-translit .v-text {
-  font-family: var(--font-ui);
-  font-size: 1.02rem;
-  font-style: italic;
-  color: var(--ink-soft);
-  direction: ltr;
-  text-align: left;
-}
-
-.verse-list.lang-pt .v-text {
-  direction: ltr;
-  text-align: left;
 }
 
 .placeholder-chapter {
@@ -970,12 +1067,12 @@ main.page {
     padding: 0.7rem 0.75rem;
   }
 
-  .verse-list .v-text {
-    font-size: 1.25rem;
+  .verse-flow {
+    font-size: 1.2rem;
   }
 
-  .verse-list.lang-he .v-text {
-    font-size: 1.5rem;
+  .bible-page.lang-he .verse-flow {
+    font-size: 1.45rem;
   }
 
   .verse-chip-card {
@@ -1039,20 +1136,22 @@ main.page {
     gap: 0.65rem;
   }
 
-  .page--reading .verse-list,
-  .page .verse-list {
-    max-width: 42rem;
-    margin-inline: auto;
+  .bible-page {
+    max-width: 48rem;
+  }
+
+  .bible-columns {
+    column-count: 1;
   }
 
   .tabs {
-    max-width: 42rem;
+    max-width: 48rem;
     margin-inline: auto;
     margin-bottom: 1.25rem;
   }
 
   .reading-toolbar {
-    max-width: 42rem;
+    max-width: 48rem;
     margin-inline: auto;
   }
 
@@ -1195,19 +1294,388 @@ main.page {
     font-size: 2rem;
   }
 
-  .page--reading .verse-list,
-  .page .verse-list,
+  .bible-page,
   .tabs,
   .reading-toolbar {
-    max-width: 48rem;
+    max-width: 56rem;
   }
 
-  .verse-list .v-text {
-    font-size: 1.3rem;
+  .bible-columns {
+    column-count: 2;
+    column-rule: 1px solid rgba(255, 193, 7, 0.18);
+    column-gap: 2.25rem;
   }
 
-  .verse-list.lang-he .v-text {
-    font-size: 1.55rem;
+  .bible-page.lang-he .bible-columns {
+    column-count: 2;
+  }
+
+  .verse-flow {
+    font-size: 1.18rem;
+  }
+
+  .bible-page.lang-he .verse-flow {
+    font-size: 1.42rem;
+  }
+}
+
+
+
+/* —— Devocionais —— */
+.app-header .btn-gold--sm {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.devo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.devo-card {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.devo-card:hover {
+  border-color: var(--border-gold);
+  text-decoration: none;
+}
+
+.devo-card__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.devo-card__title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.devo-card__when {
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.devo-card__snippet {
+  margin: 0 0 0.55rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.devo-card__meta {
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.page--devo-edit .field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.field__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.field__input,
+.field__textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem 0.9rem;
+  outline: none;
+}
+
+.field__textarea {
+  font-family: var(--font-reading);
+  line-height: 1.55;
+  resize: vertical;
+  min-height: 10rem;
+}
+
+.field__input:focus,
+.field__textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.2);
+}
+
+.devo-refs {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.devo-ref {
+  display: flex;
+  align-items: stretch;
+  gap: 0.35rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.devo-ref__link {
+  flex: 1;
+  min-width: 0;
+  padding: 0.75rem 0.9rem;
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.devo-ref__link:hover {
+  text-decoration: none;
+  background: rgba(255, 193, 7, 0.06);
+}
+
+.devo-ref__label {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.devo-ref__snip {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.btn-danger {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  border: 1px solid rgba(255, 80, 80, 0.4);
+  background: rgba(255, 60, 60, 0.08);
+  color: #ff8a8a;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+}
+
+.btn-danger:hover {
+  background: rgba(255, 60, 60, 0.16);
+}
+
+/* —— Bottom sheets —— */
+.sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+}
+
+.sheet-backdrop[hidden] {
+  display: none !important;
+}
+
+.sheet {
+  width: 100%;
+  max-width: var(--app-max);
+  max-height: min(78dvh, 640px);
+  overflow: auto;
+  background: #121214;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid var(--border);
+  border-bottom: none;
+  padding: 0.5rem 1rem calc(1rem + var(--safe-b));
+  box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.45);
+  animation: sheet-up 0.22s ease-out;
+}
+
+@keyframes sheet-up {
+  from { transform: translateY(18%); opacity: 0.6; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.sheet__handle {
+  width: 40px;
+  height: 4px;
+  border-radius: 999px;
+  background: #3a3a40;
+  margin: 0.35rem auto 0.75rem;
+}
+
+.sheet__title {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sheet__ref {
+  margin: 0;
+  text-align: center;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.sheet__snippet {
+  margin: 0.35rem 0 1rem;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  font-family: var(--font-reading);
+}
+
+.sheet__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 0.75rem;
+  max-height: 40dvh;
+  overflow: auto;
+}
+
+.sheet__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.sheet-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--ink);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+}
+
+.sheet-option strong {
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.sheet-option span {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+}
+
+.sheet-option:hover:not(:disabled) {
+  border-color: var(--border-gold);
+  background: #222218;
+}
+
+.sheet-option:disabled {
+  opacity: 0.45;
+}
+
+.sheet-option--muted strong {
+  color: var(--ink-soft);
+}
+
+.sheet-option--accent {
+  border-color: var(--border-gold);
+  background: var(--accent-soft);
+  margin-bottom: 0.5rem;
+}
+
+.sheet-option--accent strong {
+  color: var(--accent);
+}
+
+.sheet__cancel {
+  display: block;
+  width: 100%;
+  margin-top: 0.65rem;
+  border: none;
+  background: transparent;
+  color: var(--ink-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.85rem;
+  border-radius: var(--radius-sm);
+}
+
+.sheet__cancel:hover {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+@media (min-width: 1024px) {
+  .sheet-backdrop {
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .sheet {
+    max-width: 420px;
+    border-radius: 16px;
+    border-bottom: 1px solid var(--border);
+    animation: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .devo-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .devo-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.bottom-nav .nav-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  font-size: 0.6rem;
+}
+
+@media (min-width: 1024px) {
+  .bottom-nav .nav-label {
+    font-size: 0.62rem;
+    white-space: normal;
+    text-align: center;
   }
 }
 

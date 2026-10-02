@@ -1,11 +1,6 @@
 import { navigate, routes } from '../utils/router.js';
 
 const META = {
-  agenda: {
-    title: 'Agenda',
-    ico: '📅',
-    body: 'Seus compromissos e lembretes de estudo aparecerão aqui. Esta tela é um placeholder.',
-  },
   mensagens: {
     title: 'Mensagens',
     ico: '💬',
@@ -32,7 +27,7 @@ export function renderPlaceholder(root, key) {
         <p>${meta.body}</p>
         ${
           key === 'conta'
-            ? `<p class="placeholder-links"><a class="link-gold" href="${routes.settings()}">Abrir ajustes</a> · <a class="link-gold" href="${routes.favorites()}">Favoritos</a></p>`
+            ? `<p class="placeholder-links"><a class="link-gold" href="${routes.settings()}">Abrir ajustes</a> · <a class="link-gold" href="${routes.favorites()}">Favoritos</a> · <a class="link-gold" href="${routes.devocionais()}">Devocionais</a></p>`
             : ''
         }
       </div>

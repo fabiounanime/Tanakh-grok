@@ -21,6 +21,7 @@ import { renderReading } from './pages/reading.js';
 import { renderFavorites } from './pages/favorites.js';
 import { renderSettings } from './pages/settings.js';
 import { renderPlaceholder } from './pages/placeholder.js';
+import { renderDevocionais, renderDevocionalEdit } from './pages/devocionais.js';
 
 const app = document.getElementById('app');
 
@@ -28,7 +29,7 @@ registerSW({ immediate: true });
 
 const ICO = {
   biblia: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5c4-2 8-2 8 0v14c0-2 4-2 8 0V5c-4-2-8-2-8 0"/><path d="M12 5v14"/></svg>`,
-  agenda: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>`,
+  devocionais: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 4h9a2 2 0 0 1 2 2v14l-5-3-5 3V6a2 2 0 0 1 2-2z"/><path d="M9 8h5M9 11h5"/></svg>`,
   home: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 11.5 12 4l8 7.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-8.5z"/></svg>`,
   mensagens: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4V6z"/></svg>`,
   conta: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="3.5"/><path d="M5 19c1.5-3.5 4-5 7-5s5.5 1.5 7 5"/></svg>`,
@@ -44,9 +45,9 @@ function ensureShell() {
         <span class="nav-ico" aria-hidden="true">${ICO.biblia}</span>
         <span class="nav-label">Bíblia</span>
       </a>
-      <a href="${routes.agenda()}" data-nav="agenda">
-        <span class="nav-ico" aria-hidden="true">${ICO.agenda}</span>
-        <span class="nav-label">Agenda</span>
+      <a href="${routes.devocionais()}" data-nav="devocionais">
+        <span class="nav-ico" aria-hidden="true">${ICO.devocionais}</span>
+        <span class="nav-label">Devocionais</span>
       </a>
       <a href="${routes.home()}" data-nav="home" class="nav-home">
         <span class="nav-home-btn" aria-hidden="true">${ICO.home}</span>
@@ -70,7 +71,8 @@ function setActiveNav(routeName) {
     biblia: 'biblia',
     book: 'biblia',
     reading: 'biblia',
-    agenda: 'agenda',
+    devocionais: 'devocionais',
+    'devocional-edit': 'devocionais',
     mensagens: 'mensagens',
     conta: 'conta',
     favorites: 'conta',
@@ -97,8 +99,11 @@ function render(route) {
     case 'reading':
       renderReading(pageRoot, route.params);
       break;
-    case 'agenda':
-      renderPlaceholder(pageRoot, 'agenda');
+    case 'devocionais':
+      renderDevocionais(pageRoot);
+      break;
+    case 'devocional-edit':
+      renderDevocionalEdit(pageRoot, route.params);
       break;
     case 'mensagens':
       renderPlaceholder(pageRoot, 'mensagens');

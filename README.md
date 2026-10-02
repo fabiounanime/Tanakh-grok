@@ -45,14 +45,20 @@ Nome do app: **Bíblia Tanakh** (nome curto: **Tanakh**). Tema: fundo escuro `#0
 | `#/` | Home — saudação, marcações, versículos, criar Devocional |
 | `#/biblia` | Lista de livros (busca + filtros Todos / AT / NT) |
 | `#/livro/:id` | Capítulos do livro |
-| `#/ler/:id/:capítulo` | Leitura com 3 abas + prev/próx. capítulo |
-| `#/agenda` | Placeholder |
+| `#/ler/:id/:capítulo` | Leitura estilo livro (Português · Hebraico · Transliteração) + marcar versículos |
+| `#/devocionais` | Minhas Devocionais (lista) |
+| `#/devocionais/nova` | Criar devocional |
+| `#/devocionais/:id` | Editar / ver devocional |
 | `#/mensagens` | Placeholder |
 | `#/conta` | Placeholder |
 | `#/favoritos` | Placeholder |
 | `#/ajustes` | Placeholder |
 
-Navegação: **Bíblia · Agenda · Home · Mensagens · Conta** (Home destacado; vira barra lateral no desktop).
+Navegação: **Bíblia · Devocionais · Home · Mensagens · Conta** (Home destacado; vira barra lateral no desktop).
+
+### Marcações e devocionais
+
+Na leitura, toque em um versículo para: **Marcar**, **Marcar e salvar** ou **Marcar e associar a uma devocional**. Destaques, marcações salvas e devocionais ficam no `localStorage` (offline).
 
 ## Dados de demonstração
 

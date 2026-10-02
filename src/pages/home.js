@@ -1,23 +1,24 @@
-import { routes } from '../utils/router.js';
+import { routes, navigate } from '../utils/router.js';
+import { getSavedMarks, formatRelativeWhen } from '../utils/storage.js';
 
-const MARKINGS = [
+const FALLBACK_MARKINGS = [
   {
     ref: 'Gênesis 1:3',
     href: routes.reading('gen', 1),
     snippet: 'E disse Deus: Haja luz; e houve luz.',
-    when: 'Hoje',
+    when: 'Exemplo',
   },
   {
     ref: 'João 1:5',
     href: routes.reading('jhn', 1),
     snippet: 'E a luz resplandece nas trevas…',
-    when: 'Ontem',
+    when: 'Exemplo',
   },
   {
     ref: 'Gênesis 1:1',
     href: routes.reading('gen', 1),
     snippet: 'No princípio criou Deus os céus e a terra.',
-    when: 'Esta semana',
+    when: 'Exemplo',
   },
 ];
 
@@ -40,16 +41,28 @@ const ENCOURAGING = [
 ];
 
 export function renderHome(root) {
-  const markings = MARKINGS.map(
-    (m) => `
+  const saved = getSavedMarks().slice(0, 6);
+  const markingsSrc = saved.length
+    ? saved.map((m) => ({
+        ref: m.ref,
+        href: routes.reading(m.bookId, m.chapter),
+        snippet: m.snippet,
+        when: formatRelativeWhen(m.savedAt),
+      }))
+    : FALLBACK_MARKINGS;
+
+  const markings = markingsSrc
+    .map(
+      (m) => `
     <a class="mark-card" href="${m.href}">
       <div class="mark-card__top">
-        <span class="mark-card__ref">${m.ref}</span>
-        <span class="mark-card__when">${m.when}</span>
+        <span class="mark-card__ref">${escapeHtml(m.ref)}</span>
+        <span class="mark-card__when">${escapeHtml(m.when)}</span>
       </div>
-      <p class="mark-card__snippet">${m.snippet}</p>
+      <p class="mark-card__snippet">${escapeHtml(m.snippet)}</p>
     </a>`
-  ).join('');
+    )
+    .join('');
 
   const verses = ENCOURAGING.map(
     (v) => `
@@ -111,19 +124,18 @@ export function renderHome(root) {
         </div>
         <div class="verse-scroll">${verses}</div>
       </section>
-
-      <div class="toast" id="home-toast" hidden role="status"></div>
     </main>
   `;
 
   root.querySelector('[data-devocional]')?.addEventListener('click', () => {
-    const toast = root.querySelector('#home-toast');
-    if (!toast) return;
-    toast.hidden = false;
-    toast.textContent = 'Em breve: editor de Devocionais.';
-    clearTimeout(toast._t);
-    toast._t = setTimeout(() => {
-      toast.hidden = true;
-    }, 2400);
+    navigate('/devocionais/nova');
   });
+}
+
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }

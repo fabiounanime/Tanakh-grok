@@ -1,6 +1,7 @@
 /**
  * Roteador hash: #/, #/biblia, #/livro/:id, #/ler/:id/:cap,
- * #/agenda, #/mensagens, #/conta, #/favoritos, #/ajustes
+ * #/devocionais, #/devocionais/nova, #/devocionais/:id,
+ * #/mensagens, #/conta, #/favoritos, #/ajustes
  */
 
 const listeners = new Set();
@@ -25,8 +26,18 @@ export function parseHash() {
       params: { bookId: parts[1], chapter: Number.isFinite(chapter) ? chapter : 1 },
     };
   }
+  if (parts[0] === 'devocionais') {
+    if (parts[1] === 'nova') {
+      return { name: 'devocional-edit', params: { id: null, isNew: true } };
+    }
+    if (parts[1]) {
+      return { name: 'devocional-edit', params: { id: parts[1], isNew: false } };
+    }
+    return { name: 'devocionais', params: {} };
+  }
+  // Legacy agenda → redirect conceptually to devotionals
   if (parts[0] === 'agenda') {
-    return { name: 'agenda', params: {} };
+    return { name: 'devocionais', params: {} };
   }
   if (parts[0] === 'mensagens') {
     return { name: 'mensagens', params: {} };
@@ -72,7 +83,10 @@ export const routes = {
   biblia: () => '#/biblia',
   book: (bookId) => `#/livro/${bookId}`,
   reading: (bookId, chapter) => `#/ler/${bookId}/${chapter}`,
-  agenda: () => '#/agenda',
+  readingVerse: (bookId, chapter, verse) => `#/ler/${bookId}/${chapter}?v=${verse}`,
+  devocionais: () => '#/devocionais',
+  devocionalNova: () => '#/devocionais/nova',
+  devocional: (id) => `#/devocionais/${id}`,
   mensagens: () => '#/mensagens',
   conta: () => '#/conta',
   favorites: () => '#/favoritos',
