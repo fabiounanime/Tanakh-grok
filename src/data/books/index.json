@@ -6,7 +6,7 @@
       "testament": "AT",
       "chapters": 50,
       "verses": 1533,
-      "ptVerses": 572,
+      "ptVerses": 796,
       "defaultLang": "he"
     },
     {
@@ -222,7 +222,7 @@
       "testament": "AT",
       "chapters": 5,
       "verses": 154,
-      "ptVerses": 0,
+      "ptVerses": 154,
       "defaultLang": "he"
     },
     {
@@ -384,7 +384,7 @@
       "testament": "NT",
       "chapters": 21,
       "verses": 879,
-      "ptVerses": 284,
+      "ptVerses": 337,
       "defaultLang": "el"
     },
     {
@@ -599,6 +599,7 @@
     "rut",
     "est",
     "sng",
+    "lam",
     "jol",
     "amo",
     "oba",
@@ -652,7 +653,6 @@
     "ecc",
     "isa",
     "jer",
-    "lam",
     "ezk",
     "dan",
     "hos",
