@@ -132,7 +132,7 @@
       "testament": "AT",
       "chapters": 10,
       "verses": 280,
-      "ptVerses": 0,
+      "ptVerses": 280,
       "defaultLang": "he"
     },
     {
@@ -598,6 +598,7 @@
   "ptComplete": [
     "gen",
     "rut",
+    "ezr",
     "est",
     "ecc",
     "sng",
@@ -650,7 +651,6 @@
     "2ki",
     "1ch",
     "2ch",
-    "ezr",
     "neh",
     "job",
     "psa",
