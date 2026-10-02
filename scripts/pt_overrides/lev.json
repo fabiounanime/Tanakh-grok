@@ -1,0 +1,3657 @@
+{
+  "id": "lev",
+  "chapters": [
+    {
+      "n": 1,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E chamou o SENHOR a Moisés e falou com ele da tenda da congregação, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Fala aos filhos de Israel e dize-lhes: Quando algum de vós oferecer oferta ao SENHOR, oferecereis as vossas ofertas de gado, de vacas e de ovelhas."
+        },
+        {
+          "n": 3,
+          "portuguese": "Se a sua oferta for holocausto de gado, oferecerá macho sem defeito; à porta da tenda da congregação a oferecerá, de sua própria vontade, perante o SENHOR."
+        },
+        {
+          "n": 4,
+          "portuguese": "E porá a sua mão sobre a cabeça do holocausto, para que seja aceito a favor dele, para a sua expiação."
+        },
+        {
+          "n": 5,
+          "portuguese": "Depois, imolará o novilho perante o SENHOR; e os filhos de Arão, os sacerdotes, oferecerão o sangue e o aspergirão em redor sobre o altar que está diante da porta da tenda da congregação."
+        },
+        {
+          "n": 6,
+          "portuguese": "Então, esfolará o holocausto e o partirá nos seus pedaços."
+        },
+        {
+          "n": 7,
+          "portuguese": "E os filhos de Arão, o sacerdote, porão fogo sobre o altar e porão em ordem a lenha sobre o fogo."
+        },
+        {
+          "n": 8,
+          "portuguese": "Também os filhos de Arão, os sacerdotes, porão em ordem os pedaços, a cabeça e o redenho, sobre a lenha que está no fogo sobre o altar."
+        },
+        {
+          "n": 9,
+          "portuguese": "Porém a sua fressura e as suas pernas lavar-se-ão com água; e o sacerdote tudo isso fará perfume sobre o altar; holocausto é, oferta queimada, de cheiro suave ao SENHOR."
+        },
+        {
+          "n": 10,
+          "portuguese": "E, se a sua oferta for de gado miúdo, de ovelhas ou de cabras, para holocausto, oferecerá macho sem defeito."
+        },
+        {
+          "n": 11,
+          "portuguese": "E o imolará ao lado do altar, para a banda do norte, perante o SENHOR; e os filhos de Arão, os sacerdotes, aspergirão o seu sangue em redor sobre o altar."
+        },
+        {
+          "n": 12,
+          "portuguese": "Então, o partirá nos seus pedaços, como também a sua cabeça e o seu redenho; e o sacerdote os porá em ordem sobre a lenha que está no fogo sobre o altar."
+        },
+        {
+          "n": 13,
+          "portuguese": "Porém a fressura e as pernas lavar-se-ão com água; e o sacerdote tudo isso oferecerá e o fará perfume sobre o altar; holocausto é, oferta queimada, de cheiro suave ao SENHOR."
+        },
+        {
+          "n": 14,
+          "portuguese": "E, se a sua oferta ao SENHOR for holocausto de aves, oferecerá a sua oferta de rolas ou de pombinhos."
+        },
+        {
+          "n": 15,
+          "portuguese": "E o sacerdote a oferecerá sobre o altar, e lhe destroncará a cabeça, e a fará perfume sobre o altar; e o seu sangue será espremido na parede do altar."
+        },
+        {
+          "n": 16,
+          "portuguese": "E o papo com as suas penas tirará e o lançará junto ao altar, para a banda do oriente, no lugar da cinza."
+        },
+        {
+          "n": 17,
+          "portuguese": "E fendê-la-á junto às suas asas, porém não a partirá; e o sacerdote a fará perfume sobre o altar, sobre a lenha que está no fogo; holocausto é, oferta queimada, de cheiro suave ao SENHOR."
+        }
+      ],
+      "notes": [
+        "1 — Holocausto."
+      ]
+    },
+    {
+      "n": 2,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, quando alguma pessoa oferecer oferta de manjares ao SENHOR, a sua oferta será de flor de farinha; e nela deitará azeite e porá sobre ela incenso."
+        },
+        {
+          "n": 2,
+          "portuguese": "E a trará aos filhos de Arão, os sacerdotes, um dos quais tomará dela um punhado da flor de farinha e do seu azeite com todo o seu incenso; e o sacerdote fará perfume desta oferta memorial sobre o altar; oferta queimada é, de cheiro suave ao SENHOR."
+        },
+        {
+          "n": 3,
+          "portuguese": "E o que sobejar da oferta de manjares será de Arão e de seus filhos; coisa santíssima é, das ofertas queimadas ao SENHOR."
+        },
+        {
+          "n": 4,
+          "portuguese": "E, quando ofereceres oferta de manjares, cozida no forno, será de bolos asmos de flor de farinha, amassados com azeite, e coscorões asmos untados com azeite."
+        },
+        {
+          "n": 5,
+          "portuguese": "E, se a tua oferta for oferta de manjares, cozida na sertã, será da flor de farinha sem fermento, amassada com azeite."
+        },
+        {
+          "n": 6,
+          "portuguese": "Em pedaços a partirás e sobre ela deitarás azeite; oferta de manjares é."
+        },
+        {
+          "n": 7,
+          "portuguese": "E, se a tua oferta for oferta de manjares de frigideira, far-se-á da flor de farinha com azeite."
+        },
+        {
+          "n": 8,
+          "portuguese": "Então, trarás a oferta de manjares que se fizer destas coisas ao SENHOR; e será apresentada ao sacerdote, o qual a trará ao altar."
+        },
+        {
+          "n": 9,
+          "portuguese": "E o sacerdote tomará daquela oferta de manjares a sua porção memorial e a fará perfume sobre o altar; oferta queimada é, de cheiro suave ao SENHOR."
+        },
+        {
+          "n": 10,
+          "portuguese": "E o que sobejar da oferta de manjares será de Arão e de seus filhos; coisa santíssima é, das ofertas queimadas do SENHOR."
+        },
+        {
+          "n": 11,
+          "portuguese": "Nenhuma oferta de manjares que oferecerdes ao SENHOR se fará com fermento; porque de nenhum fermento, nem de mel algum oferecereis oferta queimada ao SENHOR."
+        },
+        {
+          "n": 12,
+          "portuguese": "Deles oferecereis ao SENHOR por oferta das primícias; porém sobre o altar não subirão por cheiro suave."
+        },
+        {
+          "n": 13,
+          "portuguese": "E todas as tuas ofertas de manjares temperarás com sal; e não deixarás faltar à tua oferta de manjares o sal da aliança do teu Deus; em todas as tuas ofertas oferecerás sal."
+        },
+        {
+          "n": 14,
+          "portuguese": "E, se ofereceres ao SENHOR oferta de manjares das primícias, oferecerás, como oferta de manjares das tuas primícias, espigas verdes tostadas ao fogo, isto é, o trigo esmagado de espigas verdes cheias."
+        },
+        {
+          "n": 15,
+          "portuguese": "E sobre ela deitarás azeite e porás sobre ela incenso; oferta de manjares é."
+        },
+        {
+          "n": 16,
+          "portuguese": "Assim, o sacerdote fará perfume com a sua porção memorial, do seu trigo esmagado e do seu azeite, com todo o seu incenso; oferta queimada é ao SENHOR."
+        }
+      ],
+      "notes": [
+        "2 — Oferta de manjares."
+      ]
+    },
+    {
+      "n": 3,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, se a sua oferta for sacrifício pacífico, se a oferecer de gado, macho ou fêmea, sem defeito a oferecerá perante o SENHOR."
+        },
+        {
+          "n": 2,
+          "portuguese": "E porá a sua mão sobre a cabeça da sua oferta e a imolará diante da porta da tenda da congregação; e os filhos de Arão, os sacerdotes, aspergirão o sangue sobre o altar em redor."
+        },
+        {
+          "n": 3,
+          "portuguese": "Depois, do sacrifício pacífico fará oferta queimada ao SENHOR: a gordura que cobre a fressura e toda a gordura que está sobre a fressura,"
+        },
+        {
+          "n": 4,
+          "portuguese": "e ambos os rins, e a gordura que está sobre eles e junto aos lombos; e o redenho que está sobre o fígado, com os rins, tirará."
+        },
+        {
+          "n": 5,
+          "portuguese": "E os filhos de Arão farão perfume disso sobre o altar, sobre o holocausto, que estará sobre a lenha que está no fogo; oferta queimada é, de cheiro suave ao SENHOR."
+        },
+        {
+          "n": 6,
+          "portuguese": "E, se a sua oferta for de gado miúdo para sacrifício pacífico ao SENHOR, seja macho ou fêmea, sem defeito a oferecerá."
+        },
+        {
+          "n": 7,
+          "portuguese": "Se oferecer um cordeiro por sua oferta, perante o SENHOR o oferecerá."
+        },
+        {
+          "n": 8,
+          "portuguese": "E porá a sua mão sobre a cabeça da sua oferta e a imolará diante da tenda da congregação; e os filhos de Arão aspergirão o seu sangue sobre o altar em redor."
+        },
+        {
+          "n": 9,
+          "portuguese": "Então, do sacrifício pacífico fará oferta queimada ao SENHOR: a sua gordura, a cauda toda, a qual tirará junto ao espinhaço, e a gordura que cobre a fressura e toda a gordura que está sobre a fressura,"
+        },
+        {
+          "n": 10,
+          "portuguese": "como também ambos os rins, e a gordura que está sobre eles e junto aos lombos; e o redenho que está sobre o fígado, com os rins, tirará."
+        },
+        {
+          "n": 11,
+          "portuguese": "E o sacerdote fará perfume disso sobre o altar; alimento é da oferta queimada ao SENHOR."
+        },
+        {
+          "n": 12,
+          "portuguese": "Se a sua oferta for uma cabra, perante o SENHOR a oferecerá."
+        },
+        {
+          "n": 13,
+          "portuguese": "E porá a sua mão sobre a sua cabeça e a imolará diante da tenda da congregação; e os filhos de Arão aspergirão o seu sangue sobre o altar em redor."
+        },
+        {
+          "n": 14,
+          "portuguese": "Depois, dela oferecerá a sua oferta queimada ao SENHOR: a gordura que cobre a fressura e toda a gordura que está sobre a fressura,"
+        },
+        {
+          "n": 15,
+          "portuguese": "como também ambos os rins, e a gordura que está sobre eles e junto aos lombos; e o redenho que está sobre o fígado, com os rins, tirará."
+        },
+        {
+          "n": 16,
+          "portuguese": "E o sacerdote fará perfume disso sobre o altar; alimento é da oferta queimada, de cheiro suave. Toda a gordura será do SENHOR."
+        },
+        {
+          "n": 17,
+          "portuguese": "Estatuto perpétuo é pelas vossas gerações, em todas as vossas habitações: nenhuma gordura, nem sangue algum comereis."
+        }
+      ],
+      "notes": [
+        "3 — Sacrifício pacífico."
+      ]
+    },
+    {
+      "n": 4,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Fala aos filhos de Israel, dizendo: Quando uma alma pecar por erro contra quaisquer dos mandamentos do SENHOR, acerca do que se não deve fazer, e proceder contra algum deles;"
+        },
+        {
+          "n": 3,
+          "portuguese": "se o sacerdote ungido pecar para escândalo do povo, então, pelo seu pecado, que pecou, oferecerá um novilho sem defeito, ao SENHOR, por oferta pelo pecado."
+        },
+        {
+          "n": 4,
+          "portuguese": "E trará o novilho à porta da tenda da congregação, perante o SENHOR, e porá a sua mão sobre a cabeça do novilho, e imolará o novilho perante o SENHOR."
+        },
+        {
+          "n": 5,
+          "portuguese": "E o sacerdote ungido tomará do sangue do novilho e o trará à tenda da congregação."
+        },
+        {
+          "n": 6,
+          "portuguese": "E o sacerdote molhará o seu dedo no sangue e daquele sangue espargirá sete vezes perante o SENHOR, diante do véu do santuário."
+        },
+        {
+          "n": 7,
+          "portuguese": "Também porá o sacerdote daquele sangue sobre as pontas do altar do incenso aromático, perante o SENHOR, que está na tenda da congregação; e todo o resto do sangue do novilho derramará à base do altar do holocausto, que está à porta da tenda da congregação."
+        },
+        {
+          "n": 8,
+          "portuguese": "E toda a gordura do novilho da oferta pelo pecado tirará dele: a gordura que cobre a fressura e toda a gordura que está sobre a fressura,"
+        },
+        {
+          "n": 9,
+          "portuguese": "e ambos os rins, e a gordura que está sobre eles e junto aos lombos; e o redenho sobre o fígado, com os rins, tirará,"
+        },
+        {
+          "n": 10,
+          "portuguese": "como se tira do boi do sacrifício pacífico; e o sacerdote os fará perfume sobre o altar do holocausto."
+        },
+        {
+          "n": 11,
+          "portuguese": "Mas o couro do novilho, e toda a sua carne, com a sua cabeça, e as suas pernas, e as suas entranhas, e o seu esterco,"
+        },
+        {
+          "n": 12,
+          "portuguese": "enfim, o novilho todo, levá-lo-á fora do arraial a um lugar limpo, onde se lança a cinza, e o queimará sobre a lenha; onde se lança a cinza, se queimará."
+        },
+        {
+          "n": 13,
+          "portuguese": "Mas, se toda a congregação de Israel pecar por erro, e a coisa for oculta aos olhos da congregação, e se fizerem, contra algum de todos os mandamentos do SENHOR, aquilo que se não deve fazer, e forem culpados;"
+        },
+        {
+          "n": 14,
+          "portuguese": "e o pecado em que pecarem for conhecido, então, a congregação oferecerá um novilho, por oferta pelo pecado, e o trará diante da tenda da congregação."
+        },
+        {
+          "n": 15,
+          "portuguese": "E os anciãos da congregação porão as mãos sobre a cabeça do novilho perante o SENHOR; e imolar-se-á o novilho perante o SENHOR."
+        },
+        {
+          "n": 16,
+          "portuguese": "Então, o sacerdote ungido trará do sangue do novilho à tenda da congregação."
+        },
+        {
+          "n": 17,
+          "portuguese": "E o sacerdote molhará o seu dedo no sangue e o espargirá sete vezes perante o SENHOR, diante do véu."
+        },
+        {
+          "n": 18,
+          "portuguese": "E daquele sangue porá sobre as pontas do altar, que está perante a face do SENHOR, na tenda da congregação; e todo o resto do sangue derramará à base do altar do holocausto, que está diante da porta da tenda da congregação."
+        },
+        {
+          "n": 19,
+          "portuguese": "E tirará dele toda a sua gordura e fará perfume sobre o altar."
+        },
+        {
+          "n": 20,
+          "portuguese": "E fará a este novilho como fez ao novilho da oferta pelo pecado; assim lhe fará, e o sacerdote fará propiciação por eles, e lhes será perdoado o pecado."
+        },
+        {
+          "n": 21,
+          "portuguese": "Depois, levará o novilho fora do arraial e o queimará como queimou o primeiro novilho; é oferta pelo pecado da congregação."
+        },
+        {
+          "n": 22,
+          "portuguese": "Quando um príncipe pecar e, por erro, fizer alguma de todas as coisas que o SENHOR, seu Deus, ordenou se não devem fazer, e se fizer culpado;"
+        },
+        {
+          "n": 23,
+          "portuguese": "se o seu pecado, em que pecou, lhe for notificado, então, trará por oferta um bode sem defeito."
+        },
+        {
+          "n": 24,
+          "portuguese": "E porá a sua mão sobre a cabeça do bode e o imolará no lugar onde se imola o holocausto, perante o SENHOR; é oferta pelo pecado."
+        },
+        {
+          "n": 25,
+          "portuguese": "Então, o sacerdote tomará com o seu dedo do sangue da oferta pelo pecado e o porá sobre as pontas do altar do holocausto; depois, derramará o seu sangue à base do altar do holocausto."
+        },
+        {
+          "n": 26,
+          "portuguese": "E toda a sua gordura fará perfume sobre o altar, como a gordura do sacrifício de oferta pacífica; assim, o sacerdote fará por ele propiciação do seu pecado, e lhe será perdoado."
+        },
+        {
+          "n": 27,
+          "portuguese": "E, se qualquer pessoa do povo da terra pecar por erro, fazendo alguma das coisas que o SENHOR ordenou se não devem fazer, e se fizer culpado;"
+        },
+        {
+          "n": 28,
+          "portuguese": "se o seu pecado, em que pecou, lhe for notificado, então, trará por sua oferta uma cabra sem defeito, pelo seu pecado que pecou."
+        },
+        {
+          "n": 29,
+          "portuguese": "E porá a mão sobre a cabeça da oferta pelo pecado e imolará a oferta pelo pecado no lugar do holocausto."
+        },
+        {
+          "n": 30,
+          "portuguese": "Então, o sacerdote tomará do seu sangue com o seu dedo e o porá sobre as pontas do altar do holocausto; e todo o resto do seu sangue derramará à base do altar."
+        },
+        {
+          "n": 31,
+          "portuguese": "E tirará toda a gordura, como se tira a gordura do sacrifício de oferta pacífica; e o sacerdote a fará perfume sobre o altar, em cheiro suave ao SENHOR; e o sacerdote fará propiciação por ele, e lhe será perdoado."
+        },
+        {
+          "n": 32,
+          "portuguese": "Mas, se pela sua oferta trouxer uma ovelha para oferta pelo pecado, sem defeito a trará."
+        },
+        {
+          "n": 33,
+          "portuguese": "E porá a mão sobre a cabeça da oferta pelo pecado e a imolará por oferta pelo pecado, no lugar onde se imola o holocausto."
+        },
+        {
+          "n": 34,
+          "portuguese": "Depois, o sacerdote tomará com o seu dedo do sangue da oferta pelo pecado e o porá sobre as pontas do altar do holocausto; e todo o resto do seu sangue derramará à base do altar."
+        },
+        {
+          "n": 35,
+          "portuguese": "E tirará toda a sua gordura, como se tira a gordura do cordeiro do sacrifício de oferta pacífica; e o sacerdote a fará perfume sobre o altar, sobre as ofertas queimadas do SENHOR; assim, o sacerdote fará por ele propiciação do seu pecado, que pecou, e lhe será perdoado."
+        }
+      ],
+      "notes": [
+        "4 — Oferta pelo pecado."
+      ]
+    },
+    {
+      "n": 5,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, quando alguma pessoa pecar, ouvindo uma voz de blasfêmia, de que for testemunha, seja porque o viu, seja porque o soube, se o não denunciar, então, levará a sua iniquidade."
+        },
+        {
+          "n": 2,
+          "portuguese": "Ou quando alguma pessoa tocar alguma coisa imunda, seja cadáver de besta imunda, seja cadáver de animal imundo, seja cadáver de réptil imundo, ainda que lhe fosse oculto, contudo, será ele imundo e culpado."
+        },
+        {
+          "n": 3,
+          "portuguese": "Ou quando tocar a imundícia de um homem, seja qualquer imundícia sua com que se faça imundo, e lhe for oculto, e o souber depois, será culpado."
+        },
+        {
+          "n": 4,
+          "portuguese": "Ou quando alguma pessoa jurar, pronunciando temerariamente com os seus lábios, para fazer mal ou para fazer bem, em tudo o que o homem pronuncia temerariamente com juramento, e lhe for oculto, e o souber depois, culpado será numa destas coisas."
+        },
+        {
+          "n": 5,
+          "portuguese": "Será, pois, que, culpado sendo numa destas coisas, confessará aquilo em que pecou."
+        },
+        {
+          "n": 6,
+          "portuguese": "E a sua oferta pela culpa trará ao SENHOR, pelo seu pecado que pecou: uma fêmea de gado miúdo, uma cordeira, ou uma cabrinha, como oferta pelo pecado; assim, o sacerdote por ela fará expiação do seu pecado."
+        },
+        {
+          "n": 7,
+          "portuguese": "Mas, se a sua mão não alcançar o que basta para um cordeiro, então, trará ao SENHOR, como a sua oferta pela culpa pelo que pecou, duas rolas ou dois pombinhos: um como oferta pelo pecado e o outro como holocausto."
+        },
+        {
+          "n": 8,
+          "portuguese": "E os trará ao sacerdote, o qual primeiro oferecerá aquele que é para a oferta pelo pecado; e, com a sua unha, lhe destroncará a cabeça junto ao pescoço, mas não o partirá."
+        },
+        {
+          "n": 9,
+          "portuguese": "E do sangue da oferta pelo pecado espremerá sobre a parede do altar e o resto do sangue espremerá à base do altar; oferta pelo pecado é."
+        },
+        {
+          "n": 10,
+          "portuguese": "E do outro fará holocausto, conforme o costume; assim, o sacerdote por ela fará expiação do seu pecado que pecou, e lhe será perdoado."
+        },
+        {
+          "n": 11,
+          "portuguese": "Porém, se a sua mão não alcançar duas rolas ou dois pombinhos, então, aquele que pecou trará pela sua oferta a décima parte de um efa de flor de farinha, como oferta pelo pecado; não deitará sobre ela azeite, nem lhe porá em cima incenso, porquanto é oferta pelo pecado."
+        },
+        {
+          "n": 12,
+          "portuguese": "E a trará ao sacerdote, e o sacerdote dela tomará a sua mão cheia, a título de memorial, e a fará perfume sobre o altar, sobre as ofertas queimadas do SENHOR; oferta pelo pecado é."
+        },
+        {
+          "n": 13,
+          "portuguese": "Assim, o sacerdote por ela fará expiação do seu pecado, que pecou em alguma destas coisas, e lhe será perdoado; e o restante será do sacerdote, como a oferta de manjares."
+        },
+        {
+          "n": 14,
+          "portuguese": "E falou o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 15,
+          "portuguese": "Quando alguma pessoa cometer um delito e pecar por ignorância nas coisas sagradas do SENHOR, então, trará ao SENHOR, por oferta da sua culpa, um carneiro sem defeito do rebanho, conforme à tua estimação em siclos de prata, segundo o siclo do santuário, para oferta pela culpa."
+        },
+        {
+          "n": 16,
+          "portuguese": "Assim, restituirá o que pecou no santo, e ainda lhe acrescentará o seu quinto, e o dará ao sacerdote; assim, o sacerdote, com o carneiro da oferta pela culpa, fará expiação por ela, e ser-lhe-á perdoado o pecado."
+        },
+        {
+          "n": 17,
+          "portuguese": "E, se alguma pessoa pecar e fizer, contra algum de todos os mandamentos do SENHOR, o que se não deve fazer, ainda que o não soubesse, contudo, será ela culpada e levará a sua iniquidade."
+        },
+        {
+          "n": 18,
+          "portuguese": "E trará ao sacerdote um carneiro sem defeito do rebanho, conforme a tua estimação, para oferta pela culpa; e o sacerdote fará expiação por ela do seu erro em que errou sem saber, e ser-lhe-á perdoado."
+        },
+        {
+          "n": 19,
+          "portuguese": "Oferta pela culpa é; certamente, se fez culpado perante o SENHOR."
+        },
+        {
+          "n": 20,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 21,
+          "portuguese": "Quando alguma pessoa pecar, e cometer um delito contra o SENHOR, e negar ao seu próximo o que se lhe deu em guarda, ou o que se lhe pôs nas mãos, ou o roubo, ou o que retém violentamente ao seu próximo;"
+        },
+        {
+          "n": 22,
+          "portuguese": "ou o que achou perdido, e o negar com falso juramento, ou fizer alguma outra coisa de todas em que o homem costuma pecar;"
+        },
+        {
+          "n": 23,
+          "portuguese": "será, pois, que, pecando e fazendo-se culpado, restituirá o roubo que roubou, ou o retido que reteve violentamente, ou o depósito que lhe foi dado em guarda, ou o perdido que achou,"
+        },
+        {
+          "n": 24,
+          "portuguese": "ou tudo aquilo sobre que jurou falsamente; e o restituirá no seu todo e ainda sobre isso acrescentará o quinto; àquele de quem é o dará no dia da sua oferta pela culpa."
+        },
+        {
+          "n": 25,
+          "portuguese": "E, a título de oferta pela sua culpa, trará ao SENHOR um carneiro sem defeito do rebanho, conforme a tua estimação, para oferta pela culpa, ao sacerdote."
+        },
+        {
+          "n": 26,
+          "portuguese": "E o sacerdote fará por ela expiação perante o SENHOR, e ser-lhe-á perdoada qualquer de todas as coisas que fez, fazendo-se culpada."
+        }
+      ],
+      "notes": [
+        "5 — Casos de culpa; oferta pela culpa. (Inclui Prot 6:1–7.)"
+      ]
+    },
+    {
+      "n": 6,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Ordenou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Dá ordem a Arão e a seus filhos, dizendo: Esta é a lei do holocausto: o holocausto será queimado sobre o altar toda a noite até pela manhã, e o fogo do altar arderá nele."
+        },
+        {
+          "n": 3,
+          "portuguese": "E o sacerdote vestirá a sua veste de linho e vestirá as calças de linho sobre a sua carne; e levantará a cinza, quando o fogo houver consumido o holocausto sobre o altar, e a porá junto ao altar."
+        },
+        {
+          "n": 4,
+          "portuguese": "Depois, despirá as suas vestes, e vestirá outras vestes, e levará a cinza fora do arraial a um lugar limpo."
+        },
+        {
+          "n": 5,
+          "portuguese": "O fogo, pois, sobre o altar arderá nele; não se apagará; mas o sacerdote acenderá lenha nele cada manhã, e sobre ele porá em ordem o holocausto, e sobre ele fará perfume das gorduras das ofertas pacíficas."
+        },
+        {
+          "n": 6,
+          "portuguese": "O fogo arderá continuamente sobre o altar; não se apagará."
+        },
+        {
+          "n": 7,
+          "portuguese": "E esta é a lei da oferta de manjares: os filhos de Arão a oferecerão perante o SENHOR, diante do altar."
+        },
+        {
+          "n": 8,
+          "portuguese": "E dela tomará um punhado da flor de farinha da oferta e do seu azeite e todo o incenso que estiver sobre a oferta de manjares; então, o fará perfume sobre o altar; cheiro suave é, a sua memorial, ao SENHOR."
+        },
+        {
+          "n": 9,
+          "portuguese": "E o restante dela comerão Arão e seus filhos; asmo se comerá no lugar santo; no átrio da tenda da congregação o comerão."
+        },
+        {
+          "n": 10,
+          "portuguese": "Não se cozerá com fermento; a sua porção é que lhes dei das minhas ofertas queimadas; coisa santíssima é, como a oferta pelo pecado e como a oferta pela culpa."
+        },
+        {
+          "n": 11,
+          "portuguese": "Todo o varão entre os filhos de Arão comerá dela; estatuto perpétuo será para as vossas gerações das ofertas queimadas do SENHOR; tudo o que tocar nelas será santo."
+        },
+        {
+          "n": 12,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 13,
+          "portuguese": "Esta é a oferta de Arão e de seus filhos, que oferecerão ao SENHOR no dia em que ele for ungido: a décima parte de um efa de flor de farinha, pela oferta de manjares contínua; a metade dela pela manhã e a metade dela pela tarde."
+        },
+        {
+          "n": 14,
+          "portuguese": "Numa sertã se fará com azeite; cozida a trarás; e os pedaços cozidos da oferta oferecerás em cheiro suave ao SENHOR."
+        },
+        {
+          "n": 15,
+          "portuguese": "E o sacerdote, que for ungido em seu lugar, dentre seus filhos, a oferecerá; estatuto perpétuo do SENHOR é; toda será queimada."
+        },
+        {
+          "n": 16,
+          "portuguese": "Também toda a oferta de manjares do sacerdote será totalmente queimada; não se comerá."
+        },
+        {
+          "n": 17,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 18,
+          "portuguese": "Fala a Arão e a seus filhos, dizendo: Esta é a lei da oferta pelo pecado: no lugar onde se imola o holocausto se imolará a oferta pelo pecado perante o SENHOR; coisa santíssima é."
+        },
+        {
+          "n": 19,
+          "portuguese": "O sacerdote que a oferecer pelo pecado a comerá; no lugar santo se comerá, no átrio da tenda da congregação."
+        },
+        {
+          "n": 20,
+          "portuguese": "Tudo o que tocar a sua carne será santo; e, quando do seu sangue algum saltar sobre a veste, aquilo sobre que saltar lavarás no lugar santo."
+        },
+        {
+          "n": 21,
+          "portuguese": "Porém o vaso de barro em que for cozida se quebrará; e, se for cozida num vaso de cobre, esfregar-se-á e lavar-se-á na água."
+        },
+        {
+          "n": 22,
+          "portuguese": "Todo o homem entre os sacerdotes a comerá; coisa santíssima é."
+        },
+        {
+          "n": 23,
+          "portuguese": "Porém nenhuma oferta pelo pecado, cujo sangue se traz à tenda da congregação, para fazer expiação no santuário, se comerá; no fogo se queimará."
+        }
+      ],
+      "notes": [
+        "6 — Leis do holocausto e da oferta de manjares. (Prot 6:8–30.)"
+      ]
+    },
+    {
+      "n": 7,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E esta é a lei da oferta pela culpa; coisa santíssima é."
+        },
+        {
+          "n": 2,
+          "portuguese": "No lugar onde imolam o holocausto, imolarão a oferta pela culpa, e o seu sangue se espargirá sobre o altar em redor."
+        },
+        {
+          "n": 3,
+          "portuguese": "E dela se oferecerá toda a sua gordura: a cauda, e a gordura que cobre a fressura,"
+        },
+        {
+          "n": 4,
+          "portuguese": "e ambos os rins, e a gordura que neles há, e a que está junto aos lombos, e o redenho que está sobre o fígado, com os rins, se tirará."
+        },
+        {
+          "n": 5,
+          "portuguese": "E o sacerdote o fará perfume sobre o altar em oferta queimada ao SENHOR; oferta pela culpa é."
+        },
+        {
+          "n": 6,
+          "portuguese": "Todo o homem entre os sacerdotes a comerá; no lugar santo se comerá; coisa santíssima é."
+        },
+        {
+          "n": 7,
+          "portuguese": "Como a oferta pelo pecado, assim será a oferta pela culpa; uma mesma lei haverá para elas: será do sacerdote que houver feito propiciação com ela."
+        },
+        {
+          "n": 8,
+          "portuguese": "Também o sacerdote que oferecer o holocausto de alguém, a pele do holocausto que oferecer será dele."
+        },
+        {
+          "n": 9,
+          "portuguese": "Também toda a oferta de manjares que se cozer no forno, com tudo que se preparar na sertã e na frigideira, será do sacerdote que a oferece."
+        },
+        {
+          "n": 10,
+          "portuguese": "Também toda a oferta de manjares amassada com azeite ou seca, será de todos os filhos de Arão, tanto de um como de outro."
+        },
+        {
+          "n": 11,
+          "portuguese": "E esta é a lei do sacrifício das ofertas pacíficas que se oferecerá ao SENHOR."
+        },
+        {
+          "n": 12,
+          "portuguese": "Se o oferecer por oferta de ação de graças, com o sacrifício de ação de graças, o oferecerá, bolos asmos amassados com azeite, e coscorões asmos untados com azeite, e os bolos de flor de farinha fritos e amassados com azeite."
+        },
+        {
+          "n": 13,
+          "portuguese": "Com bolos de pão levedado oferecerá a sua oferta, com o sacrifício de ação de graças da sua oferta pacífica."
+        },
+        {
+          "n": 14,
+          "portuguese": "E de toda a oferta oferecerá uma delas por oferta alçada ao SENHOR, que será do sacerdote que aspergir o sangue da oferta pacífica."
+        },
+        {
+          "n": 15,
+          "portuguese": "E a carne do sacrifício de ação de graças da sua oferta pacífica se comerá no dia do seu oferecimento; nada se deixará dela até à manhã."
+        },
+        {
+          "n": 16,
+          "portuguese": "E, se o sacrifício da sua oferta for voto ou oferta voluntária, no dia em que oferecer o seu sacrifício se comerá; e o que dele ficar também se comerá no dia seguinte."
+        },
+        {
+          "n": 17,
+          "portuguese": "O que, porém, ainda ficar da carne do sacrifício, ao terceiro dia, será queimado no fogo."
+        },
+        {
+          "n": 18,
+          "portuguese": "E, se da carne do seu sacrifício de ofertas pacíficas se comer ao terceiro dia, aquele que a ofereceu não será aceito, nem lhe será imputado; coisa abominável será, e a pessoa que dela comer levará a sua iniquidade."
+        },
+        {
+          "n": 19,
+          "portuguese": "E a carne que tocar alguma coisa imunda não se comerá; com fogo será queimada; mas da outra carne qualquer que estiver limpo comerá dela."
+        },
+        {
+          "n": 20,
+          "portuguese": "Porém a pessoa que comer a carne do sacrifício da oferta pacífica, que é do SENHOR, tendo sobre si a sua imundícia, aquela pessoa será extirpada dos seus povos."
+        },
+        {
+          "n": 21,
+          "portuguese": "E, quando alguma pessoa tocar alguma coisa imunda, como imundícia de homem, ou animal imundo, ou qualquer abominação imunda, e comer da carne do sacrifício da oferta pacífica, que é do SENHOR, aquela pessoa será extirpada dos seus povos."
+        },
+        {
+          "n": 22,
+          "portuguese": "Depois, falou o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 23,
+          "portuguese": "Fala aos filhos de Israel, dizendo: Nenhuma gordura de boi, nem de carneiro, nem de cabra comereis."
+        },
+        {
+          "n": 24,
+          "portuguese": "Porém a gordura de animal morto e a gordura do que foi despedaçado por feras poderá servir para qualquer outro uso; mas de nenhuma maneira a comereis."
+        },
+        {
+          "n": 25,
+          "portuguese": "Porque qualquer que comer a gordura do animal, do qual se oferecer ao SENHOR oferta queimada, a pessoa que a comer será extirpada dos seus povos."
+        },
+        {
+          "n": 26,
+          "portuguese": "E nenhum sangue comereis em qualquer das vossas habitações, quer de aves, quer de gado."
+        },
+        {
+          "n": 27,
+          "portuguese": "Toda pessoa que comer algum sangue, aquela pessoa será extirpada dos seus povos."
+        },
+        {
+          "n": 28,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 29,
+          "portuguese": "Fala aos filhos de Israel, dizendo: Quem oferecer ao SENHOR o seu sacrifício de ofertas pacíficas trará a sua oferta ao SENHOR do seu sacrifício de ofertas pacíficas."
+        },
+        {
+          "n": 30,
+          "portuguese": "As suas próprias mãos trarão as ofertas queimadas do SENHOR; a gordura com o peito trará, para que o peito se mova por oferta movida perante o SENHOR."
+        },
+        {
+          "n": 31,
+          "portuguese": "E o sacerdote fará perfume da gordura sobre o altar; porém o peito será de Arão e de seus filhos."
+        },
+        {
+          "n": 32,
+          "portuguese": "Também a espádua direita dareis ao sacerdote, por oferta alçada dos vossos sacrifícios de ofertas pacíficas."
+        },
+        {
+          "n": 33,
+          "portuguese": "Aquele dentre os filhos de Arão que oferecer o sangue do sacrifício pacífico e a gordura, esse terá a espádua direita por sua porção."
+        },
+        {
+          "n": 34,
+          "portuguese": "Porque o peito movido e a espádua alçada tomei dos filhos de Israel dos seus sacrifícios de ofertas pacíficas e os dei a Arão, o sacerdote, e a seus filhos, por estatuto perpétuo dos filhos de Israel."
+        },
+        {
+          "n": 35,
+          "portuguese": "Esta é a porção de Arão e a porção de seus filhos, das ofertas queimadas do SENHOR, no dia em que os apresentou para administrar o sacerdócio ao SENHOR."
+        },
+        {
+          "n": 36,
+          "portuguese": "O que o SENHOR ordenou que se lhes desse dentre os filhos de Israel no dia em que os ungiu; estatuto perpétuo é pelas suas gerações."
+        },
+        {
+          "n": 37,
+          "portuguese": "Esta é a lei do holocausto, e da oferta de manjares, e da oferta pelo pecado, e da oferta pela culpa, e da consagração, e do sacrifício das ofertas pacíficas,"
+        },
+        {
+          "n": 38,
+          "portuguese": "que o SENHOR ordenou a Moisés no monte Sinai, no dia em que ordenou aos filhos de Israel que oferecessem as suas ofertas ao SENHOR, no deserto do Sinai."
+        }
+      ],
+      "notes": [
+        "7 — Oferta pela culpa; ofertas pacíficas; porções sacerdotais."
+      ]
+    },
+    {
+      "n": 8,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Toma a Arão, e a seus filhos com ele, e as vestes, e o azeite da unção, como também o novilho da oferta pelo pecado, e os dois carneiros, e o cesto dos pães asmos,"
+        },
+        {
+          "n": 3,
+          "portuguese": "e reúne toda a congregação à porta da tenda da congregação."
+        },
+        {
+          "n": 4,
+          "portuguese": "Fez, pois, Moisés como o SENHOR lhe ordenara, e a congregação reuniu-se à porta da tenda da congregação."
+        },
+        {
+          "n": 5,
+          "portuguese": "Então, disse Moisés à congregação: Esta é a coisa que o SENHOR ordenou se fizesse."
+        },
+        {
+          "n": 6,
+          "portuguese": "E Moisés fez chegar a Arão e a seus filhos e os lavou com água."
+        },
+        {
+          "n": 7,
+          "portuguese": "E vestiu-lhe a túnica, e cingiu-o com o cinto, e vestiu-lhe o manto, e pôs sobre ele o éfode, e cingiu-o com o cinto de obra esmerada do éfode, e com ele o apertou."
+        },
+        {
+          "n": 8,
+          "portuguese": "E pôs-lhe o peitoral, pondo no peitoral o Urim e o Tumim."
+        },
+        {
+          "n": 9,
+          "portuguese": "E pôs a mitra sobre a sua cabeça e, sobre esta, na parte dianteira, pôs a lâmina de ouro, a coroa da santidade, como o SENHOR ordenara a Moisés."
+        },
+        {
+          "n": 10,
+          "portuguese": "Então, Moisés tomou o azeite da unção, e ungiu o tabernáculo e tudo o que havia nele, e o santificou."
+        },
+        {
+          "n": 11,
+          "portuguese": "E dele espargiu sete vezes sobre o altar e ungiu o altar e todos os seus utensílios, como também a pia e a sua base, para santificá-los."
+        },
+        {
+          "n": 12,
+          "portuguese": "Depois, derramou do azeite da unção sobre a cabeça de Arão e ungiu-o, para santificá-lo."
+        },
+        {
+          "n": 13,
+          "portuguese": "Também Moisés fez chegar os filhos de Arão, e vestiu-lhes as túnicas, e cingiu-os com o cinto, e apertou-lhes as tiaras, como o SENHOR ordenara a Moisés."
+        },
+        {
+          "n": 14,
+          "portuguese": "Então, fez chegar o novilho da oferta pelo pecado; e Arão e seus filhos puseram as mãos sobre a cabeça do novilho da oferta pelo pecado."
+        },
+        {
+          "n": 15,
+          "portuguese": "E o imolou; e Moisés tomou o sangue, e pô-lo com o seu dedo sobre as pontas do altar em redor, e expiou o altar; depois, derramou o sangue à base do altar e o santificou, para fazer expiação por ele."
+        },
+        {
+          "n": 16,
+          "portuguese": "Depois, tomou toda a gordura que está sobre a fressura, e o redenho do fígado, e ambos os rins, e a sua gordura; e Moisés os fez perfume sobre o altar."
+        },
+        {
+          "n": 17,
+          "portuguese": "Mas o novilho com o seu couro, e a sua carne, e o seu esterco queimou com fogo fora do arraial, como o SENHOR ordenara a Moisés."
+        },
+        {
+          "n": 18,
+          "portuguese": "Depois, fez chegar o carneiro do holocausto; e Arão e seus filhos puseram as mãos sobre a cabeça do carneiro."
+        },
+        {
+          "n": 19,
+          "portuguese": "E o imolou; e Moisés espargiu o sangue sobre o altar em redor."
+        },
+        {
+          "n": 20,
+          "portuguese": "Partiu também o carneiro nos seus pedaços; e Moisés fez perfume da cabeça, e dos pedaços, e da gordura."
+        },
+        {
+          "n": 21,
+          "portuguese": "Porém a fressura e as pernas lavou com água; e Moisés fez perfume de todo o carneiro sobre o altar; holocausto de cheiro suave, oferta queimada é ao SENHOR, como o SENHOR ordenara a Moisés."
+        },
+        {
+          "n": 22,
+          "portuguese": "Depois, fez chegar o outro carneiro, o carneiro da consagração; e Arão e seus filhos puseram as mãos sobre a cabeça do carneiro."
+        },
+        {
+          "n": 23,
+          "portuguese": "E o imolou; e Moisés tomou do seu sangue e o pôs sobre a ponta da orelha direita de Arão, e sobre o polegar da sua mão direita, e sobre o polegar do seu pé direito."
+        },
+        {
+          "n": 24,
+          "portuguese": "Também fez chegar os filhos de Arão; e Moisés pôs daquele sangue sobre a ponta da orelha direita deles, e sobre o polegar da sua mão direita, e sobre o polegar do seu pé direito; e Moisés espargiu o resto do sangue sobre o altar em redor."
+        },
+        {
+          "n": 25,
+          "portuguese": "E tomou a gordura, e a cauda, e toda a gordura que está sobre a fressura, e o redenho do fígado, e ambos os rins, e a sua gordura, e a espádua direita."
+        },
+        {
+          "n": 26,
+          "portuguese": "Também do cesto dos pães asmos, que estava perante o SENHOR, tomou um bolo asmo, e um bolo de pão azeitado, e um coscorão e os pôs sobre a gordura e sobre a espádua direita."
+        },
+        {
+          "n": 27,
+          "portuguese": "E tudo isso pôs nas mãos de Arão e nas mãos de seus filhos e o moveu por oferta movida perante o SENHOR."
+        },
+        {
+          "n": 28,
+          "portuguese": "Depois, Moisés o tomou das suas mãos e o fez perfume sobre o altar sobre o holocausto; estas foram as ofertas da consagração, em cheiro suave, oferta queimada ao SENHOR."
+        },
+        {
+          "n": 29,
+          "portuguese": "E tomou Moisés o peito e o moveu por oferta movida perante o SENHOR; aquela foi a porção do carneiro da consagração que coube a Moisés por estatuto, como o SENHOR ordenara a Moisés."
+        },
+        {
+          "n": 30,
+          "portuguese": "Também tomou Moisés do azeite da unção e do sangue que estava sobre o altar e o espargiu sobre Arão e sobre as suas vestes, como também sobre seus filhos e sobre as vestes de seus filhos com ele; e santificou a Arão e as suas vestes, e a seus filhos e as vestes de seus filhos com ele."
+        },
+        {
+          "n": 31,
+          "portuguese": "E Moisés disse a Arão e a seus filhos: Cozei a carne diante da porta da tenda da congregação e ali a comei com o pão que está no cesto da consagração; como tenho ordenado, dizendo: Arão e seus filhos a comerão."
+        },
+        {
+          "n": 32,
+          "portuguese": "Mas o que sobejar da carne e do pão queimareis com fogo."
+        },
+        {
+          "n": 33,
+          "portuguese": "E da porta da tenda da congregação não saireis por sete dias, até ao dia em que se cumprirem os dias da vossa consagração; porquanto por sete dias ele encherá a vossa mão."
+        },
+        {
+          "n": 34,
+          "portuguese": "Como se fez neste dia, assim o SENHOR ordenou se fizesse, para fazer expiação por vós."
+        },
+        {
+          "n": 35,
+          "portuguese": "Ficareis, pois, à porta da tenda da congregação dia e noite, por sete dias, e guardareis a ordenança do SENHOR, para que não morrais; porque assim me foi ordenado."
+        },
+        {
+          "n": 36,
+          "portuguese": "E Arão e seus filhos fizeram todas as coisas que o SENHOR ordenara pela mão de Moisés."
+        }
+      ],
+      "notes": [
+        "8 — Consagração de Arão e de seus filhos."
+      ]
+    },
+    {
+      "n": 9,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E aconteceu, ao dia oitavo, que Moisés chamou a Arão, e a seus filhos, e aos anciãos de Israel"
+        },
+        {
+          "n": 2,
+          "portuguese": "e disse a Arão: Toma um bezerro, para oferta pelo pecado, e um carneiro, para holocausto, sem defeito, e traze-os perante o SENHOR."
+        },
+        {
+          "n": 3,
+          "portuguese": "E fala aos filhos de Israel, dizendo: Tomai um bode, para oferta pelo pecado, e um bezerro e um cordeiro de um ano, sem defeito, para holocausto;"
+        },
+        {
+          "n": 4,
+          "portuguese": "também um boi e um carneiro, para oferta pacífica, para sacrificar perante o SENHOR, e oferta de manjares, amassada com azeite; porquanto hoje o SENHOR vos aparecerá."
+        },
+        {
+          "n": 5,
+          "portuguese": "Então, trouxeram o que Moisés ordenara, diante da tenda da congregação, e chegou-se toda a congregação e se pôs perante o SENHOR."
+        },
+        {
+          "n": 6,
+          "portuguese": "E disse Moisés: Esta é a coisa que o SENHOR vos ordenou; fazei-a, e a glória do SENHOR vos aparecerá."
+        },
+        {
+          "n": 7,
+          "portuguese": "E disse Moisés a Arão: Chega-te ao altar, e faze a tua oferta pelo pecado e o teu holocausto, e faze expiação por ti e pelo povo; e faze a oferta do povo e expiação por ele, como ordenou o SENHOR."
+        },
+        {
+          "n": 8,
+          "portuguese": "Então, Arão se chegou ao altar e imolou o bezerro da oferta pelo pecado, que era por si mesmo."
+        },
+        {
+          "n": 9,
+          "portuguese": "E os filhos de Arão lhe trouxeram o sangue, e molhou o seu dedo no sangue, e o pôs sobre as pontas do altar; e o resto do sangue derramou à base do altar."
+        },
+        {
+          "n": 10,
+          "portuguese": "Mas a gordura, e os rins, e o redenho do fígado, da oferta pelo pecado, fez perfume sobre o altar, como o SENHOR ordenara a Moisés."
+        },
+        {
+          "n": 11,
+          "portuguese": "Porém a carne e o couro queimou com fogo fora do arraial."
+        },
+        {
+          "n": 12,
+          "portuguese": "Depois, imolou o holocausto, e os filhos de Arão lhe entregaram o sangue, e ele o espargiu sobre o altar em redor."
+        },
+        {
+          "n": 13,
+          "portuguese": "Também lhe entregaram o holocausto, pelos seus pedaços, e a cabeça; e ele o fez perfume sobre o altar."
+        },
+        {
+          "n": 14,
+          "portuguese": "E lavou a fressura e as pernas e as fez perfume sobre o holocausto no altar."
+        },
+        {
+          "n": 15,
+          "portuguese": "Depois, fez chegar a oferta do povo, e tomou o bode da oferta pelo pecado, que era pelo povo, e o imolou, e o preparou por oferta pelo pecado, como o primeiro."
+        },
+        {
+          "n": 16,
+          "portuguese": "Mas o holocausto o trouxe e o fez segundo o rito."
+        },
+        {
+          "n": 17,
+          "portuguese": "Depois, fez chegar a oferta de manjares, e a sua mão encheu dela, e a fez perfume sobre o altar, além do holocausto da manhã."
+        },
+        {
+          "n": 18,
+          "portuguese": "Depois, imolou o boi e o carneiro em sacrifício de oferta pacífica, que era pelo povo; e os filhos de Arão lhe entregaram o sangue, que espargiu sobre o altar em redor,"
+        },
+        {
+          "n": 19,
+          "portuguese": "como também a gordura do boi e do carneiro, a cauda, e o que cobre a fressura, e os rins, e o redenho do fígado."
+        },
+        {
+          "n": 20,
+          "portuguese": "E puseram a gordura sobre os peitos, e ele fez perfume da gordura sobre o altar;"
+        },
+        {
+          "n": 21,
+          "portuguese": "mas os peitos e a espádua direita Arão moveu por oferta movida perante o SENHOR, como Moisés ordenara."
+        },
+        {
+          "n": 22,
+          "portuguese": "Depois, Arão levantou as mãos ao povo e o abençoou; e desceu, havendo feito a oferta pelo pecado, e o holocausto, e a oferta pacífica."
+        },
+        {
+          "n": 23,
+          "portuguese": "Então, entraram Moisés e Arão na tenda da congregação; depois, saíram e abençoaram o povo; e a glória do SENHOR apareceu a todo o povo."
+        },
+        {
+          "n": 24,
+          "portuguese": "E saiu fogo de diante do SENHOR, e consumiu o holocausto e a gordura sobre o altar; o que vendo todo o povo, jubilaram e caíram sobre as suas faces."
+        }
+      ],
+      "notes": [
+        "9 — Primeiros sacrifícios; glória do SENHOR."
+      ]
+    },
+    {
+      "n": 10,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E os filhos de Arão, Nadabe e Abiú, tomaram cada um o seu incensário, e puseram neles fogo, e sobre ele puseram incenso, e trouxeram fogo estranho perante a face do SENHOR, o que lhes não ordenara."
+        },
+        {
+          "n": 2,
+          "portuguese": "Então, saiu fogo de diante do SENHOR e os consumiu; e morreram perante o SENHOR."
+        },
+        {
+          "n": 3,
+          "portuguese": "E disse Moisés a Arão: Isto é o que o SENHOR falou, dizendo: Serei santificado naqueles que se cheguem a mim e serei glorificado diante de todo o povo. Porém Arão se calou."
+        },
+        {
+          "n": 4,
+          "portuguese": "E Moisés chamou a Misael e a Elzafã, filhos de Uziel, tio de Arão, e disse-lhes: Chegai, levai a vossos irmãos de diante do santuário para fora do arraial."
+        },
+        {
+          "n": 5,
+          "portuguese": "E chegaram, e os levaram nas suas túnicas para fora do arraial, como Moisés tinha dito."
+        },
+        {
+          "n": 6,
+          "portuguese": "E Moisés disse a Arão, e a Eleazar, e a Itamar, seus filhos: Não descobrireis as vossas cabeças, nem rasgareis as vossas vestes, para que não morrais, nem venha grande ira sobre toda a congregação; mas vossos irmãos, toda a casa de Israel, lamentem este incendimento que o SENHOR acendeu."
+        },
+        {
+          "n": 7,
+          "portuguese": "Nem tampouco saireis da porta da tenda da congregação, para que não morrais; porque está sobre vós o azeite da unção do SENHOR. E fizeram conforme a palavra de Moisés."
+        },
+        {
+          "n": 8,
+          "portuguese": "E falou o SENHOR a Arão, dizendo:"
+        },
+        {
+          "n": 9,
+          "portuguese": "Não bebereis vinho nem bebida forte, nem tu nem teus filhos contigo, quando entrardes na tenda da congregação, para que não morrais; estatuto perpétuo será isso entre as vossas gerações;"
+        },
+        {
+          "n": 10,
+          "portuguese": "e para fazer diferença entre o santo e o profano e entre o imundo e o limpo;"
+        },
+        {
+          "n": 11,
+          "portuguese": "e para ensinar aos filhos de Israel todos os estatutos que o SENHOR lhes tem falado pela mão de Moisés."
+        },
+        {
+          "n": 12,
+          "portuguese": "E disse Moisés a Arão, e a Eleazar, e a Itamar, seus filhos que lhe ficaram: Tomai a oferta de manjares, restante das ofertas queimadas do SENHOR, e comei-a sem fermento junto ao altar, porquanto é coisa santíssima."
+        },
+        {
+          "n": 13,
+          "portuguese": "Portanto, a comereis no lugar santo; porque isto é a tua porção e a porção de teus filhos, das ofertas queimadas do SENHOR; porque assim me foi ordenado."
+        },
+        {
+          "n": 14,
+          "portuguese": "Também o peito da oferta movida e a espádua da oferta alçada, comereis em lugar limpo, tu, e teus filhos, e tuas filhas contigo; porque foram dados por tua porção e por porção de teus filhos, dos sacrifícios das ofertas pacíficas dos filhos de Israel."
+        },
+        {
+          "n": 15,
+          "portuguese": "A espádua alçada e o peito movido trarão com as ofertas queimadas da gordura, para mover por oferta movida perante o SENHOR; o que, por estatuto perpétuo, será teu e de teus filhos contigo, como o SENHOR tem ordenado."
+        },
+        {
+          "n": 16,
+          "portuguese": "E Moisés diligentemente buscou o bode da oferta pelo pecado, e eis que já era queimado; pelo que indignou-se grandemente contra Eleazar e contra Itamar, os filhos de Arão que ficaram, dizendo:"
+        },
+        {
+          "n": 17,
+          "portuguese": "Por que não comestes a oferta pelo pecado no lugar santo? Pois coisa santíssima é; e ele a deu a vós, para que levásseis a iniquidade da congregação, para fazer expiação por eles perante o SENHOR."
+        },
+        {
+          "n": 18,
+          "portuguese": "Eis que não se trouxe o seu sangue para dentro do santuário; certamente, havíeis de comê-la no santuário, como tenho ordenado."
+        },
+        {
+          "n": 19,
+          "portuguese": "Então, disse Arão a Moisés: Eis que hoje ofereceram a sua oferta pelo pecado e o seu holocausto perante o SENHOR, e tais coisas me sucederam; se eu hoje comesse da oferta pelo pecado, seria isso porventura aceito aos olhos do SENHOR?"
+        },
+        {
+          "n": 20,
+          "portuguese": "O que ouvindo Moisés, foi isso bem aos seus olhos."
+        }
+      ],
+      "notes": [
+        "10 — Nadabe e Abiú; leis sacerdotais."
+      ]
+    },
+    {
+      "n": 11,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E falou o SENHOR a Moisés e a Arão, dizendo-lhes:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Falai aos filhos de Israel, dizendo: Estes são os animais que comereis de todos os animais que há sobre a terra:"
+        },
+        {
+          "n": 3,
+          "portuguese": "de todos os animais de unhas fendidas e de ungulados que ruminam, estes comereis."
+        },
+        {
+          "n": 4,
+          "portuguese": "Destes, porém, não comereis: dos que ruminam ou dos que têm unhas fendidas: o camelo, porque rumina, mas não tem unhas fendidas; imundo vos será;"
+        },
+        {
+          "n": 5,
+          "portuguese": "e o coelho, porque rumina, mas não tem as unhas fendidas; imundo vos será;"
+        },
+        {
+          "n": 6,
+          "portuguese": "e a lebre, porque rumina, mas não tem as unhas fendidas; imunda vos será;"
+        },
+        {
+          "n": 7,
+          "portuguese": "e o porco, porque tem unhas fendidas, e é ungulado, mas não rumina; imundo vos será."
+        },
+        {
+          "n": 8,
+          "portuguese": "Da sua carne não comereis nem tocareis no seu cadáver; imundos vos serão."
+        },
+        {
+          "n": 9,
+          "portuguese": "De todos os animais que há nas águas comereis estes: tudo o que tem barbatanas e escamas, nas águas, nos mares e nos rios, isso comereis."
+        },
+        {
+          "n": 10,
+          "portuguese": "Mas tudo o que não tem barbatanas nem escamas, nos mares e nos rios, todo o réptil das águas e todo o ser vivente que há nas águas, estes serão para vós abominação."
+        },
+        {
+          "n": 11,
+          "portuguese": "Abominação vos serão; da sua carne não comereis e o seu cadáver abominareis."
+        },
+        {
+          "n": 12,
+          "portuguese": "Tudo o que nas águas não tiver barbatanas nem escamas será para vós abominação."
+        },
+        {
+          "n": 13,
+          "portuguese": "E estas abominareis das aves; não se comerão, serão abominação: a águia, e o quebrantosso, e o xofrango,"
+        },
+        {
+          "n": 14,
+          "portuguese": "e o milhano, e o abutre segundo a sua espécie,"
+        },
+        {
+          "n": 15,
+          "portuguese": "todo corvo segundo a sua espécie,"
+        },
+        {
+          "n": 16,
+          "portuguese": "e a avestruz, e a coruja, e a gaivota, e o gavião segundo a sua espécie,"
+        },
+        {
+          "n": 17,
+          "portuguese": "e o bufo, e o corvo marinho, e a íbis,"
+        },
+        {
+          "n": 18,
+          "portuguese": "e a galinha-d'água, e o pelicano, e o abutre;"
+        },
+        {
+          "n": 19,
+          "portuguese": "e a cegonha, e a garça segundo a sua espécie, e a poupa, e o morcego."
+        },
+        {
+          "n": 20,
+          "portuguese": "Também todo o réptil que voa, que anda sobre quatro pés, vos será abominação."
+        },
+        {
+          "n": 21,
+          "portuguese": "Todo o réptil que voa, que anda sobre quatro pés, que tem pernas junto aos seus pés, para saltar com elas sobre a terra, este comereis."
+        },
+        {
+          "n": 22,
+          "portuguese": "Deles comereis estes: a locusta segundo a sua espécie, e o gafanhoto devastador segundo a sua espécie, e o grilo segundo a sua espécie, e o gafanhoto segundo a sua espécie."
+        },
+        {
+          "n": 23,
+          "portuguese": "Mas todos os outros répteis que voam, que têm quatro pés, vos serão abominação."
+        },
+        {
+          "n": 24,
+          "portuguese": "E por estes sereis imundos: qualquer que tocar o seu cadáver, imundo será até à tarde."
+        },
+        {
+          "n": 25,
+          "portuguese": "E qualquer que levar o seu cadáver lavará as suas vestes e será imundo até à tarde."
+        },
+        {
+          "n": 26,
+          "portuguese": "Todo animal que tem unhas fendidas, mas cuja fenda não as divide em duas, e não rumina, será para vós imundo; qualquer que tocar neles será imundo."
+        },
+        {
+          "n": 27,
+          "portuguese": "Também todo animal que anda sobre as suas plantas, entre todos os animais que andam a quatro pés, vos será imundo; qualquer que tocar no seu cadáver será imundo até à tarde."
+        },
+        {
+          "n": 28,
+          "portuguese": "E o que levar o seu cadáver lavará as suas vestes e será imundo até à tarde; eles vos serão imundos."
+        },
+        {
+          "n": 29,
+          "portuguese": "Também estes vos serão imundos entre os répteis que se arrastam sobre a terra: a doninha, e o rato, e o crocodilo segundo a sua espécie,"
+        },
+        {
+          "n": 30,
+          "portuguese": "e o ouriço-cacheiro, e o crocodilo da terra, e a lagartixa, e o lagarto, e a toupeira."
+        },
+        {
+          "n": 31,
+          "portuguese": "Estes vos serão imundos dentre todos os répteis: qualquer que os tocar, estando eles mortos, será imundo até à tarde."
+        },
+        {
+          "n": 32,
+          "portuguese": "E tudo aquilo sobre o que cair algum deles, estando eles mortos, será imundo; seja vaso de madeira, seja veste, seja pele, seja saco, seja qualquer instrumento com que se faz alguma obra, será metido na água e será imundo até à tarde; então, será limpo."
+        },
+        {
+          "n": 33,
+          "portuguese": "E, quanto a todo vaso de barro dentro do qual cair algum deles, tudo o que houver nele será imundo, e o vaso quebrareis."
+        },
+        {
+          "n": 34,
+          "portuguese": "E todo alimento que se come, sobre o qual cair água, será imundo; e toda bebida que se bebe, em todo vaso, será imunda."
+        },
+        {
+          "n": 35,
+          "portuguese": "E aquilo sobre o que cair alguma coisa do seu cadáver será imundo; o forno e o vaso de barro se quebrarão; imundos são e vos serão imundos."
+        },
+        {
+          "n": 36,
+          "portuguese": "Porém a fonte ou cisterna, em que se recolhem águas, será limpa; mas quem tocar no seu cadáver será imundo."
+        },
+        {
+          "n": 37,
+          "portuguese": "E, quando do seu cadáver cair alguma coisa sobre alguma semente que se semeia, esta será limpa."
+        },
+        {
+          "n": 38,
+          "portuguese": "Mas, quando se deitar água sobre a semente, e do seu cadáver cair alguma coisa sobre ela, então, vos será imunda."
+        },
+        {
+          "n": 39,
+          "portuguese": "E, quando algum animal, que vos serve de mantimento, morrer, quem tocar no seu cadáver será imundo até à tarde."
+        },
+        {
+          "n": 40,
+          "portuguese": "E quem comer do seu cadáver lavará as suas vestes e será imundo até à tarde; e quem levar o seu cadáver lavará as suas vestes e será imundo até à tarde."
+        },
+        {
+          "n": 41,
+          "portuguese": "Também todo o réptil que se arrasta sobre a terra vos será abominação; não se comerá."
+        },
+        {
+          "n": 42,
+          "portuguese": "Tudo o que anda sobre o ventre, e tudo o que anda sobre quatro pés, ou que tem muitos pés, entre todos os répteis que se arrastam sobre a terra, não comereis, porquanto são abominação."
+        },
+        {
+          "n": 43,
+          "portuguese": "Nada façais abominável com todo o réptil que se arrasta, nem vos façais imundos com eles, para não serdes por eles contaminados."
+        },
+        {
+          "n": 44,
+          "portuguese": "Porque eu sou o SENHOR, vosso Deus; portanto, vós vos santificareis e sereis santos, porque eu sou santo; e não vos contaminareis com nenhum réptil que se arrasta sobre a terra."
+        },
+        {
+          "n": 45,
+          "portuguese": "Porque eu sou o SENHOR, que vos faço subir da terra do Egito, para que eu seja vosso Deus, e para que sejais santos; porque eu sou santo."
+        },
+        {
+          "n": 46,
+          "portuguese": "Esta, pois, é a lei dos animais, e das aves, e de todo ser vivente que se move nas águas, e de todo ser que se arrasta sobre a terra;"
+        },
+        {
+          "n": 47,
+          "portuguese": "para fazer diferença entre o imundo e o limpo e entre os animais que se podem comer e os animais que se não devem comer."
+        }
+      ],
+      "notes": [
+        "11 — Animais limpos e imundos."
+      ]
+    },
+    {
+      "n": 12,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Fala aos filhos de Israel, dizendo: Se uma mulher conceber e der à luz um menino, então, será imunda sete dias; assim como nos dias da separação da sua enfermidade, será imunda."
+        },
+        {
+          "n": 3,
+          "portuguese": "E, no dia oitavo, se circuncidará ao menino a carne do seu prepúcio."
+        },
+        {
+          "n": 4,
+          "portuguese": "Depois, ficará ela trinta e três dias no sangue da sua purificação; nenhuma coisa santa tocará e não entrará no santuário até que se cumpram os dias da sua purificação."
+        },
+        {
+          "n": 5,
+          "portuguese": "Mas, se der à luz uma menina, então, será imunda duas semanas, como na sua separação; depois, ficará sessenta e seis dias no sangue da sua purificação."
+        },
+        {
+          "n": 6,
+          "portuguese": "E, quando forem cumpridos os dias da sua purificação por filho ou por filha, trará um cordeiro de um ano por holocausto e um pombinho ou uma rola, como oferta pelo pecado, à porta da tenda da congregação, ao sacerdote,"
+        },
+        {
+          "n": 7,
+          "portuguese": "o qual o oferecerá perante a face do SENHOR e por ela fará propiciação; e será limpa do fluxo do seu sangue; esta é a lei da que der à luz menino ou menina."
+        },
+        {
+          "n": 8,
+          "portuguese": "Mas, se a sua mão não alcançar o bastante para um cordeiro, então, tomará duas rolas ou dois pombinhos, um para o holocausto e outro para a oferta pelo pecado; assim, o sacerdote por ela fará propiciação, e será limpa."
+        }
+      ],
+      "notes": [
+        "12 — Purificação após o parto."
+      ]
+    },
+    {
+      "n": 13,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Moisés e a Arão, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Quando um homem tiver na pele da sua carne inchação, ou pústula, ou mancha lustrosa, e na pele da sua carne se fizer como praga de lepra, então, será trazido a Arão, o sacerdote, ou a um de seus filhos, os sacerdotes."
+        },
+        {
+          "n": 3,
+          "portuguese": "E o sacerdote examinará a praga na pele da carne; se o pelo na praga se tornou branco, e a praga parecer mais funda do que a pele da sua carne, praga de lepra é; o sacerdote o examinando o declarará imundo."
+        },
+        {
+          "n": 4,
+          "portuguese": "Mas, se a mancha lustrosa na pele da sua carne for branca, e não parecer mais funda do que a pele, e o pelo não se tornou branco, então, o sacerdote encerrará o que tem a praga por sete dias."
+        },
+        {
+          "n": 5,
+          "portuguese": "E, ao sétimo dia, o sacerdote o examinará; se, a seu ver, a praga se deteve, e a praga se não estendeu na pele, então, o sacerdote o encerrará por outros sete dias."
+        },
+        {
+          "n": 6,
+          "portuguese": "E o sacerdote, ao sétimo dia, o examinará outra vez; se a praga se houver escurecido, e a praga se não houver estendido na pele, então, o sacerdote o declarará limpo; pústula é; e lavará as suas vestes e será limpo."
+        },
+        {
+          "n": 7,
+          "portuguese": "Mas, se a pústula se estender na pele, depois de se ter mostrado ao sacerdote para a sua purificação, outra vez se mostrará ao sacerdote."
+        },
+        {
+          "n": 8,
+          "portuguese": "E o sacerdote o examinará, e, se a pústula se houver estendido na pele, o sacerdote o declarará imundo; lepra é."
+        },
+        {
+          "n": 9,
+          "portuguese": "Quando houver praga de lepra no homem, então, será trazido ao sacerdote."
+        },
+        {
+          "n": 10,
+          "portuguese": "E o sacerdote o examinará, e, eis que, se houver inchação branca na pele, a qual tornou o pelo branco, e houver carne viva na inchação,"
+        },
+        {
+          "n": 11,
+          "portuguese": "lepra envelhecida é na pele da sua carne; pelo que o sacerdote o declarará imundo; não o encerrará, porque imundo é."
+        },
+        {
+          "n": 12,
+          "portuguese": "E, se a lepra rebentar de todo na pele, e a lepra cobrir toda a pele do que tem a praga, desde a sua cabeça até aos seus pés, quanto pode ver o sacerdote,"
+        },
+        {
+          "n": 13,
+          "portuguese": "então, o sacerdote o examinará, e, eis que, se a lepra cobrir toda a sua carne, então, declarará limpo o que tem a praga; toda se tornou branca; limpo está."
+        },
+        {
+          "n": 14,
+          "portuguese": "Mas, no dia em que aparecer nele carne viva, será imundo."
+        },
+        {
+          "n": 15,
+          "portuguese": "Vendo, pois, o sacerdote a carne viva, declarará imundo a carne viva; imunda é; lepra é."
+        },
+        {
+          "n": 16,
+          "portuguese": "Ou, se a carne viva se tornar e se mudar em branca, então, virá ao sacerdote."
+        },
+        {
+          "n": 17,
+          "portuguese": "E o sacerdote o examinará, e, eis que, se a praga se houver tornado branca, então, o sacerdote declarará limpo o que tem a praga; limpo está."
+        },
+        {
+          "n": 18,
+          "portuguese": "Esta será a lei da pústula que houver na pele da carne: se houver cicatriz de úlcera na pele da sua carne,"
+        },
+        {
+          "n": 19,
+          "portuguese": "e, no lugar da úlcera, houver inchação branca, ou mancha lustrosa, branca tirante a vermelha, então, se mostrará ao sacerdote."
+        },
+        {
+          "n": 20,
+          "portuguese": "E o sacerdote examinará a praga, e, eis que, se parecer mais funda do que a pele, e o seu pelo se houver tornado branco, o sacerdote o declarará imundo; praga de lepra é, que rebenta na úlcera."
+        },
+        {
+          "n": 21,
+          "portuguese": "E, se o sacerdote a examinar, e eis que não houver nela pelo branco, e não estiver mais funda do que a pele, mas estiver escurecida, então, o sacerdote o encerrará por sete dias."
+        },
+        {
+          "n": 22,
+          "portuguese": "Se ela se estender na pele, então, o sacerdote o declarará imundo; praga é."
+        },
+        {
+          "n": 23,
+          "portuguese": "Mas, se a mancha lustrosa se detiver no seu lugar, não se estendendo, cicatriz da úlcera é; o sacerdote, pois, o declarará limpo."
+        },
+        {
+          "n": 24,
+          "portuguese": "Ou, quando na pele da carne houver queimadura de fogo, e a carne viva da queimadura se tornar numa mancha lustrosa, branca tirante a vermelha, ou branca,"
+        },
+        {
+          "n": 25,
+          "portuguese": "e o sacerdote a examinar, e eis que o pelo na mancha se houver tornado branco, e ela parecer mais funda do que a pele, lepra é, que rebenta na queimadura; pelo que o sacerdote o declarará imundo; praga de lepra é."
+        },
+        {
+          "n": 26,
+          "portuguese": "Mas, se o sacerdote a examinar, e eis que na mancha lustrosa não houver pelo branco, nem estiver mais funda do que a pele, mas estiver escurecida, então, o sacerdote o encerrará por sete dias."
+        },
+        {
+          "n": 27,
+          "portuguese": "Depois, ao sétimo dia, o sacerdote o examinará; se ela se houver estendido na pele, então, o sacerdote o declarará imundo; praga de lepra é."
+        },
+        {
+          "n": 28,
+          "portuguese": "Mas, se a mancha lustrosa se detiver no seu lugar, e não se houver estendido na pele, mas estiver escurecida, inchação da queimadura é; pelo que o sacerdote o declarará limpo, porque cicatriz da queimadura é."
+        },
+        {
+          "n": 29,
+          "portuguese": "E, quando o homem ou a mulher padecer de praga na cabeça ou na barba,"
+        },
+        {
+          "n": 30,
+          "portuguese": "o sacerdote examinará a praga, e, eis que, se parecer mais funda do que a pele, e nela houver pelo amarelo fino, o sacerdote o declarará imundo; tinha é, é lepra da cabeça ou da barba."
+        },
+        {
+          "n": 31,
+          "portuguese": "Mas, se o sacerdote houver examinado a praga da tinha, e eis que o seu parecer não for mais fundo do que a pele, e não houver nela pelo preto, então, o sacerdote encerrará o que tem a praga da tinha por sete dias."
+        },
+        {
+          "n": 32,
+          "portuguese": "E, ao sétimo dia, o sacerdote examinará a praga, e, eis que, se a tinha não se houver estendido, e nela não houver pelo amarelo, nem o parecer da tinha for mais fundo do que a pele,"
+        },
+        {
+          "n": 33,
+          "portuguese": "então, se rapará; mas a tinha não rapará; e o sacerdote encerrará o que tem a tinha por outros sete dias."
+        },
+        {
+          "n": 34,
+          "portuguese": "Depois, ao sétimo dia, o sacerdote examinará a tinha, e, eis que, se a tinha se não houver estendido na pele, e o seu parecer não for mais fundo do que a pele, então, o sacerdote o declarará limpo; e lavará as suas vestes e será limpo."
+        },
+        {
+          "n": 35,
+          "portuguese": "Mas, se, depois da sua purificação, a tinha se estender na pele,"
+        },
+        {
+          "n": 36,
+          "portuguese": "então, o sacerdote o examinará, e, eis que, se a tinha se houver estendido na pele, o sacerdote não buscará o pelo amarelo; imundo está."
+        },
+        {
+          "n": 37,
+          "portuguese": "Mas, se a seu ver a tinha se houver detido, e nela houver crescido pelo preto, a tinha está sã; limpo está, e o sacerdote o declarará limpo."
+        },
+        {
+          "n": 38,
+          "portuguese": "E, quando o homem ou a mulher tiver na pele da sua carne manchas lustrosas, manchas lustrosas brancas,"
+        },
+        {
+          "n": 39,
+          "portuguese": "o sacerdote as examinará, e, eis que, se na pele da sua carne houver manchas lustrosas, tirantes a brancas, impigem é que rebentou na pele; limpo está."
+        },
+        {
+          "n": 40,
+          "portuguese": "E, quando a cabeça do homem se tornar calva, limpo está; ele é calvo."
+        },
+        {
+          "n": 41,
+          "portuguese": "E, se a frente da sua cabeça se tornar calva, limpo está; ele é meio-calvo."
+        },
+        {
+          "n": 42,
+          "portuguese": "Porém, se na calva ou na meia-calva houver praga branca tirante a vermelha, lepra é, rebenta na sua calva ou na sua meia-calva."
+        },
+        {
+          "n": 43,
+          "portuguese": "O sacerdote, pois, o examinará, e, eis que, se a inchação da praga, na sua calva ou meia-calva, for branca tirante a vermelha, como parece a lepra na pele da carne,"
+        },
+        {
+          "n": 44,
+          "portuguese": "leproso é, aquele homem está imundo; o sacerdote o declararás imundo; na sua cabeça tem a sua praga."
+        },
+        {
+          "n": 45,
+          "portuguese": "Também as vestes do leproso, em quem está a praga, serão rasgadas, e a sua cabeça será descoberta, e se cobrirá o bigode e clamará: Imundo! Imundo!"
+        },
+        {
+          "n": 46,
+          "portuguese": "Todos os dias em que a praga estiver nele, será imundo; imundo está, habitará só; a sua habitação será fora do arraial."
+        },
+        {
+          "n": 47,
+          "portuguese": "Quando também em alguma vestidura houver praga de lepra, em vestidura de lã, ou em vestidura de linho,"
+        },
+        {
+          "n": 48,
+          "portuguese": "ou no fio urdido, ou no fio tecido, de linho ou de lã, ou em pele, ou em qualquer obra de pele,"
+        },
+        {
+          "n": 49,
+          "portuguese": "e a praga na vestidura, ou no fio urdido, ou no fio tecido, ou na pele, ou em qualquer obra de pele, for verde ou vermelha, praga de lepra é e se mostrará ao sacerdote."
+        },
+        {
+          "n": 50,
+          "portuguese": "E o sacerdote examinará a praga e encerrará o que tem a praga por sete dias."
+        },
+        {
+          "n": 51,
+          "portuguese": "Então, ao sétimo dia, examinará a praga; se a praga se houver estendido na vestidura, ou no fio urdido, ou no fio tecido, ou na pele, para qualquer obra que se fizer da pele, lepra roedora é; imunda está."
+        },
+        {
+          "n": 52,
+          "portuguese": "Pelo que se queimará aquela vestidura, ou o fio urdido, ou o fio tecido, de lã ou de linho, ou de qualquer obra de pele, em que houver a praga; porque lepra roedora é; com fogo se queimará."
+        },
+        {
+          "n": 53,
+          "portuguese": "Mas, se o sacerdote vir que a praga se não estendeu na vestidura, ou no fio urdido, ou no tecido, ou em qualquer obra de pele,"
+        },
+        {
+          "n": 54,
+          "portuguese": "então, o sacerdote ordenará que se lave aquilo em que estava a praga, e o encerrará por outros sete dias."
+        },
+        {
+          "n": 55,
+          "portuguese": "E o sacerdote, depois que a praga se lavar, a examinará; e, eis que, se a praga não mudou o seu aspecto, nem a praga se estendeu, imundo está; com fogo o queimarás; praga penetrante é, seja por diante, seja por detrás."
+        },
+        {
+          "n": 56,
+          "portuguese": "Mas, se o sacerdote examinar, e eis que a praga se houver escurecido, depois que se lavou, então, a rasgará da vestidura, ou da pele, ou do fio urdido, ou do tecido."
+        },
+        {
+          "n": 57,
+          "portuguese": "E, se ainda aparecer na vestidura, ou no fio urdido, ou no tecido, ou em qualquer coisa de pele, estendendo-se, o que nela estiver a praga, com fogo queimarás."
+        },
+        {
+          "n": 58,
+          "portuguese": "Mas a vestidura, ou o fio urdido, ou o tecido, ou qualquer coisa de pele, que lavaste e donde a praga se retirou, se lavará segunda vez e será limpo."
+        },
+        {
+          "n": 59,
+          "portuguese": "Esta é a lei da praga da lepra da vestidura de lã ou de linho, ou do fio urdido, ou do tecido, ou de qualquer coisa de pele, para declarátela limpa ou para declarátela imunda."
+        }
+      ],
+      "notes": [
+        "13 — Leis da lepra na pele e nas vestes."
+      ]
+    },
+    {
+      "n": 14,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Depois, falou o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Esta será a lei do leproso no dia da sua purificação: será trazido ao sacerdote."
+        },
+        {
+          "n": 3,
+          "portuguese": "E o sacerdote sairá fora do arraial, e o examinará; e eis que, se a praga da lepra sarou no leproso,"
+        },
+        {
+          "n": 4,
+          "portuguese": "então, o sacerdote ordenará que, para aquele que se houver de purificar, se tomem duas aves vivas e limpas, e madeira de cedro, e carmesim, e hissopo."
+        },
+        {
+          "n": 5,
+          "portuguese": "Mandará também o sacerdote que se degole uma ave num vaso de barro sobre águas vivas."
+        },
+        {
+          "n": 6,
+          "portuguese": "Então, tomará a ave viva, e a madeira de cedro, e o carmesim, e o hissopo e os molhará, com a ave viva, no sangue da ave que foi degolada sobre as águas vivas."
+        },
+        {
+          "n": 7,
+          "portuguese": "E sobre aquele que se há de purificar da lepra espargirá sete vezes; então, o declarará limpo e soltará a ave viva sobre a face do campo."
+        },
+        {
+          "n": 8,
+          "portuguese": "E aquele que tem de purificar-se lavará as suas vestes, e rapará todo o seu pelo, e se lavará com água; assim, será limpo; depois, entrará no arraial, porém ficará fora da sua tenda sete dias."
+        },
+        {
+          "n": 9,
+          "portuguese": "E será que, ao sétimo dia, rapará todo o seu pelo, a sua cabeça, e a sua barba, e as sobrancelhas dos seus olhos; enfim, rapará todo o seu pelo, e lavará as suas vestes, e banhará a sua carne na água; assim, será limpo."
+        },
+        {
+          "n": 10,
+          "portuguese": "E, ao oitavo dia, tomará dois cordeiros sem defeito, e uma cordeira sem defeito, de um ano, e três décimas de flor de farinha, para oferta de manjares, amassada com azeite, e um logue de azeite."
+        },
+        {
+          "n": 11,
+          "portuguese": "E o sacerdote que faz a purificação apresentará o homem que se há de purificar, com aquelas coisas, perante o SENHOR, à porta da tenda da congregação."
+        },
+        {
+          "n": 12,
+          "portuguese": "E o sacerdote tomará um dos cordeiros e o oferecerá por oferta pela culpa, com o logue de azeite; e os moverá por oferta movida perante o SENHOR."
+        },
+        {
+          "n": 13,
+          "portuguese": "E imolará o cordeiro no lugar onde se imola a oferta pelo pecado e o holocausto, no lugar santo; porque, como a oferta pelo pecado, assim a oferta pela culpa é do sacerdote; coisa santíssima é."
+        },
+        {
+          "n": 14,
+          "portuguese": "E o sacerdote tomará do sangue da oferta pela culpa, e o sacerdote o porá sobre a ponta da orelha direita daquele que se há de purificar, e sobre o polegar da sua mão direita, e sobre o polegar do seu pé direito."
+        },
+        {
+          "n": 15,
+          "portuguese": "Também o sacerdote tomará do logue de azeite e o derramará na palma da sua própria mão esquerda."
+        },
+        {
+          "n": 16,
+          "portuguese": "Então, o sacerdote molhará o seu dedo direito no azeite que está na sua mão esquerda e daquele azeite, com o seu dedo, espargirá sete vezes perante o SENHOR."
+        },
+        {
+          "n": 17,
+          "portuguese": "E o restante do azeite, que está na sua mão, o sacerdote porá sobre a ponta da orelha direita daquele que se há de purificar, e sobre o polegar da sua mão direita, e sobre o polegar do seu pé direito, sobre o sangue da oferta pela culpa."
+        },
+        {
+          "n": 18,
+          "portuguese": "E o restante do azeite que está na mão do sacerdote, o porá sobre a cabeça daquele que se há de purificar; assim, o sacerdote fará por ele expiação perante o SENHOR."
+        },
+        {
+          "n": 19,
+          "portuguese": "Também o sacerdote fará a oferta pelo pecado e fará expiação por aquele que se há de purificar da sua imundícia; e, depois, imolará o holocausto."
+        },
+        {
+          "n": 20,
+          "portuguese": "E o sacerdote oferecerá o holocausto e a oferta de manjares sobre o altar; assim, o sacerdote fará por ele expiação, e será limpo."
+        },
+        {
+          "n": 21,
+          "portuguese": "Porém, se for pobre, e a sua mão não alcançar tanto, então, tomará um cordeiro para oferta pela culpa, por oferta movida, para fazer expiação por ele, e a décima de flor de farinha, amassada com azeite, para oferta de manjares, e um logue de azeite,"
+        },
+        {
+          "n": 22,
+          "portuguese": "e duas rolas ou dois pombinhos, conforme alcançar a sua mão, dos quais um será para oferta pelo pecado, e o outro, para holocausto."
+        },
+        {
+          "n": 23,
+          "portuguese": "E, ao oitavo dia da sua purificação, os trará ao sacerdote, à porta da tenda da congregação, perante o SENHOR."
+        },
+        {
+          "n": 24,
+          "portuguese": "E o sacerdote tomará o cordeiro da oferta pela culpa e o logue de azeite e o sacerdote os moverá por oferta movida perante o SENHOR."
+        },
+        {
+          "n": 25,
+          "portuguese": "Então, imolará o cordeiro da oferta pela culpa, e o sacerdote tomará do sangue da oferta pela culpa, e o porá sobre a ponta da orelha direita daquele que se há de purificar, e sobre o polegar da sua mão direita, e sobre o polegar do seu pé direito."
+        },
+        {
+          "n": 26,
+          "portuguese": "E o sacerdote derramará do azeite na palma da sua própria mão esquerda."
+        },
+        {
+          "n": 27,
+          "portuguese": "Então, o sacerdote, com o seu dedo direito, espargirá do azeite que está na sua mão esquerda, sete vezes perante o SENHOR."
+        },
+        {
+          "n": 28,
+          "portuguese": "Também o sacerdote porá do azeite que está na sua mão sobre a ponta da orelha direita daquele que se há de purificar, e sobre o polegar da sua mão direita, e sobre o polegar do seu pé direito, no lugar do sangue da oferta pela culpa."
+        },
+        {
+          "n": 29,
+          "portuguese": "E o restante do azeite que está na mão do sacerdote porá sobre a cabeça daquele que se há de purificar, para fazer expiação por ele perante o SENHOR."
+        },
+        {
+          "n": 30,
+          "portuguese": "E oferecerá uma das rolas ou um dos pombinhos, conforme alcançar a sua mão,"
+        },
+        {
+          "n": 31,
+          "portuguese": "qual alcançar a sua mão, um para oferta pelo pecado e o outro para holocausto, com a oferta de manjares; assim, o sacerdote fará expiação por aquele que se há de purificar perante o SENHOR."
+        },
+        {
+          "n": 32,
+          "portuguese": "Esta é a lei daquele em quem estiver a praga da lepra, cuja mão não alcançar o bastante para a sua purificação."
+        },
+        {
+          "n": 33,
+          "portuguese": "Falou mais o SENHOR a Moisés e a Arão, dizendo:"
+        },
+        {
+          "n": 34,
+          "portuguese": "Quando tiverdes entrado na terra de Canaã, que vos hei de dar por possessão, e eu puser a praga da lepra em alguma casa da terra da vossa possessão,"
+        },
+        {
+          "n": 35,
+          "portuguese": "então, aquele de quem for a casa virá e o anunciará ao sacerdote, dizendo: Parece-me que há como que praga em minha casa."
+        },
+        {
+          "n": 36,
+          "portuguese": "E o sacerdote ordenará que desocupem a casa, antes que o sacerdote entre para examinar a praga, para que tudo o que há na casa não seja contaminado; e, depois, entrará o sacerdote para examinar a casa."
+        },
+        {
+          "n": 37,
+          "portuguese": "E, examinando a praga, se a praga na parede da casa tiver covinhas verdes ou vermelhas, e parecerem mais fundas do que a parede,"
+        },
+        {
+          "n": 38,
+          "portuguese": "então, o sacerdote sairá da casa para a porta da casa e fará fechar a casa por sete dias."
+        },
+        {
+          "n": 39,
+          "portuguese": "Depois, voltará o sacerdote ao sétimo dia e examinará; e, se a praga se houver estendido nas paredes da casa,"
+        },
+        {
+          "n": 40,
+          "portuguese": "então, o sacerdote ordenará que arranquem as pedras em que estiver a praga e que as lancem fora da cidade, num lugar imundo."
+        },
+        {
+          "n": 41,
+          "portuguese": "E fará raspar a casa por dentro ao redor, e o pó que houverem raspado lançarão fora da cidade, num lugar imundo."
+        },
+        {
+          "n": 42,
+          "portuguese": "Depois, tomarão outras pedras e as porão no lugar das primeiras pedras; e outro barro se tomará, e se rebocará a casa."
+        },
+        {
+          "n": 43,
+          "portuguese": "Porém, se a praga tornar a rebentar na casa, depois de se arrancarem as pedras, e de se raspar a casa, e de se rebocar,"
+        },
+        {
+          "n": 44,
+          "portuguese": "então, o sacerdote entrará, e examinará, e, se a praga na casa se houver estendido, lepra roedora há na casa; imunda está."
+        },
+        {
+          "n": 45,
+          "portuguese": "Portanto, se derribará a casa, as suas pedras, e a sua madeira, como também todo o barro da casa; e se levará tudo para fora da cidade, a um lugar imundo."
+        },
+        {
+          "n": 46,
+          "portuguese": "E o que entrar naquela casa, em qualquer dia em que estiver fechada, será imundo até à tarde."
+        },
+        {
+          "n": 47,
+          "portuguese": "Também o que se deitar naquela casa lavará as suas vestes; e o que comer naquela casa lavará as suas vestes."
+        },
+        {
+          "n": 48,
+          "portuguese": "Porém, tornando o sacerdote a entrar, e examinando, se a praga se não houver estendido na casa, depois que a casa se rebocou, o sacerdote declarará limpa a casa, porque a praga sarou."
+        },
+        {
+          "n": 49,
+          "portuguese": "E, para purificar a casa, tomará duas aves, e madeira de cedro, e carmesim, e hissopo."
+        },
+        {
+          "n": 50,
+          "portuguese": "E degolará uma ave num vaso de barro sobre águas vivas."
+        },
+        {
+          "n": 51,
+          "portuguese": "Então, tomará a madeira de cedro, e o hissopo, e o carmesim, e a ave viva, e os molhará no sangue da ave degolada e nas águas vivas, e espargirá a casa sete vezes."
+        },
+        {
+          "n": 52,
+          "portuguese": "Assim, purificará a casa com o sangue da ave, e com as águas vivas, e com a ave viva, e com a madeira de cedro, e com o hissopo, e com o carmesim."
+        },
+        {
+          "n": 53,
+          "portuguese": "Então, soltará a ave viva para fora da cidade, sobre a face do campo; assim, fará expiação pela casa, e será limpa."
+        },
+        {
+          "n": 54,
+          "portuguese": "Esta é a lei de toda a praga da lepra e da tinha,"
+        },
+        {
+          "n": 55,
+          "portuguese": "e da lepra das vestes, e das casas,"
+        },
+        {
+          "n": 56,
+          "portuguese": "e da inchação, e da pústula, e das manchas lustrosas,"
+        },
+        {
+          "n": 57,
+          "portuguese": "para ensinar em que dia alguma coisa será imunda, e em que dia será limpa. Esta é a lei da lepra."
+        }
+      ],
+      "notes": [
+        "14 — Purificação do leproso; lepra nas casas."
+      ]
+    },
+    {
+      "n": 15,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Moisés e a Arão, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Falai aos filhos de Israel e dizei-lhes: Qualquer homem que tiver fluxo da sua carne será imundo por causa do seu fluxo."
+        },
+        {
+          "n": 3,
+          "portuguese": "Esta, pois, será a sua imundícia por causa do seu fluxo: se a sua carne vaza o seu fluxo ou se a sua carne estanca o seu fluxo, esta é a sua imundícia."
+        },
+        {
+          "n": 4,
+          "portuguese": "Toda a cama em que se deitar o que tiver fluxo será imunda; e toda a coisa sobre o que se assentar será imunda."
+        },
+        {
+          "n": 5,
+          "portuguese": "E qualquer que tocar a sua cama lavará as suas vestes, e se banhará com água, e será imundo até à tarde."
+        },
+        {
+          "n": 6,
+          "portuguese": "E aquele que se assentar sobre aquilo em que se assentou o que tem o fluxo lavará as suas vestes, e se banhará com água, e será imundo até à tarde."
+        },
+        {
+          "n": 7,
+          "portuguese": "Também aquele que tocar a carne do que tem o fluxo lavará as suas vestes, e se banhará com água, e será imundo até à tarde."
+        },
+        {
+          "n": 8,
+          "portuguese": "Quando também o que tem o fluxo cuspir sobre um limpo, então, lavará este as suas vestes, e se banhará com água, e será imundo até à tarde."
+        },
+        {
+          "n": 9,
+          "portuguese": "Também toda a sela em que cavalgar o que tem o fluxo será imunda."
+        },
+        {
+          "n": 10,
+          "portuguese": "E qualquer que tocar em alguma coisa que estiver debaixo dele será imundo até à tarde; e aquele que a levar lavará as suas vestes, e se banhará com água, e será imundo até à tarde."
+        },
+        {
+          "n": 11,
+          "portuguese": "Também todo aquele a quem tocar o que tem o fluxo, sem haver lavado as suas mãos com água, lavará as suas vestes, e se banhará com água, e será imundo até à tarde."
+        },
+        {
+          "n": 12,
+          "portuguese": "E o vaso de barro, que tocar o que tem o fluxo, se quebrará; porém todo vaso de madeira se lavará com água."
+        },
+        {
+          "n": 13,
+          "portuguese": "Quando, pois, o que tem o fluxo estiver limpo do seu fluxo, então, contar-se-ão sete dias para a sua purificação, e lavará as suas vestes, e banhará a sua carne na água viva; assim, será limpo."
+        },
+        {
+          "n": 14,
+          "portuguese": "E, ao oitavo dia, tomará para si duas rolas ou dois pombinhos, e virá perante o SENHOR, à porta da tenda da congregação, e os dará ao sacerdote."
+        },
+        {
+          "n": 15,
+          "portuguese": "E o sacerdote os oferecerá, um para oferta pelo pecado e o outro para holocausto; assim, o sacerdote fará por ele expiação do seu fluxo perante o SENHOR."
+        },
+        {
+          "n": 16,
+          "portuguese": "Também o homem, quando dele sair a semente da cópula, banhará toda a sua carne com água e será imundo até à tarde."
+        },
+        {
+          "n": 17,
+          "portuguese": "Também toda a vestidura, e toda a pele em que houver semente da cópula, se lavará com água e será imunda até à tarde."
+        },
+        {
+          "n": 18,
+          "portuguese": "E, se um homem se deitar com uma mulher, havendo semente da cópula, ambos se banharão com água e serão imundos até à tarde."
+        },
+        {
+          "n": 19,
+          "portuguese": "Mas a mulher, quando tiver fluxo, e o seu fluxo na sua carne for sangue, estará sete dias na sua separação, e qualquer que a tocar será imundo até à tarde."
+        },
+        {
+          "n": 20,
+          "portuguese": "E tudo aquilo sobre o que ela se deitar durante a sua separação será imundo; e tudo sobre o que se assentar será imundo."
+        },
+        {
+          "n": 21,
+          "portuguese": "E qualquer que tocar a sua cama lavará as suas vestes, e se banhará com água, e será imundo até à tarde."
+        },
+        {
+          "n": 22,
+          "portuguese": "E qualquer que tocar alguma coisa sobre o que ela se tiver assentado lavará as suas vestes, e se banhará com água, e será imundo até à tarde."
+        },
+        {
+          "n": 23,
+          "portuguese": "Se também tocar em alguma coisa que estiver sobre a cama ou sobre aquilo em que ela se assentou, será imundo até à tarde."
+        },
+        {
+          "n": 24,
+          "portuguese": "E, se qualquer homem se deitar com ela, e a sua imundícia estiver sobre ele, imundo será por sete dias; também toda a cama sobre que se deitar será imunda."
+        },
+        {
+          "n": 25,
+          "portuguese": "Também a mulher, quando houver fluxo do seu sangue por muitos dias fora do tempo da sua separação, ou quando tiver fluxo de sangue além da sua separação, todos os dias do fluxo da sua imundícia será como nos dias da sua separação; imunda será."
+        },
+        {
+          "n": 26,
+          "portuguese": "Toda a cama sobre que se deitar todos os dias do seu fluxo lhe será como a cama da sua separação; e toda a coisa sobre que se assentar será imunda, conforme a imundícia da sua separação."
+        },
+        {
+          "n": 27,
+          "portuguese": "E qualquer que tocar nessas coisas será imundo; pelo que lavará as suas vestes, e se banhará com água, e será imundo até à tarde."
+        },
+        {
+          "n": 28,
+          "portuguese": "Porém, quando do seu fluxo estiver limpa, então, se contarão sete dias, e depois será limpa."
+        },
+        {
+          "n": 29,
+          "portuguese": "E, ao oitavo dia, tomará consigo duas rolas ou dois pombinhos e os trará ao sacerdote, à porta da tenda da congregação."
+        },
+        {
+          "n": 30,
+          "portuguese": "Então, o sacerdote oferecerá um para oferta pelo pecado e o outro para holocausto; e o sacerdote fará por ela expiação do fluxo da sua imundícia perante o SENHOR."
+        },
+        {
+          "n": 31,
+          "portuguese": "Assim, separareis os filhos de Israel das suas imundícias, para que não morram nas suas imundícias, contaminando a minha habitação, que está no meio deles."
+        },
+        {
+          "n": 32,
+          "portuguese": "Esta é a lei daquele que tem o fluxo e daquele de quem sai a semente da cópula, e que fica por ela imundo;"
+        },
+        {
+          "n": 33,
+          "portuguese": "como também da que está enferma na sua separação, e daquele que tem o seu fluxo, seja homem, seja mulher, e do homem que se deita com a mulher imunda."
+        }
+      ],
+      "notes": [
+        "15 — Fluxos e impurezas corporais."
+      ]
+    },
+    {
+      "n": 16,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E falou o SENHOR a Moisés, depois da morte dos dois filhos de Arão, que chegaram perante a face do SENHOR e morreram."
+        },
+        {
+          "n": 2,
+          "portuguese": "Disse, pois, o SENHOR a Moisés: Dize a Arão, teu irmão, que não entre em todo o tempo no santuário, para dentro do véu, perante o propiciatório que está sobre a arca, para que não morra; porque eu aparecerei na nuvem sobre o propiciatório."
+        },
+        {
+          "n": 3,
+          "portuguese": "Com isto Arão entrará no santuário: com um novilho, para oferta pelo pecado, e um carneiro, para holocausto."
+        },
+        {
+          "n": 4,
+          "portuguese": "Vestirá ele a túnica santa de linho, e terá calções de linho sobre a sua carne, e cingir-se-á com um cinto de linho, e se cobrirá com uma mitra de linho; estas são vestes santas; por isso, banhará a sua carne com água e as vestirá."
+        },
+        {
+          "n": 5,
+          "portuguese": "E da congregação dos filhos de Israel tomará dois bodes, para oferta pelo pecado, e um carneiro, para holocausto."
+        },
+        {
+          "n": 6,
+          "portuguese": "E Arão oferecerá o novilho da oferta pelo pecado, que será por ele, e fará expiação por si e pela sua casa."
+        },
+        {
+          "n": 7,
+          "portuguese": "Depois, tomará os dois bodes e os porá perante o SENHOR, à porta da tenda da congregação."
+        },
+        {
+          "n": 8,
+          "portuguese": "E Arão lançará sortes sobre os dois bodes: uma sorte pelo SENHOR e a outra sorte pelo bode emissário."
+        },
+        {
+          "n": 9,
+          "portuguese": "E Arão fará chegar o bode sobre o qual cair a sorte pelo SENHOR e o oferecerá para oferta pelo pecado."
+        },
+        {
+          "n": 10,
+          "portuguese": "Mas o bode sobre que cair a sorte para ser bode emissário apresentar-se-á vivo perante o SENHOR, para fazer expiação com ele, a fim de enviá-lo ao deserto como bode emissário."
+        },
+        {
+          "n": 11,
+          "portuguese": "E Arão fará chegar o novilho da oferta pelo pecado, que será por ele, e fará expiação por si e pela sua casa; e imolará o novilho da oferta pelo pecado, que é por ele."
+        },
+        {
+          "n": 12,
+          "portuguese": "Tomará também um incensário cheio de brasas de fogo do altar, de diante do SENHOR, e as suas mãos cheias de incenso aromático moído e o trará para dentro do véu."
+        },
+        {
+          "n": 13,
+          "portuguese": "E porá o incenso sobre o fogo perante o SENHOR, para que a nuvem do incenso cubra o propiciatório, que está sobre o Testemunho, para que não morra."
+        },
+        {
+          "n": 14,
+          "portuguese": "E tomará do sangue do novilho e, com o seu dedo, espargirá sobre a face do propiciatório, para a banda do oriente; e perante o propiciatório espargirá sete vezes do sangue, com o seu dedo."
+        },
+        {
+          "n": 15,
+          "portuguese": "Depois, imolará o bode da oferta pelo pecado, que é pelo povo, e trará o seu sangue para dentro do véu; e fará com o seu sangue como fez com o sangue do novilho, e o espargirá sobre o propiciatório e perante a face do propiciatório."
+        },
+        {
+          "n": 16,
+          "portuguese": "Assim, fará expiação pelo santuário por causa das impurezas dos filhos de Israel e das suas transgressões, segundo todos os seus pecados; e, assim, fará para a tenda da congregação, que mora com eles no meio das suas impurezas."
+        },
+        {
+          "n": 17,
+          "portuguese": "E nenhum homem estará na tenda da congregação, quando ele entrar a fazer expiação no santuário, até que ele saia; assim, fará expiação por si mesmo, e pela sua casa, e por toda a congregação de Israel."
+        },
+        {
+          "n": 18,
+          "portuguese": "Então, sairá ao altar, que está perante o SENHOR, e fará expiação por ele; e tomará do sangue do novilho e do sangue do bode e o porá sobre as pontas do altar em redor."
+        },
+        {
+          "n": 19,
+          "portuguese": "E daquele sangue espargirá sobre ele com o seu dedo sete vezes, e o purificará e o santificará das impurezas dos filhos de Israel."
+        },
+        {
+          "n": 20,
+          "portuguese": "Havendo, pois, acabado de fazer expiação pelo santuário, e pela tenda da congregação, e pelo altar, então, fará chegar o bode vivo."
+        },
+        {
+          "n": 21,
+          "portuguese": "E Arão porá ambas as suas mãos sobre a cabeça do bode vivo e sobre ele confessará todas as iniquidades dos filhos de Israel, e todas as suas transgressões, e todos os seus pecados; e os porá sobre a cabeça do bode e enviá-lo-á ao deserto, pela mão de um homem designado para isso."
+        },
+        {
+          "n": 22,
+          "portuguese": "Assim, aquele bode levará sobre si todas as iniquidades deles à terra solitária; e o homem enviará o bode ao deserto."
+        },
+        {
+          "n": 23,
+          "portuguese": "Depois, Arão virá à tenda da congregação, e despirá as vestes de linho, que havia vestido quando entrara no santuário, e ali as deixará."
+        },
+        {
+          "n": 24,
+          "portuguese": "E banhará a sua carne com água no lugar santo, e vestirá as suas vestes; então, sairá, e oferecerá o seu holocausto e o holocausto do povo, e fará expiação por si e pelo povo."
+        },
+        {
+          "n": 25,
+          "portuguese": "Também a gordura da oferta pelo pecado fará perfume sobre o altar."
+        },
+        {
+          "n": 26,
+          "portuguese": "E aquele que houver levado o bode emissário lavará as suas vestes, e banhará a sua carne com água; e, depois, entrará no arraial."
+        },
+        {
+          "n": 27,
+          "portuguese": "Porém o novilho da oferta pelo pecado e o bode da oferta pelo pecado, cujo sangue foi trazido para fazer expiação no santuário, serão levados fora do arraial; e as suas peles, e a sua carne, e o seu esterco queimarão com fogo."
+        },
+        {
+          "n": 28,
+          "portuguese": "E aquele que os queimar lavará as suas vestes, e banhará a sua carne com água; e, depois, entrará no arraial."
+        },
+        {
+          "n": 29,
+          "portuguese": "E isto vos será por estatuto perpétuo: no sétimo mês, aos dez do mês, afligireis a vossa alma e nenhuma obra fareis, nem o natural nem o estrangeiro que peregrina entre vós."
+        },
+        {
+          "n": 30,
+          "portuguese": "Porque, naquele dia, se fará expiação por vós, para purificar-vos; e sereis limpos de todos os vossos pecados perante o SENHOR."
+        },
+        {
+          "n": 31,
+          "portuguese": "É um sábado de descanso para vós, e afligireis a vossa alma; é estatuto perpétuo."
+        },
+        {
+          "n": 32,
+          "portuguese": "E o sacerdote que for ungido e que for sagrado para administrar o sacerdócio no lugar de seu pai fará a expiação, havendo vestido as vestes de linho, as vestes santas."
+        },
+        {
+          "n": 33,
+          "portuguese": "Assim, fará expiação pelo santuário santo, e pela tenda da congregação, e pelo altar; também fará expiação pelos sacerdotes e por todo o povo da congregação."
+        },
+        {
+          "n": 34,
+          "portuguese": "E isto vos será por estatuto perpétuo, para fazer expiação pelos filhos de Israel, por todos os seus pecados, uma vez no ano. E fez Moisés como o SENHOR lhe ordenara."
+        }
+      ],
+      "notes": [
+        "16 — O Dia da Expiação."
+      ]
+    },
+    {
+      "n": 17,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Fala a Arão, e a seus filhos, e a todos os filhos de Israel e dize-lhes: Esta é a palavra que o SENHOR ordenou, dizendo:"
+        },
+        {
+          "n": 3,
+          "portuguese": "Qualquer homem da casa de Israel que degolar boi, ou cordeiro, ou cabra, no arraial ou quem o degolar fora do arraial"
+        },
+        {
+          "n": 4,
+          "portuguese": "e o não trouxer à porta da tenda da congregação, para oferecer oferta ao SENHOR diante do tabernáculo do SENHOR, a esse homem será imputado o sangue; derramou sangue; pelo que esse homem será extirpado do seu povo;"
+        },
+        {
+          "n": 5,
+          "portuguese": "para que os filhos de Israel, trazendo os seus sacrifícios, que sacrificam sobre a face do campo, os tragam ao SENHOR, à porta da tenda da congregação, ao sacerdote, e os ofereçam por ofertas pacíficas ao SENHOR."
+        },
+        {
+          "n": 6,
+          "portuguese": "E o sacerdote espargirá o sangue sobre o altar do SENHOR, à porta da tenda da congregação, e fará perfume da gordura por cheiro suave ao SENHOR."
+        },
+        {
+          "n": 7,
+          "portuguese": "E nunca mais oferecerão os seus sacrifícios aos demônios, após os quais eles se prostituem; isto lhes será por estatuto perpétuo nas suas gerações."
+        },
+        {
+          "n": 8,
+          "portuguese": "Dize-lhes, pois: Qualquer homem da casa de Israel ou dos estrangeiros que peregrinam entre eles que oferecer holocausto ou sacrifício"
+        },
+        {
+          "n": 9,
+          "portuguese": "e o não trouxer à porta da tenda da congregação, para o oferecer ao SENHOR, esse homem será extirpado do seu povo."
+        },
+        {
+          "n": 10,
+          "portuguese": "E qualquer homem da casa de Israel ou dos estrangeiros que peregrinam entre eles que comer algum sangue, contra aquela alma que comer sangue eu porei a minha face e a extirparei do seu povo."
+        },
+        {
+          "n": 11,
+          "portuguese": "Porque a vida da carne está no sangue, pelo que vo-lo tenho dado sobre o altar, para fazer expiação pelas vossas almas; porquanto é o sangue que fará expiação pela alma."
+        },
+        {
+          "n": 12,
+          "portuguese": "Portanto, tenho dito aos filhos de Israel: Nenhuma alma dentre vós comerá sangue, nem o estrangeiro que peregrina entre vós comerá sangue."
+        },
+        {
+          "n": 13,
+          "portuguese": "Também qualquer homem dos filhos de Israel ou dos estrangeiros que peregrinam entre eles que caçar cação ou ave que se come derramará o seu sangue e o cobrirá com pó."
+        },
+        {
+          "n": 14,
+          "portuguese": "Porque a vida de toda a carne é o seu sangue; pelo que tenho dito aos filhos de Israel: Não comereis o sangue de nenhuma carne, porquanto a vida de toda a carne é o seu sangue; qualquer que o comer será extirpado."
+        },
+        {
+          "n": 15,
+          "portuguese": "E qualquer alma que comer carne morta ou dilacerada, seja natural, seja estrangeiro, lavará as suas vestes, e se banhará com água, e será imunda até à tarde; depois, será limpa."
+        },
+        {
+          "n": 16,
+          "portuguese": "Mas, se as não lavar, nem banhar a sua carne, levará sobre si a sua iniquidade."
+        }
+      ],
+      "notes": [
+        "17 — Lugar dos sacrifícios; proibição do sangue."
+      ]
+    },
+    {
+      "n": 18,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Fala aos filhos de Israel e dize-lhes: Eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 3,
+          "portuguese": "Não fareis segundo as obras da terra do Egito, em que habitastes, nem fareis segundo as obras da terra de Canaã, para a qual eu vos levo, nem andareis nos seus estatutos."
+        },
+        {
+          "n": 4,
+          "portuguese": "Fareis segundo os meus juízos e os meus estatutos guardareis, para andardes neles. Eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 5,
+          "portuguese": "Portanto, os meus estatutos e os meus juízos guardareis; os quais, observando-os o homem, viverá por eles. Eu sou o SENHOR."
+        },
+        {
+          "n": 6,
+          "portuguese": "Nenhum homem se chegará a qualquer parenta da sua carne, para descobrir a sua nudez. Eu sou o SENHOR."
+        },
+        {
+          "n": 7,
+          "portuguese": "Não descobrirás a nudez de tua mãe; ela é tua mãe; não descobrirás a sua nudez."
+        },
+        {
+          "n": 8,
+          "portuguese": "Não descobrirás a nudez da mulher de teu pai; é nudez de teu pai."
+        },
+        {
+          "n": 9,
+          "portuguese": "A nudez da tua irmã, filha de teu pai ou filha de tua mãe, nascida em casa ou fora de casa, a sua nudez não descobrirás."
+        },
+        {
+          "n": 10,
+          "portuguese": "A nudez da filha de teu filho ou da filha de tua filha, a sua nudez não descobrirás; porque é tua nudez."
+        },
+        {
+          "n": 11,
+          "portuguese": "A nudez da filha da mulher de teu pai, gerada de teu pai (ela é tua irmã), a sua nudez não descobrirás."
+        },
+        {
+          "n": 12,
+          "portuguese": "A nudez da irmã de teu pai não descobrirás; ela é parenta de teu pai."
+        },
+        {
+          "n": 13,
+          "portuguese": "A nudez da irmã de tua mãe não descobrirás; pois ela é parenta de tua mãe."
+        },
+        {
+          "n": 14,
+          "portuguese": "A nudez do irmão de teu pai não descobrirás; não te chegarás à sua mulher; ela é tua tia."
+        },
+        {
+          "n": 15,
+          "portuguese": "A nudez de tua nora não descobrirás; ela é mulher de teu filho; não descobrirás a sua nudez."
+        },
+        {
+          "n": 16,
+          "portuguese": "A nudez da mulher de teu irmão não descobrirás; é a nudez de teu irmão."
+        },
+        {
+          "n": 17,
+          "portuguese": "A nudez de uma mulher e de sua filha não descobrirás; a filha de seu filho e a filha de sua filha não tomarás, para descobrir a sua nudez; parentas são; maldade é."
+        },
+        {
+          "n": 18,
+          "portuguese": "E uma mulher com sua irmã não tomarás, para ser rival, descobririndo a sua nudez juntas, na sua vida."
+        },
+        {
+          "n": 19,
+          "portuguese": "Também não te chegarás à mulher, durante a separação da sua imundícia, para descobrir a sua nudez."
+        },
+        {
+          "n": 20,
+          "portuguese": "Nem te deitarás com a mulher de teu próximo, para te contaminares com ela."
+        },
+        {
+          "n": 21,
+          "portuguese": "E de teus filhos não darás nenhum para fazer passar pelo fogo a Moloque; e não profanarás o nome de teu Deus. Eu sou o SENHOR."
+        },
+        {
+          "n": 22,
+          "portuguese": "Com homem não te deitarás, como se fosse mulher; abominação é."
+        },
+        {
+          "n": 23,
+          "portuguese": "Nem te deitarás com animal algum, para te contaminares com ele; nem a mulher se porá perante um animal, para ajuntar-se com ele; confusão é."
+        },
+        {
+          "n": 24,
+          "portuguese": "Nessas coisas todas se não contamineis; porque em todas estas coisas se contaminaram as nações que eu lanço fora de diante da vossa face."
+        },
+        {
+          "n": 25,
+          "portuguese": "Pelo que a terra está contaminada; e eu visito sobre ela a sua iniquidade, pelo que a terra vomitará os seus moradores."
+        },
+        {
+          "n": 26,
+          "portuguese": "Porém vós guardareis os meus estatutos e os meus juízos e nenhuma destas abominações fareis, nem o natural nem o estrangeiro que peregrina entre vós;"
+        },
+        {
+          "n": 27,
+          "portuguese": "porque todas estas abominações fizeram os homens desta terra, que nela estavam antes de vós; e a terra está contaminada."
+        },
+        {
+          "n": 28,
+          "portuguese": "Para que a terra vos não vomite, havendo-a vós contaminado, como vomitou a nação que nela estava antes de vós."
+        },
+        {
+          "n": 29,
+          "portuguese": "Portanto, qualquer que fizer alguma destas abominações, as almas que as fizerem serão extirpadas do seu povo."
+        },
+        {
+          "n": 30,
+          "portuguese": "Pelo que guardareis o meu mandamento, não fazendo nenhum dos estatutos abomináveis que se fizeram antes de vós, e não vos contamineis com eles. Eu sou o SENHOR, vosso Deus."
+        }
+      ],
+      "notes": [
+        "18 — Leis da pureza sexual."
+      ]
+    },
+    {
+      "n": 19,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Fala a toda a congregação dos filhos de Israel e dize-lhes: Santos sereis, porque eu, o SENHOR, vosso Deus, sou santo."
+        },
+        {
+          "n": 3,
+          "portuguese": "Cada um temerá a sua mãe e a seu pai e guardará os meus sábados. Eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 4,
+          "portuguese": "Não vos virareis para os ídolos, nem vos fareis deuses de fundição. Eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 5,
+          "portuguese": "E, quando oferecerdes sacrifício de oferta pacífica ao SENHOR, oferecê-lo-eis de maneira que sejais aceitos."
+        },
+        {
+          "n": 6,
+          "portuguese": "No dia em que o oferecerdes, e no dia seguinte, se comerá; mas o que sobejar para o terceiro dia será queimado pelo fogo."
+        },
+        {
+          "n": 7,
+          "portuguese": "E, se alguma coisa dele for comida ao terceiro dia, coisa abominável é; não será aceita."
+        },
+        {
+          "n": 8,
+          "portuguese": "E qualquer que o comer levará a sua iniquidade, porquanto profanou a santidade do SENHOR; pelo que tal alma será extirpada do seu povo."
+        },
+        {
+          "n": 9,
+          "portuguese": "Quando também segardes a sega da vossa terra, o canto do teu campo não segarás totalmente, nem as espigas caídas da tua sega colherás."
+        },
+        {
+          "n": 10,
+          "portuguese": "Semelhantemente, não rabiscarás a tua vinha, nem colherás os bagos caídos da tua vinha; deixá-los-ás ao pobre e ao estrangeiro. Eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 11,
+          "portuguese": "Não furtareis, nem mentireis, nem usareis de falsidade cada um com o seu próximo."
+        },
+        {
+          "n": 12,
+          "portuguese": "Nem jurareis falso pelo meu nome, pois profanaríeis o nome do vosso Deus. Eu sou o SENHOR."
+        },
+        {
+          "n": 13,
+          "portuguese": "Não oprimirás o teu próximo, nem o roubarás; a paga do jornaleiro não ficará contigo até à manhã."
+        },
+        {
+          "n": 14,
+          "portuguese": "Não amaldiçoarás ao surdo, nem porás tropeço diante do cego; mas temerás a teu Deus. Eu sou o SENHOR."
+        },
+        {
+          "n": 15,
+          "portuguese": "Não farás injustiça no juízo; não respeitarás o pobre, nem honrarás o poderoso; com justiça julgarás o teu próximo."
+        },
+        {
+          "n": 16,
+          "portuguese": "Não andarás como mexeriqueiro entre o teu povo; não te porás contra o sangue do teu próximo. Eu sou o SENHOR."
+        },
+        {
+          "n": 17,
+          "portuguese": "Não odiarás a teu irmão no teu coração; não deixarás de repreender o teu próximo e não levarás pecado por causa dele."
+        },
+        {
+          "n": 18,
+          "portuguese": "Não te vingarás, nem guardarás ira contra os filhos do teu povo; mas amarás o teu próximo como a ti mesmo. Eu sou o SENHOR."
+        },
+        {
+          "n": 19,
+          "portuguese": "Os meus estatutos guardareis; entre os teus animais não farás ajuntar-se com os de espécie diversa; no teu campo não semearás semente de mistura; e veste misturada de linho e de lã não te vestirás."
+        },
+        {
+          "n": 20,
+          "portuguese": "E, quando algum homem se deitar com uma mulher, sendo ela escrava desposada com outro homem, e não for resgatada, nem se lhe houver dado liberdade, então, haverá indagação; não morrerão, pois ela não era livre."
+        },
+        {
+          "n": 21,
+          "portuguese": "E ele trará ao SENHOR, à porta da tenda da congregação, um carneiro para oferta pela culpa."
+        },
+        {
+          "n": 22,
+          "portuguese": "E, com o carneiro da oferta pela culpa, o sacerdote fará expiação por ele perante o SENHOR, pelo seu pecado que pecou; e o pecado que pecou lhe será perdoado."
+        },
+        {
+          "n": 23,
+          "portuguese": "Quando também tiverdes entrado na terra e plantardes toda a sorte de árvores frutíferas, os seus frutos tereis como incircuncisos; três anos vos serão como incircuncisos; deles não se comerá."
+        },
+        {
+          "n": 24,
+          "portuguese": "Porém, no quarto ano, todos os seus frutos serão santos, para louvor ao SENHOR."
+        },
+        {
+          "n": 25,
+          "portuguese": "E, no quinto ano, comereis o seu fruto, para que vos faça crescer a sua novidade. Eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 26,
+          "portuguese": "Não comereis coisa alguma com o sangue; não agourareis, nem adivinhareis."
+        },
+        {
+          "n": 27,
+          "portuguese": "Não cortareis o cabelo em redondo, nem danificareis as extremidades da tua barba."
+        },
+        {
+          "n": 28,
+          "portuguese": "Pelos mortos não dareis golpes na vossa carne, nem fareis em vós alguma marca. Eu sou o SENHOR."
+        },
+        {
+          "n": 29,
+          "portuguese": "Não contaminarás a tua filha, fazendo-a prostituir-se; para que a terra não se prostitua e se encha de maldade."
+        },
+        {
+          "n": 30,
+          "portuguese": "Os meus sábados guardareis e o meu santuário reverenciareis. Eu sou o SENHOR."
+        },
+        {
+          "n": 31,
+          "portuguese": "Não vos virareis para os que consultam os espíritos, nem para os feiticeiros; não os busqueis, para vos contaminardes com eles. Eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 32,
+          "portuguese": "Diante das cãs te levantarás, e honrarás a face do ancião, e temerás a teu Deus. Eu sou o SENHOR."
+        },
+        {
+          "n": 33,
+          "portuguese": "E, quando o estrangeiro peregrinar convosco na vossa terra, não o oprimireis."
+        },
+        {
+          "n": 34,
+          "portuguese": "Como o natural entre vós será o estrangeiro que peregrina convosco; amá-lo-eis como a vós mesmos, pois estrangeiros fostes na terra do Egito. Eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 35,
+          "portuguese": "Não cometereis injustiça no juízo, nem na vara, nem no peso, nem na medida."
+        },
+        {
+          "n": 36,
+          "portuguese": "Balanças justas, pesos justos, efa justa e justo him tereis. Eu sou o SENHOR, vosso Deus, que vos tirei da terra do Egito."
+        },
+        {
+          "n": 37,
+          "portuguese": "Guardareis todos os meus estatutos e todos os meus juízos e os cumprireis. Eu sou o SENHOR."
+        }
+      ],
+      "notes": [
+        "19 — Código de santidade."
+      ]
+    },
+    {
+      "n": 20,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Dirás também aos filhos de Israel: Qualquer que, dos filhos de Israel ou dos estrangeiros que peregrinam em Israel, der da sua semente a Moloque, certamente morrerá; o povo da terra o apedrejará com pedras."
+        },
+        {
+          "n": 3,
+          "portuguese": "E eu porei a minha face contra esse homem e o extirparei do meio do seu povo, porquanto deu da sua semente a Moloque, para contaminar o meu santuário e profanar o meu santo nome."
+        },
+        {
+          "n": 4,
+          "portuguese": "E, se o povo da terra de alguma maneira esconder os seus olhos daquele homem que der da sua semente a Moloque, para não o matar,"
+        },
+        {
+          "n": 5,
+          "portuguese": "então, eu porei a minha face contra aquele homem e contra a sua família e o extirparei do meio do seu povo, com todos os que se prostituem após ele, prostituindo-se com Moloque."
+        },
+        {
+          "n": 6,
+          "portuguese": "Quando alguém se virar para os que consultam os espíritos e para os feiticeiros, para se prostituir após eles, eu porei a minha face contra ele e o extirparei do meio do seu povo."
+        },
+        {
+          "n": 7,
+          "portuguese": "Portanto, santificai-vos e sede santos, pois eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 8,
+          "portuguese": "E guardai os meus estatutos e cumpri-os. Eu sou o SENHOR que vos santifica."
+        },
+        {
+          "n": 9,
+          "portuguese": "Quando um homem amaldiçoar a seu pai ou a sua mãe, certamente morrerá; amaldiçoou a seu pai ou a sua mãe; o seu sangue será sobre ele."
+        },
+        {
+          "n": 10,
+          "portuguese": "Também o homem que adulterar com a mulher de outro, havendo adulterado com a mulher do seu próximo, certamente morrerá o adúltero e a adúltera."
+        },
+        {
+          "n": 11,
+          "portuguese": "E o homem que se deitar com a mulher de seu pai descobriu a nudez de seu pai; ambos certamente morrerão; o seu sangue será sobre eles."
+        },
+        {
+          "n": 12,
+          "portuguese": "Semelhantemente, quando um homem se deitar com a sua nora, ambos certamente morrerão; fizeram confusão; o seu sangue será sobre eles."
+        },
+        {
+          "n": 13,
+          "portuguese": "Quando também um homem se deitar com outro homem, como se fosse mulher, ambos fizeram abominação; certamente morrerão; o seu sangue será sobre eles."
+        },
+        {
+          "n": 14,
+          "portuguese": "Quando também um homem tomar uma mulher e a sua mãe, maldade é; a fogo se queimarão ele e elas, para que não haja maldade no meio de vós."
+        },
+        {
+          "n": 15,
+          "portuguese": "Quando também um homem se deitar com um animal, certamente morrerá; e matareis o animal."
+        },
+        {
+          "n": 16,
+          "portuguese": "Também a mulher que se chegar a algum animal, para ajuntar-se com ele, a mulher matarás, e o animal; certamente morrerão; o seu sangue será sobre eles."
+        },
+        {
+          "n": 17,
+          "portuguese": "E, quando um homem tomar a sua irmã, filha de seu pai ou filha de sua mãe, e vir a nudez dela, e ela a sua, vergonha é; pelo que serão extirpados aos olhos dos filhos do seu povo; descobriu a nudez de sua irmã; levará sobre si a sua iniquidade."
+        },
+        {
+          "n": 18,
+          "portuguese": "E, quando um homem se deitar com uma mulher na enfermidade dela e descobrir a sua nudez, descobrindo a sua fonte, e ela descobrir a fonte do seu sangue, ambos serão extirpados do meio do seu povo."
+        },
+        {
+          "n": 19,
+          "portuguese": "Também a nudez da irmã de tua mãe ou da irmã de teu pai não descobrirás; porquanto descobriu a sua parenta, sobre si levarão a sua iniquidade."
+        },
+        {
+          "n": 20,
+          "portuguese": "Quando também um homem se deitar com a sua tia, descobriu a nudez do seu tio; o seu pecado sobre si levarão; sem filhos morrerão."
+        },
+        {
+          "n": 21,
+          "portuguese": "E, quando um homem tomar a mulher de seu irmão, impureza é; descobriu a nudez de seu irmão; sem filhos ficarão."
+        },
+        {
+          "n": 22,
+          "portuguese": "Guardai, pois, todos os meus estatutos e todos os meus juízos e cumpri-os, para que vos não vomite a terra para a qual eu vos levo para nela habitar."
+        },
+        {
+          "n": 23,
+          "portuguese": "E não andeis nos estatutos das nações que eu lanço fora de diante de vós; porque fizeram todas estas coisas; pelo que abominei-as."
+        },
+        {
+          "n": 24,
+          "portuguese": "E a vós vos tenho dito: Em herança possuireis a sua terra, e eu a darei a vós, para a possuirdes, terra que mana leite e mel. Eu sou o SENHOR, vosso Deus, que vos separei dos povos."
+        },
+        {
+          "n": 25,
+          "portuguese": "Fareis, pois, diferença entre os animais limpos e imundos e entre as aves imundas e as limpas; e a vossa alma não fareis abominável por causa dos animais, ou das aves, ou de tudo o que se arrasta sobre a terra, as quais coisas apartei de vós, para as terdes por imundas."
+        },
+        {
+          "n": 26,
+          "portuguese": "E ser-me-eis santos, porque eu, o SENHOR, sou santo e vos separei dos povos, para serdes meus."
+        },
+        {
+          "n": 27,
+          "portuguese": "Quando também algum homem ou mulher for necromante ou feiticeiro, certamente morrerá; com pedras os apedrejarão; o seu sangue será sobre eles."
+        }
+      ],
+      "notes": [
+        "20 — Penas por abominações."
+      ]
+    },
+    {
+      "n": 21,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Depois, disse o SENHOR a Moisés: Fala aos sacerdotes, filhos de Arão, e dize-lhes: O sacerdote não se contaminará por causa de um morto entre o seu povo,"
+        },
+        {
+          "n": 2,
+          "portuguese": "salvo por seu parente mais chegado: por sua mãe, e por seu pai, e por seu filho, e por sua filha, e por seu irmão,"
+        },
+        {
+          "n": 3,
+          "portuguese": "e por sua irmã virgem, chegada a ele, que ainda não teve marido; por ela se contaminará."
+        },
+        {
+          "n": 4,
+          "portuguese": "Não se contaminará como marido entre o seu povo, para se profanar."
+        },
+        {
+          "n": 5,
+          "portuguese": "Não farão calva na sua cabeça, e não raparão as extremidades da sua barba, nem darão golpes na sua carne."
+        },
+        {
+          "n": 6,
+          "portuguese": "Santos serão para seu Deus e não profanarão o nome do seu Deus, porque oferecem as ofertas queimadas do SENHOR, o pão do seu Deus; portanto, serão santos."
+        },
+        {
+          "n": 7,
+          "portuguese": "Não tomarão mulher prostituta ou desonrada, nem tomarão mulher repudiada de seu marido, pois o sacerdote é santo a seu Deus."
+        },
+        {
+          "n": 8,
+          "portuguese": "Portanto, o santificarás, pois ele oferece o pão do teu Deus; santo será para ti, pois eu, o SENHOR que vos santifico, sou santo."
+        },
+        {
+          "n": 9,
+          "portuguese": "E, se a filha de um sacerdote se profanar, prostituindo-se, profana a seu pai; com fogo se queimará."
+        },
+        {
+          "n": 10,
+          "portuguese": "E o que for sumo sacerdote entre seus irmãos, sobre cuja cabeça foi derramado o azeite da unção, e que for sagrado para vestir as vestes, não descobrirá a sua cabeça, nem rasgará as suas vestes."
+        },
+        {
+          "n": 11,
+          "portuguese": "E não se chegará a cadáver algum, nem por seu pai, nem por sua mãe se contaminará."
+        },
+        {
+          "n": 12,
+          "portuguese": "Não sairá do santuário, nem profanará o santuário do seu Deus, pois a coroa do azeite da unção do seu Deus está sobre ele. Eu sou o SENHOR."
+        },
+        {
+          "n": 13,
+          "portuguese": "E ele tomará por mulher uma virgem."
+        },
+        {
+          "n": 14,
+          "portuguese": "Viúva, ou repudiada, ou desonrada, ou prostituta, estas não tomará; mas virgem do seu povo tomará por mulher."
+        },
+        {
+          "n": 15,
+          "portuguese": "E não profanará a sua semente entre o seu povo; porque eu sou o SENHOR que o santifico."
+        },
+        {
+          "n": 16,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 17,
+          "portuguese": "Fala a Arão, dizendo: Ninguém da tua semente, nas suas gerações, em quem houver algum defeito, se chegará a oferecer o pão do seu Deus."
+        },
+        {
+          "n": 18,
+          "portuguese": "Pois nenhum homem em quem houver defeito se chegará: como homem cego, ou coxo, ou de nariz chato, ou de membros demais,"
+        },
+        {
+          "n": 19,
+          "portuguese": "ou homem que tiver o pé quebrado ou a mão quebrada,"
+        },
+        {
+          "n": 20,
+          "portuguese": "ou corcovado, ou anão, ou que tiver belida no olho, ou sarna, ou impigens, ou que tiver testículo quebrado."
+        },
+        {
+          "n": 21,
+          "portuguese": "Nenhum homem da semente de Arão, o sacerdote, em quem houver alguma deformidade, se chegará para oferecer as ofertas queimadas do SENHOR; nele há defeito; não se chegará para oferecer o pão do seu Deus."
+        },
+        {
+          "n": 22,
+          "portuguese": "Ele comerá o pão do seu Deus, tanto das coisas santíssimas como das santas."
+        },
+        {
+          "n": 23,
+          "portuguese": "Porém até ao véu não entrará, nem se chegará ao altar, porquanto há nele defeito, para que não profane os meus santuários; porque eu sou o SENHOR que os santifico."
+        },
+        {
+          "n": 24,
+          "portuguese": "E Moisés falou isso a Arão, e a seus filhos, e a todos os filhos de Israel."
+        }
+      ],
+      "notes": [
+        "21 — Santidade dos sacerdotes."
+      ]
+    },
+    {
+      "n": 22,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Depois, falou o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Dize a Arão e a seus filhos que se separem das coisas santas dos filhos de Israel, que a mim me santificam, para que não profanem o meu santo nome. Eu sou o SENHOR."
+        },
+        {
+          "n": 3,
+          "portuguese": "Dize-lhes: Todo homem, da vossa semente nas vossas gerações, que, tendo sobre si a sua imundícia, se chegar às coisas santas que os filhos de Israel santificam ao SENHOR, aquela alma será extirpada de diante da minha face. Eu sou o SENHOR."
+        },
+        {
+          "n": 4,
+          "portuguese": "Nenhum homem da semente de Arão que for leproso ou tiver fluxo comerá das coisas santas, até que se purifique; como também o que tocar alguma coisa imunda de cadáver, ou aquele de quem sair a semente da cópula,"
+        },
+        {
+          "n": 5,
+          "portuguese": "ou aquele que tocar algum réptil, pelo qual se fez imundo, ou algum homem, pelo qual se fez imundo, seja qual for a sua imundícia;"
+        },
+        {
+          "n": 6,
+          "portuguese": "o homem que a tocar será imundo até à tarde e não comerá das coisas santas, mas banhará a sua carne com água."
+        },
+        {
+          "n": 7,
+          "portuguese": "E, posto o sol, então, será limpo e, depois, comerá das coisas santas; porque este é o seu pão."
+        },
+        {
+          "n": 8,
+          "portuguese": "O animal que morreu por si ou foi dilacerado não comerá, para se não contaminar com ele. Eu sou o SENHOR."
+        },
+        {
+          "n": 9,
+          "portuguese": "Guardarão, pois, o meu mandamento, para que, por isso, não levem pecado e nele morram, havendo-o profanado. Eu sou o SENHOR que os santifico."
+        },
+        {
+          "n": 10,
+          "portuguese": "Também nenhum estranho comerá das coisas santas; o hóspede do sacerdote, nem o jornaleiro, comerá das coisas santas."
+        },
+        {
+          "n": 11,
+          "portuguese": "Mas, quando o sacerdote comprar alguma alma com o seu dinheiro, aquela comerá delas, e o nascido na sua casa; estes comerão do seu pão."
+        },
+        {
+          "n": 12,
+          "portuguese": "E, se a filha de um sacerdote se casar com homem estranho, ela não comerá da oferta alçada das coisas santas."
+        },
+        {
+          "n": 13,
+          "portuguese": "Mas, quando a filha do sacerdote for viúva ou repudiada, e não tiver filhos, e se houver tornado à casa de seu pai, como na sua mocidade, do pão de seu pai comerá; mas nenhum estranho comerá dele."
+        },
+        {
+          "n": 14,
+          "portuguese": "E, quando alguém, por erro, comer a coisa santa, então, sobre ela acrescentará a sua quinta parte e a dará ao sacerdote com a coisa santa."
+        },
+        {
+          "n": 15,
+          "portuguese": "Assim, não profanarão as coisas santas dos filhos de Israel, que oferecem ao SENHOR,"
+        },
+        {
+          "n": 16,
+          "portuguese": "nem os farão levar a iniquidade da culpa, comendo as suas coisas santas; porque eu sou o SENHOR que os santifico."
+        },
+        {
+          "n": 17,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 18,
+          "portuguese": "Fala a Arão, e a seus filhos, e a todos os filhos de Israel e dize-lhes: Qualquer que, da casa de Israel ou dos estrangeiros em Israel, oferecer a sua oferta, quer dos seus votos, quer das suas ofertas voluntárias, que oferecerem ao SENHOR em holocausto,"
+        },
+        {
+          "n": 19,
+          "portuguese": "para que seja aceitável, oferecerá macho sem defeito, das vacas, dos cordeiros ou das cabras."
+        },
+        {
+          "n": 20,
+          "portuguese": "Nenhuma coisa em que haja defeito oferecereis, porque não será aceita a vosso favor."
+        },
+        {
+          "n": 21,
+          "portuguese": "E, quando alguém oferecer sacrifício de oferta pacífica ao SENHOR, separando dos bois ou das ovelhas um voto ou oferta voluntária, sem defeito será, para que seja aceitável; nenhum defeito haverá nele."
+        },
+        {
+          "n": 22,
+          "portuguese": "O cego, ou quebrado, ou aleijado, ou ulceroso, ou sarnoso, ou cheio de impigens, estes não oferecereis ao SENHOR e deles não poreis oferta queimada ao SENHOR sobre o altar."
+        },
+        {
+          "n": 23,
+          "portuguese": "Porém boi ou gado miúdo, desproporcionados ou anões, farás oferta voluntária; mas para voto não serão aceitos."
+        },
+        {
+          "n": 24,
+          "portuguese": "O que tiver os testículos macerados, ou esmagados, ou arrancados, ou cortados, não oferecerás ao SENHOR e na vossa terra o não fareis."
+        },
+        {
+          "n": 25,
+          "portuguese": "Também da mão do estrangeiro nenhum alimento oferecereis ao vosso Deus de todas estas coisas, pois a sua corrupção está nelas; há nelas defeito; não serão aceitas a vosso favor."
+        },
+        {
+          "n": 26,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 27,
+          "portuguese": "Quando um boi, ou cordeiro, ou cabra nascer, sete dias estará debaixo de sua mãe; mas, desde o dia oitavo em diante, será aceito por oferta queimada ao SENHOR."
+        },
+        {
+          "n": 28,
+          "portuguese": "Também o boi ou gado miúdo, a ele e a seu filho, não degolareis ambos num dia."
+        },
+        {
+          "n": 29,
+          "portuguese": "E, quando oferecerdes ao SENHOR sacrifício de ação de graças, o oferecereis de maneira que sejais aceitos."
+        },
+        {
+          "n": 30,
+          "portuguese": "No mesmo dia se comerá; nada deixareis ficar até à manhã. Eu sou o SENHOR."
+        },
+        {
+          "n": 31,
+          "portuguese": "Pelo que guardareis os meus mandamentos e os cumprireis. Eu sou o SENHOR."
+        },
+        {
+          "n": 32,
+          "portuguese": "Nem profanareis o meu santo nome, mas serei santificado no meio dos filhos de Israel. Eu sou o SENHOR que vos santifico,"
+        },
+        {
+          "n": 33,
+          "portuguese": "que vos tirei da terra do Egito, para vos ser a vós por Deus. Eu sou o SENHOR."
+        }
+      ],
+      "notes": [
+        "22 — Coisas santas; animais sem defeito."
+      ]
+    },
+    {
+      "n": 23,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E falou o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Fala aos filhos de Israel e dize-lhes: As festas solenes do SENHOR, que convocareis, serão santas convocações; estas são as minhas festas solenes."
+        },
+        {
+          "n": 3,
+          "portuguese": "Seis dias se trabalhará, mas o sétimo dia será o sábado do descanso, santa convocação; nenhuma obra fareis; sábado do SENHOR é em todas as vossas habitações."
+        },
+        {
+          "n": 4,
+          "portuguese": "Estas são as festas solenes do SENHOR, as santas convocações, que convocareis no seu tempo determinado:"
+        },
+        {
+          "n": 5,
+          "portuguese": "No mês primeiro, aos catorze do mês, pela tarde, é a Páscoa do SENHOR."
+        },
+        {
+          "n": 6,
+          "portuguese": "E aos quinze dias deste mês é a Festa dos Pães Asmos do SENHOR; sete dias comereis pães asmos."
+        },
+        {
+          "n": 7,
+          "portuguese": "No primeiro dia, tereis santa convocação; nenhuma obra servil fareis."
+        },
+        {
+          "n": 8,
+          "portuguese": "Mas sete dias oferecereis oferta queimada ao SENHOR; ao sétimo dia, haverá santa convocação; nenhuma obra servil fareis."
+        },
+        {
+          "n": 9,
+          "portuguese": "E falou o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 10,
+          "portuguese": "Fala aos filhos de Israel e dize-lhes: Quando houverdes entrado na terra, que vos hei de dar, e segardes a sua sega, então, trareis um molho das primícias da vossa sega ao sacerdote."
+        },
+        {
+          "n": 11,
+          "portuguese": "E ele moverá o molho perante o SENHOR, para que sejais aceitos; no dia seguinte ao sábado, o sacerdote o moverá."
+        },
+        {
+          "n": 12,
+          "portuguese": "E, no dia em que moverdes o molho, oferecereis um cordeiro sem defeito, de um ano, em holocausto ao SENHOR."
+        },
+        {
+          "n": 13,
+          "portuguese": "E a sua oferta de manjares serão duas décimas de flor de farinha, amassada com azeite, para oferta queimada em cheiro suave ao SENHOR; e a sua oferta de bebida será de vinho, a quarta parte de um him."
+        },
+        {
+          "n": 14,
+          "portuguese": "E pão, nem trigo tostado, nem espigas verdes não comereis, até ao mesmo dia em que trouxerdes a oferta do vosso Deus; estatuto perpétuo é pelas vossas gerações, em todas as vossas habitações."
+        },
+        {
+          "n": 15,
+          "portuguese": "Depois, para vós contareis desde o dia seguinte ao sábado, desde o dia em que trouxerdes o molho da oferta movida; sete semanas inteiras serão."
+        },
+        {
+          "n": 16,
+          "portuguese": "Até ao dia seguinte ao sétimo sábado, contareis cinquenta dias; então, oferecereis nova oferta de manjares ao SENHOR."
+        },
+        {
+          "n": 17,
+          "portuguese": "Das vossas habitações trareis dois pães de movimento; de duas décimas de flor de farinha serão, levedados se cozerão; primícias são ao SENHOR."
+        },
+        {
+          "n": 18,
+          "portuguese": "Então, com o pão, oferecereis sete cordeiros sem defeito, de um ano, e um novilho, e dois carneiros; holocausto serão ao SENHOR, com a sua oferta de manjares e com as suas ofertas de bebida, por oferta queimada de cheiro suave ao SENHOR."
+        },
+        {
+          "n": 19,
+          "portuguese": "Também oferecereis um bode para oferta pelo pecado e dois cordeiros de um ano para sacrifício de oferta pacífica."
+        },
+        {
+          "n": 20,
+          "portuguese": "Então, o sacerdote os moverá com o pão das primícias por oferta movida perante o SENHOR, com os dois cordeiros; coisa santa do SENHOR serão para o sacerdote."
+        },
+        {
+          "n": 21,
+          "portuguese": "E, naquele mesmo dia, se apregoará que tereis santa convocação; nenhuma obra servil fareis; estatuto perpétuo é em todas as vossas habitações pelas vossas gerações."
+        },
+        {
+          "n": 22,
+          "portuguese": "Quando também segardes a sega da vossa terra, não acabarás de segar o canto do teu campo, nem colherás as espigas caídas da tua sega; para o pobre e para o estrangeiro as deixarás. Eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 23,
+          "portuguese": "E falou o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 24,
+          "portuguese": "Fala aos filhos de Israel, dizendo: No mês sétimo, ao primeiro do mês, tereis descanso, memória de jubilação, santa convocação."
+        },
+        {
+          "n": 25,
+          "portuguese": "Nenhuma obra servil fareis, mas oferecereis oferta queimada ao SENHOR."
+        },
+        {
+          "n": 26,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 27,
+          "portuguese": "Mas, aos dez deste mês sétimo, será o Dia da Expiação; tereis santa convocação e afligireis a vossa alma; e oferecereis oferta queimada ao SENHOR."
+        },
+        {
+          "n": 28,
+          "portuguese": "E, naquele mesmo dia, nenhuma obra fareis, porque é o Dia da Expiação, para fazer expiação por vós perante o SENHOR, vosso Deus."
+        },
+        {
+          "n": 29,
+          "portuguese": "Porque toda a alma que se não afligir nesse mesmo dia será extirpada do seu povo."
+        },
+        {
+          "n": 30,
+          "portuguese": "Também toda a alma que naquele mesmo dia fizer alguma obra, eu a destruirei do meio do seu povo."
+        },
+        {
+          "n": 31,
+          "portuguese": "Nenhuma obra fareis; estatuto perpétuo é pelas vossas gerações, em todas as vossas habitações."
+        },
+        {
+          "n": 32,
+          "portuguese": "Sábado de descanso vos será; então, afligireis a vossa alma; aos nove do mês, à tarde, de uma tarde a outra tarde, celebrareis o vosso sábado."
+        },
+        {
+          "n": 33,
+          "portuguese": "E falou o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 34,
+          "portuguese": "Fala aos filhos de Israel, dizendo: Aos quinze dias deste mês sétimo, será a Festa das Cabanas ao SENHOR, por sete dias."
+        },
+        {
+          "n": 35,
+          "portuguese": "Ao primeiro dia, haverá santa convocação; nenhuma obra servil fareis."
+        },
+        {
+          "n": 36,
+          "portuguese": "Sete dias oferecereis ofertas queimadas ao SENHOR; ao oitavo dia, tereis santa convocação e oferecereis ofertas queimadas ao SENHOR; dia de proibição é, nenhuma obra servil fareis."
+        },
+        {
+          "n": 37,
+          "portuguese": "Estas são as festas solenes do SENHOR, que apregoareis para santas convocações, para oferecer ao SENHOR oferta queimada, holocausto e oferta de manjares, sacrifício e ofertas de bebida, cada qual em seu dia respectivo,"
+        },
+        {
+          "n": 38,
+          "portuguese": "além dos sábados do SENHOR, e além dos vossos dons, e além de todos os vossos votos, e além de todas as vossas ofertas voluntárias que dareis ao SENHOR."
+        },
+        {
+          "n": 39,
+          "portuguese": "Porém, aos quinze dias do mês sétimo, quando tiverdes recolhido a novidade da terra, celebrareis a festa do SENHOR por sete dias; ao primeiro dia e também ao oitavo dia, haverá descanso."
+        },
+        {
+          "n": 40,
+          "portuguese": "E, ao primeiro dia, tomareis para vós ramos de formosas árvores, ramos de palmas, ramos de árvores espessas e salgueiros de ribeiras; e vos alegrareis perante o SENHOR, vosso Deus, por sete dias."
+        },
+        {
+          "n": 41,
+          "portuguese": "E celebrareis esta festa ao SENHOR, por sete dias cada ano; estatuto perpétuo é pelas vossas gerações; no mês sétimo, a celebrareis."
+        },
+        {
+          "n": 42,
+          "portuguese": "Sete dias habitareis em cabanas; todos os naturais em Israel habitarão em cabanas;"
+        },
+        {
+          "n": 43,
+          "portuguese": "para que saibam as vossas gerações que eu fiz habitar em cabanas os filhos de Israel, quando os tirei da terra do Egito. Eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 44,
+          "portuguese": "Assim, anunciou Moisés as festas solenes do SENHOR aos filhos de Israel."
+        }
+      ],
+      "notes": [
+        "23 — As festas solenes do SENHOR."
+      ]
+    },
+    {
+      "n": 24,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E falou o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Ordena aos filhos de Israel que te tragam azeite puro de oliveira, batido, para o candeeiro, para acender as lâmpadas continuamente."
+        },
+        {
+          "n": 3,
+          "portuguese": "Arão as porá em ordem perante o SENHOR continuamente, desde a tarde até à manhã, fora do véu do Testemunho, na tenda da congregação; estatuto perpétuo é pelas vossas gerações."
+        },
+        {
+          "n": 4,
+          "portuguese": "Sobre o castiçal puro porá em ordem as lâmpadas perante o SENHOR continuamente."
+        },
+        {
+          "n": 5,
+          "portuguese": "Também tomarás da flor de farinha e dela cozerás doze bolos; cada bolo será de duas décimas."
+        },
+        {
+          "n": 6,
+          "portuguese": "E os porás em duas fileiras, seis em cada fileira, sobre a mesa pura, perante o SENHOR."
+        },
+        {
+          "n": 7,
+          "portuguese": "E sobre cada fileira porás incenso puro, que será, para o pão, por oferta memorial; oferta queimada é ao SENHOR."
+        },
+        {
+          "n": 8,
+          "portuguese": "Em cada dia de sábado, isto se porá em ordem perante o SENHOR continuamente, pelos filhos de Israel, por concerto perpétuo."
+        },
+        {
+          "n": 9,
+          "portuguese": "E será de Arão e de seus filhos, os quais o comerão no lugar santo; porque coisa santíssima é para eles, das ofertas queimadas do SENHOR, por estatuto perpétuo."
+        },
+        {
+          "n": 10,
+          "portuguese": "E saiu o filho de uma mulher israelita (este filho era também de um homem egípcio) no meio dos filhos de Israel; e o filho da israelita e um homem israelita contenderam no arraial."
+        },
+        {
+          "n": 11,
+          "portuguese": "Então, o filho da mulher israelita blasfemou o Nome e amaldiçoou; pelo que o trouxeram a Moisés. (E o nome de sua mãe era Selomite, filha de Dibri, da tribo de Dã.)"
+        },
+        {
+          "n": 12,
+          "portuguese": "E o meteram na cadeia, até que se lhes fizesse declaração pela boca do SENHOR."
+        },
+        {
+          "n": 13,
+          "portuguese": "E falou o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 14,
+          "portuguese": "Tira para fora do arraial o que blasfemou; e todos os que o ouviram porão as mãos sobre a sua cabeça, e toda a congregação o apedrejará."
+        },
+        {
+          "n": 15,
+          "portuguese": "E aos filhos de Israel falarás, dizendo: Qualquer que amaldiçoar o seu Deus levará sobre si o seu pecado."
+        },
+        {
+          "n": 16,
+          "portuguese": "E aquele que blasfemar o nome do SENHOR certamente morrerá; toda a congregação certamente o apedrejará; assim o estrangeiro como o natural, blasfemando o nome do SENHOR, será morto."
+        },
+        {
+          "n": 17,
+          "portuguese": "E, quando alguém ferir mortalmente a alguma alma de homem, certamente morrerá."
+        },
+        {
+          "n": 18,
+          "portuguese": "Mas o que ferir um animal restitui-lo-á: alma por alma."
+        },
+        {
+          "n": 19,
+          "portuguese": "Também quando alguém desfigurar o seu próximo, como ele fez, assim lhe será feito:"
+        },
+        {
+          "n": 20,
+          "portuguese": "quebradura por quebradura, olho por olho, dente por dente; como ele tiver desfigurado a algum homem, assim se lhe fará."
+        },
+        {
+          "n": 21,
+          "portuguese": "Quem, pois, matar um animal restitui-lo-á; mas quem matar um homem será morto."
+        },
+        {
+          "n": 22,
+          "portuguese": "Uma mesma lei tereis: assim será o estrangeiro como o natural; pois eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 23,
+          "portuguese": "E falou Moisés aos filhos de Israel, e o levaram para fora do arraial, e o apedrejaram com pedras; e fizeram os filhos de Israel como o SENHOR ordenara a Moisés."
+        }
+      ],
+      "notes": [
+        "24 — Lâmpadas; pães da proposição; blasfêmia."
+      ]
+    },
+    {
+      "n": 25,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Moisés no monte Sinai, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Fala aos filhos de Israel e dize-lhes: Quando tiverdes entrado na terra que eu vos darei, então a terra descansará um sábado ao SENHOR."
+        },
+        {
+          "n": 3,
+          "portuguese": "Seis anos semearás a tua terra, e seis anos podarás a tua vinha, e colherás o seu produto."
+        },
+        {
+          "n": 4,
+          "portuguese": "Porém, ao sétimo ano, haverá sábado de descanso para a terra, um sábado ao SENHOR; não semearás o teu campo, nem podarás a tua vinha."
+        },
+        {
+          "n": 5,
+          "portuguese": "O que nascer de si mesmo da tua sega não segarás, e as uvas da tua separação não vindimarás; ano de descanso será para a terra."
+        },
+        {
+          "n": 6,
+          "portuguese": "Mas o sábado da terra vos será para alimento: a ti, e ao teu servo, e à tua serva, e ao teu jornaleiro, e ao estrangeiro que peregrina contigo,"
+        },
+        {
+          "n": 7,
+          "portuguese": "e ao teu gado, e aos animais que estão na tua terra; todo o seu produto será para comer."
+        },
+        {
+          "n": 8,
+          "portuguese": "Também contarás sete semanas de anos, sete vezes sete anos, de maneira que os dias das sete semanas de anos te sejam quarenta e nove anos."
+        },
+        {
+          "n": 9,
+          "portuguese": "Então, no mês sétimo, aos dez do mês, farás passar a trombeta do jubileu; no Dia da Expiação fareis passar a trombeta por toda a vossa terra."
+        },
+        {
+          "n": 10,
+          "portuguese": "E santificareis o ano quinquagésimo e apregoareis liberdade na terra a todos os seus moradores; ano de jubileu vos será, e tornareis cada um à sua possessão e cada um à sua família."
+        },
+        {
+          "n": 11,
+          "portuguese": "O ano quinquagésimo vos será jubileu; não semeareis, nem segareis o que nele nascer de si mesmo, nem nele vindimareis as uvas das separações."
+        },
+        {
+          "n": 12,
+          "portuguese": "Porque jubileu é; santo vos será; a novidade do campo comereis."
+        },
+        {
+          "n": 13,
+          "portuguese": "Neste Ano do Jubileu tornareis cada um à sua possessão."
+        },
+        {
+          "n": 14,
+          "portuguese": "E, quando venderdes alguma coisa ao vosso próximo, ou a comprardes da mão do vosso próximo, ninguém oprima a seu irmão."
+        },
+        {
+          "n": 15,
+          "portuguese": "Conforme o número dos anos desde o jubileu comprarás ao teu próximo; e, conforme o número dos anos das novidades, ele te venderá."
+        },
+        {
+          "n": 16,
+          "portuguese": "Conforme a multidão dos anos aumentarás o seu preço, e conforme a diminuição dos anos diminuirás o seu preço; porque conforme o número das novidades é que ele te vende."
+        },
+        {
+          "n": 17,
+          "portuguese": "Ninguém, pois, oprima ao seu próximo; mas terás temor do teu Deus; porque eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 18,
+          "portuguese": "Pelo que fareis os meus estatutos, e guardareis os meus juízos, e os cumprireis; assim habitareis na terra seguros."
+        },
+        {
+          "n": 19,
+          "portuguese": "E a terra dará o seu fruto, e comereis a fartar, e nela habitareis seguros."
+        },
+        {
+          "n": 20,
+          "portuguese": "E, se disserdes: Que comeremos no ano sétimo? Eis que não havemos de semear, nem colher o nosso produto;"
+        },
+        {
+          "n": 21,
+          "portuguese": "então eu vos mandarei a minha bênção no sexto ano, para que dê fruto por três anos,"
+        },
+        {
+          "n": 22,
+          "portuguese": "e no oitavo ano semeareis e comereis da colheita velha; até ao ano nono, até que venha a sua novidade, comereis a velha."
+        },
+        {
+          "n": 23,
+          "portuguese": "Também a terra não se venderá em perpetuidade, porque a terra é minha; pois vós sois estrangeiros e peregrinos comigo."
+        },
+        {
+          "n": 24,
+          "portuguese": "Pelo que, em toda a terra da vossa possessão, dareis resgate à terra."
+        },
+        {
+          "n": 25,
+          "portuguese": "Quando teu irmão empobrecer e vender alguma porção da sua possessão, então virá o seu remidor, seu parente, e resgatará o que vendeu seu irmão."
+        },
+        {
+          "n": 26,
+          "portuguese": "E, se alguém não tiver remidor, porém a sua mão alcançar e achar quanto basta para o seu resgate,"
+        },
+        {
+          "n": 27,
+          "portuguese": "então contará os anos da sua venda, e o que ficar restituirá ao homem a quem a vendeu, e tornará à sua possessão."
+        },
+        {
+          "n": 28,
+          "portuguese": "Mas, se a sua mão não alcançar o que basta para lhe restituir, então o que vendeu ficará na mão do comprador até ao Ano do Jubileu; e, no Ano do Jubileu, sairá, e ele tornará à sua possessão."
+        },
+        {
+          "n": 29,
+          "portuguese": "Quando também alguém vender uma casa de moradia em cidade murada, então a poderá resgatar até que se cumpra o ano da sua venda; durante um ano inteiro será o seu prazo de resgate."
+        },
+        {
+          "n": 30,
+          "portuguese": "Porém, se, cumprindo-se-lhe um ano inteiro, ainda não for resgatada, então a casa que estiver na cidade murada em perpetuidade ficará ao que a comprou, nas suas gerações; não sairá no jubileu."
+        },
+        {
+          "n": 31,
+          "portuguese": "Mas as casas das aldeias que não têm muro ao redor serão consideradas como campo da terra; terão estas direito de resgate e sairão no jubileu."
+        },
+        {
+          "n": 32,
+          "portuguese": "Já quanto às cidades dos levitas e às casas das cidades da sua possessão, direito perpétuo de resgate terão os levitas."
+        },
+        {
+          "n": 33,
+          "portuguese": "E, havendo quem, dos levitas, resgatar, então a casa vendida e a cidade da sua possessão sairão no jubileu; porque as casas das cidades dos levitas são a sua possessão no meio dos filhos de Israel."
+        },
+        {
+          "n": 34,
+          "portuguese": "Mas o campo do arrabalde das suas cidades não se venderá, porque lhes é possessão perpétua."
+        },
+        {
+          "n": 35,
+          "portuguese": "Também, quando teu irmão empobrecer, e a sua mão vacilar contigo, então o sustentarás; estrangeiro ou peregrino viverá contigo."
+        },
+        {
+          "n": 36,
+          "portuguese": "Não tomarás dele usura nem ganho; mas temerás o teu Deus, para que teu irmão viva contigo."
+        },
+        {
+          "n": 37,
+          "portuguese": "O teu dinheiro não lhe darás com usura, nem de alimentos lhe darás por ganância."
+        },
+        {
+          "n": 38,
+          "portuguese": "Eu sou o SENHOR, vosso Deus, que vos tirei da terra do Egito, para vos dar a terra de Canaã, para vos ser por Deus."
+        },
+        {
+          "n": 39,
+          "portuguese": "Quando também teu irmão empobrecer, estando ele contigo, e se vender a ti, não o farás servir como escravo."
+        },
+        {
+          "n": 40,
+          "portuguese": "Como jornaleiro, como peregrino estará contigo; até ao Ano do Jubileu te servirá."
+        },
+        {
+          "n": 41,
+          "portuguese": "Então sairá de ti, ele e seus filhos com ele, e tornará à sua família, e à possessão de seus pais voltará."
+        },
+        {
+          "n": 42,
+          "portuguese": "Porque meus servos são eles, que eu tirei da terra do Egito; não serão vendidos como se vendem os escravos."
+        },
+        {
+          "n": 43,
+          "portuguese": "Não te assenhorearás dele com rigor, mas do teu Deus terás temor."
+        },
+        {
+          "n": 44,
+          "portuguese": "E, quanto a teu escravo e a tua escrava que tiveres, serão do povo que está ao redor de vós; deles comprareis escravos e escravas."
+        },
+        {
+          "n": 45,
+          "portuguese": "Também os comprareis dos filhos dos forasteiros que peregrinam entre vós, deles e da sua família que estiverem convosco, que tiverem gerado na vossa terra; e vos serão por possessão."
+        },
+        {
+          "n": 46,
+          "portuguese": "E possuí-los-eis por herança para vossos filhos depois de vós, para herdarem a possessão; perpetuamente os fareis servir; mas sobre vossos irmãos, os filhos de Israel, não vos assenhoreareis cada um sobre o seu irmão com rigor."
+        },
+        {
+          "n": 47,
+          "portuguese": "Quando também o estrangeiro ou o forasteiro que está contigo lograr riquezas, e teu irmão, que está com ele, empobrecer e se vender ao estrangeiro ou forasteiro que está contigo, ou à geração da linhagem do estrangeiro,"
+        },
+        {
+          "n": 48,
+          "portuguese": "depois que se houver vendido, haverá resgate para ele; um de seus irmãos o resgatará,"
+        },
+        {
+          "n": 49,
+          "portuguese": "ou seu tio, ou o filho de seu tio o resgatará, ou algum dos seus parentes, da sua família, o resgatará; ou, se a sua mão alcançar, se resgatará a si mesmo."
+        },
+        {
+          "n": 50,
+          "portuguese": "E fará conta com aquele que o comprou, desde o ano em que se vendeu a ele até ao Ano do Jubileu; e o preço da sua venda será conforme o número dos anos; conforme os dias de um jornaleiro estará com ele."
+        },
+        {
+          "n": 51,
+          "portuguese": "Se ainda muitos anos faltarem, conforme eles restituirá, do dinheiro do seu preço, o seu resgate."
+        },
+        {
+          "n": 52,
+          "portuguese": "E, se faltarem poucos anos até ao Ano do Jubileu, então fará conta com ele; segundo os seus anos restituirá o seu resgate."
+        },
+        {
+          "n": 53,
+          "portuguese": "Como jornaleiro de ano em ano estará com ele; não se assenhoreará dele com rigor perante os teus olhos."
+        },
+        {
+          "n": 54,
+          "portuguese": "E, se se não resgatar nestes anos, no Ano do Jubileu sairá, ele e seus filhos com ele."
+        },
+        {
+          "n": 55,
+          "portuguese": "Porque os filhos de Israel me são servos; meus servos são eles, que tirei da terra do Egito. Eu sou o SENHOR, vosso Deus."
+        }
+      ],
+      "notes": [
+        "25 — Ano sabático e jubileu."
+      ]
+    },
+    {
+      "n": 26,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Não fareis para vós ídolos, nem escultura, nem coluna vos levantareis, nem pedra figurada poreis na vossa terra, para vos inclinardes a ela; porque eu sou o SENHOR, vosso Deus."
+        },
+        {
+          "n": 2,
+          "portuguese": "Os meus sábados guardareis e o meu santuário reverenciareis. Eu sou o SENHOR."
+        },
+        {
+          "n": 3,
+          "portuguese": "Se andardes nos meus estatutos, e guardardes os meus mandamentos, e os cumprirdes,"
+        },
+        {
+          "n": 4,
+          "portuguese": "então eu vos darei as chuvas a seu tempo, e a terra dará a sua novidade, e as árvores do campo darão o seu fruto."
+        },
+        {
+          "n": 5,
+          "portuguese": "E a vossa debulha alcançará a vindima, e a vindima alcançará a sementeira; e comereis o vosso pão a fartar e habitareis seguros na vossa terra."
+        },
+        {
+          "n": 6,
+          "portuguese": "Também darei paz na terra, e dormireis seguros, e não haverá quem vos espante; e farei cessar os animais nocivos da terra, e pela vossa terra não passará espada."
+        },
+        {
+          "n": 7,
+          "portuguese": "E perseguireis os vossos inimigos, e cairão à espada diante de vós."
+        },
+        {
+          "n": 8,
+          "portuguese": "Cinco de vós perseguirão a um cento, e cem de vós perseguirão a um milhar; e os vossos inimigos cairão à espada diante de vós."
+        },
+        {
+          "n": 9,
+          "portuguese": "E para vós olharei, e vos farei frutificar, e vos multiplicarei, e confirmarei o meu concerto convosco."
+        },
+        {
+          "n": 10,
+          "portuguese": "E comereis o velho da colheita velha e tirareis fora o velho por causa do novo."
+        },
+        {
+          "n": 11,
+          "portuguese": "E porei o meu tabernáculo no meio de vós, e a minha alma não vos abominará."
+        },
+        {
+          "n": 12,
+          "portuguese": "E andarei no meio de vós, e vos serei por Deus, e vós me sereis por povo."
+        },
+        {
+          "n": 13,
+          "portuguese": "Eu sou o SENHOR, vosso Deus, que vos tirei da terra dos egípcios, para que não fôsseis seus escravos; e quebrei os canzis do vosso jugo e vos fiz andar erguidos."
+        },
+        {
+          "n": 14,
+          "portuguese": "Mas, se me não ouvirdes, e não cumprirdes todos estes mandamentos,"
+        },
+        {
+          "n": 15,
+          "portuguese": "e se rejeitardes os meus estatutos, e a vossa alma se aborrecer dos meus juízos, não cumprindo todos os meus mandamentos, para invalidardes o meu concerto,"
+        },
+        {
+          "n": 16,
+          "portuguese": "também eu vos farei isto: porei sobre vós terror, a tísica e a febre ardente, que consumam os olhos e atormentem a alma; e semeareis debalde a vossa semente, e os vossos inimigos a comerão."
+        },
+        {
+          "n": 17,
+          "portuguese": "E porei a minha face contra vós, e sereis feridos diante de vossos inimigos; e os que vos odiarem dominarão sobre vós, e fugireis, sem ninguém vos perseguir."
+        },
+        {
+          "n": 18,
+          "portuguese": "E, se ainda com isto me não ouvirdes, então eu vos castigarei sete vezes mais, por causa dos vossos pecados."
+        },
+        {
+          "n": 19,
+          "portuguese": "E quebrarei a soberba da vossa força e farei que os vossos céus sejam como ferro e a vossa terra como cobre."
+        },
+        {
+          "n": 20,
+          "portuguese": "E em vão se gastará a vossa força; a vossa terra não dará a sua novidade, e as árvores da terra não darão o seu fruto."
+        },
+        {
+          "n": 21,
+          "portuguese": "E, se andardes contrariamente para comigo e não me quiserdes ouvir, trarei sobre vós pragas sete vezes mais, conforme os vossos pecados."
+        },
+        {
+          "n": 22,
+          "portuguese": "Também enviarei entre vós as feras do campo, as quais vos desfilharão, e consumirão o vosso gado, e vos reduzirão a poucos; e os vossos caminhos se tornarão desertos."
+        },
+        {
+          "n": 23,
+          "portuguese": "Se ainda com estas coisas não vos emendardes para comigo, mas andardes contrariamente para comigo,"
+        },
+        {
+          "n": 24,
+          "portuguese": "também eu andarei contrariamente para convosco e vos ferirei ainda sete vezes mais, por causa dos vossos pecados."
+        },
+        {
+          "n": 25,
+          "portuguese": "E trarei sobre vós a espada, que executará a vingança do concerto; e, reunidos nas vossas cidades, enviarei a peste entre vós, e sereis entregues na mão do inimigo."
+        },
+        {
+          "n": 26,
+          "portuguese": "Quando eu vos quebrar o sustento do pão, dez mulheres assarão o vosso pão num forno e vos entregarão o vosso pão por peso; e comereis, mas não vos fartareis."
+        },
+        {
+          "n": 27,
+          "portuguese": "Se com isto ainda me não ouvirdes, mas andardes contrariamente para comigo,"
+        },
+        {
+          "n": 28,
+          "portuguese": "também eu andarei contrariamente para convosco com furor e vos castigarei sete vezes mais, por causa dos vossos pecados."
+        },
+        {
+          "n": 29,
+          "portuguese": "E comereis a carne de vossos filhos e a carne de vossas filhas."
+        },
+        {
+          "n": 30,
+          "portuguese": "E destruirei os vossos altos, e desfarei as vossas imagens do sol, e lançarei os vossos cadáveres sobre os cadáveres dos vossos ídolos; e a minha alma se abominará de vós."
+        },
+        {
+          "n": 31,
+          "portuguese": "E reduzirei as vossas cidades a deserto, e assolarei os vossos santuários, e não cheirarei o vosso cheiro suave."
+        },
+        {
+          "n": 32,
+          "portuguese": "E assolarei a terra, e se espantarão disso os vossos inimigos que nela habitarem."
+        },
+        {
+          "n": 33,
+          "portuguese": "E espalhar-vos-ei entre as nações, e desembainharei a espada atrás de vós; e a vossa terra será assolada, e as vossas cidades serão desertas."
+        },
+        {
+          "n": 34,
+          "portuguese": "Então a terra gozará os seus sábados, todos os dias da sua assolação, e vós estareis na terra dos vossos inimigos; então a terra descansará e gozará os seus sábados."
+        },
+        {
+          "n": 35,
+          "portuguese": "Todos os dias da assolação descansará, porque não descansou nos vossos sábados, quando habitáveis nela."
+        },
+        {
+          "n": 36,
+          "portuguese": "E, quanto aos que de vós ficarem, eu meterei tal pavor no seu coração, nas terras dos seus inimigos, que o ruído de uma folha movida os perseguirá; e, fugindo, cairão, como quem foge da espada, e cairão sem ninguém os perseguir."
+        },
+        {
+          "n": 37,
+          "portuguese": "E cairão uns sobre os outros, como diante da espada, sem ninguém os perseguir; e não podereis resistir diante dos vossos inimigos."
+        },
+        {
+          "n": 38,
+          "portuguese": "E perecereis entre as nações, e a terra dos vossos inimigos vos consumirá."
+        },
+        {
+          "n": 39,
+          "portuguese": "E os que de vós ficarem se consumirão pela sua iniquidade nas terras dos vossos inimigos, e pela iniquidade de seus pais com eles se consumirão."
+        },
+        {
+          "n": 40,
+          "portuguese": "Então confessarão a sua iniquidade e a iniquidade de seus pais, com as suas transgressões, com que transgrediram contra mim; como também confessarão que andaram contrariamente para comigo."
+        },
+        {
+          "n": 41,
+          "portuguese": "Também eu andei contrariamente para com eles e os fiz entrar na terra dos seus inimigos. Se, então, o seu coração incircunciso se humilhar, e tomarem por bem o castigo da sua iniquidade,"
+        },
+        {
+          "n": 42,
+          "portuguese": "então me lembrarei do meu concerto com Jacó, e também do meu concerto com Isaque, e também do meu concerto com Abraão me lembrarei, e da terra me lembrarei."
+        },
+        {
+          "n": 43,
+          "portuguese": "E a terra será desamparada por eles e gozará os seus sábados, estando assolada por causa deles; e eles tomarão por bem o castigo da sua iniquidade, em razão de que rejeitaram os meus juízos e a sua alma se aborreceu dos meus estatutos."
+        },
+        {
+          "n": 44,
+          "portuguese": "E, ainda assim, sendo eles na terra dos seus inimigos, não os rejeitarei, nem os abominarei, para consumi-los e invalidar o meu concerto com eles; porque eu sou o SENHOR, seu Deus."
+        },
+        {
+          "n": 45,
+          "portuguese": "Antes, por amor deles, me lembrarei do concerto com os seus antepassados, que tirei da terra do Egito perante os olhos das nações, para lhes ser por Deus. Eu sou o SENHOR."
+        },
+        {
+          "n": 46,
+          "portuguese": "Estes são os estatutos, e os juízos, e as leis que deu o SENHOR entre si e os filhos de Israel, no monte Sinai, pela mão de Moisés."
+        }
+      ],
+      "notes": [
+        "26 — Bênçãos e maldições do concerto."
+      ]
+    },
+    {
+      "n": 27,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Fala aos filhos de Israel e dize-lhes: Quando alguém fizer voto singular, segundo a tua avaliação, as pessoas serão do SENHOR."
+        },
+        {
+          "n": 3,
+          "portuguese": "Se for a tua avaliação de um homem, da idade de vinte anos até à de sessenta, será a tua avaliação de cinquenta siclos de prata, segundo o siclo do santuário."
+        },
+        {
+          "n": 4,
+          "portuguese": "Porém, se for mulher, a tua avaliação será de trinta siclos."
+        },
+        {
+          "n": 5,
+          "portuguese": "E, se for de cinco anos até à idade de vinte, a tua avaliação de um homem será de vinte siclos, e de uma mulher, de dez siclos."
+        },
+        {
+          "n": 6,
+          "portuguese": "E, se for de um mês até à idade de cinco anos, a tua avaliação de um homem será de cinco siclos de prata, e a tua avaliação de uma mulher será de três siclos de prata."
+        },
+        {
+          "n": 7,
+          "portuguese": "Mas, se for de sessenta anos e acima, a tua avaliação de um homem será de quinze siclos, e de uma mulher, de dez siclos."
+        },
+        {
+          "n": 8,
+          "portuguese": "Mas, se for mais pobre do que a tua avaliação, então apresentar-se-á diante do sacerdote, para que o sacerdote o avalie; conforme as posses daquele que fez o voto, o avaliará o sacerdote."
+        },
+        {
+          "n": 9,
+          "portuguese": "E, se for animal de que se oferece oferta ao SENHOR, tudo quanto der dele ao SENHOR será santo."
+        },
+        {
+          "n": 10,
+          "portuguese": "Não o mudará, nem o trocará, bom por mau, ou mau por bom; se, porém, de alguma maneira trocar animal por animal, tanto um como o outro será santo."
+        },
+        {
+          "n": 11,
+          "portuguese": "E, se for algum animal imundo, dos que se não oferecem em oferta ao SENHOR, então apresentará o animal diante do sacerdote."
+        },
+        {
+          "n": 12,
+          "portuguese": "E o sacerdote o avaliará, seja bom ou seja mau; segundo a avaliação do sacerdote, assim será."
+        },
+        {
+          "n": 13,
+          "portuguese": "Porém, se o quiserem resgatar, então acrescentará a sua quinta parte sobre a tua avaliação."
+        },
+        {
+          "n": 14,
+          "portuguese": "E, quando alguém santificar a sua casa para ser santa ao SENHOR, o sacerdote a avaliará, seja boa ou seja má; como o sacerdote a avaliar, assim será."
+        },
+        {
+          "n": 15,
+          "portuguese": "Mas, se o que a santificou quiser resgatar a sua casa, então acrescentará a quinta parte do dinheiro sobre a tua avaliação, e será sua."
+        },
+        {
+          "n": 16,
+          "portuguese": "Se também alguém santificar ao SENHOR alguma parte do campo da sua possessão, então a tua avaliação será segundo a sua semente: um ômer de semente de cevada a cinquenta siclos de prata."
+        },
+        {
+          "n": 17,
+          "portuguese": "Se santificar o seu campo desde o Ano do Jubileu, conforme a tua avaliação ficará."
+        },
+        {
+          "n": 18,
+          "portuguese": "Mas, se santificar o seu campo depois do Ano do Jubileu, então o sacerdote lhe contará o dinheiro conforme os anos restantes até ao Ano do Jubileu, e assim se abaterá da tua avaliação."
+        },
+        {
+          "n": 19,
+          "portuguese": "E, se aquele que santificou o campo de todo o quiser resgatar, então acrescentará a quinta parte do dinheiro da tua avaliação sobre ele, e ficará seu."
+        },
+        {
+          "n": 20,
+          "portuguese": "E, se não resgatar o campo, ou se vender o campo a outro homem, não se resgatará mais."
+        },
+        {
+          "n": 21,
+          "portuguese": "Porém, havendo ele saído no Ano do Jubileu, o campo será santo ao SENHOR, como campo consagrado; a possessão dele será do sacerdote."
+        },
+        {
+          "n": 22,
+          "portuguese": "E, se alguém santificar ao SENHOR um campo que tiver comprado, e não for do campo da sua possessão,"
+        },
+        {
+          "n": 23,
+          "portuguese": "então o sacerdote lhe contará a soma da tua avaliação até ao Ano do Jubileu; e, no mesmo dia, dará a tua avaliação como coisa santa ao SENHOR."
+        },
+        {
+          "n": 24,
+          "portuguese": "No Ano do Jubileu o campo tornará àquele de quem o comprou, àquele de quem era a possessão da terra."
+        },
+        {
+          "n": 25,
+          "portuguese": "E toda a tua avaliação se fará conforme o siclo do santuário; o siclo será de vinte geras."
+        },
+        {
+          "n": 26,
+          "portuguese": "Porém o primogênito de um animal, por já ser do SENHOR, ninguém o santificará; seja boi ou gado miúdo, do SENHOR é."
+        },
+        {
+          "n": 27,
+          "portuguese": "Mas, se for de um animal imundo, o resgatará, segundo a tua avaliação, e sobre ele acrescentará a sua quinta parte; e, se não se resgatar, vender-se-á segundo a tua avaliação."
+        },
+        {
+          "n": 28,
+          "portuguese": "Todavia, nenhuma coisa consagrada, que alguém consagrar ao SENHOR de tudo o que tem, seja homem, seja animal, seja campo da sua possessão, se venderá nem resgatará; toda coisa consagrada será santíssima ao SENHOR."
+        },
+        {
+          "n": 29,
+          "portuguese": "Toda coisa consagrada, que for consagrada do homem, não será resgatada; certamente morrerá."
+        },
+        {
+          "n": 30,
+          "portuguese": "Também todos os dízimos da terra, seja das sementes da terra, seja do fruto das árvores, são do SENHOR; santos são ao SENHOR."
+        },
+        {
+          "n": 31,
+          "portuguese": "Porém, se alguém, do seu dízimo, quiser resgatar alguma coisa, acrescentará a sua quinta parte sobre ela."
+        },
+        {
+          "n": 32,
+          "portuguese": "No tocante a todos os dízimos do gado e do rebanho, tudo o que passar debaixo da vara, o dízimo será santo ao SENHOR."
+        },
+        {
+          "n": 33,
+          "portuguese": "Não esquadrinhará entre o bom e o mau, nem o trocará; mas, se de alguma maneira o trocar, tanto um como o outro será santo; não será resgatado."
+        },
+        {
+          "n": 34,
+          "portuguese": "Estes são os mandamentos que o SENHOR ordenou a Moisés, para os filhos de Israel, no monte Sinai."
+        }
+      ],
+      "notes": [
+        "27 — Votos, avaliações e dízimos."
+      ]
+    }
+  ]
+}
