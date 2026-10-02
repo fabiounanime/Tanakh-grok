@@ -5,6 +5,7 @@ export function isAvailablePtVersion(id) {
   const meta = getPtVersionMeta(id);
   if (!meta) return false;
   if (meta.source === 'local') return isLocallyAvailablePtVersion(id);
+  if (meta.source === 'bible-api') return true;
   return isApiVersionReady(meta);
 }
 

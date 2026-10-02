@@ -377,3 +377,44 @@ export function getVersesForVersion(bookId, chapter, versionId = DEFAULT_PT_VERS
       : 'demo',
   }));
 }
+
+
+/**
+ * Build reading verses from bible-api.com chapter rows, merging local
+ * Hebrew/Greek + transliteration when present.
+ * @param {string} bookId
+ * @param {number} chapter
+ * @param {Array<{ verse: number, text: string }>} apiVerses
+ * @param {string} versionId
+ * @param {{ originalLang?: 'he'|'el' }} [opts]
+ */
+export function mergeApiChapterVerses(bookId, chapter, apiVerses, versionId, opts = {}) {
+  const local = getVerses(bookId, chapter);
+  const byVerse = new Map(local.map((v) => [v.verse, v]));
+  const fallbackLang = opts.originalLang === 'el' ? 'el' : 'he';
+  return (Array.isArray(apiVerses) ? apiVerses : []).map(({ verse, text }) => {
+    const base = byVerse.get(Number(verse));
+    if (base) {
+      return {
+        ...base,
+        portuguese: text,
+        portugueseSource: versionId,
+      };
+    }
+    return {
+      bookId,
+      chapter: Number(chapter),
+      verse: Number(verse),
+      original: '',
+      originalLang: fallbackLang,
+      transliteration: '',
+      portuguese: text,
+      portugueseSource: versionId,
+    };
+  });
+}
+
+/** True when the PT version must be loaded via network/cache (not local bundle). */
+export function isRemotePtVersion(versionId) {
+  return versionId === 'almeida';
+}

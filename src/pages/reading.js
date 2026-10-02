@@ -1,6 +1,8 @@
 import { getBookById } from '../data/books.js';
-import { getVersesForVersion } from '../data/verses.js';
+import { getVersesForVersion, mergeApiChapterVerses } from '../data/verses.js';
+import { getPtVersionMeta } from '../data/versions.js';
 import { navigate } from '../utils/router.js';
+import { fetchApiChapter } from '../utils/bibleApi.js';
 import {
   getSavedTab,
   saveTab,
@@ -47,15 +49,61 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
 
   const cap = Math.min(Math.max(1, chapter || 1), book.chapters);
   let ptVersion = getPtVersion();
-  let verses = getVersesForVersion(book.id, cap, ptVersion);
+  let verses = [];
+  /** @type {'idle'|'loading'|'ready'|'error'} */
+  let loadState = 'idle';
+  let loadError = '';
+  let loadToken = 0;
   let activeTab = getSavedTab();
   let sheetVerse = null;
-  const deepLink =
-    deepLinkVerse != null && verses.some((v) => v.verse === Number(deepLinkVerse))
+  const deepLinkNum =
+    deepLinkVerse != null && Number.isFinite(Number(deepLinkVerse))
       ? Number(deepLinkVerse)
       : null;
-  let activeVerse = deepLink ?? verses[0]?.verse ?? null;
-  let pendingDeepLink = deepLink;
+  let activeVerse = deepLinkNum;
+  let pendingDeepLink = deepLinkNum;
+
+  async function loadVerses(versionId = ptVersion) {
+    const token = ++loadToken;
+    const meta = getPtVersionMeta(versionId);
+    ptVersion = versionId;
+
+    if (meta?.source === 'bible-api') {
+      loadState = 'loading';
+      loadError = '';
+      paint();
+      try {
+        const apiRows = await fetchApiChapter(versionId, book.id, cap);
+        if (token !== loadToken) return;
+        const originalLang = book.testament === 'NT' ? 'el' : 'he';
+        verses = mergeApiChapterVerses(book.id, cap, apiRows, versionId, {
+          originalLang,
+        });
+        loadState = 'ready';
+        loadError = '';
+      } catch (err) {
+        if (token !== loadToken) return;
+        verses = [];
+        loadState = 'error';
+        loadError =
+          (err && err.message) ||
+          'Não foi possível carregar este capítulo pela API.';
+      }
+      if (activeVerse == null || !verses.some((v) => v.verse === activeVerse)) {
+        activeVerse = verses[0]?.verse ?? null;
+      }
+      paint();
+      return;
+    }
+
+    verses = getVersesForVersion(book.id, cap, versionId);
+    loadState = 'ready';
+    loadError = '';
+    if (activeVerse == null || !verses.some((v) => v.verse === activeVerse)) {
+      activeVerse = verses[0]?.verse ?? null;
+    }
+    paint();
+  }
 
   const paint = () => {
     const prevDisabled = cap <= 1;
@@ -75,13 +123,29 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       .join('');
 
     let body;
-    if (!verses.length) {
+    if (loadState === 'loading') {
+      body = `
+        <div class="placeholder-chapter" aria-busy="true">
+          <strong>Carregando…</strong>
+          <p>Buscando ${escapeHtml(currentPtVersionMeta().label)} · ${escapeHtml(
+            book.name
+          )} ${cap} (bible-api.com). Após o primeiro carregamento, o capítulo fica disponível offline.</p>
+        </div>`;
+    } else if (loadState === 'error') {
+      body = `
+        <div class="placeholder-chapter">
+          <strong>Não foi possível carregar</strong>
+          <p>${escapeHtml(loadError)}</p>
+          <p class="hint">Verifique a conexão e tente de novo. Capítulos já abertos antes continuam no cache local.</p>
+          <button type="button" class="btn-text" data-retry-load>Tentar novamente</button>
+        </div>`;
+    } else if (!verses.length) {
       body = `
         <div class="placeholder-chapter">
           <strong>Capítulo em breve</strong>
           <p>Ainda não há texto de demonstração para ${escapeHtml(
             book.name
-          )} ${cap}. A navegação e as abas já funcionam; o conteúdo real será carregado depois.</p>
+          )} ${cap}. Selecione <strong>João Ferreira de Almeida</strong> na versão em português para carregar via bible-api.com.</p>
         </div>`;
     } else {
       const { className, field, dirNote } = tabConfig(activeTab, verses[0]?.originalLang);
@@ -283,10 +347,11 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     syncFontButtons();
     bindVersionPicker(root, {
       onChange: (id) => {
-        ptVersion = id;
-        verses = getVersesForVersion(book.id, cap, ptVersion);
-        paint();
+        loadVerses(id);
       },
+    });
+    root.querySelector('[data-retry-load]')?.addEventListener('click', () => {
+      loadVerses(ptVersion);
     });
   };
 
@@ -543,16 +608,14 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     });
   }
 
-  paint();
-
-  if (pendingDeepLink != null) {
+  loadVerses(ptVersion).then(() => {
+    if (pendingDeepLink == null) return;
     const targetVerse = pendingDeepLink;
     pendingDeepLink = null;
-    // After paint + main.js scroll reset: jump then settle on the verse
     const go = () => focusVerse(targetVerse, { behavior: 'auto' });
     requestAnimationFrame(() => requestAnimationFrame(go));
     setTimeout(go, 120);
-  }
+  });
 }
 
 function tabConfig(tab, originalLang) {

@@ -2,19 +2,22 @@
  * Portuguese Bible version catalog.
  *
  * Shipped texts: only public-domain or clearly labeled demo.
- * Licensed editions (NVI, NVT, ARC current) are never embedded.
- * They become selectable only when a Bible API key/config is present
- * (see src/utils/bibleApi.js and README "Licensed versions via API").
+ * Licensed editions (NVI, NVT, ARC/ACF current) are never embedded.
+ * Public-domain Almeida is fetchable via bible-api.com (no key).
+ * HelioGiroto/Biblia-ARC ships ACF under MIT for the *software* only —
+ * the ACF text remains copyrighted; we do not bundle it (see README).
+ * Licensed API editions become selectable only with VITE_BIBLE_API_* config.
  */
 
-/** @typedef {'local'|'api'} PtVersionSource */
+/** @typedef {'local'|'bible-api'|'api'} PtVersionSource */
 /**
  * @typedef {object} PtVersion
  * @property {string} id
  * @property {string} label
  * @property {string} shortLabel
  * @property {'demo'|'public-domain'|'licensed'} license
- * @property {PtVersionSource} source  local bundle vs remote API
+ * @property {PtVersionSource} source  local bundle | bible-api.com | licensed API
+ * @property {string} [apiTranslation]  bible-api.com translation id (e.g. almeida)
  * @property {string} [apiBibleId]  provider bible id when source==='api'
  * @property {string} note
  */
@@ -23,19 +26,28 @@
 export const PT_VERSIONS = [
   {
     id: 'demo',
-    label: 'Demo',
+    label: 'Demo (local)',
     shortLabel: 'Demo',
     license: 'demo',
     source: 'local',
-    note: 'Texto de demonstração / amostra',
+    note: 'Amostra embarcada — não é edição comercial',
   },
   {
     id: 'almeida1911',
-    label: 'Almeida 1911',
+    label: 'Almeida 1911 (local)',
     shortLabel: 'A1911',
     license: 'public-domain',
     source: 'local',
-    note: 'Domínio público (Lisboa 1911 · PG 62383)',
+    note: 'Domínio público · Lisboa 1911 · PG 62383 (Gênesis 1)',
+  },
+  {
+    id: 'almeida',
+    label: 'João Ferreira de Almeida',
+    shortLabel: 'Alm',
+    license: 'public-domain',
+    source: 'bible-api',
+    apiTranslation: 'almeida',
+    note: 'via bible-api.com · domínio público (sem chave)',
   },
   {
     id: 'nvi',
@@ -62,7 +74,7 @@ export const PT_VERSIONS = [
     license: 'licensed',
     source: 'api',
     apiBibleId: '',
-    note: 'Requer licença / API',
+    note: 'Requer licença / API (texto moderno; não embarcado)',
   },
 ];
 
@@ -76,6 +88,9 @@ export const DEFAULT_PT_VERSION = 'demo';
 export function listPtVersions(apiReady) {
   return PT_VERSIONS.map((v) => {
     if (v.source === 'local') {
+      return { ...v, available: true, statusNote: v.note };
+    }
+    if (v.source === 'bible-api') {
       return { ...v, available: true, statusNote: v.note };
     }
     const ready = typeof apiReady === 'function' ? apiReady(v) : false;
