@@ -625,6 +625,64 @@ main.page {
   font-weight: 700;
 }
 
+.version-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: none;
+  background: var(--bg-card);
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.4rem 0.7rem;
+  border-radius: var(--radius-pill);
+  flex-shrink: 0;
+}
+
+.version-pill:hover {
+  background: var(--bg-muted);
+  color: var(--accent);
+}
+
+.app-header .version-pill {
+  margin-right: 0.15rem;
+}
+
+.version-banner {
+  margin: 0 0 0.75rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  border: 1px solid var(--border-gold);
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.version-banner__hint {
+  color: var(--ink-muted);
+  font-weight: 400;
+}
+
+.sheet__hint {
+  margin: 0 0 0.75rem;
+  padding: 0 0.25rem;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.sheet-option--selected {
+  border: 1px solid var(--border-gold);
+  background: var(--accent-dim);
+}
+
+.sheet-option--disabled,
+.sheet-option:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 .search-wrap {
   position: relative;
   margin-bottom: 0.85rem;

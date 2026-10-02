@@ -1,9 +1,10 @@
 import { getBookById } from '../data/books.js';
-import { getVerses } from '../data/verses.js';
+import { getVersesForVersion } from '../data/verses.js';
 import { navigate } from '../utils/router.js';
 import {
   getSavedTab,
   saveTab,
+  getPtVersion,
   isMarked,
   setMark,
   saveMarkEntry,
@@ -17,6 +18,12 @@ import {
   FONT_SCALE_MAX,
   FONT_SCALE_STEP,
 } from '../utils/storage.js';
+import {
+  versionPillHtml,
+  versionSheetHtml,
+  bindVersionPicker,
+  currentPtVersionMeta,
+} from '../components/versionPicker.js';
 
 const TAB_LABELS = {
   portuguese: 'Português',
@@ -39,7 +46,8 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
   }
 
   const cap = Math.min(Math.max(1, chapter || 1), book.chapters);
-  const verses = getVerses(book.id, cap);
+  let ptVersion = getPtVersion();
+  let verses = getVersesForVersion(book.id, cap, ptVersion);
   let activeTab = getSavedTab();
   let sheetVerse = null;
   const deepLink =
@@ -145,6 +153,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       <header class="app-header">
         <button class="btn-icon" type="button" data-back aria-label="Voltar aos capítulos">←</button>
         <h1>${escapeHtml(book.name)}</h1>
+        ${activeTab === 'portuguese' ? versionPillHtml() : ''}
         <div class="font-size-controls" role="group" aria-label="Tamanho da fonte">
           <button type="button" data-font-dec aria-label="Diminuir fonte" title="Diminuir fonte">A−</button>
           <button type="button" class="font-btn--plus" data-font-inc aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
@@ -171,6 +180,15 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         <div class="tabs" role="tablist" aria-label="Modo de leitura">
           ${tabsHtml}
         </div>
+        ${
+          activeTab === 'portuguese'
+            ? `<p class="version-banner" aria-live="polite">Português · ${escapeHtml(currentPtVersionMeta().label)}${
+                verses.some((v) => v.portugueseSource && v.portugueseSource !== ptVersion)
+                  ? ' <span class="version-banner__hint">(trechos sem esta versão usam Demo)</span>'
+                  : ''
+              }</p>`
+            : ''
+        }
         <div role="tabpanel">${body}</div>
       </main>
       <div class="sheet-backdrop" id="verse-sheet" hidden>
@@ -213,6 +231,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         </div>
       </div>
       <div class="toast" id="reading-toast" hidden role="status"></div>
+      ${versionSheetHtml()}
     `;
 
     root.querySelector('[data-back]')?.addEventListener('click', () =>
@@ -262,6 +281,13 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     bindFontControls();
     bindPinchZoom();
     syncFontButtons();
+    bindVersionPicker(root, {
+      onChange: (id) => {
+        ptVersion = id;
+        verses = getVersesForVersion(book.id, cap, ptVersion);
+        paint();
+      },
+    });
   };
 
 

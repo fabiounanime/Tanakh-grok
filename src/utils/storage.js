@@ -1,3 +1,14 @@
+import { DEFAULT_PT_VERSION, isLocallyAvailablePtVersion, getPtVersionMeta } from '../data/versions.js';
+import { isApiVersionReady } from './bibleApi.js';
+
+export function isAvailablePtVersion(id) {
+  const meta = getPtVersionMeta(id);
+  if (!meta) return false;
+  if (meta.source === 'local') return isLocallyAvailablePtVersion(id);
+  return isApiVersionReady(meta);
+}
+
+
 const TAB_KEY = 'biblia-tanakh:activeTab';
 const MARKS_KEY = 'biblia-tanakh:marks';
 const SAVED_MARKS_KEY = 'biblia-tanakh:savedMarks';
@@ -14,6 +25,30 @@ export function getSavedTab() {
 export function saveTab(tab) {
   if (TAB_KEYS.has(tab)) localStorage.setItem(TAB_KEY, tab);
 }
+
+
+const PT_VERSION_KEY = 'biblia-tanakh:ptVersion';
+
+export function getPtVersion() {
+  try {
+    const saved = localStorage.getItem(PT_VERSION_KEY);
+    if (saved && isAvailablePtVersion(saved)) return saved;
+  } catch {
+    /* ignore */
+  }
+  return DEFAULT_PT_VERSION;
+}
+
+export function setPtVersion(id) {
+  if (!isAvailablePtVersion(id)) return getPtVersion();
+  try {
+    localStorage.setItem(PT_VERSION_KEY, id);
+  } catch {
+    /* ignore quota */
+  }
+  return id;
+}
+
 
 
 const FONT_SCALE_KEY = 'biblia-tanakh:fontScale';

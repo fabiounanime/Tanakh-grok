@@ -6,6 +6,9 @@
  * Grego: texto koiné clássico (domínio público).
  */
 
+
+import { lookupPtVersionText, DEFAULT_PT_VERSION } from './versions.js';
+
 export const verses = [
   // —— Gênesis 1 (hebraico) ——
   {
@@ -343,4 +346,34 @@ export function getVerses(bookId, chapter) {
 
 export function hasDemoContent(bookId, chapter) {
   return verses.some((v) => v.bookId === bookId && v.chapter === chapter);
+}
+
+
+/**
+ * Resolve Portuguese display text for a verse under the selected PT version.
+ * Demo uses the built-in `portuguese` field. Other versions fall back to Demo
+ * when they lack coverage for that verse.
+ */
+export function resolvePortuguese(verse, versionId = DEFAULT_PT_VERSION) {
+  if (!verse) return '';
+  if (!versionId || versionId === 'demo') return verse.portuguese || '';
+  const alt = lookupPtVersionText(versionId, verse.bookId, verse.chapter, verse.verse);
+  if (alt != null) return alt;
+  return verse.portuguese || '';
+}
+
+/**
+ * @param {string} bookId
+ * @param {number} chapter
+ * @param {string} [versionId]
+ * @returns {Array<object>}
+ */
+export function getVersesForVersion(bookId, chapter, versionId = DEFAULT_PT_VERSION) {
+  return getVerses(bookId, chapter).map((v) => ({
+    ...v,
+    portuguese: resolvePortuguese(v, versionId),
+    portugueseSource: lookupPtVersionText(versionId, v.bookId, v.chapter, v.verse) != null
+      ? versionId
+      : 'demo',
+  }));
 }

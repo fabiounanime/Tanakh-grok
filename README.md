@@ -2,7 +2,7 @@
 
 App web de leitura bíblica (Antigo + Novo Testamento), tema escuro com acentos dourados, com abas sincronizadas:
 
-- **Português** — tradução fiel de demonstração (sem marca de editora)
+- **Português** — seletor de versão (Demo + Almeida 1911 PD; NVI/NVT/ARC via API licenciada)
 - **Hebraico** — texto hebraico / aramaico / grego conforme o livro
 - **Transliteração** — leitura fonética (LTR)
 
@@ -92,3 +92,33 @@ npm install
 npm run build
 npm run preview   # opcional: testar dist/ (inclui PWA)
 ```
+
+## Versões em português
+
+O seletor de versão (cabeçalho **Bíblia** e leitura na aba Português) afeta **somente** o texto em português. Hebraico e Transliteração continuam no original.
+
+### Embarcadas (sempre disponíveis)
+
+| Id | Rótulo | Licença |
+|----|--------|---------|
+| `demo` | Demo | Amostra de demonstração (não é edição comercial) |
+| `almeida1911` | Almeida 1911 | Domínio público (Lisboa 1911 · Project Gutenberg 62383) — Gênesis 1 |
+
+A escolha é persistida em `localStorage` (`biblia-tanakh:ptVersion`).
+
+### Licenciadas via API (NVI / NVT / ARC)
+
+**Não** embutimos NVI, NVT nem edições ARC atuais — exigem licença. A UI lista essas opções como *Requer licença / API* até existir configuração.
+
+Integração prevista (stub em `src/utils/bibleApi.js`):
+
+1. Obtenha chave e direitos em [api.Bible](https://scripture.api.bible/) (American Bible Society) ou [Digital Bible Platform](https://4.dbt.io/) (FCBH).
+2. Copie `.env.example` → `.env` e preencha:
+   - `VITE_BIBLE_API_ENABLED=true`
+   - `VITE_BIBLE_API_PROVIDER=api.bible` (ou `dbp`)
+   - `VITE_BIBLE_API_KEY=…`
+   - `VITE_BIBLE_API_BIBLE_NVI` / `_NVT` / `_ARC` = ids da bíblia no provedor
+3. Com flag + chave + id mapeado, a opção correspondente fica **selecionável**. O fetch real ainda é um stub — ligue o adapter do provedor em `bibleApi.js` (sem scraping).
+
+Catálogo e fontes: `src/data/versions.js` (`source: 'local' | 'api'`).
+
