@@ -1876,6 +1876,16 @@ main.page.page--home {
   object-fit: contain;
   flex: 0 1 auto;
   filter: drop-shadow(0 1rem 2rem rgba(0, 0, 0, 0.24));
+  border-radius: clamp(1rem, 3vw, 2rem);
+  /* Let the art dissolve gently into the black splash background. */
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, #000 5%, #000 95%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 7%, #000 93%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent 0%, #000 5%, #000 95%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 7%, #000 93%, transparent 100%);
+  mask-composite: intersect;
 }
 
 .splash__content {
