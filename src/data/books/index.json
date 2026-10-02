@@ -42,7 +42,7 @@
       "testament": "AT",
       "chapters": 34,
       "verses": 959,
-      "ptVerses": 0,
+      "ptVerses": 959,
       "defaultLang": "he"
     },
     {
@@ -598,6 +598,7 @@
   "ptComplete": [
     "gen",
     "lev",
+    "deu",
     "jos",
     "jdg",
     "rut",
@@ -658,7 +659,6 @@
   "ptNone": [
     "exo",
     "num",
-    "deu",
     "job",
     "psa",
     "isa",
