@@ -31,7 +31,9 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 1.5rem;
+        width: 100%;
+        max-width: 48rem;
+        padding: 1.5rem clamp(1rem, 5vw, 3rem);
       }
       #splash .splash__mark {
         color: #ffc107;
@@ -47,10 +49,16 @@
       }
       #splash .splash__slogan {
         margin: 0.85rem 0 0;
-        font-size: 0.95rem;
-        letter-spacing: 0.04em;
+        max-width: 100%;
+        font-size: clamp(0.7rem, 3.4vw, 1rem);
+        line-height: 1.45;
+        letter-spacing: 0.025em;
         color: #ffc107;
         opacity: 0.92;
+      }
+      #splash .splash__slogan-line {
+        display: block;
+        white-space: nowrap;
       }
     </style>
   </head>
@@ -59,7 +67,10 @@
       <div class="splash__inner">
         <span class="splash__mark" aria-hidden="true">✦</span>
         <p class="splash__title">Bíblia Tanakh</p>
-        <p class="splash__slogan">Prepare seu coração.</p>
+        <p class="splash__slogan">
+          <span class="splash__slogan-line">Uma Palavra. Três formas de ler. Mais perto do original.</span>
+          <span class="splash__slogan-line">Português • Hebraico • Transliteração</span>
+        </p>
       </div>
     </div>
     <script>

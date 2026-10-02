@@ -5,7 +5,7 @@
  */
 
 const STORAGE_KEY = 'tanakh-splash-seen';
-const SLOGAN = 'Prepare seu coração.';
+const SLOGAN = 'Uma Palavra. Três formas de ler. Mais perto do original.\nPortuguês • Hebraico • Transliteração';
 
 function prefersReducedMotion() {
   return (
@@ -44,7 +44,7 @@ function ensureSplash() {
     <div class="splash__inner">
       <span class="splash__mark" aria-hidden="true">✦</span>
       <p class="splash__title">Bíblia Tanakh</p>
-      <p class="splash__slogan">${SLOGAN}</p>
+      <p class="splash__slogan">${SLOGAN.split('\n').map((line) => `<span class="splash__slogan-line">${line}</span>`).join('')}</p>
     </div>
   `;
   document.body.appendChild(el);

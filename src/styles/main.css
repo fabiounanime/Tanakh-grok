@@ -1236,8 +1236,9 @@ main.page {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 1.5rem;
-  max-width: 20rem;
+  width: 100%;
+  max-width: 48rem;
+  padding: 1.5rem clamp(1rem, 5vw, 3rem);
 }
 
 .splash__mark {
@@ -1258,11 +1259,18 @@ main.page {
 
 .splash__slogan {
   margin: 0.85rem 0 0;
+  max-width: 100%;
   font-family: var(--font-ui);
-  font-size: 0.95rem;
+  font-size: clamp(0.7rem, 3.4vw, 1rem);
   font-weight: 400;
-  letter-spacing: 0.04em;
+  line-height: 1.45;
+  letter-spacing: 0.025em;
   color: var(--accent);
+}
+
+.splash__slogan-line {
+  display: block;
+  white-space: nowrap;
 }
 
 /* Entrance: title then slogan (fill-mode both hides during delay) */
