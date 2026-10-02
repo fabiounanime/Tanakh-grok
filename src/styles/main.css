@@ -597,7 +597,8 @@ main.page {
 
 /* —— Bíblia list —— */
 .page--biblia {
-  padding-top: max(0.85rem, calc(var(--safe-t) + 0.5rem));
+  /* Match the generous header inset so the title clears the status bar. */
+  padding-top: calc(var(--safe-t) + 24px);
 }
 
 .biblia-header {
@@ -622,19 +623,6 @@ main.page {
   margin: 0;
   font-size: 1.35rem;
   font-weight: 700;
-}
-
-.version-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  border: none;
-  background: var(--bg-card);
-  color: var(--ink-soft);
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0.4rem 0.7rem;
-  border-radius: var(--radius-pill);
 }
 
 .search-wrap {
