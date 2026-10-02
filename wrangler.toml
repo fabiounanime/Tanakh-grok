@@ -1,0 +1,9 @@
+# Cloudflare Pages — referência para deploy conectado ao Git (sem token local).
+# No dashboard: Build command = npm run build | Output directory = dist | Node.js = 18+
+#
+# App usa hash router (#/), então fallback SPA (_redirects / _routes) é opcional.
+# Deploy direto via CLI (opcional, requer login): npx wrangler pages deploy dist
+
+name = "biblia-tanakh"
+compatibility_date = "2024-10-01"
+pages_build_output_dir = "dist"
