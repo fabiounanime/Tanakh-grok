@@ -366,7 +366,7 @@
       "testament": "NT",
       "chapters": 16,
       "verses": 678,
-      "ptVerses": 0,
+      "ptVerses": 108,
       "defaultLang": "el"
     },
     {
@@ -633,7 +633,9 @@
     "3jn",
     "jud"
   ],
-  "ptPartial": [],
+  "ptPartial": [
+    "mrk"
+  ],
   "ptNone": [
     "exo",
     "lev",
@@ -657,7 +659,6 @@
     "ezk",
     "dan",
     "mat",
-    "mrk",
     "luk",
     "act",
     "rom",
