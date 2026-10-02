@@ -1,0 +1,4513 @@
+{
+  "id": "mat",
+  "chapters": [
+    {
+      "n": 1,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Livro da geração de Jesus Cristo, filho de Davi, filho de Abraão."
+        },
+        {
+          "n": 2,
+          "portuguese": "Abraão gerou a Isaque; e Isaque gerou a Jacó; e Jacó gerou a Judá e a seus irmãos;"
+        },
+        {
+          "n": 3,
+          "portuguese": "e Judá gerou, de Tamar, a Perez e a Zerá; e Perez gerou a Esrom; e Esrom gerou a Arão;"
+        },
+        {
+          "n": 4,
+          "portuguese": "e Arão gerou a Aminadabe; e Aminadabe gerou a Naassom; e Naassom gerou a Salmom;"
+        },
+        {
+          "n": 5,
+          "portuguese": "e Salmom gerou, de Raabe, a Boaz; e Boaz gerou, de Rute, a Obede; e Obede gerou a Jessé;"
+        },
+        {
+          "n": 6,
+          "portuguese": "e Jessé gerou ao rei Davi; e o rei Davi gerou a Salomão da que fora mulher de Urias;"
+        },
+        {
+          "n": 7,
+          "portuguese": "e Salomão gerou a Roboão; e Roboão gerou a Abias; e Abias gerou a Asa;"
+        },
+        {
+          "n": 8,
+          "portuguese": "e Asa gerou a Josafá; e Josafá gerou a Jorão; e Jorão gerou a Uzias;"
+        },
+        {
+          "n": 9,
+          "portuguese": "e Uzias gerou a Jotão; e Jotão gerou a Acaz; e Acaz gerou a Ezequias;"
+        },
+        {
+          "n": 10,
+          "portuguese": "e Ezequias gerou a Manassés; e Manassés gerou a Amom; e Amom gerou a Josias;"
+        },
+        {
+          "n": 11,
+          "portuguese": "e Josias gerou a Jeconias e a seus irmãos, na deportação para Babilônia."
+        },
+        {
+          "n": 12,
+          "portuguese": "E, depois da deportação para Babilônia, Jeconias gerou a Salatiel; e Salatiel gerou a Zorobabel;"
+        },
+        {
+          "n": 13,
+          "portuguese": "e Zorobabel gerou a Abiúde; e Abiúde gerou a Eliaquim; e Eliaquim gerou a Azor;"
+        },
+        {
+          "n": 14,
+          "portuguese": "e Azor gerou a Sadoque; e Sadoque gerou a Aquim; e Aquim gerou a Eliúde;"
+        },
+        {
+          "n": 15,
+          "portuguese": "e Eliúde gerou a Eleazar; e Eleazar gerou a Matã; e Matã gerou a Jacó;"
+        },
+        {
+          "n": 16,
+          "portuguese": "e Jacó gerou a José, marido de Maria, da qual nasceu Jesus, que se chama Cristo."
+        },
+        {
+          "n": 17,
+          "portuguese": "De sorte que todas as gerações, desde Abraão até Davi, são catorze gerações; e, desde Davi até à deportação para Babilônia, catorze gerações; e, desde a deportação para Babilônia até Cristo, catorze gerações."
+        },
+        {
+          "n": 18,
+          "portuguese": "Ora, o nascimento de Jesus Cristo foi assim: Estando Maria, sua mãe, desposada com José, antes de se ajuntarem, achou-se ter concebido do Espírito Santo."
+        },
+        {
+          "n": 19,
+          "portuguese": "Então José, seu marido, como era justo e a não queria infamar, intentou deixá-la secretamente."
+        },
+        {
+          "n": 20,
+          "portuguese": "E, projetando ele isso, eis que, em sonho, lhe apareceu um anjo do Senhor, dizendo: José, filho de Davi, não temas receber a Maria, tua mulher, porque o que nela está gerado é do Espírito Santo;"
+        },
+        {
+          "n": 21,
+          "portuguese": "e ela dará à luz um filho, e lhe porás o nome de Jesus, porque ele salvará o seu povo dos seus pecados."
+        },
+        {
+          "n": 22,
+          "portuguese": "Tudo isso aconteceu para que se cumprisse o que foi dito da parte do Senhor pelo profeta, que diz:"
+        },
+        {
+          "n": 23,
+          "portuguese": "Eis que a virgem conceberá e dará à luz um filho, e chamá-lo-ão pelo nome de Emanuel, que traduzido é: Deus conosco."
+        },
+        {
+          "n": 24,
+          "portuguese": "E José, despertando do sono, fez como o anjo do Senhor lhe ordenara, e recebeu a sua mulher;"
+        },
+        {
+          "n": 25,
+          "portuguese": "e não a conheceu até que deu à luz seu filho, o primogênito; e pôs-lhe o nome de Jesus."
+        }
+      ],
+      "notes": [
+        "1 — Genealogia e nascimento de Jesus."
+      ]
+    },
+    {
+      "n": 2,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, tendo nascido Jesus em Belém da Judeia, no tempo do rei Herodes, eis que uns magos vieram do Oriente a Jerusalém,"
+        },
+        {
+          "n": 2,
+          "portuguese": "dizendo: Onde está aquele que é nascido rei dos judeus? Porque vimos a sua estrela no Oriente e viemos a adorá-lo."
+        },
+        {
+          "n": 3,
+          "portuguese": "E o rei Herodes, ouvindo isso, perturbou-se, e toda a Jerusalém, com ele."
+        },
+        {
+          "n": 4,
+          "portuguese": "E, congregados todos os principais sacerdotes e os escribas do povo, perguntou-lhes onde havia de nascer o Cristo."
+        },
+        {
+          "n": 5,
+          "portuguese": "E eles lhe disseram: Em Belém da Judeia; porque assim está escrito pelo profeta:"
+        },
+        {
+          "n": 6,
+          "portuguese": "E tu, Belém, terra de Judá, de modo nenhum és a menor entre as capitais de Judá, porque de ti sairá o Guia que há de apascentar o meu povo de Israel."
+        },
+        {
+          "n": 7,
+          "portuguese": "Então Herodes, chamando secretamente os magos, inquiriu deles, com precisão, acerca do tempo em que a estrela lhes aparecera."
+        },
+        {
+          "n": 8,
+          "portuguese": "E, enviando-os a Belém, disse: Ide, e perguntai diligentemente pelo menino, e, quando o achardes, participai-mo, para que também eu vá e o adore."
+        },
+        {
+          "n": 9,
+          "portuguese": "E, tendo eles ouvido o rei, partiram; e eis que a estrela que tinham visto no Oriente ia adiante deles, até que, chegando, se deteve sobre onde estava o menino."
+        },
+        {
+          "n": 10,
+          "portuguese": "E, vendo eles a estrela, regozijaram-se com grande alegria."
+        },
+        {
+          "n": 11,
+          "portuguese": "E, entrando na casa, acharam o menino com Maria, sua mãe e, prostrando-se, o adoraram; e, abrindo os seus tesouros, ofereceram-lhe presentes: ouro, e incenso, e mirra."
+        },
+        {
+          "n": 12,
+          "portuguese": "E, sendo por divina revelação avisados em sonhos para que não voltassem para junto de Herodes, retiraram-se para a sua terra por outro caminho."
+        },
+        {
+          "n": 13,
+          "portuguese": "E, havendo eles se retirado, eis que o anjo do Senhor apareceu a José em sonhos, dizendo: Levanta-te, e toma o menino e sua mãe, e foge para o Egito, e demora-te lá até que eu te diga; porque Herodes há de procurar o menino para o matar."
+        },
+        {
+          "n": 14,
+          "portuguese": "E, levantando-se ele, tomou o menino e sua mãe, de noite, e foi para o Egito."
+        },
+        {
+          "n": 15,
+          "portuguese": "E esteve lá até à morte de Herodes, para que se cumprisse o que foi dito da parte do Senhor pelo profeta, que diz: Do Egito chamei o meu Filho."
+        },
+        {
+          "n": 16,
+          "portuguese": "Então Herodes, vendo que tinha sido iludido pelos magos, irou-se grandemente e mandou matar todos os meninos que havia em Belém e em todos os seus contornos, de dois anos para baixo, segundo o tempo que diligentemente inquirira dos magos."
+        },
+        {
+          "n": 17,
+          "portuguese": "Então se cumpriu o que foi dito pelo profeta Jeremias, que diz:"
+        },
+        {
+          "n": 18,
+          "portuguese": "Em Ramá se ouviu uma voz, lamentação, choro e grande pranto: Raquel chorando os seus filhos e não querendo ser consolada, porque já não existem."
+        },
+        {
+          "n": 19,
+          "portuguese": "Tendo, porém, morrido Herodes, eis que o anjo do Senhor apareceu em sonhos a José, no Egito,"
+        },
+        {
+          "n": 20,
+          "portuguese": "dizendo: Levanta-te, e toma o menino e sua mãe, e vai para a terra de Israel; porque já estão mortos os que procuravam a morte do menino."
+        },
+        {
+          "n": 21,
+          "portuguese": "Então ele se levantou, e tomou o menino e sua mãe, e veio para a terra de Israel."
+        },
+        {
+          "n": 22,
+          "portuguese": "E, ouvindo que Arquelau reinava na Judeia em lugar de Herodes, seu pai, temeu ir para lá; e, avisado por divina revelação em sonhos, retirou-se para as regiões da Galileia."
+        },
+        {
+          "n": 23,
+          "portuguese": "E chegou e habitou numa cidade chamada Nazaré, para que se cumprisse o que fora dito pelos profetas: Ele será chamado Nazareno."
+        }
+      ],
+      "notes": [
+        "2 — Magos; fuga ao Egito; Nazaré."
+      ]
+    },
+    {
+      "n": 3,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, naqueles dias, apareceu João Batista, pregando no deserto da Judeia"
+        },
+        {
+          "n": 2,
+          "portuguese": "e dizendo: Arrependei-vos, porque é chegado o Reino dos céus."
+        },
+        {
+          "n": 3,
+          "portuguese": "Porque este é o anunciado pelo profeta Isaías, que disse: Voz do que clama no deserto: Preparai o caminho do Senhor, endireitai as suas veredas."
+        },
+        {
+          "n": 4,
+          "portuguese": "E este João tinha as suas vestes de pelos de camelo e um cinto de couro em torno de seus lombos; e alimentava-se de gafanhotos e de mel silvestre."
+        },
+        {
+          "n": 5,
+          "portuguese": "Então ia ter com ele Jerusalém, e toda a Judeia, e toda a província circunvizinha do Jordão;"
+        },
+        {
+          "n": 6,
+          "portuguese": "e eram por ele batizados no rio Jordão, confessando os seus pecados."
+        },
+        {
+          "n": 7,
+          "portuguese": "E, vendo ele muitos dos fariseus e dos saduceus que vinham ao seu batismo, dizia-lhes: Raça de víboras, quem vos ensinou a fugir da ira futura?"
+        },
+        {
+          "n": 8,
+          "portuguese": "Produzi, pois, frutos dignos de arrependimento"
+        },
+        {
+          "n": 9,
+          "portuguese": "e não presumais, de vós mesmos, dizendo: Temos por pai a Abraão; porque eu vos digo que mesmo destas pedras Deus pode suscitar filhos a Abraão."
+        },
+        {
+          "n": 10,
+          "portuguese": "E também já está posto o machado à raiz das árvores; toda árvore, pois, que não produz bom fruto é cortada e lançada no fogo."
+        },
+        {
+          "n": 11,
+          "portuguese": "E eu, em verdade, vos batizo com água, para o arrependimento; mas aquele que vem após mim é mais poderoso do que eu, cujas sandálias não sou digno de levar; ele vos batizará com o Espírito Santo e com fogo."
+        },
+        {
+          "n": 12,
+          "portuguese": "A sua pá, ele a tem na mão e limpará a sua eira, e recolherá no celeiro o seu trigo, e queimará a palha com fogo que nunca se apaga."
+        },
+        {
+          "n": 13,
+          "portuguese": "Então, veio Jesus da Galileia ter com João, junto do Jordão, para ser batizado por ele."
+        },
+        {
+          "n": 14,
+          "portuguese": "Mas João o impedia, dizendo: Eu é que preciso ser batizado por ti, e tu vens a mim?"
+        },
+        {
+          "n": 15,
+          "portuguese": "Jesus, porém, respondendo, disse-lhe: Deixa por agora, porque assim nos convém cumprir toda a justiça. Então, ele o permitiu."
+        },
+        {
+          "n": 16,
+          "portuguese": "E, sendo Jesus batizado, saiu logo da água, e eis que se lhe abriram os céus, e viu o Espírito de Deus descendo como pomba e vindo sobre ele."
+        },
+        {
+          "n": 17,
+          "portuguese": "E eis que uma voz dos céus dizia: Este é o meu Filho amado, em quem me comprazo."
+        }
+      ],
+      "notes": [
+        "3 — João Batista; batismo de Jesus."
+      ]
+    },
+    {
+      "n": 4,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Então, foi conduzido Jesus pelo Espírito ao deserto, para ser tentado pelo diabo."
+        },
+        {
+          "n": 2,
+          "portuguese": "E, tendo jejuado quarenta dias e quarenta noites, depois teve fome."
+        },
+        {
+          "n": 3,
+          "portuguese": "Chegando, então, o tentador, disse-lhe: Se tu és o Filho de Deus, manda que estas pedras se tornem em pães."
+        },
+        {
+          "n": 4,
+          "portuguese": "Ele, porém, respondendo, disse: Está escrito: Nem só de pão viverá o homem, mas de toda palavra que sai da boca de Deus."
+        },
+        {
+          "n": 5,
+          "portuguese": "Então, o diabo o transportou à Cidade Santa, e colocou-o sobre o pináculo do templo,"
+        },
+        {
+          "n": 6,
+          "portuguese": "e disse-lhe: Se tu és o Filho de Deus, lança-te de aqui abaixo; porque está escrito: Aos seus anjos dará ordens a teu respeito; e: eles te susterão nas suas mãos, para que nunca tropeces em alguma pedra."
+        },
+        {
+          "n": 7,
+          "portuguese": "Disse-lhe Jesus: Também está escrito: Não tentarás o Senhor, teu Deus."
+        },
+        {
+          "n": 8,
+          "portuguese": "Outra vez, o diabo o transportou a um monte muito alto; e mostrou-lhe todos os reinos do mundo e a glória deles."
+        },
+        {
+          "n": 9,
+          "portuguese": "E disse-lhe: Tudo isto te darei se, prostrado, me adorares."
+        },
+        {
+          "n": 10,
+          "portuguese": "Então, disse-lhe Jesus: Vai-te, Satanás, porque está escrito: Ao Senhor, teu Deus, adorarás e só a ele servirás."
+        },
+        {
+          "n": 11,
+          "portuguese": "Então, o diabo o deixou; e eis que chegaram os anjos e o serviram."
+        },
+        {
+          "n": 12,
+          "portuguese": "Jesus, porém, ouvindo que João estava preso, voltou para a Galileia."
+        },
+        {
+          "n": 13,
+          "portuguese": "E, deixando Nazaré, foi habitar em Cafarnaum, cidade marítima, nos confins de Zebulom e Naftali;"
+        },
+        {
+          "n": 14,
+          "portuguese": "para que se cumprisse o que foi dito pelo profeta Isaías, que diz:"
+        },
+        {
+          "n": 15,
+          "portuguese": "A terra de Zebulom e a terra de Naftali, caminho do mar, além do Jordão, Galileia dos gentios;"
+        },
+        {
+          "n": 16,
+          "portuguese": "o povo que estava assentado em trevas viu grande luz; e aos que estavam assentados na região e sombra da morte a luz raiou."
+        },
+        {
+          "n": 17,
+          "portuguese": "Desde então, começou Jesus a pregar e a dizer: Arrependei-vos, porque é chegado o Reino dos céus."
+        },
+        {
+          "n": 18,
+          "portuguese": "E Jesus, andando junto ao mar da Galileia, viu dois irmãos: Simão, chamado Pedro, e André, seu irmão, os quais lançavam a rede ao mar, porque eram pescadores."
+        },
+        {
+          "n": 19,
+          "portuguese": "E disse-lhes: Vinde após mim, e eu vos farei pescadores de homens."
+        },
+        {
+          "n": 20,
+          "portuguese": "Então, eles, deixando logo as redes, seguiram-no."
+        },
+        {
+          "n": 21,
+          "portuguese": "E, advindo dali, viu outros dois irmãos: Tiago, filho de Zebedeu, e João, seu irmão, num barco com seu pai, Zebedeu, consertando as redes; e chamou-os."
+        },
+        {
+          "n": 22,
+          "portuguese": "Eles, imediatamente, deixando o barco e seu pai, seguiram-no."
+        },
+        {
+          "n": 23,
+          "portuguese": "E percorria Jesus toda a Galileia, ensinando nas suas sinagogas, e pregando o evangelho do Reino, e curando todas as enfermidades e moléstias entre o povo."
+        },
+        {
+          "n": 24,
+          "portuguese": "E a sua fama correu por toda a Síria; e traziam-lhe todos os que padeciam, acometidos de várias enfermidades e tormentos, os endemoninhados, os lunáticos e os paralíticos; e ele os curava."
+        },
+        {
+          "n": 25,
+          "portuguese": "E seguia-o uma grande multidão da Galileia, de Decápolis, de Jerusalém, da Judeia e dalém do Jordão."
+        }
+      ],
+      "notes": [
+        "4 — Tentação; início do ministério; primeiros discípulos."
+      ]
+    },
+    {
+      "n": 5,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E Jesus, vendo a multidão, subiu a um monte, e, assentando-se, aproximaram-se dele os seus discípulos;"
+        },
+        {
+          "n": 2,
+          "portuguese": "e, abrindo a sua boca, os ensinava, dizendo:"
+        },
+        {
+          "n": 3,
+          "portuguese": "Bem-aventurados os pobres de espírito, porque deles é o Reino dos céus;"
+        },
+        {
+          "n": 4,
+          "portuguese": "bem-aventurados os que choram, porque eles serão consolados;"
+        },
+        {
+          "n": 5,
+          "portuguese": "bem-aventurados os mansos, porque eles herdarão a terra;"
+        },
+        {
+          "n": 6,
+          "portuguese": "bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos;"
+        },
+        {
+          "n": 7,
+          "portuguese": "bem-aventurados os misericordiosos, porque eles alcançarão misericórdia;"
+        },
+        {
+          "n": 8,
+          "portuguese": "bem-aventurados os limpos de coração, porque eles verão a Deus;"
+        },
+        {
+          "n": 9,
+          "portuguese": "bem-aventurados os pacificadores, porque eles serão chamados filhos de Deus;"
+        },
+        {
+          "n": 10,
+          "portuguese": "bem-aventurados os que sofrem perseguição por causa da justiça, porque deles é o Reino dos céus;"
+        },
+        {
+          "n": 11,
+          "portuguese": "bem-aventurados sois vós quando vos injuriarem, e perseguirem, e, mentindo, disserem todo o mal contra vós, por minha causa."
+        },
+        {
+          "n": 12,
+          "portuguese": "Exultai e alegrai-vos, porque é grande o vosso galardão nos céus; porque assim perseguiram os profetas que foram antes de vós."
+        },
+        {
+          "n": 13,
+          "portuguese": "Vós sois o sal da terra; e, se o sal for insípido, com que se há de salgar? Para nada mais presta, senão para se lançar fora e ser pisado pelos homens."
+        },
+        {
+          "n": 14,
+          "portuguese": "Vós sois a luz do mundo; não se pode esconder uma cidade edificada sobre um monte;"
+        },
+        {
+          "n": 15,
+          "portuguese": "nem se acende a candeia e se coloca debaixo do alqueire, mas, no velador, e dá luz a todos que estão na casa."
+        },
+        {
+          "n": 16,
+          "portuguese": "Assim resplandeça a vossa luz diante dos homens, para que vejam as vossas boas obras e glorifiquem a vosso Pai, que está nos céus."
+        },
+        {
+          "n": 17,
+          "portuguese": "Não cuideis que vim destruir a lei ou os profetas; não vim ab-rogar, mas cumprir."
+        },
+        {
+          "n": 18,
+          "portuguese": "Porque em verdade vos digo que, até que o céu e a terra passem, nem um jota ou um til se omitirá da lei sem que tudo seja cumprido."
+        },
+        {
+          "n": 19,
+          "portuguese": "Qualquer, pois, que violar um destes mandamentos, por menor que seja, e assim ensinar aos homens, será chamado o menor no Reino dos céus; aquele, porém, que os cumprir e ensinar será chamado grande no Reino dos céus."
+        },
+        {
+          "n": 20,
+          "portuguese": "Porque vos digo que, se a vossa justiça não exceder a dos escribas e fariseus, de modo nenhum entrareis no Reino dos céus."
+        },
+        {
+          "n": 21,
+          "portuguese": "Ouvistes que foi dito aos antigos: Não matarás; e qualquer que matar será réu de juízo."
+        },
+        {
+          "n": 22,
+          "portuguese": "Eu, porém, vos digo que qualquer que, sem motivo, se encolerizar contra seu irmão será réu de juízo; e qualquer que disser a seu irmão: Raca será réu do Sinédrio; e qualquer que lhe disser: Louco será réu do fogo do inferno."
+        },
+        {
+          "n": 23,
+          "portuguese": "Portanto, se trouxeres a tua oferta ao altar e aí te lembrares de que teu irmão tem alguma coisa contra ti,"
+        },
+        {
+          "n": 24,
+          "portuguese": "deixa ali diante do altar a tua oferta, e vai reconciliar-te primeiro com teu irmão, e depois vem e apresenta a tua oferta."
+        },
+        {
+          "n": 25,
+          "portuguese": "Concilia-te depressa com o teu adversário, enquanto estás no caminho com ele, para que não aconteça que o adversário te entregue ao juiz, e o juiz te entregue ao oficial, e te encerrem na prisão."
+        },
+        {
+          "n": 26,
+          "portuguese": "Em verdade te digo que de maneira nenhuma sairás dali, enquanto não pagares o último ceitil."
+        },
+        {
+          "n": 27,
+          "portuguese": "Ouvistes que foi dito aos antigos: Não cometerás adultério."
+        },
+        {
+          "n": 28,
+          "portuguese": "Eu, porém, vos digo que qualquer que olhar para uma mulher com intenção impura já em seu coração cometeu adultério com ela."
+        },
+        {
+          "n": 29,
+          "portuguese": "Portanto, se o teu olho direito te escandalizar, arranca-o e lança-o de ti, pois te é melhor que se perca um dos teus membros do que seja todo o teu corpo lançado no inferno."
+        },
+        {
+          "n": 30,
+          "portuguese": "E, se a tua mão direita te escandalizar, corta-a e lança-a de ti, porque te é melhor que um dos teus membros se perca do que seja todo o teu corpo lançado no inferno."
+        },
+        {
+          "n": 31,
+          "portuguese": "Também foi dito: Qualquer que deixar sua mulher, dê-lhe carta de divórcio."
+        },
+        {
+          "n": 32,
+          "portuguese": "Eu, porém, vos digo que qualquer que repudiar sua mulher, a não ser por causa de fornicação, faz que ela adultere; e qualquer que casar com a repudiada adultera."
+        },
+        {
+          "n": 33,
+          "portuguese": "Outrossim, ouvistes que foi dito aos antigos: Não perjurarás, mas cumprirás teus juramentos ao Senhor."
+        },
+        {
+          "n": 34,
+          "portuguese": "Eu, porém, vos digo que de maneira nenhuma jureis: nem pelo céu, porque é o trono de Deus;"
+        },
+        {
+          "n": 35,
+          "portuguese": "nem pela terra, porque é o escabelo de seus pés; nem por Jerusalém, porque é a cidade do grande Rei;"
+        },
+        {
+          "n": 36,
+          "portuguese": "nem jurarás pela tua cabeça, porque não podes tornar um cabelo branco ou preto."
+        },
+        {
+          "n": 37,
+          "portuguese": "Seja, porém, o vosso falar: Sim, sim; Não, não; porque o que passa disso é de procedência maligna."
+        },
+        {
+          "n": 38,
+          "portuguese": "Ouvistes que foi dito: Olho por olho e dente por dente."
+        },
+        {
+          "n": 39,
+          "portuguese": "Eu, porém, vos digo que não resistais ao mal; mas, se qualquer te bater na face direita, oferece-lhe também a outra;"
+        },
+        {
+          "n": 40,
+          "portuguese": "e ao que quiser pleitear contigo e tirar-te a túnica, larga-lhe também a capa;"
+        },
+        {
+          "n": 41,
+          "portuguese": "e, se qualquer te obrigar a caminhar uma milha, vai com ele duas."
+        },
+        {
+          "n": 42,
+          "portuguese": "Dá a quem te pedir e não te desvies daquele que quiser que lhe emprestes."
+        },
+        {
+          "n": 43,
+          "portuguese": "Ouvistes que foi dito: Amarás o teu próximo e odiarás o teu inimigo."
+        },
+        {
+          "n": 44,
+          "portuguese": "Eu, porém, vos digo: Amai a vossos inimigos, bendizei os que vos maldizem, fazei bem aos que vos odeiam e orai pelos que vos maltratam e vos perseguem,"
+        },
+        {
+          "n": 45,
+          "portuguese": "para que sejais filhos do vosso Pai que está nos céus; porque faz que o seu sol se levante sobre maus e bons e a chuva desça sobre justos e injustos."
+        },
+        {
+          "n": 46,
+          "portuguese": "Pois, se amardes os que vos amam, que galardão tereis? Não fazem os publicanos também o mesmo?"
+        },
+        {
+          "n": 47,
+          "portuguese": "E, se saudardes unicamente os vossos irmãos, que fazeis de mais? Não fazem os gentios também assim?"
+        },
+        {
+          "n": 48,
+          "portuguese": "Sede vós, pois, perfeitos, como é perfeito o vosso Pai, que está nos céus."
+        }
+      ],
+      "notes": [
+        "5 — Sermão do Monte: bem-aventuranças e justiça maior."
+      ]
+    },
+    {
+      "n": 6,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Guardai-vos de fazer a vossa esmola diante dos homens, para serdes vistos por eles; aliás, não tereis galardão junto de vosso Pai, que está nos céus."
+        },
+        {
+          "n": 2,
+          "portuguese": "Quando, pois, deres esmola, não faças tocar trombeta diante de ti, como fazem os hipócritas nas sinagogas e nas ruas, para serem glorificados pelos homens. Em verdade vos digo que já receberam o seu galardão."
+        },
+        {
+          "n": 3,
+          "portuguese": "Mas, quando tu deres esmola, não saiba a tua mão esquerda o que faz a tua direita,"
+        },
+        {
+          "n": 4,
+          "portuguese": "para que a tua esmola fique em secreto; e teu Pai, que vê em secreto, te recompensará publicamente."
+        },
+        {
+          "n": 5,
+          "portuguese": "E, quando orares, não sejas como os hipócritas, pois se comprazem em orar em pé nas sinagogas e às esquinas das ruas, para serem vistos pelos homens. Em verdade vos digo que já receberam o seu galardão."
+        },
+        {
+          "n": 6,
+          "portuguese": "Mas tu, quando orares, entra no teu aposento e, fechando a tua porta, ora a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te recompensará publicamente."
+        },
+        {
+          "n": 7,
+          "portuguese": "E, orando, não useis de vãs repetições, como os gentios, que pensam que, por muito falarem, serão ouvidos."
+        },
+        {
+          "n": 8,
+          "portuguese": "Não vos assemelheis, pois, a eles, porque vosso Pai sabe o que vos é necessário antes de vós lho pedirdes."
+        },
+        {
+          "n": 9,
+          "portuguese": "Portanto, vós orareis assim: Pai nosso, que estás nos céus, santificado seja o teu nome."
+        },
+        {
+          "n": 10,
+          "portuguese": "Venha o teu Reino. Seja feita a tua vontade, tanto na terra como no céu."
+        },
+        {
+          "n": 11,
+          "portuguese": "O pão nosso de cada dia dá-nos hoje."
+        },
+        {
+          "n": 12,
+          "portuguese": "E perdoa-nos as nossas dívidas, assim como nós perdoamos aos nossos devedores."
+        },
+        {
+          "n": 13,
+          "portuguese": "E não nos induzas à tentação, mas livra-nos do mal; porque teu é o Reino, e o poder, e a glória, para sempre. Amém!"
+        },
+        {
+          "n": 14,
+          "portuguese": "Porque, se perdoardes aos homens as suas ofensas, também vosso Pai celestial vos perdoará a vós."
+        },
+        {
+          "n": 15,
+          "portuguese": "Se, porém, não perdoardes aos homens as suas ofensas, também vosso Pai vos não perdoará as vossas ofensas."
+        },
+        {
+          "n": 16,
+          "portuguese": "E, quando jejuardes, não vos mostreis contristados como os hipócritas, porque desfiguram o seu rosto, para que aos homens pareça que jejuam. Em verdade vos digo que já receberam o seu galardão."
+        },
+        {
+          "n": 17,
+          "portuguese": "Porém tu, quando jejuares, unge a tua cabeça e lava o teu rosto,"
+        },
+        {
+          "n": 18,
+          "portuguese": "para não pareceres aos homens que jejuas, mas a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te recompensará publicamente."
+        },
+        {
+          "n": 19,
+          "portuguese": "Não ajunteis tesouros na terra, onde a traça e a ferrugem tudo consomem, e onde os ladrões minam e roubam."
+        },
+        {
+          "n": 20,
+          "portuguese": "Mas ajuntai tesouros no céu, onde nem a traça nem a ferrugem consomem, e onde os ladrões não minam, nem roubam."
+        },
+        {
+          "n": 21,
+          "portuguese": "Porque onde estiver o vosso tesouro, aí estará também o vosso coração."
+        },
+        {
+          "n": 22,
+          "portuguese": "A candeia do corpo são os olhos; de sorte que, se os teus olhos forem bons, todo o teu corpo terá luz;"
+        },
+        {
+          "n": 23,
+          "portuguese": "se, porém, os teus olhos forem maus, o teu corpo será tenebroso. Se, portanto, a luz que em ti há são trevas, quão grandes serão tais trevas!"
+        },
+        {
+          "n": 24,
+          "portuguese": "Ninguém pode servir a dois senhores, porque ou há de odiar um e amar o outro ou se dedicará a um e desprezará o outro. Não podeis servir a Deus e a Mamom."
+        },
+        {
+          "n": 25,
+          "portuguese": "Por isso, vos digo: Não andeis cuidadosos quanto à vossa vida, pelo que haveis de comer ou pelo que haveis de beber; nem quanto ao vosso corpo, pelo que haveis de vestir. Não é a vida mais do que o mantimento, e o corpo, mais do que o vestuário?"
+        },
+        {
+          "n": 26,
+          "portuguese": "Olhai para as aves do céu, que não semeiam, nem segam, nem ajuntam em celeiros; e vosso Pai celestial as alimenta. Não tendes vós muito mais valor do que elas?"
+        },
+        {
+          "n": 27,
+          "portuguese": "E qual de vós poderá, com os seus cuidados, acrescentar um côvado à sua estatura?"
+        },
+        {
+          "n": 28,
+          "portuguese": "E, quanto ao vestuário, por que andais cuidadosos? Olhai para os lírios do campo, como eles crescem; não trabalham, nem fiam."
+        },
+        {
+          "n": 29,
+          "portuguese": "E eu vos digo que nem mesmo Salomão, em toda a sua glória, se vestiu como qualquer deles."
+        },
+        {
+          "n": 30,
+          "portuguese": "Pois, se Deus assim veste a erva do campo, que hoje existe e amanhã é lançada no forno, não vos vestirá muito mais a vós, homens de pouca fé?"
+        },
+        {
+          "n": 31,
+          "portuguese": "Não andeis, pois, inquietos, dizendo: Que comeremos ou que beberemos ou com que nos vestiremos?"
+        },
+        {
+          "n": 32,
+          "portuguese": "(Porque todas essas coisas os gentios procuram.) Decerto, vosso Pai celestial bem sabe que necessitais de todas essas coisas."
+        },
+        {
+          "n": 33,
+          "portuguese": "Mas buscai primeiro o Reino de Deus, e a sua justiça, e todas essas coisas vos serão acrescentadas."
+        },
+        {
+          "n": 34,
+          "portuguese": "Não vos inquieteis, pois, pelo dia de amanhã, porque o dia de amanhã cuidará de si mesmo. Basta a cada dia o seu mal."
+        }
+      ],
+      "notes": [
+        "6 — Esmola, oração e jejum; Pai Nosso; cuidados."
+      ]
+    },
+    {
+      "n": 7,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Não julgueis, para que não sejais julgados."
+        },
+        {
+          "n": 2,
+          "portuguese": "Porque com o juízo com que julgardes sereis julgados e com a medida com que tiverdes medido vos hão de medir a vós."
+        },
+        {
+          "n": 3,
+          "portuguese": "E por que reparas tu no argueiro que está no olho do teu irmão e não vês a trave que está no teu olho?"
+        },
+        {
+          "n": 4,
+          "portuguese": "Ou como dirás a teu irmão: Deixa-me tirar o argueiro do teu olho, estando uma trave no teu?"
+        },
+        {
+          "n": 5,
+          "portuguese": "Hipócrita, tira primeiro a trave do teu olho e, então, cuidarás em tirar o argueiro do olho do teu irmão."
+        },
+        {
+          "n": 6,
+          "portuguese": "Não deis aos cães as coisas santas, nem deiteis aos porcos as vossas pérolas, não aconteça que as pisem com os pés e, voltando-se, vos despedacem."
+        },
+        {
+          "n": 7,
+          "portuguese": "Pedi, e dar-se-vos-á; buscai, e encontrareis; batei, e abrir-se-vos-á."
+        },
+        {
+          "n": 8,
+          "portuguese": "Porque aquele que pede recebe; e o que busca encontra; e, a quem bate, se abre."
+        },
+        {
+          "n": 9,
+          "portuguese": "E qual dentre vós é o homem que, pedindo-lhe pão o seu filho, lhe dará uma pedra?"
+        },
+        {
+          "n": 10,
+          "portuguese": "E, pedindo-lhe peixe, lhe dará uma serpente?"
+        },
+        {
+          "n": 11,
+          "portuguese": "Se vós, pois, sendo maus, sabeis dar boas coisas aos vossos filhos, quanto mais vosso Pai, que está nos céus, dará bens aos que lhe pedirem?"
+        },
+        {
+          "n": 12,
+          "portuguese": "Portanto, tudo o que vós quereis que os homens vos façam, fazei-lho também vós, porque esta é a lei e os profetas."
+        },
+        {
+          "n": 13,
+          "portuguese": "Entrai pela porta estreita, porque larga é a porta, e espaçoso, o caminho que conduz à perdição, e muitos são os que entram por ela;"
+        },
+        {
+          "n": 14,
+          "portuguese": "e porque estreita é a porta, e apertado, o caminho que leva à vida, e poucos há que a encontrem."
+        },
+        {
+          "n": 15,
+          "portuguese": "Acautelai-vos, porém, dos falsos profetas, que vêm até vós vestidos como ovelhas, mas interiormente são lobos devoradores."
+        },
+        {
+          "n": 16,
+          "portuguese": "Por seus frutos os conhecereis. Porventura colhem-se uvas dos espinheiros ou figos dos abrolhos?"
+        },
+        {
+          "n": 17,
+          "portuguese": "Assim, toda árvore boa produz bons frutos, e toda árvore má produz frutos maus."
+        },
+        {
+          "n": 18,
+          "portuguese": "Não pode a árvore boa dar maus frutos, nem a árvore má dar frutos bons."
+        },
+        {
+          "n": 19,
+          "portuguese": "Toda árvore que não dá bom fruto corta-se e lança-se no fogo."
+        },
+        {
+          "n": 20,
+          "portuguese": "Portanto, pelos seus frutos os conhecereis."
+        },
+        {
+          "n": 21,
+          "portuguese": "Nem todo o que me diz: Senhor, Senhor! entrará no Reino dos céus, mas aquele que faz a vontade de meu Pai, que está nos céus."
+        },
+        {
+          "n": 22,
+          "portuguese": "Muitos me dirão naquele dia: Senhor, Senhor, não profetizamos nós em teu nome? E, em teu nome, não expulsamos demônios? E, em teu nome, não fizemos muitas maravilhas?"
+        },
+        {
+          "n": 23,
+          "portuguese": "E, então, lhes direi abertamente: Nunca vos conheci; apartai-vos de mim, vós que praticais a iniquidade."
+        },
+        {
+          "n": 24,
+          "portuguese": "Todo aquele, pois, que escuta estas minhas palavras e as pratica, assemelhá-lo-ei ao homem prudente, que edificou a sua casa sobre a rocha."
+        },
+        {
+          "n": 25,
+          "portuguese": "E desceu a chuva, e correram rios, e assopraram ventos, e combateram aquela casa, e não caiu, porque estava edificada sobre a rocha."
+        },
+        {
+          "n": 26,
+          "portuguese": "E aquele que ouve estas minhas palavras e as não cumpre compará-lo-ei ao homem insensato, que edificou a sua casa sobre a areia."
+        },
+        {
+          "n": 27,
+          "portuguese": "E desceu a chuva, e correram rios, e assopraram ventos, e combateram aquela casa, e caiu, e foi grande a sua queda."
+        },
+        {
+          "n": 28,
+          "portuguese": "E aconteceu que, concluindo Jesus este discurso, a multidão se admirou da sua doutrina,"
+        },
+        {
+          "n": 29,
+          "portuguese": "porquanto os ensinava com autoridade e não como os escribas."
+        }
+      ],
+      "notes": [
+        "7 — Julgar; pedir; árvore e frutos; casa na rocha."
+      ]
+    },
+    {
+      "n": 8,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, descendo ele do monte, seguiu-o uma grande multidão."
+        },
+        {
+          "n": 2,
+          "portuguese": "E eis que veio um leproso e o adorou, dizendo: Senhor, se quiseres, podes tornar-me limpo."
+        },
+        {
+          "n": 3,
+          "portuguese": "E Jesus, estendendo a mão, tocou-o, dizendo: Quero; sê limpo. E logo ficou purificado da lepra."
+        },
+        {
+          "n": 4,
+          "portuguese": "Disse-lhe, então, Jesus: Olha, não o digas a alguém, mas vai, mostra-te ao sacerdote e apresenta a oferta que Moisés ordenou, para testemunho a eles."
+        },
+        {
+          "n": 5,
+          "portuguese": "E, entrando Jesus em Cafarnaum, chegou junto dele um centurião, rogando-lhe"
+        },
+        {
+          "n": 6,
+          "portuguese": "e dizendo: Senhor, o meu criado jaz em casa, paralítico, e tremendamente atormentado."
+        },
+        {
+          "n": 7,
+          "portuguese": "E Jesus lhe disse: Eu irei e o curarei."
+        },
+        {
+          "n": 8,
+          "portuguese": "E respondeu o centurião, dizendo: Senhor, não sou digno de que entres debaixo do meu telhado, mas tão somente dize uma palavra, e o meu criado será curado."
+        },
+        {
+          "n": 9,
+          "portuguese": "Pois também eu sou homem sob autoridade e tenho soldados às minhas ordens; e digo a este: Vai, e ele vai; e a outro: Vem, e ele vem; e ao meu servo: Faze isto, e ele o faz."
+        },
+        {
+          "n": 10,
+          "portuguese": "E Jesus, ouvindo isso, maravilhou-se e disse aos que o seguiam: Em verdade vos digo que nem mesmo em Israel encontrei tanta fé."
+        },
+        {
+          "n": 11,
+          "portuguese": "E eu vos digo que muitos virão do Oriente e do Ocidente e assentar-se-ão à mesa com Abraão, e Isaque, e Jacó, no Reino dos céus;"
+        },
+        {
+          "n": 12,
+          "portuguese": "e os filhos do Reino serão lançados nas trevas exteriores; ali haverá pranto e ranger de dentes."
+        },
+        {
+          "n": 13,
+          "portuguese": "Então, disse Jesus ao centurião: Vai-te, e te seja feito como creste. E, naquela mesma hora, o seu criado sarou."
+        },
+        {
+          "n": 14,
+          "portuguese": "E Jesus, entrando em casa de Pedro, viu a sogra deste deitada e com febre."
+        },
+        {
+          "n": 15,
+          "portuguese": "E tocou-lhe na mão, e a febre a deixou; e levantou-se e serviu-os."
+        },
+        {
+          "n": 16,
+          "portuguese": "E, chegada a tarde, trouxeram-lhe muitos endemoninhados; e ele, com a sua palavra, expulsou deles os espíritos e curou todos os que estavam enfermos,"
+        },
+        {
+          "n": 17,
+          "portuguese": "para que se cumprisse o que fora dito pelo profeta Isaías, que diz: Ele tomou sobre si as nossas enfermidades e levou as nossas doenças."
+        },
+        {
+          "n": 18,
+          "portuguese": "E Jesus, vendo em torno de si uma grande multidão, ordenou que passassem para o outro lado."
+        },
+        {
+          "n": 19,
+          "portuguese": "E, aproximando-se dele um escriba, disse-lhe: Mestre, seguir-te-ei para onde quer que fores."
+        },
+        {
+          "n": 20,
+          "portuguese": "E disse-lhe Jesus: As raposas têm covis, e as aves do céu, ninhos, mas o Filho do Homem não tem onde reclinar a cabeça."
+        },
+        {
+          "n": 21,
+          "portuguese": "E outro de seus discípulos lhe disse: Senhor, permite-me que primeiro vá sepultar meu pai."
+        },
+        {
+          "n": 22,
+          "portuguese": "Jesus, porém, disse-lhe: Segue-me e deixa aos mortos o sepultar os seus mortos."
+        },
+        {
+          "n": 23,
+          "portuguese": "E, entrando ele no barco, seus discípulos o seguiram."
+        },
+        {
+          "n": 24,
+          "portuguese": "E eis que no mar se levantou uma tempestade tão grande, que o barco era coberto pelas ondas; ele, porém, estava dormindo."
+        },
+        {
+          "n": 25,
+          "portuguese": "E os seus discípulos, aproximando-se, o despertaram, dizendo: Senhor, salva-nos! Que perecemos!"
+        },
+        {
+          "n": 26,
+          "portuguese": "E ele disse-lhes: Por que temeis, homens de pouca fé? Então, levantando-se, repreendeu os ventos e o mar; e seguiu-se grande bonança."
+        },
+        {
+          "n": 27,
+          "portuguese": "E aqueles homens se maravilharam, dizendo: Que homem é este, que até os ventos e o mar lhe obedecem?"
+        },
+        {
+          "n": 28,
+          "portuguese": "E, tendo chegado à outra margem, à terra dos gadarenos, saíram-lhe ao encontro dois endemoninhados, vindos dos sepulcros; e eram tão ferozes, que ninguém podia passar por aquele caminho."
+        },
+        {
+          "n": 29,
+          "portuguese": "E eis que clamaram, dizendo: Que temos nós contigo, Jesus, Filho de Deus? Vieste aqui atormentar-nos antes de tempo?"
+        },
+        {
+          "n": 30,
+          "portuguese": "E andava pastando, não longe deles, uma manada de muitos porcos."
+        },
+        {
+          "n": 31,
+          "portuguese": "E os demônios lhe rogaram, dizendo: Se nos expulsas, permite-nos ir a essa manada de porcos."
+        },
+        {
+          "n": 32,
+          "portuguese": "E ele lhes disse: Ide. E, saindo eles, se foram para a manada dos porcos; e eis que toda aquela manada de porcos se precipitou pelo despenhadeiro no mar e morreram nas águas."
+        },
+        {
+          "n": 33,
+          "portuguese": "Os porqueiros fugiram e, chegando à cidade, contaram tudo o que acontecera aos endemoninhados."
+        },
+        {
+          "n": 34,
+          "portuguese": "E eis que toda aquela cidade saiu ao encontro de Jesus e, vendo-o, rogaram-lhe que se retirasse dos seus termos."
+        }
+      ],
+      "notes": [
+        "8 — Curas; centurião; tempestade; gadarenos."
+      ]
+    },
+    {
+      "n": 9,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, entrando no barco, passou para o outro lado e chegou à sua cidade."
+        },
+        {
+          "n": 2,
+          "portuguese": "E eis que lhe trouxeram um paralítico deitado numa cama. E Jesus, vendo a fé deles, disse ao paralítico: Tem bom ânimo, filho; perdoados te são os teus pecados."
+        },
+        {
+          "n": 3,
+          "portuguese": "E eis que alguns dos escribas diziam entre si: Este blasfema."
+        },
+        {
+          "n": 4,
+          "portuguese": "Mas Jesus, conhecendo os seus pensamentos, disse: Por que pensais mal em vossos corações?"
+        },
+        {
+          "n": 5,
+          "portuguese": "Pois qual é mais fácil? Dizer: Perdoados te são os teus pecados; ou dizer: Levanta-te e anda?"
+        },
+        {
+          "n": 6,
+          "portuguese": "Ora, para que saibais que o Filho do Homem tem na terra poder para perdoar pecados (disse então ao paralítico): Levanta-te, toma a tua cama e vai para tua casa."
+        },
+        {
+          "n": 7,
+          "portuguese": "E, levantando-se ele, partiu para sua casa."
+        },
+        {
+          "n": 8,
+          "portuguese": "E a multidão, vendo isso, maravilhou-se e glorificou a Deus, que dera tal poder aos homens."
+        },
+        {
+          "n": 9,
+          "portuguese": "E Jesus, passando adiante dali, viu assentado na coletoria um homem chamado Mateus e disse-lhe: Segue-me. E ele, levantando-se, o seguiu."
+        },
+        {
+          "n": 10,
+          "portuguese": "E aconteceu que, estando Jesus em casa, assentando-se à mesa, chegaram muitos publicanos e pecadores e assentaram-se juntamente com ele e com seus discípulos."
+        },
+        {
+          "n": 11,
+          "portuguese": "E os fariseus, vendo isso, disseram aos discípulos: Por que come o vosso Mestre com publicanos e pecadores?"
+        },
+        {
+          "n": 12,
+          "portuguese": "Jesus, porém, ouvindo isso, disse-lhes: Não necessitam de médico os que estão sãos, mas sim os que estão doentes."
+        },
+        {
+          "n": 13,
+          "portuguese": "Ide, porém, e aprendei o que significa: Misericórdia quero e não sacrifício. Porque eu não vim a chamar os justos, mas os pecadores, ao arrependimento."
+        },
+        {
+          "n": 14,
+          "portuguese": "Então, chegaram ao pé dele os discípulos de João, dizendo: Por que jejuamos nós e os fariseus muitas vezes, e os teus discípulos não jejuam?"
+        },
+        {
+          "n": 15,
+          "portuguese": "E disse-lhes Jesus: Podem, porventura, os filhos das bodas enlutar-se enquanto o esposo está com eles? Dias virão, porém, em que lhes será tirado o esposo; e, então, jejuarão."
+        },
+        {
+          "n": 16,
+          "portuguese": "Ninguém põe remendo de pano novo em vestido velho, porque semelhante remendo rompe o vestido, e faz-se maior a rotura."
+        },
+        {
+          "n": 17,
+          "portuguese": "Nem se deita vinho novo em odres velhos; aliás, rompem-se os odres, e entorna-se o vinho, e perdem-se os odres; mas deita-se vinho novo em odres novos, e assim ambos se conservam."
+        },
+        {
+          "n": 18,
+          "portuguese": "Dizendo-lhes ele essas coisas, eis que chegou um chefe e o adorou, dizendo: Minha filha faleceu agora mesmo; mas vem, põe a tua mão sobre ela, e viverá."
+        },
+        {
+          "n": 19,
+          "portuguese": "E Jesus, levantando-se, o seguiu, e os seus discípulos também."
+        },
+        {
+          "n": 20,
+          "portuguese": "E eis que uma mulher que havia já doze anos padecia de um fluxo de sangue, chegando por detrás dele, tocou a orla do seu vestido."
+        },
+        {
+          "n": 21,
+          "portuguese": "Porque dizia consigo: Se eu tão somente tocar o seu vestido, ficarei sã."
+        },
+        {
+          "n": 22,
+          "portuguese": "E Jesus, voltando-se e vendo-a, disse: Tem ânimo, filha, a tua fé te salvou. E, desde aquela hora, a mulher ficou sã."
+        },
+        {
+          "n": 23,
+          "portuguese": "E, chegando Jesus a casa do chefe e vendo os tocadores de pífaro e o povo em alvoroço,"
+        },
+        {
+          "n": 24,
+          "portuguese": "disse-lhes: Retirai-vos, porque a menina não está morta, mas dorme. E riam-se dele."
+        },
+        {
+          "n": 25,
+          "portuguese": "E, logo que o povo foi posto fora, entrou e tomou-a pela mão, e a menina se levantou."
+        },
+        {
+          "n": 26,
+          "portuguese": "E espalhou-se a fama disso por toda aquela terra."
+        },
+        {
+          "n": 27,
+          "portuguese": "E, partindo Jesus dali, seguiram-no dois cegos, clamando e dizendo: Filho de Davi, tem misericórdia de nós!"
+        },
+        {
+          "n": 28,
+          "portuguese": "E, quando chegou a casa, os cegos se aproximaram dele; e Jesus disse-lhes: Credes vós que eu possa fazer isto? Disseram-lhe eles: Sim, Senhor."
+        },
+        {
+          "n": 29,
+          "portuguese": "Então, tocou-lhes nos olhos, dizendo: Seja-vos feito segundo a vossa fé."
+        },
+        {
+          "n": 30,
+          "portuguese": "E os olhos se lhes abriram. E Jesus ameaçou-os, dizendo: Olhai que ninguém o saiba."
+        },
+        {
+          "n": 31,
+          "portuguese": "Mas, tendo eles saído, divulgaram a sua fama por toda aquela terra."
+        },
+        {
+          "n": 32,
+          "portuguese": "E, havendo eles saído, eis que lhe trouxeram um homem mudo e endemoninhado."
+        },
+        {
+          "n": 33,
+          "portuguese": "E, expulso o demônio, falou o mudo; e a multidão se maravilhou, dizendo: Nunca tal se viu em Israel."
+        },
+        {
+          "n": 34,
+          "portuguese": "Mas os fariseus diziam: Ele expulsa os demônios pelo príncipe dos demônios."
+        },
+        {
+          "n": 35,
+          "portuguese": "E Jesus percorria todas as cidades e aldeias, ensinando nas suas sinagogas, e pregando o evangelho do Reino, e curando todas as enfermidades e moléstias entre o povo."
+        },
+        {
+          "n": 36,
+          "portuguese": "E, vendo as multidões, teve grande compaixão delas, porque andavam cansadas e desgarradas, como ovelhas que não têm pastor."
+        },
+        {
+          "n": 37,
+          "portuguese": "Então, disse aos seus discípulos: Na verdade, a seara é grande, mas os trabalhadores são poucos."
+        },
+        {
+          "n": 38,
+          "portuguese": "Rogai, pois, ao Senhor da seara que mande trabalhadores para a sua seara."
+        }
+      ],
+      "notes": [
+        "9 — Paralítico; Mateus; Jejum; Jairo; mulher; cegos."
+      ]
+    },
+    {
+      "n": 10,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, chamando a si os seus doze discípulos, deu-lhes poder sobre os espíritos imundos, para os expulsarem e para curarem toda enfermidade e todo mal."
+        },
+        {
+          "n": 2,
+          "portuguese": "Ora, os nomes dos doze apóstolos são estes: o primeiro, Simão, chamado Pedro, e André, seu irmão; Tiago, filho de Zebedeu, e João, seu irmão;"
+        },
+        {
+          "n": 3,
+          "portuguese": "Filipe e Bartolomeu; Tomé e Mateus, o publicano; Tiago, filho de Alfeu, e Lebéu, cognominado Tadeu;"
+        },
+        {
+          "n": 4,
+          "portuguese": "Simão, o cananeu, e Judas Iscariotes, aquele que o traiu."
+        },
+        {
+          "n": 5,
+          "portuguese": "Jesus enviou estes doze e lhes ordenou, dizendo: Não ireis pelo caminho dos gentios, nem entrareis em cidade de samaritanos;"
+        },
+        {
+          "n": 6,
+          "portuguese": "mas ide, antes, às ovelhas perdidas da casa de Israel;"
+        },
+        {
+          "n": 7,
+          "portuguese": "e, indo, pregai, dizendo: É chegado o Reino dos céus."
+        },
+        {
+          "n": 8,
+          "portuguese": "Curai os enfermos, limpai os leprosos, ressuscitai os mortos, expulsai os demônios; de graça recebestes, de graça dai."
+        },
+        {
+          "n": 9,
+          "portuguese": "Não vos provejais de ouro, nem de prata, nem de cobre, em vossos cintos,"
+        },
+        {
+          "n": 10,
+          "portuguese": "nem de alforje para o caminho, nem de duas túnicas, nem de alparcas, nem de bastão, porque digno é o trabalhador do seu alimento."
+        },
+        {
+          "n": 11,
+          "portuguese": "E, em qualquer cidade ou aldeia em que entrardes, inquiri quem nela seja digno; e ficá lá até que vos retireis."
+        },
+        {
+          "n": 12,
+          "portuguese": "E, quando entrardes numa casa, saudai-a;"
+        },
+        {
+          "n": 13,
+          "portuguese": "e, se a casa for digna, desça sobre ela a vossa paz; mas, se não for digna, torne para vós a vossa paz."
+        },
+        {
+          "n": 14,
+          "portuguese": "E, se ninguém vos receber, nem ouvir as vossas palavras, saindo daquela casa ou cidade, sacudi o pó dos vossos pés."
+        },
+        {
+          "n": 15,
+          "portuguese": "Em verdade vos digo que, no Dia do Juízo, haverá menos rigor para o país de Sodoma e Gomorra do que para aquela cidade."
+        },
+        {
+          "n": 16,
+          "portuguese": "Eis que vos envio como ovelhas ao meio de lobos; portanto, sede prudentes como as serpentes e símplices como as pombas."
+        },
+        {
+          "n": 17,
+          "portuguese": "Acautelai-vos, porém, dos homens, porque eles vos entregarão aos sinédrios, e vos açoitarão nas suas sinagogas;"
+        },
+        {
+          "n": 18,
+          "portuguese": "e sereis até conduzidos à presença dos governadores e dos reis, por causa de mim, para lhes servir de testemunho, a eles e aos gentios."
+        },
+        {
+          "n": 19,
+          "portuguese": "Mas, quando vos entregarem, não vos preocupeis com o como ou o que haveis de falar, porque, naquela mesma hora, vos será ministrado o que haveis de dizer."
+        },
+        {
+          "n": 20,
+          "portuguese": "Porque não sois vós quem fala, mas o Espírito de vosso Pai é quem fala em vós."
+        },
+        {
+          "n": 21,
+          "portuguese": "E o irmão entregará à morte o irmão, e o pai, o filho; e os filhos se levantarão contra os pais e os matarão."
+        },
+        {
+          "n": 22,
+          "portuguese": "E odiados de todos sereis por causa do meu nome; mas aquele que perseverar até ao fim será salvo."
+        },
+        {
+          "n": 23,
+          "portuguese": "Quando, pois, vos perseguirem nesta cidade, fugi para outra; porque em verdade vos digo que não acabareis de percorrer as cidades de Israel sem que venha o Filho do Homem."
+        },
+        {
+          "n": 24,
+          "portuguese": "Não é o discípulo mais do que o mestre, nem o servo mais do que o seu senhor."
+        },
+        {
+          "n": 25,
+          "portuguese": "Basta ao discípulo ser como seu mestre, e ao servo, como seu senhor. Se chamaram Belzebu ao pai de família, quanto mais aos seus domésticos?"
+        },
+        {
+          "n": 26,
+          "portuguese": "Portanto, não os temais, porque nada há encoberto que não haja de revelar-se, nem oculto que não haja de saber-se."
+        },
+        {
+          "n": 27,
+          "portuguese": "O que vos digo em trevas, dizei-o em luz; e o que escutais ao ouvido pregai-o sobre os telhados."
+        },
+        {
+          "n": 28,
+          "portuguese": "E não temais os que matam o corpo e não podem matar a alma; temei, antes, aquele que pode fazer perecer no inferno a alma e o corpo."
+        },
+        {
+          "n": 29,
+          "portuguese": "Não se vendem dois passarinhos por um asse? E nenhum deles cairá em terra sem a vontade de vosso Pai."
+        },
+        {
+          "n": 30,
+          "portuguese": "E até mesmo os cabelos da vossa cabeça estão todos contados."
+        },
+        {
+          "n": 31,
+          "portuguese": "Não temais, pois; mais valeis vós do que muitos passarinhos."
+        },
+        {
+          "n": 32,
+          "portuguese": "Portanto, qualquer que me confessar diante dos homens, eu o confessarei diante de meu Pai, que está nos céus."
+        },
+        {
+          "n": 33,
+          "portuguese": "Mas qualquer que me negar diante dos homens, eu o negarei também diante de meu Pai, que está nos céus."
+        },
+        {
+          "n": 34,
+          "portuguese": "Não cuideis que vim trazer a paz à terra; não vim trazer a paz, mas a espada."
+        },
+        {
+          "n": 35,
+          "portuguese": "Porque eu vim pôr em dissensão o homem contra seu pai, e a filha contra sua mãe, e a nora contra sua sogra."
+        },
+        {
+          "n": 36,
+          "portuguese": "E assim os inimigos do homem serão os da sua própria casa."
+        },
+        {
+          "n": 37,
+          "portuguese": "Quem ama o pai ou a mãe mais do que a mim não é digno de mim; e quem ama o filho ou a filha mais do que a mim não é digno de mim."
+        },
+        {
+          "n": 38,
+          "portuguese": "E quem não toma a sua cruz e não segue após mim não é digno de mim."
+        },
+        {
+          "n": 39,
+          "portuguese": "Quem achar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim achá-la-á."
+        },
+        {
+          "n": 40,
+          "portuguese": "Quem vos recebe a mim me recebe; e quem me recebe a mim recebe aquele que me enviou."
+        },
+        {
+          "n": 41,
+          "portuguese": "Quem recebe um profeta em qualidade de profeta receberá galardão de profeta; e quem recebe um justo em qualidade de justo receberá galardão de justo."
+        },
+        {
+          "n": 42,
+          "portuguese": "E qualquer que tiver dado só um copo de água fria a um destes pequeninos, em nome de discípulo, em verdade vos digo que de modo algum perderá o seu galardão."
+        }
+      ],
+      "notes": [
+        "10 — Envio dos doze; instruções."
+      ]
+    },
+    {
+      "n": 11,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E aconteceu que, acabando Jesus de dar instruções aos seus doze discípulos, partiu dali a ensinar e a pregar nas cidades deles."
+        },
+        {
+          "n": 2,
+          "portuguese": "E João, ouvindo no cárcere falar dos feitos de Cristo, enviou dois dos seus discípulos"
+        },
+        {
+          "n": 3,
+          "portuguese": "a dizer-lhe: És tu aquele que havia de vir ou esperamos outro?"
+        },
+        {
+          "n": 4,
+          "portuguese": "E Jesus, respondendo, disse-lhes: Ide e anunciai a João as coisas que ouvis e vedes:"
+        },
+        {
+          "n": 5,
+          "portuguese": "os cegos veem, e os coxos andam; os leprosos são limpos, e os surdos ouvem; os mortos são ressuscitados, e aos pobres é anunciado o evangelho."
+        },
+        {
+          "n": 6,
+          "portuguese": "E bem-aventurado é aquele que não for escandalizado em mim."
+        },
+        {
+          "n": 7,
+          "portuguese": "E, partindo eles, começou Jesus a dizer às turbas a respeito de João: Que saístes a ver no deserto? Uma cana agitada pelo vento?"
+        },
+        {
+          "n": 8,
+          "portuguese": "Mas que saístes a ver? Um homem ricamente vestido? Eis que os que trajam roupas preciosas estão nas casas dos reis."
+        },
+        {
+          "n": 9,
+          "portuguese": "Mas que saístes a ver? Um profeta? Sim, vos digo, e muito mais do que profeta."
+        },
+        {
+          "n": 10,
+          "portuguese": "Porque este é aquele de quem está escrito: Eis que diante da tua face envio o meu anjo, que preparará diante de ti o teu caminho."
+        },
+        {
+          "n": 11,
+          "portuguese": "Em verdade vos digo que, entre os nascidos de mulher, não apareceu alguém maior do que João Batista; mas aquele que é o menor no Reino dos céus é maior do que ele."
+        },
+        {
+          "n": 12,
+          "portuguese": "E, desde os dias de João Batista até agora, se faz violência ao Reino dos céus, e os violentos se apoderam dele."
+        },
+        {
+          "n": 13,
+          "portuguese": "Porque todos os profetas e a lei profetizaram até João."
+        },
+        {
+          "n": 14,
+          "portuguese": "E, se quereis dar crédito, é este o Elias que havia de vir."
+        },
+        {
+          "n": 15,
+          "portuguese": "Quem tem ouvidos para ouvir, ouça."
+        },
+        {
+          "n": 16,
+          "portuguese": "Mas a quem assemelharei esta geração? É semelhante aos meninos que se assentam nas praças e clamam aos seus companheiros"
+        },
+        {
+          "n": 17,
+          "portuguese": "e dizem: Tocamo-vos flauta, e não dançastes; cantamo-vos lamentações, e não pranteastes."
+        },
+        {
+          "n": 18,
+          "portuguese": "Porque veio João, não comendo, nem bebendo, e dizem: Tem demônio."
+        },
+        {
+          "n": 19,
+          "portuguese": "Veio o Filho do Homem, comendo e bebendo, e dizem: Eis aí um homem comilão e bebedor de vinho, amigo de publicanos e pecadores. Mas a sabedoria é justificada por seus filhos."
+        },
+        {
+          "n": 20,
+          "portuguese": "Então, começou ele a lançar em rosto às cidades onde se operou a maior parte dos seus prodígios o não se haverem arrependido, dizendo:"
+        },
+        {
+          "n": 21,
+          "portuguese": "Ai de ti, Corazim! Ai de ti, Betsaida! Porque, se em Tiro e Sidom se fizessem os milagres que em vós se fizeram, há muito que se teriam arrependido, com saco e com cinza."
+        },
+        {
+          "n": 22,
+          "portuguese": "Porém eu vos digo que para Tiro e Sidom haverá menos rigor no Dia do Juízo do que para vós."
+        },
+        {
+          "n": 23,
+          "portuguese": "E tu, Cafarnaum, que te ergues até aos céus, descerás até ao inferno; porque, se em Sodoma se tivessem feito os milagres que em ti se fizeram, teria ela permanecido até hoje."
+        },
+        {
+          "n": 24,
+          "portuguese": "Porém eu vos digo que para a terra de Sodoma haverá menos rigor no Dia do Juízo do que para ti."
+        },
+        {
+          "n": 25,
+          "portuguese": "Naquele tempo, respondendo Jesus, disse: Graças te dou, ó Pai, Senhor do céu e da terra, que ocultaste estas coisas aos sábios e entendidos e as revelaste aos pequeninos."
+        },
+        {
+          "n": 26,
+          "portuguese": "Sim, ó Pai, porque assim te aprouve."
+        },
+        {
+          "n": 27,
+          "portuguese": "Todas as coisas me foram entregues por meu Pai; e ninguém conhece o Filho, senão o Pai; e ninguém conhece o Pai, senão o Filho e aquele a quem o Filho o quiser revelar."
+        },
+        {
+          "n": 28,
+          "portuguese": "Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei."
+        },
+        {
+          "n": 29,
+          "portuguese": "Tomai sobre vós o meu jugo, e aprendei de mim, que sou manso e humilde de coração, e encontrareis descanso para a vossa alma."
+        },
+        {
+          "n": 30,
+          "portuguese": "Porque o meu jugo é suave, e o meu fardo, leve."
+        }
+      ],
+      "notes": [
+        "11 — João Batista; ai das cidades; jugo suave."
+      ]
+    },
+    {
+      "n": 12,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Naquele tempo, passou Jesus pelas searas, em um sábado; e os seus discípulos, tendo fome, começaram a colher espigas e a comer."
+        },
+        {
+          "n": 2,
+          "portuguese": "E os fariseus, vendo isso, disseram-lhe: Eis que os teus discípulos fazem o que não é lícito fazer em sábado."
+        },
+        {
+          "n": 3,
+          "portuguese": "Ele, porém, lhes disse: Não tendes lido o que fez Davi, quando teve fome, ele e os que com ele estavam?"
+        },
+        {
+          "n": 4,
+          "portuguese": "Como entrou na casa de Deus e comeu os pães da proposição, que não lhe era lícito comer, nem aos que com ele estavam, mas só aos sacerdotes?"
+        },
+        {
+          "n": 5,
+          "portuguese": "Ou não tendes lido na lei que, aos sábados, os sacerdotes no templo violam o sábado e ficam sem culpa?"
+        },
+        {
+          "n": 6,
+          "portuguese": "Pois eu vos digo que está aqui quem é maior do que o templo."
+        },
+        {
+          "n": 7,
+          "portuguese": "Mas, se vós soubésseis o que significa: Misericórdia quero e não sacrifício, não condenaríeis os inocentes."
+        },
+        {
+          "n": 8,
+          "portuguese": "Porque o Filho do Homem até do sábado é Senhor."
+        },
+        {
+          "n": 9,
+          "portuguese": "E, partindo dali, chegou à sinagoga deles."
+        },
+        {
+          "n": 10,
+          "portuguese": "E eis que estava ali um homem que tinha uma das mãos mirrada; e eles, para o acusarem, o interrogaram, dizendo: É lícito curar nos sábados?"
+        },
+        {
+          "n": 11,
+          "portuguese": "E ele lhes disse: Qual dentre vós será o homem que, tendo uma ovelha, se num sábado ela cair numa cova, não lançará mão dela e a levantará?"
+        },
+        {
+          "n": 12,
+          "portuguese": "Pois quanto mais vale um homem do que uma ovelha? É, por consequência, lícito fazer bem nos sábados."
+        },
+        {
+          "n": 13,
+          "portuguese": "Então, disse àquele homem: Estende a tua mão. E ele a estendeu, e lhe foi restituída sã como a outra."
+        },
+        {
+          "n": 14,
+          "portuguese": "E os fariseus, tendo saído, formaram conselho contra ele, sobre como o matariam."
+        },
+        {
+          "n": 15,
+          "portuguese": "Jesus, porém, sabendo isso, retirou-se dali, e acompanhou-o uma grande multidão, e ele curou a todos."
+        },
+        {
+          "n": 16,
+          "portuguese": "E recomendava-lhes insistentemente que o não descobriam,"
+        },
+        {
+          "n": 17,
+          "portuguese": "para que se cumprisse o que fora dito pelo profeta Isaías, que diz:"
+        },
+        {
+          "n": 18,
+          "portuguese": "Eis aqui o meu servo, que escolhi, o meu amado, em quem a minha alma se compraz; porei sobre ele o meu Espírito, e anunciará aos gentios o juízo."
+        },
+        {
+          "n": 19,
+          "portuguese": "Não contenderá, nem clamará, nem alguém ouvirá nas ruas a sua voz;"
+        },
+        {
+          "n": 20,
+          "portuguese": "não esmagará a cana quebrada e não apagará o pavio que fumega, até que faça triunfar o juízo;"
+        },
+        {
+          "n": 21,
+          "portuguese": "e no seu nome os gentios esperarão."
+        },
+        {
+          "n": 22,
+          "portuguese": "Trouxeram-lhe, então, um endemoninhado cego e mudo; e de tal modo o curou, que o cego e mudo tanto falava como via."
+        },
+        {
+          "n": 23,
+          "portuguese": "E toda a multidão se admirava e dizia: Não é este o Filho de Davi?"
+        },
+        {
+          "n": 24,
+          "portuguese": "Mas os fariseus, ouvindo isso, diziam: Este não expulsa os demônios senão por Belzebu, príncipe dos demônios."
+        },
+        {
+          "n": 25,
+          "portuguese": "Jesus, porém, conhecendo os seus pensamentos, disse-lhes: Todo reino dividido contra si mesmo é devastado; e toda cidade ou casa dividida contra si mesma não subsistirá."
+        },
+        {
+          "n": 26,
+          "portuguese": "E, se Satanás expulsa a Satanás, está dividido contra si mesmo; como subsistirá, pois, o seu reino?"
+        },
+        {
+          "n": 27,
+          "portuguese": "E, se eu expulso os demônios por Belzebu, por quem os expulsam, então, os vossos filhos? Portanto, eles mesmos serão os vossos juízes."
+        },
+        {
+          "n": 28,
+          "portuguese": "Mas, se eu expulso os demônios pelo Espírito de Deus, logo é chegado a vós o Reino de Deus."
+        },
+        {
+          "n": 29,
+          "portuguese": "Ou como pode alguém entrar na casa do homem valente e roubar-lhe os bens, se primeiro não atar o valente, e então lhe saquear a casa?"
+        },
+        {
+          "n": 30,
+          "portuguese": "Quem não é comigo é contra mim; e quem comigo não ajunta espalha."
+        },
+        {
+          "n": 31,
+          "portuguese": "Portanto, eu vos digo: Todo pecado e blasfêmia se perdoará aos homens, mas a blasfêmia contra o Espírito não lhes será perdoada."
+        },
+        {
+          "n": 32,
+          "portuguese": "E, se qualquer disser alguma palavra contra o Filho do Homem, ser-lhe-á perdoado; mas, se alguém falar contra o Espírito Santo, não lhe será perdoado, nem neste século nem no futuro."
+        },
+        {
+          "n": 33,
+          "portuguese": "Ou fazei a árvore boa e o seu fruto bom ou fazei a árvore má e o seu fruto mau; porque pelo fruto se conhece a árvore."
+        },
+        {
+          "n": 34,
+          "portuguese": "Raça de víboras, como podeis vós dizer boas coisas, sendo maus? Pois do que há em abundância no coração, disso fala a boca."
+        },
+        {
+          "n": 35,
+          "portuguese": "O homem bom, do bom tesouro do coração, tira boas coisas, e o homem mau, do mau tesouro, tira coisas más."
+        },
+        {
+          "n": 36,
+          "portuguese": "Mas eu vos digo que de toda palavra ociosa que os homens disserem hão de dar conta no Dia do Juízo."
+        },
+        {
+          "n": 37,
+          "portuguese": "Porque por tuas palavras serás justificado e por tuas palavras serás condenado."
+        },
+        {
+          "n": 38,
+          "portuguese": "Então, alguns dos escribas e dos fariseus tomaram a palavra, dizendo: Mestre, queremos ver da tua parte algum sinal."
+        },
+        {
+          "n": 39,
+          "portuguese": "Mas ele lhes respondeu e disse: Uma geração má e adúltera pede um sinal, porém não se lhe dará outro sinal senão o do profeta Jonas;"
+        },
+        {
+          "n": 40,
+          "portuguese": "pois, como Jonas esteve três dias e três noites no ventre da baleia, assim estará o Filho do Homem três dias e três noites no seio da terra."
+        },
+        {
+          "n": 41,
+          "portuguese": "Os ninivitas se levantarão no Juízo com esta geração e a condenarão, porque se arrependeram com a pregação de Jonas; e eis aqui está quem é mais do que Jonas."
+        },
+        {
+          "n": 42,
+          "portuguese": "A rainha do Sul se levantará no Dia do Juízo com esta geração e a condenará, porque veio dos confins da terra para ouvir a sabedoria de Salomão; e eis aqui está quem é mais do que Salomão."
+        },
+        {
+          "n": 43,
+          "portuguese": "E, quando o espírito imundo tem saído do homem, anda por lugares áridos, buscando repouso, e não o encontra."
+        },
+        {
+          "n": 44,
+          "portuguese": "Então, diz: Voltarei para a minha casa, de onde saí. E, voltando, acha-a vazia, varrida e adornada."
+        },
+        {
+          "n": 45,
+          "portuguese": "Então, vai e leva consigo outros sete espíritos piores do que ele, e, entrando, habitam ali; e são os últimos atos desse homem piores do que os primeiros. Assim acontecerá também a esta geração má."
+        },
+        {
+          "n": 46,
+          "portuguese": "E, falando ele ainda à multidão, eis que estavam fora sua mãe e seus irmãos, pretendendo falar-lhe."
+        },
+        {
+          "n": 47,
+          "portuguese": "E disse-lhe alguém: Eis que estão ali fora tua mãe e teus irmãos, que querem falar-te."
+        },
+        {
+          "n": 48,
+          "portuguese": "Porém ele, respondendo, disse ao que lhe falara: Quem é minha mãe? E quem são meus irmãos?"
+        },
+        {
+          "n": 49,
+          "portuguese": "E, estendendo a mão para os seus discípulos, disse: Eis aqui minha mãe e meus irmãos;"
+        },
+        {
+          "n": 50,
+          "portuguese": "porque qualquer que fizer a vontade de meu Pai que está nos céus, este é meu irmão, e irmã, e mãe."
+        }
+      ],
+      "notes": [
+        "12 — Sábado; Belzebu; sinal de Jonas; família."
+      ]
+    },
+    {
+      "n": 13,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, no mesmo dia, saindo Jesus de casa, assentou-se junto ao mar."
+        },
+        {
+          "n": 2,
+          "portuguese": "E reuniu-se muita gente ao pé dele, de sorte que, entrando num barco, se assentou; e toda a multidão estava em pé na praia."
+        },
+        {
+          "n": 3,
+          "portuguese": "E falou-lhes muito em parábolas, dizendo: Eis que o semeador saiu a semear."
+        },
+        {
+          "n": 4,
+          "portuguese": "E, quando semeava, uma parte da semente caiu junto ao caminho, e vieram as aves e comeram-na;"
+        },
+        {
+          "n": 5,
+          "portuguese": "e outra parte caiu em pedregais, onde não havia terra bastante, e logo nasceu, porque não tinha terra funda;"
+        },
+        {
+          "n": 6,
+          "portuguese": "mas, vindo o sol, queimou-se e secou-se, porque não tinha raiz;"
+        },
+        {
+          "n": 7,
+          "portuguese": "e outra caiu entre espinhos, e os espinhos cresceram e a sufocaram;"
+        },
+        {
+          "n": 8,
+          "portuguese": "e outra caiu em boa terra e deu fruto: um a cem, outro a sessenta e outro a trinta."
+        },
+        {
+          "n": 9,
+          "portuguese": "Quem tem ouvidos para ouvir, ouça."
+        },
+        {
+          "n": 10,
+          "portuguese": "E, achegando-se a ele os discípulos, disseram-lhe: Por que lhes falas por parábolas?"
+        },
+        {
+          "n": 11,
+          "portuguese": "E, respondendo ele, disse-lhes: Porque a vós é dado conhecer os mistérios do Reino dos céus, mas a eles não lhes é dado;"
+        },
+        {
+          "n": 12,
+          "portuguese": "porque àquele que tem se dará, e terá em abundância; mas àquele que não tem até aquilo que tem lhe será tirado."
+        },
+        {
+          "n": 13,
+          "portuguese": "Por isso, lhes falo por parábolas, porque eles, vendo, não veem; e, ouvindo, não ouvem, nem compreendem."
+        },
+        {
+          "n": 14,
+          "portuguese": "E neles se cumpre a profecia de Isaías, que diz: Ouvindo, ouvireis, mas não compreendereis e, vendo, vereis, mas não percebereis."
+        },
+        {
+          "n": 15,
+          "portuguese": "Porque o coração deste povo está engrossado, e ouviram de mau grado com seus ouvidos, e fecharam os olhos, para que não vejam com os olhos, e ouçam com os ouvidos, e compreendam com o coração, e se convertam, e eu os cure."
+        },
+        {
+          "n": 16,
+          "portuguese": "Mas, bem-aventurados os vossos olhos, porque veem, e os vossos ouvidos, porque ouvem."
+        },
+        {
+          "n": 17,
+          "portuguese": "Porque em verdade vos digo que muitos profetas e justos desejaram ver o que vós vedes e não o viram; e ouvir o que vós ouvis e não o ouviram."
+        },
+        {
+          "n": 18,
+          "portuguese": "Ouvi vós, pois, a parábola do semeador."
+        },
+        {
+          "n": 19,
+          "portuguese": "Ouvindo alguém a palavra do Reino e não a entendendo, vem o maligno e arrebata o que foi semeado no seu coração; este é o que foi semeado junto ao caminho."
+        },
+        {
+          "n": 20,
+          "portuguese": "Mas o que foi semeado em pedregais é o que ouve a palavra e logo a recebe com alegria;"
+        },
+        {
+          "n": 21,
+          "portuguese": "mas não tem raiz em si mesmo, antes é de pouca duração; e, chegada a angústia e a perseguição por causa da palavra, logo se ofende."
+        },
+        {
+          "n": 22,
+          "portuguese": "E o que foi semeado entre espinhos é o que ouve a palavra, mas os cuidados deste mundo e a sedução das riquezas sufocam a palavra, e fica infrutífera."
+        },
+        {
+          "n": 23,
+          "portuguese": "Mas o que foi semeado em boa terra é o que ouve e compreende a palavra; e dá fruto, e um produz cem, outro, sessenta, e outro, trinta."
+        },
+        {
+          "n": 24,
+          "portuguese": "Propôs-lhes outra parábola, dizendo: O Reino dos céus é semelhante ao homem que semeia boa semente no seu campo;"
+        },
+        {
+          "n": 25,
+          "portuguese": "mas, dormindo os homens, veio o seu inimigo, e semeou joio no meio do trigo, e retirou-se."
+        },
+        {
+          "n": 26,
+          "portuguese": "E, quando a erva cresceu e produziu fruto, apareceu também o joio."
+        },
+        {
+          "n": 27,
+          "portuguese": "E os servos do pai de família, indo ter com ele, disseram-lhe: Senhor, não semeaste boa semente no teu campo? Donde veio, pois, o joio?"
+        },
+        {
+          "n": 28,
+          "portuguese": "E ele lhes disse: Um inimigo é quem fez isso. E os servos lhe disseram: Queres, pois, que vamos arrancá-lo?"
+        },
+        {
+          "n": 29,
+          "portuguese": "Porém ele disse: Não; para que, ao colher o joio, não arranqueis também o trigo com ele."
+        },
+        {
+          "n": 30,
+          "portuguese": "Deixai crescer ambos juntos até à ceifa; e, por ocasião da ceifa, direi aos ceifeiros: Colhei primeiro o joio e atai-o em molhos para o queimar; mas o trigo, ajuntai-o no meu celeiro."
+        },
+        {
+          "n": 31,
+          "portuguese": "Outra parábola lhes propôs, dizendo: O Reino dos céus é semelhante a um grão de mostarda que um homem, pegando dele, semeou no seu campo;"
+        },
+        {
+          "n": 32,
+          "portuguese": "o qual é, realmente, a menor de todas as sementes; mas, crescendo, é a maior das plantas e faz-se uma árvore, de sorte que vêm as aves do céu e se aninham nos seus ramos."
+        },
+        {
+          "n": 33,
+          "portuguese": "Outra parábola lhes disse: O Reino dos céus é semelhante ao fermento que uma mulher, pegando dele, escondeu em três medidas de farinha, até que tudo ficou levedado."
+        },
+        {
+          "n": 34,
+          "portuguese": "Tudo isso disse Jesus às multidões por parábolas e nada lhes falava sem parábolas,"
+        },
+        {
+          "n": 35,
+          "portuguese": "para que se cumprisse o que fora dito pelo profeta, que disse: Abrirei em parábolas a minha boca; publicarei coisas ocultas desde a criação do mundo."
+        },
+        {
+          "n": 36,
+          "portuguese": "Então, tendo despedido a multidão, foi Jesus para casa. E chegaram ao pé dele os seus discípulos, dizendo: Explica-nos a parábola do joio do campo."
+        },
+        {
+          "n": 37,
+          "portuguese": "E ele, respondendo, disse-lhes: O que semeia a boa semente é o Filho do Homem;"
+        },
+        {
+          "n": 38,
+          "portuguese": "o campo é o mundo; e a boa semente são os filhos do Reino; e o joio são os filhos do maligno;"
+        },
+        {
+          "n": 39,
+          "portuguese": "o inimigo que o semeou é o diabo; e a ceifa é o fim do mundo; e os ceifeiros são os anjos."
+        },
+        {
+          "n": 40,
+          "portuguese": "Assim como o joio se colhe e se queima no fogo, assim será na consumação deste século."
+        },
+        {
+          "n": 41,
+          "portuguese": "Mandará o Filho do Homem os seus anjos, e eles colherão do seu Reino tudo o que causa escândalo e os que cometem iniquidade"
+        },
+        {
+          "n": 42,
+          "portuguese": "e lançá-los-ão na fornalha de fogo; ali haverá pranto e ranger de dentes."
+        },
+        {
+          "n": 43,
+          "portuguese": "Então, os justos resplandecerão como o sol, no Reino de seu Pai. Quem tem ouvidos para ouvir, ouça."
+        },
+        {
+          "n": 44,
+          "portuguese": "Também o Reino dos céus é semelhante a um tesouro escondido num campo, que um homem achou e escondeu; e, pela alegria dele, vai, vende tudo quanto tem e compra aquele campo."
+        },
+        {
+          "n": 45,
+          "portuguese": "Outrossim, o Reino dos céus é semelhante ao homem, negociante, que busca boas pérolas;"
+        },
+        {
+          "n": 46,
+          "portuguese": "e, encontrando uma pérola de grande valor, foi, vendeu tudo quanto tinha e comprou-a."
+        },
+        {
+          "n": 47,
+          "portuguese": "Igualmente, o Reino dos céus é semelhante a uma rede lançada ao mar e que apanha toda qualidade de peixes."
+        },
+        {
+          "n": 48,
+          "portuguese": "E, estando cheia, a puxam para a praia; e, assentando-se, apanham para os cestos os bons; os ruins, porém, lançam fora."
+        },
+        {
+          "n": 49,
+          "portuguese": "Assim será na consumação dos séculos: virão os anjos e separarão os maus dentre os justos"
+        },
+        {
+          "n": 50,
+          "portuguese": "e os lançarão na fornalha de fogo; ali haverá pranto e ranger de dentes."
+        },
+        {
+          "n": 51,
+          "portuguese": "E disse-lhes Jesus: Entendestes todas estas coisas? Disseram-lhe eles: Sim, Senhor."
+        },
+        {
+          "n": 52,
+          "portuguese": "E ele disse-lhes: Por isso, todo escriba instruído acerca do Reino dos céus é semelhante a um pai de família que tira do seu tesouro coisas novas e velhas."
+        },
+        {
+          "n": 53,
+          "portuguese": "E aconteceu que, acabando Jesus estas parábolas, se retirou dali."
+        },
+        {
+          "n": 54,
+          "portuguese": "E, chegando à sua pátria, ensinava-os na sinagoga deles, de sorte que se maravilhavam e diziam: De onde veio a este esta sabedoria e estas maravilhas?"
+        },
+        {
+          "n": 55,
+          "portuguese": "Não é este o filho do carpinteiro? E não se chama sua mãe Maria, e seus irmãos, Tiago, e José, e Simão, e Judas?"
+        },
+        {
+          "n": 56,
+          "portuguese": "E não estão entre nós todas as suas irmãs? De onde lhe veio, pois, tudo isso?"
+        },
+        {
+          "n": 57,
+          "portuguese": "E escandalizavam-se nele. Jesus, porém, lhes disse: Não há profeta sem honra, a não ser na sua pátria e na sua casa."
+        },
+        {
+          "n": 58,
+          "portuguese": "E não fez ali muitas maravilhas, por causa da incredulidade deles."
+        }
+      ],
+      "notes": [
+        "13 — Parábolas do Reino; Nazaré."
+      ]
+    },
+    {
+      "n": 14,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Naquele tempo, ouviu Herodes, o tetrarca, a fama de Jesus"
+        },
+        {
+          "n": 2,
+          "portuguese": "e disse aos seus criados: Este é João Batista; ressuscitou dos mortos, e, por isso, estas maravilhas operam nele."
+        },
+        {
+          "n": 3,
+          "portuguese": "Porque Herodes havia prendido João, e o tinha ligado, e posto num cárcere, por causa de Herodias, mulher de Filipe, seu irmão;"
+        },
+        {
+          "n": 4,
+          "portuguese": "porque João lhe dissera: Não te é lícito possuí-la."
+        },
+        {
+          "n": 5,
+          "portuguese": "E, querendo matá-lo, temia o povo, porque o tinham como profeta."
+        },
+        {
+          "n": 6,
+          "portuguese": "Festejando-se, porém, o dia natalício de Herodes, dançou a filha de Herodias diante de todos e agradou a Herodes."
+        },
+        {
+          "n": 7,
+          "portuguese": "Pelo que prometeu, com juramento, dar-lhe tudo o que pedisse."
+        },
+        {
+          "n": 8,
+          "portuguese": "E, instruída ela previamente por sua mãe, disse: Dá-me aqui, num prato, a cabeça de João Batista."
+        },
+        {
+          "n": 9,
+          "portuguese": "E o rei afligiu-se, mas, por causa do juramento e dos que estavam com ele à mesa, ordenou que se lhe desse."
+        },
+        {
+          "n": 10,
+          "portuguese": "E mandou degolar João no cárcere."
+        },
+        {
+          "n": 11,
+          "portuguese": "E a sua cabeça foi dada num prato e apresentada à jovem, e ela a levou a sua mãe."
+        },
+        {
+          "n": 12,
+          "portuguese": "E, chegando os seus discípulos, retiraram o corpo e o sepultaram; e foram anunciá-lo a Jesus."
+        },
+        {
+          "n": 13,
+          "portuguese": "E Jesus, ouvindo isso, retirou-se dali num barco, para um lugar deserto, apartado; e, sabendo-o o povo, o seguiu a pé desde as cidades."
+        },
+        {
+          "n": 14,
+          "portuguese": "E Jesus, saindo, viu uma grande multidão, e encheu-se de entranhável compaixão para com ela, e curou os seus enfermos."
+        },
+        {
+          "n": 15,
+          "portuguese": "E, sendo chegada a tarde, os seus discípulos aproximaram-se dele, dizendo: O lugar é deserto, e a hora é já passada; despede a multidão, para que vá pelas aldeias e compre para si o que comer."
+        },
+        {
+          "n": 16,
+          "portuguese": "Jesus, porém, lhes disse: Não é preciso que vão; dai-lhes vós de comer."
+        },
+        {
+          "n": 17,
+          "portuguese": "Então, eles lhe disseram: Não temos aqui senão cinco pães e dois peixes."
+        },
+        {
+          "n": 18,
+          "portuguese": "E ele disse: Trazei-mos aqui."
+        },
+        {
+          "n": 19,
+          "portuguese": "E, mandando que a multidão se assentasse sobre a erva, tomou os cinco pães e os dois peixes e, erguendo os olhos ao céu, os abençoou, e, partindo os pães, deu-os aos discípulos, e os discípulos, à multidão."
+        },
+        {
+          "n": 20,
+          "portuguese": "E comeram todos e fartaram-se; e levantaram dos pedaços que sobejaram doze cestos cheios."
+        },
+        {
+          "n": 21,
+          "portuguese": "E os que comeram foram quase cinco mil homens, além das mulheres e crianças."
+        },
+        {
+          "n": 22,
+          "portuguese": "E logo ordenou Jesus que os seus discípulos entrassem no barco e fossem adiante para o outro lado, enquanto ele despedia a multidão."
+        },
+        {
+          "n": 23,
+          "portuguese": "E, despedida a multidão, subiu ao monte a orar, em particular. E, chegada já a tarde, estava ali só."
+        },
+        {
+          "n": 24,
+          "portuguese": "E o barco estava já no meio do mar, açoitado pelas ondas, porque o vento era contrário."
+        },
+        {
+          "n": 25,
+          "portuguese": "Mas, à quarta vigília da noite, aproximou-se Jesus deles, andando por cima do mar."
+        },
+        {
+          "n": 26,
+          "portuguese": "E os discípulos, vendo-o andando sobre o mar, assustaram-se, dizendo: É um fantasma! E gritaram com medo."
+        },
+        {
+          "n": 27,
+          "portuguese": "Jesus, porém, imediatamente lhes falou, dizendo: Tende bom ânimo, sou eu; não temais."
+        },
+        {
+          "n": 28,
+          "portuguese": "E respondeu-lhe Pedro e disse: Senhor, se és tu, manda-me ir ter contigo por cima das águas."
+        },
+        {
+          "n": 29,
+          "portuguese": "E ele disse: Vem! E Pedro, descendo do barco, andou sobre as águas para ir ter com Jesus."
+        },
+        {
+          "n": 30,
+          "portuguese": "Mas, sentindo o vento forte, teve medo; e, começando a ir para o fundo, clamou, dizendo: Senhor, salva-me!"
+        },
+        {
+          "n": 31,
+          "portuguese": "E logo Jesus, estendendo a mão, segurou-o e disse-lhe: Homem de pouca fé, por que duvidaste?"
+        },
+        {
+          "n": 32,
+          "portuguese": "E, quando entraram no barco, cessou o vento."
+        },
+        {
+          "n": 33,
+          "portuguese": "Então, aproximaram-se os que estavam no barco e adoraram-no, dizendo: És verdadeiramente o Filho de Deus."
+        },
+        {
+          "n": 34,
+          "portuguese": "E, tendo passado para a outra margem, chegaram à terra de Genesaré."
+        },
+        {
+          "n": 35,
+          "portuguese": "E, quando os homens daquele lugar o conheceram, mandaram mensageiros por todas aquelas terras em redor e trouxeram-lhe todos os que estavam enfermos."
+        },
+        {
+          "n": 36,
+          "portuguese": "E pediam-lhe que os deixasse tocar, ao menos, a orla do seu vestido; e todos os que a tocavam ficavam sãos."
+        }
+      ],
+      "notes": [
+        "14 — Morte de João; cinco mil; anda sobre o mar."
+      ]
+    },
+    {
+      "n": 15,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Então, chegaram ao pé de Jesus uns escribas e fariseus de Jerusalém, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Por que transgridem os teus discípulos a tradição dos anciãos? Pois não lavam as mãos quando comem pão."
+        },
+        {
+          "n": 3,
+          "portuguese": "Ele, porém, respondendo, disse-lhes: Por que transgredis vós também o mandamento de Deus pela vossa tradição?"
+        },
+        {
+          "n": 4,
+          "portuguese": "Porque Deus ordenou, dizendo: Honra a teu pai e a tua mãe; e: Quem maldisser ao pai ou à mãe certamente morrerá."
+        },
+        {
+          "n": 5,
+          "portuguese": "Mas vós dizeis: Qualquer que disser ao pai ou à mãe: É oferta ao Senhor o que poderias aproveitar de mim, esse não precisa honrar nem a seu pai nem a sua mãe."
+        },
+        {
+          "n": 6,
+          "portuguese": "E assim invalidastes, pela vossa tradição, o mandamento de Deus."
+        },
+        {
+          "n": 7,
+          "portuguese": "Hipócritas, bem profetizou Isaías a vosso respeito, dizendo:"
+        },
+        {
+          "n": 8,
+          "portuguese": "Este povo honra-me com os lábios, mas o seu coração está longe de mim."
+        },
+        {
+          "n": 9,
+          "portuguese": "Mas em vão me adoram, ensinando doutrinas que são preceitos dos homens."
+        },
+        {
+          "n": 10,
+          "portuguese": "E, chamando a si a multidão, disse-lhes: Ouvi e entendei:"
+        },
+        {
+          "n": 11,
+          "portuguese": "o que contamina o homem não é o que entra na boca, mas o que sai da boca, isso é o que contamina o homem."
+        },
+        {
+          "n": 12,
+          "portuguese": "Então, acercando-se dele, os seus discípulos disseram-lhe: Sabes que os fariseus, ouvindo essas palavras, se escandalizaram?"
+        },
+        {
+          "n": 13,
+          "portuguese": "Ele, porém, respondendo, disse: Toda planta que meu Pai celestial não plantou será arrancada."
+        },
+        {
+          "n": 14,
+          "portuguese": "Deixai-os; são cegos, condutores de cegos. Ora, se um cego guiar outro cego, ambos cairão na cova."
+        },
+        {
+          "n": 15,
+          "portuguese": "E Pedro, tomando a palavra, disse-lhe: Explica-nos essa parábola."
+        },
+        {
+          "n": 16,
+          "portuguese": "E Jesus disse: Até vós mesmos estais ainda sem entender?"
+        },
+        {
+          "n": 17,
+          "portuguese": "Ainda não compreendeis que tudo o que entra pela boca desce para o ventre e é lançado fora?"
+        },
+        {
+          "n": 18,
+          "portuguese": "Mas o que sai da boca procede do coração, e isso contamina o homem."
+        },
+        {
+          "n": 19,
+          "portuguese": "Porque do coração procedem os maus pensamentos, mortes, adultérios, prostituição, furtos, falsos testemunhos e blasfêmias."
+        },
+        {
+          "n": 20,
+          "portuguese": "São estas coisas que contaminam o homem; mas comer sem lavar as mãos não contamina o homem."
+        },
+        {
+          "n": 21,
+          "portuguese": "E, partindo Jesus dali, foi para as partes de Tiro e de Sidom."
+        },
+        {
+          "n": 22,
+          "portuguese": "E eis que uma mulher cananeia, que saíra daquelas cercanias, clamou, dizendo-lhe: Senhor, Filho de Davi, tem misericórdia de mim, que minha filha está miseravelmente endemoninhada."
+        },
+        {
+          "n": 23,
+          "portuguese": "Mas ele não lhe respondeu palavra. E os seus discípulos, chegando ao pé dele, rogaram-lhe, dizendo: Despede-a, que vem clamando atrás de nós."
+        },
+        {
+          "n": 24,
+          "portuguese": "E ele, respondendo, disse: Eu não fui enviado senão às ovelhas perdidas da casa de Israel."
+        },
+        {
+          "n": 25,
+          "portuguese": "Então, chegou ela e adorou-o, dizendo: Senhor, socorre-me!"
+        },
+        {
+          "n": 26,
+          "portuguese": "Mas ele, respondendo, disse: Não é bom tomar o pão dos filhos e deitá-lo aos cachorrinhos."
+        },
+        {
+          "n": 27,
+          "portuguese": "E ela disse: Sim, Senhor, mas também os cachorrinhos comem das migalhas que caem da mesa dos seus senhores."
+        },
+        {
+          "n": 28,
+          "portuguese": "Então, respondeu Jesus e disse-lhe: Ó mulher, grande é a tua fé! Seja isso feito para contigo, como tu desejas. E, desde aquela hora, a sua filha ficou sã."
+        },
+        {
+          "n": 29,
+          "portuguese": "E Jesus, deixando aqueles lugares, chegou ao pé do mar da Galileia e, subindo a um monte, assentou-se ali."
+        },
+        {
+          "n": 30,
+          "portuguese": "E veio ter com ele uma grande multidão, que trazia coxos, cegos, mudos, aleijados e outros muitos e os pôs aos pés de Jesus, e ele os sarou,"
+        },
+        {
+          "n": 31,
+          "portuguese": "de tal sorte que a multidão se maravilhou, vendo que os mudos falavam, que os aleijados saravam, que os coxos andavam e que os cegos viam; e glorificavam ao Deus de Israel."
+        },
+        {
+          "n": 32,
+          "portuguese": "E Jesus, chamando a si os seus discípulos, disse: Tenho compaixão da multidão, porque já está comigo há três dias e não tem o que comer; e não quero despedi-la em jejum, para que não desfaleça no caminho."
+        },
+        {
+          "n": 33,
+          "portuguese": "E os seus discípulos disseram-lhe: De onde teremos nós, num deserto, tantos pães, para fartar tal multidão?"
+        },
+        {
+          "n": 34,
+          "portuguese": "E Jesus disse-lhes: Quantos pães tendes? E eles disseram: Sete e uns poucos peixinhos."
+        },
+        {
+          "n": 35,
+          "portuguese": "Então, mandou à multidão que se assentasse no chão."
+        },
+        {
+          "n": 36,
+          "portuguese": "E, tomando os sete pães e os peixes e dando graças, partiu-os e deu-os aos seus discípulos, e os discípulos, à multidão."
+        },
+        {
+          "n": 37,
+          "portuguese": "E todos comeram e se fartaram; e, do que sobejou dos pedaços, levantaram sete cestos cheios."
+        },
+        {
+          "n": 38,
+          "portuguese": "Ora, os que tinham comido eram quatro mil homens, além de mulheres e crianças."
+        },
+        {
+          "n": 39,
+          "portuguese": "E, tendo despedido a multidão, entrou no barco e foi para os termos de Magadã."
+        }
+      ],
+      "notes": [
+        "15 — Tradição; cananeia; quatro mil."
+      ]
+    },
+    {
+      "n": 16,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, chegando-se os fariseus e os saduceus para o tentarem, pediram-lhe que lhes mostrasse algum sinal do céu."
+        },
+        {
+          "n": 2,
+          "portuguese": "Mas ele, respondendo, disse-lhes: Quando é chegada a tarde, dizeis: Haverá bom tempo, porque o céu está vermelho."
+        },
+        {
+          "n": 3,
+          "portuguese": "E, pela manhã: Hoje haverá tempestade, porque o céu está de um vermelho sombrio. Hipócritas, sabeis distinguir o aspecto do céu e não podeis discernir os sinais dos tempos?"
+        },
+        {
+          "n": 4,
+          "portuguese": "Uma geração má e adúltera pede um sinal, e nenhum sinal se lhe dará, senão o sinal do profeta Jonas. E, deixando-os, retirou-se."
+        },
+        {
+          "n": 5,
+          "portuguese": "E, passando seus discípulos para o outro lado, tinham-se esquecido de levar pão."
+        },
+        {
+          "n": 6,
+          "portuguese": "E Jesus disse-lhes: Olhai e acautelai-vos do fermento dos fariseus e saduceus."
+        },
+        {
+          "n": 7,
+          "portuguese": "E eles arrazoavam entre si, dizendo: É porque não trouxemos pão."
+        },
+        {
+          "n": 8,
+          "portuguese": "E Jesus, percebendo isso, disse: Por que arrazoais entre vós, homens de pouca fé, sobre o não terdes trazido pão?"
+        },
+        {
+          "n": 9,
+          "portuguese": "Não compreendeis ainda, nem vos lembrais dos cinco pães para cinco mil homens e de quantos cestos levantastes?"
+        },
+        {
+          "n": 10,
+          "portuguese": "Nem dos sete pães para quatro mil homens e de quantos cestos levantastes?"
+        },
+        {
+          "n": 11,
+          "portuguese": "Como não compreendeis que não vos falei a respeito do pão, mas que vos guardásseis do fermento dos fariseus e saduceus?"
+        },
+        {
+          "n": 12,
+          "portuguese": "Então, compreenderam que não dissera que se guardassem do fermento do pão, mas da doutrina dos fariseus e saduceus."
+        },
+        {
+          "n": 13,
+          "portuguese": "E, chegando Jesus às partes de Cesareia de Filipe, interrogou os seus discípulos, dizendo: Quem dizem os homens ser o Filho do Homem?"
+        },
+        {
+          "n": 14,
+          "portuguese": "E eles disseram: Uns, João Batista; outros, Elias; e outros, Jeremias ou um dos profetas."
+        },
+        {
+          "n": 15,
+          "portuguese": "Disse-lhes ele: E vós, quem dizeis que eu sou?"
+        },
+        {
+          "n": 16,
+          "portuguese": "E Simão Pedro, respondendo, disse: Tu és o Cristo, o Filho do Deus vivo."
+        },
+        {
+          "n": 17,
+          "portuguese": "E Jesus, respondendo, disse-lhe: Bem-aventurado és tu, Simão Barjonas, porque não foi carne e sangue quem to revelou, mas meu Pai, que está nos céus."
+        },
+        {
+          "n": 18,
+          "portuguese": "Pois também eu te digo que tu és Pedro e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela."
+        },
+        {
+          "n": 19,
+          "portuguese": "E eu te darei as chaves do Reino dos céus; e tudo o que ligares na terra será ligado nos céus, e tudo o que desligares na terra será desligado nos céus."
+        },
+        {
+          "n": 20,
+          "portuguese": "Então, mandou aos seus discípulos que a ninguém dissessem que ele era o Cristo."
+        },
+        {
+          "n": 21,
+          "portuguese": "Desde esse tempo, começou Jesus a mostrar aos seus discípulos que convinha ir a Jerusalém, e padecer muitas coisas dos anciãos, e dos principais sacerdotes, e dos escribas, e ser morto, e ressuscitar ao terceiro dia."
+        },
+        {
+          "n": 22,
+          "portuguese": "E Pedro, tomando-o de parte, começou a repreendê-lo, dizendo: Senhor, tem compaixão de ti; de modo nenhum te acontecerá isso."
+        },
+        {
+          "n": 23,
+          "portuguese": "Ele, porém, voltando-se, disse a Pedro: Para trás de mim, Satanás, que me serves de escândalo; porque não compreendes as coisas que são de Deus, mas só as que são dos homens."
+        },
+        {
+          "n": 24,
+          "portuguese": "Então, disse Jesus aos seus discípulos: Se alguém quiser vir após mim, renuncie-se a si mesmo, tome sobre si a sua cruz e siga-me."
+        },
+        {
+          "n": 25,
+          "portuguese": "Porque aquele que quiser salvar a sua vida perdê-la-á, e quem perder a sua vida por amor de mim achá-la-á."
+        },
+        {
+          "n": 26,
+          "portuguese": "Pois que aproveita ao homem ganhar o mundo inteiro, se perder a sua alma? Ou que dará o homem em resgate da sua alma?"
+        },
+        {
+          "n": 27,
+          "portuguese": "Porque o Filho do Homem virá na glória de seu Pai, com os seus anjos; e, então, recompensará a cada um segundo as suas obras."
+        },
+        {
+          "n": 28,
+          "portuguese": "Em verdade vos digo que alguns há, dos que aqui estão, que não provarão a morte até que vejam vir o Filho do Homem no seu Reino."
+        }
+      ],
+      "notes": [
+        "16 — Fermento; confissão de Pedro; cruz."
+      ]
+    },
+    {
+      "n": 17,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Seis dias depois, tomou Jesus consigo a Pedro, e a Tiago, e a João, seu irmão, e conduziu-os em particular a um alto monte."
+        },
+        {
+          "n": 2,
+          "portuguese": "E transformou-se diante deles; e o seu rosto resplandeceu como o sol, e as suas vestes se tornaram brancas como a luz."
+        },
+        {
+          "n": 3,
+          "portuguese": "E eis que lhes apareceram Moisés e Elias, falando com ele."
+        },
+        {
+          "n": 4,
+          "portuguese": "E Pedro, tomando a palavra, disse a Jesus: Senhor, bom é estarmos aqui; se queres, façamos aqui três tabernáculos, um para ti, um para Moisés e um para Elias."
+        },
+        {
+          "n": 5,
+          "portuguese": "E, estando ele ainda a falar, eis que uma nuvem luminosa os cobriu. E da nuvem saiu uma voz que dizia: Este é o meu amado Filho, em quem me comprazo; escutai-o."
+        },
+        {
+          "n": 6,
+          "portuguese": "E os discípulos, ouvindo isso, caíram sobre o seu rosto e temeram grandemente."
+        },
+        {
+          "n": 7,
+          "portuguese": "E, aproximando-se Jesus, tocou-lhes e disse: Levantai-vos e não tenhais medo."
+        },
+        {
+          "n": 8,
+          "portuguese": "E, erguendo eles os olhos, não viram a ninguém, senão a Jesus somente."
+        },
+        {
+          "n": 9,
+          "portuguese": "E, descendo eles do monte, mandou-lhes Jesus, dizendo: A ninguém conteis a visão até que o Filho do Homem seja ressuscitado dentre os mortos."
+        },
+        {
+          "n": 10,
+          "portuguese": "E os seus discípulos o interrogaram, dizendo: Por que dizem, então, os escribas que é necessário que Elias venha primeiro?"
+        },
+        {
+          "n": 11,
+          "portuguese": "E Jesus, respondendo, disse-lhes: Em verdade Elias virá primeiro e restaurará todas as coisas."
+        },
+        {
+          "n": 12,
+          "portuguese": "Mas digo-vos que Elias já veio, e não o conheceram, mas fizeram-lhe tudo o que quiseram; assim farão eles também padecer o Filho do Homem."
+        },
+        {
+          "n": 13,
+          "portuguese": "Então, entenderam os discípulos que lhes falara de João Batista."
+        },
+        {
+          "n": 14,
+          "portuguese": "E, quando chegaram à multidão, aproximou-se dele um homem, de joelhos, dizendo:"
+        },
+        {
+          "n": 15,
+          "portuguese": "Senhor, tem misericórdia de meu filho, que é lunático e sofre muito; pois muitas vezes cai no fogo e outras muitas, na água."
+        },
+        {
+          "n": 16,
+          "portuguese": "E trouxe-o aos teus discípulos, e não puderam curá-lo."
+        },
+        {
+          "n": 17,
+          "portuguese": "E Jesus, respondendo, disse: Ó geração incrédula e perversa! Até quando estarei convosco? Até quando vos sofrerei? Trazei-mo aqui."
+        },
+        {
+          "n": 18,
+          "portuguese": "E Jesus repreendeu o demônio, e este saiu dele, e, desde aquela hora, o menino sarou."
+        },
+        {
+          "n": 19,
+          "portuguese": "Então, os discípulos, aproximando-se de Jesus em particular, disseram: Por que não pudemos nós expulsá-lo?"
+        },
+        {
+          "n": 20,
+          "portuguese": "E Jesus lhes disse: Por causa da vossa incredulidade; porque em verdade vos digo que, se tiverdes fé como um grão de mostarda, direis a este monte: Passa daqui para acolá, e ele passará, e nada vos será impossível."
+        },
+        {
+          "n": 21,
+          "portuguese": "Mas esta casta de demônios não se expulsa senão pela oração e pelo jejum."
+        },
+        {
+          "n": 22,
+          "portuguese": "Ora, andando eles juntos pela Galileia, disse-lhes Jesus: O Filho do Homem será entregue nas mãos dos homens."
+        },
+        {
+          "n": 23,
+          "portuguese": "E matá-lo-ão, e, ao terceiro dia, ressuscitará. E eles se entristeceram muito."
+        },
+        {
+          "n": 24,
+          "portuguese": "E, chegando eles a Cafarnaum, aproximaram-se de Pedro os que cobravam as didracmas e disseram: O vosso mestre não paga as didracmas?"
+        },
+        {
+          "n": 25,
+          "portuguese": "Disse ele: Sim. E, quando entrou em casa, Jesus se lhe antecipou, dizendo: Que te parece, Simão? De quem cobram os reis da terra tributo ou imposto? Dos seus filhos ou dos estranhos?"
+        },
+        {
+          "n": 26,
+          "portuguese": "Pedro disse-lhe: Dos estranhos. Disse-lhe Jesus: Logo, estão livres os filhos."
+        },
+        {
+          "n": 27,
+          "portuguese": "Mas, para que não os escandalizemos, vai ao mar, lança o anzol, tira o primeiro peixe que subir e, abrindo-lhe a boca, encontrarás um estáter; toma-o e dá-o por mim e por ti."
+        }
+      ],
+      "notes": [
+        "17 — Transfiguração; lunático; didracma."
+      ]
+    },
+    {
+      "n": 18,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Naquela mesma hora, chegaram os discípulos ao pé de Jesus, dizendo: Quem é o maior no Reino dos céus?"
+        },
+        {
+          "n": 2,
+          "portuguese": "E Jesus, chamando um menino, o pôs no meio deles"
+        },
+        {
+          "n": 3,
+          "portuguese": "e disse: Em verdade vos digo que, se não vos converterdes e não vos fizerdes como meninos, de modo algum entrareis no Reino dos céus."
+        },
+        {
+          "n": 4,
+          "portuguese": "Portanto, aquele que se fizer humilde como este menino, esse é o maior no Reino dos céus."
+        },
+        {
+          "n": 5,
+          "portuguese": "E qualquer que receber em meu nome um menino tal como este, a mim me recebe."
+        },
+        {
+          "n": 6,
+          "portuguese": "Mas qualquer que escandalizar um destes pequeninos que creem em mim, melhor lhe fora que se lhe pendurasse ao pescoço uma mó de azenha, e se submergisse na profundidade do mar."
+        },
+        {
+          "n": 7,
+          "portuguese": "Ai do mundo, por causa dos escândalos; porque é mister que venham escândalos, mas ai daquele homem por quem o escândalo vem!"
+        },
+        {
+          "n": 8,
+          "portuguese": "Portanto, se a tua mão ou o teu pé te escandalizar, corta-o e lança-o para longe de ti; melhor te é entrar na vida coxo ou aleijado do que, tendo duas mãos ou dois pés, seres lançado no fogo eterno."
+        },
+        {
+          "n": 9,
+          "portuguese": "E, se o teu olho te escandalizar, arranca-o e lança-o para longe de ti; melhor te é entrar na vida com um só olho do que, tendo dois olhos, seres lançado no fogo do inferno."
+        },
+        {
+          "n": 10,
+          "portuguese": "Vede, não desprezeis algum destes pequeninos, porque eu vos digo que os seus anjos nos céus sempre veem a face de meu Pai que está nos céus."
+        },
+        {
+          "n": 11,
+          "portuguese": "Porque o Filho do Homem veio salvar o que se tinha perdido."
+        },
+        {
+          "n": 12,
+          "portuguese": "Que vos parece? Se algum homem tiver cem ovelhas, e uma delas se desgarrar, não irá pelos montes, deixando as noventa e nove, em busca da que se desgarrou?"
+        },
+        {
+          "n": 13,
+          "portuguese": "E, se porventura a achar, em verdade vos digo que mais se alegra com aquela do que com as noventa e nove que se não desgarraram."
+        },
+        {
+          "n": 14,
+          "portuguese": "Assim, também, não é vontade de vosso Pai, que está nos céus, que um destes pequeninos se perca."
+        },
+        {
+          "n": 15,
+          "portuguese": "Ora, se teu irmão pecar contra ti, vai e repreende-o entre ti e ele só; se te ouvir, ganhaste a teu irmão."
+        },
+        {
+          "n": 16,
+          "portuguese": "Mas, se não te ouvir, leva ainda contigo um ou dois, para que, pela boca de duas ou três testemunhas, toda palavra seja confirmada."
+        },
+        {
+          "n": 17,
+          "portuguese": "E, se não as ouvir, dize-o à igreja; e, se também não ouvir a igreja, considera-o como gentio e publicano."
+        },
+        {
+          "n": 18,
+          "portuguese": "Em verdade vos digo que tudo o que ligardes na terra será ligado no céu, e tudo o que desligardes na terra será desligado no céu."
+        },
+        {
+          "n": 19,
+          "portuguese": "Também vos digo que, se dois de vós concordarem na terra acerca de qualquer coisa que pedirem, isso lhes será feito por meu Pai, que está nos céus."
+        },
+        {
+          "n": 20,
+          "portuguese": "Porque onde estiverem dois ou três reunidos em meu nome, aí estou eu no meio deles."
+        },
+        {
+          "n": 21,
+          "portuguese": "Então, Pedro, aproximando-se dele, disse: Senhor, até quantas vezes pecará meu irmão contra mim, e eu hei de perdoar-lhe? Até sete?"
+        },
+        {
+          "n": 22,
+          "portuguese": "Jesus lhe disse: Não te digo que até sete, mas até setenta vezes sete."
+        },
+        {
+          "n": 23,
+          "portuguese": "Por isso, o Reino dos céus pode comparar-se a um certo rei que quis fazer contas com os seus servos."
+        },
+        {
+          "n": 24,
+          "portuguese": "E, começando a fazer contas, foi-lhe apresentado um que lhe devia dez mil talentos."
+        },
+        {
+          "n": 25,
+          "portuguese": "E, não tendo ele com que pagar, o seu senhor mandou que ele, e sua mulher, e seus filhos fossem vendidos, com tudo o que tinha, para que a dívida se lhe pagasse."
+        },
+        {
+          "n": 26,
+          "portuguese": "Então, aquele servo, prostrando-se, o adorava, dizendo: Senhor, tem paciência comigo, que tudo te pagarei."
+        },
+        {
+          "n": 27,
+          "portuguese": "E o senhor daquele servo, movido de íntima compaixão, soltou-o e perdoou-lhe a dívida."
+        },
+        {
+          "n": 28,
+          "portuguese": "Saindo, porém, aquele servo, encontrou um dos seus conservos que lhe devia cem denários e, lançando mão dele, sufocava-o, dizendo: Paga-me o que me deves."
+        },
+        {
+          "n": 29,
+          "portuguese": "Então, o seu companheiro, prostrando-se a seus pés, rogava-lhe, dizendo: Tem paciência comigo, que tudo te pagarei."
+        },
+        {
+          "n": 30,
+          "portuguese": "Ele, porém, não quis; antes, foi e o lançou na prisão, até que pagasse a dívida."
+        },
+        {
+          "n": 31,
+          "portuguese": "Vendo, pois, os seus conservos o que acontecia, entristeceram-se muito e foram declarar ao seu senhor tudo o que se passara."
+        },
+        {
+          "n": 32,
+          "portuguese": "Então, o seu senhor, chamando-o à sua presença, disse-lhe: Servo malvado, perdoei-te toda aquela dívida, porque me suplicaste."
+        },
+        {
+          "n": 33,
+          "portuguese": "Não devias tu, igualmente, ter compaixão do teu companheiro, como eu também tive misericórdia de ti?"
+        },
+        {
+          "n": 34,
+          "portuguese": "E, indignado, o seu senhor o entregou aos verdugos, até que pagasse tudo o que lhe devia."
+        },
+        {
+          "n": 35,
+          "portuguese": "Assim vos fará também meu Pai celestial, se do coração não perdoardes, cada um a seu irmão, as suas ofensas."
+        }
+      ],
+      "notes": [
+        "18 — Grandeza; escândalos; perdão; servo cruel."
+      ]
+    },
+    {
+      "n": 19,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E aconteceu que, concluindo Jesus essas palavras, saiu da Galileia e foi para os termos da Judeia, além do Jordão."
+        },
+        {
+          "n": 2,
+          "portuguese": "E seguiu-o uma grande multidão, e curou-os ali."
+        },
+        {
+          "n": 3,
+          "portuguese": "Então, aproximaram-se dele os fariseus, tentando-o e dizendo-lhe: É lícito ao homem repudiar sua mulher por qualquer motivo?"
+        },
+        {
+          "n": 4,
+          "portuguese": "Ele, porém, respondendo, disse-lhes: Não tendes lido que aquele que os fez, no princípio, macho e fêmea os fez"
+        },
+        {
+          "n": 5,
+          "portuguese": "e disse: Portanto, deixará o homem pai e mãe e se unirá à sua mulher, e serão dois numa só carne?"
+        },
+        {
+          "n": 6,
+          "portuguese": "Assim não são mais dois, mas uma só carne. Portanto, o que Deus ajuntou não o separe o homem."
+        },
+        {
+          "n": 7,
+          "portuguese": "Disseram-lhe: Então, por que mandou Moisés dar-lhe carta de divórcio e repudiá-la?"
+        },
+        {
+          "n": 8,
+          "portuguese": "Disse-lhes ele: Por causa da dureza do vosso coração, Moisés vos permitiu repudiar vossas mulheres; mas ao princípio não foi assim."
+        },
+        {
+          "n": 9,
+          "portuguese": "Eu vos digo, porém, que qualquer que repudiar sua mulher, não sendo por causa de fornicação, e casar com outra, adultera; e o que casar com a repudiada também adultera."
+        },
+        {
+          "n": 10,
+          "portuguese": "Disseram-lhe os seus discípulos: Se assim é a condição do homem relativamente à mulher, não convém casar."
+        },
+        {
+          "n": 11,
+          "portuguese": "Ele, porém, lhes disse: Nem todos podem receber esta palavra, mas só aqueles a quem foi concedido."
+        },
+        {
+          "n": 12,
+          "portuguese": "Porque há eunucos que assim nasceram do ventre da mãe; e há eunucos que foram castrados pelos homens; e há eunucos que se castraram a si mesmos por causa do Reino dos céus. Quem pode receber isso, receba-o."
+        },
+        {
+          "n": 13,
+          "portuguese": "Trouxeram-lhe, então, alguns meninos, para que sobre eles pusesse as mãos e orasse; mas os discípulos os repreendiam."
+        },
+        {
+          "n": 14,
+          "portuguese": "Jesus, porém, disse: Deixai os meninos e não os estorveis de vir a mim, porque dos tais é o Reino dos céus."
+        },
+        {
+          "n": 15,
+          "portuguese": "E, depois de impor-lhes as mãos, partiu dali."
+        },
+        {
+          "n": 16,
+          "portuguese": "E eis que, aproximando-se dele um jovem, disse-lhe: Bom Mestre, que bem farei, para alcançar a vida eterna?"
+        },
+        {
+          "n": 17,
+          "portuguese": "E ele disse-lhe: Por que me chamas bom? Não há bom senão um só, que é Deus. Se queres, porém, entrar na vida, guarda os mandamentos."
+        },
+        {
+          "n": 18,
+          "portuguese": "Disse-lhe ele: Quais? E Jesus disse: Não matarás, não cometerás adultério, não furtarás, não dirás falso testemunho,"
+        },
+        {
+          "n": 19,
+          "portuguese": "honra teu pai e tua mãe e amarás o teu próximo como a ti mesmo."
+        },
+        {
+          "n": 20,
+          "portuguese": "Disse-lhe o jovem: Tudo isso tenho guardado desde a minha mocidade; que me falta ainda?"
+        },
+        {
+          "n": 21,
+          "portuguese": "Disse-lhe Jesus: Se queres ser perfeito, vai, vende tudo o que tens, dá-o aos pobres, e terás um tesouro no céu; e vem e segue-me."
+        },
+        {
+          "n": 22,
+          "portuguese": "E o jovem, ouvindo essa palavra, retirou-se triste, porque possuía muitas propriedades."
+        },
+        {
+          "n": 23,
+          "portuguese": "Disse, então, Jesus aos seus discípulos: Em verdade vos digo que é difícil entrar um rico no Reino dos céus."
+        },
+        {
+          "n": 24,
+          "portuguese": "E outra vez vos digo que é mais fácil passar um camelo pelo fundo de uma agulha do que entrar um rico no Reino de Deus."
+        },
+        {
+          "n": 25,
+          "portuguese": "Os seus discípulos, ouvindo isso, admiraram-se muito, dizendo: Quem poderá, então, salvar-se?"
+        },
+        {
+          "n": 26,
+          "portuguese": "E Jesus, olhando para eles, disse-lhes: Aos homens isso é impossível, mas a Deus tudo é possível."
+        },
+        {
+          "n": 27,
+          "portuguese": "Então, Pedro, tomando a palavra, disse-lhe: Eis que nós deixamos tudo e te seguimos; que receberemos?"
+        },
+        {
+          "n": 28,
+          "portuguese": "E Jesus disse-lhes: Em verdade vos digo que vós, que me seguistes, quando, na regeneração, o Filho do Homem se assentar no trono da sua glória, também vos assentareis sobre doze tronos, para julgar as doze tribos de Israel."
+        },
+        {
+          "n": 29,
+          "portuguese": "E todo aquele que tiver deixado casas, ou irmãos, ou irmãs, ou pai, ou mãe, ou mulher, ou filhos, ou terras, por amor do meu nome, receberá cem vezes tanto e herdará a vida eterna."
+        },
+        {
+          "n": 30,
+          "portuguese": "Porém muitos primeiros serão últimos, e muitos últimos serão primeiros."
+        }
+      ],
+      "notes": [
+        "19 — Divórcio; crianças; jovem rico."
+      ]
+    },
+    {
+      "n": 20,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Porque o Reino dos céus é semelhante a um homem, pai de família, que saiu de madrugada a assalariar trabalhadores para a sua vinha."
+        },
+        {
+          "n": 2,
+          "portuguese": "E, ajustando com os trabalhadores a um denário por dia, mandou-os para a sua vinha."
+        },
+        {
+          "n": 3,
+          "portuguese": "E, saindo cerca da hora terceira, viu outros que estavam ociosos na praça"
+        },
+        {
+          "n": 4,
+          "portuguese": "e disse-lhes: Ide vós também para a vinha, e dar-vos-ei o que for justo. E eles foram."
+        },
+        {
+          "n": 5,
+          "portuguese": "Saindo outra vez, cerca da hora sexta e nona, fez o mesmo."
+        },
+        {
+          "n": 6,
+          "portuguese": "E, saindo cerca da hora undécima, encontrou outros que estavam ociosos e disse-lhes: Por que estais ociosos todo o dia?"
+        },
+        {
+          "n": 7,
+          "portuguese": "Disseram-lhe eles: Porque ninguém nos assalariou. Diz-lhes ele: Ide vós também para a vinha e recebereis o que for justo."
+        },
+        {
+          "n": 8,
+          "portuguese": "E, chegada da tarde, diz o senhor da vinha ao seu mordomo: Chama os trabalhadores e paga-lhes o jornal, começando pelos últimos até aos primeiros."
+        },
+        {
+          "n": 9,
+          "portuguese": "E, chegando os que foram contratados cerca da hora undécima, receberam um denário cada um."
+        },
+        {
+          "n": 10,
+          "portuguese": "Vindo, porém, os primeiros, cuidaram que haviam de receber mais; mas do mesmo modo receberam um denário cada um."
+        },
+        {
+          "n": 11,
+          "portuguese": "E, recebendo-o, murmuravam contra o pai de família,"
+        },
+        {
+          "n": 12,
+          "portuguese": "dizendo: Estes últimos trabalharam só uma hora, e tu os igualaste conosco, que suportamos a fadiga e o calor do dia."
+        },
+        {
+          "n": 13,
+          "portuguese": "Mas ele, respondendo, disse a um deles: Amigo, não te faço agravo; não ajustaste tu comigo um denário?"
+        },
+        {
+          "n": 14,
+          "portuguese": "Toma o que é teu e retirou-te; eu quero dar a este último tanto como a ti."
+        },
+        {
+          "n": 15,
+          "portuguese": "Ou não me é lícito fazer o que quiser do que é meu? Ou é mau o teu olho porque eu sou bom?"
+        },
+        {
+          "n": 16,
+          "portuguese": "Assim, os últimos serão primeiros, e os primeiros, últimos; porque muitos são chamados, mas poucos, escolhidos."
+        },
+        {
+          "n": 17,
+          "portuguese": "E, subindo Jesus a Jerusalém, chamou à parte os seus doze discípulos e, no caminho, disse-lhes:"
+        },
+        {
+          "n": 18,
+          "portuguese": "Eis que vamos para Jerusalém, e o Filho do Homem será entregue aos principais sacerdotes e aos escribas, e condená-lo-ão à morte."
+        },
+        {
+          "n": 19,
+          "portuguese": "E o entregarão aos gentios para que dele escarneçam, e o açoitem, e crucifiquem; e, ao terceiro dia, ressuscitará."
+        },
+        {
+          "n": 20,
+          "portuguese": "Então, se aproximou dele a mãe dos filhos de Zebedeu com seus filhos, adorando-o e fazendo-lhe um pedido."
+        },
+        {
+          "n": 21,
+          "portuguese": "E ele disse-lhe: Que queres? Ela lhe disse: Concede que estes meus dois filhos se assentem, um à tua direita e outro à tua esquerda, no teu Reino."
+        },
+        {
+          "n": 22,
+          "portuguese": "Jesus, porém, respondendo, disse: Não sabeis o que pedis; podeis vós beber o cálice que eu hei de beber e ser batizados com o batismo com que eu sou batizado? Dizem-lhe eles: Podemos."
+        },
+        {
+          "n": 23,
+          "portuguese": "E diz-lhes ele: A verdade é que bebéreis o meu cálice e sereis batizados com o batismo com que eu sou batizado, mas o assentar-se à minha direita ou à minha esquerda não me pertence dá-lo, mas é para aqueles para quem meu Pai o tem preparado."
+        },
+        {
+          "n": 24,
+          "portuguese": "E, quando os dez ouviram isso, indignaram-se contra os dois irmãos."
+        },
+        {
+          "n": 25,
+          "portuguese": "Então, Jesus, chamando-os para junto de si, disse: Bem sabeis que pelos príncipes dos gentios são estes dominados e que os grandes exercem autoridade sobre eles."
+        },
+        {
+          "n": 26,
+          "portuguese": "Não será assim entre vós; mas qualquer que, entre vós, quiser tornar-se grande, que seja vosso serviçal;"
+        },
+        {
+          "n": 27,
+          "portuguese": "e qualquer que, entre vós, quiser ser o primeiro, que seja vosso servo,"
+        },
+        {
+          "n": 28,
+          "portuguese": "bem como o Filho do Homem não veio para ser servido, mas para servir e para dar a sua vida em resgate de muitos."
+        },
+        {
+          "n": 29,
+          "portuguese": "E, saindo eles de Jericó, seguiu-o uma grande multidão."
+        },
+        {
+          "n": 30,
+          "portuguese": "E eis que dois cegos, assentados junto do caminho, ouvindo que Jesus passava, clamaram, dizendo: Senhor, Filho de Davi, tem misericórdia de nós!"
+        },
+        {
+          "n": 31,
+          "portuguese": "E a multidão os repreendia, para que se calassem; eles, porém, clamavam ainda mais, dizendo: Senhor, Filho de Davi, tem misericórdia de nós!"
+        },
+        {
+          "n": 32,
+          "portuguese": "E Jesus, parando, chamou-os e disse: Que quereis que vos faça?"
+        },
+        {
+          "n": 33,
+          "portuguese": "Disseram-lhe eles: Senhor, que os nossos olhos sejam abertos."
+        },
+        {
+          "n": 34,
+          "portuguese": "E Jesus, movido de íntima compaixão, tocou-lhes nos olhos, e logo viram; e eles o seguiram."
+        }
+      ],
+      "notes": [
+        "20 — Obreiros da vinha; pedido de Zebedeu; cegos."
+      ]
+    },
+    {
+      "n": 21,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, quando se aproximaram de Jerusalém e chegaram a Betfagé, ao monte das Oliveiras, enviou, então, Jesus dois discípulos,"
+        },
+        {
+          "n": 2,
+          "portuguese": "dizendo-lhes: Ide à aldeia que está defronte de vós, e logo encontrareis uma jumenta presa e seu jumentinho com ela; desprendei-a e trazei-mos."
+        },
+        {
+          "n": 3,
+          "portuguese": "E, se alguém vos disser alguma coisa, direis que o Senhor precisa deles; e logo os mandará."
+        },
+        {
+          "n": 4,
+          "portuguese": "Ora, tudo isso aconteceu para que se cumprisse o que foi dito pelo profeta, que diz:"
+        },
+        {
+          "n": 5,
+          "portuguese": "Dizei à filha de Sião: Eis que o teu Rei vem a ti, manso e assentado sobre uma jumenta e sobre um jumentinho, filho de animal de carga."
+        },
+        {
+          "n": 6,
+          "portuguese": "E, indo os discípulos e fazendo como Jesus lhes ordenara,"
+        },
+        {
+          "n": 7,
+          "portuguese": "trouxeram a jumenta e o jumentinho, e sobre eles puseram as suas vestes, e fizeram-no assentar em cima."
+        },
+        {
+          "n": 8,
+          "portuguese": "E a maior parte da multidão estendia as suas vestes pelo caminho, e outros cortavam ramos de árvores e os espalhavam pelo caminho."
+        },
+        {
+          "n": 9,
+          "portuguese": "E a multidão que ia adiante e a que seguia clamava, dizendo: Hosana ao Filho de Davi! Bendito o que vem em nome do Senhor! Hosana nas alturas!"
+        },
+        {
+          "n": 10,
+          "portuguese": "E, entrando ele em Jerusalém, alvoroçou-se toda a cidade, dizendo: Quem é este?"
+        },
+        {
+          "n": 11,
+          "portuguese": "E a multidão dizia: Este é Jesus, o profeta de Nazaré da Galileia."
+        },
+        {
+          "n": 12,
+          "portuguese": "E entrou Jesus no templo de Deus, e expulsou todos os que vendiam e compravam no templo, e derribou as mesas dos cambistas e as cadeiras dos que vendiam pombas."
+        },
+        {
+          "n": 13,
+          "portuguese": "E disse-lhes: Está escrito: A minha casa será chamada casa de oração; mas vós a tendes feito covil de ladrões."
+        },
+        {
+          "n": 14,
+          "portuguese": "E foram ter com ele, no templo, cegos e coxos, e curou-os."
+        },
+        {
+          "n": 15,
+          "portuguese": "Vendo, então, os principais sacerdotes e os escribas as maravilhas que fazia e os meninos clamando no templo: Hosana ao Filho de Davi!, indignaram-se"
+        },
+        {
+          "n": 16,
+          "portuguese": "e disseram-lhe: Ouves o que estes dizem? E Jesus lhes disse: Sim; nunca lestes: Pela boca dos meninos e das criancinhas de peito tiraste o perfeito louvor?"
+        },
+        {
+          "n": 17,
+          "portuguese": "E, deixando-os, saiu para fora da cidade, para Betânia, e ali passou a noite."
+        },
+        {
+          "n": 18,
+          "portuguese": "E, de manhã, voltando para a cidade, teve fome."
+        },
+        {
+          "n": 19,
+          "portuguese": "E, avistando uma figueira perto do caminho, dirigiu-se a ela e não achou nela senão folhas. E disse-lhe: Nunca mais nasça fruto de ti! E a figueira secou imediatamente."
+        },
+        {
+          "n": 20,
+          "portuguese": "E os discípulos, vendo isso, maravilharam-se, dizendo: Como secou imediatamente a figueira!"
+        },
+        {
+          "n": 21,
+          "portuguese": "Jesus, porém, respondendo, disse-lhes: Em verdade vos digo que, se tiverdes fé e não duvidardes, não só fareis o que foi feito à figueira, mas até, se a este monte disserdes: Ergue-te e precipita-te no mar, isso será feito."
+        },
+        {
+          "n": 22,
+          "portuguese": "E tudo o que pedirdes na oração, crendo, o recebereis."
+        },
+        {
+          "n": 23,
+          "portuguese": "E, chegando ao templo, aproximaram-se dele, estando já ensinando, os principais sacerdotes e os anciãos do povo, dizendo: Com que autoridade fazes estas coisas? E quem te deu tal autoridade?"
+        },
+        {
+          "n": 24,
+          "portuguese": "E Jesus, respondendo, disse-lhes: Eu também vos perguntarei uma coisa; se ma disserdes, também eu vos direi com que autoridade faço estas coisas."
+        },
+        {
+          "n": 25,
+          "portuguese": "O batismo de João de onde era? Do céu ou dos homens? E pensavam entre si, dizendo: Se dissermos: Do céu, ele nos dirá: Então, por que não crestes nele?"
+        },
+        {
+          "n": 26,
+          "portuguese": "E, se dissermos: Dos homens, tememos o povo, porque todos consideram João como profeta."
+        },
+        {
+          "n": 27,
+          "portuguese": "E, respondendo a Jesus, disseram: Não sabemos. Ele também lhes disse: Nem eu vos digo com que autoridade faço estas coisas."
+        },
+        {
+          "n": 28,
+          "portuguese": "Mas que vos parece? Um homem tinha dois filhos e, dirigindo-se ao primeiro, disse: Filho, vai trabalhar hoje na minha vinha."
+        },
+        {
+          "n": 29,
+          "portuguese": "Ele, porém, respondendo, disse: Não quero. Mas depois, arrependendo-se, foi."
+        },
+        {
+          "n": 30,
+          "portuguese": "E, dirigindo-se ao segundo, falou-lhe de igual modo; e, respondendo ele, disse: Eu vou, senhor; e não foi."
+        },
+        {
+          "n": 31,
+          "portuguese": "Qual dos dois fez a vontade do pai? Disseram-lhe eles: O primeiro. Disse-lhes Jesus: Em verdade vos digo que os publicanos e as meretrizes entram adiante de vós no Reino de Deus."
+        },
+        {
+          "n": 32,
+          "portuguese": "Porque João veio a vós no caminho da justiça, e não crestes nele, mas os publicanos e as meretrizes creram nele; vós, porém, vendo isso, nem depois vos arrependestes para crer nele."
+        },
+        {
+          "n": 33,
+          "portuguese": "Ouvi ainda outra parábola: Houve um homem, pai de família, que plantou uma vinha, e circundou-a de um valado, e cavou nela um lagar, e edificou uma torre, e arrendou-a a uns lavradores, e ausentou-se para longe."
+        },
+        {
+          "n": 34,
+          "portuguese": "E, chegando o tempo dos frutos, enviou os seus servos aos lavradores, para receber os seus frutos."
+        },
+        {
+          "n": 35,
+          "portuguese": "E os lavradores, apoderando-se dos servos, feriram um, mataram outro e a outro apedrejaram."
+        },
+        {
+          "n": 36,
+          "portuguese": "Depois, enviou outros servos, em maior número do que os primeiros; e fizeram-lhes o mesmo."
+        },
+        {
+          "n": 37,
+          "portuguese": "E, por último, enviou-lhes seu filho, dizendo: Terão respeito a meu filho."
+        },
+        {
+          "n": 38,
+          "portuguese": "Mas os lavradores, vendo o filho, disseram entre si: Este é o herdeiro; vinde, matemo-lo e apoderemo-nos da sua herança."
+        },
+        {
+          "n": 39,
+          "portuguese": "E, lançando mão dele, o arrastaram para fora da vinha e o mataram."
+        },
+        {
+          "n": 40,
+          "portuguese": "Quando, pois, vier o senhor da vinha, que fará àqueles lavradores?"
+        },
+        {
+          "n": 41,
+          "portuguese": "Disseram-lhe: Fará morrer malvadamente a esses malvados e arrendará a vinha a outros lavradores que, a seu tempo, lhe deem os frutos."
+        },
+        {
+          "n": 42,
+          "portuguese": "Disse-lhes Jesus: Nunca lestes nas Escrituras: A pedra que os edificadores rejeitaram essa foi posta por cabeça do ângulo; pelo Senhor foi feito isso e é maravilhoso aos nossos olhos?"
+        },
+        {
+          "n": 43,
+          "portuguese": "Portanto, eu vos digo que o Reino de Deus vos será tirado e será dado a uma nação que dê os seus frutos."
+        },
+        {
+          "n": 44,
+          "portuguese": "E quem cair sobre esta pedra despedaçar-se-á; e aquele sobre quem ela cair ficará reduzido a pó."
+        },
+        {
+          "n": 45,
+          "portuguese": "E os principais sacerdotes e os fariseus, ouvindo essas parábolas, entenderam que falava deles."
+        },
+        {
+          "n": 46,
+          "portuguese": "E, pretendendo prendê-lo, temeram o povo, porque o tinham por profeta."
+        }
+      ],
+      "notes": [
+        "21 — Entrada em Jerusalém; templo; figueira; parábolas."
+      ]
+    },
+    {
+      "n": 22,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Então, Jesus, tomando a palavra, tornou a falar-lhes em parábolas, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "O Reino dos céus é semelhante a um certo rei que celebrou as bodas de seu filho."
+        },
+        {
+          "n": 3,
+          "portuguese": "E enviou os seus servos a chamar os convidados para as bodas; e não quiseram vir."
+        },
+        {
+          "n": 4,
+          "portuguese": "Depois, enviou outros servos, dizendo: Dizei aos convidados: Eis que tenho o meu jantar preparado, os meus bois e cevados já estão mortos, e tudo já está pronto; vinde às bodas."
+        },
+        {
+          "n": 5,
+          "portuguese": "Mas eles, não fazendo caso, foram, um para o seu campo, e outro para o seu negócio;"
+        },
+        {
+          "n": 6,
+          "portuguese": "e os outros, apoderando-se dos servos, os ultrajaram e mataram."
+        },
+        {
+          "n": 7,
+          "portuguese": "E o rei, tendo notícia disso, encolerizou-se e, enviando os seus exércitos, destruiu aqueles homicidas e incendiu-lhes a cidade."
+        },
+        {
+          "n": 8,
+          "portuguese": "Então, disse aos servos: As bodas, na verdade, estão preparadas, mas os convidados não eram dignos."
+        },
+        {
+          "n": 9,
+          "portuguese": "Ide, pois, às saídas dos caminhos e convidai para as bodas a todos os que encontrardes."
+        },
+        {
+          "n": 10,
+          "portuguese": "E aqueles servos, saindo pelos caminhos, ajuntaram todos quantos encontraram, tanto maus como bons; e a festa nupcial foi cheia de convidados."
+        },
+        {
+          "n": 11,
+          "portuguese": "E o rei, entrando para ver os convidados, viu ali um homem que não estava trajado com vestido de núpcias."
+        },
+        {
+          "n": 12,
+          "portuguese": "E disse-lhe: Amigo, como entraste aqui, não tendo vestido de núpcias? E ele emudeceu."
+        },
+        {
+          "n": 13,
+          "portuguese": "Então, disse o rei aos servos: Amarrai-o de pés e mãos, levai-o e lançai-o nas trevas exteriores; ali haverá pranto e ranger de dentes."
+        },
+        {
+          "n": 14,
+          "portuguese": "Porque muitos são chamados, mas poucos, escolhidos."
+        },
+        {
+          "n": 15,
+          "portuguese": "Então, retirando-se os fariseus, consultaram entre si como o surpreenderiam nalguma palavra."
+        },
+        {
+          "n": 16,
+          "portuguese": "E enviaram-lhe os seus discípulos, com os herodianos, dizendo: Mestre, bem sabemos que és verdadeiro e que ensinas o caminho de Deus segundo a verdade, e de ninguém se te dá, porque não olhas a aparência dos homens."
+        },
+        {
+          "n": 17,
+          "portuguese": "Dize-nos, pois, que te parece? É lícito pagar o tributo a César ou não?"
+        },
+        {
+          "n": 18,
+          "portuguese": "Mas Jesus, percebendo a sua malícia, disse: Por que me experimentais, hipócritas?"
+        },
+        {
+          "n": 19,
+          "portuguese": "Mostrai-me a moeda do tributo. E eles lhe apresentaram um denário."
+        },
+        {
+          "n": 20,
+          "portuguese": "E ele disse-lhes: De quem é esta imagem e inscrição?"
+        },
+        {
+          "n": 21,
+          "portuguese": "Disseram-lhe eles: De César. Então, ele lhes disse: Dai, pois, a César o que é de César e a Deus, o que é de Deus."
+        },
+        {
+          "n": 22,
+          "portuguese": "E eles, ouvindo isso, maravilharam-se, e, deixando-o, se retiraram."
+        },
+        {
+          "n": 23,
+          "portuguese": "No mesmo dia, chegaram junto dele os saduceus, que dizem não haver ressurreição, e o interrogaram,"
+        },
+        {
+          "n": 24,
+          "portuguese": "dizendo: Mestre, Moisés disse: Se morrer alguém, não tendo filhos, seu irmão case com a mulher dele e suscite geração a seu irmão."
+        },
+        {
+          "n": 25,
+          "portuguese": "Ora, houve entre nós sete irmãos; e o primeiro, tendo casado, morreu e, não tendo geração, deixou sua mulher a seu irmão."
+        },
+        {
+          "n": 26,
+          "portuguese": "Da mesma sorte também o segundo, e o terceiro, até ao sétimo;"
+        },
+        {
+          "n": 27,
+          "portuguese": "por fim, depois de todos, morreu também a mulher."
+        },
+        {
+          "n": 28,
+          "portuguese": "Portanto, na ressurreição, de qual dos sete será a mulher, pois todos a tiveram?"
+        },
+        {
+          "n": 29,
+          "portuguese": "Jesus, porém, respondendo, disse-lhes: Errais, não conhecendo as Escrituras, nem o poder de Deus."
+        },
+        {
+          "n": 30,
+          "portuguese": "Porque, na ressurreição, nem casam, nem se dão em casamento; mas serão como os anjos de Deus no céu."
+        },
+        {
+          "n": 31,
+          "portuguese": "E, acerca da ressurreição dos mortos, não tendes lido o que Deus vos declarou, dizendo:"
+        },
+        {
+          "n": 32,
+          "portuguese": "Eu sou o Deus de Abraão, o Deus de Isaque e o Deus de Jacó? Ora, Deus não é Deus de mortos, mas de vivos."
+        },
+        {
+          "n": 33,
+          "portuguese": "E, ouvindo isso, as turbas pasmavam da sua doutrina."
+        },
+        {
+          "n": 34,
+          "portuguese": "Ouvindo, porém, os fariseus que ele fizera emudecer os saduceus, reuniram-se no mesmo lugar."
+        },
+        {
+          "n": 35,
+          "portuguese": "E um deles, doutor da lei, interrogou-o para o experimentar, dizendo:"
+        },
+        {
+          "n": 36,
+          "portuguese": "Mestre, qual é o grande mandamento na lei?"
+        },
+        {
+          "n": 37,
+          "portuguese": "E Jesus disse-lhe: Amarás o Senhor, teu Deus, de todo o teu coração, e de toda a tua alma, e de todo o teu pensamento."
+        },
+        {
+          "n": 38,
+          "portuguese": "Este é o primeiro e grande mandamento."
+        },
+        {
+          "n": 39,
+          "portuguese": "E o segundo, semelhante a este, é: Amarás o teu próximo como a ti mesmo."
+        },
+        {
+          "n": 40,
+          "portuguese": "Destes dois mandamentos dependem toda a lei e os profetas."
+        },
+        {
+          "n": 41,
+          "portuguese": "E, estando reunidos os fariseus, interrogou-os Jesus,"
+        },
+        {
+          "n": 42,
+          "portuguese": "dizendo: Que pensais vós do Cristo? De quem é filho? Eles disseram-lhe: De Davi."
+        },
+        {
+          "n": 43,
+          "portuguese": "Disse-lhes ele: Como é, então, que Davi, em espírito, lhe chama Senhor, dizendo:"
+        },
+        {
+          "n": 44,
+          "portuguese": "Disse o Senhor ao meu Senhor: Assenta-te à minha direita, até que eu ponha os teus inimigos por escabelo de teus pés?"
+        },
+        {
+          "n": 45,
+          "portuguese": "Se Davi, pois, lhe chama Senhor, como é seu filho?"
+        },
+        {
+          "n": 46,
+          "portuguese": "E ninguém podia responder-lhe uma palavra; nem, desde aquele dia, ousou mais alguém interrogá-lo."
+        }
+      ],
+      "notes": [
+        "22 — Bodas; César; ressurreição; grande mandamento."
+      ]
+    },
+    {
+      "n": 23,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Então, falou Jesus à multidão e aos seus discípulos,"
+        },
+        {
+          "n": 2,
+          "portuguese": "dizendo: Na cadeira de Moisés, estão assentados os escribas e fariseus."
+        },
+        {
+          "n": 3,
+          "portuguese": "Observai, pois, e pratiquai tudo o que vos disserem; mas não procedais em conformidade com as suas obras, porque dizem e não praticam."
+        },
+        {
+          "n": 4,
+          "portuguese": "Pois atam fardos pesados e difíceis de carregar, e os põem aos ombros dos homens; eles, porém, nem com o dedo querem movê-los."
+        },
+        {
+          "n": 5,
+          "portuguese": "E fazem todas as obras a fim de serem vistos pelos homens; pois alargam os seus filactérios e alongam as franjas,"
+        },
+        {
+          "n": 6,
+          "portuguese": "e amam os primeiros lugares nas ceias e as primeiras cadeiras nas sinagogas,"
+        },
+        {
+          "n": 7,
+          "portuguese": "e as saudações nas praças, e o serem chamados pelos homens: Rabi, Rabi."
+        },
+        {
+          "n": 8,
+          "portuguese": "Vós, porém, não queirais ser chamados Rabi, porque um só é o vosso Mestre, a saber, o Cristo, e todos vós sois irmãos."
+        },
+        {
+          "n": 9,
+          "portuguese": "E a ninguém na terra chameis vosso pai, porque um só é o vosso Pai, o qual está nos céus."
+        },
+        {
+          "n": 10,
+          "portuguese": "Nem vos chameis mestres, porque um só é o vosso Mestre, que é o Cristo."
+        },
+        {
+          "n": 11,
+          "portuguese": "Porém o maior dentre vós será vosso servo."
+        },
+        {
+          "n": 12,
+          "portuguese": "E o que a si mesmo se exaltar será humilhado; e o que a si mesmo se humilhar será exaltado."
+        },
+        {
+          "n": 13,
+          "portuguese": "Mas ai de vós, escribas e fariseus, hipócritas! Porque fechais aos homens o Reino dos céus; e nem vós entrais, nem deixais entrar os que estão entrando."
+        },
+        {
+          "n": 14,
+          "portuguese": "Ai de vós, escribas e fariseus, hipócritas! Porque devorais as casas das viúvas, sob pretexto de prolongadas orações; por isso, sofrereis mais rigoroso juízo."
+        },
+        {
+          "n": 15,
+          "portuguese": "Ai de vós, escribas e fariseus, hipócritas! Porque percorreis o mar e a terra para fazer um prosélito; e, depois de o terdes feito, o fazeis filho do inferno duas vezes mais do que vós."
+        },
+        {
+          "n": 16,
+          "portuguese": "Ai de vós, guias cegos! Que dizeis: Qualquer que jurar pelo templo, isso nada é; mas o que jurar pelo ouro do templo, esse é devedor."
+        },
+        {
+          "n": 17,
+          "portuguese": "Insensatos e cegos! Pois qual é maior: o ouro ou o templo, que santifica o ouro?"
+        },
+        {
+          "n": 18,
+          "portuguese": "E aquele que jurar pelo altar, isso nada é; mas aquele que jurar pela oferta que está sobre o altar é devedor."
+        },
+        {
+          "n": 19,
+          "portuguese": "Insensatos e cegos! Pois qual é maior: a oferta ou o altar, que santifica a oferta?"
+        },
+        {
+          "n": 20,
+          "portuguese": "Portanto, o que jurar pelo altar jura por ele e por tudo o que sobre ele está;"
+        },
+        {
+          "n": 21,
+          "portuguese": "e o que jurar pelo templo jura por ele e por aquele que nele habita;"
+        },
+        {
+          "n": 22,
+          "portuguese": "e o que jurar pelo céu jura pelo trono de Deus e por aquele que está assentado nele."
+        },
+        {
+          "n": 23,
+          "portuguese": "Ai de vós, escribas e fariseus, hipócritas! Porque dais o dízimo da hortelã, do endro e do cominho e tendes omitido o que há de mais importante na lei: o juízo, a misericórdia e a fé; deveis, porém, fazer essas coisas e não omitir aquelas."
+        },
+        {
+          "n": 24,
+          "portuguese": "Guias cegos! Que coais um mosquito e engolis um camelo."
+        },
+        {
+          "n": 25,
+          "portuguese": "Ai de vós, escribas e fariseus, hipócritas! Porque limpais o exterior do copo e do prato, mas o interior está cheio de rapina e de iniquidade."
+        },
+        {
+          "n": 26,
+          "portuguese": "Fariseu cego! Limpa primeiro o interior do copo e do prato, para que também o exterior fique limpo."
+        },
+        {
+          "n": 27,
+          "portuguese": "Ai de vós, escribas e fariseus, hipócritas! Porque sois semelhantes aos sepulcros caiados, que por fora realmente parecem formosos, mas interiormente estão cheios de ossos de mortos e de toda imundícia."
+        },
+        {
+          "n": 28,
+          "portuguese": "Assim, também vós exteriormente pareceis justos aos homens, mas interiormente estais cheios de hipocrisia e de iniquidade."
+        },
+        {
+          "n": 29,
+          "portuguese": "Ai de vós, escribas e fariseus, hipócritas! Porque edificais os sepulcros dos profetas e adornais os monumentos dos justos"
+        },
+        {
+          "n": 30,
+          "portuguese": "e dizeis: Se existíssemos no tempo de nossos pais, não teríamos sido seus cúmplices no sangue dos profetas."
+        },
+        {
+          "n": 31,
+          "portuguese": "Assim, vós mesmos testificais que sois filhos dos que mataram os profetas."
+        },
+        {
+          "n": 32,
+          "portuguese": "Enchei vós, pois, a medida de vossos pais."
+        },
+        {
+          "n": 33,
+          "portuguese": "Serpentes, raça de víboras! Como escapareis da condenação do inferno?"
+        },
+        {
+          "n": 34,
+          "portuguese": "Portanto, eis que eu vos envio profetas, sábios e escribas; e a uns deles matareis e crucificareis; e a outros açoitareis nas vossas sinagogas e os perseguireis de cidade em cidade,"
+        },
+        {
+          "n": 35,
+          "portuguese": "para que sobre vós caia todo o sangue justo, que foi derramado sobre a terra, desde o sangue de Abel, o justo, até ao sangue de Zacarias, filho de Baraquias, a quem matastes entre o templo e o altar."
+        },
+        {
+          "n": 36,
+          "portuguese": "Em verdade vos digo que todas essas coisas hão de vir sobre esta geração."
+        },
+        {
+          "n": 37,
+          "portuguese": "Jerusalém, Jerusalém, que matas os profetas e apedrejas os que te são enviados! Quantas vezes quis eu ajuntar os teus filhos, como a galinha ajunta os seus pintos debaixo das asas, e tu não quiseste!"
+        },
+        {
+          "n": 38,
+          "portuguese": "Eis que a vossa casa vai ficar-vos deserta."
+        },
+        {
+          "n": 39,
+          "portuguese": "Porque eu vos digo que, desde agora, me não vereis mais, até que digais: Bendito o que vem em nome do Senhor!"
+        }
+      ],
+      "notes": [
+        "23 — Ais contra escribas e fariseus; lamento sobre Jerusalém."
+      ]
+    },
+    {
+      "n": 24,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, quando Jesus ia saindo do templo, aproximaram-se dele os seus discípulos para lhe mostrarem a estrutura do templo."
+        },
+        {
+          "n": 2,
+          "portuguese": "Jesus, porém, lhes disse: Não vedes tudo isto? Em verdade vos digo que não ficará aqui pedra sobre pedra que não seja derribada."
+        },
+        {
+          "n": 3,
+          "portuguese": "E, estando assentado no monte das Oliveiras, chegaram-se a ele os seus discípulos em particular, dizendo: Dize-nos quando serão essas coisas e que sinal haverá da tua vinda e do fim do mundo?"
+        },
+        {
+          "n": 4,
+          "portuguese": "E Jesus, respondendo, disse-lhes: Acautelai-vos, que ninguém vos engane."
+        },
+        {
+          "n": 5,
+          "portuguese": "Porque muitos virão em meu nome, dizendo: Eu sou o Cristo; e enganarão a muitos."
+        },
+        {
+          "n": 6,
+          "portuguese": "E ouvireis de guerras e de rumores de guerras; olhai, não vos assusteis, porque é mister que isso tudo aconteça, mas ainda não é o fim."
+        },
+        {
+          "n": 7,
+          "portuguese": "Porque se levantará nação contra nação, e reino contra reino, e haverá fomes, e pestes, e terremotos, em vários lugares."
+        },
+        {
+          "n": 8,
+          "portuguese": "Mas todas essas coisas são o princípio de dores."
+        },
+        {
+          "n": 9,
+          "portuguese": "Então, vos hão de entregar para serdes atormentados e matar-vos-ão; e sereis odiados de todas as nações por causa do meu nome."
+        },
+        {
+          "n": 10,
+          "portuguese": "Nesse tempo, muitos serão escandalizados, e trair-se-ão uns aos outros, e uns aos outros se odiarão."
+        },
+        {
+          "n": 11,
+          "portuguese": "E surgirão muitos falsos profetas e enganarão a muitos."
+        },
+        {
+          "n": 12,
+          "portuguese": "E, por se multiplicar a iniquidade, o amor de muitos se esfriará."
+        },
+        {
+          "n": 13,
+          "portuguese": "Mas aquele que perseverar até ao fim será salvo."
+        },
+        {
+          "n": 14,
+          "portuguese": "E este evangelho do Reino será pregado em todo o mundo, em testemunho a todas as nações, e então virá o fim."
+        },
+        {
+          "n": 15,
+          "portuguese": "Quando, pois, virdes que a abominação da desolação, de que falou o profeta Daniel, está no lugar santo (quem lê, que entenda),"
+        },
+        {
+          "n": 16,
+          "portuguese": "então, os que estiverem na Judeia fujam para os montes;"
+        },
+        {
+          "n": 17,
+          "portuguese": "e quem estiver sobre o telhado não desça a tirar alguma coisa de sua casa;"
+        },
+        {
+          "n": 18,
+          "portuguese": "e quem estiver no campo não volte atrás a buscar as suas vestes."
+        },
+        {
+          "n": 19,
+          "portuguese": "Mas ai das grávidas e das que amamentarem naqueles dias!"
+        },
+        {
+          "n": 20,
+          "portuguese": "E orai para que a vossa fuga não aconteça no inverno nem no sábado;"
+        },
+        {
+          "n": 21,
+          "portuguese": "porque haverá, então, grande aflição, como nunca houve desde o princípio do mundo até agora, nem tampouco haverá jamais."
+        },
+        {
+          "n": 22,
+          "portuguese": "E, se aqueles dias não fossem abreviados, nenhuma carne se salvaria; mas, por causa dos escolhidos, serão abreviados aqueles dias."
+        },
+        {
+          "n": 23,
+          "portuguese": "Então, se alguém vos disser: Eis que o Cristo está aqui ou ali, não lhe deis crédito;"
+        },
+        {
+          "n": 24,
+          "portuguese": "porque surgirão falsos cristos e falsos profetas e farão tão grandes sinais e prodígios, que, se possível fora, enganariam até os escolhidos."
+        },
+        {
+          "n": 25,
+          "portuguese": "Eis que eu vo-lo tenho predito."
+        },
+        {
+          "n": 26,
+          "portuguese": "Portanto, se eles vos disserem: Eis que ele está no deserto, não saiais. Eis que ele está no interior da casa, não acrediteis."
+        },
+        {
+          "n": 27,
+          "portuguese": "Porque, assim como o relâmpago sai do Oriente e se mostra até ao Ocidente, assim será também a vinda do Filho do Homem."
+        },
+        {
+          "n": 28,
+          "portuguese": "Pois onde estiver o cadáver, aí se ajuntarão as águias."
+        },
+        {
+          "n": 29,
+          "portuguese": "E, logo depois da aflição daqueles dias, o sol escurecerá, e a lua não dará a sua luz, e as estrelas cairão do céu, e as potências dos céus serão abaladas."
+        },
+        {
+          "n": 30,
+          "portuguese": "Então, aparecerá no céu o sinal do Filho do Homem; e todas as tribos da terra se lamentarão e verão o Filho do Homem vindo sobre as nuvens do céu, com poder e grande glória."
+        },
+        {
+          "n": 31,
+          "portuguese": "E ele enviará os seus anjos com rijo clamor de trombeta, os quais lhe ajuntarão os escolhidos desde os quatro ventos, de uma à outra extremidade dos céus."
+        },
+        {
+          "n": 32,
+          "portuguese": "Aprendei, pois, esta parábola da figueira: Quando já os seus ramos se tornam tenros e brotam folhas, sabeis que está próximo o verão."
+        },
+        {
+          "n": 33,
+          "portuguese": "Assim também vós, quando virdes todas essas coisas, sabei que ele está próximo, às portas."
+        },
+        {
+          "n": 34,
+          "portuguese": "Em verdade vos digo que não passará esta geração sem que todas essas coisas aconteçam."
+        },
+        {
+          "n": 35,
+          "portuguese": "O céu e a terra passarão, mas as minhas palavras não hão de passar."
+        },
+        {
+          "n": 36,
+          "portuguese": "Porém daquele dia e hora ninguém sabe, nem os anjos dos céus, nem o Filho, mas unicamente meu Pai."
+        },
+        {
+          "n": 37,
+          "portuguese": "E, como foi nos dias de Noé, assim será também a vinda do Filho do Homem."
+        },
+        {
+          "n": 38,
+          "portuguese": "Porquanto, assim como, nos dias anteriores ao dilúvio, comiam, bebiam, casavam e davam-se em casamento, até ao dia em que Noé entrou na arca,"
+        },
+        {
+          "n": 39,
+          "portuguese": "e não o perceberam, até que veio o dilúvio e os levou a todos, assim será também a vinda do Filho do Homem."
+        },
+        {
+          "n": 40,
+          "portuguese": "Então, estando dois no campo, será levado um, e deixado o outro;"
+        },
+        {
+          "n": 41,
+          "portuguese": "estando duas moendo no moinho, será levada uma, e deixada a outra."
+        },
+        {
+          "n": 42,
+          "portuguese": "Vigiai, pois, porque não sabeis a que hora há de vir o vosso Senhor."
+        },
+        {
+          "n": 43,
+          "portuguese": "Mas considerai isto: se o pai de família soubesse a que vigília havia de vir o ladrão, vigiaria e não deixaria que a sua casa fosse arrombada."
+        },
+        {
+          "n": 44,
+          "portuguese": "Por isso, estai vós apercebidos também, porque o Filho do Homem há de vir à hora em que não penseis."
+        },
+        {
+          "n": 45,
+          "portuguese": "Quem é, pois, o servo fiel e prudente, que o senhor constituiu sobre a sua casa, para dar o sustento a seu tempo?"
+        },
+        {
+          "n": 46,
+          "portuguese": "Bem-aventurado aquele servo a quem o seu senhor, quando vier, achar fazendo assim."
+        },
+        {
+          "n": 47,
+          "portuguese": "Em verdade vos digo que o porá sobre todos os seus bens."
+        },
+        {
+          "n": 48,
+          "portuguese": "Mas se aquele mau servo disser consigo: O meu senhor tarda em vir"
+        },
+        {
+          "n": 49,
+          "portuguese": "e começar a espancar os seus conservos, e a comer e a beber com os bêbados,"
+        },
+        {
+          "n": 50,
+          "portuguese": "virá o senhor daquele servo num dia em que o não espera e à hora em que ele não sabe,"
+        },
+        {
+          "n": 51,
+          "portuguese": "e separá-lo-á, e destinará a sua parte com os hipócritas; ali haverá pranto e ranger de dentes."
+        }
+      ],
+      "notes": [
+        "24 — Discurso escatológico; parábola do servo."
+      ]
+    },
+    {
+      "n": 25,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Então, o Reino dos céus será semelhante a dez virgens que, tomando as suas lâmpadas, saíram ao encontro do esposo."
+        },
+        {
+          "n": 2,
+          "portuguese": "E cinco delas eram prudentes, e cinco, loucas."
+        },
+        {
+          "n": 3,
+          "portuguese": "As loucas, tomando as suas lâmpadas, não levaram azeite consigo."
+        },
+        {
+          "n": 4,
+          "portuguese": "Mas as prudentes levaram azeite em suas vasilhas, com as suas lâmpadas."
+        },
+        {
+          "n": 5,
+          "portuguese": "E, tardando o esposo, tosquenejaram todas e dormiram."
+        },
+        {
+          "n": 6,
+          "portuguese": "Mas, à meia-noite, ouviu-se um clamor: Aí vem o esposo! Saí-lhe ao encontro!"
+        },
+        {
+          "n": 7,
+          "portuguese": "Então, todas aquelas virgens se levantaram e prepararam as suas lâmpadas."
+        },
+        {
+          "n": 8,
+          "portuguese": "E as loucas disseram às prudentes: Dai-nos do vosso azeite, porque as nossas lâmpadas se apagam."
+        },
+        {
+          "n": 9,
+          "portuguese": "Mas as prudentes responderam, dizendo: Não seja caso que nos falte a nós e a vós; ide, antes, aos que o vendem e comprai-o para vós."
+        },
+        {
+          "n": 10,
+          "portuguese": "E, indo elas comprá-lo, chegou o esposo, e as que estavam apercebidas entraram com ele para as bodas, e fechou-se a porta."
+        },
+        {
+          "n": 11,
+          "portuguese": "E, depois, chegaram também as outras virgens, dizendo: Senhor, senhor, abre-nos a porta!"
+        },
+        {
+          "n": 12,
+          "portuguese": "E ele, respondendo, disse: Em verdade vos digo que não vos conheço."
+        },
+        {
+          "n": 13,
+          "portuguese": "Vigiai, pois, porque não sabeis o dia nem a hora em que o Filho do Homem há de vir."
+        },
+        {
+          "n": 14,
+          "portuguese": "Porque isto é também como um homem que, partindo para fora da terra, chamou os seus servos e lhes entregou os seus bens."
+        },
+        {
+          "n": 15,
+          "portuguese": "E a um deu cinco talentos, e a outro, dois, e a outro, um, a cada um segundo a sua capacidade, e ausentou-se logo para longe."
+        },
+        {
+          "n": 16,
+          "portuguese": "E, tendo partido o que recebera cinco talentos, negociou com eles e granjeou outros cinco talentos."
+        },
+        {
+          "n": 17,
+          "portuguese": "Da mesma sorte, o que recebera dois granjeou também outros dois."
+        },
+        {
+          "n": 18,
+          "portuguese": "Mas o que recebera um foi e cavou na terra e escondeu o dinheiro do seu senhor."
+        },
+        {
+          "n": 19,
+          "portuguese": "E, muito tempo depois, veio o senhor daqueles servos e fez contas com eles."
+        },
+        {
+          "n": 20,
+          "portuguese": "Então, aproximando-se o que recebera cinco talentos, trouxe-lhe outros cinco talentos, dizendo: Senhor, entregaste-me cinco talentos; eis aqui outros cinco talentos que granjeei com eles."
+        },
+        {
+          "n": 21,
+          "portuguese": "E o seu senhor lhe disse: Bem está, servo bom e fiel. Sobre o pouco foste fiel, sobre muito te colocarei; entra no gozo do teu senhor."
+        },
+        {
+          "n": 22,
+          "portuguese": "E, chegando também o que tinha recebido dois talentos, disse: Senhor, entregaste-me dois talentos; eis que com eles granjeei outros dois talentos."
+        },
+        {
+          "n": 23,
+          "portuguese": "Disse-lhe o seu senhor: Bem está, servo bom e fiel. Sobre o pouco foste fiel, sobre muito te colocarei; entra no gozo do teu senhor."
+        },
+        {
+          "n": 24,
+          "portuguese": "Mas, chegando também o que recebera um talento, disse: Senhor, eu conhecia-te, que és um homem duro, que ceifas onde não semeaste e ajuntas onde não espalhaste;"
+        },
+        {
+          "n": 25,
+          "portuguese": "e, atemorizado, escondi na terra o teu talento; aqui tens o que é teu."
+        },
+        {
+          "n": 26,
+          "portuguese": "Respondendo, porém, o seu senhor, disse-lhe: Mau e negligente servo; sabias que ceifo onde não semeei e ajunto onde não espalhei?"
+        },
+        {
+          "n": 27,
+          "portuguese": "Devias, então, ter dado o meu dinheiro aos banqueiros, e, quando eu viesse, receberia o meu com os juros."
+        },
+        {
+          "n": 28,
+          "portuguese": "Tirai-lhe, pois, o talento e dai-o ao que tem os dez talentos."
+        },
+        {
+          "n": 29,
+          "portuguese": "Porque a qualquer que tiver será dado, e terá em abundância; mas ao que não tiver, até o que tem lhe será tirado."
+        },
+        {
+          "n": 30,
+          "portuguese": "Lançai, pois, o servo inútil nas trevas exteriores; ali haverá pranto e ranger de dentes."
+        },
+        {
+          "n": 31,
+          "portuguese": "E, quando o Filho do Homem vier em sua glória, e todos os santos anjos, com ele, então, se assentará no trono da sua glória;"
+        },
+        {
+          "n": 32,
+          "portuguese": "e todas as nações serão reunidas diante dele, e apartará uns dos outros, como o pastor aparta dos cabritos as ovelhas."
+        },
+        {
+          "n": 33,
+          "portuguese": "E porá as ovelhas à sua direita, mas os cabritos, à esquerda."
+        },
+        {
+          "n": 34,
+          "portuguese": "Então, dirá o Rei aos que estiverem à sua direita: Vinde, benditos de meu Pai, possuí por herança o Reino que vos está preparado desde a fundação do mundo;"
+        },
+        {
+          "n": 35,
+          "portuguese": "porque tive fome, e destes-me de comer; tive sede, e destes-me de beber; era estrangeiro, e hospedastes-me;"
+        },
+        {
+          "n": 36,
+          "portuguese": "estava nu, e vestistes-me; adoeci, e visitastes-me; estive na prisão, e fostes ver-me."
+        },
+        {
+          "n": 37,
+          "portuguese": "Então, os justos lhe responderão, dizendo: Senhor, quando te vimos com fome e te demos de comer? Ou com sede e te demos de beber?"
+        },
+        {
+          "n": 38,
+          "portuguese": "E, quando te vimos estrangeiro e te hospedamos? Ou nu e te vestimos?"
+        },
+        {
+          "n": 39,
+          "portuguese": "E, quando te vimos enfermo ou na prisão e te fomos visitar?"
+        },
+        {
+          "n": 40,
+          "portuguese": "E, respondendo o Rei, lhes dirá: Em verdade vos digo que, quando o fizestes a um destes meus pequeninos irmãos, a mim o fizestes."
+        },
+        {
+          "n": 41,
+          "portuguese": "Então, dirá também aos que estiverem à sua esquerda: Apartai-vos de mim, malditos, para o fogo eterno, preparado para o diabo e seus anjos;"
+        },
+        {
+          "n": 42,
+          "portuguese": "porque tive fome, e não me destes de comer; tive sede, e não me destes de beber;"
+        },
+        {
+          "n": 43,
+          "portuguese": "sendo estrangeiro, não me recolhestes; estando nu, não me vestistes; e enfermo e na prisão, não me visitastes."
+        },
+        {
+          "n": 44,
+          "portuguese": "Então, eles também lhe responderão, dizendo: Senhor, quando te vimos com fome, ou com sede, ou estrangeiro, ou nu, ou enfermo, ou na prisão e não te servimos?"
+        },
+        {
+          "n": 45,
+          "portuguese": "Então, lhes responderá, dizendo: Em verdade vos digo que, quando a um destes pequeninos o não fizestes, não o fizestes a mim."
+        },
+        {
+          "n": 46,
+          "portuguese": "E irão estes para o tormento eterno, mas os justos, para a vida eterna."
+        }
+      ],
+      "notes": [
+        "25 — Virgens; talentos; julgamento das nações."
+      ]
+    },
+    {
+      "n": 26,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E aconteceu que, quando Jesus acabou todos esses discursos, disse aos seus discípulos:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Bem sabeis que, daqui a dois dias, é a páscoa; e o Filho do Homem será entregue para ser crucificado."
+        },
+        {
+          "n": 3,
+          "portuguese": "Então, os principais sacerdotes, e os escribas, e os anciãos do povo reuniram-se no pátio do sumo sacerdote, o qual se chamava Caifás."
+        },
+        {
+          "n": 4,
+          "portuguese": "E consultaram-se mutuamente sobre como prender Jesus com dolo e o matar."
+        },
+        {
+          "n": 5,
+          "portuguese": "Mas diziam: Não durante a festa, para que não haja alvoroço entre o povo."
+        },
+        {
+          "n": 6,
+          "portuguese": "E, estando Jesus em Betânia, em casa de Simão, o leproso,"
+        },
+        {
+          "n": 7,
+          "portuguese": "aproximou-se dele uma mulher com um vaso de alabastro, com unguento de grande valor, e derramou-lho sobre a cabeça, estando ele assentado à mesa."
+        },
+        {
+          "n": 8,
+          "portuguese": "E os seus discípulos, vendo isso, indignaram-se, dizendo: Para que este desperdício?"
+        },
+        {
+          "n": 9,
+          "portuguese": "Pois podia este unguento ser vendido por muito e dar-se o dinheiro aos pobres."
+        },
+        {
+          "n": 10,
+          "portuguese": "Jesus, porém, conhecendo isso, disse-lhes: Por que molestais esta mulher? Pois praticou uma boa ação para comigo."
+        },
+        {
+          "n": 11,
+          "portuguese": "Porque os pobres sempre os tendes convosco, mas a mim não me haveis de ter sempre."
+        },
+        {
+          "n": 12,
+          "portuguese": "Porquanto ela, derramando este unguento sobre o meu corpo, fez-o para o meu sepultamento."
+        },
+        {
+          "n": 13,
+          "portuguese": "Em verdade vos digo que, onde quer que este evangelho for pregado, em todo o mundo, também se falará do que ela fez, para memória sua."
+        },
+        {
+          "n": 14,
+          "portuguese": "Então, um dos doze, chamado Judas Iscariotes, foi ter com os principais sacerdotes"
+        },
+        {
+          "n": 15,
+          "portuguese": "e disse: Que me quereis dar, e eu vo-lo entregarei? E eles lhe pesaram trinta moedas de prata."
+        },
+        {
+          "n": 16,
+          "portuguese": "E desde então buscava oportunidade para o entregar."
+        },
+        {
+          "n": 17,
+          "portuguese": "E, no primeiro dia da Festa dos Pães Asmos, chegaram os discípulos ao pé de Jesus, dizendo: Onde queres que preparemos para ti a páscoa?"
+        },
+        {
+          "n": 18,
+          "portuguese": "E ele disse: Ide à cidade a um certo homem e dizei-lhe: O Mestre diz: O meu tempo está próximo; em tua casa celebrarei a páscoa com os meus discípulos."
+        },
+        {
+          "n": 19,
+          "portuguese": "E os discípulos fizeram como Jesus lhes ordenara e prepararam a páscoa."
+        },
+        {
+          "n": 20,
+          "portuguese": "E, chegada a tarde, assentou-se à mesa com os doze."
+        },
+        {
+          "n": 21,
+          "portuguese": "E, comendo eles, disse: Em verdade vos digo que um de vós me há de trair."
+        },
+        {
+          "n": 22,
+          "portuguese": "E eles, entristecendo-se muito, começaram, cada um a dizer-lhe: Porventura sou eu, Senhor?"
+        },
+        {
+          "n": 23,
+          "portuguese": "Mas ele, respondendo, disse: O que mete comigo a mão no prato, esse me há de trair."
+        },
+        {
+          "n": 24,
+          "portuguese": "O Filho do Homem vai, como está escrito a seu respeito, mas ai daquele homem por quem o Filho do Homem é traído! Bom seria para esse homem se não houvera nascido."
+        },
+        {
+          "n": 25,
+          "portuguese": "Então, Judas, que o traía, perguntou: Porventura sou eu, Rabi? Ele respondeu: Tu o disseste."
+        },
+        {
+          "n": 26,
+          "portuguese": "E, quando comiam, Jesus tomou o pão e, abençoando-o, o partiu, e o deu aos discípulos, e disse: Tomai, comei, isto é o meu corpo."
+        },
+        {
+          "n": 27,
+          "portuguese": "E, tomando o cálice e dando graças, deu-lho, dizendo: Bebei dele todos."
+        },
+        {
+          "n": 28,
+          "portuguese": "Porque isto é o meu sangue, o sangue do Novo Testamento, que é derramado por muitos, para remissão dos pecados."
+        },
+        {
+          "n": 29,
+          "portuguese": "E digo-vos que, desde agora, não beberei deste fruto da vide, até aquele Dia em que o beba de novo convosco, no Reino de meu Pai."
+        },
+        {
+          "n": 30,
+          "portuguese": "E, tendo cantado um hino, saíram para o monte das Oliveiras."
+        },
+        {
+          "n": 31,
+          "portuguese": "Então, disse-lhes Jesus: Todos vós esta noite vos escandalizareis em mim, porque está escrito: Ferirei o pastor, e as ovelhas do rebanho se espalharão."
+        },
+        {
+          "n": 32,
+          "portuguese": "Mas, depois de eu ressuscitar, irei adiante de vós para a Galileia."
+        },
+        {
+          "n": 33,
+          "portuguese": "Mas Pedro, respondendo, disse-lhe: Ainda que todos se escandalizem em ti, eu nunca me escandalizarei."
+        },
+        {
+          "n": 34,
+          "portuguese": "Disse-lhe Jesus: Em verdade te digo que, nesta mesma noite, antes que o galo cante, três vezes me negarás."
+        },
+        {
+          "n": 35,
+          "portuguese": "Disse-lhe Pedro: Ainda que me seja mister morrer contigo, não te negarei. E todos os discípulos disseram o mesmo."
+        },
+        {
+          "n": 36,
+          "portuguese": "Então, chegou Jesus com eles a um lugar chamado Getsêmani e disse a seus discípulos: Assentai-vos aqui, enquanto vou além orar."
+        },
+        {
+          "n": 37,
+          "portuguese": "E, levando consigo Pedro e os dois filhos de Zebedeu, começou a entristecer-se e a angustiar-se muito."
+        },
+        {
+          "n": 38,
+          "portuguese": "Então, lhes disse: A minha alma está cheia de tristeza até à morte; ficai aqui e vigiai comigo."
+        },
+        {
+          "n": 39,
+          "portuguese": "E, indo um pouco mais adiante, prostrou-se sobre o seu rosto, orando e dizendo: Meu Pai, se é possível, passe de mim este cálice; todavia, não seja como eu quero, mas como tu queres."
+        },
+        {
+          "n": 40,
+          "portuguese": "E, voltando para os seus discípulos, achou-os dormindo; e disse a Pedro: Então, nem uma hora pudestes vigiar comigo?"
+        },
+        {
+          "n": 41,
+          "portuguese": "Vigiai e orai, para que não entreis em tentação; na verdade, o espírito está pronto, mas a carne é fraca."
+        },
+        {
+          "n": 42,
+          "portuguese": "Andando ainda outra vez, orou, dizendo: Meu Pai, se este cálice não pode passar de mim sem eu o beber, faça-se a tua vontade."
+        },
+        {
+          "n": 43,
+          "portuguese": "E, vindo outra vez, achou-os dormindo, porque os seus olhos estavam carregados."
+        },
+        {
+          "n": 44,
+          "portuguese": "E, deixando-os de novo, foi orar pela terceira vez, dizendo as mesmas palavras."
+        },
+        {
+          "n": 45,
+          "portuguese": "Então, chegou junto dos seus discípulos e disse-lhes: Dormi, agora, e descansai; eis que é chegada a hora, e o Filho do Homem será entregue nas mãos dos pecadores."
+        },
+        {
+          "n": 46,
+          "portuguese": "Levantai-vos, vamos; eis que é chegado aquele que me trai."
+        },
+        {
+          "n": 47,
+          "portuguese": "E, falando ele ainda, eis que chegou Judas, um dos doze, e com ele grande multidão com espadas e varapaus, enviada pelos principais sacerdotes e pelos anciãos do povo."
+        },
+        {
+          "n": 48,
+          "portuguese": "E o que o traía tinha-lhes dado um sinal, dizendo: O que eu beijar é esse; prendei-o."
+        },
+        {
+          "n": 49,
+          "portuguese": "E imediatamente, aproximando-se de Jesus, disse: Salve, Rabi. E beijou-o."
+        },
+        {
+          "n": 50,
+          "portuguese": "E Jesus lhe disse: Amigo, a que vieste? Então, aproximando-se eles, lançaram mão de Jesus e o prenderam."
+        },
+        {
+          "n": 51,
+          "portuguese": "E eis que um dos que estavam com Jesus, estendendo a mão, puxou da espada e, ferindo o servo do sumo sacerdote, cortou-lhe uma orelha."
+        },
+        {
+          "n": 52,
+          "portuguese": "Então Jesus lhe disse: Embainha a tua espada; porque todos os que lançarem mão da espada à espada morrerão."
+        },
+        {
+          "n": 53,
+          "portuguese": "Ou pensas tu que eu não poderia, agora, orar a meu Pai e que ele não me daria mais de doze legiões de anjos?"
+        },
+        {
+          "n": 54,
+          "portuguese": "Como, pois, se cumpririam as Escrituras, que dizem que assim convém que aconteça?"
+        },
+        {
+          "n": 55,
+          "portuguese": "Naquela mesma hora, disse Jesus à multidão: Saístes, como para a um salteador, com espadas e varapaus para me prender? Todos os dias me assentava junto de vós, ensinando no templo, e não me prendestes."
+        },
+        {
+          "n": 56,
+          "portuguese": "Mas tudo isso aconteceu para que se cumprissem as Escrituras dos profetas. Então, todos os discípulos, deixando-o, fugiram."
+        },
+        {
+          "n": 57,
+          "portuguese": "Aqueles, pois, que prenderam Jesus conduziram-no à presença do sumo sacerdote Caifás, onde os escribas e os anciãos estavam reunidos."
+        },
+        {
+          "n": 58,
+          "portuguese": "E Pedro o seguia de longe, até ao pátio do sumo sacerdote e, entrando, assentou-se entre os criados, para ver o fim."
+        },
+        {
+          "n": 59,
+          "portuguese": "Ora, os principais sacerdotes, e os anciãos, e todo o conselho buscavam falso testemunho contra Jesus, para poderem dar-lhe a morte,"
+        },
+        {
+          "n": 60,
+          "portuguese": "e não o achavam, apesar de se apresentarem muitas testemunhas falsas. Mas, por fim, chegaram duas"
+        },
+        {
+          "n": 61,
+          "portuguese": "e disseram: Este disse: Posso destruir o templo de Deus e reedificá-lo em três dias."
+        },
+        {
+          "n": 62,
+          "portuguese": "E, levantando-se o sumo sacerdote, disse-lhe: Não respondes coisa alguma ao que estes testemunham contra ti?"
+        },
+        {
+          "n": 63,
+          "portuguese": "Jesus, porém, guardava silêncio. E, insistindo o sumo sacerdote, disse-lhe: Conjuro-te pelo Deus vivo que nos digas se tu és o Cristo, o Filho de Deus."
+        },
+        {
+          "n": 64,
+          "portuguese": "Disse-lhe Jesus: Tu o disseste; digo-vos, porém, que, desde agora, vereis o Filho do Homem assentado à direita do Poder e vindo sobre as nuvens do céu."
+        },
+        {
+          "n": 65,
+          "portuguese": "Então, o sumo sacerdote rasgou as suas vestes, dizendo: Blasfemou; que necessidade temos ainda de testemunhas? Eis que bem ouvistes, agora, a sua blasfêmia."
+        },
+        {
+          "n": 66,
+          "portuguese": "Que vos parece? E eles, respondendo, disseram: É réu de morte."
+        },
+        {
+          "n": 67,
+          "portuguese": "Então, cuspiram-lhe no rosto e lhe davam punhadas, e outros o esbofeteavam,"
+        },
+        {
+          "n": 68,
+          "portuguese": "dizendo: Profetiza-nos, Cristo, quem é o que te bateu?"
+        },
+        {
+          "n": 69,
+          "portuguese": "Ora, Pedro estava assentado fora, no pátio; e uma criada aproximou-se dele, dizendo: Tu também estavas com Jesus, o galileu."
+        },
+        {
+          "n": 70,
+          "portuguese": "Mas ele negou diante de todos, dizendo: Não sei o que dizes."
+        },
+        {
+          "n": 71,
+          "portuguese": "E, saindo para o vestíbulo, outra criada o viu e disse aos que ali estavam: Este também estava com Jesus, o nazareno."
+        },
+        {
+          "n": 72,
+          "portuguese": "E ele negou outra vez, com juramento: Não conheço tal homem."
+        },
+        {
+          "n": 73,
+          "portuguese": "E, daí a pouco, aproximando-se os que ali estavam, disseram a Pedro: Verdadeiramente, também tu és deles, pois a tua fala te denuncia."
+        },
+        {
+          "n": 74,
+          "portuguese": "Então, começou ele a praguejar e a jurar, dizendo: Não conheço tal homem. E imediatamente o galo cantou."
+        },
+        {
+          "n": 75,
+          "portuguese": "E Pedro lembrou-se das palavras de Jesus, que lhe dissera: Antes que o galo cante, três vezes me negarás. E, saindo dali, chorou amargamente."
+        }
+      ],
+      "notes": [
+        "26 — Unção; ceia; Getsêmani; prisão; julgamento; negação."
+      ]
+    },
+    {
+      "n": 27,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E, chegando a manhã, todos os principais sacerdotes e os anciãos do povo formavam juntamente conselho contra Jesus, para o matarem."
+        },
+        {
+          "n": 2,
+          "portuguese": "E, maniatando-o, o levaram e o entregaram a Pôncio Pilatos, o governador."
+        },
+        {
+          "n": 3,
+          "portuguese": "Então, Judas, o que o traíra, vendo que fora condenado, trouxe, arrependido, as trinta moedas de prata aos principais sacerdotes e aos anciãos,"
+        },
+        {
+          "n": 4,
+          "portuguese": "dizendo: Pequei, traindo o sangue inocente. Eles, porém, disseram: Que nos importa? Verás isso."
+        },
+        {
+          "n": 5,
+          "portuguese": "E ele, lançando para o templo as moedas de prata, retirou-se e foi-se, e enforcou-se."
+        },
+        {
+          "n": 6,
+          "portuguese": "E os principais sacerdotes, tomando as moedas de prata, disseram: Não é lícito metê-las no cofre das ofertas, porque são preço de sangue."
+        },
+        {
+          "n": 7,
+          "portuguese": "E, tendo deliberado em conselho, compraram com elas o campo do oleiro, para sepultura dos estrangeiros."
+        },
+        {
+          "n": 8,
+          "portuguese": "Por isso, foi chamado aquele campo, até ao dia de hoje, Campo de Sangue."
+        },
+        {
+          "n": 9,
+          "portuguese": "Então, se cumpriu o que foi dito pelo profeta Jeremias, que diz: E tomaram as trinta moedas de prata, preço do que foi avaliado, a quem certos filhos de Israel avaliaram,"
+        },
+        {
+          "n": 10,
+          "portuguese": "e deram-nas pelo campo do oleiro, segundo o que me ordenou o Senhor."
+        },
+        {
+          "n": 11,
+          "portuguese": "E Jesus esteve em pé diante do governador, e este o interrogou, dizendo: És tu o Rei dos judeus? E disse-lhe Jesus: Tu o dizes."
+        },
+        {
+          "n": 12,
+          "portuguese": "E, sendo acusado pelos principais sacerdotes e pelos anciãos, nada respondeu."
+        },
+        {
+          "n": 13,
+          "portuguese": "Disse-lhe, então, Pilatos: Não ouves quanto testemunham contra ti?"
+        },
+        {
+          "n": 14,
+          "portuguese": "E não lhe respondeu nem uma palavra, de maneira que o governador estava muito maravilhado."
+        },
+        {
+          "n": 15,
+          "portuguese": "Ora, por ocasião da festa, costumava o governador soltar um preso ao povo, conforme o desejo deste."
+        },
+        {
+          "n": 16,
+          "portuguese": "E tinham, então, um preso bem conhecido, chamado Barrabás."
+        },
+        {
+          "n": 17,
+          "portuguese": "Portanto, estando eles reunidos, disse-lhes Pilatos: Qual quereis que vos solte? Barrabás ou Jesus, chamado Cristo?"
+        },
+        {
+          "n": 18,
+          "portuguese": "Porque sabia que por inveja o haviam entregado."
+        },
+        {
+          "n": 19,
+          "portuguese": "E, estando ele assentado no tribunal, sua mulher mandou-lhe dizer: Não entres na questão desse justo, porque, numa visão, esta noite, padeçi muito por causa dele."
+        },
+        {
+          "n": 20,
+          "portuguese": "Mas os principais sacerdotes e os anciãos persuadiram a multidão a que pedisse Barrabás e fizesse morrer Jesus."
+        },
+        {
+          "n": 21,
+          "portuguese": "E, respondendo o governador, disse-lhes: Qual desses dois quereis vós que eu solte? E eles disseram: Barrabás."
+        },
+        {
+          "n": 22,
+          "portuguese": "Disse-lhes Pilatos: Que farei, então, de Jesus, chamado Cristo? Disseram-lhe todos: Seja crucificado!"
+        },
+        {
+          "n": 23,
+          "portuguese": "O governador, porém, disse: Mas que mal fez ele? E eles mais clamavam, dizendo: Seja crucificado!"
+        },
+        {
+          "n": 24,
+          "portuguese": "Então, Pilatos, vendo que nada aproveitava, antes o tumulto crescia, tomando água, lavou as mãos diante da multidão, dizendo: Estou inocente do sangue deste justo; considerai isso."
+        },
+        {
+          "n": 25,
+          "portuguese": "E, respondendo todo o povo, disse: O seu sangue caia sobre nós e sobre nossos filhos."
+        },
+        {
+          "n": 26,
+          "portuguese": "Então, soltou-lhes Barrabás; e, tendo mandado açoitar a Jesus, entregou-o para ser crucificado."
+        },
+        {
+          "n": 27,
+          "portuguese": "E os soldados do governador, levando Jesus ao pretório, reuniram junto dele toda a coorte."
+        },
+        {
+          "n": 28,
+          "portuguese": "E, despindo-o, cobriram-no com uma capa de escarlate;"
+        },
+        {
+          "n": 29,
+          "portuguese": "e, tecendo uma coroa de espinhos, puseram-lha na cabeça e, na sua mão direita, um caniço; e, ajoelhando-se diante dele, o escarneciam, dizendo: Salve, Rei dos judeus!"
+        },
+        {
+          "n": 30,
+          "portuguese": "E, cuspindo nele, tiravam-lhe o caniço e davam-lhe com ele na cabeça."
+        },
+        {
+          "n": 31,
+          "portuguese": "E, depois de o haverem escarnecido, tiraram-lhe a capa, vestiram-lhe as suas vestes e o levaram para ser crucificado."
+        },
+        {
+          "n": 32,
+          "portuguese": "E, saindo, encontraram um homem cireneu, chamado Simão, a quem constrangeram a que levasse a sua cruz."
+        },
+        {
+          "n": 33,
+          "portuguese": "E, chegando ao lugar chamado Gólgota, que se diz Lugar da Caveira,"
+        },
+        {
+          "n": 34,
+          "portuguese": "deram-lhe a beber vinho misturado com fel; mas ele, provando-o, não quis beber."
+        },
+        {
+          "n": 35,
+          "portuguese": "E, havendo-o crucificado, repartiram as suas vestes, lançando sortes, para que se cumprisse o que foi dito pelo profeta: Repartiram entre si as minhas vestes, e sobre a minha túnica lançaram sortes."
+        },
+        {
+          "n": 36,
+          "portuguese": "E, assentado, o guardavam ali."
+        },
+        {
+          "n": 37,
+          "portuguese": "E por cima da sua cabeça puseram escrita a sua acusação: ESTE É JESUS, O REI DOS JUDEUS."
+        },
+        {
+          "n": 38,
+          "portuguese": "E foram crucificados com ele dois salteadores, um à direita e outro à esquerda."
+        },
+        {
+          "n": 39,
+          "portuguese": "E os que passavam blasfemavam dele, meneando a cabeça"
+        },
+        {
+          "n": 40,
+          "portuguese": "e dizendo: Tu, que destróis o templo e, em três dias, o reedificas, salva-te a ti mesmo; se és Filho de Deus, desce da cruz."
+        },
+        {
+          "n": 41,
+          "portuguese": "E da mesma maneira também os principais sacerdotes, com os escribas, e anciãos, e fariseus, escarnecendo, diziam:"
+        },
+        {
+          "n": 42,
+          "portuguese": "Salvou os outros e não pode salvar-se a si mesmo. Se é o Rei de Israel, desça, agora, da cruz, e creremos nele."
+        },
+        {
+          "n": 43,
+          "portuguese": "Confiou em Deus; livre-o agora, se o ama; porque disse: Sou Filho de Deus."
+        },
+        {
+          "n": 44,
+          "portuguese": "E o mesmo lhe lançavam também em rosto os salteadores que com ele estavam crucificados."
+        },
+        {
+          "n": 45,
+          "portuguese": "E, desde a hora sexta, houve trevas sobre toda a terra, até à hora nona."
+        },
+        {
+          "n": 46,
+          "portuguese": "E perto da hora nona, clamou Jesus em alta voz, dizendo: Eli, Eli, lamá sabactâni? Isto é: Deus meu, Deus meu, por que me desamparaste?"
+        },
+        {
+          "n": 47,
+          "portuguese": "E alguns dos que ali estavam, ouvindo isso, diziam: Este chama por Elias."
+        },
+        {
+          "n": 48,
+          "portuguese": "E logo um deles, correndo, tomou uma esponja, e, embebendo-a em vinagre, e pondo-a numa cana, dava-lhe de beber."
+        },
+        {
+          "n": 49,
+          "portuguese": "O que os outros diziam: Deixa, vejamos se Elias vem livrá-lo."
+        },
+        {
+          "n": 50,
+          "portuguese": "E Jesus, clamando outra vez com grande voz, rendeu o espírito."
+        },
+        {
+          "n": 51,
+          "portuguese": "E eis que o véu do templo se rasgou em dois, de alto a baixo; e tremeu a terra, e fenderam-se as pedras;"
+        },
+        {
+          "n": 52,
+          "portuguese": "e abriram-se os sepulcros, e muitos corpos de santos que tinham morrido ressuscitaram;"
+        },
+        {
+          "n": 53,
+          "portuguese": "e, saindo dos sepulcros, depois da ressurreição dele, entraram na cidade santa e apareceram a muitos."
+        },
+        {
+          "n": 54,
+          "portuguese": "E o centurião e os que com ele guardavam Jesus, vendo o terremoto e as coisas que tinham acontecido, temeram grandemente, dizendo: Verdadeiramente, este era o Filho de Deus."
+        },
+        {
+          "n": 55,
+          "portuguese": "E estavam ali, olhando de longe, muitas mulheres que tinham seguido Jesus desde a Galileia, para o servir;"
+        },
+        {
+          "n": 56,
+          "portuguese": "entre as quais estavam Maria Madalena, e Maria, mãe de Tiago e de José, e a mãe dos filhos de Zebedeu."
+        },
+        {
+          "n": 57,
+          "portuguese": "E, vinda já a tarde, chegou um homem rico de Arimateia, por nome José, que também era discípulo de Jesus."
+        },
+        {
+          "n": 58,
+          "portuguese": "Este foi ter com Pilatos e pediu-lhe o corpo de Jesus. Então, Pilatos mandou que o corpo lhe fosse dado."
+        },
+        {
+          "n": 59,
+          "portuguese": "E José, tomando o corpo, envolveu-o num pano limpo, de linho fino,"
+        },
+        {
+          "n": 60,
+          "portuguese": "e o pôs no seu sepulcro novo, que havia aberto em rocha, e, rodando uma grande pedra para a porta do sepulcro, retirou-se."
+        },
+        {
+          "n": 61,
+          "portuguese": "E estavam ali Maria Madalena e a outra Maria, assentadas junto do sepulcro."
+        },
+        {
+          "n": 62,
+          "portuguese": "E, no dia seguinte, que é o dia depois da Preparação, reuniram-se os principais sacerdotes e os fariseus em casa de Pilatos,"
+        },
+        {
+          "n": 63,
+          "portuguese": "dizendo: Senhor, lembramo-nos de que aquele enganador, vivendo ainda, disse: Depois de três dias, ressuscitarei."
+        },
+        {
+          "n": 64,
+          "portuguese": "Manda, pois, que o sepulcro seja guardado com segurança até ao terceiro dia, não aconteça que os seus discípulos vão de noite, e o furtem, e digam ao povo: Ressuscitou dos mortos; e assim o último erro será pior do que o primeiro."
+        },
+        {
+          "n": 65,
+          "portuguese": "E disse-lhes Pilatos: Lá tendes a guarda; ide, guardai-o como entenderdes."
+        },
+        {
+          "n": 66,
+          "portuguese": "E, indo eles, seguraram o sepulcro com a guarda, selando a pedra."
+        }
+      ],
+      "notes": [
+        "27 — Pilatos; crucificação; sepultura."
+      ]
+    },
+    {
+      "n": 28,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "No fim do sábado, quando já despontava o primeiro dia da semana, Maria Madalena e a outra Maria foram ver o sepulcro."
+        },
+        {
+          "n": 2,
+          "portuguese": "E eis que houvera um grande terremoto, porque um anjo do Senhor, descendo do céu, chegou, removendo a pedra, e sentou-se sobre ela."
+        },
+        {
+          "n": 3,
+          "portuguese": "E o seu aspecto era como um relâmpago, e o seu vestido, branco como a neve."
+        },
+        {
+          "n": 4,
+          "portuguese": "E os guardas, com medo dele, ficaram muito assombrados e como mortos."
+        },
+        {
+          "n": 5,
+          "portuguese": "Mas o anjo, respondendo, disse às mulheres: Não tenhais medo; pois eu sei que buscais a Jesus, que foi crucificado."
+        },
+        {
+          "n": 6,
+          "portuguese": "Ele não está aqui, porque já ressuscitou, como tinha dito. Vinde, vede o lugar onde o Senhor jazia."
+        },
+        {
+          "n": 7,
+          "portuguese": "Ide, pois, imediatamente, e dizei aos seus discípulos que já ressuscitou dos mortos. E eis que ele vai adiante de vós para a Galileia; ali o vereis. Eis que eu vo-lo tenho dito."
+        },
+        {
+          "n": 8,
+          "portuguese": "E, saindo elas pressurosamente do sepulcro, com temor e grande alegria, correram a anunciá-lo aos seus discípulos."
+        },
+        {
+          "n": 9,
+          "portuguese": "E, indo elas a anunciá-lo aos discípulos, eis que Jesus lhes sai ao encontro, dizendo: Alegrai-vos! E elas, chegando, abraçaram os seus pés e o adoraram."
+        },
+        {
+          "n": 10,
+          "portuguese": "Então, Jesus disse-lhes: Não temais; ide, dizei a meus irmãos que vão à Galileia; e lá me verão."
+        },
+        {
+          "n": 11,
+          "portuguese": "E, quando iam, eis que alguns da guarda, chegando à cidade, anunciaram aos principais sacerdotes todas as coisas que haviam acontecido."
+        },
+        {
+          "n": 12,
+          "portuguese": "E, congregados eles com os anciãos e tomando conselho entre si, deram muito dinheiro aos soldados,"
+        },
+        {
+          "n": 13,
+          "portuguese": "dizendo: Dizei: Vieram de noite os seus discípulos e, dormindo nós, o furtaram."
+        },
+        {
+          "n": 14,
+          "portuguese": "E, se isto chegar a ser ouvido pelo governador, nós o persuadiremos e vos poremos em segurança."
+        },
+        {
+          "n": 15,
+          "portuguese": "E eles, recebendo o dinheiro, fizeram como estavam instruídos. E foi divulgado este dito entre os judeus, até ao dia de hoje."
+        },
+        {
+          "n": 16,
+          "portuguese": "E os onze discípulos partiram para a Galileia, para o monte que Jesus lhes tinha designado."
+        },
+        {
+          "n": 17,
+          "portuguese": "E, quando o viram, o adoraram; mas alguns duvidaram."
+        },
+        {
+          "n": 18,
+          "portuguese": "E, aproximando-se Jesus, falou-lhes, dizendo: É-me dado todo o poder no céu e na terra."
+        },
+        {
+          "n": 19,
+          "portuguese": "Portanto, ide, ensinai todas as nações, batizando-as em nome do Pai, e do Filho, e do Espírito Santo;"
+        },
+        {
+          "n": 20,
+          "portuguese": "ensinando-as a guardar todas as coisas que eu vos tenho mandado; e eis que eu estou convosco todos os dias, até à consumação dos séculos. Amém!"
+        }
+      ],
+      "notes": [
+        "28 — Ressurreição; grande comissão."
+      ]
+    }
+  ]
+}

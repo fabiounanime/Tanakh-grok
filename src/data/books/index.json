@@ -357,7 +357,7 @@
       "testament": "NT",
       "chapters": 28,
       "verses": 1071,
-      "ptVerses": 0,
+      "ptVerses": 1071,
       "defaultLang": "el"
     },
     {
@@ -622,6 +622,7 @@
     "hag",
     "zec",
     "mal",
+    "mat",
     "mrk",
     "jhn",
     "act",
@@ -663,7 +664,6 @@
     "isa",
     "jer",
     "ezk",
-    "mat",
     "luk"
   ]
 }
