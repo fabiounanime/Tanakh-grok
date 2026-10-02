@@ -36,7 +36,7 @@ Navegação inferior: **Bíblia · Agenda · Home · Mensagens · Conta** (Home 
 
 ## Dados de demonstração
 
-Índice completo de **66 livros**. Texto de amostra apenas em **Gênesis 1** e **João 1** (versículos 1–5). Demais capítulos abrem como placeholder.
+Índice completo de **66 livros**. Texto de amostra: **Gênesis 1** (versículos 1–31) e **João 1** (versículos 1–5). Demais capítulos abrem como placeholder.
 
 ## Deploy (GitHub → Cloudflare Pages)
 
