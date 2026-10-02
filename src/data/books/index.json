@@ -231,7 +231,7 @@
       "testament": "AT",
       "chapters": 48,
       "verses": 1273,
-      "ptVerses": 0,
+      "ptVerses": 1273,
       "defaultLang": "he"
     },
     {
@@ -618,6 +618,7 @@
     "ecc",
     "sng",
     "lam",
+    "ezk",
     "dan",
     "hos",
     "jol",
@@ -663,7 +664,6 @@
   "ptNone": [
     "psa",
     "isa",
-    "jer",
-    "ezk"
+    "jer"
   ]
 }
