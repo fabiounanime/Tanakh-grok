@@ -74,19 +74,6 @@ export function renderHome(root) {
 
   root.innerHTML = `
     <main class="page page--home">
-      <header class="home-topbar">
-        <div class="brand">
-          <span class="brand__mark" aria-hidden="true">✦</span>
-          <span class="brand__name">Bíblia</span>
-        </div>
-        <div class="home-topbar__actions">
-          <button type="button" class="icon-btn" aria-label="Notificações" title="Notificações">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9a6 6 0 0 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
-          </button>
-          <div class="avatar" aria-hidden="true">F</div>
-        </div>
-      </header>
-
       <section class="greeting">
         <h1>Olá, <span class="greeting__name">Fabio</span></h1>
         <p class="greeting__sub">Prepare seu coração. Deus usa o que você prepara.</p>

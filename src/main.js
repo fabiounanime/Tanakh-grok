@@ -41,6 +41,10 @@ function ensureShell() {
   app.innerHTML = `
     <div id="page-root" class="page-root"></div>
     <nav class="bottom-nav" aria-label="Navegação principal">
+      <a href="${routes.home()}" data-nav="home" class="nav-home">
+        <span class="nav-home-btn" aria-hidden="true">${ICO.home}</span>
+        <span class="nav-home-label nav-label">Home</span>
+      </a>
       <a href="${routes.biblia()}" data-nav="biblia">
         <span class="nav-ico" aria-hidden="true">${ICO.biblia}</span>
         <span class="nav-label">Bíblia</span>
@@ -48,10 +52,6 @@ function ensureShell() {
       <a href="${routes.devocionais()}" data-nav="devocionais">
         <span class="nav-ico" aria-hidden="true">${ICO.devocionais}</span>
         <span class="nav-label">Devocionais</span>
-      </a>
-      <a href="${routes.home()}" data-nav="home" class="nav-home">
-        <span class="nav-home-btn" aria-hidden="true">${ICO.home}</span>
-        <span class="nav-home-label nav-label">Home</span>
       </a>
       <a href="${routes.marcacoes()}" data-nav="marcacoes">
         <span class="nav-ico" aria-hidden="true">${ICO.marcacoes}</span>
