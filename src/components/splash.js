@@ -5,8 +5,6 @@
  */
 
 const STORAGE_KEY = 'tanakh-splash-seen';
-const SLOGAN = 'Sua fé, direto da fonte';
-
 function prefersReducedMotion() {
   return (
     typeof matchMedia === 'function' &&
@@ -42,9 +40,6 @@ function ensureSplash() {
   el.setAttribute('aria-label', 'Bíblia Origens');
   el.innerHTML = `
     <div class="splash__inner">
-      <img class="splash__logo" src="/logo.png" alt="" width="1024" height="1024" />
-      <p class="splash__title">Bíblia Origens</p>
-      <p class="splash__slogan">${SLOGAN.split('\n').map((line) => `<span class="splash__slogan-line">${line}</span>`).join('')}</p>
       <div class="splash__spinner" role="status" aria-label="Carregando">
         <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
           <circle class="splash__spinner-track" cx="24" cy="24" r="18" />
@@ -102,5 +97,3 @@ export function runSplash() {
     }, holdMs);
   });
 }
-
-export { SLOGAN };

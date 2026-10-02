@@ -10,6 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Bíblia Origens" />
     <meta name="application-name" content="Bíblia Origens" />
+    <link rel="preload" as="image" href="/splash.jpg" fetchpriority="high" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" href="/logo.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -20,59 +21,31 @@
         position: fixed;
         inset: 0;
         z-index: 10000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #050505;
-        color: #fff;
+        overflow: hidden;
+        background-color: #050505;
+        background-image:
+          linear-gradient(rgba(5, 5, 5, 0.14), rgba(5, 5, 5, 0.14)),
+          url('/splash.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #ffc107;
         font-family: system-ui, -apple-system, sans-serif;
       }
       #splash .splash__inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        max-width: 48rem;
-        padding-top: max(1.5rem, calc(env(safe-area-inset-top, 0px) + 1rem));
-        padding-bottom: max(1.5rem, calc(env(safe-area-inset-bottom, 0px) + 1rem));
-        padding-left: max(clamp(1rem, 5vw, 3rem), env(safe-area-inset-left, 0px));
-        padding-right: max(clamp(1rem, 5vw, 3rem), env(safe-area-inset-right, 0px));
-      }
-      #splash .splash__logo {
-        display: block;
-        width: clamp(6.5rem, 28vw, 10rem);
-        height: auto;
-        aspect-ratio: 1;
-        object-fit: contain;
-        margin-bottom: 1.1rem;
-        border-radius: 22%;
-        box-shadow: 0 0 2.5rem rgba(39, 147, 224, 0.2);
-      }
-      #splash .splash__title {
-        margin: 0;
-        font-size: 1.65rem;
-        font-weight: 700;
-        letter-spacing: 0.02em;
-      }
-      #splash .splash__slogan {
-        margin: 0.85rem 0 0;
-        max-width: 100%;
-        font-size: clamp(0.7rem, 3.4vw, 1rem);
-        line-height: 1.45;
-        letter-spacing: 0.025em;
-        color: #ffc107;
-        opacity: 0.92;
-      }
-      #splash .splash__slogan-line {
-        display: block;
-        white-space: nowrap;
+        position: absolute;
+        inset: 0;
       }
       #splash .splash__spinner {
+        position: absolute;
+        left: 50%;
+        bottom: max(2.5rem, calc(env(safe-area-inset-bottom, 0px) + 2rem));
         width: 46px;
         height: 46px;
-        margin-top: 2rem;
+        margin: 0;
+        transform: translateX(-50%);
         color: #ffc107;
+        filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.55));
       }
       #splash .splash__spinner svg {
         display: block;
@@ -104,12 +77,6 @@
   <body>
     <div id="splash" class="splash" role="dialog" aria-modal="true" aria-label="Bíblia Origens">
       <div class="splash__inner">
-        <img class="splash__logo" src="/logo.png" alt="" width="1024" height="1024" />
-        <p class="splash__title">Bíblia Origens</p>
-        <p class="splash__slogan">
-          <span class="splash__slogan-line">Sua fé, direto da fonte</span>
-          <span class="splash__slogan-line">Português • Hebraico • Transliteração</span>
-        </p>
         <div class="splash__spinner" role="status" aria-label="Carregando">
           <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
             <circle class="splash__spinner-track" cx="24" cy="24" r="18" />
