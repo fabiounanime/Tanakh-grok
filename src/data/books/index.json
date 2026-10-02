@@ -366,7 +366,7 @@
       "testament": "NT",
       "chapters": 16,
       "verses": 678,
-      "ptVerses": 108,
+      "ptVerses": 678,
       "defaultLang": "el"
     },
     {
@@ -614,6 +614,7 @@
     "hag",
     "zec",
     "mal",
+    "mrk",
     "jhn",
     "gal",
     "eph",
@@ -633,9 +634,7 @@
     "3jn",
     "jud"
   ],
-  "ptPartial": [
-    "mrk"
-  ],
+  "ptPartial": [],
   "ptNone": [
     "exo",
     "lev",
