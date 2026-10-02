@@ -1,0 +1,2843 @@
+{
+  "id": "jos",
+  "chapters": [
+    {
+      "n": 1,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E sucedeu, depois da morte de Moisés, servo do SENHOR, que o SENHOR falou a Josué, filho de Num, servo de Moisés, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Moisés, meu servo, é morto; levanta-te, pois, agora, passa este Jordão, tu e todo este povo, à terra que eu dou aos filhos de Israel."
+        },
+        {
+          "n": 3,
+          "portuguese": "Todo lugar que pisar a planta do vosso pé vo-lo tenho dado, como eu disse a Moisés."
+        },
+        {
+          "n": 4,
+          "portuguese": "Desde o deserto e este Líbano até ao grande rio, o rio Eufrates, toda a terra dos heteus, e até ao grande mar para o poente do sol, será o vosso termo."
+        },
+        {
+          "n": 5,
+          "portuguese": "Ninguém te poderá resistir, todos os dias da tua vida; como fui com Moisés, assim serei contigo; não te deixarei, nem te desampararei."
+        },
+        {
+          "n": 6,
+          "portuguese": "Esforça-te e tem bom ânimo; porque tu farás a este povo herdar a terra que, sob juramento, prometi dar a seus pais."
+        },
+        {
+          "n": 7,
+          "portuguese": "Tão somente esforça-te e tem mui bom ânimo, para teres o cuidado de fazer conforme toda a lei que meu servo Moisés te ordenou; dela não te desvies, nem para a direita nem para a esquerda, para que prudentemente te conduzas por onde quer que andares."
+        },
+        {
+          "n": 8,
+          "portuguese": "Não se aparte da tua boca o livro desta lei; antes, medita nele dia e noite, para que tenhas cuidado de fazer conforme tudo quanto nele está escrito; porque, então, farás prosperar o teu caminho e, então, prudentemente te conduzirás."
+        },
+        {
+          "n": 9,
+          "portuguese": "Não to mandei eu? Esforça-te e tem bom ânimo; não temas, nem te espantes, porque o SENHOR, teu Deus, é contigo, por onde quer que andares."
+        },
+        {
+          "n": 10,
+          "portuguese": "Então Josué deu ordem aos oficiais do povo, dizendo:"
+        },
+        {
+          "n": 11,
+          "portuguese": "Passai pelo meio do arraial e ordenai ao povo, dizendo: Preparai mantimento para vós, porque, dentro de três dias, passareis este Jordão, para que entreis a possuir a terra que o SENHOR, vosso Deus, vos dá para a possuirdes."
+        },
+        {
+          "n": 12,
+          "portuguese": "E falou Josué aos rubenitas, e aos gaditas, e à meia tribo de Manassés, dizendo:"
+        },
+        {
+          "n": 13,
+          "portuguese": "Lembrai-vos da palavra que vos mandou Moisés, o servo do SENHOR, dizendo: O SENHOR, vosso Deus, vos dá descanso e vos dá esta terra."
+        },
+        {
+          "n": 14,
+          "portuguese": "Vossas mulheres, e vossos meninos, e vosso gado fiquem na terra que Moisés vos deu deste lado do Jordão; porém vós passareis armados diante de vossos irmãos, todos os valentes e valorosos, e ajudá-los-eis,"
+        },
+        {
+          "n": 15,
+          "portuguese": "até que o SENHOR tenha dado descanso a vossos irmãos, como a vós, e eles também possuam a terra que o SENHOR, vosso Deus, lhes dá; então tornareis à terra da vossa herança e possuireis a que vos deu Moisés, o servo do SENHOR, deste lado do Jordão, para o nascente do sol."
+        },
+        {
+          "n": 16,
+          "portuguese": "Então responderam a Josué, dizendo: Tudo quanto nos ordenaste faremos e aonde quer que nos enviares iremos."
+        },
+        {
+          "n": 17,
+          "portuguese": "Como em tudo obedecemos a Moisés, assim obedeceremos a ti; tão somente que o SENHOR, teu Deus, seja contigo, como foi com Moisés."
+        },
+        {
+          "n": 18,
+          "portuguese": "Todo o homem que for rebelde contra a tua boca e não obedecer às tuas palavras em tudo quanto lhe ordenares morrerá; tão somente esforça-te e tem bom ânimo."
+        }
+      ],
+      "notes": [
+        "1,6–9 — Esforça-te e tem bom ânimo.",
+        "1,8 — Medita no livro da lei."
+      ]
+    },
+    {
+      "n": 2,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E enviou Josué, filho de Num, desde Sitim, dois homens a espiar em segredo, dizendo: Ide considerar a terra e a Jericó. Foram, pois, e entraram em casa de uma mulher prostituta, cujo nome era Raabe, e pousaram ali."
+        },
+        {
+          "n": 2,
+          "portuguese": "Então deu-se notícia ao rei de Jericó, dizendo: Eis que, esta noite, vieram aqui uns homens dos filhos de Israel, para espiar a terra."
+        },
+        {
+          "n": 3,
+          "portuguese": "Pelo que o rei de Jericó mandou dizer a Raabe: Tira fora os homens que vieram a ti e entraram na tua casa, porque vieram espiar toda a terra."
+        },
+        {
+          "n": 4,
+          "portuguese": "Porém aquela mulher tomou os dois homens, e os escondeu, e disse: É verdade que os homens vieram a mim, porém eu não sabia de onde eram."
+        },
+        {
+          "n": 5,
+          "portuguese": "E sucedeu que, havendo-se de fechar a porta, sendo já escuro, aqueles homens saíram; não sei para onde aqueles homens se foram; ide após eles depressa, porque os alcançareis."
+        },
+        {
+          "n": 6,
+          "portuguese": "Porém ela os tinha feito subir ao eirado e os tinha escondido entre as canas do linho que pusera em ordem sobre o eirado."
+        },
+        {
+          "n": 7,
+          "portuguese": "E foram-se aqueles homens após eles pelo caminho do Jordão, até aos vaus; e fechou-se a porta, depois que saíram os que iam após eles."
+        },
+        {
+          "n": 8,
+          "portuguese": "E, antes que eles se deitassem, ela subiu a ter com eles ao eirado;"
+        },
+        {
+          "n": 9,
+          "portuguese": "e disse aos homens: Bem sei que o SENHOR vos deu esta terra, e que o pavor de vós caiu sobre nós, e que todos os moradores da terra estão desmaiados diante de vós."
+        },
+        {
+          "n": 10,
+          "portuguese": "Porque temos ouvido que o SENHOR secou as águas do mar Vermelho diante de vós, quando saíeis do Egito; e o que fizestes aos dois reis dos amorreus, a Seom e a Ogue, que estavam dalém do Jordão, os quais destruístes."
+        },
+        {
+          "n": 11,
+          "portuguese": "Ouvindo isto, desmaiou o nosso coração, e em ninguém mais há ânimo algum, por causa da vossa presença; porque o SENHOR, vosso Deus, é Deus em cima nos céus e embaixo na terra."
+        },
+        {
+          "n": 12,
+          "portuguese": "Agora, pois, peço-vos, jurai-me pelo SENHOR que, como usei de misericórdia para convosco, também vós usareis de misericórdia para com a casa de meu pai; e dai-me um sinal seguro"
+        },
+        {
+          "n": 13,
+          "portuguese": "de que dareis a vida a meu pai e a minha mãe, como também a meus irmãos e a minhas irmãs, com tudo o que têm, e de que livrareis as nossas vidas da morte."
+        },
+        {
+          "n": 14,
+          "portuguese": "Então aqueles homens responderam-lhe: A nossa vida responderá pela vossa, se não denunciares este nosso negócio; e será que, dando-nos o SENHOR esta terra, usaremos para contigo de misericórdia e de fidelidade."
+        },
+        {
+          "n": 15,
+          "portuguese": "Ela, pois, os fez descer com uma corda pela janela, porque a sua casa estava sobre o muro da cidade, e ela morava sobre o muro."
+        },
+        {
+          "n": 16,
+          "portuguese": "E disse-lhes: Ide-vos ao monte, para que, porventura, vos não encontrem os perseguidores; e escondei-vos lá três dias, até que voltem os perseguidores, e, depois, ide pelo vosso caminho."
+        },
+        {
+          "n": 17,
+          "portuguese": "E aqueles homens disseram-lhe: Desobrigados seremos deste teu juramento que nos fizeste jurar,"
+        },
+        {
+          "n": 18,
+          "portuguese": "eis que, quando nós entrarmos na terra, atarás este cordão de fio de escarlata à janela por onde nos fizeste descer; e recolherás em casa contigo teu pai, e tua mãe, e teus irmãos, e toda a família de teu pai."
+        },
+        {
+          "n": 19,
+          "portuguese": "Será, pois, que qualquer que sair fora da porta da tua casa, o seu sangue será sobre a sua cabeça, e nós seremos inocentes; mas qualquer que estiver contigo, em casa, o seu sangue seja sobre a nossa cabeça, se nele se puser mão."
+        },
+        {
+          "n": 20,
+          "portuguese": "Porém, se tu denunciares este nosso negócio, desobrigados seremos do teu juramento que nos fizeste jurar."
+        },
+        {
+          "n": 21,
+          "portuguese": "E ela disse: Conforme as vossas palavras, assim seja. Então os despediu; e eles se foram; e ela atou o cordão de escarlata à janela."
+        },
+        {
+          "n": 22,
+          "portuguese": "Foram-se, pois, e chegaram ao monte, e ficaram ali três dias, até que voltaram os perseguidores; porque os perseguidores os buscaram por todo o caminho, porém não os acharam."
+        },
+        {
+          "n": 23,
+          "portuguese": "Assim, aqueles dois homens voltaram, e desceram do monte, e passaram, e chegaram a Josué, filho de Num, e contaram-lhe tudo quanto lhes acontecera."
+        },
+        {
+          "n": 24,
+          "portuguese": "E disseram a Josué: Certamente o SENHOR tem dado toda esta terra nas nossas mãos, pois até todos os moradores estão desmaiados diante de nós."
+        }
+      ],
+      "notes": [
+        "2,9–11 — Confissão de Raabe.",
+        "2,18 — Cordão de escarlata."
+      ]
+    },
+    {
+      "n": 3,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Levantou-se, pois, Josué de madrugada, e partiram de Sitim, e chegaram ao Jordão, ele e todos os filhos de Israel, e pousaram ali antes que passassem."
+        },
+        {
+          "n": 2,
+          "portuguese": "E sucedeu, ao fim de três dias, que os oficiais passaram pelo meio do arraial;"
+        },
+        {
+          "n": 3,
+          "portuguese": "e ordenaram ao povo, dizendo: Quando virdes a arca do concerto do SENHOR, vosso Deus, e que os sacerdotes levitas a levam, partireis vós também do vosso lugar e a seguireis."
+        },
+        {
+          "n": 4,
+          "portuguese": "Haja, contudo, distância entre vós e ela, como da medida de dois mil côvados; e não vos achegueis a ela, para que saibais o caminho pelo qual haveis de ir; porquanto, pelo caminho, nunca passastes antes."
+        },
+        {
+          "n": 5,
+          "portuguese": "Disse Josué também ao povo: Santificai-vos, porque amanhã o SENHOR fará maravilhas no meio de vós."
+        },
+        {
+          "n": 6,
+          "portuguese": "E falou Josué aos sacerdotes, dizendo: Levantai a arca do concerto e passai adiante deste povo. Levantaram, pois, a arca do concerto e foram andando adiante do povo."
+        },
+        {
+          "n": 7,
+          "portuguese": "Então disse o SENHOR a Josué: Este dia começarei a engrandecer-te perante os olhos de todo o Israel, para que saibam que, como fui com Moisés, assim serei contigo."
+        },
+        {
+          "n": 8,
+          "portuguese": "Tu, pois, ordenarás aos sacerdotes que levam a arca do concerto, dizendo: Quando chegares à beira das águas do Jordão, parareis no Jordão."
+        },
+        {
+          "n": 9,
+          "portuguese": "Então disse Josué aos filhos de Israel: Chegai-vos para cá e ouvi as palavras do SENHOR, vosso Deus."
+        },
+        {
+          "n": 10,
+          "portuguese": "Disse mais Josué: Nisto conhecereis que o Deus vivo está no meio de vós e que de todo lançará de diante de vós os cananeus, e os heteus, e os heveus, e os ferezeus, e os gergeseus, e os amorreus, e os jebuseus."
+        },
+        {
+          "n": 11,
+          "portuguese": "Eis que a arca do concerto do Senhor de toda a terra passa o Jordão diante de vós."
+        },
+        {
+          "n": 12,
+          "portuguese": "Tomai, pois, agora, doze homens das tribos de Israel, de cada tribo um homem;"
+        },
+        {
+          "n": 13,
+          "portuguese": "porque há de acontecer que, assim que as plantas dos pés dos sacerdotes que levam a arca do SENHOR, o Senhor de toda a terra, pousarem nas águas do Jordão, se separarão as águas do Jordão, e as águas que de cima descem pararão num montão."
+        },
+        {
+          "n": 14,
+          "portuguese": "E aconteceu que, partindo o povo das suas tendas, para passarem o Jordão, e os sacerdotes que levavam a arca do concerto, diante do povo,"
+        },
+        {
+          "n": 15,
+          "portuguese": "e quando os que levavam a arca chegaram até ao Jordão, e os seus pés se molharam na beira das águas (porque o Jordão trasbordava sobre todas as suas ribanceiras, todos os dias da sega),"
+        },
+        {
+          "n": 16,
+          "portuguese": "pararam-se as águas que desciam de cima; levantaram-se num montão, mui longe da cidade de Adã, que está ao lado de Zaretã; e as que desciam ao mar da campina, que é o mar Salgado, faltaram de todo; e o povo passou defronte de Jericó."
+        },
+        {
+          "n": 17,
+          "portuguese": "Porém os sacerdotes que levavam a arca do concerto do SENHOR pararam firmes em seco no meio do Jordão; e todo o Israel passou a seco, até que todo o povo acabou de passar o Jordão."
+        }
+      ],
+      "notes": [
+        "3,16–17 — O Jordão se para; passam a seco."
+      ]
+    },
+    {
+      "n": 4,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E sucedeu que, acabando todo o povo de passar o Jordão, falou o SENHOR a Josué, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Tomai do povo doze homens, de cada tribo um homem;"
+        },
+        {
+          "n": 3,
+          "portuguese": "e mandai-lhes, dizendo: Tomai daqui, do meio do Jordão, do lugar onde estavam firmes os pés dos sacerdotes, doze pedras; e levai-as convosco à passagem e deixai-as na pousada em que haveis de passar esta noite."
+        },
+        {
+          "n": 4,
+          "portuguese": "Chamou, pois, Josué os doze homens que escolhera dos filhos de Israel, de cada tribo um homem;"
+        },
+        {
+          "n": 5,
+          "portuguese": "e disse-lhes Josué: Passai adiante da arca do SENHOR, vosso Deus, ao meio do Jordão; e cada um de vós levante uma pedra sobre o ombro, segundo o número das tribos dos filhos de Israel,"
+        },
+        {
+          "n": 6,
+          "portuguese": "para que isto seja por sinal entre vós; e, quando vossos filhos, no futuro, perguntarem, dizendo: Que significam estas pedras?"
+        },
+        {
+          "n": 7,
+          "portuguese": "então lhes direis que as águas do Jordão se separaram diante da arca do concerto do SENHOR; quando ela passou pelo Jordão, as águas do Jordão se separaram; e estas pedras serão para sempre por memorial aos filhos de Israel."
+        },
+        {
+          "n": 8,
+          "portuguese": "Fizeram, pois, os filhos de Israel assim como Josué ordenara, e levantaram doze pedras do meio do Jordão, como o SENHOR dissera a Josué, segundo o número das tribos dos filhos de Israel; e levaram-nas consigo à pousada e as depositaram ali."
+        },
+        {
+          "n": 9,
+          "portuguese": "Levantou também Josué doze pedras no meio do Jordão, no lugar em que estavam parados os pés dos sacerdotes que levavam a arca do concerto; e ali estão até ao dia de hoje."
+        },
+        {
+          "n": 10,
+          "portuguese": "E os sacerdotes que levavam a arca pararam no meio do Jordão, até que se cumpriu tudo quanto o SENHOR mandara a Josué, para dizer ao povo, conforme tudo quanto Moisés ordenara a Josué; e o povo se apressou e passou."
+        },
+        {
+          "n": 11,
+          "portuguese": "E sucedeu que, assim que todo o povo acabou de passar, então passou a arca do SENHOR e os sacerdotes, à vista do povo."
+        },
+        {
+          "n": 12,
+          "portuguese": "E os filhos de Rúben, e os filhos de Gade, e a meia tribo de Manassés passaram armados diante dos filhos de Israel, como Moisés lhes tinha falado."
+        },
+        {
+          "n": 13,
+          "portuguese": "Uns quarenta mil homens de guerra armados passaram diante do SENHOR à batalha, para as campinas de Jericó."
+        },
+        {
+          "n": 14,
+          "portuguese": "Naquele dia, o SENHOR engrandeceu a Josué à vista de todo o Israel; e temeram-no, como haviam temido a Moisés, todos os dias da sua vida."
+        },
+        {
+          "n": 15,
+          "portuguese": "Falou, pois, o SENHOR a Josué, dizendo:"
+        },
+        {
+          "n": 16,
+          "portuguese": "Manda aos sacerdotes que levam a arca do testemunho que subam do Jordão."
+        },
+        {
+          "n": 17,
+          "portuguese": "E deu Josué ordem aos sacerdotes, dizendo: Subi do Jordão."
+        },
+        {
+          "n": 18,
+          "portuguese": "E aconteceu que, quando os sacerdotes que levavam a arca do concerto do SENHOR subiram do meio do Jordão, e as plantas dos pés dos sacerdotes se puseram em seco, as águas do Jordão se tornaram ao seu lugar e corriam, como dantes, sobre todas as suas ribanceiras."
+        },
+        {
+          "n": 19,
+          "portuguese": "Subiu, pois, o povo do Jordão no dia dez do primeiro mês; e alojaram-se em Gilgal, do lado oriental de Jericó."
+        },
+        {
+          "n": 20,
+          "portuguese": "E as doze pedras que tiraram do Jordão, levantou-as Josué em Gilgal."
+        },
+        {
+          "n": 21,
+          "portuguese": "E falou aos filhos de Israel, dizendo: Quando, no futuro, vossos filhos perguntarem a seus pais, dizendo: Que significam estas pedras?"
+        },
+        {
+          "n": 22,
+          "portuguese": "fareis saber a vossos filhos, dizendo: Israel passou este Jordão em seco."
+        },
+        {
+          "n": 23,
+          "portuguese": "Porque o SENHOR, vosso Deus, secou as águas do Jordão diante de vós, até que passásseis, como o SENHOR, vosso Deus, fez ao mar Vermelho, que secou perante nós, até que passamos;"
+        },
+        {
+          "n": 24,
+          "portuguese": "para que todos os povos da terra conheçam a mão do SENHOR, que é forte, para que temais ao SENHOR, vosso Deus, todos os dias."
+        }
+      ],
+      "notes": [
+        "4,6–7 — Memorial das pedras.",
+        "4,19 — Acampam em Gilgal."
+      ]
+    },
+    {
+      "n": 5,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Sucedeu que, ouvindo todos os reis dos amorreus que habitavam deste lado do Jordão, ao ocidente, e todos os reis dos cananeus que estavam ao pé do mar que o SENHOR tinha secado as águas do Jordão de diante dos filhos de Israel, até que passamos, desmaiou-se-lhes o coração, e não houve mais ânimo neles, por causa dos filhos de Israel."
+        },
+        {
+          "n": 2,
+          "portuguese": "Naquele tempo, disse o SENHOR a Josué: Faze facas de pedra e torna a circuncidar, segunda vez, aos filhos de Israel."
+        },
+        {
+          "n": 3,
+          "portuguese": "Então Josué fez para si facas de pedra e circuncidou aos filhos de Israel no outeiro dos prepúcios."
+        },
+        {
+          "n": 4,
+          "portuguese": "E esta é a causa por que Josué os circuncidou: todo o povo que tinha saído do Egito, os homens, todos os homens de guerra, tinham morrido no deserto, pelo caminho, depois que saíram do Egito."
+        },
+        {
+          "n": 5,
+          "portuguese": "Porque todo o povo que saíra estava circuncidado, mas todo o povo que nascera no deserto, pelo caminho, depois de terem saído do Egito, não tinha sido circuncidado."
+        },
+        {
+          "n": 6,
+          "portuguese": "Porque quarenta anos andaram os filhos de Israel pelo deserto, até se acabar toda a nação, os homens de guerra que saíram do Egito, que não obedeceram à voz do SENHOR; aos quais o SENHOR jurara que lhes não deixaria ver a terra que o SENHOR jurara a seus pais que nos daria, terra que mana leite e mel."
+        },
+        {
+          "n": 7,
+          "portuguese": "Porém a seus filhos constituiu em seu lugar; a esses Josué circuncidou, porquanto estavam incircuncisos, porque eles não os circuncidaram no caminho."
+        },
+        {
+          "n": 8,
+          "portuguese": "E aconteceu que, acabando de circuncidar a toda a nação, ficaram no seu lugar no arraial, até que sararam."
+        },
+        {
+          "n": 9,
+          "portuguese": "Disse mais o SENHOR a Josué: Hoje revolvi de sobre vós o opróbrio do Egito; pelo que o nome daquele lugar se chamou Gilgal até ao dia de hoje."
+        },
+        {
+          "n": 10,
+          "portuguese": "Estando, pois, os filhos de Israel acampados em Gilgal, celebraram a Páscoa no dia catorze do mês, à tarde, nas campinas de Jericó."
+        },
+        {
+          "n": 11,
+          "portuguese": "E, no dia seguinte à Páscoa, nesse mesmo dia, comeram do produto da terra, pães ásimos e grãos tostados."
+        },
+        {
+          "n": 12,
+          "portuguese": "E cessou o maná no dia seguinte, depois que comeram do produto da terra, e os filhos de Israel não tiveram mais maná; porém, no mesmo ano, comeram do fruto da terra de Canaã."
+        },
+        {
+          "n": 13,
+          "portuguese": "E sucedeu que, estando Josué junto a Jericó, levantou os seus olhos e olhou; e eis que se pôs em pé diante dele um homem que tinha na mão uma espada nua; e chegou-se Josué a ele e disse-lhe: És tu dos nossos ou dos nossos inimigos?"
+        },
+        {
+          "n": 14,
+          "portuguese": "E disse ele: Não, mas venho agora como príncipe do exército do SENHOR. Então Josué se prostrou com o seu rosto em terra, e o adorou, e disse-lhe: Que diz meu senhor ao seu servo?"
+        },
+        {
+          "n": 15,
+          "portuguese": "Então disse o príncipe do exército do SENHOR a Josué: Descalça os sapatos de teus pés, porque o lugar em que estás é santo. E Josué assim fez."
+        }
+      ],
+      "notes": [
+        "5,2–9 — Circuncisão em Gilgal.",
+        "5,13–15 — Príncipe do exército do SENHOR."
+      ]
+    },
+    {
+      "n": 6,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Ora, Jericó estava rigorosamente fechada por causa dos filhos de Israel; ninguém saía, nem entrava."
+        },
+        {
+          "n": 2,
+          "portuguese": "Então disse o SENHOR a Josué: Olha, tenho dado na tua mão a Jericó, e ao seu rei, e aos seus valentes e valorosos."
+        },
+        {
+          "n": 3,
+          "portuguese": "Vós, pois, todos os homens de guerra, rodeareis a cidade, rodeando a cidade uma vez; assim fareis por seis dias."
+        },
+        {
+          "n": 4,
+          "portuguese": "E sete sacerdotes levarão sete trombetas de chifres de carneiros diante da arca; e, ao sétimo dia, rodeareis a cidade sete vezes, e os sacerdotes tocarão as trombetas."
+        },
+        {
+          "n": 5,
+          "portuguese": "E será que, tocando-se longamente a trombeta de chifre de carneiro, ouvindo vós o sonido da trombeta, todo o povo gritará com grande grita; e o muro da cidade cairá abaixo, e o povo subirá, cada um em frente."
+        },
+        {
+          "n": 6,
+          "portuguese": "Então Josué, filho de Num, chamou os sacerdotes e disse-lhes: Levai a arca do concerto; e sete sacerdotes levem sete trombetas de chifres de carneiros, diante da arca do SENHOR."
+        },
+        {
+          "n": 7,
+          "portuguese": "E disse ao povo: Passai e rodeai a cidade; e quem estiver armado passe diante da arca do SENHOR."
+        },
+        {
+          "n": 8,
+          "portuguese": "E assim foi, como Josué dissera ao povo; e os sete sacerdotes, levando as sete trombetas de chifres de carneiros diante do SENHOR, passaram e tocaram as trombetas; e a arca do concerto do SENHOR os seguia."
+        },
+        {
+          "n": 9,
+          "portuguese": "E os homens armados iam diante dos sacerdotes que tocavam as trombetas; e a retaguarda seguia após a arca; andando e tocando as trombetas."
+        },
+        {
+          "n": 10,
+          "portuguese": "Porém Josué mandara ao povo, dizendo: Não gritareis, nem fareis ouvir a vossa voz, nem sairá palavra alguma da vossa boca, até ao dia em que eu vos diga: Gritai! Então gritarei."
+        },
+        {
+          "n": 11,
+          "portuguese": "Assim, a arca do SENHOR rodeou a cidade, rodeando-a uma vez; e foram ao arraial e passaram ali a noite."
+        },
+        {
+          "n": 12,
+          "portuguese": "Depois, Josué se levantou de madrugada, e os sacerdotes levaram a arca do SENHOR."
+        },
+        {
+          "n": 13,
+          "portuguese": "E os sete sacerdotes que levavam as sete trombetas de chifres de carneiros diante da arca do SENHOR iam andando, e tocando as trombetas; e os homens armados iam diante deles, e a retaguarda seguia após a arca do SENHOR; e os sacerdotes iam andando e tocando as trombetas."
+        },
+        {
+          "n": 14,
+          "portuguese": "Assim, no segundo dia, rodearam outra vez a cidade e voltaram ao arraial; e assim fizeram seis dias."
+        },
+        {
+          "n": 15,
+          "portuguese": "E sucedeu que, ao sétimo dia, madrugaram ao subir da alva e da mesma maneira rodearam a cidade sete vezes; somente naquele dia rodearam a cidade sete vezes."
+        },
+        {
+          "n": 16,
+          "portuguese": "E sucedeu que, tocando os sacerdotes a sétima vez as trombetas, disse Josué ao povo: Gritai, porque o SENHOR vos tem dado a cidade!"
+        },
+        {
+          "n": 17,
+          "portuguese": "A cidade, porém, será anátema ao SENHOR, ela e tudo quanto houver nela; somente a prostituta Raabe viverá, ela e todos os que com ela estiverem em casa, porquanto escondeu os mensageiros que enviamos."
+        },
+        {
+          "n": 18,
+          "portuguese": "Tão somente guardai-vos do anátema, para que, porventura, depois de o terdes anatematizado, não tomeis algo do anátema e façais anátema o arraial de Israel e o turbéis."
+        },
+        {
+          "n": 19,
+          "portuguese": "Porém toda a prata, e o ouro, e os vasos de bronze e de ferro são consagrados ao SENHOR; irão ao tesouro do SENHOR."
+        },
+        {
+          "n": 20,
+          "portuguese": "Gritou, pois, o povo, e os sacerdotes tocaram as trombetas; e sucedeu que, ouvindo o povo a voz da trombeta e gritando o povo com grande grita, o muro caiu abaixo, e o povo subiu à cidade, cada um em frente, e tomaram a cidade."
+        },
+        {
+          "n": 21,
+          "portuguese": "E tudo quanto havia na cidade destruíram totalmente a fio de espada, desde o homem até à mulher, desde o menino até ao velho, e até ao boi e gado miúdo, e ao jumento."
+        },
+        {
+          "n": 22,
+          "portuguese": "Então disse Josué aos dois homens que tinham espiado a terra: Entrai na casa da mulher prostituta e tirai-a de lá, com tudo quanto tiver, como lhe tendes jurado."
+        },
+        {
+          "n": 23,
+          "portuguese": "Então entraram os jovens espias e tiraram a Raabe, e a seu pai, e a sua mãe, e a seus irmãos, e a tudo quanto tinha; tiraram também a toda a sua parentela e os puseram fora do arraial de Israel."
+        },
+        {
+          "n": 24,
+          "portuguese": "Porém a cidade queimaram a fogo, e tudo quanto havia nela; tão somente a prata, e o ouro, e os vasos de bronze e de ferro deram para o tesouro da casa do SENHOR."
+        },
+        {
+          "n": 25,
+          "portuguese": "Assim, Josué conservou com vida a prostituta Raabe, e a casa de seu pai, e tudo quanto tinha; e ela habitou no meio de Israel até ao dia de hoje, porquanto escondera os mensageiros que Josué tinha enviado a espiar a Jericó."
+        },
+        {
+          "n": 26,
+          "portuguese": "E, naquele tempo, Josué os esconjurou, dizendo: Maldito diante do SENHOR seja o homem que se levantar e reedificar esta cidade de Jericó; com a perda do seu primogênito a fundará e, com a perda do seu filho mais novo, lhe assentará as portas."
+        },
+        {
+          "n": 27,
+          "portuguese": "Assim era o SENHOR com Josué; e corria a sua fama por toda a terra."
+        }
+      ],
+      "notes": [
+        "6,20 — O muro caiu.",
+        "6,26 — Maldição sobre quem reedificar Jericó."
+      ]
+    },
+    {
+      "n": 7,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Mas os filhos de Israel transgrediram no anátema; porque Acã, filho de Carmi, filho de Zabdi, filho de Zerá, da tribo de Judá, tomou do anátema, e a ira do SENHOR se acendeu contra os filhos de Israel."
+        },
+        {
+          "n": 2,
+          "portuguese": "Enviando, pois, Josué, de Jericó, alguns homens a Ai, que está junto a Bete-Áven, da banda do oriente de Betel, falou-lhes, dizendo: Subi e espiai a terra. Subiram, pois, aqueles homens e espiaram a Ai."
+        },
+        {
+          "n": 3,
+          "portuguese": "E, voltando a Josué, disseram-lhe: Não suba todo o povo; subam uns dois mil ou três mil homens e firam a Ai; não fatigues ali a todo o povo, porque poucos são."
+        },
+        {
+          "n": 4,
+          "portuguese": "Assim, subiram lá do povo uns três mil homens, os quais fugiram diante dos homens de Ai."
+        },
+        {
+          "n": 5,
+          "portuguese": "E os homens de Ai feriram deles uns trinta e seis e perseguiram-nos desde diante da porta até Sebarim e os feriram na descida; pelo que o coração do povo se derreteu e se tornou como água."
+        },
+        {
+          "n": 6,
+          "portuguese": "Então Josué rasgou as suas vestes e se lançou em terra sobre o seu rosto perante a arca do SENHOR até à tarde, ele e os anciãos de Israel; e deitaram pó sobre as suas cabeças."
+        },
+        {
+          "n": 7,
+          "portuguese": "E disse Josué: Ah! Senhor DEUS, por que fizeste passar a este povo o Jordão, para nos dares na mão dos amorreus, para nos fazerem perecer? Tomara nos contentáramos com ficarmos dalém do Jordão!"
+        },
+        {
+          "n": 8,
+          "portuguese": "Ah! Senhor, que direi, pois Israel virou as costas diante dos seus inimigos?"
+        },
+        {
+          "n": 9,
+          "portuguese": "Ouvirão isto os cananeus e todos os moradores da terra, e nos cercarão, e desarraigarão o nosso nome da terra; e então, que farás ao teu grande nome?"
+        },
+        {
+          "n": 10,
+          "portuguese": "Então disse o SENHOR a Josué: Levanta-te; por que estás assim sobre o teu rosto?"
+        },
+        {
+          "n": 11,
+          "portuguese": "Israel pecou, e até transgrediram o meu concerto que lhes tinha ordenado, e até tomaram do anátema, e furtaram, e mentiram, e até o puseram entre a sua bagagem."
+        },
+        {
+          "n": 12,
+          "portuguese": "Pelo que os filhos de Israel não puderam resistir perante os seus inimigos; viraram as costas diante dos seus inimigos, porquanto estão amaldiçoados; não serei mais convosco, se não desarraigardes o anátema do meio de vós."
+        },
+        {
+          "n": 13,
+          "portuguese": "Levanta-te, santifica o povo e dize: Santificai-vos para amanhã, porque assim diz o SENHOR, Deus de Israel: Anátema há no meio de ti, Israel; diante dos teus inimigos não poderás resistir, até que tireis o anátema do meio de vós."
+        },
+        {
+          "n": 14,
+          "portuguese": "Amanhã, pois, vos achegareis, segundo as vossas tribos; e será que a tribo que o SENHOR tomar se achegará, segundo as famílias; e a família que o SENHOR tomar se achegará por casas; e a casa que o SENHOR tomar se achegará homem por homem."
+        },
+        {
+          "n": 15,
+          "portuguese": "E será que aquele que for tomado com o anátema será queimado a fogo, ele e tudo quanto tiver, porquanto transgrediu o concerto do SENHOR e fez loucura em Israel."
+        },
+        {
+          "n": 16,
+          "portuguese": "Então Josué se levantou de madrugada e fez chegar Israel, segundo as suas tribos; e a tribo de Judá foi tomada."
+        },
+        {
+          "n": 17,
+          "portuguese": "E, fazendo chegar a tribo de Judá, tomou a família dos zeraítas; e, fazendo chegar a família dos zeraítas, homem por homem, foi tomado Zabdi."
+        },
+        {
+          "n": 18,
+          "portuguese": "E, fazendo chegar a sua casa, homem por homem, foi tomado Acã, filho de Carmi, filho de Zabdi, filho de Zerá, da tribo de Judá."
+        },
+        {
+          "n": 19,
+          "portuguese": "Então disse Josué a Acã: Filho meu, dá, peço-te, glória ao SENHOR, Deus de Israel, e faze confissão perante ele; e declara-me, agora, o que fizeste; não mo ocultes."
+        },
+        {
+          "n": 20,
+          "portuguese": "E respondeu Acã a Josué e disse: Verdadeiramente pequei contra o SENHOR, Deus de Israel, e fiz assim e assim."
+        },
+        {
+          "n": 21,
+          "portuguese": "Quando vi entre os despojos uma boa capa babilônica, e duzentos siclos de prata, e uma cunha de ouro do peso de cinquenta siclos, cobicei-os e tomei-os; e eis que estão escondidos na terra, no meio da minha tenda, e a prata, debaixo dela."
+        },
+        {
+          "n": 22,
+          "portuguese": "Então Josué enviou mensageiros, que foram correndo à tenda; e eis que estava escondido, e a prata, debaixo dele."
+        },
+        {
+          "n": 23,
+          "portuguese": "Tomaram, pois, aquelas coisas do meio da tenda, e as trouxeram a Josué e a todos os filhos de Israel; e as deitaram perante o SENHOR."
+        },
+        {
+          "n": 24,
+          "portuguese": "Então Josué e todo o Israel com ele tomaram a Acã, filho de Zerá, e a prata, e a capa, e a cunha de ouro, e a seus filhos, e a suas filhas, e a seus bois, e a seus jumentos, e a suas ovelhas, e a sua tenda, e a tudo quanto tinha; e levaram-nos ao vale de Acor."
+        },
+        {
+          "n": 25,
+          "portuguese": "E disse Josué: Por que nos turbaste? O SENHOR te turbará neste dia. E todo o Israel o apedrejou com pedras, e os queimaram a fogo, depois de os apedrejarem com pedras."
+        },
+        {
+          "n": 26,
+          "portuguese": "E levantaram sobre ele um grande montão de pedras, até ao dia de hoje. Então o SENHOR se tornou do furor da sua ira; pelo que o nome daquele lugar se chama o vale de Acor até ao dia de hoje."
+        }
+      ],
+      "notes": [
+        "7,19–26 — Acã; vale de Acor."
+      ]
+    },
+    {
+      "n": 8,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Então disse o SENHOR a Josué: Não temas e não te espantes; toma contigo toda a gente de guerra, e levanta-te, e sobe a Ai; olha que te tenho dado na tua mão o rei de Ai, e o seu povo, e a sua cidade, e a sua terra."
+        },
+        {
+          "n": 2,
+          "portuguese": "E farás a Ai e a seu rei como fizeste a Jericó e a seu rei; salvo que para vós tomareis os seus despojos e o seu gado; põe emboscadas à cidade, por detrás dela."
+        },
+        {
+          "n": 3,
+          "portuguese": "Então Josué se levantou e toda a gente de guerra, para subir contra Ai; e escolheu Josué trinta mil homens valorosos e os enviou de noite."
+        },
+        {
+          "n": 4,
+          "portuguese": "E deu-lhes ordem, dizendo: Olhai, poreis emboscadas à cidade, por detrás dela; não vos alonguei muito da cidade; e todos vós estai apercebidos."
+        },
+        {
+          "n": 5,
+          "portuguese": "E eu e todo o povo que está comigo nos achegaremos à cidade; e há de ser que, quando eles nos saírem ao encontro, como dantes, fugiremos diante deles."
+        },
+        {
+          "n": 6,
+          "portuguese": "Deixem-se eles atrair atrás de nós, até que os tiremos da cidade, porque dirão: Fogem diante de nós, como dantes; assim, fugiremos diante deles."
+        },
+        {
+          "n": 7,
+          "portuguese": "Então saireis vós da emboscada e tomareis a cidade; porque o SENHOR, vosso Deus, vo-la dará na vossa mão."
+        },
+        {
+          "n": 8,
+          "portuguese": "E será que, tomando vós a cidade, pôr-lhe-eis fogo; conforme a palavra do SENHOR fareis; olhai que vo-lo tenho mandado."
+        },
+        {
+          "n": 9,
+          "portuguese": "Assim, Josué os enviou, e eles se foram à emboscada; e ficaram entre Betel e Ai, ao ocidente de Ai; porém Josué passou aquela noite no meio do povo."
+        },
+        {
+          "n": 10,
+          "portuguese": "E levantou-se Josué de madrugada e contou o povo; e subiu ele e os anciãos de Israel, diante do povo, a Ai."
+        },
+        {
+          "n": 11,
+          "portuguese": "E toda a gente de guerra, que havia com ele, subiu e chegou-se; e vieram defronte da cidade e alojaram-se do lado do norte de Ai; e havia um vale entre ele e Ai."
+        },
+        {
+          "n": 12,
+          "portuguese": "Tomou também uns cinco mil homens e pô-los de emboscada entre Betel e Ai, ao ocidente da cidade."
+        },
+        {
+          "n": 13,
+          "portuguese": "E puseram o povo, todo o arraial, que estava ao norte da cidade e a emboscada ao ocidente da cidade; e foi Josué aquela noite até ao meio do vale."
+        },
+        {
+          "n": 14,
+          "portuguese": "E sucedeu que, vendo-o o rei de Ai, os homens da cidade se apressaram e se levantaram de madrugada, e o povo da cidade saiu ao encontro de Israel, à peleja, ele e todo o seu povo, ao tempo apontado, perante as campinas; porque ele não sabia que se lhe armara emboscada atrás da cidade."
+        },
+        {
+          "n": 15,
+          "portuguese": "Josué, pois, e todo o Israel se houveram como feridos diante deles e fugiram pelo caminho do deserto."
+        },
+        {
+          "n": 16,
+          "portuguese": "Pelo que todo o povo, que estava na cidade, se convocaram a persegui-los; e perseguiram a Josué e foram atrídos da cidade."
+        },
+        {
+          "n": 17,
+          "portuguese": "E nem um só homem ficou em Ai, nem em Betel, que não saísse após Israel; e deixaram a cidade aberta e perseguiram a Israel."
+        },
+        {
+          "n": 18,
+          "portuguese": "Então o SENHOR disse a Josué: Estende a lança que tens na tua mão para Ai, porque a darei na tua mão. E Josué estendeu a lança, que estava na sua mão, para a cidade."
+        },
+        {
+          "n": 19,
+          "portuguese": "Então a emboscada se levantou apressadamente do seu lugar, e, ao estender ele a sua mão, correram, e entraram na cidade, e a tomaram; e apressaram-se a pôr fogo à cidade."
+        },
+        {
+          "n": 20,
+          "portuguese": "E, virando-se os homens de Ai para trás, olharam, e eis que a fumaça da cidade subia ao céu, e não puderam fugir nem para uma parte nem para outra; porque o povo, que fugia para o deserto, se tornou contra os que os perseguiam."
+        },
+        {
+          "n": 21,
+          "portuguese": "Vendo, pois, Josué e todo o Israel que a emboscada tomara a cidade e que a fumaça da cidade subia, tornaram e feriram os homens de Ai."
+        },
+        {
+          "n": 22,
+          "portuguese": "Também aqueles da cidade lhes saíram ao encontro; assim, ficaram no meio dos israelitas, uns de uma, e outros de outra parte; e feriram-nos, até que não deixaram nenhum deles, nem sequer um que escapasse."
+        },
+        {
+          "n": 23,
+          "portuguese": "Porém ao rei de Ai tomaram vivo e o trouxeram a Josué."
+        },
+        {
+          "n": 24,
+          "portuguese": "E sucedeu que, acabando os israelitas de matar todos os moradores de Ai no campo, no deserto onde os tinham perseguido, e caindo todos a fio de espada até se acabarem, todo o Israel se tornou a Ai e a feriu a fio de espada."
+        },
+        {
+          "n": 25,
+          "portuguese": "E os que caíram aquele dia, assim de homens como de mulheres, foram doze mil, todos os de Ai."
+        },
+        {
+          "n": 26,
+          "portuguese": "Porque Josué não retirou a sua mão, que estendera com a lança, até destruir totalmente a todos os moradores de Ai."
+        },
+        {
+          "n": 27,
+          "portuguese": "Somente o gado e os despojos daquela cidade Israel tomou para si, conforme a palavra do SENHOR que ordenara a Josué."
+        },
+        {
+          "n": 28,
+          "portuguese": "Queimou, pois, Josué a Ai e a tornou num montão perpétuo, em desolação, até ao dia de hoje."
+        },
+        {
+          "n": 29,
+          "portuguese": "E ao rei de Ai enforcou num madeiro, até à tarde; e, ao ir-se o sol, mandou Josué que tirassem do madeiro o seu cadáver, e o lançassem à porta da cidade, e sobre ele levantassem um grande montão de pedras, até o dia de hoje."
+        },
+        {
+          "n": 30,
+          "portuguese": "Então Josué edificou um altar ao SENHOR, Deus de Israel, no monte Ebal,"
+        },
+        {
+          "n": 31,
+          "portuguese": "como Moisés, servo do SENHOR, ordenara aos filhos de Israel, conforme o que está escrito no livro da Lei de Moisés, a saber, um altar de pedras inteiras, sobre as quais não se movera instrumento de ferro; e sobre ele ofereceram holocaustos ao SENHOR e sacrificaram ofertas pacíficas."
+        },
+        {
+          "n": 32,
+          "portuguese": "Também escreveu ali, em pedras, uma cópia da Lei de Moisés, que este tinha escrito diante dos filhos de Israel."
+        },
+        {
+          "n": 33,
+          "portuguese": "E todo o Israel, e os seus anciãos, e os oficiais, e os seus juízes estavam de uma e outra banda da arca, perante os sacerdotes levitas que levavam a arca do concerto do SENHOR, tanto estrangeiros como naturais; metade deles em frente do monte Gerizim e a outra metade em frente do monte Ebal, como Moisés, o servo do SENHOR, dantes ordenara, para que abençoassem o povo de Israel."
+        },
+        {
+          "n": 34,
+          "portuguese": "E, depois, leu todas as palavras da Lei, a bênção e a maldição, conforme tudo o que está escrito no livro da Lei."
+        },
+        {
+          "n": 35,
+          "portuguese": "Palavra nenhuma houve, de tudo o que Moisés ordenara, que Josué não lesse perante toda a congregação de Israel, e as mulheres, e os meninos, e os estrangeiros que andavam no meio deles."
+        }
+      ],
+      "notes": [
+        "8,26–29 — Destruição de Ai.",
+        "8,30–35 — Altar no Ebal; leitura da Lei."
+      ]
+    },
+    {
+      "n": 9,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E sucedeu que, ouvindo isto todos os reis que estavam daquém do Jordão, nas montanhas, e nas campinas, e em toda a costa do grande mar, em frente do Líbano, os heteus, e os amorreus, os cananeus, os ferezeus, os heveus e os jebuseus,"
+        },
+        {
+          "n": 2,
+          "portuguese": "se ajuntaram eles de comum acordo, para pelejarem contra Josué e contra Israel."
+        },
+        {
+          "n": 3,
+          "portuguese": "Porém os moradores de Gibeão, ouvindo o que Josué fizera com Jericó e com Ai,"
+        },
+        {
+          "n": 4,
+          "portuguese": "usaram de astúcia, e foram, e se fingiram embaixadores, e tomaram sacos velhos sobre os seus jumentos e odres de vinho, velhos, e rotos, e remendados;"
+        },
+        {
+          "n": 5,
+          "portuguese": "e nos seus pés, sapatos velhos e remendados, e roupas velhas sobre si; e todo o pão que traziam para o caminho era seco e bolorento."
+        },
+        {
+          "n": 6,
+          "portuguese": "E vieram a Josué, ao arraial, a Gilgal, e disseram-lhe, a ele e aos homens de Israel: Viemos duma terra longínqua; fazei, pois, agora, concerto conosco."
+        },
+        {
+          "n": 7,
+          "portuguese": "E os homens de Israel responderam aos heveus: Porventura habitais no meio de nós; como, pois, faríamos concerto convosco?"
+        },
+        {
+          "n": 8,
+          "portuguese": "E disseram a Josué: Somos teus servos. Então lhes disse Josué: Quem sois vós? E de onde vindes?"
+        },
+        {
+          "n": 9,
+          "portuguese": "E lhe responderam: Teus servos vieram duma terra mui longínqua, por causa do nome do SENHOR, teu Deus; porquanto ouvimos a sua fama e tudo quanto fez no Egito,"
+        },
+        {
+          "n": 10,
+          "portuguese": "e tudo quanto fez aos dois reis dos amorreus que estavam dalém do Jordão, a Seom, rei de Hesbom, e a Ogue, rei de Basã, que estava em Astarote."
+        },
+        {
+          "n": 11,
+          "portuguese": "Pelo que nossos anciãos e todos os moradores da nossa terra nos falaram, dizendo: Tomai na vossa mão provisão para o caminho e ide-lhes ao encontro; e dizei-lhes: Nós somos vossos servos; fazei, pois, agora, concerto conosco."
+        },
+        {
+          "n": 12,
+          "portuguese": "Este nosso pão tomamos quente das nossas casas, no dia em que saímos para vir a vós; e ei-lo aqui, agora, já seco e bolorento;"
+        },
+        {
+          "n": 13,
+          "portuguese": "e estes odres de vinho, que enchemos novos, ei-los aqui, já rotos; e esta nossa roupa e os nossos sapatos já se têm envelhecido, por causa do mui longo caminho."
+        },
+        {
+          "n": 14,
+          "portuguese": "Então aqueles homens aceitaram da sua provisão e não pediram conselho à boca do SENHOR."
+        },
+        {
+          "n": 15,
+          "portuguese": "E Josué fez paz com eles e fez com eles o concerto de lhes dar a vida; e os príncipes da congregação lhes juraram."
+        },
+        {
+          "n": 16,
+          "portuguese": "E sucedeu que, ao cabo de três dias, depois de fazerem com eles o concerto, ouviram que eram seus vizinhos e que moravam no meio deles."
+        },
+        {
+          "n": 17,
+          "portuguese": "Pois, partindo os filhos de Israel, chegaram às suas cidades ao terceiro dia; e suas cidades eram Gibeão, e Cefira, e Beerote, e Quiriate-Jearim."
+        },
+        {
+          "n": 18,
+          "portuguese": "E os filhos de Israel os não feriram, porquanto os príncipes da congregação lhes juraram pelo SENHOR, Deus de Israel; pelo que toda a congregação murmurou contra os príncipes."
+        },
+        {
+          "n": 19,
+          "portuguese": "Então todos os príncipes disseram a toda a congregação: Nós lhes juramos pelo SENHOR, Deus de Israel; pelo que não lhes podemos tocar."
+        },
+        {
+          "n": 20,
+          "portuguese": "Isto, porém, lhes faremos: deixar-lhes-emos viver, para que não haja grande ira sobre nós, por causa do juramento que lhes juramos."
+        },
+        {
+          "n": 21,
+          "portuguese": "Disseram-lhes, pois, os príncipes: Vivam e sejam rachadores de lenha e tiradores de água para toda a congregação, como os príncipes lhes têm dito."
+        },
+        {
+          "n": 22,
+          "portuguese": "E Josué os chamou e falou-lhes, dizendo: Por que nos enganastes, dizendo: Mui longe de vós habitamos, porquanto morais no meio de nós?"
+        },
+        {
+          "n": 23,
+          "portuguese": "Agora, pois, sois malditos; e dentre vós nunca deixará de haver servos, nem rachadores de lenha, nem tiradores de água para a casa do meu Deus."
+        },
+        {
+          "n": 24,
+          "portuguese": "Então responderam a Josué e disseram: Porquanto, com certeza, foi anunciado aos teus servos que o SENHOR, teu Deus, ordenou a Moisés, seu servo, que vos desse toda esta terra e destruísse todos os moradores da terra de diante de vós, tememos muito pelas nossas vidas, por causa de vós, e fizemos assim."
+        },
+        {
+          "n": 25,
+          "portuguese": "E eis que agora estamos na tua mão; faze aquilo que te parece bom e reto que se nos faça."
+        },
+        {
+          "n": 26,
+          "portuguese": "Assim lhes fez e livrou-os da mão dos filhos de Israel, e não os mataram."
+        },
+        {
+          "n": 27,
+          "portuguese": "E, naquele dia, Josué os fez rachadores de lenha e tiradores de água para a congregação e para o altar do SENHOR, até ao dia de hoje, no lugar que escolhesse."
+        }
+      ],
+      "notes": [
+        "9,14–15 — Concerto com Gibeão sem consultar o SENHOR."
+      ]
+    },
+    {
+      "n": 10,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E sucedeu que, ouvindo Adoni-Zedeque, rei de Jerusalém, que Josué tomara a Ai e a destruíra totalmente (porque, como fizera a Jericó e a seu rei, assim fez a Ai e a seu rei), e que os moradores de Gibeão fizeram paz com Israel e estavam no meio deles,"
+        },
+        {
+          "n": 2,
+          "portuguese": "temeu muito; porque Gibeão era uma cidade grande, como uma das cidades reais, e ainda maior do que Ai, e todos os seus homens, valentes."
+        },
+        {
+          "n": 3,
+          "portuguese": "Pelo que Adoni-Zedeque, rei de Jerusalém, enviou a Hoão, rei de Hebrom, e a Pirã, rei de Jarmute, e a Jafia, rei de Laquis, e a Debir, rei de Eglom, dizendo:"
+        },
+        {
+          "n": 4,
+          "portuguese": "Subi a mim e ajudai-me, e firamos a Gibeão, porquanto fez paz com Josué e com os filhos de Israel."
+        },
+        {
+          "n": 5,
+          "portuguese": "Então se ajuntaram e subiram cinco reis dos amorreus: o rei de Jerusalém, o rei de Hebrom, o rei de Jarmute, o rei de Laquis, o rei de Eglom, eles e todos os seus exércitos; e sitiaram a Gibeão e pelejaram contra ela."
+        },
+        {
+          "n": 6,
+          "portuguese": "Enviaram, pois, os homens de Gibeão a Josué, ao arraial, a Gilgal, dizendo: Não retires de teus servos a tua mão; sobe apressadamente a nós, e salva-nos, e ajuda-nos, porquanto todos os reis dos amorreus que habitam nas montanhas se ajuntaram contra nós."
+        },
+        {
+          "n": 7,
+          "portuguese": "Então subiu Josué, de Gilgal, ele e todo o povo de guerra com ele e todos os homens valentes."
+        },
+        {
+          "n": 8,
+          "portuguese": "E o SENHOR disse a Josué: Não os temas, porque os tenho dado na tua mão; nenhum deles te poderá resistir."
+        },
+        {
+          "n": 9,
+          "portuguese": "E Josué de repente sobre eles veio, porque toda a noite subiu desde Gilgal."
+        },
+        {
+          "n": 10,
+          "portuguese": "E o SENHOR os conturbou diante de Israel, e deu-lhes grande ferimento em Gibeão; e perseguiu-os pelo caminho da subida de Bete-Horom e feriu-os até Azeca e Maquedá."
+        },
+        {
+          "n": 11,
+          "portuguese": "E sucedeu que, fugindo eles de diante de Israel, à descida de Bete-Horom, o SENHOR lançou sobre eles, do céu, grandes pedras, até Azeca, e morreram; e foram mais os que morreram das pedras da saraiva do que os que os filhos de Israel mataram à espada."
+        },
+        {
+          "n": 12,
+          "portuguese": "Então Josué falou ao SENHOR, no dia em que o SENHOR deu os amorreus na mão dos filhos de Israel, e disse à vista dos israelitas: Sol, detém-te em Gibeão, e tu, lua, no vale de Aijalom."
+        },
+        {
+          "n": 13,
+          "portuguese": "E o sol se deteve, e a lua parou, até que o povo se vingou de seus inimigos. Isto não está escrito no livro de Jasar? O sol, pois, se deteve no meio do céu e não se apressou a pôr-se, quase um dia inteiro."
+        },
+        {
+          "n": 14,
+          "portuguese": "E não houve dia semelhante a este, nem antes nem depois dele, ouvindo o SENHOR assim a voz de um homem; porque o SENHOR pelejava por Israel."
+        },
+        {
+          "n": 15,
+          "portuguese": "E voltou Josué, e todo o Israel com ele, ao arraial, a Gilgal."
+        },
+        {
+          "n": 16,
+          "portuguese": "Aqueles cinco reis, porém, fugiram e se esconderam numa cova em Maquedá."
+        },
+        {
+          "n": 17,
+          "portuguese": "E foi anunciado a Josué, dizendo: Acharam-se os cinco reis escondidos numa cova em Maquedá."
+        },
+        {
+          "n": 18,
+          "portuguese": "Disse, pois, Josué: Rolai grandes pedras à boca da cova e ponde junto a ela homens que os guardem;"
+        },
+        {
+          "n": 19,
+          "portuguese": "porém vós não vos detenhais; persegui os vossos inimigos e feri os que forem ficando atrás; não os deixeis entrar nas suas cidades, porque o SENHOR, vosso Deus, já vo-los deu na vossa mão."
+        },
+        {
+          "n": 20,
+          "portuguese": "E sucedeu que, acabando Josué e os filhos de Israel de os ferir com mui grande ferimento, até os destruírem, e os que ficaram deles se retiraram às cidades fortes,"
+        },
+        {
+          "n": 21,
+          "portuguese": "todo o povo se voltou em paz a Josué, ao arraial, a Maquedá, sem que ninguém movesse a sua língua contra os filhos de Israel."
+        },
+        {
+          "n": 22,
+          "portuguese": "Então disse Josué: Abri a boca da cova e tirai-me aqueles cinco reis da cova."
+        },
+        {
+          "n": 23,
+          "portuguese": "E assim o fizeram e tiraram-lhe aquelas cinco reis da cova: o rei de Jerusalém, o rei de Hebrom, o rei de Jarmute, o rei de Laquis e o rei de Eglom."
+        },
+        {
+          "n": 24,
+          "portuguese": "E sucedeu que, quando os trouxeram a Josué, chamou Josué a todos os homens de Israel e disse aos capitães dos homens de guerra que com ele foram: Chegai, ponde os pés sobre os pescoços destes reis. E chegaram, e puseram os pés sobre os seus pescoços."
+        },
+        {
+          "n": 25,
+          "portuguese": "Então Josué lhes disse: Não temais, nem vos assusteis; esforçai-vos e tende bom ânimo; porque assim fará o SENHOR a todos os vossos inimigos, contra os quais pelejardes."
+        },
+        {
+          "n": 26,
+          "portuguese": "E, depois disto, Josué os feriu, e os matou, e os enforcou em cinco madeiros; e ficaram enforcados nos madeiros até à tarde."
+        },
+        {
+          "n": 27,
+          "portuguese": "E sucedeu que, ao tempo do pôr do sol, mandou Josué que os tirassem dos madeiros; e lançaram-nos na cova onde se esconderam e puseram grandes pedras à boca da cova, que ainda ali estão até o dia de hoje."
+        },
+        {
+          "n": 28,
+          "portuguese": "E naquele mesmo dia tomou Josué a Maquedá, e feriu-a a fio de espada, como também a seu rei; destruiu-os totalmente, com todos que nela havia, e não deixou nem ao menos um; e fez ao rei de Maquedá como fizera ao rei de Jericó."
+        },
+        {
+          "n": 29,
+          "portuguese": "Então Josué, e todo o Israel com ele, passou de Maquedá a Libna e pelejou contra Libna."
+        },
+        {
+          "n": 30,
+          "portuguese": "E também o SENHOR a deu na mão de Israel, a ela e a seu rei, e a feriu a fio de espada, a ela e a todos os que nela estavam; e não deixou nela nem ao menos um; e fez a seu rei como fizera ao rei de Jericó."
+        },
+        {
+          "n": 31,
+          "portuguese": "Então Josué, e todo o Israel com ele, passou de Libna a Laquis; e a sitiou e pelejou contra ela."
+        },
+        {
+          "n": 32,
+          "portuguese": "E o SENHOR deu a Laquis na mão de Israel, e tomou-a no dia seguinte, e a feriu a fio de espada, a ela e a todos os que nela estavam, conforme tudo o que fizera a Libna."
+        },
+        {
+          "n": 33,
+          "portuguese": "Então Horão, rei de Gezer, subiu para ajudar a Laquis; porém Josué o feriu, a ele e ao seu povo, até não lhe deixar nem ao menos um."
+        },
+        {
+          "n": 34,
+          "portuguese": "E Josué, e todo o Israel com ele, passou de Laquis a Eglom; e a sitiaram e pelejaram contra ela."
+        },
+        {
+          "n": 35,
+          "portuguese": "E, naquele mesmo dia, a tomaram e a feriram a fio de espada; e a todos os que nela estavam, naquele dia, destruiu totalmente, conforme tudo o que fizera a Laquis."
+        },
+        {
+          "n": 36,
+          "portuguese": "Depois, Josué, e todo o Israel com ele, subiu de Eglom a Hebrom e pelejaram contra ela."
+        },
+        {
+          "n": 37,
+          "portuguese": "E a tomaram, e a feriram a fio de espada, como também ao seu rei, e a todas as suas cidades, e a todos os que nelas estavam; a ninguém deixou ficar com vida, conforme tudo o que fizera a Eglom; e a destruiu totalmente, a ela e a todos os que nela estavam."
+        },
+        {
+          "n": 38,
+          "portuguese": "Então Josué, e todo o Israel com ele, voltou a Debir e pelejou contra ela."
+        },
+        {
+          "n": 39,
+          "portuguese": "E tomou-a com o seu rei e todas as suas cidades e as feriu a fio de espada e a todos os que nelas havia destruiu totalmente; a ninguém deixou ficar com vida; como fizera a Hebrom, assim fez a Debir e a seu rei, e como fizera a Libna e a seu rei."
+        },
+        {
+          "n": 40,
+          "portuguese": "Assim, feriu Josué toda aquela terra, as montanhas, e o Sul, e as campinas, e as descidas das águas, e a todos os seus reis; a ninguém deixou ficar com vida; mas tudo o que tinha fôlego destruiu totalmente, como ordenara o SENHOR, Deus de Israel."
+        },
+        {
+          "n": 41,
+          "portuguese": "E feriu-os Josué desde Cades-Barneia até Gaza, como também toda a terra de Gósen, e até Gibeão."
+        },
+        {
+          "n": 42,
+          "portuguese": "E de todos estes reis e das suas terras Josué se apoderou duma vez, porquanto o SENHOR, Deus de Israel, pelejava por Israel."
+        },
+        {
+          "n": 43,
+          "portuguese": "Então Josué, e todo o Israel com ele, voltou ao arraial, a Gilgal."
+        }
+      ],
+      "notes": [
+        "10,12–14 — Sol, detém-te em Gibeão.",
+        "10,40–42 — Conquista do Sul."
+      ]
+    },
+    {
+      "n": 11,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Sucedeu, pois, que, ouvindo isso Jabim, rei de Hazor, enviou mensageiros a Jobabe, rei de Madom, e ao rei de Sinrom, e ao rei de Acsafe,"
+        },
+        {
+          "n": 2,
+          "portuguese": "e aos reis que estavam ao norte, nas montanhas e na campina, ao sul de Quinerete, e nas planícies, e nas elevações de Dor, do lado do mar;"
+        },
+        {
+          "n": 3,
+          "portuguese": "ao cananeu do oriente e do ocidente; e ao amorreu, e ao heteu, e ao ferezeu, e ao jebuseu nas montanhas; e ao heveu abaixo de Hermom, na terra de Mispa."
+        },
+        {
+          "n": 4,
+          "portuguese": "Saíram, pois, estes, e todos os seus reis com eles, e muitos povos, como a areia que está na praia do mar, em multidão, e muitíssimos cavalos e carros."
+        },
+        {
+          "n": 5,
+          "portuguese": "Todos estes reis se ajuntaram, e vieram, e se acamparam junto às águas de Merom, para pelejarem contra Israel."
+        },
+        {
+          "n": 6,
+          "portuguese": "E disse o SENHOR a Josué: Não temas diante deles, porque amanhã, a esta mesma hora, eu os darei todos feridos diante de Israel; os seus cavalos jarretarás e os seus carros queimarás a fogo."
+        },
+        {
+          "n": 7,
+          "portuguese": "E Josué e todo o povo de guerra com ele vieram apressadamente sobre eles às águas de Merom e deram sobre eles."
+        },
+        {
+          "n": 8,
+          "portuguese": "E o SENHOR os deu na mão de Israel; e eles os feriram e os perseguiram até à grande Sidom, e até Misrefote-Maim, e até ao vale de Mispa, ao oriente; e feriram-nos até não lhes deixarem nenhum."
+        },
+        {
+          "n": 9,
+          "portuguese": "E fez-lhes Josué como o SENHOR lhe dissera; os seus cavalos jarretou e os seus carros queimou a fogo."
+        },
+        {
+          "n": 10,
+          "portuguese": "E, naquele mesmo tempo, voltou Josué, e tomou a Hazor, e feriu à espada o seu rei; porque Hazor, dantes, era a cabeça de todos estes reinos."
+        },
+        {
+          "n": 11,
+          "portuguese": "E a todos os que nela estavam feriram a fio de espada e totalmente os destruíram; ninguém restou que tivesse fôlego; e a Hazor queimou a fogo."
+        },
+        {
+          "n": 12,
+          "portuguese": "E Josué tomou todas as cidades desses reis e todos os seus reis e os feriu a fio de espada, destruindo-os totalmente, como ordenara Moisés, o servo do SENHOR."
+        },
+        {
+          "n": 13,
+          "portuguese": "Tão somente todas as cidades que estavam sobre os seus outeiros não queimou Israel, a não ser Hazor, a qual Josué queimou."
+        },
+        {
+          "n": 14,
+          "portuguese": "E todos os despojos dessas cidades e o gado os filhos de Israel tomaram para si; tão somente a todos os homens feriram a fio de espada, até que os destruíram; e nada restou de tudo o que tinha fôlego."
+        },
+        {
+          "n": 15,
+          "portuguese": "Como o SENHOR ordenara a Moisés, seu servo, assim Moisés ordenou a Josué; e assim Josué o fez; nada deixou de fazer de tudo o que o SENHOR ordenara a Moisés."
+        },
+        {
+          "n": 16,
+          "portuguese": "Assim, Josué tomou toda aquela terra, as montanhas, e todo o Sul, e toda a terra de Gósen, e as planícies, e o vale do Jordão, e as montanhas de Israel, e as suas planícies;"
+        },
+        {
+          "n": 17,
+          "portuguese": "desde o monte Halaque, que sobe a Seir, até Baal-Gade, no vale do Líbano, abaixo do monte Hermom; também todas as suas cidades e a todos os seus reis tomou e os feriu e os destruiu totalmente."
+        },
+        {
+          "n": 18,
+          "portuguese": "Por muito tempo fez Josué guerra contra todos estes reis."
+        },
+        {
+          "n": 19,
+          "portuguese": "Com nenhum dos moradores destas cidades fez Josué paz, senão com o heveu, morador de Gibeão; tudo tomaram pela guerra."
+        },
+        {
+          "n": 20,
+          "portuguese": "Porque do SENHOR veio o endurecimento do seu coração, para saírem à guerra contra Israel, para que os destruísse totalmente e lhes não fizesse mercê; antes, para que os aniquilasse, como o SENHOR tinha ordenado a Moisés."
+        },
+        {
+          "n": 21,
+          "portuguese": "Naquele tempo, veio também Josué e exterminou os anaquins das montanhas de Hebrom, de Debir, de Anabe, e de todas as montanhas de Judá, e de todas as montanhas de Israel; Josué os destruiu totalmente com as suas cidades."
+        },
+        {
+          "n": 22,
+          "portuguese": "Nenhum dos anaquins ficou na terra dos filhos de Israel; tão somente em Gaza, em Gate e em Asdode alguns ficaram."
+        },
+        {
+          "n": 23,
+          "portuguese": "Assim, Josué tomou toda esta terra, conforme tudo o que o SENHOR tinha dito a Moisés; e Josué a deu em herança a Israel, segundo as suas divisões, conforme as suas tribos; e a terra sossegou da guerra."
+        }
+      ],
+      "notes": [
+        "11,18 — Por muito tempo Josué guerreou.",
+        "11,23 — A terra sossegou da guerra."
+      ]
+    },
+    {
+      "n": 12,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Estes, pois, são os reis da terra, aos quais os filhos de Israel feriram e cujas terras possuíram, dalém do Jordão, para o nascente do sol, desde o ribeiro de Arnom até ao monte Hermom, e toda a planície do oriente:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Seom, rei dos amorreus, que habitava em Hesbom e que dominava desde Aroer, que está à beira do ribeiro de Arnom, e desde o meio do ribeiro, e a metade de Gileade, e até ao ribeiro de Jaboque, o termo dos filhos de Amom;"
+        },
+        {
+          "n": 3,
+          "portuguese": "e desde a campina até ao mar de Quinerete, para o oriente, e até ao mar da campina, o mar Salgado, para o oriente, pelo caminho de Bete-Jesimote; e desde o sul abaixo de Asdote-Pisga;"
+        },
+        {
+          "n": 4,
+          "portuguese": "como também o termo de Ogue, rei de Basã, que era do restante dos refains e que habitava em Astarote e em Edrei"
+        },
+        {
+          "n": 5,
+          "portuguese": "e dominava no monte Hermom, e em Salcá, e em toda a Basã, até ao termo dos gesuritas e dos maacatitas, e metade de Gileade, termo de Seom, rei de Hesbom."
+        },
+        {
+          "n": 6,
+          "portuguese": "Moisés, servo do SENHOR, e os filhos de Israel os feriram; e Moisés, servo do SENHOR, deu aquela terra em possessão aos rubenitas, e aos gaditas, e à meia tribo de Manassés."
+        },
+        {
+          "n": 7,
+          "portuguese": "E estes são os reis da terra, aos quais Josué e os filhos de Israel feriram, daquém do Jordão para o ocidente, desde Baal-Gade, no vale do Líbano, até ao monte Halaque, que sobe a Seir; e Josué a deu às tribos de Israel em possessão, segundo as suas divisões,"
+        },
+        {
+          "n": 8,
+          "portuguese": "nas montanhas, e nas planícies, e nas descidas das águas, e nas ladeiras, e no deserto, e para o Sul: o heteu, o amorreu, e o cananeu, o ferezeu, o heveu e o jebuseu."
+        },
+        {
+          "n": 9,
+          "portuguese": "O rei de Jericó, um; o rei de Ai, que está ao lado de Betel, outro;"
+        },
+        {
+          "n": 10,
+          "portuguese": "o rei de Jerusalém, outro; o rei de Hebrom, outro;"
+        },
+        {
+          "n": 11,
+          "portuguese": "o rei de Jarmute, outro; o rei de Laquis, outro;"
+        },
+        {
+          "n": 12,
+          "portuguese": "o rei de Eglom, outro; o rei de Gezer, outro;"
+        },
+        {
+          "n": 13,
+          "portuguese": "o rei de Debir, outro; o rei de Geder, outro;"
+        },
+        {
+          "n": 14,
+          "portuguese": "o rei de Hormá, outro; o rei de Arade, outro;"
+        },
+        {
+          "n": 15,
+          "portuguese": "o rei de Libna, outro; o rei de Adulão, outro;"
+        },
+        {
+          "n": 16,
+          "portuguese": "o rei de Maquedá, outro; o rei de Betel, outro;"
+        },
+        {
+          "n": 17,
+          "portuguese": "o rei de Tapua, outro; o rei de Héfer, outro;"
+        },
+        {
+          "n": 18,
+          "portuguese": "o rei de Afeque, outro; o rei de Lasarom, outro;"
+        },
+        {
+          "n": 19,
+          "portuguese": "o rei de Madom, outro; o rei de Hazor, outro;"
+        },
+        {
+          "n": 20,
+          "portuguese": "o rei de Sinrom-Merom, outro; o rei de Acsafe, outro;"
+        },
+        {
+          "n": 21,
+          "portuguese": "o rei de Taanaque, outro; o rei de Megido, outro;"
+        },
+        {
+          "n": 22,
+          "portuguese": "o rei de Quedes, outro; o rei de Jocneão do Carmelo, outro;"
+        },
+        {
+          "n": 23,
+          "portuguese": "o rei de Dor, em Nafate-Dor, outro; o rei das nações de Gilgal, outro;"
+        },
+        {
+          "n": 24,
+          "portuguese": "o rei de Tirza, outro; ao todo, trinta e um reis."
+        }
+      ],
+      "notes": [
+        "12,24 — Trinta e um reis."
+      ]
+    },
+    {
+      "n": 13,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Era Josué já velho e entrado em dias, e disse-lhe o SENHOR: Já estás velho e entrado em dias; e ainda muitíssima terra ficou para possuir."
+        },
+        {
+          "n": 2,
+          "portuguese": "Esta é a terra que ainda fica: todos os termos dos filisteus e todo o gesuri;"
+        },
+        {
+          "n": 3,
+          "portuguese": "desde Sior, que está defronte do Egito, até ao termo de Ecrom, para o norte, que se tem como dos cananeus; cinco senhores dos filisteus: o gazeu, e o asdodeu, o asqueloneu, o giteu e o ecromeu, e os aveus;"
+        },
+        {
+          "n": 4,
+          "portuguese": "do sul, toda a terra dos cananeus, e Meará, que é dos sidônios, até Afeca, até ao termo dos amorreus;"
+        },
+        {
+          "n": 5,
+          "portuguese": "como também a terra dos gebalitas e todo o Líbano, para o nascente do sol, desde Baal-Gade, ao pé do monte Hermom, até à entrada de Hamate;"
+        },
+        {
+          "n": 6,
+          "portuguese": "todos os que habitam nas montanhas, desde o Líbano até Misrefote-Maim, todos os sidônios; eu os lançarei de diante dos filhos de Israel; somente reparte a terra por herança a Israel, como já te mandei."
+        },
+        {
+          "n": 7,
+          "portuguese": "Vem, pois, agora, e reparte esta terra por herança às nove tribos e à meia tribo de Manassés."
+        },
+        {
+          "n": 8,
+          "portuguese": "Com a outra meia tribo os rubenitas e os gaditas receberam a sua herança, a qual Moisés lhes deu dalém do Jordão, para o oriente, como já lhes tinha dado Moisés, servo do SENHOR:"
+        },
+        {
+          "n": 9,
+          "portuguese": "desde Aroer, que está à beira do ribeiro de Arnom, e a cidade que está no meio do vale, e toda a campina de Medeba até Dibom;"
+        },
+        {
+          "n": 10,
+          "portuguese": "e todas as cidades de Seom, rei dos amorreus, que reinou em Hesbom, até ao termo dos filhos de Amom;"
+        },
+        {
+          "n": 11,
+          "portuguese": "e Gileade, e o termo dos gesuritas, e dos maacatitas, e todo o monte Hermom, e toda a Basã até Salcá;"
+        },
+        {
+          "n": 12,
+          "portuguese": "todo o reino de Ogue, em Basã, o qual reinou em Astarote e em Edrei; este ficou do restante dos refains, os quais Moisés feriu e expulsou."
+        },
+        {
+          "n": 13,
+          "portuguese": "Porém os filhos de Israel não expulsaram os gesuritas, nem os maacatitas; antes, Gesur e Maacate ficaram no meio de Israel até ao dia de hoje."
+        },
+        {
+          "n": 14,
+          "portuguese": "Tão somente à tribo de Levi não deu herança; os sacrifícios queimados do SENHOR, Deus de Israel, são a sua herança, como já lhe tinha falado."
+        },
+        {
+          "n": 15,
+          "portuguese": "Assim, Moisés deu à tribo dos filhos de Rúben, segundo as suas famílias."
+        },
+        {
+          "n": 16,
+          "portuguese": "E foi o seu termo desde Aroer, que está à beira do ribeiro de Arnom, e a cidade que está no meio do vale, e toda a campina até Medeba;"
+        },
+        {
+          "n": 17,
+          "portuguese": "Hesbom e todas as suas cidades, que estão na campina; Dibom, e Bamote-Baal, e Bete-Baal-Meom,"
+        },
+        {
+          "n": 18,
+          "portuguese": "e Jaza, e Quedemote, e Mefaate,"
+        },
+        {
+          "n": 19,
+          "portuguese": "e Quiriataim, e Sibma, e Zerete-Saar, no monte do vale,"
+        },
+        {
+          "n": 20,
+          "portuguese": "e Bete-Peor, e Asdote-Pisga, e Bete-Jesimote,"
+        },
+        {
+          "n": 21,
+          "portuguese": "e todas as cidades da campina e todo o reino de Seom, rei dos amorreus, que reinou em Hesbom, a quem Moisés feriu, como também aos príncipes de Midiã, Evi, e Requém, e Zur, e Hur, e Reba, príncipes de Seom, moradores da terra."
+        },
+        {
+          "n": 22,
+          "portuguese": "Também os filhos de Israel mataram à espada a Balaão, filho de Beor, o adivinho, com os outros que por eles foram mortos."
+        },
+        {
+          "n": 23,
+          "portuguese": "Foi, pois, este o termo dos filhos de Rúben, segundo as suas famílias; as cidades e as suas aldeias."
+        },
+        {
+          "n": 24,
+          "portuguese": "E deu Moisés à tribo de Gade, aos filhos de Gade, segundo as suas famílias."
+        },
+        {
+          "n": 25,
+          "portuguese": "E foi o seu termo Jaezer, e todas as cidades de Gileade, e metade da terra dos filhos de Amom, até Aroer, que está em frente de Rabá;"
+        },
+        {
+          "n": 26,
+          "portuguese": "e desde Hesbom até Ramate-Mispa e Betonim; e desde Maanaim até ao termo de Debir;"
+        },
+        {
+          "n": 27,
+          "portuguese": "e pelo vale, Bete-Arã, e Bete-Ninra, e Sucote, e Zafom, resto do reino de Seom, rei de Hesbom, o Jordão e o seu termo, até à extremidade do mar de Quinerete, dalém do Jordão, para o oriente."
+        },
+        {
+          "n": 28,
+          "portuguese": "Esta é a herança dos filhos de Gade, segundo as suas famílias: as cidades e as suas aldeias."
+        },
+        {
+          "n": 29,
+          "portuguese": "Deu também Moisés meia herança à meia tribo de Manassés; e foi isto da meia tribo dos filhos de Manassés, segundo as suas famílias."
+        },
+        {
+          "n": 30,
+          "portuguese": "E foi o seu termo desde Maanaim, toda a Basã, todo o reino de Ogue, rei de Basã, e todas as aldeias de Jair, que estão em Basã, sessenta cidades,"
+        },
+        {
+          "n": 31,
+          "portuguese": "e metade de Gileade, e Astarote, e Edrei, cidades do reino de Ogue, em Basã, para os filhos de Maquir, filho de Manassés, a saber, para a metade dos filhos de Maquir, segundo as suas famílias."
+        },
+        {
+          "n": 32,
+          "portuguese": "Isto é o que Moisés repartiu em herança nas campinas de Moabe, dalém do Jordão, de Jericó, para o oriente."
+        },
+        {
+          "n": 33,
+          "portuguese": "Porém à tribo de Levi Moisés não deu herança; o SENHOR, Deus de Israel, é a sua herança, como já lhe tinha falado."
+        }
+      ],
+      "notes": [
+        "13,1 — Ainda muitíssima terra ficou.",
+        "13,33 — O SENHOR é a herança de Levi."
+      ]
+    },
+    {
+      "n": 14,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Isto, pois, é o que os filhos de Israel tiveram em herança na terra de Canaã, o que Eleazar, o sacerdote, e Josué, filho de Num, e os cabeças dos pais das tribos dos filhos de Israel lhes fizeram repartir,"
+        },
+        {
+          "n": 2,
+          "portuguese": "por sorte da sua herança, como o SENHOR ordenara, pelo ministério de Moisés, acerca das nove tribos e da meia tribo."
+        },
+        {
+          "n": 3,
+          "portuguese": "Porquanto às duas tribos e à meia tribo já dera Moisés herança dalém do Jordão; mas aos levitas não tinha dado herança entre eles."
+        },
+        {
+          "n": 4,
+          "portuguese": "Porque os filhos de José eram duas tribos, Manassés e Efraim; e aos levitas não se deu herança na terra, senão cidades em que habitassem e os seus arrabaldes para o seu gado e para a sua possessão."
+        },
+        {
+          "n": 5,
+          "portuguese": "Como o SENHOR ordenara a Moisés, assim fizeram os filhos de Israel e repartiram a terra."
+        },
+        {
+          "n": 6,
+          "portuguese": "Então os filhos de Judá chegaram a Josué em Gilgal; e Calebe, filho de Jefoné, o quenezeu, lhe disse: Tu sabes o que o SENHOR falou a Moisés, homem de Deus, em Cades-Barneia, por causa de mim e de ti."
+        },
+        {
+          "n": 7,
+          "portuguese": "Quarenta anos tinha eu, quando Moisés, servo do SENHOR, me enviou de Cades-Barneia a espiar a terra; e eu lhe trouxe resposta, como sentia no meu coração."
+        },
+        {
+          "n": 8,
+          "portuguese": "Mas meus irmãos, que subiram comigo, fizeram desmaiar o coração do povo; eu, porém, perseverei em seguir ao SENHOR, meu Deus."
+        },
+        {
+          "n": 9,
+          "portuguese": "Então Moisés, naquele dia, jurou, dizendo: Certamente a terra que pisou o teu pé será tua e de teus filhos, em herança perpetuamente, pois perseveraste em seguir ao SENHOR, meu Deus."
+        },
+        {
+          "n": 10,
+          "portuguese": "E, agora, eis que o SENHOR me conservou em vida, como falou; quarenta e cinco anos há desde que o SENHOR falou esta palavra a Moisés, andando Israel ainda no deserto; e, agora, eis que já tenho hoje oitenta e cinco anos."
+        },
+        {
+          "n": 11,
+          "portuguese": "E ainda hoje estou tão forte como no dia em que Moisés me enviou; qual era a minha força então, tal é agora a minha força, tanto para a guerra como para sair e entrar."
+        },
+        {
+          "n": 12,
+          "portuguese": "Agora, pois, dá-me este monte de que o SENHOR falou aquele dia; pois, naquele dia, tu ouviste que os anaquins estão ali, e grandes e fortes cidades; se assim for que o SENHOR for comigo, os lançarei fora, como o SENHOR disse."
+        },
+        {
+          "n": 13,
+          "portuguese": "E Josué o abençoou e deu a Calebe, filho de Jefoné, Hebrom em herança."
+        },
+        {
+          "n": 14,
+          "portuguese": "Portanto, Hebrom ficou sendo herança de Calebe, filho de Jefoné, o quenezeu, até ao dia de hoje, porquanto perseverara em seguir ao SENHOR, Deus de Israel."
+        },
+        {
+          "n": 15,
+          "portuguese": "Ora, o nome de Hebrom, dantes, era Quiriate-Arba, porque Arba era o maior homem entre os anaquins. E a terra sossegou da guerra."
+        }
+      ],
+      "notes": [
+        "14,6–15 — Calebe pede Hebrom."
+      ]
+    },
+    {
+      "n": 15,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "A sorte da tribo dos filhos de Judá, segundo as suas famílias, caiu para o lado do termo de Edom, do deserto de Zim, para o sul, na extremidade do sul."
+        },
+        {
+          "n": 2,
+          "portuguese": "E foi o seu termo do sul desde a extremidade do mar Salgado, desde a baía que olha para o sul;"
+        },
+        {
+          "n": 3,
+          "portuguese": "e sai para o sul, até à subida de Acrabim, e passa a Zim, e sobe do sul a Cades-Barneia, e passa a Hezrom, e sobe a Adar, e rodeia a Carca;"
+        },
+        {
+          "n": 4,
+          "portuguese": "e passa a Azmom, e sai ao ribeiro do Egito, e as saídas deste termo vão ao mar; este será o vosso termo do sul."
+        },
+        {
+          "n": 5,
+          "portuguese": "O termo, porém, para o oriente será o mar Salgado até à extremidade do Jordão; e o termo para o lado do norte será desde a baía do mar, desde a extremidade do Jordão."
+        },
+        {
+          "n": 6,
+          "portuguese": "E este termo sobe até Bete-Hogla e passa do norte a Bete-Arabá; e este termo sobe até à pedra de Boã, filho de Rúben;"
+        },
+        {
+          "n": 7,
+          "portuguese": "e sobe este termo a Debir, desde o vale de Acor, e para o norte olha para Gilgal, a qual está em frente da subida de Adumim, que está do lado sul do ribeiro; então este termo passa às águas de En-Semes, e as suas saídas estão do lado de En-Rogel."
+        },
+        {
+          "n": 8,
+          "portuguese": "E este termo sobe pelo vale do filho de Hinom, do lado do jebuseu, do sul (esta é Jerusalém); e este termo sobe até ao cume do monte que está diante do vale de Hinom, para o ocidente, que está na extremidade do vale dos refains, para o norte."
+        },
+        {
+          "n": 9,
+          "portuguese": "E este termo vai desde o cume do monte até à fonte das águas de Neftoa; e sai às cidades do monte Efrom; vai mais este termo a Baalá (esta é Quiriate-Jearim)."
+        },
+        {
+          "n": 10,
+          "portuguese": "Então este termo torna desde Baalá para o ocidente, até ao monte Seir, e passa ao lado do monte Jearim, do lado do norte (esta é Quesalom); e desce a Bete-Semes, e passa por Timna."
+        },
+        {
+          "n": 11,
+          "portuguese": "Sai este termo mais ao lado de Ecrom, para o norte, e este termo vai a Sicrom, e passa o monte de Baalá, e sai a Jabneel; e as saídas deste termo estão ao mar."
+        },
+        {
+          "n": 12,
+          "portuguese": "O termo, porém, do lado do ocidente é o mesmo mar Grande e o seu termo. Este é o termo dos filhos de Judá ao redor, segundo as suas famílias."
+        },
+        {
+          "n": 13,
+          "portuguese": "Mas a Calebe, filho de Jefoné, deu uma parte no meio dos filhos de Judá, conforme a ordem do SENHOR a Josué; a saber, Quiriate-Arba (que é o pai de Anaque), que é Hebrom."
+        },
+        {
+          "n": 14,
+          "portuguese": "E Calebe expulsou dali os três filhos de Anaque: Sesai, e Aimã, e Talmai, gerados de Anaque."
+        },
+        {
+          "n": 15,
+          "portuguese": "E dali subiu aos habitantes de Debir (e era dantes o nome de Debir Quiriate-Sefer)."
+        },
+        {
+          "n": 16,
+          "portuguese": "E disse Calebe: Quem ferir a Quiriate-Sefer e a tomar, lhe darei a minha filha Acsa por mulher."
+        },
+        {
+          "n": 17,
+          "portuguese": "Tomou-a, pois, Otniel, filho de Quenaz, irmão de Calebe; e deu-lhe a sua filha Acsa por mulher."
+        },
+        {
+          "n": 18,
+          "portuguese": "E sucedeu que, vindo ela a ele, o persuadiu que pedisse um campo a seu pai; e ela apeou do jumento; então Calebe lhe disse: Que é o que tens?"
+        },
+        {
+          "n": 19,
+          "portuguese": "E ela disse: Dá-me uma bênção; pois me deste uma terra seca; dá-me também fontes de água. Então lhe deu as fontes superiores e as fontes inferiores."
+        },
+        {
+          "n": 20,
+          "portuguese": "Esta é a herança da tribo dos filhos de Judá, segundo as suas famílias."
+        },
+        {
+          "n": 21,
+          "portuguese": "E as cidades da extremidade da tribo dos filhos de Judá, até ao termo de Edom, para o sul, foram: Cabzeel, e Éder, e Jagur,"
+        },
+        {
+          "n": 22,
+          "portuguese": "e Quiná, e Dimona, e Adada,"
+        },
+        {
+          "n": 23,
+          "portuguese": "e Quedes, e Hazor, e Itnã,"
+        },
+        {
+          "n": 24,
+          "portuguese": "Zife, e Telem, e Bealote,"
+        },
+        {
+          "n": 25,
+          "portuguese": "e Hazor-Hadatá, e Queriote-Hezrom (que é Hazor),"
+        },
+        {
+          "n": 26,
+          "portuguese": "Amã, e Sema, e Molada,"
+        },
+        {
+          "n": 27,
+          "portuguese": "e Hazar-Gada, e Hesmom, e Bete-Pelete,"
+        },
+        {
+          "n": 28,
+          "portuguese": "e Hazar-Sual, e Berseba, e Biziotiá,"
+        },
+        {
+          "n": 29,
+          "portuguese": "Baalá, e Iim, e Ezém,"
+        },
+        {
+          "n": 30,
+          "portuguese": "e Eltolade, e Quesil, e Hormá,"
+        },
+        {
+          "n": 31,
+          "portuguese": "e Ziclague, e Madmana, e Sansana,"
+        },
+        {
+          "n": 32,
+          "portuguese": "e Lebaote, e Silim, e Aim, e Rimom; ao todo, vinte e nove cidades e as suas aldeias."
+        },
+        {
+          "n": 33,
+          "portuguese": "Nas planícies: Estaol, e Zorá, e Asná,"
+        },
+        {
+          "n": 34,
+          "portuguese": "e Zanoa, e En-Ganim, Tapua e Enã,"
+        },
+        {
+          "n": 35,
+          "portuguese": "Jarmute, e Adulão, Socó e Azeca,"
+        },
+        {
+          "n": 36,
+          "portuguese": "e Saaraim, e Aditaim, e Gederá, e Gederotaim; ao todo, catorze cidades e as suas aldeias."
+        },
+        {
+          "n": 37,
+          "portuguese": "Zenã, e Hadasa, e Migdal-Gade,"
+        },
+        {
+          "n": 38,
+          "portuguese": "e Dileã, e Mispa, e Jocteel,"
+        },
+        {
+          "n": 39,
+          "portuguese": "Laquis, e Bozcate, e Eglom,"
+        },
+        {
+          "n": 40,
+          "portuguese": "e Cabom, e Laamás, e Quitlis,"
+        },
+        {
+          "n": 41,
+          "portuguese": "e Gederote, Bete-Dagom, e Naamá, e Maquedá; ao todo, dezesseis cidades e as suas aldeias."
+        },
+        {
+          "n": 42,
+          "portuguese": "Libna, e Éter, e Asã,"
+        },
+        {
+          "n": 43,
+          "portuguese": "e Iftá, e Asná, e Nezibe,"
+        },
+        {
+          "n": 44,
+          "portuguese": "e Queila, e Aczibe, e Maressa; ao todo, nove cidades e as suas aldeias."
+        },
+        {
+          "n": 45,
+          "portuguese": "Ecrom, e as suas vilas, e as suas aldeias;"
+        },
+        {
+          "n": 46,
+          "portuguese": "desde Ecrom até ao mar, todas as que estão do lado de Asdode, e as suas aldeias."
+        },
+        {
+          "n": 47,
+          "portuguese": "Asdode, as suas vilas e as suas aldeias; Gaza, as suas vilas e as suas aldeias, até ao ribeiro do Egito, e o mar Grande e o seu termo."
+        },
+        {
+          "n": 48,
+          "portuguese": "E nas montanhas: Samir, e Jatir, e Socó,"
+        },
+        {
+          "n": 49,
+          "portuguese": "e Daná, e Quiriate-Sana (que é Debir),"
+        },
+        {
+          "n": 50,
+          "portuguese": "e Anabe, e Estemoa, e Anim,"
+        },
+        {
+          "n": 51,
+          "portuguese": "e Gósen, e Holom, e Giló; ao todo, onze cidades e as suas aldeias."
+        },
+        {
+          "n": 52,
+          "portuguese": "Arabe, e Dumá, e Esã,"
+        },
+        {
+          "n": 53,
+          "portuguese": "e Janim, e Bete-Tapua, e Afeca,"
+        },
+        {
+          "n": 54,
+          "portuguese": "e Humtá, e Quiriate-Arba (que é Hebrom), e Zior; ao todo, nove cidades e as suas aldeias."
+        },
+        {
+          "n": 55,
+          "portuguese": "Maom, Carmelo, e Zife, e Jutá,"
+        },
+        {
+          "n": 56,
+          "portuguese": "e Jezreel, e Jocdeão, e Zanoa,"
+        },
+        {
+          "n": 57,
+          "portuguese": "Caim, Gibeá e Timna; ao todo, dez cidades e as suas aldeias."
+        },
+        {
+          "n": 58,
+          "portuguese": "Halul, Bete-Zur e Gedor,"
+        },
+        {
+          "n": 59,
+          "portuguese": "e Maarate, e Bete-Anote, e Eltecom; ao todo, seis cidades e as suas aldeias."
+        },
+        {
+          "n": 60,
+          "portuguese": "Quiriate-Baal (que é Quiriate-Jearim) e Rabá; ao todo, duas cidades e as suas aldeias."
+        },
+        {
+          "n": 61,
+          "portuguese": "No deserto: Bete-Arabá, Midim e Secacá,"
+        },
+        {
+          "n": 62,
+          "portuguese": "e Nibsã, e a Cidade do Sal, e En-Gedi; ao todo, seis cidades e as suas aldeias."
+        },
+        {
+          "n": 63,
+          "portuguese": "Porém os filhos de Judá não puderam expulsar os jebuseus que habitavam em Jerusalém; assim, os jebuseus habitam com os filhos de Judá em Jerusalém até ao dia de hoje."
+        }
+      ],
+      "notes": [
+        "15,13–19 — Calebe e Otniel; Acsa.",
+        "15,63 — Jebuseus em Jerusalém."
+      ]
+    },
+    {
+      "n": 16,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Saiu depois a sorte dos filhos de José, desde o Jordão, junto a Jericó, junto às águas de Jericó, para o oriente, ao deserto que sobe de Jericó pelas montanhas de Betel;"
+        },
+        {
+          "n": 2,
+          "portuguese": "e de Betel sai a Luz e passa ao termo dos arqueus, a Atarote;"
+        },
+        {
+          "n": 3,
+          "portuguese": "e desce para o ocidente, ao termo de Jafleti, até ao termo de Bete-Horom de baixo, e até Gezer; e as suas saídas vão ao mar."
+        },
+        {
+          "n": 4,
+          "portuguese": "Assim, alcançaram a sua herança os filhos de José, Manassés e Efraim."
+        },
+        {
+          "n": 5,
+          "portuguese": "E foi o termo dos filhos de Efraim, segundo as suas famílias, como se segue: o termo da sua herança, para o oriente, era Atarote-Adar até Bete-Horom de cima."
+        },
+        {
+          "n": 6,
+          "portuguese": "E este termo sai para o mar, junto a Micmetá, do lado do norte; e este termo torna para o oriente a Taana-Siló e passa por ela do lado do oriente a Janoa;"
+        },
+        {
+          "n": 7,
+          "portuguese": "e, de Janoa, desce a Atarote e a Naarate, e toca em Jericó, e vai terminar no Jordão."
+        },
+        {
+          "n": 8,
+          "portuguese": "De Tapua, vai este termo para o ocidente ao ribeiro de Caná, e as suas saídas vão ao mar; esta é a herança da tribo dos filhos de Efraim, segundo as suas famílias,"
+        },
+        {
+          "n": 9,
+          "portuguese": "juntamente com as cidades que se separaram para os filhos de Efraim no meio da herança dos filhos de Manassés; todas aquelas cidades e as suas aldeias."
+        },
+        {
+          "n": 10,
+          "portuguese": "E não expulsaram aos cananeus que habitavam em Gezer; antes, os cananeus ficaram no meio dos efraimitas até ao dia de hoje e se tornaram servos, sujeitos ao trabalho."
+        }
+      ],
+      "notes": [
+        "16,10 — Cananeus em Gezer."
+      ]
+    },
+    {
+      "n": 17,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Também caiu sorte à tribo de Manassés, porquanto era o primogênito de José. Quanto a Maquir, o primogênito de Manassés, pai de Gileade, porque era homem de guerra, teve a Gileade e Basã."
+        },
+        {
+          "n": 2,
+          "portuguese": "Também os mais filhos de Manassés tiveram a sua parte, segundo as suas famílias: os filhos de Abiezer, e os filhos de Heleque, e os filhos de Asriel, e os filhos de Siquém, e os filhos de Héfer, e os filhos de Semida; estes são os filhos de Manassés, filho de José, segundo as suas famílias."
+        },
+        {
+          "n": 3,
+          "portuguese": "Zelofeade, porém, filho de Héfer, filho de Gileade, filho de Maquir, filho de Manassés, não teve filhos, mas só filhas; e estes são os nomes de suas filhas: Macla, Noa, Hogla, Milca e Tirza."
+        },
+        {
+          "n": 4,
+          "portuguese": "Estas, pois, se chegaram diante de Eleazar, o sacerdote, e diante de Josué, filho de Num, e diante dos príncipes, dizendo: O SENHOR ordenou a Moisés que se nos desse herança no meio de nossos irmãos. Pelo que, conforme a ordem do SENHOR, lhes deu herança no meio dos irmãos de seu pai."
+        },
+        {
+          "n": 5,
+          "portuguese": "E caiu a Manassés dez quinhões, afora a terra de Gileade e Basã, que está dalém do Jordão;"
+        },
+        {
+          "n": 6,
+          "portuguese": "porque as filhas de Manassés receberam herança entre os filhos dele; e os outros filhos de Manassés tiveram a terra de Gileade."
+        },
+        {
+          "n": 7,
+          "portuguese": "E o termo de Manassés foi desde Aser até Micmetá, que está defronte de Siquém; e este termo vai à direita até aos moradores de En-Tapua."
+        },
+        {
+          "n": 8,
+          "portuguese": "A terra de Tapua terão os manassitas; porém Tapua, junto ao termo de Manassés, pertence aos filhos de Efraim."
+        },
+        {
+          "n": 9,
+          "portuguese": "E este termo desce ao ribeiro de Caná. As cidades, para o sul do ribeiro, entre as cidades de Manassés, são de Efraim; e o termo de Manassés está ao norte do ribeiro, e as suas saídas estão ao mar."
+        },
+        {
+          "n": 10,
+          "portuguese": "O lado do sul é de Efraim, e o lado do norte é de Manassés, e o mar é o seu termo; e, pelo norte, tocam em Aser e, pelo oriente, em Issacar."
+        },
+        {
+          "n": 11,
+          "portuguese": "Porque em Issacar e em Aser tinha Manassés a Bete-Seã e as suas vilas, e Ibleão e as suas vilas, e os habitantes de Dor e as suas vilas, e os habitantes de En-Dor e as suas vilas, e os habitantes de Taanaque e as suas vilas, e os habitantes de Megido e as suas vilas: três regiões elevadas."
+        },
+        {
+          "n": 12,
+          "portuguese": "E os filhos de Manassés não puderam expulsar os habitantes daquelas cidades, porquanto os cananeus queriam habitar na mesma terra."
+        },
+        {
+          "n": 13,
+          "portuguese": "E sucedeu que, quando os filhos de Israel se tornaram fortes, fizeram tributários aos cananeus; porém não os expulsaram de todo."
+        },
+        {
+          "n": 14,
+          "portuguese": "Então os filhos de José falaram a Josué, dizendo: Por que me deste por herança só uma sorte e um quinhão, sendo eu um povo tão grande, visto que o SENHOR até aqui me tem abençoado?"
+        },
+        {
+          "n": 15,
+          "portuguese": "E disse-lhes Josué: Se tão grande povo és, sobe ao bosque e corta para ti ali lugar na terra dos ferezeus e dos refains, pois que as montanhas de Efraim te são tão estreitas."
+        },
+        {
+          "n": 16,
+          "portuguese": "Então disseram os filhos de José: As montanhas não nos bastariam; também carros de ferro há entre todos os cananeus que habitam na terra do vale, tanto os que estão em Bete-Seã e nas suas vilas como os que estão no vale de Jezreel."
+        },
+        {
+          "n": 17,
+          "portuguese": "Então Josué falou à casa de José, a Efraim e a Manassés, dizendo: Grande povo és e grande força tens; não terás uma só sorte;"
+        },
+        {
+          "n": 18,
+          "portuguese": "porém as montanhas serão tuas; e, pois que bosque é, corta-o, e as suas saídas serão tuas; porque expulsarás os cananeus, ainda que tenham carros de ferro e ainda que sejam fortes."
+        }
+      ],
+      "notes": [
+        "17,3–6 — Filhas de Zelofeade.",
+        "17,14–18 — José pede mais terra."
+      ]
+    },
+    {
+      "n": 18,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E toda a congregação dos filhos de Israel se reuniu em Siló e ali armaram a tenda da congregação, depois que a terra lhes foi sujeita."
+        },
+        {
+          "n": 2,
+          "portuguese": "E, dentre os filhos de Israel, ficaram sete tribos que ainda não tinham recebido a sua herança."
+        },
+        {
+          "n": 3,
+          "portuguese": "E disse Josué aos filhos de Israel: Até quando sereis remissos em passardes para possuir a terra que o SENHOR, Deus de vossos pais, vos deu?"
+        },
+        {
+          "n": 4,
+          "portuguese": "Dai de entre vós três homens de cada tribo, para que eu os envie, e se levantem, e andem pela terra, e a descrevam conforme as suas heranças, e voltem a mim."
+        },
+        {
+          "n": 5,
+          "portuguese": "E a repartirão em sete partes: Judá ficará no seu termo, para o sul, e a casa de José ficará no seu termo, para o norte."
+        },
+        {
+          "n": 6,
+          "portuguese": "E vós descrevereis a terra em sete partes e me trareis a descrição aqui, para que eu a lance em sortes perante o SENHOR, nosso Deus."
+        },
+        {
+          "n": 7,
+          "portuguese": "Porquanto os levitas não têm parte no meio de vós, porque o sacerdócio do SENHOR é a sua herança; e Gade, e Rúben, e a meia tribo de Manassés receberam a sua herança dalém do Jordão, para o oriente, a qual lhes deu Moisés, o servo do SENHOR."
+        },
+        {
+          "n": 8,
+          "portuguese": "Então aqueles homens se levantaram e se foram; e Josué deu ordem aos que iam descrever a terra, dizendo: Ide, e andai pela terra, e descrevei-a, e voltai a mim, e aqui, em Siló, vos lançarei as sortes perante o SENHOR."
+        },
+        {
+          "n": 9,
+          "portuguese": "Foram, pois, aqueles homens, e passaram pela terra, e a descreveram, segundo as cidades, em sete partes, num livro; e voltaram a Josué, ao arraial, em Siló."
+        },
+        {
+          "n": 10,
+          "portuguese": "Então Josué lhes lançou as sortes em Siló, perante o SENHOR; e ali repartiu Josué a terra aos filhos de Israel, conforme as suas divisões."
+        },
+        {
+          "n": 11,
+          "portuguese": "E sai a sorte da tribo dos filhos de Benjamim, segundo as suas famílias; e o termo da sua sorte saiu entre os filhos de Judá e os filhos de José."
+        },
+        {
+          "n": 12,
+          "portuguese": "E o seu termo, do lado do norte, saía do Jordão; e sobe aquele termo ao lado de Jericó, para o norte, e sobe pela montanha para o ocidente, e as suas saídas estão no deserto de Bete-Áven."
+        },
+        {
+          "n": 13,
+          "portuguese": "E dali aquele termo passa a Luz, ao lado de Luz (que é Betel), para o sul; e desce aquele termo a Atarote-Adar, junto ao monte que está do lado sul de Bete-Horom de baixo."
+        },
+        {
+          "n": 14,
+          "portuguese": "E o termo se torna, e rodeia o lado do ocidente para o sul do monte que está defronte de Bete-Horom, para o sul; e as suas saídas estão em Quiriate-Baal (que é Quiriate-Jearim), cidade dos filhos de Judá; este é o lado do ocidente."
+        },
+        {
+          "n": 15,
+          "portuguese": "E o lado do sul está desde a extremidade de Quiriate-Jearim; e o termo sai para o ocidente e sai à fonte das águas de Neftoa."
+        },
+        {
+          "n": 16,
+          "portuguese": "E aquele termo desce até ao extremo do monte que está defronte do vale do filho de Hinom, que está no vale dos refains, para o norte; e desce pelo vale de Hinom, do lado do jebuseu, para o sul; e então desce a En-Rogel;"
+        },
+        {
+          "n": 17,
+          "portuguese": "e vai para o norte, e sai a En-Semes; e dali sai a Gelilote, que está defronte da subida de Adumim; e desce à pedra de Boã, filho de Rúben;"
+        },
+        {
+          "n": 18,
+          "portuguese": "e passa até ao lado fronteiro a Arabá, para o norte, e desce a Arabá."
+        },
+        {
+          "n": 19,
+          "portuguese": "Passa mais aquele termo até ao lado de Bete-Hogla, para o norte; e as saídas daquele termo estão na baía do mar Salgado, para o norte, na extremidade do Jordão, para o sul; este é o termo do sul."
+        },
+        {
+          "n": 20,
+          "portuguese": "E o Jordão será o seu termo do lado do oriente. Esta é a herança dos filhos de Benjamim, nos seus termos ao redor, segundo as suas famílias."
+        },
+        {
+          "n": 21,
+          "portuguese": "E as cidades da tribo dos filhos de Benjamim, segundo as suas famílias, são: Jericó, e Bete-Hogla, e Emeque-Queziz,"
+        },
+        {
+          "n": 22,
+          "portuguese": "e Bete-Arabá, e Zemaraim, e Betel,"
+        },
+        {
+          "n": 23,
+          "portuguese": "e Avim, e Pará, e Ofra,"
+        },
+        {
+          "n": 24,
+          "portuguese": "e Quefar-Haamonai, e Ofni, e Geba: ao todo, doze cidades e as suas aldeias."
+        },
+        {
+          "n": 25,
+          "portuguese": "Gibeão, e Ramá, e Beerote,"
+        },
+        {
+          "n": 26,
+          "portuguese": "e Mispa, e Cafira, e Moza,"
+        },
+        {
+          "n": 27,
+          "portuguese": "e Requém, e Irpeel, e Tarala,"
+        },
+        {
+          "n": 28,
+          "portuguese": "e Zela, Elefe e Jebus (esta é Jerusalém), Gibeá e Quiriate: ao todo, catorze cidades e as suas aldeias. Esta é a herança dos filhos de Benjamim, segundo as suas famílias."
+        }
+      ],
+      "notes": [
+        "18,1 — Tenda da congregação em Siló.",
+        "18,10 — Sortes em Siló."
+      ]
+    },
+    {
+      "n": 19,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E sai a segunda sorte a Simeão, à tribo dos filhos de Simeão, segundo as suas famílias; e foi a sua herança no meio da herança dos filhos de Judá."
+        },
+        {
+          "n": 2,
+          "portuguese": "E tiveram na sua herança: Berseba, e Seba, e Molada,"
+        },
+        {
+          "n": 3,
+          "portuguese": "e Hazar-Sual, e Balá, e Ezém,"
+        },
+        {
+          "n": 4,
+          "portuguese": "e Eltolade, e Betul, e Hormá,"
+        },
+        {
+          "n": 5,
+          "portuguese": "e Ziclague, e Bete-Marcabote, e Hazar-Susa,"
+        },
+        {
+          "n": 6,
+          "portuguese": "e Bete-Lebaote, e Saruém: ao todo, treze cidades e as suas aldeias."
+        },
+        {
+          "n": 7,
+          "portuguese": "Aim, Rimom, e Éter, e Asã: ao todo, quatro cidades e as suas aldeias;"
+        },
+        {
+          "n": 8,
+          "portuguese": "e todas as aldeias que havia ao redor destas cidades, até Baalate-Beer, que é Ramá do Sul. Esta é a herança da tribo dos filhos de Simeão, segundo as suas famílias."
+        },
+        {
+          "n": 9,
+          "portuguese": "A herança dos filhos de Simeão se tirou do quinhão dos filhos de Judá, porque a herança dos filhos de Judá era demasiadamente grande para eles; pelo que os filhos de Simeão tiveram a sua herança no meio deles."
+        },
+        {
+          "n": 10,
+          "portuguese": "Também a terceira sorte sai aos filhos de Zebulom, segundo as suas famílias; e foi o termo da sua herança até Saride."
+        },
+        {
+          "n": 11,
+          "portuguese": "E o seu termo sobe para o ocidente a Maralá, e chega até Dabesete, e chega até ao ribeiro que está defronte de Jocneão."
+        },
+        {
+          "n": 12,
+          "portuguese": "E de Saride volta para o oriente, para o nascente do sol, até ao termo de Quislote-Tabor, e sai a Daberate, e vai subir a Jafia."
+        },
+        {
+          "n": 13,
+          "portuguese": "E dali passa, para o oriente, para o nascente, a Gate-Héfer, a Ete-Cazim, e sai a Rimom, que se estende até Neá."
+        },
+        {
+          "n": 14,
+          "portuguese": "E este termo rodeia ao norte a Hanatom; e as suas saídas estão no vale de Iftá-El;"
+        },
+        {
+          "n": 15,
+          "portuguese": "e Catate, e Naalal, e Sinrom, e Idala, e Belém: ao todo, doze cidades e as suas aldeias."
+        },
+        {
+          "n": 16,
+          "portuguese": "Esta é a herança dos filhos de Zebulom, segundo as suas famílias: estas cidades e as suas aldeias."
+        },
+        {
+          "n": 17,
+          "portuguese": "A quarta sorte sai a Issacar, aos filhos de Issacar, segundo as suas famílias."
+        },
+        {
+          "n": 18,
+          "portuguese": "E foi o seu termo Jezreel, e Quesulote, e Suném,"
+        },
+        {
+          "n": 19,
+          "portuguese": "e Hafaraim, e Sião, e Anarate,"
+        },
+        {
+          "n": 20,
+          "portuguese": "e Rabite, e Quisiom, e Abes,"
+        },
+        {
+          "n": 21,
+          "portuguese": "e Remete, e En-Ganim, e En-Hadá, e Bete-Pasés."
+        },
+        {
+          "n": 22,
+          "portuguese": "E este termo chega até Tabor, e Saazima, e Bete-Semes; e as saídas do seu termo estão no Jordão: ao todo, dezesseis cidades e as suas aldeias."
+        },
+        {
+          "n": 23,
+          "portuguese": "Esta é a herança da tribo dos filhos de Issacar, segundo as suas famílias: estas cidades e as suas aldeias."
+        },
+        {
+          "n": 24,
+          "portuguese": "E sai a quinta sorte à tribo dos filhos de Aser, segundo as suas famílias."
+        },
+        {
+          "n": 25,
+          "portuguese": "E foi o seu termo Helcate, e Hali, e Béten, e Acsafe,"
+        },
+        {
+          "n": 26,
+          "portuguese": "e Alameleque, e Amade, e Misal; e chega ao Carmelo, para o ocidente, e a Sior-Libnate;"
+        },
+        {
+          "n": 27,
+          "portuguese": "e volta para o nascente do sol a Bete-Dagom, e chega a Zebulom e ao vale de Iftá-El, para o norte de Bete-Emeque e de Neiel, e vem sair a Cabul, pela esquerda,"
+        },
+        {
+          "n": 28,
+          "portuguese": "e Ebrom, e Reobe, e Hamom, e Caná, até à grande Sidom."
+        },
+        {
+          "n": 29,
+          "portuguese": "E torna este termo a Ramá e até à cidade forte de Tiro; então, torna este termo a Hosa, e as suas saídas estão no mar, desde o termo de Aczibe;"
+        },
+        {
+          "n": 30,
+          "portuguese": "também Uma, e Afeque, e Reobe: ao todo, vinte e duas cidades e as suas aldeias."
+        },
+        {
+          "n": 31,
+          "portuguese": "Esta é a herança da tribo dos filhos de Aser, segundo as suas famílias: estas cidades e as suas aldeias."
+        },
+        {
+          "n": 32,
+          "portuguese": "E sai a sexta sorte aos filhos de Naftali, aos filhos de Naftali, segundo as suas famílias."
+        },
+        {
+          "n": 33,
+          "portuguese": "E foi o seu termo desde Helefe e desde Alom, em Zaananim, e Adami-Nequebe, e Jabneel, até Lacum; e as suas saídas estão no Jordão."
+        },
+        {
+          "n": 34,
+          "portuguese": "E torna este termo para o ocidente a Aznote-Tabor e dali passa a Hucoque; chega a Zebulom, para o sul, e chega a Aser, para o ocidente, e a Judá, pelo Jordão, para o nascente do sol."
+        },
+        {
+          "n": 35,
+          "portuguese": "E as cidades fortes são: Zidim, Zer, e Hamate, Racate e Quinerete,"
+        },
+        {
+          "n": 36,
+          "portuguese": "e Adamá, e Ramá, e Hazor,"
+        },
+        {
+          "n": 37,
+          "portuguese": "e Quedes, e Edrei, e En-Hazor,"
+        },
+        {
+          "n": 38,
+          "portuguese": "e Irom, e Migdal-El, Horem, e Bete-Anate, e Bete-Semes: ao todo, dezenove cidades e as suas aldeias."
+        },
+        {
+          "n": 39,
+          "portuguese": "Esta é a herança da tribo dos filhos de Naftali, segundo as suas famílias: as cidades e as suas aldeias."
+        },
+        {
+          "n": 40,
+          "portuguese": "A sétima sorte sai à tribo dos filhos de Dã, segundo as suas famílias."
+        },
+        {
+          "n": 41,
+          "portuguese": "E foi o termo da sua herança: Zorá, e Estaol, e Ir-Semes,"
+        },
+        {
+          "n": 42,
+          "portuguese": "e Saalabim, e Aijalom, e Itlá,"
+        },
+        {
+          "n": 43,
+          "portuguese": "e Elom, e Timna, e Ecrom,"
+        },
+        {
+          "n": 44,
+          "portuguese": "e Elteque, e Gibetom, e Baalate,"
+        },
+        {
+          "n": 45,
+          "portuguese": "e Jeúde, e Bene-Beraque, e Gate-Rimom,"
+        },
+        {
+          "n": 46,
+          "portuguese": "e Me-Jarcom, e Racom, com o termo defronte de Jope."
+        },
+        {
+          "n": 47,
+          "portuguese": "Porém o termo dos filhos de Dã saiu-lhes pequeno demais; pelo que os filhos de Dã subiram, e pelejaram contra Lesém, e a tomaram, e a feriram a fio de espada, e a possuíram, e habitaram nela; e a Lesém chamaram Dã, conforme o nome de Dã, seu pai."
+        },
+        {
+          "n": 48,
+          "portuguese": "Esta é a herança da tribo dos filhos de Dã, segundo as suas famílias: estas cidades e as suas aldeias."
+        },
+        {
+          "n": 49,
+          "portuguese": "Acabando, pois, de repartir a terra em herança, segundo os seus termos, deram os filhos de Israel a Josué, filho de Num, herança no meio deles."
+        },
+        {
+          "n": 50,
+          "portuguese": "Conforme a ordem do SENHOR, deram-lhe a cidade que pediu, Timnate-Sera, no monte de Efraim; e reedificou aquela cidade e habitou nela."
+        },
+        {
+          "n": 51,
+          "portuguese": "Estas são as heranças que Eleazar, o sacerdote, e Josué, filho de Num, e os cabeças dos pais, nas tribos dos filhos de Israel, repartiram em herança por sorte, em Siló, perante o SENHOR, à porta da tenda da congregação. E assim acabaram de repartir a terra."
+        }
+      ],
+      "notes": [
+        "19,49–50 — Herança de Josué: Timnate-Sera."
+      ]
+    },
+    {
+      "n": 20,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Falou mais o SENHOR a Josué, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "Fala aos filhos de Israel, dizendo: Apartai para vós as cidades de refúgio, de que vos falei pelo ministério de Moisés,"
+        },
+        {
+          "n": 3,
+          "portuguese": "para que fuja para ali o homicida que matar alguma pessoa por engano e não com intento; para que vos sejam por refúgio do vingador do sangue."
+        },
+        {
+          "n": 4,
+          "portuguese": "E, fugindo para alguma daquelas cidades, pôr-se-á à porta da cidade e proporá as suas palavras aos ouvidos dos anciãos da tal cidade; então, o tomarão consigo na cidade e lhe darão lugar, para que habite com eles."
+        },
+        {
+          "n": 5,
+          "portuguese": "E, se o vingador do sangue o perseguir, não lhe entregarão o homicida na sua mão, porquanto não feriu o seu próximo com intento e não o odiava dantes."
+        },
+        {
+          "n": 6,
+          "portuguese": "E habitará na mesma cidade até que compareça em juízo perante a congregação, até à morte do sumo sacerdote que houver naqueles dias; então, o homicida voltará e virá à sua cidade e à sua casa, à cidade de onde fugiu."
+        },
+        {
+          "n": 7,
+          "portuguese": "Então designaram a Quedes, na Galileia, no monte de Naftali, e a Siquém, no monte de Efraim, e a Quiriate-Arba (esta é Hebrom), no monte de Judá."
+        },
+        {
+          "n": 8,
+          "portuguese": "E, dalém do Jordão, de Jericó, para o oriente, designaram a Bezer, no deserto, na campina, da tribo de Rúben, e a Ramote, em Gileade, da tribo de Gade, e a Golã, em Basã, da tribo de Manassés."
+        },
+        {
+          "n": 9,
+          "portuguese": "Estas foram as cidades que se designaram para todos os filhos de Israel e para o estrangeiro que peregrinasse entre eles; para que se acolhesse ali todo aquele que por engano matasse alguma pessoa, e não morresse às mãos do vingador do sangue, até se apresentar diante da congregação."
+        }
+      ],
+      "notes": [
+        "20,1–9 — Cidades de refúgio."
+      ]
+    },
+    {
+      "n": 21,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Então se chegaram os cabeças dos pais dos levitas a Eleazar, o sacerdote, e a Josué, filho de Num, e aos cabeças dos pais das tribos dos filhos de Israel."
+        },
+        {
+          "n": 2,
+          "portuguese": "E falaram-lhes em Siló, na terra de Canaã, dizendo: O SENHOR ordenou, pelo ministério de Moisés, que se nos dessem cidades para habitar e os seus arrabaldes para os nossos animais."
+        },
+        {
+          "n": 3,
+          "portuguese": "Pelo que os filhos de Israel deram aos levitas, da sua herança, conforme a ordem do SENHOR, estas cidades e os seus arrabaldes."
+        },
+        {
+          "n": 4,
+          "portuguese": "E saiu a sorte das famílias dos coatitas; e aos filhos de Arão, o sacerdote, dentre os levitas, caíram por sorte, da tribo de Judá, e da tribo de Simeão, e da tribo de Benjamim, treze cidades."
+        },
+        {
+          "n": 5,
+          "portuguese": "E aos outros filhos de Coate caíram por sorte, das famílias da tribo de Efraim, e da tribo de Dã, e da meia tribo de Manassés, dez cidades."
+        },
+        {
+          "n": 6,
+          "portuguese": "E aos filhos de Gérson caíram por sorte, das famílias da tribo de Issacar, e da tribo de Aser, e da tribo de Naftali, e da meia tribo de Manassés, em Basã, treze cidades."
+        },
+        {
+          "n": 7,
+          "portuguese": "Aos filhos de Merari, segundo as suas famílias, da tribo de Rúben, e da tribo de Gade, e da tribo de Zebulom, doze cidades."
+        },
+        {
+          "n": 8,
+          "portuguese": "E deram os filhos de Israel aos levitas estas cidades e os seus arrabaldes por sorte, como o SENHOR ordenara pelo ministério de Moisés."
+        },
+        {
+          "n": 9,
+          "portuguese": "Deram, pois, da tribo dos filhos de Judá e da tribo dos filhos de Simeão estas cidades, que foram nomeadas,"
+        },
+        {
+          "n": 10,
+          "portuguese": "para que fossem dos filhos de Arão, das famílias dos coatitas, dos filhos de Levi; porque a primeira sorte foi sua."
+        },
+        {
+          "n": 11,
+          "portuguese": "Assim, lhes deram a Quiriate-Arba (do pai de Anaque), que é Hebrom, no monte de Judá, e os seus arrabaldes ao redor dela."
+        },
+        {
+          "n": 12,
+          "portuguese": "Porém o campo da cidade e as suas aldeias deram a Calebe, filho de Jefoné, por sua possessão."
+        },
+        {
+          "n": 13,
+          "portuguese": "Assim, aos filhos de Arão, o sacerdote, deram Hebrom, cidade de refúgio do homicida, e os seus arrabaldes; e Libna e os seus arrabaldes;"
+        },
+        {
+          "n": 14,
+          "portuguese": "e Jatir e os seus arrabaldes; e Estemoa e os seus arrabaldes;"
+        },
+        {
+          "n": 15,
+          "portuguese": "e Holom e os seus arrabaldes; e Debir e os seus arrabaldes;"
+        },
+        {
+          "n": 16,
+          "portuguese": "e Aim e os seus arrabaldes; e Jutá e os seus arrabaldes; e Bete-Semes e os seus arrabaldes: nove cidades destas duas tribos."
+        },
+        {
+          "n": 17,
+          "portuguese": "E da tribo de Benjamim: Gibeão e os seus arrabaldes; Geba e os seus arrabaldes;"
+        },
+        {
+          "n": 18,
+          "portuguese": "Anatote e os seus arrabaldes; e Almom e os seus arrabaldes: quatro cidades."
+        },
+        {
+          "n": 19,
+          "portuguese": "Todas as cidades dos filhos de Arão, dos sacerdotes, foram treze cidades e os seus arrabaldes."
+        },
+        {
+          "n": 20,
+          "portuguese": "E as famílias dos filhos de Coate, os levitas que ficaram dos filhos de Coate, tiveram as cidades da sua sorte da tribo de Efraim."
+        },
+        {
+          "n": 21,
+          "portuguese": "Pois lhes deram Siquém, cidade de refúgio do homicida, e os seus arrabaldes, no monte de Efraim; e Gezer e os seus arrabaldes;"
+        },
+        {
+          "n": 22,
+          "portuguese": "e Quibzaim e os seus arrabaldes; e Bete-Horom e os seus arrabaldes: quatro cidades."
+        },
+        {
+          "n": 23,
+          "portuguese": "E da tribo de Dã: Elteque e os seus arrabaldes; Gibetom e os seus arrabaldes;"
+        },
+        {
+          "n": 24,
+          "portuguese": "Aijalom e os seus arrabaldes; Gate-Rimom e os seus arrabaldes: quatro cidades."
+        },
+        {
+          "n": 25,
+          "portuguese": "E da meia tribo de Manassés: Taanaque e os seus arrabaldes; e Gate-Rimom e os seus arrabaldes: duas cidades."
+        },
+        {
+          "n": 26,
+          "portuguese": "Ao todo, dez cidades e os seus arrabaldes, para as famílias dos demais filhos de Coate."
+        },
+        {
+          "n": 27,
+          "portuguese": "E aos filhos de Gérson, das famílias dos levitas, deram, da meia tribo de Manassés, Golã, em Basã, cidade de refúgio do homicida, e os seus arrabaldes; e Beesterá e os seus arrabaldes: duas cidades."
+        },
+        {
+          "n": 28,
+          "portuguese": "E da tribo de Issacar: Quisiom e os seus arrabaldes; Daberate e os seus arrabaldes;"
+        },
+        {
+          "n": 29,
+          "portuguese": "Jarmute e os seus arrabaldes; En-Ganim e os seus arrabaldes: quatro cidades."
+        },
+        {
+          "n": 30,
+          "portuguese": "E da tribo de Aser: Misal e os seus arrabaldes; Abdom e os seus arrabaldes;"
+        },
+        {
+          "n": 31,
+          "portuguese": "Helcate e os seus arrabaldes; e Reobe e os seus arrabaldes: quatro cidades."
+        },
+        {
+          "n": 32,
+          "portuguese": "E da tribo de Naftali: Quedes, na Galileia, cidade de refúgio do homicida, e os seus arrabaldes; e Hamote-Dor e os seus arrabaldes; e Cartã e os seus arrabaldes: três cidades."
+        },
+        {
+          "n": 33,
+          "portuguese": "Todas as cidades dos gersonitas, segundo as suas famílias, foram treze cidades e os seus arrabaldes."
+        },
+        {
+          "n": 34,
+          "portuguese": "E às famílias dos filhos de Merari, aos demais levitas, deram, da tribo de Zebulom, Jocneão e os seus arrabaldes; Cartá e os seus arrabaldes;"
+        },
+        {
+          "n": 35,
+          "portuguese": "Dimna e os seus arrabaldes; Naalal e os seus arrabaldes: quatro cidades."
+        },
+        {
+          "n": 36,
+          "portuguese": "E da tribo de Rúben: Bezer e os seus arrabaldes; e Jaza e os seus arrabaldes;"
+        },
+        {
+          "n": 37,
+          "portuguese": "Quedemote e os seus arrabaldes; e Mefaate e os seus arrabaldes: quatro cidades."
+        },
+        {
+          "n": 38,
+          "portuguese": "E da tribo de Gade: Ramote, em Gileade, cidade de refúgio do homicida, e os seus arrabaldes; e Maanaim e os seus arrabaldes;"
+        },
+        {
+          "n": 39,
+          "portuguese": "Hesbom e os seus arrabaldes; Jaezer e os seus arrabaldes: ao todo, quatro cidades."
+        },
+        {
+          "n": 40,
+          "portuguese": "Todas estas cidades foram dos filhos de Merari, segundo as suas famílias, que ainda restavam das famílias dos levitas; e a sua sorte foi doze cidades."
+        },
+        {
+          "n": 41,
+          "portuguese": "Todas as cidades dos levitas, no meio da possessão dos filhos de Israel, foram quarenta e oito cidades e os seus arrabaldes."
+        },
+        {
+          "n": 42,
+          "portuguese": "Estavam estas cidades, cada uma com os seus arrabaldes ao redor dela; assim foi com todas estas cidades."
+        },
+        {
+          "n": 43,
+          "portuguese": "Assim, o SENHOR deu a Israel toda a terra que jurara dar a seus pais; e a possuíram e habitaram nela."
+        },
+        {
+          "n": 44,
+          "portuguese": "E o SENHOR lhes deu repouso em redor, conforme tudo quanto jurara a seus pais; e nenhum de todos os seus inimigos resistiu diante deles; a todos os seus inimigos o SENHOR deu na sua mão."
+        },
+        {
+          "n": 45,
+          "portuguese": "Nenhuma palavra falhou de todas as boas palavras que o SENHOR falara à casa de Israel; tudo se cumpriu."
+        }
+      ],
+      "notes": [
+        "21,43–45 — Nada falhou das boas palavras do SENHOR."
+      ]
+    },
+    {
+      "n": 22,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Então Josué chamou os rubenitas, e os gaditas, e a meia tribo de Manassés"
+        },
+        {
+          "n": 2,
+          "portuguese": "e disse-lhes: Tudo quanto Moisés, o servo do SENHOR, vos ordenou, obedecestes; e à minha voz, em tudo quanto vos ordenei, obedecestes."
+        },
+        {
+          "n": 3,
+          "portuguese": "A vossos irmãos, por tanto tempo, até ao dia de hoje, não desamparastes; antes, tivestes cuidado de guardar o mandamento do SENHOR, vosso Deus."
+        },
+        {
+          "n": 4,
+          "portuguese": "Agora, pois, o SENHOR, vosso Deus, deu repouso a vossos irmãos, como lhes tinha falado; voltai-vos, pois, agora, e ide-vos às vossas tendas, à terra da vossa possessão, que Moisés, o servo do SENHOR, vos deu dalém do Jordão."
+        },
+        {
+          "n": 5,
+          "portuguese": "Tão somente tende cuidado de guardar com diligência o mandamento e a lei que Moisés, o servo do SENHOR, vos ordenou: que ameis ao SENHOR, vosso Deus, e andeis em todos os seus caminhos, e guardeis os seus mandamentos, e vos achegueis a ele, e o sirvais com todo o vosso coração e com toda a vossa alma."
+        },
+        {
+          "n": 6,
+          "portuguese": "E Josué os abençoou e os despediu; e foram-se às suas tendas."
+        },
+        {
+          "n": 7,
+          "portuguese": "Ora, Moisés dera a meia tribo de Manassés herança em Basã; porém à outra meia deu Josué herança entre seus irmãos, daquém do Jordão, para o ocidente; e, enviando-os Josué também às suas tendas, os abençoou"
+        },
+        {
+          "n": 8,
+          "portuguese": "e falou-lhes, dizendo: Voltai-vos às vossas tendas com grandes riquezas, e com muitíssimo gado, com prata, e com ouro, e com bronze, e com ferro, e com muitíssimos vestidos; e particionai com vossos irmãos o despojo dos vossos inimigos."
+        },
+        {
+          "n": 9,
+          "portuguese": "Assim, os filhos de Rúben, e os filhos de Gade, e a meia tribo de Manassés voltaram e partiram dos filhos de Israel, de Siló, que está na terra de Canaã, para irem à terra de Gileade, à terra da sua possessão, de que foram feitos possuidores, conforme a ordem do SENHOR, pelo ministério de Moisés."
+        },
+        {
+          "n": 10,
+          "portuguese": "E, chegando eles aos limites do Jordão, que estão na terra de Canaã, os filhos de Rúben, e os filhos de Gade, e a meia tribo de Manassés edificaram ali um altar junto ao Jordão, um altar de grande aparência."
+        },
+        {
+          "n": 11,
+          "portuguese": "E ouviram isso os filhos de Israel dizer: Eis que os filhos de Rúben, e os filhos de Gade, e a meia tribo de Manassés edificaram um altar na frente da terra de Canaã, nos limites do Jordão, do lado dos filhos de Israel."
+        },
+        {
+          "n": 12,
+          "portuguese": "Ouvindo, pois, isso os filhos de Israel, reuniu-se toda a congregação dos filhos de Israel em Siló, para subir contra eles à peleja."
+        },
+        {
+          "n": 13,
+          "portuguese": "E enviaram os filhos de Israel aos filhos de Rúben, e aos filhos de Gade, e à meia tribo de Manassés, à terra de Gileade, a Fineias, filho de Eleazar, o sacerdote,"
+        },
+        {
+          "n": 14,
+          "portuguese": "e com ele dez príncipes, de cada casa de pai de todas as tribos de Israel; e cada um era cabeça da casa de seus pais nas milhares de Israel."
+        },
+        {
+          "n": 15,
+          "portuguese": "Chegando eles aos filhos de Rúben, e aos filhos de Gade, e à meia tribo de Manassés, à terra de Gileade, falaram-lhes, dizendo:"
+        },
+        {
+          "n": 16,
+          "portuguese": "Assim diz toda a congregação do SENHOR: Que prevaricação é esta que cometestes contra o Deus de Israel, deixando hoje de seguir ao SENHOR, edificando-vos um altar, para vos rebelardes, hoje, contra o SENHOR?"
+        },
+        {
+          "n": 17,
+          "portuguese": "Foi-nos pouco a iniquidade de Peor, de que ainda até o dia de hoje não estamos limpos, e pela qual veio a mortandade sobre a congregação do SENHOR,"
+        },
+        {
+          "n": 18,
+          "portuguese": "para que, hoje, deixásseis de seguir ao SENHOR? Será que, rebelando-vos hoje contra o SENHOR, amanhã ele se irará contra toda a congregação de Israel."
+        },
+        {
+          "n": 19,
+          "portuguese": "Se é, porém, que a terra da vossa possessão é imunda, passai-vos para a terra da possessão do SENHOR, em que habita o tabernáculo do SENHOR, e tomai possessão entre nós; mas não vos rebeleis contra o SENHOR, nem tampouco vos rebeleis contra nós, edificando-vos um altar, afora o altar do SENHOR, nosso Deus."
+        },
+        {
+          "n": 20,
+          "portuguese": "Porventura, não cometeu Acã, filho de Zerá, prevaricação no anátema? E não veio ira sobre toda a congregação de Israel? E aquele homem não pereceu só na sua iniquidade."
+        },
+        {
+          "n": 21,
+          "portuguese": "Então responderam os filhos de Rúben, e os filhos de Gade, e a meia tribo de Manassés e falaram aos cabeças das milhares de Israel:"
+        },
+        {
+          "n": 22,
+          "portuguese": "O Poderoso, Deus, o SENHOR, o Poderoso, Deus, o SENHOR, ele o sabe, e Israel mesmo o saberá. Se foi em rebelião ou se foi em prevaricação contra o SENHOR, não nos preserves, hoje."
+        },
+        {
+          "n": 23,
+          "portuguese": "Se nós edificamos um altar para nos tornar de após o SENHOR, ou para sobre ele oferecer holocausto e oferta de manjares, ou sobre ele fazer ofertas pacíficas, o SENHOR mesmo de nós o requeira."
+        },
+        {
+          "n": 24,
+          "portuguese": "E, se não foi, antes, com receio desta coisa o fizemos, dizendo: Amanhã vossos filhos diriam a nossos filhos: Que tendes vós com o SENHOR, Deus de Israel?"
+        },
+        {
+          "n": 25,
+          "portuguese": "Pois o SENHOR pôs o Jordão por termo entre nós e vós, ó filhos de Rúben e filhos de Gade; não tendes parte no SENHOR. E assim bem poderiam vossos filhos fazer desistir a nossos filhos de temer ao SENHOR."
+        },
+        {
+          "n": 26,
+          "portuguese": "Pelo que dissemos: Preparemo-nos agora e edifiquemos um altar, não para holocausto, nem para sacrifício,"
+        },
+        {
+          "n": 27,
+          "portuguese": "mas, para que, entre nós e vós e entre as nossas gerações depois de nós, nos seja testemunho, para que possamos fazer o serviço do SENHOR diante dele com os nossos holocaustos, e com os nossos sacrifícios, e com as nossas ofertas pacíficas; e para que vossos filhos não digam amanhã a nossos filhos: Não tendes parte no SENHOR."
+        },
+        {
+          "n": 28,
+          "portuguese": "Pelo que dissemos: Quando acontecer que assim nos digam a nós e às nossas gerações, no futuro, então diremos: Vede o modelo do altar do SENHOR que fizeram nossos pais, não para holocausto, nem para sacrifício, porém para ser testemunho entre nós e vós."
+        },
+        {
+          "n": 29,
+          "portuguese": "Longe esteja de nós que nos rebelemos contra o SENHOR e que hoje deixemos de seguir ao SENHOR, edificando altar para holocausto, oferta de manjares ou sacrifício, afora o altar do SENHOR, nosso Deus, que está perante o seu tabernáculo."
+        },
+        {
+          "n": 30,
+          "portuguese": "Ouvindo, pois, Fineias, o sacerdote, e os príncipes da congregação, e os cabeças das milhares de Israel que com ele estavam as palavras que falaram os filhos de Rúben, e os filhos de Gade, e os filhos de Manassés, foi bem aos seus olhos."
+        },
+        {
+          "n": 31,
+          "portuguese": "E disse Fineias, filho de Eleazar, o sacerdote, aos filhos de Rúben, e aos filhos de Gade, e aos filhos de Manassés: Hoje conhecemos que o SENHOR está no meio de nós, porque não cometestes esta prevaricação contra o SENHOR; agora livrastes os filhos de Israel da mão do SENHOR."
+        },
+        {
+          "n": 32,
+          "portuguese": "Então Fineias, filho de Eleazar, o sacerdote, e os príncipes voltaram de ter com os filhos de Rúben e com os filhos de Gade, da terra de Gileade à terra de Canaã, aos filhos de Israel e trouxeram-lhes a resposta."
+        },
+        {
+          "n": 33,
+          "portuguese": "E bem pareceu a resposta aos olhos dos filhos de Israel, e louvaram os filhos de Israel a Deus; e não falaram mais de subir à peleja contra eles, para destruírem a terra em que habitavam os filhos de Rúben e os filhos de Gade."
+        },
+        {
+          "n": 34,
+          "portuguese": "E os filhos de Rúben e os filhos de Gade chamaram ao altar Ed; porque, disseram eles, é testemunho entre nós que o SENHOR é Deus."
+        }
+      ],
+      "notes": [
+        "22,10–34 — Altar Ed; testemunho dalém do Jordão."
+      ]
+    },
+    {
+      "n": 23,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "E sucedeu que, muitos dias depois que o SENHOR dera repouso a Israel de todos os seus inimigos em redor, e sendo Josué já velho e entrado em dias,"
+        },
+        {
+          "n": 2,
+          "portuguese": "chamou Josué a todo o Israel, aos seus anciãos, e aos seus cabeças, e aos seus juízes, e aos seus oficiais e disse-lhes: Já estou velho e entrado em dias;"
+        },
+        {
+          "n": 3,
+          "portuguese": "e vós já tendes visto tudo quanto o SENHOR, vosso Deus, fez a todas estas nações, por causa de vós; porque o SENHOR, vosso Deus, é o que pelejou por vós."
+        },
+        {
+          "n": 4,
+          "portuguese": "Vedes aqui que vos fiz cair em sorte estas nações que ficam, para herança das vossas tribos, desde o Jordão, com todas as nações que eu eliminei, até ao grande mar para o poente do sol."
+        },
+        {
+          "n": 5,
+          "portuguese": "E o SENHOR, vosso Deus, as impelirá de diante de vós e as expulsará de diante de vós; e vós possuireis a sua terra, como o SENHOR, vosso Deus, vos tem dito."
+        },
+        {
+          "n": 6,
+          "portuguese": "Esforçai-vos, pois, muito para guardardes e para fazerdes tudo quanto está escrito no livro da Lei de Moisés, para que dela não vos desvieis, nem para a direita nem para a esquerda;"
+        },
+        {
+          "n": 7,
+          "portuguese": "para que não entreis às estas nações que ainda ficam convosco; e dos nomes de seus deuses não façais menção, nem por eles façais jurar, nem os sirvais, nem a eles vos inclineis."
+        },
+        {
+          "n": 8,
+          "portuguese": "Mas ao SENHOR, vosso Deus, vos achegareis, como fizestes até o dia de hoje."
+        },
+        {
+          "n": 9,
+          "portuguese": "Porque o SENHOR expulsou de diante de vós grandes e fortes nações; e, até o dia de hoje, ninguém vos tem podido resistir."
+        },
+        {
+          "n": 10,
+          "portuguese": "Um só homem dentre vós perseguirá a mil, pois o SENHOR, vosso Deus, é o que peleja por vós, como já vos tem falado."
+        },
+        {
+          "n": 11,
+          "portuguese": "Portanto, tende muito cuidado de amar ao SENHOR, vosso Deus."
+        },
+        {
+          "n": 12,
+          "portuguese": "Porque, se de alguma maneira vos desviardes e vos achegardes ao restante destas nações que ainda ficam convosco, e com elas vos aparentardes, e a elas entrar, e elas a vós,"
+        },
+        {
+          "n": 13,
+          "portuguese": "sabei, certamente, que o SENHOR, vosso Deus, não continuará a expulsar estas nações de diante de vós; porém vos serão por laço, e por rede, e por açoite às vossas costas, e por espinhos aos vossos olhos, até que pereçais desta boa terra que vos deu o SENHOR, vosso Deus."
+        },
+        {
+          "n": 14,
+          "portuguese": "E eis que, hoje, eu vou pelo caminho de toda a terra; e vós bem sabeis, com todo o vosso coração e com toda a vossa alma, que nem uma só palavra falhou de todas as boas palavras que falou de vós o SENHOR, vosso Deus; todas se cumpriram, e nem uma delas falhou."
+        },
+        {
+          "n": 15,
+          "portuguese": "E será que, assim como veio sobre vós tudo o que o SENHOR, vosso Deus, vos disse, assim o SENHOR trará sobre vós todo o mal, até vos destruir de sobre a boa terra que vos deu o SENHOR, vosso Deus."
+        },
+        {
+          "n": 16,
+          "portuguese": "Quando transgredirdes o concerto do SENHOR, vosso Deus, que vos tem ordenado, e fordes, e servirdes a outros deuses, e a eles vos inclinardes, então a ira do SENHOR se acenderá contra vós, e logo perecereis de sobre a boa terra que vos deu."
+        }
+      ],
+      "notes": [
+        "23,6–8 — Guardai a Lei; achegai-vos ao SENHOR.",
+        "23,14 — Nem uma palavra falhou."
+      ]
+    },
+    {
+      "n": 24,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Depois, ajuntou Josué todas as tribos de Israel em Siquém e chamou os anciãos de Israel, e os seus cabeças, e os seus juízes, e os seus oficiais; e eles se apresentaram perante Deus."
+        },
+        {
+          "n": 2,
+          "portuguese": "Então Josué disse a todo o povo: Assim diz o SENHOR, Deus de Israel: Vossos pais, antigamente, habitaram dalém do rio, a saber, Tera, pai de Abraão e pai de Naor; e serviram a outros deuses."
+        },
+        {
+          "n": 3,
+          "portuguese": "Eu, porém, tomei a vosso pai Abraão dalém do rio e o fiz andar por toda a terra de Canaã; e multipliquei a sua semente e dei-lhe a Isaque."
+        },
+        {
+          "n": 4,
+          "portuguese": "E a Isaque dei a Jacó e a Esaú; e a Esaú dei a montanha de Seir, para a possuir; porém Jacó e seus filhos desceram para o Egito."
+        },
+        {
+          "n": 5,
+          "portuguese": "Então enviei a Moisés e a Arão e feri o Egito, como fiz no meio dele; e, depois, vos tirei de lá."
+        },
+        {
+          "n": 6,
+          "portuguese": "E, tirando eu a vossos pais do Egito, viestes ao mar; e os egípcios perseguiram a vossos pais com carros e com cavaleiros, até ao mar Vermelho."
+        },
+        {
+          "n": 7,
+          "portuguese": "Então clamaram ao SENHOR, o qual pôs uma escuridão entre vós e os egípcios, e trouxe o mar sobre eles, e os cobriu; e os vossos olhos viram o que eu fiz no Egito. Depois, habitastes no deserto muitos dias."
+        },
+        {
+          "n": 8,
+          "portuguese": "Então vos trouxe à terra dos amorreus, que habitavam dalém do Jordão, os quais pelejaram contra vós; porém eu os dei na vossa mão, e possuístes a sua terra, e os destruí de diante de vós."
+        },
+        {
+          "n": 9,
+          "portuguese": "Levantou-se também Balaque, filho de Zipor, rei dos moabitas, e pelejou contra Israel; e enviou, e chamou a Balaão, filho de Beor, para que vos amaldiçoasse."
+        },
+        {
+          "n": 10,
+          "portuguese": "Porém eu não quis ouvir a Balaão; pelo que, abundantemente vos abençoou; e livrei-vos da sua mão."
+        },
+        {
+          "n": 11,
+          "portuguese": "E, passando vós o Jordão e vindo a Jericó, pelejaram contra vós os senhores de Jericó, e os amorreus, e os ferezeus, e os cananeus, e os heteus, e os gergeseus, e os heveus, e os jebuseus; porém eu os dei na vossa mão."
+        },
+        {
+          "n": 12,
+          "portuguese": "E enviei vespões diante de vós, que os expulsaram de diante de vós, como a ambos os reis dos amorreus; e isso não com a tua espada, nem com o teu arco."
+        },
+        {
+          "n": 13,
+          "portuguese": "E eu vos dei a terra em que não trabalhastes e cidades que não edificastes, e habitais nelas; e comeis das vinhas e dos olivais que não plantastes."
+        },
+        {
+          "n": 14,
+          "portuguese": "Agora, pois, temei ao SENHOR, e servi-o com sinceridade e com verdade, e deitai fora os deuses aos quais serviram vossos pais dalém do rio e no Egito, e servi ao SENHOR."
+        },
+        {
+          "n": 15,
+          "portuguese": "Porém, se vos parece mal aos vossos olhos servir ao SENHOR, escolhei, hoje, a quem sirvais: se aos deuses a quem serviram vossos pais, que estavam dalém do rio, ou aos deuses dos amorreus, em cuja terra habitais; porém eu e a minha casa serviremos ao SENHOR."
+        },
+        {
+          "n": 16,
+          "portuguese": "Então respondeu o povo e disse: Longe de nós seja o abandonarmos ao SENHOR para servir a outros deuses;"
+        },
+        {
+          "n": 17,
+          "portuguese": "porque o SENHOR é o nosso Deus; ele é o que nos fez subir, a nós e a nossos pais, da terra do Egito, da casa da servidão, e o que fez estes grandes sinais perante os nossos olhos, e nos guardou por todo o caminho em que andamos e entre todos os povos pelo meio dos quais passamos."
+        },
+        {
+          "n": 18,
+          "portuguese": "E o SENHOR expulsou de diante de nós a todos estes povos, até o amorreu, morador da terra; também nós serviremos ao SENHOR, pois ele é o nosso Deus."
+        },
+        {
+          "n": 19,
+          "portuguese": "Então Josué disse ao povo: Não podereis servir ao SENHOR, porquanto é Deus santo, é Deus zeloso, que não perdoará a vossa transgressão nem os vossos pecados."
+        },
+        {
+          "n": 20,
+          "portuguese": "Se deixardes ao SENHOR e servirdes a deuses estranhos, então se tornará e vos fará mal e vos consumirá, depois de vos ter feito bem."
+        },
+        {
+          "n": 21,
+          "portuguese": "Então disse o povo a Josué: Não; antes, ao SENHOR serviremos."
+        },
+        {
+          "n": 22,
+          "portuguese": "E Josué disse ao povo: Sois testemunhas contra vós mesmos de que, para vós, escolhestes ao SENHOR, para o servir. E disseram: Somos testemunhas."
+        },
+        {
+          "n": 23,
+          "portuguese": "Agora, pois, deitai fora os deuses estranhos que há no meio de vós e inclinai o vosso coração ao SENHOR, Deus de Israel."
+        },
+        {
+          "n": 24,
+          "portuguese": "Disse, pois, o povo a Josué: Serviremos ao SENHOR, nosso Deus, e obedeceremos à sua voz."
+        },
+        {
+          "n": 25,
+          "portuguese": "Assim, naquele dia, fez Josué concerto com o povo e lhe pôs estatuto e direito em Siquém."
+        },
+        {
+          "n": 26,
+          "portuguese": "E escreveu Josué estas palavras no livro da Lei de Deus; e tomou uma grande pedra e a levantou ali debaixo do carvalho que estava junto ao santuário do SENHOR."
+        },
+        {
+          "n": 27,
+          "portuguese": "E disse Josué a todo o povo: Eis que esta pedra nos será por testemunho, pois ela ouviu todas as palavras que o SENHOR nos falou; e também será testemunho contra vós, para que não mintais a vosso Deus."
+        },
+        {
+          "n": 28,
+          "portuguese": "Então Josué despediu o povo, cada um para a sua herança."
+        },
+        {
+          "n": 29,
+          "portuguese": "E, depois destas coisas, sucedeu que Josué, filho de Num, servo do SENHOR, faleceu, sendo da idade de cento e dez anos."
+        },
+        {
+          "n": 30,
+          "portuguese": "E sepultaram-no no termo da sua herança, em Timnate-Sera, que está no monte de Efraim, para o norte do monte Gaás."
+        },
+        {
+          "n": 31,
+          "portuguese": "E serviu Israel ao SENHOR todos os dias de Josué e todos os dias dos anciãos que ainda sobreviveram muito depois de Josué e que sabiam todas as obras que o SENHOR fizera a Israel."
+        },
+        {
+          "n": 32,
+          "portuguese": "Também os ossos de José, que os filhos de Israel trouxeram do Egito, sepultaram em Siquém, naquela parte do campo que Jacó comprara aos filhos de Hamor, pai de Siquém, por cem peças de prata; e ficaram em herança aos filhos de José."
+        },
+        {
+          "n": 33,
+          "portuguese": "Faleceu também Eleazar, filho de Arão; e o sepultaram no outeiro de Fineias, seu filho, que lhe fora dado no monte de Efraim."
+        }
+      ],
+      "notes": [
+        "24,15 — Eu e a minha casa serviremos ao SENHOR.",
+        "24,25–27 — Concerto em Siquém; pedra testemunha."
+      ]
+    }
+  ]
+}
