@@ -60,7 +60,7 @@
       "testament": "AT",
       "chapters": 21,
       "verses": 618,
-      "ptVerses": 0,
+      "ptVerses": 618,
       "defaultLang": "he"
     },
     {
@@ -597,6 +597,7 @@
   ],
   "ptComplete": [
     "gen",
+    "jdg",
     "rut",
     "ezr",
     "neh",
@@ -649,7 +650,6 @@
     "num",
     "deu",
     "jos",
-    "jdg",
     "1sa",
     "2sa",
     "1ki",
