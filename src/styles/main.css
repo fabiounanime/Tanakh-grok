@@ -2117,3 +2117,48 @@ main.page {
   color: #ff8a8a;
   background: rgba(255, 60, 60, 0.08);
 }
+
+/* —— Chapter end notes —— */
+.chapter-notes {
+  margin: 1.75rem 0 0.5rem;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-gold);
+}
+.chapter-notes__title {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+.chapter-notes__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-family: var(--font-reading);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.chapter-notes__list li + li {
+  margin-top: 0.45rem;
+}
+
+.bible-page.lang-arc .verse-flow {
+  font-family: var(--font-hebrew);
+  font-size: 1.28rem;
+  line-height: 1.85;
+  text-align: right;
+}
+
+.placeholder-chapter--inline {
+  margin: 0.5rem 0 1rem;
+}
+
+.chapter-grid a.has-pt {
+  box-shadow: inset 0 0 0 1px rgba(255, 193, 7, 0.55);
+}
+.chapter-grid a.has-demo:not(.has-pt) {
+  opacity: 0.92;
+}

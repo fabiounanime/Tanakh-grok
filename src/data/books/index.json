@@ -1,0 +1,670 @@
+{
+  "books": [
+    {
+      "id": "gen",
+      "name": "Gênesis",
+      "testament": "AT",
+      "chapters": 50,
+      "verses": 1533,
+      "ptVerses": 80,
+      "defaultLang": "he"
+    },
+    {
+      "id": "exo",
+      "name": "Êxodo",
+      "testament": "AT",
+      "chapters": 40,
+      "verses": 1213,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "lev",
+      "name": "Levítico",
+      "testament": "AT",
+      "chapters": 27,
+      "verses": 859,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "num",
+      "name": "Números",
+      "testament": "AT",
+      "chapters": 36,
+      "verses": 1289,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "deu",
+      "name": "Deuteronômio",
+      "testament": "AT",
+      "chapters": 34,
+      "verses": 959,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "jos",
+      "name": "Josué",
+      "testament": "AT",
+      "chapters": 24,
+      "verses": 658,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "jdg",
+      "name": "Juízes",
+      "testament": "AT",
+      "chapters": 21,
+      "verses": 618,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "rut",
+      "name": "Rute",
+      "testament": "AT",
+      "chapters": 4,
+      "verses": 85,
+      "ptVerses": 85,
+      "defaultLang": "he"
+    },
+    {
+      "id": "1sa",
+      "name": "1 Samuel",
+      "testament": "AT",
+      "chapters": 31,
+      "verses": 811,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "2sa",
+      "name": "2 Samuel",
+      "testament": "AT",
+      "chapters": 24,
+      "verses": 695,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "1ki",
+      "name": "1 Reis",
+      "testament": "AT",
+      "chapters": 22,
+      "verses": 817,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "2ki",
+      "name": "2 Reis",
+      "testament": "AT",
+      "chapters": 25,
+      "verses": 719,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "1ch",
+      "name": "1 Crônicas",
+      "testament": "AT",
+      "chapters": 29,
+      "verses": 943,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "2ch",
+      "name": "2 Crônicas",
+      "testament": "AT",
+      "chapters": 36,
+      "verses": 822,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "ezr",
+      "name": "Esdras",
+      "testament": "AT",
+      "chapters": 10,
+      "verses": 280,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "neh",
+      "name": "Neemias",
+      "testament": "AT",
+      "chapters": 13,
+      "verses": 405,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "est",
+      "name": "Ester",
+      "testament": "AT",
+      "chapters": 10,
+      "verses": 167,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "job",
+      "name": "Jó",
+      "testament": "AT",
+      "chapters": 42,
+      "verses": 1070,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "psa",
+      "name": "Salmos",
+      "testament": "AT",
+      "chapters": 150,
+      "verses": 2527,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "pro",
+      "name": "Provérbios",
+      "testament": "AT",
+      "chapters": 31,
+      "verses": 915,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "ecc",
+      "name": "Eclesiastes",
+      "testament": "AT",
+      "chapters": 12,
+      "verses": 222,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "sng",
+      "name": "Cânticos",
+      "testament": "AT",
+      "chapters": 8,
+      "verses": 117,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "isa",
+      "name": "Isaías",
+      "testament": "AT",
+      "chapters": 66,
+      "verses": 1291,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "jer",
+      "name": "Jeremias",
+      "testament": "AT",
+      "chapters": 52,
+      "verses": 1364,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "lam",
+      "name": "Lamentações",
+      "testament": "AT",
+      "chapters": 5,
+      "verses": 154,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "ezk",
+      "name": "Ezequiel",
+      "testament": "AT",
+      "chapters": 48,
+      "verses": 1273,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "dan",
+      "name": "Daniel",
+      "testament": "AT",
+      "chapters": 12,
+      "verses": 357,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "hos",
+      "name": "Oséias",
+      "testament": "AT",
+      "chapters": 14,
+      "verses": 197,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "jol",
+      "name": "Joel",
+      "testament": "AT",
+      "chapters": 3,
+      "verses": 73,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "amo",
+      "name": "Amós",
+      "testament": "AT",
+      "chapters": 9,
+      "verses": 146,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "oba",
+      "name": "Obadias",
+      "testament": "AT",
+      "chapters": 1,
+      "verses": 21,
+      "ptVerses": 21,
+      "defaultLang": "he"
+    },
+    {
+      "id": "jon",
+      "name": "Jonas",
+      "testament": "AT",
+      "chapters": 4,
+      "verses": 48,
+      "ptVerses": 48,
+      "defaultLang": "he"
+    },
+    {
+      "id": "mic",
+      "name": "Miquéias",
+      "testament": "AT",
+      "chapters": 7,
+      "verses": 105,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "nam",
+      "name": "Naum",
+      "testament": "AT",
+      "chapters": 3,
+      "verses": 47,
+      "ptVerses": 47,
+      "defaultLang": "he"
+    },
+    {
+      "id": "hab",
+      "name": "Habacuque",
+      "testament": "AT",
+      "chapters": 3,
+      "verses": 56,
+      "ptVerses": 56,
+      "defaultLang": "he"
+    },
+    {
+      "id": "zep",
+      "name": "Sofonias",
+      "testament": "AT",
+      "chapters": 3,
+      "verses": 53,
+      "ptVerses": 53,
+      "defaultLang": "he"
+    },
+    {
+      "id": "hag",
+      "name": "Ageu",
+      "testament": "AT",
+      "chapters": 2,
+      "verses": 38,
+      "ptVerses": 38,
+      "defaultLang": "he"
+    },
+    {
+      "id": "zec",
+      "name": "Zacarias",
+      "testament": "AT",
+      "chapters": 14,
+      "verses": 211,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "mal",
+      "name": "Malaquias",
+      "testament": "AT",
+      "chapters": 4,
+      "verses": 55,
+      "ptVerses": 0,
+      "defaultLang": "he"
+    },
+    {
+      "id": "mat",
+      "name": "Mateus",
+      "testament": "NT",
+      "chapters": 28,
+      "verses": 1071,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "mrk",
+      "name": "Marcos",
+      "testament": "NT",
+      "chapters": 16,
+      "verses": 678,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "luk",
+      "name": "Lucas",
+      "testament": "NT",
+      "chapters": 24,
+      "verses": 1150,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "jhn",
+      "name": "João",
+      "testament": "NT",
+      "chapters": 21,
+      "verses": 879,
+      "ptVerses": 112,
+      "defaultLang": "el"
+    },
+    {
+      "id": "act",
+      "name": "Atos",
+      "testament": "NT",
+      "chapters": 28,
+      "verses": 1004,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "rom",
+      "name": "Romanos",
+      "testament": "NT",
+      "chapters": 16,
+      "verses": 433,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "1co",
+      "name": "1 Coríntios",
+      "testament": "NT",
+      "chapters": 16,
+      "verses": 437,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "2co",
+      "name": "2 Coríntios",
+      "testament": "NT",
+      "chapters": 13,
+      "verses": 257,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "gal",
+      "name": "Gálatas",
+      "testament": "NT",
+      "chapters": 6,
+      "verses": 149,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "eph",
+      "name": "Efésios",
+      "testament": "NT",
+      "chapters": 6,
+      "verses": 155,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "php",
+      "name": "Filipenses",
+      "testament": "NT",
+      "chapters": 4,
+      "verses": 104,
+      "ptVerses": 104,
+      "defaultLang": "el"
+    },
+    {
+      "id": "col",
+      "name": "Colossenses",
+      "testament": "NT",
+      "chapters": 4,
+      "verses": 95,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "1th",
+      "name": "1 Tessalonicenses",
+      "testament": "NT",
+      "chapters": 5,
+      "verses": 89,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "2th",
+      "name": "2 Tessalonicenses",
+      "testament": "NT",
+      "chapters": 3,
+      "verses": 47,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "1ti",
+      "name": "1 Timóteo",
+      "testament": "NT",
+      "chapters": 6,
+      "verses": 113,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "2ti",
+      "name": "2 Timóteo",
+      "testament": "NT",
+      "chapters": 4,
+      "verses": 83,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "tit",
+      "name": "Tito",
+      "testament": "NT",
+      "chapters": 3,
+      "verses": 46,
+      "ptVerses": 46,
+      "defaultLang": "el"
+    },
+    {
+      "id": "phm",
+      "name": "Filemom",
+      "testament": "NT",
+      "chapters": 1,
+      "verses": 25,
+      "ptVerses": 25,
+      "defaultLang": "el"
+    },
+    {
+      "id": "heb",
+      "name": "Hebreus",
+      "testament": "NT",
+      "chapters": 13,
+      "verses": 303,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "jas",
+      "name": "Tiago",
+      "testament": "NT",
+      "chapters": 5,
+      "verses": 108,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "1pe",
+      "name": "1 Pedro",
+      "testament": "NT",
+      "chapters": 5,
+      "verses": 105,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "2pe",
+      "name": "2 Pedro",
+      "testament": "NT",
+      "chapters": 3,
+      "verses": 61,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "1jn",
+      "name": "1 João",
+      "testament": "NT",
+      "chapters": 5,
+      "verses": 105,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    },
+    {
+      "id": "2jn",
+      "name": "2 João",
+      "testament": "NT",
+      "chapters": 1,
+      "verses": 13,
+      "ptVerses": 13,
+      "defaultLang": "el"
+    },
+    {
+      "id": "3jn",
+      "name": "3 João",
+      "testament": "NT",
+      "chapters": 1,
+      "verses": 14,
+      "ptVerses": 14,
+      "defaultLang": "el"
+    },
+    {
+      "id": "jud",
+      "name": "Judas",
+      "testament": "NT",
+      "chapters": 1,
+      "verses": 25,
+      "ptVerses": 25,
+      "defaultLang": "el"
+    },
+    {
+      "id": "rev",
+      "name": "Apocalipse",
+      "testament": "NT",
+      "chapters": 22,
+      "verses": 404,
+      "ptVerses": 0,
+      "defaultLang": "el"
+    }
+  ],
+  "ptComplete": [
+    "rut",
+    "oba",
+    "jon",
+    "nam",
+    "hab",
+    "zep",
+    "hag",
+    "php",
+    "tit",
+    "phm",
+    "2jn",
+    "3jn",
+    "jud"
+  ],
+  "ptPartial": [
+    "gen",
+    "jhn"
+  ],
+  "ptNone": [
+    "exo",
+    "lev",
+    "num",
+    "deu",
+    "jos",
+    "jdg",
+    "1sa",
+    "2sa",
+    "1ki",
+    "2ki",
+    "1ch",
+    "2ch",
+    "ezr",
+    "neh",
+    "est",
+    "job",
+    "psa",
+    "pro",
+    "ecc",
+    "sng",
+    "isa",
+    "jer",
+    "lam",
+    "ezk",
+    "dan",
+    "hos",
+    "jol",
+    "amo",
+    "mic",
+    "zec",
+    "mal",
+    "mat",
+    "mrk",
+    "luk",
+    "act",
+    "rom",
+    "1co",
+    "2co",
+    "gal",
+    "eph",
+    "col",
+    "1th",
+    "2th",
+    "1ti",
+    "2ti",
+    "heb",
+    "jas",
+    "1pe",
+    "2pe",
+    "1jn",
+    "rev"
+  ]
+}

@@ -57,7 +57,7 @@ export default defineConfig({
         clientsClaim: true,
         skipWaiting: true,
         // Fonts/woff2 from @fontsource can be large; allow up to 5 MiB per entry
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
         runtimeCaching: [
           {
             // Any same-origin request not already precached: cache-first offline

@@ -1,5 +1,10 @@
 import { getBookById } from '../data/books.js';
-import { getVersesForVersion } from '../data/verses.js';
+import {
+  loadVersesForVersion,
+  getChapterNotes,
+  getChapterOriginalLang,
+  originalLangLabel,
+} from '../data/verses.js';
 import { FIXED_PT_VERSION } from '../data/versions.js';
 import { navigate } from '../utils/router.js';
 import {
@@ -19,11 +24,13 @@ import {
   FONT_SCALE_STEP,
 } from '../utils/storage.js';
 
-const TAB_LABELS = {
-  portuguese: 'Português',
-  hebrew: 'Hebraico',
-  transliteration: 'Transliteração',
-};
+function tabLabels(originalLang) {
+  return {
+    portuguese: 'Português',
+    hebrew: originalLangLabel(originalLang),
+    transliteration: 'Transliteração',
+  };
+}
 
 export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = null } = {}) {
   const book = getBookById(bookId);
@@ -52,12 +59,32 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
   let activeVerse = deepLinkNum;
   let pendingDeepLink = deepLinkNum;
 
-  function loadVerses() {
-    verses = getVersesForVersion(book.id, cap, FIXED_PT_VERSION);
+  async function loadVerses() {
+    paintLoading();
+    try {
+      verses = await loadVersesForVersion(book.id, cap, FIXED_PT_VERSION);
+    } catch (err) {
+      console.error(err);
+      verses = [];
+    }
     if (activeVerse == null || !verses.some((v) => v.verse === activeVerse)) {
       activeVerse = verses[0]?.verse ?? null;
     }
     paint();
+  }
+
+  function paintLoading() {
+    root.innerHTML = `
+      <header class="app-header">
+        <button class="btn-icon" type="button" data-back aria-label="Voltar aos capítulos">←</button>
+        <h1>${escapeHtml(book.name)}</h1>
+      </header>
+      <main class="page page--reading">
+        <p class="hint" style="padding:1rem">Carregando capítulo…</p>
+      </main>`;
+    root.querySelector('[data-back]')?.addEventListener('click', () =>
+      navigate(`/livro/${book.id}`)
+    );
   }
 
   const paint = () => {
@@ -68,7 +95,9 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     if (activeVerse === null || !verses.some((v) => v.verse === activeVerse)) {
       activeVerse = firstVerse;
     }
-    const tabsHtml = Object.entries(TAB_LABELS)
+    const chapterLang = getChapterOriginalLang(book.id, cap, verses);
+    const labels = tabLabels(chapterLang);
+    const tabsHtml = Object.entries(labels)
       .map(
         ([key, label]) =>
           `<button type="button" role="tab" data-tab="${key}" aria-selected="${
@@ -76,19 +105,30 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           }" class="${activeTab === key ? 'active' : ''}">${label}</button>`
       )
       .join('');
+    const notes = getChapterNotes(book.id, cap);
 
     let body;
     if (!verses.length) {
       body = `
         <div class="placeholder-chapter">
           <strong>Capítulo em breve</strong>
-          <p>Ainda não há tradução do original em português para ${escapeHtml(
-            book.name
-          )} ${cap}. Hebraico e Transliteração também serão preenchidos quando o capítulo estiver disponível.</p>
+          <p>Ainda não há texto para ${escapeHtml(book.name)} ${cap}.</p>
         </div>`;
     } else {
-      const { className, field, dirNote } = tabConfig(activeTab, verses[0]?.originalLang);
-      const verseOptions = verses
+      const displayVerses =
+        activeTab === 'portuguese'
+          ? verses.filter((v) => (v.portuguese || '').trim())
+          : verses;
+      const { className, field, dirNote } = tabConfig(activeTab, chapterLang);
+      const navVerses = displayVerses.length ? displayVerses : verses;
+      const navFirst = navVerses[0]?.verse ?? null;
+      const navLast = navVerses[navVerses.length - 1]?.verse ?? null;
+      if (activeTab === 'portuguese' && displayVerses.length) {
+        if (activeVerse == null || !displayVerses.some((v) => v.verse === activeVerse)) {
+          activeVerse = displayVerses[0].verse;
+        }
+      }
+      const verseOptions = navVerses
         .map(
           (v) =>
             `<option value="${v.verse}" ${
@@ -96,13 +136,14 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
             }>Versículo ${v.verse}</option>`
         )
         .join('');
-      const verseNavigation = `
+      const verseNavigation = displayVerses.length
+        ? `
         <div class="verse-navigation" aria-label="Navegação de versículos">
           <button
             type="button"
             class="verse-nav-btn"
             data-prev-verse
-            ${activeVerse === firstVerse ? 'disabled' : ''}
+            ${activeVerse === navFirst ? 'disabled' : ''}
             aria-label="Versículo anterior"
           >‹ Anterior</button>
           <label class="verse-jump">
@@ -113,16 +154,24 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
             type="button"
             class="verse-nav-btn"
             data-next-verse
-            ${activeVerse === lastVerse ? 'disabled' : ''}
+            ${activeVerse === navLast ? 'disabled' : ''}
             aria-label="Próximo versículo"
           >Próximo ›</button>
+        </div>`
+        : '';
+      let items;
+      if (activeTab === 'portuguese' && !displayVerses.length) {
+        items = `<div class="placeholder-chapter placeholder-chapter--inline">
+          <strong>Português em breve</strong>
+          <p>O texto em ${escapeHtml(labels.hebrew)} e a Transliteração já estão disponíveis neste capítulo. A tradução direta ao português será preenchida em seguida.</p>
         </div>`;
-      const items = verses
-        .map((v) => {
-          const text = v[field] || '—';
-          const marked = isMarked(book.id, cap, v.verse);
-          const isActive = activeVerse === v.verse;
-          return `
+      } else {
+        items = (displayVerses.length ? displayVerses : verses)
+          .map((v) => {
+            const text = v[field] || '—';
+            const marked = isMarked(book.id, cap, v.verse);
+            const isActive = activeVerse === v.verse;
+            return `
             <span
               class="verse${marked ? ' verse--marked' : ''}${isActive ? ' verse--active' : ''}"
               data-verse="${v.verse}"
@@ -133,10 +182,19 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
               aria-label="Versículo ${v.verse}"
             ><sup class="v-num" aria-hidden="true">${v.verse}</sup><span class="v-text" lang="${langAttr(
               activeTab,
-              v.originalLang
+              v.originalLang || chapterLang
             )}">${escapeHtml(text)}</span></span>`;
-        })
-        .join('');
+          })
+          .join('');
+      }
+      const notesHtml = notes.length
+        ? `<aside class="chapter-notes" aria-label="Notas do capítulo">
+            <h3 class="chapter-notes__title">Notas e observações</h3>
+            <ul class="chapter-notes__list">
+              ${notes.map((n) => `<li>${escapeHtml(n)}</li>`).join('')}
+            </ul>
+          </aside>`
+        : '';
       body = `
         <article class="bible-page ${className}" data-dir="${dirNote}" dir="${
           dirNote === 'rtl' ? 'rtl' : 'ltr'
@@ -148,6 +206,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           <div class="bible-columns">
             <div class="verse-flow" role="list">${items}</div>
           </div>
+          ${notesHtml}
         </article>
         ${verseNavigation}`;
     }
@@ -545,11 +604,11 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
 
 function tabConfig(tab, originalLang) {
   if (tab === 'hebrew') {
-    const isHe = originalLang === 'he';
+    const rtl = originalLang === 'he' || originalLang === 'arc';
     return {
-      className: isHe ? 'lang-he' : 'lang-el',
+      className: originalLang === 'el' ? 'lang-el' : originalLang === 'arc' ? 'lang-arc' : 'lang-he',
       field: 'original',
-      dirNote: isHe ? 'rtl' : 'ltr',
+      dirNote: rtl ? 'rtl' : 'ltr',
     };
   }
   if (tab === 'transliteration') {
@@ -559,7 +618,11 @@ function tabConfig(tab, originalLang) {
 }
 
 function langAttr(tab, originalLang) {
-  if (tab === 'hebrew') return originalLang === 'he' ? 'he' : 'el';
+  if (tab === 'hebrew') {
+    if (originalLang === 'el') return 'el';
+    if (originalLang === 'arc') return 'arc';
+    return 'he';
+  }
   if (tab === 'transliteration') return 'la';
   return 'pt';
 }
