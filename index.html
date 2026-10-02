@@ -33,7 +33,10 @@
         text-align: center;
         width: 100%;
         max-width: 48rem;
-        padding: 1.5rem clamp(1rem, 5vw, 3rem);
+        padding-top: max(1.5rem, calc(env(safe-area-inset-top, 0px) + 1rem));
+        padding-bottom: max(1.5rem, calc(env(safe-area-inset-bottom, 0px) + 1rem));
+        padding-left: max(clamp(1rem, 5vw, 3rem), env(safe-area-inset-left, 0px));
+        padding-right: max(clamp(1rem, 5vw, 3rem), env(safe-area-inset-right, 0px));
       }
       #splash .splash__mark {
         color: #ffc107;
