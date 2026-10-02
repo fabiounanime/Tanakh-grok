@@ -6,7 +6,7 @@
       "testament": "AT",
       "chapters": 50,
       "verses": 1533,
-      "ptVerses": 874,
+      "ptVerses": 1041,
       "defaultLang": "he"
     },
     {
@@ -384,7 +384,7 @@
       "testament": "NT",
       "chapters": 21,
       "verses": 879,
-      "ptVerses": 396,
+      "ptVerses": 479,
       "defaultLang": "el"
     },
     {
