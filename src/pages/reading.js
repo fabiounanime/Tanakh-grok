@@ -68,7 +68,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     const meta = getPtVersionMeta(versionId);
     ptVersion = versionId;
 
-    if (meta?.source === 'bible-api') {
+    if (meta?.source === 'bible-api' || meta?.source === 'abiblia-digital') {
       loadState = 'loading';
       loadError = '';
       paint();
@@ -129,7 +129,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           <strong>Carregando…</strong>
           <p>Buscando ${escapeHtml(currentPtVersionMeta().label)} · ${escapeHtml(
             book.name
-          )} ${cap} (bible-api.com). Após o primeiro carregamento, o capítulo fica disponível offline.</p>
+          )} ${cap}. Após o primeiro carregamento, o capítulo fica disponível offline.</p>
         </div>`;
     } else if (loadState === 'error') {
       body = `
@@ -145,7 +145,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           <strong>Capítulo em breve</strong>
           <p>Ainda não há texto de demonstração para ${escapeHtml(
             book.name
-          )} ${cap}. Selecione <strong>João Ferreira de Almeida</strong> na versão em português para carregar via bible-api.com.</p>
+          )} ${cap}. Selecione <strong>João Ferreira de Almeida</strong>, <strong>ACF</strong>, <strong>RA</strong> ou <strong>NVI</strong> na versão em português para carregar pela API.</p>
         </div>`;
     } else {
       const { className, field, dirNote } = tabConfig(activeTab, verses[0]?.originalLang);

@@ -2,22 +2,23 @@
  * Portuguese Bible version catalog.
  *
  * Shipped texts: only public-domain or clearly labeled demo.
- * Licensed editions (NVI, NVT, ARC/ACF current) are never embedded.
- * Public-domain Almeida is fetchable via bible-api.com (no key).
- * HelioGiroto/Biblia-ARC ships ACF under MIT for the *software* only —
- * the ACF text remains copyrighted; we do not bundle it (see README).
- * Licensed API editions become selectable only with VITE_BIBLE_API_* config.
+ * Public-domain Almeida: bible-api.com (no key).
+ * ACF / RA / NVI: fetched on demand from ABíbliaDigital (not embedded).
+ * Optional Bearer: VITE_ABIBLIA_TOKEN (20 req/hr/IP without token).
+ * NVT / ARC atual remain licensed stubs (VITE_BIBLE_API_*).
+ * HelioGiroto/Biblia-ARC MIT covers software only — we never bundle ACF text.
  */
 
-/** @typedef {'local'|'bible-api'|'api'} PtVersionSource */
+/** @typedef {'local'|'bible-api'|'abiblia-digital'|'api'} PtVersionSource */
 /**
  * @typedef {object} PtVersion
  * @property {string} id
  * @property {string} label
  * @property {string} shortLabel
- * @property {'demo'|'public-domain'|'licensed'} license
- * @property {PtVersionSource} source  local bundle | bible-api.com | licensed API
+ * @property {'demo'|'public-domain'|'api-fetch'|'licensed'} license
+ * @property {PtVersionSource} source  local | bible-api.com | ABíbliaDigital | licensed API
  * @property {string} [apiTranslation]  bible-api.com translation id (e.g. almeida)
+ * @property {string} [abibliaVersion]  ABíbliaDigital version id (acf, ra, nvi)
  * @property {string} [apiBibleId]  provider bible id when source==='api'
  * @property {string} note
  */
@@ -50,13 +51,31 @@ export const PT_VERSIONS = [
     note: 'via bible-api.com · domínio público (sem chave)',
   },
   {
+    id: 'acf',
+    label: 'ACF (Almeida Corrigida Fiel)',
+    shortLabel: 'ACF',
+    license: 'api-fetch',
+    source: 'abiblia-digital',
+    abibliaVersion: 'acf',
+    note: 'via ABíbliaDigital · GET /verses/acf/… (sem scraping; token opcional)',
+  },
+  {
+    id: 'ra',
+    label: 'RA (Almeida Revista e Atualizada)',
+    shortLabel: 'RA',
+    license: 'api-fetch',
+    source: 'abiblia-digital',
+    abibliaVersion: 'ra',
+    note: 'via ABíbliaDigital · GET /verses/ra/… (sem scraping; token opcional)',
+  },
+  {
     id: 'nvi',
     label: 'NVI',
     shortLabel: 'NVI',
-    license: 'licensed',
-    source: 'api',
-    apiBibleId: '', // set via VITE_BIBLE_API_* mapping when licensed
-    note: 'Requer licença / API',
+    license: 'api-fetch',
+    source: 'abiblia-digital',
+    abibliaVersion: 'nvi',
+    note: 'via ABíbliaDigital · GET /verses/nvi/… (listada na API; token opcional)',
   },
   {
     id: 'nvt',
@@ -90,7 +109,7 @@ export function listPtVersions(apiReady) {
     if (v.source === 'local') {
       return { ...v, available: true, statusNote: v.note };
     }
-    if (v.source === 'bible-api') {
+    if (v.source === 'bible-api' || v.source === 'abiblia-digital') {
       return { ...v, available: true, statusNote: v.note };
     }
     const ready = typeof apiReady === 'function' ? apiReady(v) : false;

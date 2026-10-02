@@ -2,7 +2,7 @@
 
 App web de leitura bíblica (Antigo + Novo Testamento), tema escuro com acentos dourados, com abas sincronizadas:
 
-- **Português** — seletor de versão (Demo + Almeida 1911 local; João Ferreira de Almeida via bible-api.com; NVI/NVT/ARC via API licenciada)
+- **Português** — seletor de versão (Demo + Almeida 1911 local; Almeida via bible-api.com; ACF/RA/NVI via ABíbliaDigital; NVT/ARC via API licenciada)
 - **Hebraico** — texto hebraico / aramaico / grego conforme o livro
 - **Transliteração** — leitura fonética (LTR)
 
@@ -114,21 +114,45 @@ A escolha é persistida em `localStorage` (`biblia-tanakh:ptVersion`).
 
 Na aba **Português**, com esta versão selecionada, a leitura busca o capítulo pela API parametrizada (`/data/almeida/{BOOK}/{CHAPTER}`). Respostas são cacheadas em **memória + `localStorage`** (`biblia-tanakh:bibleApi:…`) para reuso offline após o primeiro fetch. Implementação: `src/utils/bibleApi.js`.
 
-### Licenciadas via API (NVI / NVT / ARC atual)
+### ACF / RA / NVI via ABíbliaDigital (token opcional)
 
-**Não** embutimos NVI, NVT nem edições ARC/ACF atuais — exigem licença do detentor dos direitos. A UI lista essas opções como *Requer licença / API* até existir configuração.
+| Id | Rótulo | Fonte |
+|----|--------|-------|
+| `acf` | ACF (Almeida Corrigida Fiel) | [ABíbliaDigital](https://www.abibliadigital.com.br/api) `GET /verses/acf/{abbrev}/{chapter}` |
+| `ra` | RA (Almeida Revista e Atualizada) | `GET /verses/ra/{abbrev}/{chapter}` |
+| `nvi` | NVI | `GET /verses/nvi/{abbrev}/{chapter}` (listada na API) |
 
-**Sobre [HelioGiroto/Biblia-ARC](https://github.com/HelioGiroto/Biblia-ARC):** o repositório tem LICENSE MIT para o *software* do autor, mas o README identifica o texto como **ACF (Almeida Corrigida Fiel)** — tradução moderna com direitos autorais (não domínio público). O MIT do wrapper **não** autoriza redistribuir o texto bíblico; por isso **não** embarcamos ARC/ACF a partir desse repo. ARC permanece atrás de API licenciada.
+- **Sem scraping** — só endpoints REST documentados.
+- **Token opcional:** `VITE_ABIBLIA_TOKEN` (ou `VITE_ABIBLIA_DIGITAL_TOKEN`) no `.env` / Cloudflare Pages. Sem token: limite de **20 req/h/IP**; com Bearer JWT: ilimitado (grátis). Crie usuário em `POST /api/users`.
+- **Cache:** mesmo esquema de bible-api.com (memória + `localStorage`, chave `abiblia:{version}:…`).
+- **Abreviações:** mapeamento em `src/data/books.js` (`toAbibliaAbbrev`, ex.: `gen`→`gn`, `jhn`→`jo`).
+- **Nota de disponibilidade:** o mantenedor anunciou desativação do site/API a partir de 01/08/2026; se o host estiver fora, o app usa cache local após o primeiro fetch bem-sucedido e exibe erro claro quando não houver cache.
 
-Integração prevista para NVI/NVT/ARC (stub em `src/utils/bibleApi.js`):
+#### Token no Cloudflare Pages
+
+1. Dashboard → seu projeto Pages → **Settings** → **Environment variables**.
+2. Adicione `VITE_ABIBLIA_TOKEN` = seu JWT (Production; também Preview se quiser).
+3. **Save** e dispare um novo deploy (Vite só lê `VITE_*` no *build*).
+
+### Licenciadas via API (NVT / ARC atual)
+
+**Não** embutimos NVT nem edições ARC atuais — exigem licença do detentor dos direitos. A UI lista essas opções como *Requer licença / API* até existir configuração. NVI no seletor usa ABíbliaDigital (acima); o stub `VITE_BIBLE_API_BIBLE_NVI` permanece para provedores licenciados alternativos.
+
+**Sobre [HelioGiroto/Biblia-ARC](https://github.com/HelioGiroto/Biblia-ARC):** o repositório tem LICENSE MIT para o *software* do autor, mas o README identifica o texto como **ACF** — tradução moderna com direitos autorais. O MIT do wrapper **não** autoriza redistribuir o texto bíblico; por isso **não** embarcamos ARC/ACF a partir desse repo.
+
+Integração prevista para NVT/ARC (stub em `src/utils/bibleApi.js`):
 
 1. Obtenha chave e direitos em [api.Bible](https://scripture.api.bible/) (American Bible Society) ou [Digital Bible Platform](https://4.dbt.io/) (FCBH).
 2. Copie `.env.example` → `.env` e preencha:
    - `VITE_BIBLE_API_ENABLED=true`
    - `VITE_BIBLE_API_PROVIDER=api.bible` (ou `dbp`)
    - `VITE_BIBLE_API_KEY=…`
-   - `VITE_BIBLE_API_BIBLE_NVI` / `_NVT` / `_ARC` = ids da bíblia no provedor
+   - `VITE_BIBLE_API_BIBLE_NVT` / `_ARC` = ids da bíblia no provedor
 3. Com flag + chave + id mapeado, a opção correspondente fica **selecionável**. O fetch real ainda é um stub — ligue o adapter do provedor em `bibleApi.js` (sem scraping).
 
-Catálogo e fontes: `src/data/versions.js` (`source: 'local' | 'bible-api' | 'api'`).
+### Outro provedor (opcional, não ligado)
+
+[MaatheusGois/bible](https://github.com/maatheusgois/bible) (Postman: [documentação](https://documenter.getpostman.com/view/11242574/2sA3Qy7VeH)) expõe JSON no GitHub raw (`versions/pt-br/{aa|acf|nvi|arc|kja}/…`), inclusive versículo a versículo. Útil como fallback se ABíbliaDigital estiver indisponível, mas **não** está integrado no app (abbrev ids diferem, ex. `jud`/`ps` vs `jz`/`sl`; capítulo exige N requests por versículo ou baixar o JSON completo da versão). Pode ser um provider opcional futuro em `bibleApi.js`.
+
+Catálogo e fontes: `src/data/versions.js` (`source: 'local' | 'bible-api' | 'abiblia-digital' | 'api'`).
 

@@ -80,3 +80,83 @@ export function getBookById(id) {
 export function getBooksByTestament(testament) {
   return books.filter((b) => b.testament === testament);
 }
+
+/**
+ * Map app book ids → ABíbliaDigital Portuguese abbreviations
+ * (GET /verses/{version}/{abbrev}/{chapter}).
+ * @see https://www.abibliadigital.com.br/api
+ */
+const ABIBLIA_ABBREV = {
+  gen: 'gn',
+  exo: 'ex',
+  lev: 'lv',
+  num: 'nm',
+  deu: 'dt',
+  jos: 'js',
+  jdg: 'jz',
+  rut: 'rt',
+  '1sa': '1sm',
+  '2sa': '2sm',
+  '1ki': '1rs',
+  '2ki': '2rs',
+  '1ch': '1cr',
+  '2ch': '2cr',
+  ezr: 'ed',
+  neh: 'ne',
+  est: 'et',
+  job: 'jó',
+  psa: 'sl',
+  pro: 'pv',
+  ecc: 'ec',
+  sng: 'ct',
+  isa: 'is',
+  jer: 'jr',
+  lam: 'lm',
+  ezk: 'ez',
+  dan: 'dn',
+  hos: 'os',
+  jol: 'jl',
+  amo: 'am',
+  oba: 'ob',
+  jon: 'jn',
+  mic: 'mq',
+  nam: 'na',
+  hab: 'hc',
+  zep: 'sf',
+  hag: 'ag',
+  zec: 'zc',
+  mal: 'ml',
+  mat: 'mt',
+  mrk: 'mc',
+  luk: 'lc',
+  jhn: 'jo',
+  act: 'at',
+  rom: 'rm',
+  '1co': '1co',
+  '2co': '2co',
+  gal: 'gl',
+  eph: 'ef',
+  php: 'fp',
+  col: 'cl',
+  '1th': '1ts',
+  '2th': '2ts',
+  '1ti': '1tm',
+  '2ti': '2tm',
+  tit: 'tt',
+  phm: 'fm',
+  heb: 'hb',
+  jas: 'tg',
+  '1pe': '1pe',
+  '2pe': '2pe',
+  '1jn': '1jo',
+  '2jn': '2jo',
+  '3jn': '3jo',
+  jud: 'jd',
+  rev: 'ap',
+};
+
+/** @returns {string|null} ABíbliaDigital pt abbrev, or null if unknown */
+export function toAbibliaAbbrev(bookId) {
+  const id = String(bookId || '').trim().toLowerCase();
+  return ABIBLIA_ABBREV[id] || null;
+}

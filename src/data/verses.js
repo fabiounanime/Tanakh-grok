@@ -416,5 +416,6 @@ export function mergeApiChapterVerses(bookId, chapter, apiVerses, versionId, opt
 
 /** True when the PT version must be loaded via network/cache (not local bundle). */
 export function isRemotePtVersion(versionId) {
-  return versionId === 'almeida';
+  const id = String(versionId || '');
+  return id === 'almeida' || id === 'acf' || id === 'ra' || id === 'nvi';
 }
