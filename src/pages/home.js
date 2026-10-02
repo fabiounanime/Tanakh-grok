@@ -75,7 +75,9 @@ export function renderHome(root) {
   root.innerHTML = `
     <main class="page page--home">
       <section class="greeting">
-        <h1>Olá, <span class="greeting__name">Fabio</span></h1>
+        <div class="greeting__bar">
+          <h1 class="greeting__brand">Bíblia Origens</h1>
+        </div>
         <p class="greeting__sub">Prepare seu coração. Deus usa o que você prepara.</p>
       </section>
 

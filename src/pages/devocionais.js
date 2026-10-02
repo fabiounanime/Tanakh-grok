@@ -43,25 +43,26 @@ export function renderDevocionais(root) {
         )
         .join('')
     : `
-    <div class="placeholder-page">
-      <div class="big-ico" aria-hidden="true">✝</div>
-      <h2>Nenhuma devocional ainda</h2>
-      <p>Crie uma reflexão e associe versículos marcados da Bíblia.</p>
-    </div>`;
+    <button type="button" class="devo-empty" data-nova>
+      <span class="devo-empty__plus" aria-hidden="true">+</span>
+      <span class="devo-empty__label">Criar devocional</span>
+    </button>`;
 
   root.innerHTML = `
     <header class="app-header">
       <h1>Minhas Devocionais</h1>
-      <button class="btn-gold btn-gold--sm" type="button" data-nova>Nova</button>
     </header>
     <main class="page page--devo">
+      <button type="button" class="devo-add" data-nova aria-label="Nova devocional">
+        <span aria-hidden="true">+</span>
+      </button>
       <div class="devo-list">${cards}</div>
     </main>
   `;
 
-  root.querySelector('[data-nova]')?.addEventListener('click', () =>
-    navigate('/devocionais/nova')
-  );
+  root.querySelectorAll('[data-nova]').forEach((btn) => {
+    btn.addEventListener('click', () => navigate('/devocionais/nova'));
+  });
 }
 
 export function renderDevocionalEdit(root, { id, isNew }) {

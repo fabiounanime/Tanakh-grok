@@ -97,6 +97,43 @@ export function applyFontScale(scale = getFontScale()) {
 }
 
 
+const THEME_KEY = 'biblia-tanakh:theme';
+
+/** Persisted appearance. Dark is the default (current look). */
+export function getTheme() {
+  try {
+    return localStorage.getItem(THEME_KEY) === 'light' ? 'light' : 'dark';
+  } catch {
+    return 'dark';
+  }
+}
+
+export function applyTheme(theme = getTheme()) {
+  const next = theme === 'light' ? 'light' : 'dark';
+  if (typeof document === 'undefined') return next;
+  document.documentElement.setAttribute('data-theme', next);
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute('content', next === 'light' ? '#f7f4ec' : '#050505');
+  const apple = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
+  if (apple) apple.setAttribute('content', next === 'light' ? 'default' : 'black-translucent');
+  return next;
+}
+
+export function setTheme(theme) {
+  const next = theme === 'light' ? 'light' : 'dark';
+  try {
+    localStorage.setItem(THEME_KEY, next);
+  } catch {
+    /* ignore quota */
+  }
+  return applyTheme(next);
+}
+
+export function toggleTheme() {
+  return setTheme(getTheme() === 'light' ? 'dark' : 'light');
+}
+
+
 export function verseKey(bookId, chapter, verse) {
   return `${bookId}:${chapter}:${verse}`;
 }

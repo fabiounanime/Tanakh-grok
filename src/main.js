@@ -20,19 +20,21 @@ import { renderBook } from './pages/book.js';
 import { renderReading } from './pages/reading.js';
 import { renderFavorites } from './pages/favorites.js';
 import { renderDevocionais, renderDevocionalEdit } from './pages/devocionais.js';
-import { applyFontScale } from './utils/storage.js';
+import { applyFontScale, applyTheme } from './utils/storage.js';
+import { mountChrome } from './components/chrome.js';
 
 const app = document.getElementById('app');
 
 registerSW({ immediate: true });
 
 applyFontScale();
+applyTheme();
 
 const ICO = {
   biblia: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5c4-2 8-2 8 0v14c0-2 4-2 8 0V5c-4-2-8-2-8 0"/><path d="M12 5v14"/></svg>`,
-  devocionais: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 4h9a2 2 0 0 1 2 2v14l-5-3-5 3V6a2 2 0 0 1 2-2z"/><path d="M9 8h5M9 11h5"/></svg>`,
+  devocionais: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-1.7-1.6-4-2.4-7.2-2.4H3.5v14.4h1.4c3.1 0 5.3.7 7.1 2.1"/><path d="M12 6c1.7-1.6 4-2.4 7.2-2.4h1.3v14.4h-1.4c-3.1 0-5.3.7-7.1 2.1"/><path d="M12 6v14"/></svg>`,
   home: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 11.5 12 4l8 7.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-8.5z"/></svg>`,
-  marcacoes: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"/><path d="M9 8h6M9 11h4"/></svg>`,
+  marcacoes: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h6.2a1 1 0 0 1 1 1V11"/><path d="M6.5 3.5h-.8a1 1 0 0 0-1 1V20.2l4.8-2.5 4.7 2.5V13.2"/><path d="m13.4 13.6 5.8-5.8a1.15 1.15 0 0 0 0-1.62l-.55-.55a1.15 1.15 0 0 0-1.62 0l-5.8 5.8V14.4h2.17z"/></svg>`,
 };
 
 function ensureShell() {
@@ -59,6 +61,7 @@ function ensureShell() {
       </a>
     </nav>
   `;
+  mountChrome(app);
 }
 
 function setActiveNav(routeName) {
