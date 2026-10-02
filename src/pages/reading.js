@@ -36,10 +36,16 @@ export function renderReading(root, { bookId, chapter }) {
   const verses = getVerses(book.id, cap);
   let activeTab = getSavedTab();
   let sheetVerse = null;
+  let activeVerse = verses[0]?.verse ?? null;
 
   const paint = () => {
     const prevDisabled = cap <= 1;
     const nextDisabled = cap >= book.chapters;
+    const firstVerse = verses[0]?.verse ?? null;
+    const lastVerse = verses[verses.length - 1]?.verse ?? null;
+    if (activeVerse === null || !verses.some((v) => v.verse === activeVerse)) {
+      activeVerse = firstVerse;
+    }
     const tabsHtml = Object.entries(TAB_LABELS)
       .map(
         ([key, label]) =>
@@ -60,6 +66,35 @@ export function renderReading(root, { bookId, chapter }) {
         </div>`;
     } else {
       const { className, field, dirNote } = tabConfig(activeTab, verses[0]?.originalLang);
+      const verseOptions = verses
+        .map(
+          (v) =>
+            `<option value="${v.verse}" ${
+              activeVerse === v.verse ? 'selected' : ''
+            }>Versículo ${v.verse}</option>`
+        )
+        .join('');
+      const verseNavigation = `
+        <div class="verse-navigation" aria-label="Navegação de versículos">
+          <button
+            type="button"
+            class="verse-nav-btn"
+            data-prev-verse
+            ${activeVerse === firstVerse ? 'disabled' : ''}
+            aria-label="Versículo anterior"
+          >‹ Anterior</button>
+          <label class="verse-jump">
+            <span>Ir para</span>
+            <select data-verse-jump aria-label="Ir para versículo">${verseOptions}</select>
+          </label>
+          <button
+            type="button"
+            class="verse-nav-btn"
+            data-next-verse
+            ${activeVerse === lastVerse ? 'disabled' : ''}
+            aria-label="Próximo versículo"
+          >Próximo ›</button>
+        </div>`;
       const items = verses
         .map((v) => {
           const text = v[field] || '—';
@@ -70,13 +105,14 @@ export function renderReading(root, { bookId, chapter }) {
               data-verse="${v.verse}"
               role="button"
               tabindex="0"
+              aria-posinset="${v.verse}"
               aria-label="Versículo ${v.verse}"
             ><sup class="v-num" aria-hidden="true">${v.verse}</sup><span class="v-text" lang="${langAttr(
               activeTab,
               v.originalLang
             )}">${escapeHtml(text)}</span></span>`;
         })
-        .join(' ');
+        .join('');
       body = `
         <article class="bible-page ${className}" data-dir="${dirNote}" dir="${
           dirNote === 'rtl' ? 'rtl' : 'ltr'
@@ -86,9 +122,10 @@ export function renderReading(root, { bookId, chapter }) {
             <span class="chapter-heading__num">${cap}</span>
           </h2>
           <div class="bible-columns">
-            <p class="verse-flow">${items}</p>
+            <div class="verse-flow" role="list">${items}</div>
           </div>
         </article>
+        ${verseNavigation}
         <p class="demo-footer">
           Texto português de exemplo (placeholder literal / estilo domínio público) — não é uma edição comercial publicada. Original hebraico/grego clássico de demonstração.
         </p>`;
@@ -173,6 +210,17 @@ export function renderReading(root, { bookId, chapter }) {
     root.querySelector('[data-next]')?.addEventListener('click', () => {
       if (cap < book.chapters) navigate(`/ler/${book.id}/${cap + 1}`);
     });
+    root.querySelector('[data-prev-verse]')?.addEventListener('click', () => {
+      const index = verses.findIndex((v) => v.verse === activeVerse);
+      if (index > 0) focusVerse(verses[index - 1].verse);
+    });
+    root.querySelector('[data-next-verse]')?.addEventListener('click', () => {
+      const index = verses.findIndex((v) => v.verse === activeVerse);
+      if (index >= 0 && index < verses.length - 1) focusVerse(verses[index + 1].verse);
+    });
+    root.querySelector('[data-verse-jump]')?.addEventListener('change', (e) => {
+      focusVerse(Number(e.target.value));
+    });
     root.querySelectorAll('[data-tab]').forEach((btn) => {
       btn.addEventListener('click', () => {
         activeTab = btn.getAttribute('data-tab');
@@ -182,7 +230,11 @@ export function renderReading(root, { bookId, chapter }) {
     });
 
     root.querySelectorAll('.verse[data-verse]').forEach((el) => {
-      const open = () => openVerseSheet(Number(el.getAttribute('data-verse')));
+      const open = () => {
+        activeVerse = Number(el.getAttribute('data-verse'));
+        syncVerseNavigation();
+        openVerseSheet(activeVerse);
+      };
       el.addEventListener('click', open);
       el.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
@@ -197,6 +249,25 @@ export function renderReading(root, { bookId, chapter }) {
       // keep sheet closed after full paint; sheetVerse only for action context
     }
   };
+
+  function focusVerse(verseNum) {
+    if (!verses.some((v) => v.verse === verseNum)) return;
+    activeVerse = verseNum;
+    const target = root.querySelector(`[data-verse="${verseNum}"]`);
+    const jump = root.querySelector('[data-verse-jump]');
+    if (jump) jump.value = String(verseNum);
+    syncVerseNavigation();
+    target?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    target?.focus({ preventScroll: true });
+  }
+
+  function syncVerseNavigation() {
+    const index = verses.findIndex((v) => v.verse === activeVerse);
+    const prev = root.querySelector('[data-prev-verse]');
+    const next = root.querySelector('[data-next-verse]');
+    if (prev) prev.disabled = index <= 0;
+    if (next) next.disabled = index < 0 || index >= verses.length - 1;
+  }
 
   function showToast(msg) {
     const toast = root.querySelector('#reading-toast');
