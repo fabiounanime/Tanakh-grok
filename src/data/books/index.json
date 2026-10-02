@@ -177,7 +177,7 @@
       "testament": "AT",
       "chapters": 31,
       "verses": 915,
-      "ptVerses": 0,
+      "ptVerses": 915,
       "defaultLang": "he"
     },
     {
@@ -609,6 +609,7 @@
     "ezr",
     "neh",
     "est",
+    "pro",
     "ecc",
     "sng",
     "lam",
@@ -660,7 +661,6 @@
     "1ch",
     "job",
     "psa",
-    "pro",
     "isa",
     "jer",
     "ezk",
