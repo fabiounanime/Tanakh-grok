@@ -168,7 +168,7 @@
       "testament": "AT",
       "chapters": 150,
       "verses": 2527,
-      "ptVerses": 0,
+      "ptVerses": 2527,
       "defaultLang": "he"
     },
     {
@@ -213,7 +213,7 @@
       "testament": "AT",
       "chapters": 52,
       "verses": 1364,
-      "ptVerses": 0,
+      "ptVerses": 1364,
       "defaultLang": "he"
     },
     {
@@ -614,10 +614,12 @@
     "neh",
     "est",
     "job",
+    "psa",
     "pro",
     "ecc",
     "sng",
     "isa",
+    "jer",
     "lam",
     "ezk",
     "dan",
@@ -662,8 +664,5 @@
     "rev"
   ],
   "ptPartial": [],
-  "ptNone": [
-    "psa",
-    "jer"
-  ]
+  "ptNone": []
 }
