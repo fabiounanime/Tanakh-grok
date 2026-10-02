@@ -159,7 +159,7 @@
       "testament": "AT",
       "chapters": 42,
       "verses": 1070,
-      "ptVerses": 486,
+      "ptVerses": 1070,
       "defaultLang": "he"
     },
     {
@@ -611,6 +611,7 @@
     "ezr",
     "neh",
     "est",
+    "job",
     "pro",
     "ecc",
     "sng",
@@ -655,9 +656,7 @@
     "jud",
     "rev"
   ],
-  "ptPartial": [
-    "job"
-  ],
+  "ptPartial": [],
   "ptNone": [
     "exo",
     "num",
