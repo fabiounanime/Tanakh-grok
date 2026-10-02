@@ -42,7 +42,7 @@ function ensureSplash() {
   el.setAttribute('aria-label', 'Bíblia Origens');
   el.innerHTML = `
     <div class="splash__inner">
-      <span class="splash__mark" aria-hidden="true">✦</span>
+      <img class="splash__logo" src="/logo.png" alt="" width="1024" height="1024" />
       <p class="splash__title">Bíblia Origens</p>
       <p class="splash__slogan">${SLOGAN.split('\n').map((line) => `<span class="splash__slogan-line">${line}</span>`).join('')}</p>
       <div class="splash__spinner" role="status" aria-label="Carregando">

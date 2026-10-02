@@ -12,10 +12,13 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: [
+        'logo.jpg',
+        'logo.png',
         'favicon-32x32.png',
         'apple-touch-icon.png',
         'pwa-192x192.png',
         'pwa-512x512.png',
+        'pwa-512-maskable.png',
       ],
       manifest: {
         name: 'Bíblia Origens',
@@ -41,7 +44,7 @@ export default defineConfig({
             type: 'image/png',
           },
           {
-            src: 'pwa-512x512.png',
+            src: 'pwa-512-maskable.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable',
@@ -50,7 +53,7 @@ export default defineConfig({
       },
       workbox: {
         // Offline-first: precache entire build (shell + JS data + CSS + fonts + icons)
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,woff,woff2,webp,json,webmanifest}'],
+        globPatterns: ['**/*.{js,css,html,ico,jpg,jpeg,png,svg,woff,woff2,webp,json,webmanifest}'],
         navigateFallback: 'index.html',
         navigateFallbackDenylist: [/^\/api\//],
         cleanupOutdatedCaches: true,

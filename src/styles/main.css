@@ -1870,11 +1870,15 @@ main.page.page--home {
   padding-right: max(clamp(1rem, 5vw, 3rem), var(--safe-r));
 }
 
-.splash__mark {
-  color: var(--accent);
-  font-size: 1.75rem;
-  line-height: 1;
-  margin-bottom: 0.85rem;
+.splash__logo {
+  display: block;
+  width: clamp(6.5rem, 28vw, 10rem);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  margin-bottom: 1.1rem;
+  border-radius: 22%;
+  box-shadow: 0 0 2.5rem rgba(39, 147, 224, 0.2);
 }
 
 .splash__title {
@@ -1936,7 +1940,7 @@ main.page.page--home {
 }
 
 /* Entrance: title then slogan (fill-mode both hides during delay) */
-.splash--play .splash__mark {
+.splash--play .splash__logo {
   animation: splash-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both;
 }
 
@@ -1948,7 +1952,7 @@ main.page.page--home {
   animation: splash-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.85s both;
 }
 
-.splash--reduced .splash__mark,
+.splash--reduced .splash__logo,
 .splash--reduced .splash__title,
 .splash--reduced .splash__slogan,
 .splash--reduced .splash__spinner svg {
@@ -1973,7 +1977,7 @@ main.page.page--home {
     transition-duration: 0.2s;
   }
 
-  .splash--play .splash__mark,
+  .splash--play .splash__logo,
   .splash--play .splash__title,
   .splash--play .splash__slogan {
     animation: none;
