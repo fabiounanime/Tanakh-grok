@@ -420,7 +420,7 @@
       "testament": "NT",
       "chapters": 13,
       "verses": 257,
-      "ptVerses": 0,
+      "ptVerses": 257,
       "defaultLang": "el"
     },
     {
@@ -616,6 +616,7 @@
     "mal",
     "mrk",
     "jhn",
+    "2co",
     "gal",
     "eph",
     "php",
@@ -663,7 +664,6 @@
     "act",
     "rom",
     "1co",
-    "2co",
     "rev"
   ]
 }
