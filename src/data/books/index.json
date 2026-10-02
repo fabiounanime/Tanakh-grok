@@ -591,7 +591,7 @@
       "testament": "NT",
       "chapters": 22,
       "verses": 404,
-      "ptVerses": 0,
+      "ptVerses": 404,
       "defaultLang": "el"
     }
   ],
@@ -638,7 +638,8 @@
     "1jn",
     "2jn",
     "3jn",
-    "jud"
+    "jud",
+    "rev"
   ],
   "ptPartial": [],
   "ptNone": [
@@ -663,7 +664,6 @@
     "mat",
     "luk",
     "act",
-    "1co",
-    "rev"
+    "1co"
   ]
 }
