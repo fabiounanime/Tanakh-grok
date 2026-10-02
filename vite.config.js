@@ -18,10 +18,10 @@ export default defineConfig({
         'pwa-512x512.png',
       ],
       manifest: {
-        name: 'Bíblia Tanakh',
-        short_name: 'Tanakh',
+        name: 'Bíblia Origens',
+        short_name: 'Origens',
         description:
-          'Bíblia / Tanakh — leitura com texto original, transliteração e português',
+          'Sua fé, direto da fonte — leitura com texto original, transliteração e português',
         theme_color: '#050505',
         background_color: '#050505',
         display: 'standalone',

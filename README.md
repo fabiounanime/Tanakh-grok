@@ -1,4 +1,6 @@
-# Bíblia / Tanakh
+# Bíblia Origens
+
+Sua fé, direto da fonte.
 
 App web de leitura bíblica (Antigo + Novo Testamento), tema escuro com acentos dourados, com abas sincronizadas:
 
