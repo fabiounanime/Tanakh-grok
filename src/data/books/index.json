@@ -6,7 +6,7 @@
       "testament": "AT",
       "chapters": 50,
       "verses": 1533,
-      "ptVerses": 796,
+      "ptVerses": 874,
       "defaultLang": "he"
     },
     {
@@ -339,7 +339,7 @@
       "testament": "AT",
       "chapters": 14,
       "verses": 211,
-      "ptVerses": 0,
+      "ptVerses": 211,
       "defaultLang": "he"
     },
     {
@@ -384,7 +384,7 @@
       "testament": "NT",
       "chapters": 21,
       "verses": 879,
-      "ptVerses": 337,
+      "ptVerses": 396,
       "defaultLang": "el"
     },
     {
@@ -610,6 +610,7 @@
     "hab",
     "zep",
     "hag",
+    "zec",
     "mal",
     "gal",
     "eph",
@@ -656,7 +657,6 @@
     "ezk",
     "dan",
     "hos",
-    "zec",
     "mat",
     "mrk",
     "luk",
