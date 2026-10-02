@@ -114,7 +114,7 @@
       "testament": "AT",
       "chapters": 29,
       "verses": 943,
-      "ptVerses": 0,
+      "ptVerses": 943,
       "defaultLang": "he"
     },
     {
@@ -605,6 +605,7 @@
     "2sa",
     "1ki",
     "2ki",
+    "1ch",
     "2ch",
     "ezr",
     "neh",
@@ -658,7 +659,6 @@
     "exo",
     "num",
     "deu",
-    "1ch",
     "job",
     "psa",
     "isa",
