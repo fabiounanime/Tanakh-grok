@@ -31,15 +31,14 @@ export function saveTab(tab) {
 const PT_VERSION_KEY = 'biblia-tanakh:ptVersion';
 
 /**
- * Portuguese version is temporarily fixed to João Ferreira de Almeida
- * (bible-api.com). The multi-version picker UI is hidden; localStorage
- * selections for ACF/RA/NVI/etc. are ignored until the picker returns.
+ * Portuguese is fixed to the app’s local original rendering (FIXED_PT_VERSION).
+ * No version picker; ACF/RA/NVI/Almeida API selections are ignored.
  */
 export function getPtVersion() {
   return FIXED_PT_VERSION || DEFAULT_PT_VERSION;
 }
 
-/** No-op while the picker is disabled — always keeps the fixed Almeida source. */
+/** No-op while the picker is disabled — always keeps the local original source. */
 export function setPtVersion(_id) {
   try {
     localStorage.setItem(PT_VERSION_KEY, FIXED_PT_VERSION);

@@ -2,7 +2,7 @@
 
 App web de leitura bíblica (Antigo + Novo Testamento), tema escuro com acentos dourados, com abas sincronizadas:
 
-- **Português** — temporariamente **apenas** João Ferreira de Almeida via [bible-api.com](https://bible-api.com/) (seletor multi-versão oculto; fallback local Demo se a API falhar e houver amostra)
+- **Português** — **tradução do original** embarcada no app (mesma camada local que acompanha Hebraico e Transliteração; sem Almeida / ACF / RA / NVI / APIs)
 - **Hebraico** — texto hebraico / aramaico / grego conforme o livro
 - **Transliteração** — leitura fonética (LTR)
 
@@ -93,64 +93,16 @@ npm run build
 npm run preview   # opcional: testar dist/ (inclui PWA)
 ```
 
-## Versões em português
+## Português (tradução do original)
 
-**Estado atual (temporário):** o seletor multi-versão (Demo / A1911 / ACF / RA / NVI / NVT / ARC) está **oculto**. A aba **Português** usa uma única fonte fixa — **João Ferreira de Almeida** via bible-api.com (`FIXED_PT_VERSION = 'almeida'`). Hebraico e Transliteração não mudam. Código de provedores extras permanece em `versions.js` / `bibleApi.js` / `versionPicker.js` (dormente) para reativar depois.
+A aba **Português** mostra **somente** a tradução direta do original embarcada em `src/data/verses.js` (campo `portuguese`), a mesma camada que acompanha Hebraico e Transliteração. Banner: **Português · tradução do original**.
 
-### Fonte ativa: João Ferreira de Almeida via bible-api.com (sem chave)
+- `FIXED_PT_VERSION = 'demo'` — id interno do texto local; **não** é João Ferreira de Almeida nem outra edição comercial.
+- **Sem seletor de versão.** Sem Almeida / ACF / RA / NVI / bible-api.com / ABíbliaDigital na aba Português.
+- Capítulos ainda sem texto local: estado **“Capítulo em breve”** (sem fallback para API).
+- Hebraico e Transliteração não mudam.
 
-| Id | Rótulo | Fonte |
-|----|--------|-------|
-| `almeida` | João Ferreira de Almeida | [bible-api.com](https://bible-api.com/) `translation=almeida` (domínio público) |
+Cobertura atual das três camadas: amostras (ex.: Gênesis 1, João 1). Expanda `verses.js` para novos capítulos.
 
-Na aba **Português**, a leitura busca o capítulo em `/data/almeida/{BOOK}/{CHAPTER}`. Respostas são cacheadas em **memória + `localStorage`** (`biblia-tanakh:bibleApi:…`) para reuso offline após o primeiro fetch. Se a API falhar e existir amostra local (ex.: Gênesis 1 Demo), o app usa esse fallback para não deixar a aba vazia. Implementação: `src/utils/bibleApi.js`, `src/pages/reading.js`.
-
-### Embarcadas (fallback / catálogo dormente)
-
-| Id | Rótulo | Licença |
-|----|--------|---------|
-| `demo` | Demo (local) | Amostra de demonstração (não é edição comercial) |
-| `almeida1911` | Almeida 1911 (local) | Domínio público (Lisboa 1911 · Project Gutenberg 62383) — Gênesis 1 |
-
-### ACF / RA / NVI via ABíbliaDigital (token opcional; UI oculto)
-
-| Id | Rótulo | Fonte |
-|----|--------|-------|
-| `acf` | ACF (Almeida Corrigida Fiel) | [ABíbliaDigital](https://www.abibliadigital.com.br/api) `GET /verses/acf/{abbrev}/{chapter}` |
-| `ra` | RA (Almeida Revista e Atualizada) | `GET /verses/ra/{abbrev}/{chapter}` |
-| `nvi` | NVI | `GET /verses/nvi/{abbrev}/{chapter}` (listada na API) |
-
-- **Sem scraping** — só endpoints REST documentados.
-- **Token opcional:** `VITE_ABIBLIA_TOKEN` (ou `VITE_ABIBLIA_DIGITAL_TOKEN`) no `.env` / Cloudflare Pages. Sem token: limite de **20 req/h/IP**; com Bearer JWT: ilimitado (grátis). Crie usuário em `POST /api/users`.
-- **Cache:** mesmo esquema de bible-api.com (memória + `localStorage`, chave `abiblia:{version}:…`).
-- **Abreviações:** mapeamento em `src/data/books.js` (`toAbibliaAbbrev`, ex.: `gen`→`gn`, `jhn`→`jo`).
-- **Nota de disponibilidade:** o mantenedor anunciou desativação do site/API a partir de 01/08/2026; se o host estiver fora, o app usa cache local após o primeiro fetch bem-sucedido e exibe erro claro quando não houver cache.
-
-#### Token no Cloudflare Pages
-
-1. Dashboard → seu projeto Pages → **Settings** → **Environment variables**.
-2. Adicione `VITE_ABIBLIA_TOKEN` = seu JWT (Production; também Preview se quiser).
-3. **Save** e dispare um novo deploy (Vite só lê `VITE_*` no *build*).
-
-### Licenciadas via API (NVT / ARC atual; UI oculto)
-
-**Não** embutimos NVT nem edições ARC atuais — exigem licença do detentor dos direitos. Enquanto o seletor está oculto, essas opções não aparecem na UI. NVI no catálogo dormente usava ABíbliaDigital; o stub `VITE_BIBLE_API_BIBLE_NVI` permanece para provedores licenciados alternativos.
-
-**Sobre [HelioGiroto/Biblia-ARC](https://github.com/HelioGiroto/Biblia-ARC):** o repositório tem LICENSE MIT para o *software* do autor, mas o README identifica o texto como **ACF** — tradução moderna com direitos autorais. O MIT do wrapper **não** autoriza redistribuir o texto bíblico; por isso **não** embarcamos ARC/ACF a partir desse repo.
-
-Integração prevista para NVT/ARC (stub em `src/utils/bibleApi.js`):
-
-1. Obtenha chave e direitos em [api.Bible](https://scripture.api.bible/) (American Bible Society) ou [Digital Bible Platform](https://4.dbt.io/) (FCBH).
-2. Copie `.env.example` → `.env` e preencha:
-   - `VITE_BIBLE_API_ENABLED=true`
-   - `VITE_BIBLE_API_PROVIDER=api.bible` (ou `dbp`)
-   - `VITE_BIBLE_API_KEY=…`
-   - `VITE_BIBLE_API_BIBLE_NVT` / `_ARC` = ids da bíblia no provedor
-3. Quando o seletor for reativado: com flag + chave + id mapeado, a opção correspondente fica **selecionável**. O fetch real ainda é um stub — ligue o adapter do provedor em `bibleApi.js` (sem scraping).
-
-### Outro provedor (opcional, não ligado)
-
-[MaatheusGois/bible](https://github.com/maatheusgois/bible) (Postman: [documentação](https://documenter.getpostman.com/view/11242574/2sA3Qy7VeH)) expõe JSON no GitHub raw (`versions/pt-br/{aa|acf|nvi|arc|kja}/…`), inclusive versículo a versículo. Útil como fallback se ABíbliaDigital estiver indisponível, mas **não** está integrado no app (abbrev ids diferem, ex. `jud`/`ps` vs `jz`/`sl`; capítulo exige N requests por versículo ou baixar o JSON completo da versão). Pode ser um provider opcional futuro em `bibleApi.js`.
-
-Catálogo e fontes: `src/data/versions.js` (`source: 'local' | 'bible-api' | 'abiblia-digital' | 'api'`).
+Código de catálogo/API legado (`versions.js`, `bibleApi.js`, `versionPicker.js`) permanece dormente e **não** alimenta a leitura em português.
 

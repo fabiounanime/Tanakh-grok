@@ -1,12 +1,10 @@
 import { getBookById } from '../data/books.js';
-import { getVersesForVersion, mergeApiChapterVerses } from '../data/verses.js';
-import { FIXED_PT_VERSION, getPtVersionMeta } from '../data/versions.js';
+import { getVersesForVersion } from '../data/verses.js';
+import { FIXED_PT_VERSION } from '../data/versions.js';
 import { navigate } from '../utils/router.js';
-import { fetchApiChapter } from '../utils/bibleApi.js';
 import {
   getSavedTab,
   saveTab,
-  getPtVersion,
   isMarked,
   setMark,
   saveMarkEntry,
@@ -42,13 +40,9 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
   }
 
   const cap = Math.min(Math.max(1, chapter || 1), book.chapters);
-  // Temporarily fixed: João Ferreira de Almeida via bible-api.com (no PT version picker).
-  let ptVersion = getPtVersion(); // always FIXED_PT_VERSION / almeida
+  // Português = local original rendering only (verses.js portuguese column).
+  // No version picker; no Almeida / ACF / RA / NVI / bible-api.com.
   let verses = [];
-  /** @type {'idle'|'loading'|'ready'|'error'} */
-  let loadState = 'idle';
-  let loadError = '';
-  let loadToken = 0;
   let activeTab = getSavedTab();
   let sheetVerse = null;
   const deepLinkNum =
@@ -58,51 +52,8 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
   let activeVerse = deepLinkNum;
   let pendingDeepLink = deepLinkNum;
 
-  async function loadVerses(_ignored) {
-    const versionId = FIXED_PT_VERSION;
-    const token = ++loadToken;
-    const meta = getPtVersionMeta(versionId);
-    ptVersion = versionId;
-
-    if (meta?.source === 'bible-api' || meta?.source === 'abiblia-digital') {
-      loadState = 'loading';
-      loadError = '';
-      paint();
-      try {
-        const apiRows = await fetchApiChapter(versionId, book.id, cap);
-        if (token !== loadToken) return;
-        const originalLang = book.testament === 'NT' ? 'el' : 'he';
-        verses = mergeApiChapterVerses(book.id, cap, apiRows, versionId, {
-          originalLang,
-        });
-        loadState = 'ready';
-        loadError = '';
-      } catch (err) {
-        if (token !== loadToken) return;
-        // Prefer local sample over an empty Portuguese pane when offline / API fails.
-        const localFallback = getVersesForVersion(book.id, cap, 'demo');
-        if (localFallback.length) {
-          verses = localFallback;
-          loadState = 'ready';
-          loadError = '';
-        } else {
-          verses = [];
-          loadState = 'error';
-          loadError =
-            (err && err.message) ||
-            'Não foi possível carregar este capítulo pela API.';
-        }
-      }
-      if (activeVerse == null || !verses.some((v) => v.verse === activeVerse)) {
-        activeVerse = verses[0]?.verse ?? null;
-      }
-      paint();
-      return;
-    }
-
-    verses = getVersesForVersion(book.id, cap, versionId);
-    loadState = 'ready';
-    loadError = '';
+  function loadVerses() {
+    verses = getVersesForVersion(book.id, cap, FIXED_PT_VERSION);
     if (activeVerse == null || !verses.some((v) => v.verse === activeVerse)) {
       activeVerse = verses[0]?.verse ?? null;
     }
@@ -127,29 +78,13 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       .join('');
 
     let body;
-    if (loadState === 'loading') {
-      body = `
-        <div class="placeholder-chapter" aria-busy="true">
-          <strong>Carregando…</strong>
-          <p>Buscando ${escapeHtml(getPtVersionMeta(FIXED_PT_VERSION).label)} · ${escapeHtml(
-            book.name
-          )} ${cap}. Após o primeiro carregamento, o capítulo fica disponível offline.</p>
-        </div>`;
-    } else if (loadState === 'error') {
-      body = `
-        <div class="placeholder-chapter">
-          <strong>Não foi possível carregar</strong>
-          <p>${escapeHtml(loadError)}</p>
-          <p class="hint">Verifique a conexão e tente de novo. Capítulos já abertos antes continuam no cache local.</p>
-          <button type="button" class="btn-text" data-retry-load>Tentar novamente</button>
-        </div>`;
-    } else if (!verses.length) {
+    if (!verses.length) {
       body = `
         <div class="placeholder-chapter">
           <strong>Capítulo em breve</strong>
-          <p>Ainda não há texto em português para ${escapeHtml(
+          <p>Ainda não há tradução do original em português para ${escapeHtml(
             book.name
-          )} ${cap}. O texto usa <strong>João Ferreira de Almeida</strong> (bible-api.com); verifique a conexão e tente de novo.</p>
+          )} ${cap}. Hebraico e Transliteração também serão preenchidos quando o capítulo estiver disponível.</p>
         </div>`;
     } else {
       const { className, field, dirNote } = tabConfig(activeTab, verses[0]?.originalLang);
@@ -249,9 +184,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         </div>
         ${
           activeTab === 'portuguese'
-            ? `<p class="version-banner" aria-live="polite">Português · ${escapeHtml(
-                getPtVersionMeta(FIXED_PT_VERSION).label
-              )}</p>`
+            ? `<p class="version-banner" aria-live="polite">Português · tradução do original</p>`
             : ''
         }
         <div role="tabpanel">${body}</div>
@@ -345,9 +278,6 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     bindFontControls();
     bindPinchZoom();
     syncFontButtons();
-    root.querySelector('[data-retry-load]')?.addEventListener('click', () => {
-      loadVerses(ptVersion);
-    });
   };
 
 
@@ -603,14 +533,14 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     });
   }
 
-  loadVerses(ptVersion).then(() => {
-    if (pendingDeepLink == null) return;
+  loadVerses();
+  if (pendingDeepLink != null) {
     const targetVerse = pendingDeepLink;
     pendingDeepLink = null;
     const go = () => focusVerse(targetVerse, { behavior: 'auto' });
     requestAnimationFrame(() => requestAnimationFrame(go));
     setTimeout(go, 120);
-  });
+  }
 }
 
 function tabConfig(tab, originalLang) {

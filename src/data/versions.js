@@ -1,12 +1,13 @@
 /**
  * Portuguese Bible version catalog.
  *
- * Shipped texts: only public-domain or clearly labeled demo.
- * Public-domain Almeida: bible-api.com (no key).
- * ACF / RA / NVI: fetched on demand from ABíbliaDigital (not embedded).
- * Optional Bearer: VITE_ABIBLIA_TOKEN (20 req/hr/IP without token).
- * NVT / ARC atual remain licensed stubs (VITE_BIBLE_API_*).
- * HelioGiroto/Biblia-ARC MIT covers software only — we never bundle ACF text.
+ * Active PT source for the reader: local `demo` — the app’s own direct
+ * Portuguese rendering shipped in verses.js (pairs with Hebrew/Greek + translit).
+ * No commercial edition name; banner: “Português · tradução do original”.
+ *
+ * Other catalog entries (Almeida / ACF / RA / NVI / licensed APIs) are dormant
+ * and are NOT wired to the Português tab. HelioGiroto/Biblia-ARC MIT covers
+ * software only — we never bundle ACF text.
  */
 
 /** @typedef {'local'|'bible-api'|'abiblia-digital'|'api'} PtVersionSource */
@@ -27,11 +28,11 @@
 export const PT_VERSIONS = [
   {
     id: 'demo',
-    label: 'Demo (local)',
-    shortLabel: 'Demo',
+    label: 'tradução do original',
+    shortLabel: 'Original',
     license: 'demo',
     source: 'local',
-    note: 'Amostra embarcada — não é edição comercial',
+    note: 'Tradução direta do hebraico/aramaico/grego · embarcada no app',
   },
   {
     id: 'almeida1911',
@@ -97,8 +98,11 @@ export const PT_VERSIONS = [
   },
 ];
 
-/** Fixed PT source while the multi-version picker is temporarily disabled. */
-export const FIXED_PT_VERSION = 'almeida';
+/**
+ * Fixed PT source: local original Portuguese (verses.js `portuguese` column).
+ * No version picker; no Almeida / ACF / RA / NVI APIs on the Português tab.
+ */
+export const FIXED_PT_VERSION = 'demo';
 export const DEFAULT_PT_VERSION = FIXED_PT_VERSION;
 
 /**

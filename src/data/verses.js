@@ -1,9 +1,9 @@
 /**
- * Versículos de demonstração.
- * Português: amostras literais (exemplo / domínio público estilo placeholder),
- * NÃO uma tradução publicada moderna.
+ * Versículos embarcados (camadas sincronizadas).
+ * Português: tradução direta do original (produto do app — não é edição comercial).
  * Hebraico: Westminster Leningrad Codex / Tanach com nikkud (domínio público).
  * Grego: texto koiné clássico (domínio público).
+ * Transliteração: leitura fonética LTR.
  */
 
 
