@@ -13,6 +13,7 @@ import '@fontsource/noto-serif/latin-600.css';
 import './styles/main.css';
 import { startRouter, onRouteChange, parseHash, routes } from './utils/router.js';
 import { registerSW } from 'virtual:pwa-register';
+import { runSplash } from './components/splash.js';
 import { renderHome } from './pages/home.js';
 import { renderBiblia } from './pages/biblia.js';
 import { renderBook } from './pages/book.js';
@@ -119,6 +120,9 @@ function render(route) {
 
   window.scrollTo(0, 0);
 }
+
+// Splash overlays the shell; Home (and other routes) mount underneath.
+runSplash();
 
 onRouteChange(render);
 startRouter();

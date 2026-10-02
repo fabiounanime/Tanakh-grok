@@ -1210,3 +1210,103 @@ main.page {
     font-size: 1.55rem;
   }
 }
+
+/* —— Cold-start splash —— */
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050505;
+  color: var(--ink);
+  opacity: 1;
+  transition: opacity 0.42s ease;
+  pointer-events: auto;
+}
+
+.splash--out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.splash__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  max-width: 20rem;
+}
+
+.splash__mark {
+  color: var(--accent);
+  font-size: 1.75rem;
+  line-height: 1;
+  margin-bottom: 0.85rem;
+}
+
+.splash__title {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.splash__slogan {
+  margin: 0.85rem 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+/* Entrance: title then slogan (fill-mode both hides during delay) */
+.splash--play .splash__mark {
+  animation: splash-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both;
+}
+
+.splash--play .splash__title {
+  animation: splash-in 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.32s both;
+}
+
+.splash--play .splash__slogan {
+  animation: splash-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.85s both;
+}
+
+.splash--reduced .splash__mark,
+.splash--reduced .splash__title,
+.splash--reduced .splash__slogan {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+@keyframes splash-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash {
+    transition-duration: 0.2s;
+  }
+
+  .splash--play .splash__mark,
+  .splash--play .splash__title,
+  .splash--play .splash__slogan {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
