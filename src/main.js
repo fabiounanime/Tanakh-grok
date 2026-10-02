@@ -19,8 +19,6 @@ import { renderBiblia } from './pages/biblia.js';
 import { renderBook } from './pages/book.js';
 import { renderReading } from './pages/reading.js';
 import { renderFavorites } from './pages/favorites.js';
-import { renderSettings } from './pages/settings.js';
-import { renderPlaceholder } from './pages/placeholder.js';
 import { renderDevocionais, renderDevocionalEdit } from './pages/devocionais.js';
 import { applyFontScale } from './utils/storage.js';
 
@@ -35,7 +33,6 @@ const ICO = {
   devocionais: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 4h9a2 2 0 0 1 2 2v14l-5-3-5 3V6a2 2 0 0 1 2-2z"/><path d="M9 8h5M9 11h5"/></svg>`,
   home: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 11.5 12 4l8 7.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-8.5z"/></svg>`,
   marcacoes: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"/><path d="M9 8h6M9 11h4"/></svg>`,
-  conta: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="3.5"/><path d="M5 19c1.5-3.5 4-5 7-5s5.5 1.5 7 5"/></svg>`,
 };
 
 function ensureShell() {
@@ -60,10 +57,6 @@ function ensureShell() {
         <span class="nav-ico" aria-hidden="true">${ICO.marcacoes}</span>
         <span class="nav-label">Marcações</span>
       </a>
-      <a href="${routes.conta()}" data-nav="conta">
-        <span class="nav-ico" aria-hidden="true">${ICO.conta}</span>
-        <span class="nav-label">Conta</span>
-      </a>
     </nav>
   `;
 }
@@ -77,9 +70,7 @@ function setActiveNav(routeName) {
     devocionais: 'devocionais',
     'devocional-edit': 'devocionais',
     marcacoes: 'marcacoes',
-    conta: 'conta',
     favorites: 'marcacoes',
-    settings: 'conta',
   };
   const active = map[routeName] || 'home';
   document.querySelectorAll('.bottom-nav a').forEach((a) => {
@@ -110,12 +101,6 @@ function render(route) {
       break;
     case 'favorites':
       renderFavorites(pageRoot);
-      break;
-    case 'conta':
-      renderPlaceholder(pageRoot, 'conta');
-      break;
-    case 'settings':
-      renderSettings(pageRoot);
       break;
     case 'home':
     default:

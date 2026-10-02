@@ -1,15 +1,10 @@
-import { navigate, routes } from '../utils/router.js';
+import { navigate } from '../utils/router.js';
 
 const META = {
   mensagens: {
     title: 'Mensagens',
     ico: '💬',
     body: 'Mensagens e anotações de pregação aparecerão aqui. Esta tela é um placeholder.',
-  },
-  conta: {
-    title: 'Conta',
-    ico: '👤',
-    body: 'Perfil, preferências e ajustes da conta. Esta tela é um placeholder.',
   },
 };
 
@@ -25,11 +20,6 @@ export function renderPlaceholder(root, key) {
         <div class="big-ico" aria-hidden="true">${meta.ico}</div>
         <h2>Em breve</h2>
         <p>${meta.body}</p>
-        ${
-          key === 'conta'
-            ? `<p class="placeholder-links"><a class="link-gold" href="${routes.settings()}">Abrir ajustes</a> · <a class="link-gold" href="${routes.marcacoes()}">Minhas marcações</a> · <a class="link-gold" href="${routes.devocionais()}">Devocionais</a></p>`
-            : ''
-        }
       </div>
     </main>
   `;

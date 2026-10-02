@@ -50,11 +50,9 @@ Nome do app: **Bíblia Tanakh** (nome curto: **Tanakh**). Tema: fundo escuro `#0
 | `#/devocionais/nova` | Criar devocional |
 | `#/devocionais/:id` | Editar / ver devocional |
 | `#/mensagens` | Placeholder |
-| `#/conta` | Placeholder |
 | `#/favoritos` | Placeholder |
-| `#/ajustes` | Placeholder |
 
-Navegação: **Bíblia · Devocionais · Home · Mensagens · Conta** (Home destacado; vira barra lateral no desktop).
+Navegação: **Bíblia · Devocionais · Home · Marcações** (Home destacado; vira barra lateral no desktop).
 
 ### Marcações e devocionais
 

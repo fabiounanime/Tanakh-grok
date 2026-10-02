@@ -1,10 +1,21 @@
 /**
  * Roteador hash: #/, #/biblia, #/livro/:id, #/ler/:id/:cap,
  * #/devocionais, #/devocionais/nova, #/devocionais/:id,
- * #/marcacoes, #/conta, #/favoritos, #/ajustes
+ * #/marcacoes, #/favoritos
  */
 
 const listeners = new Set();
+const REMOVED_ACCOUNT_ROUTES = new Set([
+  'conta',
+  'account',
+  'login',
+  'entrar',
+  'senha',
+  'password',
+  'ajustes',
+  'settings-account',
+  'configuracoes-conta',
+]);
 
 export function parseHash() {
   const raw = (location.hash || '#/').replace(/^#/, '') || '/';
@@ -12,7 +23,7 @@ export function parseHash() {
   const parts = pathPart.split('/').filter(Boolean);
   const query = new URLSearchParams(queryPart);
 
-  if (parts.length === 0) {
+  if (parts.length === 0 || REMOVED_ACCOUNT_ROUTES.has(parts[0])) {
     return { name: 'home', params: {} };
   }
   if (parts[0] === 'biblia') {
@@ -55,12 +66,6 @@ export function parseHash() {
     // Legacy: Mensagens removed from nav — send to marcações
     return { name: 'favorites', params: {} };
   }
-  if (parts[0] === 'conta') {
-    return { name: 'conta', params: {} };
-  }
-  if (parts[0] === 'ajustes') {
-    return { name: 'settings', params: {} };
-  }
   return { name: 'home', params: {} };
 }
 
@@ -79,6 +84,11 @@ export function onRouteChange(fn) {
 }
 
 function notify() {
+  const path = (location.hash || '#/').replace(/^#/, '').split('?')[0].split('/').filter(Boolean);
+  if (path[0] && REMOVED_ACCOUNT_ROUTES.has(path[0])) {
+    location.hash = '#/';
+    return;
+  }
   const route = parseHash();
   listeners.forEach((fn) => fn(route));
 }
@@ -99,7 +109,5 @@ export const routes = {
   devocional: (id) => `#/devocionais/${id}`,
   mensagens: () => '#/marcacoes',
   marcacoes: () => '#/marcacoes',
-  conta: () => '#/conta',
   favorites: () => '#/marcacoes',
-  settings: () => '#/ajustes',
 };

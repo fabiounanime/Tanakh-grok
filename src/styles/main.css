@@ -130,7 +130,7 @@ button:disabled {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  /* Clear status bar on all screens (home/reading/marks/devo/account/…) */
+  /* Clear status bar on all screens (home/reading/marks/devo/…) */
   padding: var(--pad-top) max(var(--content-pad), var(--safe-r)) 0.5rem max(var(--content-pad), var(--safe-l));
   background: rgba(5, 5, 5, 0.92);
   backdrop-filter: blur(12px);
