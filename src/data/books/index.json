@@ -519,7 +519,7 @@
       "testament": "NT",
       "chapters": 13,
       "verses": 303,
-      "ptVerses": 0,
+      "ptVerses": 303,
       "defaultLang": "el"
     },
     {
@@ -626,6 +626,7 @@
     "2ti",
     "tit",
     "phm",
+    "heb",
     "jas",
     "1pe",
     "2pe",
@@ -663,7 +664,6 @@
     "rom",
     "1co",
     "2co",
-    "heb",
     "rev"
   ]
 }
