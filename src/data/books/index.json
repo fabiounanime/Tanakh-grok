@@ -258,7 +258,7 @@
       "testament": "AT",
       "chapters": 3,
       "verses": 73,
-      "ptVerses": 0,
+      "ptVerses": 73,
       "defaultLang": "he"
     },
     {
@@ -348,7 +348,7 @@
       "testament": "AT",
       "chapters": 4,
       "verses": 55,
-      "ptVerses": 0,
+      "ptVerses": 55,
       "defaultLang": "he"
     },
     {
@@ -429,7 +429,7 @@
       "testament": "NT",
       "chapters": 6,
       "verses": 149,
-      "ptVerses": 0,
+      "ptVerses": 149,
       "defaultLang": "el"
     },
     {
@@ -438,7 +438,7 @@
       "testament": "NT",
       "chapters": 6,
       "verses": 155,
-      "ptVerses": 0,
+      "ptVerses": 155,
       "defaultLang": "el"
     },
     {
@@ -456,7 +456,7 @@
       "testament": "NT",
       "chapters": 4,
       "verses": 95,
-      "ptVerses": 0,
+      "ptVerses": 95,
       "defaultLang": "el"
     },
     {
@@ -465,7 +465,7 @@
       "testament": "NT",
       "chapters": 5,
       "verses": 89,
-      "ptVerses": 0,
+      "ptVerses": 89,
       "defaultLang": "el"
     },
     {
@@ -474,7 +474,7 @@
       "testament": "NT",
       "chapters": 3,
       "verses": 47,
-      "ptVerses": 0,
+      "ptVerses": 47,
       "defaultLang": "el"
     },
     {
@@ -492,7 +492,7 @@
       "testament": "NT",
       "chapters": 4,
       "verses": 83,
-      "ptVerses": 0,
+      "ptVerses": 83,
       "defaultLang": "el"
     },
     {
@@ -528,7 +528,7 @@
       "testament": "NT",
       "chapters": 5,
       "verses": 108,
-      "ptVerses": 0,
+      "ptVerses": 108,
       "defaultLang": "el"
     },
     {
@@ -546,7 +546,7 @@
       "testament": "NT",
       "chapters": 3,
       "verses": 61,
-      "ptVerses": 0,
+      "ptVerses": 61,
       "defaultLang": "el"
     },
     {
@@ -555,7 +555,7 @@
       "testament": "NT",
       "chapters": 5,
       "verses": 105,
-      "ptVerses": 0,
+      "ptVerses": 105,
       "defaultLang": "el"
     },
     {
@@ -597,15 +597,26 @@
   ],
   "ptComplete": [
     "rut",
+    "jol",
     "oba",
     "jon",
     "nam",
     "hab",
     "zep",
     "hag",
+    "mal",
+    "gal",
+    "eph",
     "php",
+    "col",
+    "1th",
+    "2th",
+    "2ti",
     "tit",
     "phm",
+    "jas",
+    "2pe",
+    "1jn",
     "2jn",
     "3jn",
     "jud"
@@ -641,11 +652,9 @@
     "ezk",
     "dan",
     "hos",
-    "jol",
     "amo",
     "mic",
     "zec",
-    "mal",
     "mat",
     "mrk",
     "luk",
@@ -653,18 +662,9 @@
     "rom",
     "1co",
     "2co",
-    "gal",
-    "eph",
-    "col",
-    "1th",
-    "2th",
     "1ti",
-    "2ti",
     "heb",
-    "jas",
     "1pe",
-    "2pe",
-    "1jn",
     "rev"
   ]
 }
