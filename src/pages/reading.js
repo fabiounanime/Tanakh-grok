@@ -125,10 +125,7 @@ export function renderReading(root, { bookId, chapter }) {
             <div class="verse-flow" role="list">${items}</div>
           </div>
         </article>
-        ${verseNavigation}
-        <p class="demo-footer">
-          Texto português de exemplo (placeholder literal / estilo domínio público) — não é uma edição comercial publicada. Original hebraico/grego clássico de demonstração.
-        </p>`;
+        ${verseNavigation}`;
     }
 
     root.innerHTML = `
