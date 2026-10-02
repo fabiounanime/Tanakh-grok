@@ -1,7 +1,7 @@
 /**
  * Roteador hash: #/, #/biblia, #/livro/:id, #/ler/:id/:cap,
  * #/devocionais, #/devocionais/nova, #/devocionais/:id,
- * #/mensagens, #/conta, #/favoritos, #/ajustes
+ * #/marcacoes, #/conta, #/favoritos, #/ajustes
  */
 
 const listeners = new Set();
@@ -39,14 +39,15 @@ export function parseHash() {
   if (parts[0] === 'agenda') {
     return { name: 'devocionais', params: {} };
   }
+  if (parts[0] === 'marcacoes' || parts[0] === 'favoritos') {
+    return { name: 'favorites', params: {} };
+  }
   if (parts[0] === 'mensagens') {
-    return { name: 'mensagens', params: {} };
+    // Legacy: Mensagens removed from nav — send to marcações
+    return { name: 'favorites', params: {} };
   }
   if (parts[0] === 'conta') {
     return { name: 'conta', params: {} };
-  }
-  if (parts[0] === 'favoritos') {
-    return { name: 'favorites', params: {} };
   }
   if (parts[0] === 'ajustes') {
     return { name: 'settings', params: {} };
@@ -87,8 +88,9 @@ export const routes = {
   devocionais: () => '#/devocionais',
   devocionalNova: () => '#/devocionais/nova',
   devocional: (id) => `#/devocionais/${id}`,
-  mensagens: () => '#/mensagens',
+  mensagens: () => '#/marcacoes',
+  marcacoes: () => '#/marcacoes',
   conta: () => '#/conta',
-  favorites: () => '#/favoritos',
+  favorites: () => '#/marcacoes',
   settings: () => '#/ajustes',
 };

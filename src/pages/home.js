@@ -113,7 +113,7 @@ export function renderHome(root) {
       <section class="section-block">
         <div class="section-head">
           <h2>Últimas marcações</h2>
-          <a class="link-gold" href="${routes.biblia()}">Ver Bíblia</a>
+          <a class="link-gold" href="${routes.marcacoes()}">Ver todas</a>
         </div>
         <div class="mark-list">${markings}</div>
       </section>

@@ -15,6 +15,54 @@ export function saveTab(tab) {
   if (TAB_KEYS.has(tab)) localStorage.setItem(TAB_KEY, tab);
 }
 
+
+const FONT_SCALE_KEY = 'biblia-tanakh:fontScale';
+export const FONT_SCALE_MIN = 0.8;
+export const FONT_SCALE_MAX = 1.75;
+export const FONT_SCALE_STEP = 0.1;
+export const FONT_SCALE_DEFAULT = 1;
+
+function clampFontScale(n) {
+  const x = Number(n);
+  if (!Number.isFinite(x)) return FONT_SCALE_DEFAULT;
+  return Math.min(FONT_SCALE_MAX, Math.max(FONT_SCALE_MIN, Math.round(x * 100) / 100));
+}
+
+export function getFontScale() {
+  try {
+    const raw = localStorage.getItem(FONT_SCALE_KEY);
+    if (raw == null || raw === '') return FONT_SCALE_DEFAULT;
+    return clampFontScale(raw);
+  } catch {
+    return FONT_SCALE_DEFAULT;
+  }
+}
+
+export function setFontScale(scale) {
+  const next = clampFontScale(scale);
+  try {
+    localStorage.setItem(FONT_SCALE_KEY, String(next));
+  } catch {
+    /* ignore quota */
+  }
+  applyFontScale(next);
+  return next;
+}
+
+export function bumpFontScale(delta) {
+  return setFontScale(getFontScale() + Number(delta || 0));
+}
+
+/** Apply CSS custom property used by verse text (all language tabs). */
+export function applyFontScale(scale = getFontScale()) {
+  const next = clampFontScale(scale);
+  if (typeof document !== 'undefined') {
+    document.documentElement.style.setProperty('--reading-font-scale', String(next));
+  }
+  return next;
+}
+
+
 export function verseKey(bookId, chapter, verse) {
   return `${bookId}:${chapter}:${verse}`;
 }
@@ -187,6 +235,86 @@ export function associateVerseToDevocional(devocionalId, verseRef) {
   }
   setMark(verseRef.bookId, verseRef.chapter, verseRef.verse, true);
   return updateDevocional(devocionalId, { verseRefs: refs });
+}
+
+
+/**
+ * Union of highlighted marks + saved marks, ordered by Protestant Brazilian
+ * canon (books array order), then chapter, then verse. Grouped by bookId.
+ * @param {{ books: Array<{id:string,name:string}>, lookupSnippet?: (bookId:string,chapter:number,verse:number)=>string }} opts
+ * @returns {Array<{ bookId: string, bookName: string, items: Array<{ id: string, bookId: string, chapter: number, verse: number, ref: string, snippet: string, markedAt?: string, savedAt?: string }> }>}
+ */
+export function listMarksGroupedByBook({ books, lookupSnippet } = {}) {
+  const bookList = Array.isArray(books) ? books : [];
+  const order = new Map(bookList.map((b, i) => [b.id, i]));
+  const nameOf = new Map(bookList.map((b) => [b.id, b.name]));
+  const saved = getSavedMarks();
+  const savedById = Object.fromEntries(saved.map((m) => [m.id, m]));
+  const marks = getMarks();
+  const byId = {};
+
+  for (const m of Object.values(marks)) {
+    if (!m || !m.bookId) continue;
+    const id = verseKey(m.bookId, m.chapter, m.verse);
+    const s = savedById[id];
+    let snippet = (s && s.snippet) || '';
+    if (!snippet && typeof lookupSnippet === 'function') {
+      try {
+        snippet = lookupSnippet(m.bookId, Number(m.chapter), Number(m.verse)) || '';
+      } catch {
+        snippet = '';
+      }
+    }
+    const bookName = nameOf.get(m.bookId) || m.bookId;
+    byId[id] = {
+      id,
+      bookId: m.bookId,
+      chapter: Number(m.chapter),
+      verse: Number(m.verse),
+      ref: (s && s.ref) || `${bookName} ${m.chapter}:${m.verse}`,
+      snippet,
+      markedAt: m.markedAt,
+      savedAt: s?.savedAt,
+    };
+  }
+
+  // Include saved entries missing from marks (should be rare)
+  for (const s of saved) {
+    if (!s || byId[s.id]) continue;
+    const bookName = nameOf.get(s.bookId) || s.bookId;
+    byId[s.id] = {
+      id: s.id,
+      bookId: s.bookId,
+      chapter: Number(s.chapter),
+      verse: Number(s.verse),
+      ref: s.ref || `${bookName} ${s.chapter}:${s.verse}`,
+      snippet: s.snippet || '',
+      savedAt: s.savedAt,
+    };
+  }
+
+  const items = Object.values(byId).sort((a, b) => {
+    const oa = order.has(a.bookId) ? order.get(a.bookId) : 9999;
+    const ob = order.has(b.bookId) ? order.get(b.bookId) : 9999;
+    if (oa !== ob) return oa - ob;
+    if (a.chapter !== b.chapter) return a.chapter - b.chapter;
+    return a.verse - b.verse;
+  });
+
+  const groups = [];
+  let current = null;
+  for (const item of items) {
+    if (!current || current.bookId !== item.bookId) {
+      current = {
+        bookId: item.bookId,
+        bookName: nameOf.get(item.bookId) || item.bookId,
+        items: [],
+      };
+      groups.push(current);
+    }
+    current.items.push(item);
+  }
+  return groups;
 }
 
 export function formatRelativeWhen(iso) {

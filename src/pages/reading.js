@@ -10,6 +10,12 @@ import {
   getDevocionais,
   createDevocional,
   associateVerseToDevocional,
+  getFontScale,
+  setFontScale,
+  bumpFontScale,
+  FONT_SCALE_MIN,
+  FONT_SCALE_MAX,
+  FONT_SCALE_STEP,
 } from '../utils/storage.js';
 
 const TAB_LABELS = {
@@ -132,6 +138,10 @@ export function renderReading(root, { bookId, chapter }) {
       <header class="app-header">
         <button class="btn-icon" type="button" data-back aria-label="Voltar aos capítulos">←</button>
         <h1>${escapeHtml(book.name)}</h1>
+        <div class="font-size-controls" role="group" aria-label="Tamanho da fonte">
+          <button type="button" data-font-dec aria-label="Diminuir fonte" title="Diminuir fonte">A−</button>
+          <button type="button" class="font-btn--plus" data-font-inc aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+        </div>
       </header>
       <main class="page page--reading">
         <div class="reading-toolbar">
@@ -242,10 +252,105 @@ export function renderReading(root, { bookId, chapter }) {
     });
 
     bindSheets();
-    if (sheetVerse) {
-      // keep sheet closed after full paint; sheetVerse only for action context
-    }
+    bindFontControls();
+    bindPinchZoom();
+    syncFontButtons();
   };
+
+
+  let pinchCleanup = null;
+  let pinchRaf = 0;
+  let pinchPending = null;
+
+  function syncFontButtons() {
+    const scale = getFontScale();
+    const dec = root.querySelector('[data-font-dec]');
+    const inc = root.querySelector('[data-font-inc]');
+    if (dec) dec.disabled = scale <= FONT_SCALE_MIN + 1e-9;
+    if (inc) inc.disabled = scale >= FONT_SCALE_MAX - 1e-9;
+  }
+
+  function bindFontControls() {
+    root.querySelector('[data-font-dec]')?.addEventListener('click', () => {
+      bumpFontScale(-FONT_SCALE_STEP);
+      syncFontButtons();
+    });
+    root.querySelector('[data-font-inc]')?.addEventListener('click', () => {
+      bumpFontScale(FONT_SCALE_STEP);
+      syncFontButtons();
+    });
+  }
+
+  function touchDistance(a, b) {
+    return Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+  }
+
+  function flushPinchScale() {
+    pinchRaf = 0;
+    if (pinchPending == null) return;
+    setFontScale(pinchPending);
+    pinchPending = null;
+    syncFontButtons();
+  }
+
+  function queuePinchScale(scale) {
+    pinchPending = scale;
+    if (pinchRaf) return;
+    pinchRaf = requestAnimationFrame(flushPinchScale);
+  }
+
+  function bindPinchZoom() {
+    if (typeof pinchCleanup === 'function') {
+      pinchCleanup();
+      pinchCleanup = null;
+    }
+    const target = root.querySelector('.bible-page') || root.querySelector('.page--reading');
+    if (!target) return;
+
+    let startDist = 0;
+    let startScale = 1;
+    let pinching = false;
+
+    const onStart = (e) => {
+      if (e.touches.length === 2) {
+        pinching = true;
+        startDist = touchDistance(e.touches[0], e.touches[1]) || 1;
+        startScale = getFontScale();
+      }
+    };
+
+    const onMove = (e) => {
+      if (!pinching || e.touches.length !== 2) return;
+      e.preventDefault();
+      const d = touchDistance(e.touches[0], e.touches[1]);
+      if (!d || !startDist) return;
+      const next = startScale * (d / startDist);
+      queuePinchScale(next);
+    };
+
+    const onEnd = (e) => {
+      if (e.touches.length < 2) {
+        pinching = false;
+        if (pinchPending != null) flushPinchScale();
+      }
+    };
+
+    target.addEventListener('touchstart', onStart, { passive: true });
+    target.addEventListener('touchmove', onMove, { passive: false });
+    target.addEventListener('touchend', onEnd, { passive: true });
+    target.addEventListener('touchcancel', onEnd, { passive: true });
+
+    pinchCleanup = () => {
+      target.removeEventListener('touchstart', onStart);
+      target.removeEventListener('touchmove', onMove);
+      target.removeEventListener('touchend', onEnd);
+      target.removeEventListener('touchcancel', onEnd);
+      if (pinchRaf) {
+        cancelAnimationFrame(pinchRaf);
+        pinchRaf = 0;
+      }
+    };
+  }
 
   function focusVerse(verseNum) {
     if (!verses.some((v) => v.verse === verseNum)) return;

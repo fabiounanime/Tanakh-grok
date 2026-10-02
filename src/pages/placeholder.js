@@ -27,7 +27,7 @@ export function renderPlaceholder(root, key) {
         <p>${meta.body}</p>
         ${
           key === 'conta'
-            ? `<p class="placeholder-links"><a class="link-gold" href="${routes.settings()}">Abrir ajustes</a> · <a class="link-gold" href="${routes.favorites()}">Favoritos</a> · <a class="link-gold" href="${routes.devocionais()}">Devocionais</a></p>`
+            ? `<p class="placeholder-links"><a class="link-gold" href="${routes.settings()}">Abrir ajustes</a> · <a class="link-gold" href="${routes.marcacoes()}">Minhas marcações</a> · <a class="link-gold" href="${routes.devocionais()}">Devocionais</a></p>`
             : ''
         }
       </div>
