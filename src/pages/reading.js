@@ -4,9 +4,9 @@ import { routes, navigate } from '../utils/router.js';
 import { getSavedTab, saveTab } from '../utils/storage.js';
 
 const TAB_LABELS = {
-  original: 'Original',
-  transliteration: 'Transliteração',
   portuguese: 'Português',
+  hebrew: 'Hebraico',
+  transliteration: 'Transliteração',
 };
 
 export function renderReading(root, { bookId, chapter }) {
@@ -121,7 +121,7 @@ export function renderReading(root, { bookId, chapter }) {
 }
 
 function tabConfig(tab, originalLang) {
-  if (tab === 'original') {
+  if (tab === 'hebrew') {
     const isHe = originalLang === 'he';
     return {
       className: isHe ? 'lang-he' : 'lang-el',
@@ -136,7 +136,7 @@ function tabConfig(tab, originalLang) {
 }
 
 function langAttr(tab, originalLang) {
-  if (tab === 'original') return originalLang === 'he' ? 'he' : 'el';
+  if (tab === 'hebrew') return originalLang === 'he' ? 'he' : 'el';
   if (tab === 'transliteration') return 'la';
   return 'pt';
 }

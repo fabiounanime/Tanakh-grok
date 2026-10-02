@@ -2,9 +2,9 @@
 
 App web de leitura bíblica (Antigo + Novo Testamento), tema escuro com acentos dourados, com abas sincronizadas:
 
-- **Original** — hebraico / aramaico / grego conforme o livro  
-- **Transliteração** — leitura fonética (LTR)  
 - **Português** — tradução fiel de demonstração (sem marca de editora)
+- **Hebraico** — texto hebraico / aramaico / grego conforme o livro
+- **Transliteração** — leitura fonética (LTR)
 
 Interface em **português (pt-BR)**, mobile-first, com layout responsivo para tablet e widescreen. Também é um **PWA** (Progressive Web App).
 
