@@ -1,10 +1,5 @@
 import { books } from '../data/books.js';
 import { routes } from '../utils/router.js';
-import {
-  versionPillHtml,
-  versionSheetHtml,
-  bindVersionPicker,
-} from '../components/versionPicker.js';
 
 function filterBooks(query, testament) {
   const q = query.trim().toLowerCase();
@@ -66,7 +61,6 @@ export function renderBiblia(root, { query = '', testament = 'all' } = {}) {
           </span>
           <h1>Bíblia</h1>
         </div>
-        ${versionPillHtml()}
       </header>
 
       <div class="search-wrap">
@@ -93,7 +87,6 @@ export function renderBiblia(root, { query = '', testament = 'all' } = {}) {
           : `<p class="empty-search">Nenhum livro encontrado para “${escapeHtml(query)}”.</p>`
       }
     </main>
-    ${versionSheetHtml()}
   `;
 
   const input = root.querySelector('#book-search');
@@ -114,14 +107,5 @@ export function renderBiblia(root, { query = '', testament = 'all' } = {}) {
         testament: btn.getAttribute('data-filter'),
       });
     });
-  });
-
-  bindVersionPicker(root, {
-    onChange: () => {
-      renderBiblia(root, {
-        query: root.querySelector('#book-search')?.value || query,
-        testament,
-      });
-    },
   });
 }

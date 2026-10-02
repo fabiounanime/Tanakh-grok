@@ -1,3 +1,9 @@
+/**
+ * TEMPORARILY UNUSED — Portuguese multi-version picker is hidden.
+ * Reading uses FIXED_PT_VERSION (almeida / bible-api.com) only.
+ * Keep this module for when the picker is re-enabled.
+ */
+
 import { listPtVersions } from '../data/versions.js';
 import { isApiVersionReady } from '../utils/bibleApi.js';
 import { getPtVersion, setPtVersion } from '../utils/storage.js';

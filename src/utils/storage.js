@@ -1,4 +1,4 @@
-import { DEFAULT_PT_VERSION, isLocallyAvailablePtVersion, getPtVersionMeta } from '../data/versions.js';
+import { FIXED_PT_VERSION, DEFAULT_PT_VERSION, isLocallyAvailablePtVersion, getPtVersionMeta } from '../data/versions.js';
 import { isApiVersionReady } from './bibleApi.js';
 
 export function isAvailablePtVersion(id) {
@@ -30,24 +30,23 @@ export function saveTab(tab) {
 
 const PT_VERSION_KEY = 'biblia-tanakh:ptVersion';
 
+/**
+ * Portuguese version is temporarily fixed to João Ferreira de Almeida
+ * (bible-api.com). The multi-version picker UI is hidden; localStorage
+ * selections for ACF/RA/NVI/etc. are ignored until the picker returns.
+ */
 export function getPtVersion() {
-  try {
-    const saved = localStorage.getItem(PT_VERSION_KEY);
-    if (saved && isAvailablePtVersion(saved)) return saved;
-  } catch {
-    /* ignore */
-  }
-  return DEFAULT_PT_VERSION;
+  return FIXED_PT_VERSION || DEFAULT_PT_VERSION;
 }
 
-export function setPtVersion(id) {
-  if (!isAvailablePtVersion(id)) return getPtVersion();
+/** No-op while the picker is disabled — always keeps the fixed Almeida source. */
+export function setPtVersion(_id) {
   try {
-    localStorage.setItem(PT_VERSION_KEY, id);
+    localStorage.setItem(PT_VERSION_KEY, FIXED_PT_VERSION);
   } catch {
     /* ignore quota */
   }
-  return id;
+  return FIXED_PT_VERSION;
 }
 
 

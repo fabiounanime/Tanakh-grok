@@ -97,7 +97,9 @@ export const PT_VERSIONS = [
   },
 ];
 
-export const DEFAULT_PT_VERSION = 'demo';
+/** Fixed PT source while the multi-version picker is temporarily disabled. */
+export const FIXED_PT_VERSION = 'almeida';
+export const DEFAULT_PT_VERSION = FIXED_PT_VERSION;
 
 /**
  * Runtime availability: local versions always on; API versions only when

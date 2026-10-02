@@ -1,6 +1,6 @@
 import { getBookById } from '../data/books.js';
 import { getVersesForVersion, mergeApiChapterVerses } from '../data/verses.js';
-import { getPtVersionMeta } from '../data/versions.js';
+import { FIXED_PT_VERSION, getPtVersionMeta } from '../data/versions.js';
 import { navigate } from '../utils/router.js';
 import { fetchApiChapter } from '../utils/bibleApi.js';
 import {
@@ -20,12 +20,6 @@ import {
   FONT_SCALE_MAX,
   FONT_SCALE_STEP,
 } from '../utils/storage.js';
-import {
-  versionPillHtml,
-  versionSheetHtml,
-  bindVersionPicker,
-  currentPtVersionMeta,
-} from '../components/versionPicker.js';
 
 const TAB_LABELS = {
   portuguese: 'Português',
@@ -48,7 +42,8 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
   }
 
   const cap = Math.min(Math.max(1, chapter || 1), book.chapters);
-  let ptVersion = getPtVersion();
+  // Temporarily fixed: João Ferreira de Almeida via bible-api.com (no PT version picker).
+  let ptVersion = getPtVersion(); // always FIXED_PT_VERSION / almeida
   let verses = [];
   /** @type {'idle'|'loading'|'ready'|'error'} */
   let loadState = 'idle';
@@ -63,7 +58,8 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
   let activeVerse = deepLinkNum;
   let pendingDeepLink = deepLinkNum;
 
-  async function loadVerses(versionId = ptVersion) {
+  async function loadVerses(_ignored) {
+    const versionId = FIXED_PT_VERSION;
     const token = ++loadToken;
     const meta = getPtVersionMeta(versionId);
     ptVersion = versionId;
@@ -83,11 +79,19 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         loadError = '';
       } catch (err) {
         if (token !== loadToken) return;
-        verses = [];
-        loadState = 'error';
-        loadError =
-          (err && err.message) ||
-          'Não foi possível carregar este capítulo pela API.';
+        // Prefer local sample over an empty Portuguese pane when offline / API fails.
+        const localFallback = getVersesForVersion(book.id, cap, 'demo');
+        if (localFallback.length) {
+          verses = localFallback;
+          loadState = 'ready';
+          loadError = '';
+        } else {
+          verses = [];
+          loadState = 'error';
+          loadError =
+            (err && err.message) ||
+            'Não foi possível carregar este capítulo pela API.';
+        }
       }
       if (activeVerse == null || !verses.some((v) => v.verse === activeVerse)) {
         activeVerse = verses[0]?.verse ?? null;
@@ -127,7 +131,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       body = `
         <div class="placeholder-chapter" aria-busy="true">
           <strong>Carregando…</strong>
-          <p>Buscando ${escapeHtml(currentPtVersionMeta().label)} · ${escapeHtml(
+          <p>Buscando ${escapeHtml(getPtVersionMeta(FIXED_PT_VERSION).label)} · ${escapeHtml(
             book.name
           )} ${cap}. Após o primeiro carregamento, o capítulo fica disponível offline.</p>
         </div>`;
@@ -143,9 +147,9 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       body = `
         <div class="placeholder-chapter">
           <strong>Capítulo em breve</strong>
-          <p>Ainda não há texto de demonstração para ${escapeHtml(
+          <p>Ainda não há texto em português para ${escapeHtml(
             book.name
-          )} ${cap}. Selecione <strong>João Ferreira de Almeida</strong>, <strong>ACF</strong>, <strong>RA</strong> ou <strong>NVI</strong> na versão em português para carregar pela API.</p>
+          )} ${cap}. O texto usa <strong>João Ferreira de Almeida</strong> (bible-api.com); verifique a conexão e tente de novo.</p>
         </div>`;
     } else {
       const { className, field, dirNote } = tabConfig(activeTab, verses[0]?.originalLang);
@@ -217,7 +221,6 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       <header class="app-header">
         <button class="btn-icon" type="button" data-back aria-label="Voltar aos capítulos">←</button>
         <h1>${escapeHtml(book.name)}</h1>
-        ${activeTab === 'portuguese' ? versionPillHtml() : ''}
         <div class="font-size-controls" role="group" aria-label="Tamanho da fonte">
           <button type="button" data-font-dec aria-label="Diminuir fonte" title="Diminuir fonte">A−</button>
           <button type="button" class="font-btn--plus" data-font-inc aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
@@ -246,11 +249,9 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         </div>
         ${
           activeTab === 'portuguese'
-            ? `<p class="version-banner" aria-live="polite">Português · ${escapeHtml(currentPtVersionMeta().label)}${
-                verses.some((v) => v.portugueseSource && v.portugueseSource !== ptVersion)
-                  ? ' <span class="version-banner__hint">(trechos sem esta versão usam Demo)</span>'
-                  : ''
-              }</p>`
+            ? `<p class="version-banner" aria-live="polite">Português · ${escapeHtml(
+                getPtVersionMeta(FIXED_PT_VERSION).label
+              )}</p>`
             : ''
         }
         <div role="tabpanel">${body}</div>
@@ -295,7 +296,6 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         </div>
       </div>
       <div class="toast" id="reading-toast" hidden role="status"></div>
-      ${versionSheetHtml()}
     `;
 
     root.querySelector('[data-back]')?.addEventListener('click', () =>
@@ -345,11 +345,6 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     bindFontControls();
     bindPinchZoom();
     syncFontButtons();
-    bindVersionPicker(root, {
-      onChange: (id) => {
-        loadVerses(id);
-      },
-    });
     root.querySelector('[data-retry-load]')?.addEventListener('click', () => {
       loadVerses(ptVersion);
     });

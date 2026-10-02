@@ -2,7 +2,7 @@
 
 App web de leitura bíblica (Antigo + Novo Testamento), tema escuro com acentos dourados, com abas sincronizadas:
 
-- **Português** — seletor de versão (Demo + Almeida 1911 local; Almeida via bible-api.com; ACF/RA/NVI via ABíbliaDigital; NVT/ARC via API licenciada)
+- **Português** — temporariamente **apenas** João Ferreira de Almeida via [bible-api.com](https://bible-api.com/) (seletor multi-versão oculto; fallback local Demo se a API falhar e houver amostra)
 - **Hebraico** — texto hebraico / aramaico / grego conforme o livro
 - **Transliteração** — leitura fonética (LTR)
 
@@ -95,26 +95,24 @@ npm run preview   # opcional: testar dist/ (inclui PWA)
 
 ## Versões em português
 
-O seletor de versão (cabeçalho **Bíblia** e leitura na aba Português) afeta **somente** o texto em português. Hebraico e Transliteração continuam no original.
+**Estado atual (temporário):** o seletor multi-versão (Demo / A1911 / ACF / RA / NVI / NVT / ARC) está **oculto**. A aba **Português** usa uma única fonte fixa — **João Ferreira de Almeida** via bible-api.com (`FIXED_PT_VERSION = 'almeida'`). Hebraico e Transliteração não mudam. Código de provedores extras permanece em `versions.js` / `bibleApi.js` / `versionPicker.js` (dormente) para reativar depois.
 
-### Embarcadas (sempre disponíveis)
+### Fonte ativa: João Ferreira de Almeida via bible-api.com (sem chave)
+
+| Id | Rótulo | Fonte |
+|----|--------|-------|
+| `almeida` | João Ferreira de Almeida | [bible-api.com](https://bible-api.com/) `translation=almeida` (domínio público) |
+
+Na aba **Português**, a leitura busca o capítulo em `/data/almeida/{BOOK}/{CHAPTER}`. Respostas são cacheadas em **memória + `localStorage`** (`biblia-tanakh:bibleApi:…`) para reuso offline após o primeiro fetch. Se a API falhar e existir amostra local (ex.: Gênesis 1 Demo), o app usa esse fallback para não deixar a aba vazia. Implementação: `src/utils/bibleApi.js`, `src/pages/reading.js`.
+
+### Embarcadas (fallback / catálogo dormente)
 
 | Id | Rótulo | Licença |
 |----|--------|---------|
 | `demo` | Demo (local) | Amostra de demonstração (não é edição comercial) |
 | `almeida1911` | Almeida 1911 (local) | Domínio público (Lisboa 1911 · Project Gutenberg 62383) — Gênesis 1 |
 
-A escolha é persistida em `localStorage` (`biblia-tanakh:ptVersion`).
-
-### João Ferreira de Almeida via bible-api.com (sem chave)
-
-| Id | Rótulo | Fonte |
-|----|--------|-------|
-| `almeida` | João Ferreira de Almeida | [bible-api.com](https://bible-api.com/) `translation=almeida` (domínio público) |
-
-Na aba **Português**, com esta versão selecionada, a leitura busca o capítulo pela API parametrizada (`/data/almeida/{BOOK}/{CHAPTER}`). Respostas são cacheadas em **memória + `localStorage`** (`biblia-tanakh:bibleApi:…`) para reuso offline após o primeiro fetch. Implementação: `src/utils/bibleApi.js`.
-
-### ACF / RA / NVI via ABíbliaDigital (token opcional)
+### ACF / RA / NVI via ABíbliaDigital (token opcional; UI oculto)
 
 | Id | Rótulo | Fonte |
 |----|--------|-------|
@@ -134,9 +132,9 @@ Na aba **Português**, com esta versão selecionada, a leitura busca o capítulo
 2. Adicione `VITE_ABIBLIA_TOKEN` = seu JWT (Production; também Preview se quiser).
 3. **Save** e dispare um novo deploy (Vite só lê `VITE_*` no *build*).
 
-### Licenciadas via API (NVT / ARC atual)
+### Licenciadas via API (NVT / ARC atual; UI oculto)
 
-**Não** embutimos NVT nem edições ARC atuais — exigem licença do detentor dos direitos. A UI lista essas opções como *Requer licença / API* até existir configuração. NVI no seletor usa ABíbliaDigital (acima); o stub `VITE_BIBLE_API_BIBLE_NVI` permanece para provedores licenciados alternativos.
+**Não** embutimos NVT nem edições ARC atuais — exigem licença do detentor dos direitos. Enquanto o seletor está oculto, essas opções não aparecem na UI. NVI no catálogo dormente usava ABíbliaDigital; o stub `VITE_BIBLE_API_BIBLE_NVI` permanece para provedores licenciados alternativos.
 
 **Sobre [HelioGiroto/Biblia-ARC](https://github.com/HelioGiroto/Biblia-ARC):** o repositório tem LICENSE MIT para o *software* do autor, mas o README identifica o texto como **ACF** — tradução moderna com direitos autorais. O MIT do wrapper **não** autoriza redistribuir o texto bíblico; por isso **não** embarcamos ARC/ACF a partir desse repo.
 
@@ -148,7 +146,7 @@ Integração prevista para NVT/ARC (stub em `src/utils/bibleApi.js`):
    - `VITE_BIBLE_API_PROVIDER=api.bible` (ou `dbp`)
    - `VITE_BIBLE_API_KEY=…`
    - `VITE_BIBLE_API_BIBLE_NVT` / `_ARC` = ids da bíblia no provedor
-3. Com flag + chave + id mapeado, a opção correspondente fica **selecionável**. O fetch real ainda é um stub — ligue o adapter do provedor em `bibleApi.js` (sem scraping).
+3. Quando o seletor for reativado: com flag + chave + id mapeado, a opção correspondente fica **selecionável**. O fetch real ainda é um stub — ligue o adapter do provedor em `bibleApi.js` (sem scraping).
 
 ### Outro provedor (opcional, não ligado)
 
