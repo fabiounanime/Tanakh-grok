@@ -1902,6 +1902,39 @@ main.page.page--home {
   white-space: nowrap;
 }
 
+.splash__spinner {
+  width: 46px;
+  height: 46px;
+  margin-top: 2rem;
+  color: var(--accent);
+}
+
+.splash__spinner svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  animation: splash-spinner-rotate 1.35s linear infinite;
+}
+
+.splash__spinner-track {
+  fill: none;
+  stroke: rgba(255, 193, 7, 0.16);
+  stroke-width: 2.5;
+}
+
+.splash__spinner-arc {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 2.5;
+  stroke-dasharray: 72 42;
+}
+
+@keyframes splash-spinner-rotate {
+  to { transform: rotate(360deg); }
+}
+
 /* Entrance: title then slogan (fill-mode both hides during delay) */
 .splash--play .splash__mark {
   animation: splash-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both;
@@ -1917,7 +1950,8 @@ main.page.page--home {
 
 .splash--reduced .splash__mark,
 .splash--reduced .splash__title,
-.splash--reduced .splash__slogan {
+.splash--reduced .splash__slogan,
+.splash--reduced .splash__spinner svg {
   opacity: 1;
   transform: none;
   animation: none;
@@ -1945,6 +1979,10 @@ main.page.page--home {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+
+  .splash__spinner svg {
+    animation: none;
   }
 }
 

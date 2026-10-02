@@ -45,6 +45,12 @@ function ensureSplash() {
       <span class="splash__mark" aria-hidden="true">✦</span>
       <p class="splash__title">Bíblia Origens</p>
       <p class="splash__slogan">${SLOGAN.split('\n').map((line) => `<span class="splash__slogan-line">${line}</span>`).join('')}</p>
+      <div class="splash__spinner" role="status" aria-label="Carregando">
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle class="splash__spinner-track" cx="24" cy="24" r="18" />
+          <circle class="splash__spinner-arc" cx="24" cy="24" r="18" />
+        </svg>
+      </div>
     </div>
   `;
   document.body.appendChild(el);
@@ -81,8 +87,10 @@ export function runSplash() {
     splash.classList.add('splash--play');
   }
 
-  const holdMs = reduced ? 450 : 2200;
-  const fadeMs = reduced ? 200 : 420;
+  // Keep the full, non-reduced splash close to three seconds: enough time
+  // for the mark, name, slogan, and loader to read without feeling stalled.
+  const holdMs = reduced ? 450 : 2550;
+  const fadeMs = reduced ? 200 : 450;
 
   return new Promise((resolve) => {
     window.setTimeout(() => {
