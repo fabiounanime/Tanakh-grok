@@ -1,0 +1,644 @@
+{
+  "id": "amo",
+  "chapters": [
+    {
+      "n": 1,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "As palavras de Amós, que estava entre os pastores de Tecoa, as quais ele viu acerca de Israel, nos dias de Uzias, rei de Judá, e nos dias de Jeroboão, filho de Joás, rei de Israel, dois anos antes do terremoto."
+        },
+        {
+          "n": 2,
+          "portuguese": "E disse: O SENHOR bramará de Sião e dará a sua voz de Jerusalém; e os prados dos pastores prantearão, e secará o cume do Carmelo."
+        },
+        {
+          "n": 3,
+          "portuguese": "Assim diz o SENHOR: Por três transgressões de Damasco, e por quatro, não retirarei o castigo, porque trilharam a Gileade com trilhos de ferro."
+        },
+        {
+          "n": 4,
+          "portuguese": "Por isso, porei fogo à casa de Hazael, o qual consumirá os palácios de Ben-Hadade."
+        },
+        {
+          "n": 5,
+          "portuguese": "E quebrarei o ferrolho de Damasco, e exterminarei o morador do vale de Áven, e o que tem o cetro de Bete-Éden; e o povo da Síria será levado em cativeiro a Quir, diz o SENHOR."
+        },
+        {
+          "n": 6,
+          "portuguese": "Assim diz o SENHOR: Por três transgressões de Gaza, e por quatro, não retirarei o castigo, porque levaram cativo todo o povo, para o entregarem a Edom."
+        },
+        {
+          "n": 7,
+          "portuguese": "Por isso, porei fogo ao muro de Gaza, o qual consumirá os seus palácios."
+        },
+        {
+          "n": 8,
+          "portuguese": "E exterminarei o morador de Asdode e o que tem o cetro de Ascalom; e tornarei a minha mão contra Ecrom, e o restante dos filisteus perecerá, diz o Senhor DEUS."
+        },
+        {
+          "n": 9,
+          "portuguese": "Assim diz o SENHOR: Por três transgressões de Tiro, e por quatro, não retirarei o castigo, porque entregaram todo o povo cativo a Edom e não se lembraram da aliança fraternal."
+        },
+        {
+          "n": 10,
+          "portuguese": "Por isso, porei fogo ao muro de Tiro, o qual consumirá os seus palácios."
+        },
+        {
+          "n": 11,
+          "portuguese": "Assim diz o SENHOR: Por três transgressões de Edom, e por quatro, não retirarei o castigo, porque perseguiu a seu irmão à espada e sufocou a sua misericórdia; e a sua ira dilacerou para sempre, e reteve a sua indignação perpetuamente."
+        },
+        {
+          "n": 12,
+          "portuguese": "Por isso, porei fogo a Temã, o qual consumirá os palácios de Bozra."
+        },
+        {
+          "n": 13,
+          "portuguese": "Assim diz o SENHOR: Por três transgressões dos filhos de Amom, e por quatro, não retirarei o castigo, porque rasgaram o ventre das grávidas de Gileade, para dilatarem os seus termos."
+        },
+        {
+          "n": 14,
+          "portuguese": "Por isso, porei fogo ao muro de Rabá, o qual consumirá os seus palácios, com alarido no dia da batalha, com tempestade no dia do redemoinho."
+        },
+        {
+          "n": 15,
+          "portuguese": "E o seu rei irá em cativeiro, ele e os seus príncipes juntamente, diz o SENHOR."
+        }
+      ],
+      "notes": [
+        "1,2 — O SENHOR brama de Sião; juízo sobre as nações vizinhas."
+      ]
+    },
+    {
+      "n": 2,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Assim diz o SENHOR: Por três transgressões de Moabe, e por quatro, não retirarei o castigo, porque queimou os ossos do rei de Edom até os reduzir a cal."
+        },
+        {
+          "n": 2,
+          "portuguese": "Por isso, porei fogo a Moabe, o qual consumirá os palácios de Queriote; e Moabe morrerá com tumulto, com alarido e com som de trombeta."
+        },
+        {
+          "n": 3,
+          "portuguese": "E exterminarei o juiz do meio dele e matarei com ele todos os seus príncipes, diz o SENHOR."
+        },
+        {
+          "n": 4,
+          "portuguese": "Assim diz o SENHOR: Por três transgressões de Judá, e por quatro, não retirarei o castigo, porque rejeitaram a lei do SENHOR e não guardaram os seus estatutos; e os seus ídolos os fizeram errar, segundo os quais andaram seus pais."
+        },
+        {
+          "n": 5,
+          "portuguese": "Por isso, porei fogo a Judá, o qual consumirá os palácios de Jerusalém."
+        },
+        {
+          "n": 6,
+          "portuguese": "Assim diz o SENHOR: Por três transgressões de Israel, e por quatro, não retirarei o castigo, porque vendem o justo por dinheiro e o necessitado por um par de sandálias;"
+        },
+        {
+          "n": 7,
+          "portuguese": "eles que tramam sobre o pó da terra a cabeça dos pobres e pervertem o caminho dos mansos; e um homem e seu pai entram à mesma moça, para profanarem o meu santo nome."
+        },
+        {
+          "n": 8,
+          "portuguese": "E se deitam junto a qualquer altar sobre roupas empenhadas e, na casa de seu deus, bebem o vinho dos que foram multados."
+        },
+        {
+          "n": 9,
+          "portuguese": "Todavia, eu destruí diante deles o amorreu, cuja altura era como a dos cedros, e que era forte como os carvalhos; e destruí o seu fruto por cima e as suas raízes por baixo."
+        },
+        {
+          "n": 10,
+          "portuguese": "Também vos fiz subir da terra do Egito e vos conduzi quarenta anos no deserto, para que possuísseis a terra do amorreu."
+        },
+        {
+          "n": 11,
+          "portuguese": "E dentre os vossos filhos suscitei profetas e, dentre os vossos jovens, nazireus. Não é isto assim, filhos de Israel? diz o SENHOR."
+        },
+        {
+          "n": 12,
+          "portuguese": "Mas vós aos nazireus destes a beber vinho e aos profetas ordenastes, dizendo: Não profetizeis."
+        },
+        {
+          "n": 13,
+          "portuguese": "Eis que vos apertarei no vosso lugar, como se aperta o carro cheio de feixes."
+        },
+        {
+          "n": 14,
+          "portuguese": "E o ligeiro não achará refúgio, e o forte não esforçará a sua força, e o valente não livrará a sua vida."
+        },
+        {
+          "n": 15,
+          "portuguese": "E o que maneja o arco não resistirá, e o ligeiro de pés não se salvará, e o que monta a cavalo não livrará a sua vida."
+        },
+        {
+          "n": 16,
+          "portuguese": "E o mais corajoso entre os valentes fugirá nu naquele dia, diz o SENHOR."
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Ouvi esta palavra que o SENHOR fala contra vós, filhos de Israel, contra toda a família que fiz subir da terra do Egito, dizendo:"
+        },
+        {
+          "n": 2,
+          "portuguese": "De todas as famílias da terra somente a vós vos conheci; por isso, visitarei sobre vós todas as vossas iniquidades."
+        },
+        {
+          "n": 3,
+          "portuguese": "Andarão dois juntos, se não estiverem de acordo?"
+        },
+        {
+          "n": 4,
+          "portuguese": "Bramirá o leão no bosque, sem que tenha presa? Levantará o leãozinho a sua voz no seu covil, se nada tiver apanhado?"
+        },
+        {
+          "n": 5,
+          "portuguese": "Cairá a ave no laço em terra, se não houver armadilha para ela? Levantar-se-á o laço da terra, sem que tenha apanhado alguma coisa?"
+        },
+        {
+          "n": 6,
+          "portuguese": "Tocar-se-á a trombeta na cidade, e o povo não estremecerá? Sucederá algum mal na cidade, sem que o SENHOR o tenha feito?"
+        },
+        {
+          "n": 7,
+          "portuguese": "Certamente o Senhor DEUS não fará coisa alguma, sem primeiro revelar o seu segredo aos seus servos, os profetas."
+        },
+        {
+          "n": 8,
+          "portuguese": "O leão bramou; quem não temerá? O Senhor DEUS falou; quem não profetizará?"
+        },
+        {
+          "n": 9,
+          "portuguese": "Proclamai nos palácios de Asdode e nos palácios da terra do Egito e dizei: Ajuntai-vos sobre os montes de Samaria e vede que grandes tumultos há no meio dela e que opressões no seu meio."
+        },
+        {
+          "n": 10,
+          "portuguese": "Porque não sabem fazer o que é reto, diz o SENHOR, aqueles que entesouram violência e desolação nos seus palácios."
+        },
+        {
+          "n": 11,
+          "portuguese": "Portanto, assim diz o Senhor DEUS: Um inimigo cercará a terra e derribará a tua força de ti, e os teus palácios serão saqueados."
+        },
+        {
+          "n": 12,
+          "portuguese": "Assim diz o SENHOR: Como o pastor livra da boca do leão as duas pernas ou um pedacinho da orelha, assim serão livrados os filhos de Israel que habitam em Samaria, no canto da cama e no damasco do leito."
+        },
+        {
+          "n": 13,
+          "portuguese": "Ouvi e protestai na casa de Jacó, diz o Senhor DEUS, o Deus dos Exércitos:"
+        },
+        {
+          "n": 14,
+          "portuguese": "Que, no dia em que eu visitar as transgressões de Israel, também visitarei os altares de Betel; e os chifres do altar serão cortados e cairão por terra."
+        },
+        {
+          "n": 15,
+          "portuguese": "E ferirei a casa de inverno com a casa de verão; e as casas de marfim perecerão, e as grandes casas terão fim, diz o SENHOR."
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Ouvi esta palavra, vacas de Basã, que estais no monte de Samaria, que oprimis os pobres, que esmagais os necessitados, que dizeis a seus senhores: Trazei, e beberemos."
+        },
+        {
+          "n": 2,
+          "portuguese": "Jurou o Senhor DEUS pela sua santidade que eis que dias virão sobre vós em que vos levarão com anzóis e a vossa posteridade com anzóis de pesca."
+        },
+        {
+          "n": 3,
+          "portuguese": "E saireis pelas brechas, cada uma em frente de si, e sereis lançadas para Harmom, diz o SENHOR."
+        },
+        {
+          "n": 4,
+          "portuguese": "Vinde a Betel e transgredi; a Gilgal, e multiplicai as transgressões; e, cada manhã, trazei os vossos sacrifícios e, de três em três dias, os vossos dízimos."
+        },
+        {
+          "n": 5,
+          "portuguese": "E oferecei sacrifício de louvores do que é levedado e apregoai ofertas voluntárias e publicai-as; porque disso gostais, ó filhos de Israel, diz o Senhor DEUS."
+        },
+        {
+          "n": 6,
+          "portuguese": "Também vos dei limpeza de dentes em todas as vossas cidades e falta de pão em todos os vossos lugares; contudo, não vos convertestes a mim, diz o SENHOR."
+        },
+        {
+          "n": 7,
+          "portuguese": "Além disso, retive de vós a chuva, faltando ainda três meses para a ceifa; e fiz chover sobre uma cidade e sobre a outra cidade não fiz chover; sobre um campo choveu, e o outro, sobre o qual não choveu, secou-se."
+        },
+        {
+          "n": 8,
+          "portuguese": "E andaram duas ou três cidades a uma cidade, para beberem água, mas não se saciaram; contudo, não vos convertestes a mim, diz o SENHOR."
+        },
+        {
+          "n": 9,
+          "portuguese": "Feri-vos com crestamento e com ferrugem; a multidão dos vossos jardins, e das vossas vinhas, e das vossas figueiras, e das vossas oliveiras, a lagarta os comeu; contudo, não vos convertestes a mim, diz o SENHOR."
+        },
+        {
+          "n": 10,
+          "portuguese": "Enviei entre vós a peste, à maneira do Egito; os vossos jovens matei à espada, e juntamente os vossos cavalos foram levados; e fiz subir o fedor dos vossos arraiais até às vossas narinas; contudo, não vos convertestes a mim, diz o SENHOR."
+        },
+        {
+          "n": 11,
+          "portuguese": "Subverti alguns dentre vós, como Deus subverteu Sodoma e Gomorra, e fostes como um tição arrebatado da queimada; contudo, não vos convertestes a mim, diz o SENHOR."
+        },
+        {
+          "n": 12,
+          "portuguese": "Portanto, assim te farei, ó Israel; e, porque isso te farei, prepara-te, ó Israel, para te encontrares com o teu Deus."
+        },
+        {
+          "n": 13,
+          "portuguese": "Porque eis o que forma os montes, e cria o vento, e declara ao homem qual seja o seu pensamento, o que faz da manhã trevas e anda sobre os lugares altos da terra; SENHOR, Deus dos Exércitos, é o seu nome."
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Ouvi esta palavra que eu levanto sobre vós, isto é, uma lamentação, ó casa de Israel."
+        },
+        {
+          "n": 2,
+          "portuguese": "Caiu a virgem de Israel, não tornará a levantar-se; deixada está na sua terra, e não há quem a levante."
+        },
+        {
+          "n": 3,
+          "portuguese": "Porque assim diz o Senhor DEUS: A cidade da qual saem mil ficará com cem, e aquela da qual saem cem ficará com dez, para a casa de Israel."
+        },
+        {
+          "n": 4,
+          "portuguese": "Porque assim diz o SENHOR à casa de Israel: Buscai-me e vivei."
+        },
+        {
+          "n": 5,
+          "portuguese": "Mas não busqueis a Betel, nem entreis em Gilgal, nem passeis a Berseba; porque Gilgal certamente será levada cativa, e Betel será reduzida a nada."
+        },
+        {
+          "n": 6,
+          "portuguese": "Buscai ao SENHOR e vivei, para que não irrompa como um fogo na casa de José e a consuma, e não haja em Betel quem o apague."
+        },
+        {
+          "n": 7,
+          "portuguese": "Vós que converteis o juízo em losna e deitais por terra a justiça,"
+        },
+        {
+          "n": 8,
+          "portuguese": "buscai aquele que faz as Plêiades e o Órion, e converte as trevas da manhã em dia e faz escurecer o dia com a noite; o que chama as águas do mar e as derrama sobre a face da terra; SENHOR é o seu nome."
+        },
+        {
+          "n": 9,
+          "portuguese": "O que traz súbita destruição sobre o forte, de sorte que a destruição vem sobre a fortaleza."
+        },
+        {
+          "n": 10,
+          "portuguese": "Odeiam na porta ao que os repreende e abominam ao que fala sinceramente."
+        },
+        {
+          "n": 11,
+          "portuguese": "Portanto, visto que pisais o pobre e dele exigis um tributo de trigo, edificareis casas de pedras lavradas, mas nelas não habitareis; e plantareis vinhas desejáveis, mas não bebereis do seu vinho."
+        },
+        {
+          "n": 12,
+          "portuguese": "Porque sei que são muitas as vossas transgressões e graves os vossos pecados; afligis o justo, tomais resgate e rejeitais os necessitados na porta."
+        },
+        {
+          "n": 13,
+          "portuguese": "Portanto, o que for prudente naquele tempo se calará, porque é tempo mau."
+        },
+        {
+          "n": 14,
+          "portuguese": "Buscai o bem e não o mal, para que vivais; e assim o SENHOR, o Deus dos Exércitos, estará convosco, como dizeis."
+        },
+        {
+          "n": 15,
+          "portuguese": "Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo; talvez o SENHOR, o Deus dos Exércitos, tenha piedade do restante de José."
+        },
+        {
+          "n": 16,
+          "portuguese": "Portanto, assim diz o SENHOR, o Deus dos Exércitos, o Senhor: Em todas as praças haverá pranto, e em todas as ruas dirão: Ai! Ai! E ao lavrador chamarão ao luto, e à lamentação aos que souberem prantear."
+        },
+        {
+          "n": 17,
+          "portuguese": "E em todas as vinhas haverá pranto, porque passarei pelo meio de ti, diz o SENHOR."
+        },
+        {
+          "n": 18,
+          "portuguese": "Ai daqueles que desejam o dia do SENHOR! Para que quereis vós este dia do SENHOR? Será de trevas e não de luz."
+        },
+        {
+          "n": 19,
+          "portuguese": "Como se um homem fugisse de diante do leão, e o encontrasse um urso; ou como se, entrando em casa, encostasse a mão à parede, e o mordesse uma serpente."
+        },
+        {
+          "n": 20,
+          "portuguese": "Não será, pois, o dia do SENHOR trevas e não luz? Não será completa escuridão, sem nenhuma claridade?"
+        },
+        {
+          "n": 21,
+          "portuguese": "Aborreço, desprezo as vossas festas e não cheiram bem para mim as vossas assembleias solenes."
+        },
+        {
+          "n": 22,
+          "portuguese": "Ainda que me ofereçais holocaustos e as vossas ofertas de manjares, não me agradarei deles, nem atentarei para as ofertas pacíficas de vossos animais cevados."
+        },
+        {
+          "n": 23,
+          "portuguese": "Afasta de mim o estrépito dos teus cânticos; porque não ouvirei as melodias das tuas violas."
+        },
+        {
+          "n": 24,
+          "portuguese": "Antes, corra o juízo como as águas, e a justiça como um ribeiro perene."
+        },
+        {
+          "n": 25,
+          "portuguese": "Oferecestes-me vós sacrifícios e ofertas de manjares no deserto por quarenta anos, ó casa de Israel?"
+        },
+        {
+          "n": 26,
+          "portuguese": "Antes, levastes a tenda do vosso Moloque, e Quium, vossas imagens, a estrela do vosso deus, que fizestes para vós mesmos."
+        },
+        {
+          "n": 27,
+          "portuguese": "Por isso, vos levarei cativos para além de Damasco, diz o SENHOR, cujo nome é Deus dos Exércitos."
+        }
+      ],
+      "notes": [
+        "5,4 — Buscai-me e vivei.",
+        "5,24 — Corra o juízo como as águas."
+      ]
+    },
+    {
+      "n": 6,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Ai dos que vivem sossegados em Sião e dos que estão seguros no monte de Samaria, homens notáveis da primeira das nações, aos quais vem a casa de Israel!"
+        },
+        {
+          "n": 2,
+          "portuguese": "Passai a Calné e vede; e dali ide a Hamate, a grande; descei depois a Gate dos filisteus; são eles melhores do que estes reinos? Ou é o seu território maior do que o vosso território?"
+        },
+        {
+          "n": 3,
+          "portuguese": "Vós que alongais o dia do mal e fazeis aproximar o assento da violência;"
+        },
+        {
+          "n": 4,
+          "portuguese": "que dormis em camas de marfim, e vos estendeis sobre os vossos leitos, e comeis os cordeiros do rebanho e os bezerros do meio do curral;"
+        },
+        {
+          "n": 5,
+          "portuguese": "que cantais ao som da viola e inventais para vós instrumentos músicos, como Davi;"
+        },
+        {
+          "n": 6,
+          "portuguese": "que bebeis vinho em taças e vos ungis com o mais excelente óleo, mas não vos afligis pela ruína de José."
+        },
+        {
+          "n": 7,
+          "portuguese": "Portanto, agora irão em cativeiro à frente dos que forem para o cativeiro; e cessará o banquete dos que se estendem."
+        },
+        {
+          "n": 8,
+          "portuguese": "Jurou o Senhor DEUS por si mesmo, diz o SENHOR, o Deus dos Exércitos: Abomino a soberba de Jacó e odeio os seus palácios; e entregarei a cidade e tudo o que nela há."
+        },
+        {
+          "n": 9,
+          "portuguese": "E acontecerá que, se ficarem dez homens numa casa, morrerão."
+        },
+        {
+          "n": 10,
+          "portuguese": "E, quando o parente de alguém, aquele que o queima, o tomar para levar-lhe os ossos para fora da casa, e disser ao que estiver no interior da casa: Há ainda alguém contigo? E este responder: Ninguém; então lhe dirá: Cala-te, porque não devemos invocar o nome do SENHOR."
+        },
+        {
+          "n": 11,
+          "portuguese": "Porque eis que o SENHOR ordena, e a casa grande será despedaçada, e a casa pequena, em pedaços."
+        },
+        {
+          "n": 12,
+          "portuguese": "Porventura, correrão cavalos na rocha? Arar-se-á nela com bois? Mas vós convertestes o juízo em fel e o fruto da justiça em losna;"
+        },
+        {
+          "n": 13,
+          "portuguese": "vós que vos alegrais com nada, e dizeis: Não nos temos nós tornado poderosos com a nossa força?"
+        },
+        {
+          "n": 14,
+          "portuguese": "Portanto, eis que eu levantarei sobre vós, ó casa de Israel, uma nação, diz o SENHOR, o Deus dos Exércitos; e oprimir-vos-ão desde a entrada de Hamate até ao ribeiro da Arabá."
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "O Senhor DEUS assim me fez ver: e eis que ele formava gafanhotos no princípio do rebentar da erva serôdia; e eis que era a erva serôdia depois das ceifas do rei."
+        },
+        {
+          "n": 2,
+          "portuguese": "E aconteceu que, tendo eles acabado de comer a erva da terra, eu disse: Senhor DEUS, perdoa, peço-te; como subsistirá Jacó? Pois ele é pequeno."
+        },
+        {
+          "n": 3,
+          "portuguese": "Então, o SENHOR se arrependeu disso. Não acontecerá, disse o SENHOR."
+        },
+        {
+          "n": 4,
+          "portuguese": "O Senhor DEUS assim me fez ver: e eis que o Senhor DEUS chamava para contender com fogo; e consumiu o grande abismo e ainda um quinhão da terra."
+        },
+        {
+          "n": 5,
+          "portuguese": "Então, eu disse: Senhor DEUS, cessa, peço-te; como subsistirá Jacó? Pois ele é pequeno."
+        },
+        {
+          "n": 6,
+          "portuguese": "Então, o SENHOR se arrependeu disso. Nem isso acontecerá, disse o Senhor DEUS."
+        },
+        {
+          "n": 7,
+          "portuguese": "Mostrou-me também assim: e eis que o Senhor estava sobre um muro, levantado a prumo; e tinha um prumo na sua mão."
+        },
+        {
+          "n": 8,
+          "portuguese": "E o SENHOR me disse: Que vês tu, Amós? E eu disse: Um prumo. Então, disse o Senhor: Eis que eu porei o prumo no meio do meu povo Israel; nunca mais passarei por ele."
+        },
+        {
+          "n": 9,
+          "portuguese": "Mas os altos de Isaque serão assolados, e santuários de Israel serão destruídos; e levantar-me-ei com a espada contra a casa de Jeroboão."
+        },
+        {
+          "n": 10,
+          "portuguese": "Então, Amazias, o sacerdote de Betel, mandou dizer a Jeroboão, rei de Israel: Amós tem conspirado contra ti no meio da casa de Israel; a terra não poderá sofrer todas as suas palavras."
+        },
+        {
+          "n": 11,
+          "portuguese": "Porque assim diz Amós: Jeroboão morrerá à espada, e Israel certamente será levado cativo para fora da sua terra."
+        },
+        {
+          "n": 12,
+          "portuguese": "Depois, Amazias disse a Amós: Vai-te, ó vidente, foge para a terra de Judá, e ali come o teu pão, e ali profetiza;"
+        },
+        {
+          "n": 13,
+          "portuguese": "mas em Betel daqui em diante não profetizarás mais, porque é o santuário do rei e a casa do reino."
+        },
+        {
+          "n": 14,
+          "portuguese": "Respondeu, porém, Amós e disse a Amazias: Eu não era profeta, nem filho de profeta, mas boieiro e colhedor de sicômoros."
+        },
+        {
+          "n": 15,
+          "portuguese": "Mas o SENHOR me tirou de após o gado, e o SENHOR me disse: Vai, profetiza ao meu povo Israel."
+        },
+        {
+          "n": 16,
+          "portuguese": "Agora, pois, ouve a palavra do SENHOR: Tu dizes: Não profetizarás contra Israel, nem falarás contra a casa de Isaque."
+        },
+        {
+          "n": 17,
+          "portuguese": "Portanto, assim diz o SENHOR: Tua mulher se prostituirá na cidade, e teus filhos e tuas filhas cairão à espada, e a tua terra será repartida a cordel; e tu morrerás numa terra imunda, e Israel certamente será levado cativo para fora da sua terra."
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "O Senhor DEUS assim me fez ver: e eis aqui um cesto de frutos de verão."
+        },
+        {
+          "n": 2,
+          "portuguese": "E disse: Que vês tu, Amós? E eu disse: Um cesto de frutos de verão. Então, o SENHOR me disse: Veio o fim sobre o meu povo Israel; nunca mais passarei por ele."
+        },
+        {
+          "n": 3,
+          "portuguese": "Mas os cânticos do templo, naquele dia, serão gemidos, diz o Senhor DEUS; muitos serão os cadáveres; em todo lugar os lançarão fora em silêncio."
+        },
+        {
+          "n": 4,
+          "portuguese": "Ouvi isto, vós que trazeis a pobreza sobre o necessitado e destruís os mansos da terra,"
+        },
+        {
+          "n": 5,
+          "portuguese": "dizendo: Quando passará a lua nova, para vendermos o grão? E o sábado, para abrirmos os celeiros de trigo, diminuindo o efa, e aumentando o siclo, e procedendo dolosamente com balanças enganosas,"
+        },
+        {
+          "n": 6,
+          "portuguese": "para comprarmos os pobres por dinheiro e os necessitados por um par de sandálias; e para vendermos o refugo do trigo?"
+        },
+        {
+          "n": 7,
+          "portuguese": "Jurou o SENHOR pela glória de Jacó: Eu não me esquecerei de todas as suas obras, para sempre!"
+        },
+        {
+          "n": 8,
+          "portuguese": "Por isso, não estremecerá a terra por isso? E não pranteará todo aquele que habita nela? Certamente se levantará toda ela como um rio e será lançada fora, e se afundará como o rio do Egito."
+        },
+        {
+          "n": 9,
+          "portuguese": "E sucederá que, naquele dia, diz o Senhor DEUS, farei que o sol se ponha ao meio-dia; e em pleno dia farei que se escureça a terra."
+        },
+        {
+          "n": 10,
+          "portuguese": "E tornarei as vossas festas em luto e todos os vossos cânticos em lamentações; e porei saco sobre todos os lombos e calva sobre toda cabeça; e farei que isso seja como luto de filho único e o seu fim como dia de amarguras."
+        },
+        {
+          "n": 11,
+          "portuguese": "Eis que vêm dias, diz o Senhor DEUS, em que enviarei fome sobre a terra; não fome de pão, nem sede de água, mas de ouvir as palavras do SENHOR."
+        },
+        {
+          "n": 12,
+          "portuguese": "E vaguearão de mar a mar e do Norte até ao Oriente; correrão por toda a parte, buscando a palavra do SENHOR, e não a acharão."
+        },
+        {
+          "n": 13,
+          "portuguese": "Naquele dia, as virgens formosas e os jovens desmaiarão de sede."
+        },
+        {
+          "n": 14,
+          "portuguese": "Os que juram pelo pecado de Samaria e dizem: Pela vida do teu deus, ó Dã! E: Pela vida do caminho de Berseba! Esses mesmos cairão e não se levantarão jamais."
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "verses": [
+        {
+          "n": 1,
+          "portuguese": "Vi o Senhor, que estava em pé sobre o altar; e disse: Fere o capitel, e estremecerão os umbrais, e faze-os em pedaços sobre a cabeça de todos eles; e matarei à espada o último deles; nenhum deles fugirá, e nenhum deles escapará."
+        },
+        {
+          "n": 2,
+          "portuguese": "Ainda que cavem até ao inferno, dali os tirará a minha mão; e, ainda que subam ao céu, dali os farei descer."
+        },
+        {
+          "n": 3,
+          "portuguese": "E, ainda que se escondam no cume do Carmelo, buscá-los-ei e dali os tirarei; e, ainda que se ocultem aos meus olhos no fundo do mar, e ali darei ordem à serpente, e ela os morderá."
+        },
+        {
+          "n": 4,
+          "portuguese": "E, ainda que vão em cativeiro diante dos seus inimigos, e ali darei ordem à espada, e ela os matará; e eu porei os olhos sobre eles para mal e não para bem."
+        },
+        {
+          "n": 5,
+          "portuguese": "Porque o Senhor, o DEUS dos Exércitos, é o que toca a terra, e ela se derrete, e todos os que habitam nela prantearão; e ela se levantará toda como um rio e se afundará como o rio do Egito."
+        },
+        {
+          "n": 6,
+          "portuguese": "É ele o que edifica as suas câmaras no céu e funda a sua abóbada sobre a terra; é ele o que chama as águas do mar e as derrama sobre a face da terra; SENHOR é o seu nome."
+        },
+        {
+          "n": 7,
+          "portuguese": "Não sois vós para mim, ó filhos de Israel, como os filhos dos etíopes? diz o SENHOR. Não fiz eu subir a Israel da terra do Egito, e aos filisteus de Caftor, e aos sírios de Quir?"
+        },
+        {
+          "n": 8,
+          "portuguese": "Eis que os olhos do Senhor DEUS estão contra este reino pecador, e eu o destruirei de sobre a face da terra; mas não destruirei de todo a casa de Jacó, diz o SENHOR."
+        },
+        {
+          "n": 9,
+          "portuguese": "Porque eis que darei ordem e sacudirei a casa de Israel entre todas as nações, assim como se sacode o cereal no crivo, e não cairá um grão na terra."
+        },
+        {
+          "n": 10,
+          "portuguese": "Ao fio da espada morrerão todos os pecadores do meu povo, os que dizem: O mal não nos alcançará, nem nos encontrará."
+        },
+        {
+          "n": 11,
+          "portuguese": "Naquele dia, levantarei o tabernáculo caído de Davi, e repararei as suas brechas, e tornarei a levantar as suas ruínas, e o edificarei como nos dias da antiguidade;"
+        },
+        {
+          "n": 12,
+          "portuguese": "para que possuam o restante de Edom e todas as nações que são chamadas pelo meu nome, diz o SENHOR, que faz estas coisas."
+        },
+        {
+          "n": 13,
+          "portuguese": "Eis que vêm dias, diz o SENHOR, em que o que lavra alcançará ao que sega, e o que pisa as uvas, ao que lança a semente; e os montes destilarão mosto, e todos os outeiros se derreterão."
+        },
+        {
+          "n": 14,
+          "portuguese": "E trarei do cativeiro o meu povo Israel, e eles reedificarão as cidades assoladas, e nelas habitarão, e plantarão vinhas, e beberão o seu vinho, e farão jardins, e comerão o seu fruto."
+        },
+        {
+          "n": 15,
+          "portuguese": "E os plantarei na sua terra, e não serão mais arrancados da sua terra que lhes dei, diz o SENHOR, teu Deus."
+        }
+      ],
+      "notes": [
+        "9,11 — Levantarei o tabernáculo caído de Davi."
+      ]
+    }
+  ]
+}
