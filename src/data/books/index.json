@@ -105,7 +105,7 @@
       "testament": "AT",
       "chapters": 25,
       "verses": 719,
-      "ptVerses": 0,
+      "ptVerses": 719,
       "defaultLang": "he"
     },
     {
@@ -601,6 +601,7 @@
     "jdg",
     "rut",
     "2sa",
+    "2ki",
     "ezr",
     "neh",
     "est",
@@ -654,7 +655,6 @@
     "deu",
     "1sa",
     "1ki",
-    "2ki",
     "1ch",
     "2ch",
     "job",
