@@ -10,7 +10,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Bíblia Origens" />
     <meta name="application-name" content="Bíblia Origens" />
-    <link rel="preload" as="image" href="/splash.jpg" fetchpriority="high" />
+    <link rel="preload" as="image" href="/splash-mobile.jpg" media="(max-width: 767px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/splash.jpg" media="(min-width: 768px)" fetchpriority="high" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" href="/logo.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -99,6 +100,32 @@
       }
       @keyframes splash-spinner-rotate {
         to { transform: rotate(360deg); }
+      }
+      /* Narrow screens use the portrait art edge-to-edge; desktop keeps the framed art. */
+      @media (max-width: 767px) {
+        #splash .splash__inner { padding: 0; }
+        #splash .splash__art {
+          content: url('/splash-mobile.jpg');
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          max-width: none;
+          height: 100%;
+          max-height: none;
+          object-fit: cover;
+          border-radius: 0;
+          filter: none;
+          -webkit-mask-image: none;
+          mask-image: none;
+        }
+        #splash .splash__content {
+          position: absolute;
+          left: 1rem;
+          right: 1rem;
+          bottom: 17%;
+          margin: 0;
+        }
+        #splash .splash__spinner { top: 86%; }
       }
       @media (min-width: 768px) {
         #splash .splash__spinner { top: 76%; }

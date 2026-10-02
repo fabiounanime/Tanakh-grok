@@ -1990,6 +1990,40 @@ main.page.page--home {
   to { opacity: 1; transform: translateY(0); filter: blur(0); }
 }
 
+/* Narrow screens use the portrait art edge-to-edge; desktop keeps the framed art. */
+@media (max-width: 767px) {
+  .splash__inner {
+    padding: 0;
+  }
+
+  .splash__art {
+    content: url('/splash-mobile.jpg');
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    border-radius: 0;
+    filter: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .splash__content {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 17%;
+    margin: 0;
+  }
+
+  .splash__spinner {
+    top: 86%;
+  }
+}
+
 @media (min-width: 768px) {
   .splash__spinner { top: 76%; }
 }
