@@ -19,14 +19,17 @@
   --radius-pill: 999px;
   --nav-h: 80px;
   --nav-side: 88px;
+  --safe-t: env(safe-area-inset-top, 0px);
   --safe-b: env(safe-area-inset-bottom, 0px);
   --safe-l: env(safe-area-inset-left, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
   --font-ui: 'Inter', system-ui, -apple-system, sans-serif;
   --font-reading: 'Noto Serif', Georgia, 'Times New Roman', serif;
   --font-hebrew: 'Noto Sans Hebrew', 'Times New Roman', serif;
   --font-greek: 'Noto Serif', Georgia, serif;
-  --app-max: 430px;
-  --content-pad: 1rem;
+  /* Mobile: edge-to-edge (no letterboxing). Wider breakpoints cap width. */
+  --app-max: 100%;
+  --content-pad: 0.875rem; /* ~14px */
 }
 
 @media (min-width: 768px) {
@@ -59,16 +62,19 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  height: 100%;
+  background: var(--bg);
 }
 
 body {
   margin: 0;
   min-height: 100dvh;
+  min-height: -webkit-fill-available;
   font-family: var(--font-ui);
   font-size: 16px;
   line-height: 1.5;
   color: var(--ink);
-  background: #000;
+  background: var(--bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -121,7 +127,8 @@ button:disabled {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.85rem 1rem;
+  /* Below notch/status bar; keep ~12px min when no inset */
+  padding: max(12px, var(--safe-t)) max(var(--content-pad), var(--safe-r)) 0.85rem max(var(--content-pad), var(--safe-l));
   background: rgba(5, 5, 5, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -178,25 +185,31 @@ main.page {
 }
 
 .page--home {
-  padding-top: 0.75rem;
+  padding-top: max(0.75rem, calc(var(--safe-t) + 0.5rem));
 }
 
 /* —— Bottom nav —— */
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
   width: 100%;
-  max-width: var(--app-max);
+  max-width: none;
   z-index: 30;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: calc(var(--nav-h) + var(--safe-b));
-  padding: 0.25rem 0.25rem calc(0.35rem + var(--safe-b));
+  /* Content above home indicator; background fills to screen edge */
+  min-height: calc(var(--nav-h) + var(--safe-b));
+  height: auto;
+  padding-top: 0.25rem;
+  padding-bottom: var(--safe-b);
+  padding-left: max(0.25rem, var(--safe-l));
+  padding-right: max(0.25rem, var(--safe-r));
   background: #0a0a0a;
   border-top: 1px solid #1a1a1a;
+  box-sizing: border-box;
 }
 
 .bottom-nav a {
@@ -576,7 +589,7 @@ main.page {
 
 /* —— Bíblia list —— */
 .page--biblia {
-  padding-top: 0.85rem;
+  padding-top: max(0.85rem, calc(var(--safe-t) + 0.5rem));
 }
 
 .biblia-header {
@@ -828,6 +841,20 @@ main.page {
   padding-bottom: 2rem;
 }
 
+/* Mobile: avoid double gutters — shell pad only (~14px) */
+@media (max-width: 767px) {
+  .page--reading {
+    padding-left: var(--content-pad);
+    padding-right: var(--content-pad);
+  }
+
+  .page--reading .bible-page {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 8px;
+  }
+}
+
 @media (max-width: 1023px) {
   .page--reading {
     padding-bottom: calc(2rem + 4.5rem);
@@ -887,7 +914,8 @@ main.page {
   box-shadow:
     inset 3px 0 0 rgba(255, 193, 7, 0.18),
     0 8px 28px rgba(0, 0, 0, 0.35);
-  padding: 1.75rem clamp(1.15rem, 4vw, 2.5rem) 2.25rem;
+  /* Mobile: nearly full width; wider screens get more inset below */
+  padding: 1.35rem var(--content-pad) 1.75rem;
   margin: 0 auto;
 }
 
@@ -959,14 +987,15 @@ main.page {
 @media (max-width: 1023px) {
   .page--reading .verse-navigation {
     position: fixed;
-    left: 50%;
+    left: 0;
+    right: 0;
     bottom: calc(var(--nav-h) + var(--safe-b));
     z-index: 25;
-    width: min(100vw, var(--app-max));
+    width: 100%;
     max-width: none;
     margin: 0;
-    padding: 0.5rem var(--content-pad);
-    transform: translateX(-50%);
+    padding: 0.5rem max(var(--content-pad), var(--safe-r)) 0.5rem max(var(--content-pad), var(--safe-l));
+    transform: none;
     background: rgba(10, 10, 10, 0.96);
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
@@ -1177,6 +1206,27 @@ main.page {
     background: #000;
   }
 
+  /* Centered shell on tablet: keep nav aligned to shell width */
+  .bottom-nav {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: var(--app-max);
+  }
+
+  .page--reading .verse-navigation {
+    left: 50%;
+    right: auto;
+    width: 100%;
+    max-width: var(--app-max);
+    transform: translateX(-50%);
+  }
+
+  .bible-page {
+    padding: 1.75rem clamp(1.15rem, 4vw, 2.5rem) 2.25rem;
+  }
+
   .greeting h1 {
     font-size: 1.85rem;
   }
@@ -1366,6 +1416,7 @@ main.page {
   }
 
   .app-header {
+    padding-top: max(12px, var(--safe-t));
     padding-inline: var(--content-pad);
   }
 }
