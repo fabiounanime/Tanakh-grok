@@ -6,7 +6,7 @@
       "testament": "AT",
       "chapters": 50,
       "verses": 1533,
-      "ptVerses": 1120,
+      "ptVerses": 1533,
       "defaultLang": "he"
     },
     {
@@ -596,6 +596,7 @@
     }
   ],
   "ptComplete": [
+    "gen",
     "rut",
     "est",
     "ecc",
@@ -631,7 +632,6 @@
     "jud"
   ],
   "ptPartial": [
-    "gen",
     "jhn"
   ],
   "ptNone": [
