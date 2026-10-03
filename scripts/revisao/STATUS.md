@@ -10,7 +10,7 @@ Critério: hebraico/aramaico (WLC) e grego (Robinson–Pierpont) já no reposit�
 
 | Livro | Estado |
 | --- | --- |
-| Gênesis 1–2 | Revisado em `scripts/revisao/gen-01-02.json`. Aplicar aos JSON do app no próximo commit. |
+| Gênesis 1–2 | Aplicado em `src/data/books/gen.json` e `scripts/pt_overrides/gen.json`. |
 | Gênesis 3–50 | Pendente |
 | Êxodo–Apocalipse | Pendente |
 
