@@ -3,6 +3,7 @@ import {
   loadVersesForVersion,
   getChapterNotes,
   getChapterOriginalLang,
+  originalLangLabel,
 } from '../data/verses.js';
 import { FIXED_PT_VERSION } from '../data/versions.js';
 import { navigate } from '../utils/router.js';
@@ -22,9 +23,14 @@ import {
 } from '../utils/storage.js';
 
 const TRANSLIT_KEY = 'biblia-tanakh:showTranslit';
+const ORIGINAL_KEY = 'biblia-tanakh:showOriginal';
 
 function readShowTranslit() {
   return localStorage.getItem(TRANSLIT_KEY) === '1';
+}
+
+function readShowOriginal() {
+  return localStorage.getItem(ORIGINAL_KEY) !== '0';
 }
 
 export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = null } = {}) {
@@ -91,7 +97,9 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       activeVerse = firstVerse;
     }
     const chapterLang = getChapterOriginalLang(book.id, cap, verses);
+    const originalLabel = originalLangLabel(chapterLang);
     const showTr = readShowTranslit();
+    const showOrig = readShowOriginal();
     const notes = getChapterNotes(book.id, cap);
     const chapterOptions = Array.from({ length: book.chapters }, (_, i) => {
       const n = i + 1;
@@ -156,6 +164,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       <header class="app-header reading-top">
         <button class="btn-icon" type="button" data-back aria-label="Voltar aos capítulos">←</button>
         <div class="reading-top__tools">
+          <button type="button" class="origin-tr${showOrig ? ' is-on' : ''}" data-original aria-pressed="${showOrig ? 'true' : 'false'}">${escapeHtml(originalLabel)}</button>
           <button type="button" class="origin-tr${showTr ? ' is-on' : ''}" data-translit aria-pressed="${showTr ? 'true' : 'false'}">transliterado</button>
           <div class="font-size-controls" role="group" aria-label="Tamanho da fonte">
             <button type="button" data-font-dec aria-label="Diminuir fonte" title="Diminuir fonte">A−</button>
@@ -173,7 +182,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           </label>
         </nav>
       </header>
-      <main class="page page--reading${showTr ? ' is-translit' : ''}">
+      <main class="page page--reading${showOrig ? ' is-original' : ''}${showTr ? ' is-translit' : ''}">
         <div>${body}</div>
       </main>
       <div class="sheet-backdrop" id="verse-sheet" hidden>
@@ -243,6 +252,15 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     });
     root.querySelector('[data-verse-jump]')?.addEventListener('change', (e) => {
       focusVerse(Number(e.target.value));
+    });
+    root.querySelector('[data-original]')?.addEventListener('click', () => {
+      const next = !readShowOriginal();
+      localStorage.setItem(ORIGINAL_KEY, next ? '1' : '0');
+      const page = root.querySelector('.page--reading');
+      const btn = root.querySelector('[data-original]');
+      page?.classList.toggle('is-original', next);
+      btn?.classList.toggle('is-on', next);
+      btn?.setAttribute('aria-pressed', next ? 'true' : 'false');
     });
     root.querySelector('[data-translit]')?.addEventListener('click', () => {
       const next = !readShowTranslit();

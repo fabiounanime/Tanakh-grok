@@ -1240,9 +1240,10 @@ html[data-theme='light'] .reading-title {
 .page--reading .verse.verse-card {
   display: flex;
   flex-direction: column;
-  min-height: 62vh;
+  height: auto;
+  min-height: 0;
   margin: 0;
-  padding: 1.7rem 1.35rem 2rem;
+  padding: 1.15rem 1.2rem 1.2rem;
   border: 1px solid rgba(176, 146, 90, 0.38);
   border-radius: 22px;
   border-bottom: 1px solid rgba(176, 146, 90, 0.38);
@@ -1257,8 +1258,7 @@ html[data-theme='light'] .page--reading .verse.verse-card {
 }
 
 .page--reading .verse-card:not(.verse--active) {
-  opacity: 0.5;
-  min-height: 16rem;
+  opacity: 0.72;
 }
 
 .page--reading .verse--active.verse-card {
@@ -1292,9 +1292,9 @@ html[data-theme='light'] .verse-pt {
 }
 
 .verse-orig {
-  display: block;
-  margin: 1.15rem 0 0;
-  padding-top: 1.15rem;
+  display: none;
+  margin: 1rem 0 0;
+  padding-top: 0.9rem;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
   font-size: calc(1.85rem * var(--reading-font-scale, 1));
   line-height: 1.65;
@@ -1305,6 +1305,10 @@ html[data-theme='light'] .verse-pt {
 html[data-theme='light'] .verse-orig {
   color: #1c1914;
   border-top-color: rgba(28, 25, 20, 0.14);
+}
+
+.page--reading.is-original .verse-orig {
+  display: block;
 }
 
 .verse-orig[dir='rtl'] {
