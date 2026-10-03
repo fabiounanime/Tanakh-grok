@@ -46,6 +46,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
   // No version picker; no Almeida / ACF / RA / NVI / bible-api.com.
   let verses = [];
   let sheetVerse = null;
+  let cardObserver = null;
   const deepLinkNum =
     deepLinkVerse != null && Number.isFinite(Number(deepLinkVerse))
       ? Number(deepLinkVerse)
@@ -150,14 +151,14 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
             : '<span class="verse-pt__soon">Português em breve</span>';
           return `
             <span
-              class="verse verse-block${marked ? ' verse--marked' : ''}${isActive ? ' verse--active' : ''}"
+              class="verse verse-card${marked ? ' verse--marked' : ''}${isActive ? ' verse--active' : ''}"
               data-verse="${v.verse}"
               role="button"
               tabindex="0"
               aria-posinset="${v.verse}"
               aria-current="${isActive ? 'true' : 'false'}"
               aria-label="Versículo ${v.verse}"
-            ><span class="verse-pt"><sup class="v-num" aria-hidden="true">${v.verse}</sup><span class="v-text" lang="pt">${ptInner}</span></span>${
+            ><span class="verse-ref">${cap}:${v.verse}</span><span class="verse-pt"><span class="v-text" lang="pt">${ptInner}</span></span>${
               orig
                 ? `<span class="verse-orig" lang="${langCode}" dir="${rtl ? 'rtl' : 'ltr'}">${escapeHtml(orig)}</span>`
                 : ''
@@ -173,55 +174,30 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           </aside>`
         : '';
       body = `
-        <article class="bible-page lang-open" dir="ltr">
-          <h2 class="chapter-heading">
-            <span class="chapter-heading__book">${escapeHtml(book.name)}</span>
-            <span class="chapter-heading__num">${cap}</span>
-          </h2>
-          <div class="bible-columns">
-            <div class="verse-flow" role="list">${items}</div>
-          </div>
-          ${notesHtml}
-        </article>
+        <div class="verse-flow" role="list">${items}</div>
+        ${notesHtml}
         ${verseNavigation}`;
     }
 
     root.innerHTML = `
-      <header class="app-header">
+      <header class="app-header reading-top">
         <button class="btn-icon" type="button" data-back aria-label="Voltar aos capítulos">←</button>
-        <h1>${escapeHtml(book.name)}</h1>
-        <div class="font-size-controls" role="group" aria-label="Tamanho da fonte">
-          <button type="button" class="origin-tr${showTr ? ' is-on' : ''}" data-translit aria-pressed="${showTr ? 'true' : 'false'}">tr</button>
-          <button type="button" data-font-dec aria-label="Diminuir fonte" title="Diminuir fonte">A−</button>
-          <button type="button" class="font-btn--plus" data-font-inc aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+        <div class="reading-top__tools">
+          <button type="button" class="origin-tr${showTr ? ' is-on' : ''}" data-translit aria-pressed="${showTr ? 'true' : 'false'}">transliterado</button>
+          <div class="font-size-controls" role="group" aria-label="Tamanho da fonte">
+            <button type="button" data-font-dec aria-label="Diminuir fonte" title="Diminuir fonte">A−</button>
+            <button type="button" class="font-btn--plus" data-font-inc aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+          </div>
         </div>
       </header>
       <main class="page page--reading${showTr ? ' is-translit' : ''}">
-        <div class="reading-toolbar">
-          <button
-            class="btn-text"
-            type="button"
-            data-prev
-            ${prevDisabled ? 'disabled' : ''}
-            aria-label="Capítulo anterior"
-          >‹</button>
-          <span class="chapter-label">${escapeHtml(book.name)}</span>
-          <button
-            class="btn-text"
-            type="button"
-            data-next
-            ${nextDisabled ? 'disabled' : ''}
-            aria-label="Próximo capítulo"
-          >›</button>
+        <div class="reading-title-row">
+          <h1 class="reading-title">${escapeHtml(book.name)} ${cap}</h1>
+          <div class="reading-chapter-nav">
+            <button class="btn-text" type="button" data-prev ${prevDisabled ? 'disabled' : ''} aria-label="Capítulo anterior">‹</button>
+            <button class="btn-text" type="button" data-next ${nextDisabled ? 'disabled' : ''} aria-label="Próximo capítulo">›</button>
+          </div>
         </div>
-        ${
-          book.chapters > 1
-            ? `<nav class="chapter-rail" aria-label="Capítulos">${Array.from({ length: book.chapters }, (_, i) => {
-                const n = i + 1;
-                return `<a class="chapter-rail__tick${n === cap ? ' is-current' : ''}" href="#/ler/${book.id}/${n}" aria-label="Capítulo ${n}"${n === cap ? ' aria-current="page"' : ''}></a>`;
-              }).join('')}</nav>`
-            : ''
-        }
         <div>${body}</div>
       </main>
       <div class="sheet-backdrop" id="verse-sheet" hidden>
@@ -310,6 +286,32 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         }
       });
     });
+
+    if (cardObserver) cardObserver.disconnect();
+    const cards = [...root.querySelectorAll('.verse-card')];
+    if (cards.length && 'IntersectionObserver' in window) {
+      cardObserver = new IntersectionObserver(
+        (entries) => {
+          const best = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+          if (!best) return;
+          const n = Number(best.target.getAttribute('data-verse'));
+          if (!Number.isFinite(n) || n === activeVerse) return;
+          activeVerse = n;
+          cards.forEach((card) => {
+            const on = Number(card.getAttribute('data-verse')) === n;
+            card.classList.toggle('verse--active', on);
+            card.setAttribute('aria-current', on ? 'true' : 'false');
+          });
+          const jump = root.querySelector('[data-verse-jump]');
+          if (jump) jump.value = String(n);
+          syncVerseNavigation();
+        },
+        { threshold: [0.55, 0.75] }
+      );
+      cards.forEach((card) => cardObserver.observe(card));
+    }
 
     bindSheets();
     bindFontControls();
