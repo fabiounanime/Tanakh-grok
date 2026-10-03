@@ -93,6 +93,10 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     const chapterLang = getChapterOriginalLang(book.id, cap, verses);
     const showTr = readShowTranslit();
     const notes = getChapterNotes(book.id, cap);
+    const chapterOptions = Array.from({ length: book.chapters }, (_, i) => {
+      const n = i + 1;
+      return `<option value="${n}" ${n === cap ? 'selected' : ''}>${n}</option>`;
+    }).join('');
 
     let body;
     if (!verses.length) {
@@ -103,39 +107,9 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         </div>`;
     } else {
       const navFirst = verses[0]?.verse ?? null;
-      const navLast = verses[verses.length - 1]?.verse ?? null;
       if (activeVerse == null || !verses.some((v) => v.verse === activeVerse)) {
         activeVerse = navFirst;
       }
-      const verseOptions = verses
-        .map(
-          (v) =>
-            `<option value="${v.verse}" ${
-              activeVerse === v.verse ? 'selected' : ''
-            }>Versículo ${v.verse}</option>`
-        )
-        .join('');
-      const verseNavigation = `
-        <div class="verse-navigation" aria-label="Navegação de versículos">
-          <button
-            type="button"
-            class="verse-nav-btn"
-            data-prev-verse
-            ${activeVerse === navFirst ? 'disabled' : ''}
-            aria-label="Versículo anterior"
-          >‹ Anterior</button>
-          <label class="verse-jump">
-            <span>Ir para</span>
-            <select data-verse-jump aria-label="Ir para versículo">${verseOptions}</select>
-          </label>
-          <button
-            type="button"
-            class="verse-nav-btn"
-            data-next-verse
-            ${activeVerse === navLast ? 'disabled' : ''}
-            aria-label="Próximo versículo"
-          >Próximo ›</button>
-        </div>`;
       const items = verses
         .map((v) => {
           const lang = v.originalLang || chapterLang;
@@ -158,7 +132,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
               aria-posinset="${v.verse}"
               aria-current="${isActive ? 'true' : 'false'}"
               aria-label="Versículo ${v.verse}"
-            ><span class="verse-ref">${cap}:${v.verse}</span><span class="verse-pt"><span class="v-text" lang="pt">${ptInner}</span></span>${
+            ><span class="verse-pt"><sup class="v-num">${v.verse}</sup><span class="v-text" lang="pt">${ptInner}</span></span>${
               orig
                 ? `<span class="verse-orig" lang="${langCode}" dir="${rtl ? 'rtl' : 'ltr'}">${escapeHtml(orig)}</span>`
                 : ''
@@ -175,8 +149,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         : '';
       body = `
         <div class="verse-flow" role="list">${items}</div>
-        ${notesHtml}
-        ${verseNavigation}`;
+        ${notesHtml}`;
     }
 
     root.innerHTML = `
@@ -189,15 +162,18 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
             <button type="button" class="font-btn--plus" data-font-inc aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
           </div>
         </div>
+        <nav class="reading-address" aria-label="Endereço da leitura">
+          <button type="button" data-go-books>Bíblia</button>
+          <span class="reading-address__sep" aria-hidden="true">/</span>
+          <button type="button" data-go-book>${escapeHtml(book.name)}</button>
+          <span class="reading-address__sep" aria-hidden="true">/</span>
+          <label class="reading-address__cap">
+            Cap.
+            <select data-chapter-jump aria-label="Escolher capítulo">${chapterOptions}</select>
+          </label>
+        </nav>
       </header>
       <main class="page page--reading${showTr ? ' is-translit' : ''}">
-        <div class="reading-title-row">
-          <h1 class="reading-title">${escapeHtml(book.name)} ${cap}</h1>
-          <div class="reading-chapter-nav">
-            <button class="btn-text" type="button" data-prev ${prevDisabled ? 'disabled' : ''} aria-label="Capítulo anterior">‹</button>
-            <button class="btn-text" type="button" data-next ${nextDisabled ? 'disabled' : ''} aria-label="Próximo capítulo">›</button>
-          </div>
-        </div>
         <div>${body}</div>
       </main>
       <div class="sheet-backdrop" id="verse-sheet" hidden>
@@ -245,6 +221,12 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     root.querySelector('[data-back]')?.addEventListener('click', () =>
       navigate(`/livro/${book.id}`)
     );
+    root.querySelector('[data-go-books]')?.addEventListener('click', () => navigate('/biblia'));
+    root.querySelector('[data-go-book]')?.addEventListener('click', () => navigate(`/livro/${book.id}`));
+    root.querySelector('[data-chapter-jump]')?.addEventListener('change', (e) => {
+      const next = Number(e.target.value);
+      if (next && next !== cap) navigate(`/ler/${book.id}/${next}`);
+    });
     root.querySelector('[data-prev]')?.addEventListener('click', () => {
       if (cap > 1) navigate(`/ler/${book.id}/${cap - 1}`);
     });
