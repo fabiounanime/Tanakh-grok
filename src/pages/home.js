@@ -88,9 +88,9 @@ export function renderHome(root) {
         <div class="hero-card__art" aria-hidden="true">
           <div class="hero-glow"></div>
           <svg class="hero-book" viewBox="0 0 120 80" fill="none">
-            <path d="M10 16c18-10 42-10 50 0v48c-8-8-32-8-50 0V16z" fill="#2a2418" stroke="#FFC107" stroke-width="1.5"/>
-            <path d="M110 16c-18-10-42-10-50 0v48c8-8 32-8 50 0V16z" fill="#1a160e" stroke="#FFC107" stroke-width="1.5"/>
-            <path d="M60 16v48" stroke="#FFC107" stroke-width="1.2" opacity=".7"/>
+            <path d="M10 16c18-10 42-10 50 0v48c-8-8-32-8-50 0V16z" fill="#2a2418" stroke="#d4a017" stroke-width="1.5"/>
+            <path d="M110 16c-18-10-42-10-50 0v48c8-8 32-8 50 0V16z" fill="#1a160e" stroke="#d4a017" stroke-width="1.5"/>
+            <path d="M60 16v48" stroke="#d4a017" stroke-width="1.2" opacity=".7"/>
           </svg>
         </div>
         <button type="button" class="btn-gold" data-devocional>

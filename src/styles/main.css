@@ -7,20 +7,20 @@
   --ink: #ffffff;
   --ink-soft: #c8c8cc;
   --ink-muted: #8e8e93;
-  --accent: #ffc107;
-  --accent-hot: #ffc107;
-  --brand: #ffc107;
-  --accent-dim: rgba(255, 193, 7, 0.14);
-  --accent-soft: rgba(255, 193, 7, 0.12);
+  --accent: #d4a017;
+  --accent-hot: #d4a017;
+  --brand: #d4a017;
+  --accent-dim: rgba(212, 160, 23, 0.12);
+  --accent-soft: rgba(212, 160, 23, 0.10);
   --border: #2a2a2e;
-  --border-gold: rgba(255, 193, 7, 0.45);
+  --border-gold: rgba(255, 255, 255, 0.10);
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
   --header-bg: rgba(5, 5, 5, 0.92);
   --nav-bg: #0a0a0a;
   --nav-border: #1a1a1a;
   --shell-border: #111;
   --canvas: #000;
-  --canvas-glow: rgba(255, 193, 7, 0.06);
+  --canvas-glow: rgba(212, 160, 23, 0.04);
   --hover-tile: #242428;
   --chip-grad-from: #241e10;
   --home-btn-from: #2a2412;
@@ -54,7 +54,7 @@
   --font-greek: 'Noto Serif', Georgia, serif;
   /* Phone + tablet: full viewport — no letterboxing / max-width gutters */
   --app-max: 100%;
-  --content-pad: 0.375rem; /* ~6px — near edge-to-edge */
+  --content-pad: 1rem;
 }
 
 html[data-theme="light"] {
@@ -67,12 +67,12 @@ html[data-theme="light"] {
   --ink-soft: #3d362b;
   --ink-muted: #5f584c;
   --accent: #8a6200;
-  --accent-hot: #ffc107;
-  --brand: #c89600;
+  --accent-hot: #c49212;
+  --brand: #8a6200;
   --accent-dim: rgba(138, 98, 0, 0.14);
   --accent-soft: rgba(138, 98, 0, 0.12);
   --border: #e0d5be;
-  --border-gold: rgba(138, 98, 0, 0.45);
+  --border-gold: rgba(28, 25, 20, 0.12);
   --shadow: 0 4px 18px rgba(70, 48, 10, 0.1);
   --header-bg: rgba(247, 244, 236, 0.94);
   --nav-bg: #fffdf8;
@@ -105,7 +105,7 @@ html.is-installed {
   :root {
     /* Tablet stays full-width; only slightly more side pad */
     --app-max: 100%;
-    --content-pad: 0.625rem; /* ~10px */
+    --content-pad: 1rem;
   }
 }
 
@@ -150,7 +150,7 @@ body {
 }
 
 a {
-  color: var(--accent);
+  color: inherit;
   text-decoration: none;
 }
 
@@ -226,7 +226,7 @@ button:disabled {
   gap: 0.35rem;
   border: none;
   background: transparent;
-  color: var(--accent);
+  color: var(--ink-soft);
   font-size: 0.9rem;
   font-weight: 500;
   padding: 0.4rem 0.5rem;
@@ -295,7 +295,7 @@ main.page.page--home {
   justify-content: center;
   gap: 0.05rem;
   color: var(--ink-muted);
-  font-size: 0.55rem;
+  font-size: 0.7rem;
   font-weight: 500;
   text-decoration: none;
   padding: 0.05rem;
@@ -310,12 +310,12 @@ main.page.page--home {
 }
 
 .bottom-nav a .nav-ico svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 
 .bottom-nav a.active:not(.nav-home) {
-  color: var(--accent);
+  color: var(--ink);
 }
 
 .bottom-nav a:hover {
@@ -337,13 +337,11 @@ main.page.page--home {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(160deg, var(--home-btn-from) 0%, var(--bg-card) 70%);
-  color: var(--accent);
-  box-shadow:
-    0 2px 8px rgba(255, 193, 7, 0.28),
-    0 1px 4px rgba(0, 0, 0, 0.45);
-  border: 1.5px solid var(--accent);
-  transition: background 0.15s, color 0.15s, box-shadow 0.15s, border-color 0.15s, transform 0.15s;
+  background: var(--bg-card);
+  color: var(--ink);
+  box-shadow: none;
+  border: 1px solid var(--border);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 
 .bottom-nav .nav-home-btn svg {
@@ -352,27 +350,24 @@ main.page.page--home {
 }
 
 .bottom-nav a.nav-home:hover .nav-home-btn {
-  transform: scale(1.04);
-  box-shadow:
-    0 6px 22px rgba(255, 193, 7, 0.4),
-    0 2px 10px rgba(0, 0, 0, 0.45);
+  border-color: var(--ink-muted);
 }
 
 .bottom-nav a.nav-home.active .nav-home-btn {
-  background: var(--accent);
-  color: var(--on-accent);
-  border-color: var(--accent);
-  box-shadow: 0 6px 24px rgba(255, 193, 7, 0.55);
+  background: var(--bg-muted);
+  color: var(--ink);
+  border-color: var(--ink-muted);
+  box-shadow: none;
 }
 
 .bottom-nav a.nav-home.active {
-  color: var(--accent);
+  color: var(--ink);
 }
 
 .bottom-nav .nav-home-label {
-  font-size: 0.55rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--ink-muted);
 }
 
 /* —— Home dashboard —— */
@@ -408,9 +403,7 @@ main.page.page--home {
 }
 
 html[data-theme="light"] .greeting__brand {
-  color: #ffc107;
-  -webkit-text-stroke: 0.45px #6b4a00;
-  paint-order: stroke fill;
+  color: var(--brand);
   text-shadow: none;
 }
 
@@ -482,7 +475,7 @@ html.is-installed .chrome-btn--install {
   font-size: 2.15rem;
   font-weight: 500;
   line-height: 1;
-  box-shadow: 0 6px 18px rgba(255, 193, 7, 0.4);
+  box-shadow: none;
 }
 
 .devo-add:hover,
@@ -526,7 +519,7 @@ html.is-installed .chrome-btn--install {
   font-size: 3.5rem;
   font-weight: 500;
   line-height: 1;
-  box-shadow: 0 10px 28px rgba(255, 193, 7, 0.42);
+  box-shadow: none;
 }
 
 .devo-empty__label {
@@ -544,7 +537,7 @@ html.is-installed .chrome-btn--install {
 .hero-card {
   position: relative;
   background: var(--bg-card);
-  border: 1px solid var(--border-gold);
+  border: 1px solid var(--border);
   border-radius: 22px;
   padding: 1.15rem 1.15rem 1.25rem;
   margin-bottom: 1.5rem;
@@ -557,7 +550,7 @@ html.is-installed .chrome-btn--install {
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: var(--accent);
+  color: var(--ink-muted);
 }
 
 .hero-card__title {
@@ -587,7 +580,7 @@ html.is-installed .chrome-btn--install {
 .hero-glow {
   position: absolute;
   inset: 10% 15%;
-  background: radial-gradient(circle, rgba(255, 193, 7, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(212, 160, 23, 0.16), transparent 70%);
   filter: blur(8px);
 }
 
@@ -610,7 +603,7 @@ html.is-installed .chrome-btn--install {
   border-radius: var(--radius-pill);
   position: relative;
   z-index: 1;
-  box-shadow: 0 4px 16px rgba(255, 193, 7, 0.35);
+  box-shadow: none;
 }
 
 .btn-gold:hover {
@@ -865,7 +858,7 @@ html.is-installed .chrome-btn--install {
 }
 
 .search-wrap input:focus {
-  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.35);
+  box-shadow: 0 0 0 2px rgba(212, 160, 23, 0.35);
 }
 
 .search-wrap .search-ico {
@@ -1040,7 +1033,7 @@ html.is-installed .chrome-btn--install {
 }
 
 .chapter-grid a.has-demo {
-  border-color: rgba(255, 193, 7, 0.45);
+  border-color: rgba(212, 160, 23, 0.45);
   background: linear-gradient(180deg, var(--chapter-demo-from) 0%, var(--chapter-demo-to) 100%);
   color: var(--accent);
 }
@@ -1064,14 +1057,14 @@ html.is-installed .chrome-btn--install {
   }
 
   .page--reading {
-    padding-left: max(0.375rem, var(--safe-l));
-    padding-right: max(0.375rem, var(--safe-r));
+    padding-left: max(1rem, var(--safe-l));
+    padding-right: max(1rem, var(--safe-r));
   }
 
   .page--reading .bible-page {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border-radius: 6px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 12px;
   }
 }
 
@@ -1126,17 +1119,13 @@ html.is-installed .chrome-btn--install {
 
 /* Book-like page */
 .bible-page {
-  background:
-    linear-gradient(180deg, rgba(255, 193, 7, 0.04), transparent 40%),
-    var(--bg-elevated);
+  background: var(--bg-elevated);
   border: 1px solid var(--border);
-  border-radius: 4px 12px 12px 4px;
-  box-shadow:
-    inset 3px 0 0 rgba(255, 193, 7, 0.18),
-    0 8px 28px rgba(0, 0, 0, 0.35);
-  /* Mobile: nearly full width; wider screens get more inset below */
-  padding: 1.35rem var(--content-pad) 1.75rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 1.35rem 1rem 1.75rem;
   margin: 0 auto;
+  max-width: 42rem;
 }
 
 .chapter-heading {
@@ -1145,8 +1134,8 @@ html.is-installed .chrome-btn--install {
   font-family: var(--font-reading);
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: var(--accent);
-  border-bottom: 1px solid rgba(255, 193, 7, 0.28);
+  color: var(--ink);
+  border-bottom: 1px solid var(--border);
   padding-bottom: 0.85rem;
 }
 
@@ -1267,18 +1256,18 @@ html.is-installed .chrome-btn--install {
 
 .verse:hover,
 .verse:focus-visible {
-  background: rgba(255, 193, 7, 0.1);
+  background: var(--nav-hover);
   outline: none;
 }
 
 .verse--marked {
-  background: rgba(255, 193, 7, 0.16);
-  box-shadow: inset 0 -2px 0 rgba(255, 193, 7, 0.55);
+  background: var(--accent-soft);
+  box-shadow: inset 3px 0 0 var(--accent);
 }
 
 .verse--active {
-  background: rgba(255, 193, 7, 0.22);
-  box-shadow: inset 0 0 0 1px rgba(255, 193, 7, 0.55);
+  background: var(--bg-muted);
+  box-shadow: inset 3px 0 0 var(--accent);
   border-radius: 4px;
 }
 
@@ -1286,7 +1275,7 @@ html.is-installed .chrome-btn--install {
   font-family: var(--font-ui);
   font-size: 0.65em;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--ink-muted);
   vertical-align: super;
   line-height: 0;
   margin-inline-end: 0.15em;
@@ -1578,7 +1567,7 @@ html.is-installed .chrome-btn--install {
   .bottom-nav a {
     flex: 0 0 auto;
     padding: 0.65rem 0.25rem;
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     border-radius: var(--radius-sm);
   }
 
@@ -1587,7 +1576,8 @@ html.is-installed .chrome-btn--install {
   }
 
   .bottom-nav a.active:not(.nav-home) {
-    background: var(--accent-soft);
+    background: var(--nav-hover);
+    color: var(--ink);
   }
 
   .bottom-nav a.nav-home {
@@ -1612,7 +1602,15 @@ html.is-installed .chrome-btn--install {
   }
 
   .bottom-nav .nav-home-label {
-    font-size: 0.68rem;
+    font-size: 0.75rem;
+  }
+
+  .page--reading .bible-page,
+  .page--reading .tabs,
+  .page--reading .reading-toolbar {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   main.page {
@@ -1681,7 +1679,9 @@ html.is-installed .chrome-btn--install {
   .bible-page,
   .tabs,
   .reading-toolbar {
-    max-width: 56rem;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .verse-flow {
@@ -1795,7 +1795,7 @@ html.is-installed .chrome-btn--install {
 .field__input:focus,
 .field__textarea:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.2);
+  box-shadow: 0 0 0 2px rgba(212, 160, 23, 0.2);
 }
 
 .devo-refs {
@@ -1830,7 +1830,7 @@ html.is-installed .chrome-btn--install {
 
 .devo-ref__link:hover {
   text-decoration: none;
-  background: rgba(255, 193, 7, 0.06);
+  background: rgba(212, 160, 23, 0.06);
 }
 
 .devo-ref__label {
@@ -2153,7 +2153,7 @@ html.is-installed .chrome-btn--install {
 
 .splash__spinner-track {
   fill: none;
-  stroke: rgba(255, 193, 7, 0.16);
+  stroke: rgba(212, 160, 23, 0.16);
   stroke-width: 2.5;
 }
 
@@ -2409,7 +2409,7 @@ html.is-installed .chrome-btn--install {
 }
 
 .chapter-grid a.has-pt {
-  box-shadow: inset 0 0 0 1px rgba(255, 193, 7, 0.55);
+  box-shadow: inset 0 0 0 1px rgba(212, 160, 23, 0.55);
 }
 .chapter-grid a.has-demo:not(.has-pt) {
   opacity: 0.92;
