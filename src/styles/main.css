@@ -450,6 +450,12 @@ html[data-theme="light"] .greeting__brand {
   display: block;
 }
 
+.chrome-btn--install {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--ink);
+}
+
 html.is-installed .chrome-btn--install {
   display: none;
 }

@@ -10,11 +10,9 @@ let deferredPrompt = null;
 let wired = false;
 
 function isStandalone() {
-  return (
-    window.matchMedia('(display-mode: standalone)').matches ||
-    window.matchMedia('(display-mode: fullscreen)').matches ||
-    window.navigator.standalone === true
-  );
+  const standalone = window.matchMedia('(display-mode: standalone)').matches;
+  const minimal = window.matchMedia('(display-mode: minimal-ui)').matches;
+  return standalone || minimal || window.navigator.standalone === true;
 }
 
 function isIos() {
@@ -130,6 +128,8 @@ export function mountChrome(shell) {
     deferredPrompt = null;
     syncInstallVisibility();
   });
+  const standaloneQuery = window.matchMedia('(display-mode: standalone)');
+  standaloneQuery.addEventListener?.('change', syncInstallVisibility);
 
   installBtn?.addEventListener('click', () => {
     onInstallClick();
