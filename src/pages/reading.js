@@ -8,8 +8,6 @@ import {
 import { FIXED_PT_VERSION } from '../data/versions.js';
 import { navigate } from '../utils/router.js';
 import {
-  getSavedTab,
-  saveTab,
   isMarked,
   setMark,
   saveMarkEntry,
@@ -24,12 +22,17 @@ import {
   FONT_SCALE_STEP,
 } from '../utils/storage.js';
 
-function tabLabels(originalLang) {
-  return {
-    portuguese: 'Português',
-    hebrew: originalLangLabel(originalLang),
-    transliteration: 'Transliteração',
-  };
+const ORIGINAL_OPEN_KEY = 'biblia-tanakh:originalOpen';
+const TRANSLIT_KEY = 'biblia-tanakh:showTranslit';
+
+function readOriginalOpen() {
+  const saved = Number(localStorage.getItem(ORIGINAL_OPEN_KEY));
+  if (!Number.isFinite(saved)) return 100;
+  return Math.min(100, Math.max(0, saved));
+}
+
+function readShowTranslit() {
+  return localStorage.getItem(TRANSLIT_KEY) === '1';
 }
 
 export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = null } = {}) {
@@ -50,7 +53,6 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
   // Português = local original rendering only (verses.js portuguese column).
   // No version picker; no Almeida / ACF / RA / NVI / bible-api.com.
   let verses = [];
-  let activeTab = getSavedTab();
   let sheetVerse = null;
   const deepLinkNum =
     deepLinkVerse != null && Number.isFinite(Number(deepLinkVerse))
@@ -96,15 +98,9 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       activeVerse = firstVerse;
     }
     const chapterLang = getChapterOriginalLang(book.id, cap, verses);
-    const labels = tabLabels(chapterLang);
-    const tabsHtml = Object.entries(labels)
-      .map(
-        ([key, label]) =>
-          `<button type="button" role="tab" data-tab="${key}" aria-selected="${
-            activeTab === key
-          }" class="${activeTab === key ? 'active' : ''}">${label}</button>`
-      )
-      .join('');
+    const originalLabel = originalLangLabel(chapterLang);
+    const openValue = readOriginalOpen();
+    const showTr = readShowTranslit();
     const notes = getChapterNotes(book.id, cap);
 
     let body;
@@ -115,20 +111,12 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           <p>Ainda não há texto para ${escapeHtml(book.name)} ${cap}.</p>
         </div>`;
     } else {
-      const displayVerses =
-        activeTab === 'portuguese'
-          ? verses.filter((v) => (v.portuguese || '').trim())
-          : verses;
-      const { className, field, dirNote } = tabConfig(activeTab, chapterLang);
-      const navVerses = displayVerses.length ? displayVerses : verses;
-      const navFirst = navVerses[0]?.verse ?? null;
-      const navLast = navVerses[navVerses.length - 1]?.verse ?? null;
-      if (activeTab === 'portuguese' && displayVerses.length) {
-        if (activeVerse == null || !displayVerses.some((v) => v.verse === activeVerse)) {
-          activeVerse = displayVerses[0].verse;
-        }
+      const navFirst = verses[0]?.verse ?? null;
+      const navLast = verses[verses.length - 1]?.verse ?? null;
+      if (activeVerse == null || !verses.some((v) => v.verse === activeVerse)) {
+        activeVerse = navFirst;
       }
-      const verseOptions = navVerses
+      const verseOptions = verses
         .map(
           (v) =>
             `<option value="${v.verse}" ${
@@ -136,8 +124,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
             }>Versículo ${v.verse}</option>`
         )
         .join('');
-      const verseNavigation = displayVerses.length
-        ? `
+      const verseNavigation = `
         <div class="verse-navigation" aria-label="Navegação de versículos">
           <button
             type="button"
@@ -157,36 +144,36 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
             ${activeVerse === navLast ? 'disabled' : ''}
             aria-label="Próximo versículo"
           >Próximo ›</button>
-        </div>`
-        : '';
-      let items;
-      if (activeTab === 'portuguese' && !displayVerses.length) {
-        items = `<div class="placeholder-chapter placeholder-chapter--inline">
-          <strong>Português em breve</strong>
-          <p>O texto em ${escapeHtml(labels.hebrew)} e a Transliteração já estão disponíveis neste capítulo. A tradução direta ao português será preenchida em seguida.</p>
         </div>`;
-      } else {
-        items = (displayVerses.length ? displayVerses : verses)
-          .map((v) => {
-            const text = v[field] || '—';
-            const marked = isMarked(book.id, cap, v.verse);
-            const isActive = activeVerse === v.verse;
-            return `
+      const items = verses
+        .map((v) => {
+          const lang = v.originalLang || chapterLang;
+          const rtl = lang === 'he' || lang === 'arc';
+          const langCode = lang === 'el' ? 'el' : lang === 'arc' ? 'arc' : 'he';
+          const pt = (v.portuguese || '').trim();
+          const orig = (v.original || '').trim();
+          const tr = (v.transliteration || '').trim();
+          const marked = isMarked(book.id, cap, v.verse);
+          const isActive = activeVerse === v.verse;
+          const ptInner = pt
+            ? escapeHtml(pt)
+            : '<span class="verse-pt__soon">Português em breve</span>';
+          return `
             <span
-              class="verse${marked ? ' verse--marked' : ''}${isActive ? ' verse--active' : ''}"
+              class="verse verse-block${marked ? ' verse--marked' : ''}${isActive ? ' verse--active' : ''}"
               data-verse="${v.verse}"
               role="button"
               tabindex="0"
               aria-posinset="${v.verse}"
               aria-current="${isActive ? 'true' : 'false'}"
               aria-label="Versículo ${v.verse}"
-            ><sup class="v-num" aria-hidden="true">${v.verse}</sup><span class="v-text" lang="${langAttr(
-              activeTab,
-              v.originalLang || chapterLang
-            )}">${escapeHtml(text)}</span></span>`;
-          })
-          .join('');
-      }
+            ><span class="verse-pt"><sup class="v-num" aria-hidden="true">${v.verse}</sup><span class="v-text" lang="pt">${ptInner}</span></span>${
+              orig
+                ? `<span class="verse-orig" lang="${langCode}" dir="${rtl ? 'rtl' : 'ltr'}">${escapeHtml(orig)}</span>`
+                : ''
+            }${tr ? `<span class="verse-tr" lang="la">${escapeHtml(tr)}</span>` : ''}</span>`;
+        })
+        .join('');
       const notesHtml = notes.length
         ? `<aside class="chapter-notes" aria-label="Notas do capítulo">
             <h3 class="chapter-notes__title">Notas e observações</h3>
@@ -196,9 +183,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           </aside>`
         : '';
       body = `
-        <article class="bible-page ${className}" data-dir="${dirNote}" dir="${
-          dirNote === 'rtl' ? 'rtl' : 'ltr'
-        }">
+        <article class="bible-page lang-open" dir="ltr">
           <h2 class="chapter-heading">
             <span class="chapter-heading__book">${escapeHtml(book.name)}</span>
             <span class="chapter-heading__num">${cap}</span>
@@ -220,7 +205,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           <button type="button" class="font-btn--plus" data-font-inc aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
         </div>
       </header>
-      <main class="page page--reading">
+      <main class="page page--reading${showTr ? ' is-translit' : ''}" style="--original-open:${openValue / 100}">
         <div class="reading-toolbar">
           <button
             class="btn-text"
@@ -238,15 +223,24 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
             aria-label="Próximo capítulo"
           >Próx. ›</button>
         </div>
-        <div class="tabs" role="tablist" aria-label="Modo de leitura">
-          ${tabsHtml}
+        <div class="origin-thread">
+          <span class="origin-thread__label">${escapeHtml(originalLabel)}</span>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="${openValue}"
+            data-original-open
+            aria-label="Abrir o ${escapeHtml(originalLabel)}"
+          />
+          <button
+            type="button"
+            class="origin-tr${showTr ? ' is-on' : ''}"
+            data-translit
+            aria-pressed="${showTr ? 'true' : 'false'}"
+          >tr</button>
         </div>
-        ${
-          activeTab === 'portuguese'
-            ? `<p class="version-banner" aria-live="polite">Português · tradução do original</p>`
-            : ''
-        }
-        <div role="tabpanel">${body}</div>
+        <div>${body}</div>
       </main>
       <div class="sheet-backdrop" id="verse-sheet" hidden>
         <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="verse-sheet-title">
@@ -310,12 +304,20 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     root.querySelector('[data-verse-jump]')?.addEventListener('change', (e) => {
       focusVerse(Number(e.target.value));
     });
-    root.querySelectorAll('[data-tab]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        activeTab = btn.getAttribute('data-tab');
-        saveTab(activeTab);
-        paint();
-      });
+    root.querySelector('[data-original-open]')?.addEventListener('input', (e) => {
+      const value = Number(e.target.value);
+      const open = Number.isFinite(value) ? Math.min(100, Math.max(0, value)) : 100;
+      localStorage.setItem(ORIGINAL_OPEN_KEY, String(open));
+      root.querySelector('.page--reading')?.style.setProperty('--original-open', String(open / 100));
+    });
+    root.querySelector('[data-translit]')?.addEventListener('click', () => {
+      const next = !readShowTranslit();
+      localStorage.setItem(TRANSLIT_KEY, next ? '1' : '0');
+      const page = root.querySelector('.page--reading');
+      const btn = root.querySelector('[data-translit]');
+      page?.classList.toggle('is-translit', next);
+      btn?.classList.toggle('is-on', next);
+      btn?.setAttribute('aria-pressed', next ? 'true' : 'false');
     });
 
     root.querySelectorAll('.verse[data-verse]').forEach((el) => {
@@ -475,13 +477,12 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
   function versePayload(verseNum) {
     const v = verses.find((x) => x.verse === verseNum);
     if (!v) return null;
-    const { field } = tabConfig(activeTab, v.originalLang);
     return {
       bookId: book.id,
       chapter: cap,
       verse: verseNum,
       ref: `${book.name} ${cap}:${verseNum}`,
-      snippet: v.portuguese || v[field] || '',
+      snippet: v.portuguese || v.original || '',
     };
   }
 
@@ -600,31 +601,6 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     requestAnimationFrame(() => requestAnimationFrame(go));
     setTimeout(go, 120);
   }
-}
-
-function tabConfig(tab, originalLang) {
-  if (tab === 'hebrew') {
-    const rtl = originalLang === 'he' || originalLang === 'arc';
-    return {
-      className: originalLang === 'el' ? 'lang-el' : originalLang === 'arc' ? 'lang-arc' : 'lang-he',
-      field: 'original',
-      dirNote: rtl ? 'rtl' : 'ltr',
-    };
-  }
-  if (tab === 'transliteration') {
-    return { className: 'lang-translit', field: 'transliteration', dirNote: 'ltr' };
-  }
-  return { className: 'lang-pt', field: 'portuguese', dirNote: 'ltr' };
-}
-
-function langAttr(tab, originalLang) {
-  if (tab === 'hebrew') {
-    if (originalLang === 'el') return 'el';
-    if (originalLang === 'arc') return 'arc';
-    return 'he';
-  }
-  if (tab === 'transliteration') return 'la';
-  return 'pt';
 }
 
 function escapeHtml(s) {
