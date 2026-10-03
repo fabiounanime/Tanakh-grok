@@ -1243,7 +1243,7 @@ html.is-installed .chrome-btn--install {
 }
 
 .page--reading .verse-card .v-num {
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--accent);
   margin-inline-end: 0.4rem;
@@ -1344,7 +1344,7 @@ html[data-theme='light'] .page--reading .verse.verse-card {
 }
 
 .page--reading .verse-card:not(.verse--active) {
-  opacity: 0.72;
+  opacity: 1;
 }
 
 .page--reading .verse--active.verse-card {
@@ -1359,13 +1359,14 @@ html[data-theme='light'] .page--reading .verse.verse-card {
   display: block;
   margin: 0;
   font-family: var(--font-reading);
+  font-weight: 600;
   font-size: calc(1.2rem * var(--reading-font-scale, 1));
   line-height: 1.55;
-  color: #c9c2b4;
+  color: #f4f1ea;
 }
 
 html[data-theme='light'] .verse-pt {
-  color: #5f584c;
+  color: #1c1914;
 }
 
 .verse--active .verse-pt {
@@ -1382,9 +1383,10 @@ html[data-theme='light'] .verse-pt {
   margin: 1rem 0 0;
   padding-top: 0.9rem;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
+  font-weight: 600;
   font-size: calc(1.85rem * var(--reading-font-scale, 1));
   line-height: 1.65;
-  color: #f7f4ee;
+  color: #fffdf8;
   text-align: center;
 }
 
