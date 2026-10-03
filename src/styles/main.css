@@ -1059,7 +1059,7 @@ html.is-installed .chrome-btn--install {
 
   .page--reading {
     padding-left: max(1rem, var(--safe-l));
-    padding-right: max(1rem, var(--safe-r));
+    padding-right: max(1.6rem, var(--safe-r));
   }
 
   .page--reading .bible-page {
@@ -1091,51 +1091,6 @@ html.is-installed .chrome-btn--install {
   flex: 1;
 }
 
-.origin-thread {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  max-width: 42rem;
-  margin: 0 auto 1rem;
-}
-
-.origin-thread__label {
-  flex: 0 0 auto;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: lowercase;
-  color: var(--ink-muted);
-}
-
-.origin-thread input[type='range'] {
-  flex: 1;
-  height: 2px;
-  margin: 0;
-  appearance: none;
-  background: var(--accent);
-  border-radius: 99px;
-  outline: none;
-}
-
-.origin-thread input[type='range']::-webkit-slider-thumb {
-  appearance: none;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--accent);
-  border: 2px solid var(--bg);
-  cursor: pointer;
-}
-
-.origin-thread input[type='range']::-moz-range-thumb {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--accent);
-  border: 2px solid var(--bg);
-  cursor: pointer;
-}
-
 .origin-tr {
   flex: 0 0 auto;
   border: 1px solid var(--border);
@@ -1152,16 +1107,71 @@ html.is-installed .chrome-btn--install {
   border-color: var(--accent);
 }
 
+.chapter-rail {
+  position: fixed;
+  z-index: 24;
+  top: calc(var(--pad-top) + 4.5rem);
+  bottom: calc(var(--nav-h) + var(--safe-b) + 3.4rem);
+  right: max(0.35rem, var(--safe-r));
+  width: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.chapter-rail__tick {
+  flex: 1 1 2px;
+  min-height: 2px;
+  max-height: 14px;
+  width: 3px;
+  margin-left: auto;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+html[data-theme='light'] .chapter-rail__tick {
+  background: rgba(28, 25, 20, 0.22);
+}
+
+.chapter-rail__tick.is-current {
+  width: 8px;
+  min-height: 8px;
+  background: var(--accent);
+}
+
+.page--reading .bible-page {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding-right: 0.85rem;
+}
+
 .verse-block {
   display: block;
+  padding-top: 1.15rem;
+  padding-bottom: 1.2rem;
+}
+
+.verse-block:not(.verse--active) {
+  opacity: 0.72;
+}
+
+.verse--active.verse-block {
+  opacity: 1;
 }
 
 .verse-pt {
   display: block;
   margin: 0;
   font-family: var(--font-reading);
-  font-size: calc((1.16rem - var(--original-open) * 0.2rem) * var(--reading-font-scale, 1));
-  line-height: 1.7;
+  font-size: calc(1.05rem * var(--reading-font-scale, 1));
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+
+.verse--active .verse-pt {
+  font-size: calc(1.2rem * var(--reading-font-scale, 1));
   color: var(--ink);
 }
 
@@ -1172,13 +1182,16 @@ html.is-installed .chrome-btn--install {
 
 .verse-orig {
   display: block;
-  overflow: hidden;
-  margin: calc(var(--original-open) * 0.55rem) 0 0;
-  max-height: calc(var(--original-open) * 18rem);
-  opacity: var(--original-open);
-  font-size: calc((0.95rem + var(--original-open) * 0.55rem) * var(--reading-font-scale, 1));
-  line-height: 1.85;
+  margin: 0.75rem 0 0;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(212, 160, 23, 0.45);
+  font-size: calc(1.45rem * var(--reading-font-scale, 1));
+  line-height: 1.7;
   color: var(--ink);
+}
+
+.verse--active .verse-orig {
+  font-size: calc(1.7rem * var(--reading-font-scale, 1));
 }
 
 .verse-orig[dir='rtl'] {
@@ -1195,7 +1208,7 @@ html.is-installed .chrome-btn--install {
 
 .verse-tr {
   display: none;
-  margin: 0.35rem 0 0;
+  margin: 0.4rem 0 0;
   font-family: var(--font-ui);
   font-style: italic;
   font-size: calc(0.92rem * var(--reading-font-scale, 1));

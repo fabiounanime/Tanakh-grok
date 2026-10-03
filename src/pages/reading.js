@@ -3,7 +3,6 @@ import {
   loadVersesForVersion,
   getChapterNotes,
   getChapterOriginalLang,
-  originalLangLabel,
 } from '../data/verses.js';
 import { FIXED_PT_VERSION } from '../data/versions.js';
 import { navigate } from '../utils/router.js';
@@ -22,14 +21,7 @@ import {
   FONT_SCALE_STEP,
 } from '../utils/storage.js';
 
-const ORIGINAL_OPEN_KEY = 'biblia-tanakh:originalOpen';
 const TRANSLIT_KEY = 'biblia-tanakh:showTranslit';
-
-function readOriginalOpen() {
-  const saved = Number(localStorage.getItem(ORIGINAL_OPEN_KEY));
-  if (!Number.isFinite(saved)) return 100;
-  return Math.min(100, Math.max(0, saved));
-}
 
 function readShowTranslit() {
   return localStorage.getItem(TRANSLIT_KEY) === '1';
@@ -98,8 +90,6 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       activeVerse = firstVerse;
     }
     const chapterLang = getChapterOriginalLang(book.id, cap, verses);
-    const originalLabel = originalLangLabel(chapterLang);
-    const openValue = readOriginalOpen();
     const showTr = readShowTranslit();
     const notes = getChapterNotes(book.id, cap);
 
@@ -201,11 +191,12 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         <button class="btn-icon" type="button" data-back aria-label="Voltar aos capítulos">←</button>
         <h1>${escapeHtml(book.name)}</h1>
         <div class="font-size-controls" role="group" aria-label="Tamanho da fonte">
+          <button type="button" class="origin-tr${showTr ? ' is-on' : ''}" data-translit aria-pressed="${showTr ? 'true' : 'false'}">tr</button>
           <button type="button" data-font-dec aria-label="Diminuir fonte" title="Diminuir fonte">A−</button>
           <button type="button" class="font-btn--plus" data-font-inc aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
         </div>
       </header>
-      <main class="page page--reading${showTr ? ' is-translit' : ''}" style="--original-open:${openValue / 100}">
+      <main class="page page--reading${showTr ? ' is-translit' : ''}">
         <div class="reading-toolbar">
           <button
             class="btn-text"
@@ -213,33 +204,24 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
             data-prev
             ${prevDisabled ? 'disabled' : ''}
             aria-label="Capítulo anterior"
-          >‹ Ant.</button>
-          <span class="chapter-label">Capítulo ${cap}</span>
+          >‹</button>
+          <span class="chapter-label">${escapeHtml(book.name)}</span>
           <button
             class="btn-text"
             type="button"
             data-next
             ${nextDisabled ? 'disabled' : ''}
             aria-label="Próximo capítulo"
-          >Próx. ›</button>
+          >›</button>
         </div>
-        <div class="origin-thread">
-          <span class="origin-thread__label">${escapeHtml(originalLabel)}</span>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value="${openValue}"
-            data-original-open
-            aria-label="Abrir o ${escapeHtml(originalLabel)}"
-          />
-          <button
-            type="button"
-            class="origin-tr${showTr ? ' is-on' : ''}"
-            data-translit
-            aria-pressed="${showTr ? 'true' : 'false'}"
-          >tr</button>
-        </div>
+        ${
+          book.chapters > 1
+            ? `<nav class="chapter-rail" aria-label="Capítulos">${Array.from({ length: book.chapters }, (_, i) => {
+                const n = i + 1;
+                return `<a class="chapter-rail__tick${n === cap ? ' is-current' : ''}" href="#/ler/${book.id}/${n}" aria-label="Capítulo ${n}"${n === cap ? ' aria-current="page"' : ''}></a>`;
+              }).join('')}</nav>`
+            : ''
+        }
         <div>${body}</div>
       </main>
       <div class="sheet-backdrop" id="verse-sheet" hidden>
@@ -303,12 +285,6 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     });
     root.querySelector('[data-verse-jump]')?.addEventListener('change', (e) => {
       focusVerse(Number(e.target.value));
-    });
-    root.querySelector('[data-original-open]')?.addEventListener('input', (e) => {
-      const value = Number(e.target.value);
-      const open = Number.isFinite(value) ? Math.min(100, Math.max(0, value)) : 100;
-      localStorage.setItem(ORIGINAL_OPEN_KEY, String(open));
-      root.querySelector('.page--reading')?.style.setProperty('--original-open', String(open / 100));
     });
     root.querySelector('[data-translit]')?.addEventListener('click', () => {
       const next = !readShowTranslit();
