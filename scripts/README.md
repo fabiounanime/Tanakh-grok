@@ -9,7 +9,7 @@ Gera `src/data/books/<id>.json` (66 livros) a partir de:
 | Hebraico/Aramaico (AT) | Westminster Leningrad Codex via [Hebrew-Bible-JSON-with-Nikkud](https://github.com/Rikartt/Hebrew-Bible-JSON-with-Nikkud) (OSHB/WLC) | Texto WLC: domínio público |
 | Grego (NT) | Robinson–Pierpont Byzantine Majority Text (Unicode CCAT) em `vendor/greek-byz-ccat/` | Domínio público |
 | Transliteração | Gerada (latina simplificada) | — |
-| Português | `pt_overrides/<id>.json` (tradução do app, estilo direto do original) | Conteúdo do projeto |
+| Português | `pt_overrides/<id>.json` (retradução do hebraico/aramaico/grego já no JSON; YHWH no tetragrama; proibido copiar Almeida, ACF, ARC, NVI ou bible-api) | Conteúdo do projeto |
 
 ### Preparar hebraico (não versionado, ~9 MB)
 
