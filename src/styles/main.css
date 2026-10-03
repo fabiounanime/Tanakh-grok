@@ -179,6 +179,7 @@ button:disabled {
   background: var(--bg);
   padding-bottom: calc(var(--nav-h) + var(--safe-b));
   position: relative;
+  overflow-x: hidden;
 }
 
 .page-root {
@@ -1049,78 +1050,61 @@ html.is-installed .chrome-btn--install {
   --original-open: 1;
   padding-bottom: 2rem;
   scroll-snap-type: y proximity;
-  transform-style: preserve-3d;
 }
 
 @media (max-width: 1023px) {
   .page--reading.is-turn-out-next {
-    transform-origin: left center;
-    animation: pageOutNext 0.34s ease forwards;
+    animation: pageOutNext 0.16s ease-in forwards;
   }
 
   .page--reading.is-turn-out-prev {
-    transform-origin: right center;
-    animation: pageOutPrev 0.34s ease forwards;
+    animation: pageOutPrev 0.16s ease-in forwards;
   }
 
   .page--reading.is-turn-in-next {
-    transform-origin: right center;
-    animation: pageInNext 0.4s ease;
+    animation: pageInNext 0.18s ease-out;
   }
 
   .page--reading.is-turn-in-prev {
-    transform-origin: left center;
-    animation: pageInPrev 0.4s ease;
+    animation: pageInPrev 0.18s ease-out;
   }
 
   .page--reading.is-turn-bounce-next {
-    animation: pageBounceNext 0.28s ease;
+    animation: pageBounceNext 0.22s ease;
   }
 
   .page--reading.is-turn-bounce-prev {
-    animation: pageBouncePrev 0.28s ease;
+    animation: pageBouncePrev 0.22s ease;
   }
 }
 
 @keyframes pageOutNext {
-  from {
-    transform: perspective(1400px) rotateY(0deg);
-  }
   to {
-    transform: perspective(1400px) rotateY(-68deg) translateX(-6%);
-    filter: brightness(0.78);
+    transform: translateX(-108%);
   }
 }
 
 @keyframes pageInNext {
   from {
-    transform: perspective(1400px) rotateY(64deg) translateX(8%);
-    filter: brightness(0.82);
+    transform: translateX(108%);
   }
   to {
-    transform: perspective(1400px) rotateY(0deg);
-    filter: brightness(1);
+    transform: translateX(0);
   }
 }
 
 @keyframes pageOutPrev {
-  from {
-    transform: perspective(1400px) rotateY(0deg);
-  }
   to {
-    transform: perspective(1400px) rotateY(68deg) translateX(6%);
-    filter: brightness(0.78);
+    transform: translateX(108%);
   }
 }
 
 @keyframes pageInPrev {
   from {
-    transform: perspective(1400px) rotateY(-64deg) translateX(-8%);
-    filter: brightness(0.82);
+    transform: translateX(-108%);
   }
   to {
-    transform: perspective(1400px) rotateY(0deg);
-    filter: brightness(1);
+    transform: translateX(0);
   }
 }
 

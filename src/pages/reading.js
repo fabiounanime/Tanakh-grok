@@ -393,7 +393,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       window.setTimeout(() => {
         locked = false;
         navigate(`/ler/${book.id}/${dest}`);
-      }, 340);
+      }, 160);
     };
 
     const onClickCapture = (event) => {
