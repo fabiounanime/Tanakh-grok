@@ -1049,6 +1049,102 @@ html.is-installed .chrome-btn--install {
   --original-open: 1;
   padding-bottom: 2rem;
   scroll-snap-type: y proximity;
+  transform-style: preserve-3d;
+}
+
+@media (max-width: 1023px) {
+  .page--reading.is-turn-out-next {
+    transform-origin: left center;
+    animation: pageOutNext 0.34s ease forwards;
+  }
+
+  .page--reading.is-turn-out-prev {
+    transform-origin: right center;
+    animation: pageOutPrev 0.34s ease forwards;
+  }
+
+  .page--reading.is-turn-in-next {
+    transform-origin: right center;
+    animation: pageInNext 0.4s ease;
+  }
+
+  .page--reading.is-turn-in-prev {
+    transform-origin: left center;
+    animation: pageInPrev 0.4s ease;
+  }
+
+  .page--reading.is-turn-bounce-next {
+    animation: pageBounceNext 0.28s ease;
+  }
+
+  .page--reading.is-turn-bounce-prev {
+    animation: pageBouncePrev 0.28s ease;
+  }
+}
+
+@keyframes pageOutNext {
+  from {
+    transform: perspective(1400px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1400px) rotateY(-68deg) translateX(-6%);
+    filter: brightness(0.78);
+  }
+}
+
+@keyframes pageInNext {
+  from {
+    transform: perspective(1400px) rotateY(64deg) translateX(8%);
+    filter: brightness(0.82);
+  }
+  to {
+    transform: perspective(1400px) rotateY(0deg);
+    filter: brightness(1);
+  }
+}
+
+@keyframes pageOutPrev {
+  from {
+    transform: perspective(1400px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1400px) rotateY(68deg) translateX(6%);
+    filter: brightness(0.78);
+  }
+}
+
+@keyframes pageInPrev {
+  from {
+    transform: perspective(1400px) rotateY(-64deg) translateX(-8%);
+    filter: brightness(0.82);
+  }
+  to {
+    transform: perspective(1400px) rotateY(0deg);
+    filter: brightness(1);
+  }
+}
+
+@keyframes pageBounceNext {
+  40% {
+    transform: translateX(-16px);
+  }
+}
+
+@keyframes pageBouncePrev {
+  40% {
+    transform: translateX(16px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page--reading.is-turn-out-next,
+  .page--reading.is-turn-out-prev,
+  .page--reading.is-turn-in-next,
+  .page--reading.is-turn-in-prev,
+  .page--reading.is-turn-bounce-next,
+  .page--reading.is-turn-bounce-prev {
+    animation: none;
+  }
 }
 
 /* Phone + tablet: near edge-to-edge (minimal side gutters) */

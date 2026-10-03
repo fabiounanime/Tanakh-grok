@@ -24,6 +24,7 @@ import {
 
 const TRANSLIT_KEY = 'biblia-tanakh:showTranslit';
 const ORIGINAL_KEY = 'biblia-tanakh:showOriginal';
+let pendingChapterTurn = null;
 
 function readShowTranslit() {
   return localStorage.getItem(TRANSLIT_KEY) === '1';
@@ -160,6 +161,11 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         ${notesHtml}`;
     }
 
+    const enterTurn = pendingChapterTurn;
+    pendingChapterTurn = null;
+    const turnClass =
+      enterTurn === 'next' ? ' is-turn-in-next' : enterTurn === 'prev' ? ' is-turn-in-prev' : '';
+
     root.innerHTML = `
       <header class="app-header reading-top">
         <button class="btn-icon" type="button" data-back aria-label="Voltar aos capítulos">←</button>
@@ -182,7 +188,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           </label>
         </nav>
       </header>
-      <main class="page page--reading${showOrig ? ' is-original' : ''}${showTr ? ' is-translit' : ''}">
+      <main class="page page--reading${showOrig ? ' is-original' : ''}${showTr ? ' is-translit' : ''}${turnClass}">
         <div>${body}</div>
       </main>
       <div class="sheet-backdrop" id="verse-sheet" hidden>
@@ -316,6 +322,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     bindSheets();
     bindFontControls();
     bindPinchZoom();
+    bindChapterSwipe();
     syncFontButtons();
   };
 
@@ -341,6 +348,101 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       bumpFontScale(FONT_SCALE_STEP);
       syncFontButtons();
     });
+  }
+
+  let swipeCleanup = null;
+
+  function bindChapterSwipe() {
+    if (typeof swipeCleanup === 'function') {
+      swipeCleanup();
+      swipeCleanup = null;
+    }
+    const target = root.querySelector('.page--reading');
+    if (!target) return;
+
+    let startX = 0;
+    let startY = 0;
+    let tracking = false;
+    let locked = false;
+    let swallowClick = false;
+
+    const interactive = (node) =>
+      node instanceof Element &&
+      Boolean(node.closest('button, a, input, select, textarea, label'));
+
+    const turnChapter = (direction) => {
+      if (locked) return;
+      const delta = direction === 'next' ? 1 : -1;
+      const dest = cap + delta;
+      const page = root.querySelector('.page--reading');
+      if (dest < 1 || dest > book.chapters) {
+        if (!page) return;
+        page.classList.remove('is-turn-bounce-next', 'is-turn-bounce-prev');
+        void page.offsetWidth;
+        page.classList.add(direction === 'next' ? 'is-turn-bounce-next' : 'is-turn-bounce-prev');
+        return;
+      }
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce || !page) {
+        navigate(`/ler/${book.id}/${dest}`);
+        return;
+      }
+      locked = true;
+      page.classList.add(direction === 'next' ? 'is-turn-out-next' : 'is-turn-out-prev');
+      pendingChapterTurn = direction;
+      window.setTimeout(() => {
+        locked = false;
+        navigate(`/ler/${book.id}/${dest}`);
+      }, 340);
+    };
+
+    const onClickCapture = (event) => {
+      if (!swallowClick) return;
+      swallowClick = false;
+      event.preventDefault();
+      event.stopPropagation();
+    };
+
+    const onStart = (event) => {
+      if (window.matchMedia('(min-width: 1024px)').matches) return;
+      if (event.touches.length !== 1) {
+        tracking = false;
+        return;
+      }
+      if (root.querySelector('#verse-sheet:not([hidden]), #devo-picker:not([hidden])')) return;
+      if (interactive(event.target)) return;
+      const touch = event.touches[0];
+      startX = touch.clientX;
+      startY = touch.clientY;
+      tracking = true;
+    };
+
+    const onEnd = (event) => {
+      if (!tracking) return;
+      tracking = false;
+      const touch = event.changedTouches[0];
+      if (!touch) return;
+      const dx = touch.clientX - startX;
+      const dy = touch.clientY - startY;
+      if (Math.abs(dx) < 72 || Math.abs(dx) < Math.abs(dy) * 1.35) return;
+      swallowClick = true;
+      turnChapter(dx < 0 ? 'next' : 'prev');
+    };
+
+    const onCancel = () => {
+      tracking = false;
+    };
+
+    root.addEventListener('click', onClickCapture, true);
+    target.addEventListener('touchstart', onStart, { passive: true });
+    target.addEventListener('touchend', onEnd, { passive: true });
+    target.addEventListener('touchcancel', onCancel, { passive: true });
+    swipeCleanup = () => {
+      root.removeEventListener('click', onClickCapture, true);
+      target.removeEventListener('touchstart', onStart);
+      target.removeEventListener('touchend', onEnd);
+      target.removeEventListener('touchcancel', onCancel);
+    };
   }
 
   function touchDistance(a, b) {
