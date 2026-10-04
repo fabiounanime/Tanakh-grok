@@ -4,9 +4,12 @@ import {
   getChapterNotes,
   getChapterOriginalLang,
   originalLangLabel,
+  getBookData,
 } from '../data/verses.js';
+import { lookupGloss, findFormInBook, tokenizeOriginal } from '../data/lexicon.js';
 import { FIXED_PT_VERSION } from '../data/versions.js';
-import { navigate } from '../utils/router.js';
+import { navigate, routes } from '../utils/router.js';
+import { shareVerseCard } from '../utils/shareCard.js';
 import {
   isMarked,
   setMark,
@@ -17,6 +20,7 @@ import {
   getFontScale,
   setFontScale,
   bumpFontScale,
+  setLastRead,
   FONT_SCALE_MIN,
   FONT_SCALE_MAX,
   FONT_SCALE_STEP,
@@ -73,6 +77,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       activeVerse = verses[0]?.verse ?? null;
     }
     paint();
+    rememberRead(activeVerse);
   }
 
   function paintLoading() {
@@ -143,7 +148,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
               aria-label="Versículo ${v.verse}"
             ><span class="verse-pt"><sup class="v-num">${v.verse}</sup><span class="v-text" lang="pt">${ptInner}</span></span>${
               orig
-                ? `<span class="verse-orig" lang="${langCode}" dir="${rtl ? 'rtl' : 'ltr'}">${escapeHtml(orig)}</span>`
+                ? `<span class="verse-orig" lang="${langCode}" dir="${rtl ? 'rtl' : 'ltr'}">${renderOriginalWords(orig)}</span>`
                 : ''
             }${tr ? `<span class="verse-tr" lang="la">${escapeHtml(tr)}</span>` : ''}</span>`;
         })
@@ -210,6 +215,10 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
               <strong>Marcar e associar a uma devocional</strong>
               <span>Vincular a uma reflexão existente ou nova</span>
             </button>
+            <button type="button" class="sheet-option" data-action="enviar">
+              <strong>Enviar cartão</strong>
+              <span>Imagem com o português e o original</span>
+            </button>
             <button type="button" class="sheet-option sheet-option--muted" data-action="desmarcar" hidden>
               <strong>Remover marcação</strong>
               <span>Tirar o destaque deste versículo</span>
@@ -228,6 +237,18 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
             <span>Com este versículo já vinculado</span>
           </button>
           <button type="button" class="sheet__cancel" data-devo-close>Cancelar</button>
+        </div>
+      </div>
+      <div class="sheet-backdrop" id="word-sheet" hidden>
+        <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="word-sheet-title">
+          <div class="sheet__handle" aria-hidden="true"></div>
+          <h3 class="sheet__title" id="word-sheet-title" data-word-title>Palavra</h3>
+          <div data-word-body></div>
+          <button type="button" class="sheet-option" data-word-share>
+            <strong>Enviar cartão</strong>
+            <span>Imagem deste versículo</span>
+          </button>
+          <button type="button" class="sheet__cancel" data-word-close>Fechar</button>
         </div>
       </div>
       <div class="toast" id="reading-toast" hidden role="status"></div>
@@ -279,16 +300,60 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     });
 
     root.querySelectorAll('.verse[data-verse]').forEach((el) => {
-      const open = () => {
-        activeVerse = Number(el.getAttribute('data-verse'));
+      const verseNum = () => Number(el.getAttribute('data-verse'));
+      let timer = 0;
+      let held = false;
+      let startX = 0;
+      let startY = 0;
+      const mark = () => {
+        held = true;
+        activeVerse = verseNum();
         syncVerseNavigation();
         openVerseSheet(activeVerse);
       };
-      el.addEventListener('click', open);
-      el.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          open();
+      el.addEventListener('contextmenu', (event) => {
+        event.preventDefault();
+        mark();
+      });
+      el.addEventListener(
+        'touchstart',
+        (event) => {
+          if (event.touches.length !== 1) return;
+          held = false;
+          startX = event.touches[0].clientX;
+          startY = event.touches[0].clientY;
+          clearTimeout(timer);
+          timer = window.setTimeout(mark, 480);
+        },
+        { passive: true }
+      );
+      el.addEventListener(
+        'touchmove',
+        (event) => {
+          const touch = event.touches[0];
+          if (!touch) return;
+          if (Math.hypot(touch.clientX - startX, touch.clientY - startY) > 12) clearTimeout(timer);
+        },
+        { passive: true }
+      );
+      el.addEventListener('touchend', () => clearTimeout(timer));
+      el.addEventListener('touchcancel', () => clearTimeout(timer));
+      el.addEventListener('click', (event) => {
+        if (held) {
+          held = false;
+          event.preventDefault();
+          event.stopPropagation();
+          return;
+        }
+        const lex = event.target.closest?.('[data-lex]');
+        activeVerse = verseNum();
+        syncVerseNavigation();
+        openWordSheet(activeVerse, lex ? lex.getAttribute('data-lex') : '');
+      });
+      el.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openWordSheet(verseNum(), '');
         }
       });
     });
@@ -313,6 +378,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           const jump = root.querySelector('[data-verse-jump]');
           if (jump) jump.value = String(n);
           syncVerseNavigation();
+          rememberRead(n);
         },
         { threshold: [0.55, 0.75] }
       );
@@ -409,7 +475,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         tracking = false;
         return;
       }
-      if (root.querySelector('#verse-sheet:not([hidden]), #devo-picker:not([hidden])')) return;
+      if (root.querySelector('#verse-sheet:not([hidden]), #word-sheet:not([hidden]), #devo-picker:not([hidden])')) return;
       if (interactive(event.target)) return;
       const touch = event.touches[0];
       startX = touch.clientX;
@@ -531,6 +597,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       target.setAttribute('aria-current', 'true');
     }
     syncVerseNavigation();
+    rememberRead(verseNum);
     target?.scrollIntoView({ behavior, block: 'center' });
     target?.focus({ preventScroll: true });
   }
@@ -541,6 +608,89 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     const next = root.querySelector('[data-next-verse]');
     if (prev) prev.disabled = index <= 0;
     if (next) next.disabled = index < 0 || index >= verses.length - 1;
+  }
+
+  let rememberTimer = 0;
+
+  function rememberRead(verseNum = activeVerse) {
+    const verse = verses.find((item) => item.verse === verseNum);
+    window.clearTimeout(rememberTimer);
+    rememberTimer = window.setTimeout(() => {
+      setLastRead({
+        bookId: book.id,
+        bookName: book.name,
+        chapter: cap,
+        verse: verseNum || 1,
+        snippet: verse?.portuguese || '',
+      });
+    }, 200);
+  }
+
+  function openWordSheet(verseNum, word) {
+    const verse = verses.find((item) => item.verse === verseNum);
+    if (!verse) return;
+    const sheet = root.querySelector('#word-sheet');
+    const title = root.querySelector('[data-word-title]');
+    const body = root.querySelector('[data-word-body]');
+    if (!sheet || !title || !body) return;
+    sheet.dataset.verse = String(verseNum);
+    const lang = verse.originalLang || verse.lang || 'he';
+    if (!word) {
+      const words = tokenizeOriginal(verse.original);
+      title.textContent = `${book.name} ${cap}:${verseNum}`;
+      body.innerHTML = words.length
+        ? `<p class="hint">Toque uma palavra do original.</p><div class="lex-picks">${words
+            .map(
+              (item) =>
+                `<button type="button" class="lex-pick" data-lex-pick="${escapeHtml(item)}">${escapeHtml(item)}</button>`
+            )
+            .join('')}</div>`
+        : '<p class="hint">Este versículo não tem texto original.</p>';
+      body.querySelectorAll('[data-lex-pick]').forEach((btn) => {
+        btn.addEventListener('click', () => openWordSheet(verseNum, btn.getAttribute('data-lex-pick')));
+      });
+      sheet.hidden = false;
+      return;
+    }
+    const info = lookupGloss(word, lang);
+    const hits = findFormInBook(getBookData(book.id), info.key, lang, 24);
+    title.textContent = word;
+    const gloss = info.gloss
+      ? `${info.prefixed ? 'A palavra leva um prefixo. O sentido da base é: ' : ''}${info.gloss}`
+      : 'Esta lista ainda não tem a glosa desta forma. Abaixo está a mesma forma escrita neste livro.';
+    body.innerHTML = `
+      <p class="lex-form">Forma: ${escapeHtml(info.key || word)}</p>
+      ${info.root ? `<p class="lex-root">Raiz: ${escapeHtml(info.root)}</p>` : ''}
+      <p class="lex-gloss">${escapeHtml(gloss)}</p>
+      <h4 class="lex-hits-title">A mesma forma em ${escapeHtml(book.name)}</h4>
+      ${
+        hits.length
+          ? `<ul class="lex-hits">${hits
+              .map(
+                (hit) => `<li><a href="${routes.readingVerse(book.id, hit.chapter, hit.verse)}">${escapeHtml(book.name)} ${hit.chapter}:${hit.verse}</a><span>${escapeHtml((hit.portuguese || hit.original || '').slice(0, 120))}</span></li>`
+              )
+              .join('')}</ul>`
+          : '<p class="hint">Nenhuma ocorrência desta forma neste livro.</p>'
+      }`;
+    sheet.hidden = false;
+  }
+
+  async function sendVerseCard(verseNum) {
+    const verse = verses.find((item) => item.verse === verseNum);
+    if (!verse) return;
+    const lang = verse.originalLang || verse.lang || 'he';
+    try {
+      const mode = await shareVerseCard({
+        ref: `${book.name} ${cap}:${verseNum}`,
+        portuguese: verse.portuguese || '',
+        original: verse.original || '',
+        rtl: lang === 'he' || lang === 'arc',
+      });
+      showToast(mode === 'shared' ? 'Cartão pronto para enviar.' : 'Cartão guardado na imagem.');
+    } catch (err) {
+      if (err?.name === 'AbortError') return;
+      showToast('Não deu para criar o cartão.');
+    }
   }
 
   function showToast(msg) {
@@ -653,6 +803,25 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       paint();
       showToast('Marcação removida.');
     });
+    root.querySelector('[data-action="enviar"]')?.addEventListener('click', () => {
+      if (!sheetVerse) return;
+      const verseNum = sheetVerse.verse;
+      closeVerseSheet();
+      sendVerseCard(verseNum);
+    });
+    root.querySelector('[data-word-close]')?.addEventListener('click', () => {
+      const sheet = root.querySelector('#word-sheet');
+      if (sheet) sheet.hidden = true;
+    });
+    root.querySelector('#word-sheet')?.addEventListener('click', (event) => {
+      if (event.target.id === 'word-sheet') event.target.hidden = true;
+    });
+    root.querySelector('[data-word-share]')?.addEventListener('click', () => {
+      const sheet = root.querySelector('#word-sheet');
+      const verseNum = Number(sheet?.dataset.verse);
+      if (sheet) sheet.hidden = true;
+      sendVerseCard(verseNum);
+    });
 
     root.querySelector('[data-devo-close]')?.addEventListener('click', () => {
       const picker = root.querySelector('#devo-picker');
@@ -681,6 +850,18 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     requestAnimationFrame(() => requestAnimationFrame(go));
     setTimeout(go, 120);
   }
+}
+
+function renderOriginalWords(text) {
+  return String(text)
+    .split(/(\s+|־)/)
+    .map((part) => {
+      if (!part || /^\s+$/.test(part) || part === '־') return escapeHtml(part);
+      const token = part.replace(/^[.,;:!?«»"'()]+|[.,;:!?«»"'()׃׀]+$/g, '');
+      if (!token) return escapeHtml(part);
+      return `<span class="lex-word" data-lex="${escapeHtml(token)}">${escapeHtml(part)}</span>`;
+    })
+    .join('');
 }
 
 function escapeHtml(s) {

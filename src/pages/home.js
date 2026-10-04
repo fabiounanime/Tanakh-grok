@@ -1,5 +1,6 @@
 import { routes, navigate } from '../utils/router.js';
-import { getSavedMarks, formatRelativeWhen } from '../utils/storage.js';
+import { getSavedMarks, formatRelativeWhen, getLastRead } from '../utils/storage.js';
+import { getBookById } from '../data/books.js';
 
 const FALLBACK_MARKINGS = [
   {
@@ -72,6 +73,17 @@ export function renderHome(root) {
     </a>`
   ).join('');
 
+  const last = getLastRead();
+  const lastBook = last ? getBookById(last.bookId) : null;
+  const continueName = lastBook?.name || last?.bookName || 'Gênesis';
+  const continueHref = last
+    ? routes.readingVerse(last.bookId, last.chapter, last.verse || 1)
+    : routes.readingVerse('gen', 1, 1);
+  const continueLabel = last
+    ? `${continueName} ${last.chapter}:${last.verse || 1}`
+    : 'Gênesis 1:1';
+  const continueSnip = last?.snippet || 'Comece a leitura pelo princípio.';
+
   root.innerHTML = `
     <main class="page page--home">
       <section class="greeting">
@@ -80,6 +92,12 @@ export function renderHome(root) {
         </div>
         <p class="greeting__sub">Prepare seu coração. Deus usa o que você prepara.</p>
       </section>
+
+      <a class="continue-card" href="${continueHref}">
+        <span class="continue-card__kicker">${last ? 'Continuar' : 'Começar'}</span>
+        <strong class="continue-card__ref">${escapeHtml(continueLabel)}</strong>
+        <span class="continue-card__snip">${escapeHtml(continueSnip)}</span>
+      </a>
 
       <section class="hero-card" aria-labelledby="devocional-title">
         <p class="hero-card__label">CRIAR DEVOCIONAL</p>

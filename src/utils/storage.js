@@ -97,7 +97,28 @@ export function applyFontScale(scale = getFontScale()) {
 }
 
 
+const LAST_READ_KEY = 'biblia-tanakh:lastRead';
 const THEME_KEY = 'biblia-tanakh:theme';
+
+export function getLastRead() {
+  const data = readJson(LAST_READ_KEY, null);
+  if (!data || !data.bookId || !data.chapter) return null;
+  return data;
+}
+
+export function setLastRead(entry) {
+  if (!entry?.bookId || !entry.chapter) return null;
+  const next = {
+    bookId: entry.bookId,
+    bookName: entry.bookName || '',
+    chapter: Number(entry.chapter),
+    verse: Number(entry.verse) || 1,
+    snippet: String(entry.snippet || '').slice(0, 180),
+    at: new Date().toISOString(),
+  };
+  writeJson(LAST_READ_KEY, next);
+  return next;
+}
 
 /** Persisted appearance. Dark is the default (current look). */
 export function getTheme() {
