@@ -7,6 +7,9 @@ import {
   deleteDevocional,
   getSavedMarks,
   formatRelativeWhen,
+  getOfflineDevocionais,
+  saveDevocionaisOffline,
+  restoreDevocionaisIfNeeded,
 } from '../utils/storage.js';
 
 function escapeHtml(s) {
@@ -18,6 +21,10 @@ function escapeHtml(s) {
 }
 
 export function renderDevocionais(root) {
+  restoreDevocionaisIfNeeded().finally(() => paintDevocionais(root));
+}
+
+function paintDevocionais(root) {
   const list = getDevocionais();
 
   const cards = list.length
@@ -48,6 +55,11 @@ export function renderDevocionais(root) {
       <span class="devo-empty__label">Criar devocional</span>
     </button>`;
 
+  const savedOffline = getOfflineDevocionais();
+  const offlineLabel = savedOffline
+    ? 'Devocionais no aparelho'
+    : 'Baixar devocionais offline';
+
   root.innerHTML = `
     <header class="app-header">
       <h1>Minhas Devocionais</h1>
@@ -59,6 +71,14 @@ export function renderDevocionais(root) {
         </button>
         <button type="button" class="btn-gold devo-ia" data-ia>Criar com IA</button>
       </div>
+      <button type="button" class="offline-dl${savedOffline ? ' is-ready' : ''}" data-offline-devo>
+        <span>${offlineLabel}</span>
+      </button>
+      <p class="offline-dl__note">${
+        savedOffline
+          ? `${list.length} ${list.length === 1 ? 'devocional está' : 'devocionais estão'} neste aparelho. Toque de novo para atualizar.`
+          : 'Guarda as suas devocionais neste aparelho para abrir sem internet.'
+      }</p>
       <div class="devo-list">${cards}</div>
     </main>
     <div class="sheet-backdrop" id="ia-sheet" hidden>
@@ -79,6 +99,12 @@ export function renderDevocionais(root) {
 
   root.querySelectorAll('[data-nova]').forEach((btn) => {
     btn.addEventListener('click', () => navigate('/devocionais/nova'));
+  });
+  root.querySelector('[data-offline-devo]')?.addEventListener('click', async () => {
+    const btn = root.querySelector('[data-offline-devo] span');
+    if (btn) btn.textContent = 'Guardando…';
+    await saveDevocionaisOffline();
+    paintDevocionais(root);
   });
 
   const iaSheet = root.querySelector('#ia-sheet');

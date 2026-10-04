@@ -239,6 +239,62 @@ export function getDevocionalById(id) {
 
 export function saveDevocionais(list) {
   writeJson(DEVOCIONAIS_KEY, list);
+  if (getOfflineDevocionais()) {
+    saveDevocionaisOffline().catch(() => {});
+  }
+}
+
+const OFFLINE_CACHE = 'biblia-offline-v1';
+const OFFLINE_DEVO_AT = 'biblia-tanakh:offlineDevocionaisAt';
+const OFFLINE_DEVO_COUNT = 'biblia-tanakh:offlineDevocionaisCount';
+
+export function getOfflineDevocionais() {
+  try {
+    const at = localStorage.getItem(OFFLINE_DEVO_AT);
+    const count = Number(localStorage.getItem(OFFLINE_DEVO_COUNT) || 0);
+    return at ? { at, count } : null;
+  } catch {
+    return null;
+  }
+}
+
+export async function saveDevocionaisOffline() {
+  const list = getDevocionais();
+  if (typeof caches !== 'undefined') {
+    const box = await caches.open(OFFLINE_CACHE);
+    await box.put(
+      new Request('/offline/devocionais.json'),
+      new Response(JSON.stringify(list), {
+        headers: { 'Content-Type': 'application/json' },
+      })
+    );
+  }
+  try {
+    localStorage.setItem(OFFLINE_DEVO_AT, new Date().toISOString());
+    localStorage.setItem(OFFLINE_DEVO_COUNT, String(list.length));
+  } catch {
+    /* ignore quota */
+  }
+  return list.length;
+}
+
+export async function restoreDevocionaisIfNeeded() {
+  let raw = null;
+  try {
+    raw = localStorage.getItem(DEVOCIONAIS_KEY);
+  } catch {
+    return;
+  }
+  if (raw || typeof caches === 'undefined') return;
+  try {
+    const box = await caches.open(OFFLINE_CACHE);
+    const hit = await box.match('/offline/devocionais.json');
+    if (!hit) return;
+    const list = await hit.json();
+    if (Array.isArray(list)) writeJson(DEVOCIONAIS_KEY, list);
+  } catch {
+    /* ignore */
+  }
 }
 
 /** @returns {Devocional} */

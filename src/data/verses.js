@@ -6,6 +6,7 @@
  * Transliteração: leitura fonética LTR gerada.
  */
 import { FIXED_PT_VERSION } from './versions.js';
+import { saveDevocionaisOffline } from '../utils/storage.js';
 
 /** Lazy JSON modules: ./books/<id>.json (exclui index). */
 const bookLoaders = import.meta.glob('./books/*.json');
@@ -77,6 +78,7 @@ export async function downloadBibleOffline(onProgress) {
   } catch {
     /* ignore quota */
   }
+  await saveDevocionaisOffline();
   return { done, total: ids.length };
 }
 
