@@ -804,9 +804,9 @@ html.is-installed .chrome-btn--install {
 }
 
 /* —— Bíblia list —— */
-.page--biblia {
-  /* Same status-bar clearance as .app-header / home */
-  padding-top: var(--pad-top);
+main.page.page--biblia {
+  /* Beat main.page's padding-top so the title sits under the clock, not under it. */
+  padding-top: calc(var(--pad-top) + 0.35rem);
 }
 
 .biblia-header {
