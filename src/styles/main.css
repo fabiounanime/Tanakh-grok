@@ -408,6 +408,38 @@ html[data-theme="light"] .greeting__brand {
   text-shadow: none;
 }
 
+.offline-dl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 0.4rem;
+  min-height: 2.8rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--accent);
+  font-weight: 650;
+  font-size: 0.95rem;
+}
+
+.offline-dl.is-ready {
+  border-color: var(--border);
+  color: var(--ink);
+}
+
+.offline-dl:disabled {
+  opacity: 0.7;
+}
+
+.offline-dl__note {
+  margin: 0 0 0.9rem;
+  color: var(--ink-muted);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
 .biblia-header {
   padding-right: var(--chrome-w);
 }

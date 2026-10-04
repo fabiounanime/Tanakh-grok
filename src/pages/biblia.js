@@ -1,5 +1,8 @@
 import { books } from '../data/books.js';
 import { routes } from '../utils/router.js';
+import { downloadBibleOffline, getOfflineDownload } from '../data/verses.js';
+
+let offlineJob = null;
 
 function filterBooks(query, testament) {
   const q = query.trim().toLowerCase();
@@ -52,6 +55,15 @@ export function renderBiblia(root, { query = '', testament = 'all' } = {}) {
     )
     .join('');
 
+  const saved = getOfflineDownload();
+  const offlineLabel = offlineJob?.running
+    ? `Baixando ${offlineJob.done} de ${offlineJob.total}`
+    : offlineJob?.error
+      ? 'Tentar baixar de novo'
+      : saved
+        ? 'Bíblia no aparelho'
+        : 'Baixar a Bíblia offline';
+
   root.innerHTML = `
     <main class="page page--biblia">
       <header class="biblia-header">
@@ -62,6 +74,19 @@ export function renderBiblia(root, { query = '', testament = 'all' } = {}) {
           <h1>Bíblia</h1>
         </div>
       </header>
+
+      <button type="button" class="offline-dl${saved && !offlineJob?.running ? ' is-ready' : ''}" data-offline ${
+        offlineJob?.running ? 'disabled' : ''
+      }>
+        <span>${offlineLabel}</span>
+      </button>
+      <p class="offline-dl__note" data-offline-note>${
+        offlineJob?.error
+          ? escapeHtml(offlineJob.error)
+          : saved && !offlineJob?.running
+            ? 'Os 66 livros estão neste aparelho. Toque de novo para atualizar.'
+            : 'Guarda os 66 livros neste aparelho para ler sem internet.'
+      }</p>
 
       <div class="search-wrap">
         <span class="search-ico" aria-hidden="true">
@@ -88,6 +113,31 @@ export function renderBiblia(root, { query = '', testament = 'all' } = {}) {
       }
     </main>
   `;
+
+  root.querySelector('[data-offline]')?.addEventListener('click', () => {
+    if (offlineJob?.running) return;
+    offlineJob = { running: true, done: 0, total: 66, error: '' };
+    const queryNow = root.querySelector('#book-search')?.value || query;
+    renderBiblia(root, { query: queryNow, testament });
+    downloadBibleOffline(({ done, total }) => {
+      offlineJob = { running: true, done, total, error: '' };
+      const note = document.querySelector('[data-offline-note]');
+      const btn = document.querySelector('[data-offline] span');
+      if (btn) btn.textContent = `Baixando ${done} de ${total}`;
+      if (note) note.textContent = 'Não feche esta aba até terminar.';
+    })
+      .then(() => {
+        offlineJob = null;
+        renderBiblia(root, { query: queryNow, testament });
+      })
+      .catch(() => {
+        offlineJob = {
+          running: false,
+          error: 'Não deu para concluir. Confira a internet e tente de novo.',
+        };
+        renderBiblia(root, { query: queryNow, testament });
+      });
+  });
 
   const input = root.querySelector('#book-search');
   input?.addEventListener('input', (e) => {

@@ -16,8 +16,68 @@ const cache = new Map();
 /** @type {Promise<object>|null} */
 let indexPromise = null;
 
+const OFFLINE_CACHE = 'biblia-offline-v1';
+
 function loaderKey(bookId) {
   return `./books/${bookId}.json`;
+}
+
+function offlineRequest(bookId) {
+  return new Request(`/offline/books/${bookId}.json`);
+}
+
+async function readOfflineBook(bookId) {
+  if (typeof caches === 'undefined') return null;
+  try {
+    const box = await caches.open(OFFLINE_CACHE);
+    const hit = await box.match(offlineRequest(bookId));
+    if (!hit) return null;
+    const data = await hit.json();
+    return data?.id ? data : null;
+  } catch {
+    return null;
+  }
+}
+
+async function writeOfflineBook(book) {
+  if (!book?.id || typeof caches === 'undefined') return;
+  const box = await caches.open(OFFLINE_CACHE);
+  await box.put(
+    offlineRequest(book.id),
+    new Response(JSON.stringify(book), {
+      headers: { 'Content-Type': 'application/json' },
+    })
+  );
+}
+
+export function getOfflineDownload() {
+  try {
+    const at = localStorage.getItem('biblia-tanakh:offlineAt');
+    const count = Number(localStorage.getItem('biblia-tanakh:offlineCount') || 0);
+    return at ? { at, count } : null;
+  } catch {
+    return null;
+  }
+}
+
+export async function downloadBibleOffline(onProgress) {
+  const ids = Object.keys(bookLoaders)
+    .map((key) => key.slice('./books/'.length, -'.json'.length))
+    .filter((id) => id && id !== 'index');
+  let done = 0;
+  for (const id of ids) {
+    const data = await loadBook(id);
+    if (data) await writeOfflineBook(data);
+    done += 1;
+    onProgress?.({ done, total: ids.length });
+  }
+  try {
+    localStorage.setItem('biblia-tanakh:offlineAt', new Date().toISOString());
+    localStorage.setItem('biblia-tanakh:offlineCount', String(done));
+  } catch {
+    /* ignore quota */
+  }
+  return { done, total: ids.length };
 }
 
 export async function loadBookIndex() {
@@ -37,12 +97,28 @@ export async function loadBookIndex() {
 export async function loadBook(bookId) {
   const id = String(bookId || '');
   if (cache.has(id)) return cache.get(id);
+  if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+    const saved = await readOfflineBook(id);
+    if (saved) {
+      cache.set(id, saved);
+      return saved;
+    }
+  }
   const loader = bookLoaders[loaderKey(id)];
-  if (!loader) return null;
-  const mod = await loader();
-  const data = mod?.default ?? mod;
-  if (data?.id) cache.set(id, data);
-  return data || null;
+  if (!loader) return readOfflineBook(id);
+  try {
+    const mod = await loader();
+    const data = mod?.default ?? mod;
+    if (data?.id) cache.set(id, data);
+    return data || null;
+  } catch (err) {
+    const saved = await readOfflineBook(id);
+    if (saved) {
+      cache.set(id, saved);
+      return saved;
+    }
+    throw err;
+  }
 }
 
 export function getBookData(bookId) {
