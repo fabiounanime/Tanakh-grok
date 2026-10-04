@@ -53,15 +53,88 @@ export function renderDevocionais(root) {
       <h1>Minhas Devocionais</h1>
     </header>
     <main class="page page--devo">
-      <button type="button" class="devo-add" data-nova aria-label="Nova devocional">
-        <span aria-hidden="true">+</span>
-      </button>
+      <div class="devo-actions">
+        <button type="button" class="devo-add" data-nova aria-label="Nova devocional">
+          <span aria-hidden="true">+</span>
+        </button>
+        <button type="button" class="btn-gold devo-ia" data-ia>Criar com IA</button>
+      </div>
       <div class="devo-list">${cards}</div>
     </main>
+    <div class="sheet-backdrop" id="ia-sheet" hidden>
+      <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="ia-sheet-title">
+        <div class="sheet__handle" aria-hidden="true"></div>
+        <h3 class="sheet__title" id="ia-sheet-title">Devocional com IA</h3>
+        <p class="hint">Escreva uma passagem ou um tema. O texto entra como rascunho, para você revisar. Não substitui a tradução do app.</p>
+        <label class="field">
+          <span class="field__label">Passagem ou tema</span>
+          <textarea class="field__textarea" data-ia-passage rows="5" maxlength="2000" placeholder="Ex.: Salmos 139,1-6"></textarea>
+        </label>
+        <p class="hint" data-ia-status hidden></p>
+        <button type="button" class="btn-gold" data-ia-go>Gerar rascunho</button>
+        <button type="button" class="sheet__cancel" data-ia-close>Fechar</button>
+      </div>
+    </div>
   `;
 
   root.querySelectorAll('[data-nova]').forEach((btn) => {
     btn.addEventListener('click', () => navigate('/devocionais/nova'));
+  });
+
+  const iaSheet = root.querySelector('#ia-sheet');
+  const closeIa = () => {
+    if (iaSheet) iaSheet.hidden = true;
+  };
+  root.querySelector('[data-ia]')?.addEventListener('click', () => {
+    const field = root.querySelector('[data-ia-passage]');
+    const marks = getSavedMarks();
+    if (field && !field.value.trim() && marks[0]) {
+      field.value = `${marks[0].ref}\n${marks[0].snippet || ''}`.trim();
+    }
+    if (iaSheet) iaSheet.hidden = false;
+  });
+  root.querySelector('[data-ia-close]')?.addEventListener('click', closeIa);
+  iaSheet?.addEventListener('click', (event) => {
+    if (event.target === iaSheet) closeIa();
+  });
+  root.querySelector('[data-ia-go]')?.addEventListener('click', async () => {
+    const field = root.querySelector('[data-ia-passage]');
+    const status = root.querySelector('[data-ia-status]');
+    const go = root.querySelector('[data-ia-go]');
+    const passage = field?.value.trim() || '';
+    const say = (text) => {
+      if (!status) return;
+      status.hidden = !text;
+      status.textContent = text;
+    };
+    if (!passage) {
+      say('Escreva uma passagem ou um tema.');
+      return;
+    }
+    if (go) go.disabled = true;
+    say('Gerando…');
+    try {
+      const res = await fetch('/api/devocional', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ passage }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.status === 503) {
+        say('A geração ainda não está ligada. No Cloudflare Pages, grave a variável XAI_API_KEY.');
+        return;
+      }
+      if (!res.ok || !data.title || !data.body) {
+        say('Não foi possível gerar agora. Tente de novo.');
+        return;
+      }
+      const created = createDevocional({ title: data.title, body: data.body });
+      navigate(`/devocionais/${created.id}`);
+    } catch {
+      say('Sem ligação com o servidor. Tente de novo.');
+    } finally {
+      if (go) go.disabled = false;
+    }
   });
 }
 
