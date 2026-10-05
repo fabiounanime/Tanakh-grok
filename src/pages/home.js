@@ -99,6 +99,12 @@ export function renderHome(root) {
         <span class="continue-card__snip">${escapeHtml(continueSnip)}</span>
       </a>
 
+      <a class="mapa-entry" href="${routes.mapa()}">
+        <span class="mapa-entry__kicker">Mapa mental</span>
+        <strong class="mapa-entry__title">Da criação à promessa</strong>
+        <span class="mapa-entry__snip">Explore o fio de Gênesis até o Messias.</span>
+      </a>
+
       <section class="hero-card" aria-labelledby="devocional-title">
         <p class="hero-card__label">CRIAR DEVOCIONAL</p>
         <h2 id="devocional-title" class="hero-card__title">Comece um tempo com a Palavra</h2>

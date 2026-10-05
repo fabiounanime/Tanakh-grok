@@ -1,0 +1,299 @@
+.page--mapa {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: calc(100dvh - var(--nav-h) - var(--safe-b));
+  padding-top: var(--pad-top);
+}
+
+.page--mapa.is-map {
+  height: calc(100dvh - var(--nav-h) - var(--safe-b));
+  overflow: hidden;
+}
+
+.mapa-bar__top,
+.mapa-bar__tools,
+.mapa-sheet__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.mapa-bar h1 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.mapa-bar__kicker,
+.mapa-sheet__era,
+.mapa-sheet__kicker {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.mapa-progress,
+.mapa-mode,
+.mapa-chip,
+.mapa-next {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--ink-soft);
+  border-radius: var(--radius-pill);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+.mapa-progress,
+.mapa-mode {
+  padding: 0.35rem 0.7rem;
+}
+
+.mapa-mode {
+  color: var(--ink);
+}
+
+.mapa-search input {
+  width: 100%;
+  margin-top: 0.7rem;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--ink);
+  border-radius: var(--radius-pill);
+  padding: 0.65rem 0.9rem;
+  font: inherit;
+}
+
+.mapa-chips,
+.mapa-leaves {
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding: 0.7rem 0 0.15rem;
+}
+
+.mapa-chip,
+.mapa-next {
+  padding: 0.4rem 0.75rem;
+  white-space: nowrap;
+}
+
+.mapa-chip.is-on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.mapa-stage {
+  position: relative;
+  flex: 1;
+  min-height: 280px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 50% 42%, var(--canvas-glow), transparent 46%),
+    var(--bg-elevated);
+  touch-action: none;
+}
+
+.mapa-world {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1680px;
+  height: 1680px;
+  transform-origin: 0 0;
+}
+
+.mapa-lines {
+  position: absolute;
+  inset: 0;
+  width: 1680px;
+  height: 1680px;
+}
+
+.mapa-lines line {
+  stroke: var(--border);
+  stroke-width: 1.5;
+}
+
+.mapa-lines line.is-hot {
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.mapa-node,
+.mapa-row {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+}
+
+.mapa-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 92px;
+  max-width: 148px;
+  padding: 0.45rem 0.6rem;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.mapa-node small,
+.mapa-row small {
+  color: var(--ink-muted);
+  font-size: 0.68rem;
+}
+
+.mapa-node--root {
+  min-width: 120px;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+  font-weight: 750;
+}
+
+.mapa-node--branch {
+  font-weight: 700;
+}
+
+.mapa-node.is-selected,
+.mapa-row.is-selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.mapa-node.is-studied,
+.mapa-row.is-studied {
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.mapa-node.is-dim {
+  opacity: 0.28;
+}
+
+.mapa-branch {
+  margin-bottom: 0.9rem;
+}
+
+.mapa-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0.45rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 16px;
+}
+
+.mapa-leaves .mapa-row {
+  width: auto;
+  min-width: 148px;
+  margin: 0;
+}
+
+.mapa-empty {
+  color: var(--ink-muted);
+}
+
+.mapa-sheet {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 1rem;
+}
+
+.page--mapa.is-map .mapa-sheet {
+  max-height: 34dvh;
+  overflow: auto;
+}
+
+.mapa-sheet h2 {
+  margin: 0.15rem 0;
+  font-size: 1.25rem;
+}
+
+.mapa-sheet p,
+.mapa-points,
+.mapa-refs {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.mapa-points,
+.mapa-refs {
+  margin: 0.6rem 0;
+  padding-left: 1.1rem;
+}
+
+.mapa-ref__cite {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mapa-reflection {
+  font-family: var(--font-reading);
+  color: var(--ink);
+}
+
+.mapa-sheet__actions {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+.mapa-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin: -0.4rem 0 1.2rem;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  border: 1px solid var(--border-gold);
+  background: linear-gradient(160deg, var(--chip-grad-from), var(--bg-card) 62%);
+  text-decoration: none;
+  color: inherit;
+}
+
+.mapa-entry:hover {
+  text-decoration: none;
+}
+
+.mapa-entry__kicker {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.mapa-entry__title {
+  font-size: 1.05rem;
+}
+
+.mapa-entry__snip {
+  color: var(--ink-muted);
+  font-size: 0.86rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

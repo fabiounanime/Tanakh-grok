@@ -61,6 +61,7 @@ Build com `vite-plugin-pwa`, precache do shell + dados + fontes. Em produção (
 | `#/biblia` | 66 livros (busca + AT/NT) |
 | `#/livro/:id` | Capítulos (destaque se há português) |
 | `#/ler/:id/:capítulo` | Português · Hebraico/Aramaico/Grego · Transliteração + notas |
+| `#/mapa` | Mapa mental: criação, queda, dilúvio, nações, patriarcas e promessa |
 | `#/devocionais` | Devocionais |
 | `#/favoritos` | Marcações |
 

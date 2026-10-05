@@ -11,6 +11,7 @@ import '@fontsource/noto-serif/latin-400.css';
 import '@fontsource/noto-serif/latin-400-italic.css';
 import '@fontsource/noto-serif/latin-600.css';
 import './styles/main.css';
+import './styles/mapa.css';
 import { startRouter, onRouteChange, parseHash, routes } from './utils/router.js';
 import { registerSW } from 'virtual:pwa-register';
 import { runSplash } from './components/splash.js';
@@ -20,6 +21,7 @@ import { renderBook } from './pages/book.js';
 import { renderReading } from './pages/reading.js';
 import { renderFavorites } from './pages/favorites.js';
 import { renderDevocionais, renderDevocionalEdit } from './pages/devocionais.js';
+import { renderMapa } from './pages/mapa.js';
 import { applyFontScale, applyTheme } from './utils/storage.js';
 import { mountChrome } from './components/chrome.js';
 
@@ -70,14 +72,15 @@ function setActiveNav(routeName) {
     biblia: 'biblia',
     book: 'biblia',
     reading: 'biblia',
+    mapa: null,
     devocionais: 'devocionais',
     'devocional-edit': 'devocionais',
     marcacoes: 'marcacoes',
     favorites: 'marcacoes',
   };
-  const active = map[routeName] || 'home';
+  const active = Object.prototype.hasOwnProperty.call(map, routeName) ? map[routeName] : 'home';
   document.querySelectorAll('.bottom-nav a').forEach((a) => {
-    a.classList.toggle('active', a.getAttribute('data-nav') === active);
+    a.classList.toggle('active', Boolean(active) && a.getAttribute('data-nav') === active);
   });
 }
 
@@ -95,6 +98,9 @@ function render(route) {
       break;
     case 'reading':
       renderReading(pageRoot, route.params);
+      break;
+    case 'mapa':
+      renderMapa(pageRoot);
       break;
     case 'devocionais':
       renderDevocionais(pageRoot);
