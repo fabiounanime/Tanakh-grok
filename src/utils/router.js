@@ -1,6 +1,6 @@
 /**
  * Roteador hash: #/, #/biblia, #/livro/:id, #/ler/:id/:cap,
- * #/mapa, #/devocionais, #/devocionais/nova, #/devocionais/:id,
+ * #/devocionais, #/devocionais/nova, #/devocionais/:id,
  * #/marcacoes, #/favoritos
  */
 
@@ -45,9 +45,6 @@ export function parseHash() {
         verse,
       },
     };
-  }
-  if (parts[0] === 'mapa') {
-    return { name: 'mapa', params: {} };
   }
   if (parts[0] === 'devocionais') {
     if (parts[1] === 'nova') {
@@ -107,7 +104,6 @@ export const routes = {
   book: (bookId) => `#/livro/${bookId}`,
   reading: (bookId, chapter) => `#/ler/${bookId}/${chapter}`,
   readingVerse: (bookId, chapter, verse) => `#/ler/${bookId}/${chapter}?v=${verse}`,
-  mapa: () => '#/mapa',
   devocionais: () => '#/devocionais',
   devocionalNova: () => '#/devocionais/nova',
   devocional: (id) => `#/devocionais/${id}`,
