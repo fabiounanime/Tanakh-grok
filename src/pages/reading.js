@@ -218,7 +218,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
             </button>
             <button type="button" class="sheet-option" data-action="enviar">
               <strong>Enviar cartão</strong>
-              <span>Imagem com o português e o original</span>
+              <span>Imagem do versículo como está na leitura</span>
             </button>
             <button type="button" class="sheet-option sheet-option--muted" data-action="desmarcar" hidden>
               <strong>Remover marcação</strong>
@@ -642,7 +642,8 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       const mode = await shareVerseCard({
         ref: `${book.name} ${cap}:${verseNum}`,
         portuguese: verse.portuguese || '',
-        original: verse.original || '',
+        original: readShowOriginal() ? verse.original || '' : '',
+        transliteration: readShowTranslit() ? verse.transliteration || '' : '',
         rtl: lang === 'he' || lang === 'arc',
       });
       showToast(mode === 'shared' ? 'Cartão pronto para enviar.' : 'Cartão guardado na imagem.');
