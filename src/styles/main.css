@@ -2794,15 +2794,34 @@ html[data-theme='light'] .verse-orig {
   to { transform: rotate(360deg); }
 }
 
-/* Phone uses the tall art; tablet and computer keep the wide art, both contained. */
+/* Phone uses the 9:16 art; slogan sits under the app name. */
 @media (max-width: 767px) {
   .splash__art {
     content: url('/splash-mobile.jpg');
-    object-position: center 38%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .splash__content {
+    top: 31%;
+    bottom: auto;
+    padding: 0 1.25rem;
+    background: none;
   }
 
   .splash__slogan {
-    font-size: clamp(1.45rem, 7vw, 2.15rem);
+    max-width: none;
+    font-size: clamp(1.35rem, 6.2vw, 1.85rem);
+    color: #2a1c12;
+    text-shadow: 0 1px 0 rgba(255, 248, 236, 0.7);
+  }
+
+  .splash__line {
+    background: #8a5a22;
+  }
+
+  .splash__spinner {
+    color: #2a1c12;
   }
 }
 
