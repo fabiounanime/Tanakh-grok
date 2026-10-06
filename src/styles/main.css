@@ -516,6 +516,8 @@ html.is-installed .chrome-btn--install {
   padding: 0;
   cursor: pointer;
 }
+
+.devo-actions {
   display: flex;
   align-items: center;
   gap: 0.75rem;
