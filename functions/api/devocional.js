@@ -18,7 +18,7 @@ Devolva somente JSON com esta forma:
 {"title":"","theme":"","baseText":"","centralIdea":"","related":[""],"movements":[{"title":"","verse":"","observation":"","illustration":"","application":"","transition":""}],"application":"","conclusion":""}
 title até 80 caracteres. related com no máximo 4 referências. movements com 3 itens.`;
 
-  const models = ['gemini-3.8-flash', 'gemini-flash-latest'];
+  const models = ['gemini-3.8-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite'];
   let response;
   let payload;
   for (const model of models) {

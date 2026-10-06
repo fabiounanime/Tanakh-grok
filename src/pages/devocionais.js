@@ -163,12 +163,21 @@ function paintDevocionais(root) {
     if (go) go.disabled = true;
     say('Gerando…');
     try {
-      const res = await fetch('/api/devocional', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ passage }),
-      });
-      const data = await res.json().catch(() => ({}));
+      let data = {};
+      let res;
+      for (let attempt = 0; attempt < 2; attempt += 1) {
+        res = await fetch('/api/devocional', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ passage }),
+        });
+        data = await res.json().catch(() => ({}));
+        const busy = /high demand|try again|cheio/i.test(String(data.detail || ''));
+        if (res.ok && data.title && data.body) break;
+        if (!busy || attempt === 1) break;
+        say('O Gemini está cheio. Tentando de novo…');
+        await new Promise((resolve) => setTimeout(resolve, 2500));
+      }
       if (res.status === 503) {
         say('A geração ainda não está ligada. No Cloudflare Pages, grave o segredo GEMINI_API_KEY.');
         return;
