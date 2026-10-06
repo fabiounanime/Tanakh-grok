@@ -13,6 +13,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: [
         'splash.jpg',
+        'pergaminho.jpg',
         'splash-mobile.jpg',
         'logo.jpg',
         'logo.png',
