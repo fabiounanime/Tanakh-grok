@@ -2,7 +2,29 @@ function wrapLines(ctx, text, maxWidth) {
   const words = String(text || '').split(/\s+/).filter(Boolean);
   const lines = [];
   let line = '';
+  const pushLong = (token) => {
+    let chunk = '';
+    for (const char of token) {
+      const next = chunk + char;
+      if (ctx.measureText(next).width > maxWidth && chunk) {
+        lines.push(chunk);
+        chunk = char;
+      } else {
+        chunk = next;
+      }
+    }
+    return chunk;
+  };
   for (const word of words) {
+    if (ctx.measureText(word).width > maxWidth) {
+      if (line) {
+        lines.push(line);
+        line = '';
+      }
+      const rest = pushLong(word);
+      if (rest) line = rest;
+      continue;
+    }
     const next = line ? `${line} ${word}` : word;
     if (ctx.measureText(next).width > maxWidth && line) {
       lines.push(line);
@@ -15,48 +37,133 @@ function wrapLines(ctx, text, maxWidth) {
   return lines;
 }
 
+function paintParchment(ctx, width, height) {
+  const paper = ctx.createLinearGradient(0, 0, width, height);
+  paper.addColorStop(0, '#f8efd8');
+  paper.addColorStop(0.45, '#f3e2c0');
+  paper.addColorStop(1, '#e6cd9e');
+  ctx.fillStyle = paper;
+  ctx.fillRect(0, 0, width, height);
+
+  const stains = [
+    [170, 140, 240],
+    [880, 260, 280],
+    [420, height * 0.72, 320],
+    [760, height - 120, 200],
+  ];
+  for (const [x, y, radius] of stains) {
+    const spot = ctx.createRadialGradient(x, y, 10, x, y, radius);
+    spot.addColorStop(0, 'rgba(122, 74, 28, 0.07)');
+    spot.addColorStop(1, 'rgba(122, 74, 28, 0)');
+    ctx.fillStyle = spot;
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  const edge = ctx.createLinearGradient(0, 0, width, 0);
+  edge.addColorStop(0, 'rgba(92, 52, 18, 0.2)');
+  edge.addColorStop(0.07, 'rgba(92, 52, 18, 0)');
+  edge.addColorStop(0.93, 'rgba(92, 52, 18, 0)');
+  edge.addColorStop(1, 'rgba(92, 52, 18, 0.2)');
+  ctx.fillStyle = edge;
+  ctx.fillRect(0, 0, width, height);
+
+  const shade = ctx.createLinearGradient(0, 0, 0, height);
+  shade.addColorStop(0, 'rgba(92, 52, 18, 0.12)');
+  shade.addColorStop(0.06, 'rgba(92, 52, 18, 0)');
+  shade.addColorStop(0.94, 'rgba(92, 52, 18, 0)');
+  shade.addColorStop(1, 'rgba(92, 52, 18, 0.16)');
+  ctx.fillStyle = shade;
+  ctx.fillRect(0, 0, width, height);
+
+  ctx.strokeStyle = '#8a5424';
+  ctx.lineWidth = 8;
+  ctx.strokeRect(28, 28, width - 56, height - 56);
+  ctx.strokeStyle = 'rgba(138, 84, 36, 0.45)';
+  ctx.lineWidth = 2;
+  ctx.strokeRect(46, 46, width - 92, height - 92);
+}
+
 export async function shareVerseCard({ ref, portuguese, original, rtl }) {
   await document.fonts?.ready;
+  const width = 1080;
+  const padX = 96;
+  const textWidth = width - padX * 2;
+  const ptSize = 52;
+  const ptGap = Math.round(ptSize * 1.38);
+  const origSize = 58;
+  const origGap = Math.round(origSize * 1.36);
+  const brandSize = 30;
+
+  const measure = document.createElement('canvas').getContext('2d');
+  measure.font = `600 ${ptSize}px "Noto Serif", Georgia, serif`;
+  const ptLines = wrapLines(measure, portuguese || '', textWidth);
+  measure.font = `600 ${origSize}px ${rtl ? '"Noto Sans Hebrew"' : '"Noto Serif"'}, serif`;
+  const origLines = original ? wrapLines(measure, original, textWidth) : [];
+
+  const refY = 132;
+  let lastBaseline = refY;
+  let firstPt = 0;
+  let firstOrig = 0;
+  let dividerY = 0;
+  if (ptLines.length) {
+    firstPt = refY + 70 + ptSize;
+    lastBaseline = firstPt + (ptLines.length - 1) * ptGap;
+  }
+  if (origLines.length) {
+    dividerY = lastBaseline + (ptLines.length ? 44 : 56);
+    firstOrig = dividerY + 36 + origSize;
+    lastBaseline = firstOrig + (origLines.length - 1) * origGap;
+  }
+  const descent = Math.round((origLines.length ? origSize : ptSize) * 0.32);
+  const brandY = lastBaseline + descent + 52 + brandSize;
+  const height = brandY + 64;
+
   const canvas = document.createElement('canvas');
-  canvas.width = 1080;
-  canvas.height = 1350;
+  canvas.width = width;
+  canvas.height = height;
   const ctx = canvas.getContext('2d');
-  ctx.fillStyle = '#100e0b';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-  ctx.strokeStyle = '#d4a017';
-  ctx.lineWidth = 3;
-  ctx.strokeRect(48, 48, canvas.width - 96, canvas.height - 96);
+  paintParchment(ctx, width, height);
 
-  ctx.fillStyle = '#d4a017';
-  ctx.font = '600 42px Inter, sans-serif';
+  ctx.fillStyle = '#6d3d16';
+  ctx.font = '700 40px Inter, sans-serif';
   ctx.textAlign = 'left';
-  ctx.fillText(ref || 'Bíblia Origens', 96, 160);
+  ctx.textBaseline = 'alphabetic';
+  ctx.fillText(ref || 'Bíblia Origens', padX, refY);
 
-  ctx.fillStyle = '#f4f1ea';
-  ctx.font = '600 54px "Noto Serif", Georgia, serif';
-  const ptLines = wrapLines(ctx, portuguese || '', 860).slice(0, 8);
-  ptLines.forEach((line, i) => ctx.fillText(line, 96, 280 + i * 72));
+  ctx.strokeStyle = 'rgba(109, 61, 22, 0.35)';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(padX, refY + 24);
+  ctx.lineTo(width - padX, refY + 24);
+  ctx.stroke();
 
-  if (original) {
-    const y = 280 + ptLines.length * 72 + 48;
-    ctx.strokeStyle = 'rgba(212,160,23,0.45)';
+  ctx.fillStyle = '#2c2116';
+  ctx.font = `600 ${ptSize}px "Noto Serif", Georgia, serif`;
+  ptLines.forEach((line, index) => {
+    ctx.fillText(line, padX, firstPt + index * ptGap);
+  });
+
+  if (origLines.length) {
+    ctx.strokeStyle = 'rgba(109, 61, 22, 0.28)';
     ctx.beginPath();
-    ctx.moveTo(96, y);
-    ctx.lineTo(984, y);
+    ctx.moveTo(padX, dividerY);
+    ctx.lineTo(width - padX, dividerY);
     ctx.stroke();
-    ctx.fillStyle = '#f7f4ee';
-    ctx.font = '600 64px "Noto Sans Hebrew", "Noto Serif", serif';
+    ctx.fillStyle = '#3b2918';
+    ctx.font = `600 ${origSize}px ${rtl ? '"Noto Sans Hebrew"' : '"Noto Serif"'}, serif`;
     ctx.textAlign = rtl ? 'right' : 'left';
-    const origLines = wrapLines(ctx, original, 860).slice(0, 4);
-    origLines.forEach((line, i) => {
-      ctx.fillText(line, rtl ? 984 : 96, y + 90 + i * 84);
+    const x = rtl ? width - padX : padX;
+    origLines.forEach((line, index) => {
+      ctx.fillText(line, x, firstOrig + index * origGap);
     });
   }
 
   ctx.textAlign = 'left';
-  ctx.fillStyle = '#b7a078';
-  ctx.font = '500 32px Inter, sans-serif';
-  ctx.fillText('Bíblia Origens', 96, 1240);
+  ctx.fillStyle = '#8a5a32';
+  ctx.font = `600 ${brandSize}px Inter, sans-serif`;
+  ctx.fillText('Bíblia Origens', padX, brandY);
 
   const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
   if (!blob) throw new Error('card');
