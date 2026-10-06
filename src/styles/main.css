@@ -1494,12 +1494,29 @@ html[data-theme='light'] .verse-orig {
 }
 
 .lex-pick {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.12rem;
   border: 1px solid var(--border);
   background: transparent;
   color: var(--ink);
-  border-radius: 999px;
-  padding: 0.35rem 0.7rem;
+  border-radius: 1rem;
+  padding: 0.4rem 0.7rem 0.32rem;
+  line-height: 1.15;
+}
+
+.lex-pick__he {
   font-size: 1.15rem;
+}
+
+.lex-pick small {
+  max-width: 7.2rem;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  text-align: center;
 }
 
 .lex-form,

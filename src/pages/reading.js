@@ -601,7 +601,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
         ? `<p class="hint">Toque uma palavra do original.</p><div class="lex-picks">${words
             .map(
               (item) =>
-                `<button type="button" class="lex-pick" data-lex-pick="${escapeHtml(item)}">${escapeHtml(item)}</button>`
+                `<button type="button" class="lex-pick" data-lex-pick="${escapeHtml(item)}"><span class="lex-pick__he">${escapeHtml(item)}</span><small>${escapeHtml(chipGloss(item, lang) || '—')}</small></button>`
             )
             .join('')}</div>`
         : '<p class="hint">Este versículo não tem texto original.</p>';
@@ -714,7 +714,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
       <div class="lex-picks">${words
         .map((item) => {
           const on = focusWord && item === focusWord;
-          return `<button type="button" class="lex-pick${on ? ' is-on' : ''}" data-lex-pick="${escapeHtml(item)}">${escapeHtml(item)}</button>`;
+          return `<button type="button" class="lex-pick${on ? ' is-on' : ''}" data-lex-pick="${escapeHtml(item)}"><span class="lex-pick__he">${escapeHtml(item)}</span><small>${escapeHtml(chipGloss(item, lang) || '—')}</small></button>`;
         })
         .join('')}</div>
       <div class="sheet__lex">${focusWord ? wordDetailHtml(verse, focusWord) : '<p class="hint">Toque uma palavra para ver o sentido.</p>'}</div>`;
@@ -870,6 +870,12 @@ function renderOriginalWords(text) {
       return `<span class="lex-word" data-lex="${escapeHtml(token)}">${escapeHtml(part)}</span>`;
     })
     .join('');
+}
+
+function chipGloss(word, lang) {
+  const gloss = lookupGloss(word, lang).gloss;
+  if (!gloss) return '';
+  return gloss.split(';')[0].trim();
 }
 
 function escapeHtml(s) {

@@ -35,6 +35,7 @@ const HE = {
   ברא: { g: 'criar' },
   עשה: { g: 'fazer' },
   היה: { g: 'ser, haver' },
+  יהיה: { g: 'será' },
   נתן: { g: 'dar' },
   לקח: { g: 'tomar' },
   הלך: { g: 'andar' },
@@ -113,6 +114,24 @@ const HE = {
   ראשית: { g: 'princípio', r: 'ראש' },
   בראשית: { g: 'no princípio', r: 'ראש' },
   תהום: { g: 'abismo' },
+  חדש: { g: 'mês' },
+  שביעי: { g: 'sétimo' },
+  מקרא: { g: 'convocação' },
+  מלאכה: { g: 'trabalho' },
+  מעשה: { g: 'obra' },
+  ימים: { g: 'dias' },
+  את: { g: 'a' },
+  לכם: { g: 'a vocês' },
+  לכן: { g: 'a vós' },
+  להם: { g: 'a eles' },
+  להן: { g: 'a elas' },
+  לנו: { g: 'a nós' },
+  לך: { g: 'a ti' },
+  לי: { g: 'a mim' },
+  לו: { g: 'a ele' },
+  לה: { g: 'a ela' },
+  בכם: { g: 'em vocês' },
+  מכם: { g: 'de vocês' },
   כל: { g: 'todo' },
   אחד: { g: 'um' },
   לא: { g: 'não' },
@@ -192,6 +211,33 @@ export function formKey(word, lang) {
   return lang === 'el' ? greekKey(word) : hebrewKey(word);
 }
 
+const HE_SUFFIX = ['יכם', 'יהם', 'יהן', 'ותי', 'ים', 'ות', 'כם', 'כן', 'הם', 'הן', 'נו', 'יה', 'ך', 'י', 'ו', 'ה', 'ת'];
+
+function hebrewLookup(key) {
+  if (HE[key]) return { gloss: HE[key].g, root: HE[key].r || '', prefixed: false };
+  const bases = [key];
+  let stem = key;
+  for (let i = 0; i < 3 && stem.length > 2 && HE_PREFIX.has(stem[0]); i += 1) {
+    stem = stem.slice(1);
+    bases.push(stem);
+  }
+  for (const base of bases) {
+    if (HE[base]) {
+      return { gloss: HE[base].g, root: HE[base].r || '', prefixed: base !== key };
+    }
+  }
+  for (const base of bases) {
+    for (const suffix of HE_SUFFIX) {
+      if (base.length - suffix.length < 2 || !base.endsWith(suffix)) continue;
+      const core = base.slice(0, -suffix.length);
+      const entry = HE[core] || (suffix === 'ת' ? HE[`${core}ה`] : null);
+      if (!entry) continue;
+      return { gloss: entry.g, root: entry.r || core, prefixed: base !== key };
+    }
+  }
+  return null;
+}
+
 export function lookupGloss(word, lang) {
   if (lang === 'el') {
     const key = greekKey(word);
@@ -199,13 +245,8 @@ export function lookupGloss(word, lang) {
     return hit ? { key, gloss: hit.g, root: hit.r || '', prefixed: false } : { key, gloss: '', root: '', prefixed: false };
   }
   const key = hebrewKey(word);
-  if (HE[key]) return { key, gloss: HE[key].g, root: HE[key].r || '', prefixed: false };
-  if (key.length > 2 && HE_PREFIX.has(key[0])) {
-    const stem = key.slice(1);
-    if (HE[stem]) {
-      return { key, gloss: HE[stem].g, root: HE[stem].r || stem, prefixed: true };
-    }
-  }
+  const hit = hebrewLookup(key);
+  if (hit) return { key, ...hit };
   return { key, gloss: '', root: '', prefixed: false };
 }
 
