@@ -147,6 +147,17 @@ const HE = {
   היא: { g: 'ela' },
   זה: { g: 'este' },
   זאת: { g: 'esta' },
+  מה: { g: 'que' },
+  מי: { g: 'quem' },
+  נער: { g: 'rapaz' },
+  נערה: { g: 'moça' },
+  חזק: { g: 'forte' },
+  חזקה: { g: 'força' },
+  קם: { g: 'levantou' },
+  הקים: { g: 'estabeleceu' },
+  הביא: { g: 'trouxe' },
+  סור: { g: 'desviar' },
+  לוי: { g: 'levita' },
 };
 
 const EL = {
@@ -211,31 +222,52 @@ export function formKey(word, lang) {
   return lang === 'el' ? greekKey(word) : hebrewKey(word);
 }
 
-const HE_SUFFIX = ['יכם', 'יהם', 'יהן', 'ותי', 'ים', 'ות', 'כם', 'כן', 'הם', 'הן', 'נו', 'יה', 'ך', 'י', 'ו', 'ה', 'ת'];
+const HE_SUFFIX = ['יכם', 'יהם', 'יהן', 'ותי', 'ום', 'ים', 'ות', 'כם', 'כן', 'הם', 'הן', 'נו', 'יה', 'ך', 'י', 'ו', 'ה', 'ת'];
+
+function remember(list, entry) {
+  if (!entry) return;
+  list.push(entry);
+}
 
 function hebrewLookup(key) {
-  if (HE[key]) return { gloss: HE[key].g, root: HE[key].r || '', prefixed: false };
-  const bases = [key];
-  let stem = key;
-  for (let i = 0; i < 3 && stem.length > 2 && HE_PREFIX.has(stem[0]); i += 1) {
-    stem = stem.slice(1);
-    bases.push(stem);
-  }
-  for (const base of bases) {
+  const found = [];
+  const consider = (base, prefixed) => {
     if (HE[base]) {
-      return { gloss: HE[base].g, root: HE[base].r || '', prefixed: base !== key };
+      remember(found, { gloss: HE[base].g, root: HE[base].r || '', prefixed, len: base.length });
     }
-  }
-  for (const base of bases) {
     for (const suffix of HE_SUFFIX) {
       if (base.length - suffix.length < 2 || !base.endsWith(suffix)) continue;
       const core = base.slice(0, -suffix.length);
       const entry = HE[core] || (suffix === 'ת' ? HE[`${core}ה`] : null);
-      if (!entry) continue;
-      return { gloss: entry.g, root: entry.r || core, prefixed: base !== key };
+      if (entry) {
+        remember(found, { gloss: entry.g, root: entry.r || core, prefixed, len: core.length });
+        continue;
+      }
+      if (suffix === 'ו' && core.length >= 2) {
+        const hollow = `${core[0]}ו${core.slice(1)}`;
+        if (HE[hollow]) {
+          remember(found, { gloss: HE[hollow].g, root: HE[hollow].r || hollow, prefixed, len: hollow.length });
+        }
+      }
     }
+  };
+
+  consider(key, false);
+  const stems = [key];
+  let stem = key;
+  for (let i = 0; i < 4 && stem.length > 2; i += 1) {
+    const head = stem[0];
+    const verbal = i > 0 && 'איתנ'.includes(head);
+    if (!HE_PREFIX.has(head) && !verbal) break;
+    stem = stem.slice(1);
+    stems.push(stem);
+    consider(stem, true);
   }
-  return null;
+
+  if (!found.length) return null;
+  found.sort((a, b) => b.len - a.len);
+  const best = found[0];
+  return { gloss: best.gloss, root: best.root, prefixed: best.prefixed };
 }
 
 export function lookupGloss(word, lang) {
@@ -245,6 +277,11 @@ export function lookupGloss(word, lang) {
     return hit ? { key, gloss: hit.g, root: hit.r || '', prefixed: false } : { key, gloss: '', root: '', prefixed: false };
   }
   const key = hebrewKey(word);
+  if (key === 'עם') {
+    const mark = String(word).slice(String(word).indexOf('ע') + 1, String(word).indexOf('ע') + 2);
+    if (mark === '\u05B4') return { key, gloss: 'com', root: '', prefixed: false };
+    if (mark === '\u05B7') return { key, gloss: 'povo', root: '', prefixed: false };
+  }
   const hit = hebrewLookup(key);
   if (hit) return { key, ...hit };
   return { key, gloss: '', root: '', prefixed: false };
