@@ -4,7 +4,7 @@
  * bundled so Workbox precaches them for offline.
  */
 
-const STORAGE_KEY = 'tanakh-splash-seen-v2';
+const STORAGE_KEY = 'tanakh-splash-seen-v3';
 const SLOGAN = 'Sua fé, direto da fonte';
 const SPLASH_DURATION_MS = 6000;
 
@@ -42,7 +42,7 @@ function prepareSlogan(el) {
     const letter = document.createElement('span');
     letter.className = 'splash__slogan-char';
     letter.setAttribute('aria-hidden', 'true');
-    letter.style.setProperty('--letter-delay', `${1.05 + index * 0.045}s`);
+    letter.style.setProperty('--letter-delay', `${0.55 + index * 0.04}s`);
     letter.textContent = character;
     visual.appendChild(letter);
   });
