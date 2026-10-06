@@ -7,3 +7,7 @@
 name = "biblia-tanakh"
 compatibility_date = "2024-10-01"
 pages_build_output_dir = "dist"
+
+[[kv_namespaces]]
+binding = "ORIGENS"
+id = "5480085c56f649dab51df1d142b10cfc"
