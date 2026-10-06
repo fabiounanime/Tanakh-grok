@@ -263,6 +263,84 @@ export function saveDevocionais(list) {
   if (getOfflineDevocionais()) {
     saveDevocionaisOffline().catch(() => {});
   }
+  pushDevocionais().catch(() => {});
+}
+
+const SESSION_KEY = 'biblia-tanakh:session';
+
+export function getSession() {
+  const data = readJson(SESSION_KEY, null);
+  return data?.token && data?.email ? data : null;
+}
+
+export function setSession(session) {
+  if (!session?.token) {
+    try {
+      localStorage.removeItem(SESSION_KEY);
+    } catch {
+      /* ignore */
+    }
+    return null;
+  }
+  writeJson(SESSION_KEY, { token: session.token, email: session.email });
+  return getSession();
+}
+
+function authHeaders() {
+  const session = getSession();
+  if (!session) return null;
+  return { Authorization: `Bearer ${session.token}`, 'Content-Type': 'application/json' };
+}
+
+function mergeDevocionais(local, remote) {
+  const map = new Map();
+  for (const item of [...(remote || []), ...(local || [])]) {
+    if (!item?.id) continue;
+    const prev = map.get(item.id);
+    if (!prev || String(prev.updatedAt || '') < String(item.updatedAt || '')) map.set(item.id, item);
+  }
+  return [...map.values()].sort((a, b) => String(b.updatedAt || '').localeCompare(String(a.updatedAt || '')));
+}
+
+export async function pushDevocionais() {
+  const headers = authHeaders();
+  if (!headers) return false;
+  const res = await fetch('/api/sync', {
+    method: 'PUT',
+    headers,
+    body: JSON.stringify({ devotionals: getDevocionais() }),
+  });
+  if (res.status === 401) setSession(null);
+  return res.ok;
+}
+
+export async function pullDevocionais() {
+  const headers = authHeaders();
+  if (!headers) return getDevocionais();
+  const res = await fetch('/api/sync', { headers });
+  if (res.status === 401) {
+    setSession(null);
+    return getDevocionais();
+  }
+  if (!res.ok) return getDevocionais();
+  const data = await res.json().catch(() => ({}));
+  const merged = mergeDevocionais(getDevocionais(), data.devotionals);
+  writeJson(DEVOCIONAIS_KEY, merged);
+  await pushDevocionais();
+  return merged;
+}
+
+export async function enterAccount({ email, password, mode }) {
+  const res = await fetch('/api/conta', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, password, mode }),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) return { ok: false, error: data.error || 'rede' };
+  setSession({ token: data.token, email: data.email });
+  await pullDevocionais();
+  return { ok: true, email: data.email };
 }
 
 const OFFLINE_CACHE = 'biblia-offline-v1';

@@ -10,6 +10,10 @@ import {
   getOfflineDevocionais,
   saveDevocionaisOffline,
   restoreDevocionaisIfNeeded,
+  getSession,
+  setSession,
+  enterAccount,
+  pullDevocionais,
 } from '../utils/storage.js';
 
 function mapHtml(map) {
@@ -44,7 +48,9 @@ function escapeHtml(s) {
 }
 
 export function renderDevocionais(root) {
-  restoreDevocionaisIfNeeded().finally(() => paintDevocionais(root));
+  restoreDevocionaisIfNeeded()
+    .then(() => pullDevocionais())
+    .finally(() => paintDevocionais(root));
 }
 
 function paintDevocionais(root) {
@@ -83,11 +89,19 @@ function paintDevocionais(root) {
     ? 'Devocionais no aparelho'
     : 'Baixar devocionais offline';
 
+  const session = getSession();
   root.innerHTML = `
     <header class="app-header">
       <h1>Minhas Devocionais</h1>
     </header>
     <main class="page page--devo">
+      <div class="account-bar">
+        ${
+          session
+            ? `<span>${escapeHtml(session.email)}</span><button type="button" class="link-gold" data-sair>Sair</button>`
+            : `<span>Neste aparelho</span><button type="button" class="link-gold" data-entrar>Entrar e sincronizar</button>`
+        }
+      </div>
       <div class="devo-actions">
         <button type="button" class="devo-add" data-nova aria-label="Nova devocional">
           <span aria-hidden="true">+</span>
@@ -118,7 +132,74 @@ function paintDevocionais(root) {
         <button type="button" class="sheet__cancel" data-ia-close>Fechar</button>
       </div>
     </div>
+    <div class="sheet-backdrop" id="account-sheet" hidden>
+      <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="account-sheet-title">
+        <div class="sheet__handle" aria-hidden="true"></div>
+        <h3 class="sheet__title" id="account-sheet-title">Sincronizar</h3>
+        <p class="hint">Use o mesmo e-mail e a mesma senha no computador e no celular. A senha precisa ter 8 caracteres.</p>
+        <label class="field">
+          <span class="field__label">E-mail</span>
+          <input type="email" class="field__input" data-account-email autocomplete="username" />
+        </label>
+        <label class="field">
+          <span class="field__label">Senha</span>
+          <input type="password" class="field__input" data-account-password autocomplete="current-password" />
+        </label>
+        <p class="hint" data-account-status hidden></p>
+        <button type="button" class="btn-gold" data-account-go data-mode="entrar">Entrar</button>
+        <button type="button" class="sheet__cancel" data-account-go data-mode="criar">Criar conta</button>
+        <button type="button" class="sheet__cancel" data-account-close>Fechar</button>
+      </div>
+    </div>
   `;
+
+  root.querySelector('[data-sair]')?.addEventListener('click', () => {
+    setSession(null);
+    paintDevocionais(root);
+  });
+  const accountSheet = root.querySelector('#account-sheet');
+  const closeAccount = () => {
+    if (accountSheet) accountSheet.hidden = true;
+  };
+  root.querySelector('[data-entrar]')?.addEventListener('click', () => {
+    if (accountSheet) accountSheet.hidden = false;
+  });
+  root.querySelector('[data-account-close]')?.addEventListener('click', closeAccount);
+  accountSheet?.addEventListener('click', (event) => {
+    if (event.target === accountSheet) closeAccount();
+  });
+  root.querySelectorAll('[data-account-go]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const status = root.querySelector('[data-account-status]');
+      const say = (text) => {
+        if (!status) return;
+        status.hidden = !text;
+        status.textContent = text;
+      };
+      const email = root.querySelector('[data-account-email]')?.value.trim() || '';
+      const password = root.querySelector('[data-account-password]')?.value || '';
+      if (password.length < 8) {
+        say('A senha precisa ter 8 caracteres.');
+        return;
+      }
+      btn.disabled = true;
+      say('Entrando…');
+      const result = await enterAccount({ email, password, mode: btn.getAttribute('data-mode') });
+      btn.disabled = false;
+      if (!result.ok) {
+        const messages = {
+          existe: 'Esse e-mail já tem conta. Entre com a senha.',
+          entrar: 'E-mail ou senha não conferem.',
+          dados: 'Use um e-mail válido e uma senha de 8 caracteres.',
+          'sem-nuvem': 'Falta ligar o espaço ORIGENS no Cloudflare.',
+        };
+        say(messages[result.error] || 'Não foi possível entrar agora.');
+        return;
+      }
+      closeAccount();
+      paintDevocionais(root);
+    });
+  });
 
   root.querySelectorAll('[data-nova]').forEach((btn) => {
     btn.addEventListener('click', () => navigate('/devocionais/nova'));
