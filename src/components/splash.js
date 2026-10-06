@@ -4,7 +4,7 @@
  * bundled so Workbox precaches them for offline.
  */
 
-const STORAGE_KEY = 'tanakh-splash-seen-v3';
+const STORAGE_KEY = 'tanakh-splash-seen-v4';
 const SLOGAN = 'Sua fé, direto da fonte';
 const SPLASH_DURATION_MS = 6000;
 

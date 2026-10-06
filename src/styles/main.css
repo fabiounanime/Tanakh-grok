@@ -2669,7 +2669,7 @@ html[data-theme='light'] .verse-orig {
   height: 100%;
   max-width: none;
   max-height: none;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   border-radius: 0;
   filter: none;
@@ -2683,14 +2683,16 @@ html[data-theme='light'] .verse-orig {
   right: 0;
   bottom: 0;
   z-index: 1;
-  padding: 4.5rem 1.25rem calc(1.6rem + var(--safe-b));
-  background: linear-gradient(to top, rgba(42, 28, 18, 0.78) 0%, rgba(42, 28, 18, 0.28) 55%, transparent 100%);
+  padding: clamp(2.5rem, 8vh, 4.5rem) clamp(1rem, 4vw, 2rem) calc(1.4rem + var(--safe-b));
+  background: linear-gradient(to top, rgba(42, 28, 18, 0.72) 0%, rgba(42, 28, 18, 0.2) 62%, transparent 100%);
+  text-align: center;
 }
 
 .splash__slogan {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 18ch;
   font-family: var(--font-ui);
-  font-size: clamp(1.55rem, 6.4vw, 2.7rem);
+  font-size: clamp(1.35rem, 2.4vw + 1rem, 2.8rem);
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.01em;
@@ -2792,14 +2794,21 @@ html[data-theme='light'] .verse-orig {
   to { transform: rotate(360deg); }
 }
 
-/* Narrow screens use the portrait composition; desktop covers the wide art. */
+/* Phone uses the tall art; tablet and computer keep the wide art, both contained. */
 @media (max-width: 767px) {
   .splash__art {
     content: url('/splash-mobile.jpg');
+    object-position: center 38%;
   }
 
-  .splash__content {
-    bottom: 8%;
+  .splash__slogan {
+    font-size: clamp(1.45rem, 7vw, 2.15rem);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .splash__slogan {
+    font-size: clamp(1.6rem, 3.4vw, 2.3rem);
   }
 }
 
