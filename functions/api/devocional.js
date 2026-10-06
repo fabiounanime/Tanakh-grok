@@ -18,29 +18,32 @@ Devolva somente JSON com esta forma:
 {"title":"","theme":"","baseText":"","centralIdea":"","related":[""],"movements":[{"title":"","verse":"","observation":"","illustration":"","application":"","transition":""}],"application":"","conclusion":""}
 title até 80 caracteres. related com no máximo 4 referências. movements com 3 itens.`;
 
-  const models = ['gemini-3.8-flash', 'gemini-flash-latest', 'gemini-2.5-flash'];
+  const models = ['gemini-3.8-flash', 'gemini-flash-latest'];
   let response;
   let payload;
   for (const model of models) {
-    response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-goog-api-key': env.GEMINI_API_KEY,
-        },
-        body: JSON.stringify({
-          contents: [{ role: 'user', parts: [{ text: `${prompt}\n\nPassagem ou tema:\n${passage}` }] }],
-          generationConfig: { temperature: 0.5, responseMimeType: 'application/json' },
-        }),
-      }
-    );
-    payload = await response.json().catch(() => ({}));
-    if (response.ok) break;
-    const message = String(payload?.error?.message || '');
-    const busy = response.status === 429 || response.status === 503 || /high demand|try again/i.test(message);
-    if (!busy && response.status !== 404) break;
+    for (let attempt = 0; attempt < 2; attempt += 1) {
+      response = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-goog-api-key': env.GEMINI_API_KEY,
+          },
+          body: JSON.stringify({
+            contents: [{ role: 'user', parts: [{ text: `${prompt}\n\nPassagem ou tema:\n${passage}` }] }],
+            generationConfig: { temperature: 0.5, responseMimeType: 'application/json' },
+          }),
+        }
+      );
+      payload = await response.json().catch(() => ({}));
+      if (response.ok) break;
+      const message = String(payload?.error?.message || '');
+      const busy = response.status === 429 || response.status === 503 || /high demand|try again/i.test(message);
+      if (!busy) break;
+    }
+    if (response?.ok) break;
   }
 
   if (!response?.ok) {
