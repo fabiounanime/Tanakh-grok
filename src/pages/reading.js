@@ -202,6 +202,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
           <h3 class="sheet__title" id="verse-sheet-title">Versículo</h3>
           <p class="sheet__ref" data-sheet-ref></p>
           <p class="sheet__snippet" data-sheet-snip></p>
+          <div class="sheet__words" data-sheet-words></div>
           <div class="sheet__actions">
             <button type="button" class="sheet-option" data-action="marcar">
               <strong>Marcar</strong>
@@ -212,8 +213,8 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
               <span>Destacar e guardar nas marcações</span>
             </button>
             <button type="button" class="sheet-option" data-action="associar">
-              <strong>Marcar e associar a uma devocional</strong>
-              <span>Vincular a uma reflexão existente ou nova</span>
+              <strong>Associar a um devocional</strong>
+              <span>Marca o versículo e vincula a uma reflexão</span>
             </button>
             <button type="button" class="sheet-option" data-action="enviar">
               <strong>Enviar cartão</strong>
@@ -301,59 +302,17 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
 
     root.querySelectorAll('.verse[data-verse]').forEach((el) => {
       const verseNum = () => Number(el.getAttribute('data-verse'));
-      let timer = 0;
-      let held = false;
-      let startX = 0;
-      let startY = 0;
-      const mark = () => {
-        held = true;
+      const open = (event) => {
+        const lex = event?.target?.closest?.('[data-lex]');
         activeVerse = verseNum();
         syncVerseNavigation();
-        openVerseSheet(activeVerse);
+        openVerseSheet(activeVerse, lex ? lex.getAttribute('data-lex') : '');
       };
-      el.addEventListener('contextmenu', (event) => {
-        event.preventDefault();
-        mark();
-      });
-      el.addEventListener(
-        'touchstart',
-        (event) => {
-          if (event.touches.length !== 1) return;
-          held = false;
-          startX = event.touches[0].clientX;
-          startY = event.touches[0].clientY;
-          clearTimeout(timer);
-          timer = window.setTimeout(mark, 480);
-        },
-        { passive: true }
-      );
-      el.addEventListener(
-        'touchmove',
-        (event) => {
-          const touch = event.touches[0];
-          if (!touch) return;
-          if (Math.hypot(touch.clientX - startX, touch.clientY - startY) > 12) clearTimeout(timer);
-        },
-        { passive: true }
-      );
-      el.addEventListener('touchend', () => clearTimeout(timer));
-      el.addEventListener('touchcancel', () => clearTimeout(timer));
-      el.addEventListener('click', (event) => {
-        if (held) {
-          held = false;
-          event.preventDefault();
-          event.stopPropagation();
-          return;
-        }
-        const lex = event.target.closest?.('[data-lex]');
-        activeVerse = verseNum();
-        syncVerseNavigation();
-        openWordSheet(activeVerse, lex ? lex.getAttribute('data-lex') : '');
-      });
+      el.addEventListener('click', open);
       el.addEventListener('keydown', (event) => {
         if (event.key === 'Enter' || event.key === ' ') {
           event.preventDefault();
-          openWordSheet(verseNum(), '');
+          open(event);
         }
       });
     });
@@ -716,7 +675,54 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     };
   }
 
-  function openVerseSheet(verseNum) {
+  function wordDetailHtml(verse, word) {
+    const lang = verse.originalLang || verse.lang || 'he';
+    const info = lookupGloss(word, lang);
+    const hits = findFormInBook(getBookData(book.id), info.key, lang, 24);
+    const gloss = info.gloss
+      ? `${info.prefixed ? 'A palavra leva um prefixo. O sentido da base é: ' : ''}${info.gloss}`
+      : 'Esta lista ainda não tem a glosa desta forma. Abaixo está a mesma forma escrita neste livro.';
+    return `
+      <p class="lex-form">Forma: ${escapeHtml(info.key || word)}</p>
+      ${info.root ? `<p class="lex-root">Raiz: ${escapeHtml(info.root)}</p>` : ''}
+      <p class="lex-gloss">${escapeHtml(gloss)}</p>
+      <h4 class="lex-hits-title">A mesma forma em ${escapeHtml(book.name)}</h4>
+      ${
+        hits.length
+          ? `<ul class="lex-hits">${hits
+              .map(
+                (hit) => `<li><a href="${routes.readingVerse(book.id, hit.chapter, hit.verse)}">${escapeHtml(book.name)} ${hit.chapter}:${hit.verse}</a><span>${escapeHtml((hit.portuguese || hit.original || '').slice(0, 120))}</span></li>`
+              )
+              .join('')}</ul>`
+          : '<p class="hint">Nenhuma ocorrência desta forma neste livro.</p>'
+      }`;
+  }
+
+  function fillSheetWords(verseNum, focusWord) {
+    const box = root.querySelector('[data-sheet-words]');
+    const verse = verses.find((item) => item.verse === verseNum);
+    if (!box || !verse) return;
+    const words = tokenizeOriginal(verse.original);
+    if (!words.length) {
+      box.innerHTML = '';
+      return;
+    }
+    const lang = verse.originalLang || verse.lang || 'he';
+    box.innerHTML = `
+      <p class="sheet__words-label">Palavras em ${escapeHtml(originalLangLabel(lang))}</p>
+      <div class="lex-picks">${words
+        .map((item) => {
+          const on = focusWord && item === focusWord;
+          return `<button type="button" class="lex-pick${on ? ' is-on' : ''}" data-lex-pick="${escapeHtml(item)}">${escapeHtml(item)}</button>`;
+        })
+        .join('')}</div>
+      <div class="sheet__lex">${focusWord ? wordDetailHtml(verse, focusWord) : '<p class="hint">Toque uma palavra para ver o sentido.</p>'}</div>`;
+    box.querySelectorAll('[data-lex-pick]').forEach((btn) => {
+      btn.addEventListener('click', () => fillSheetWords(verseNum, btn.getAttribute('data-lex-pick') || ''));
+    });
+  }
+
+  function openVerseSheet(verseNum, focusWord = '') {
     sheetVerse = versePayload(verseNum);
     if (!sheetVerse) return;
     const sheet = root.querySelector('#verse-sheet');
@@ -727,6 +733,7 @@ export function renderReading(root, { bookId, chapter, verse: deepLinkVerse = nu
     if (snipEl) snipEl.textContent = sheetVerse.snippet;
     const marked = isMarked(book.id, cap, verseNum);
     if (unmarkBtn) unmarkBtn.hidden = !marked;
+    fillSheetWords(verseNum, focusWord);
     if (sheet) sheet.hidden = false;
   }
 
