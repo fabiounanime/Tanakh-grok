@@ -152,6 +152,7 @@
         <div class="splash__content">
           <p class="splash__slogan" aria-label="Sua fé, direto da fonte">
             <span class="splash__slogan-text" aria-hidden="true">Sua fé, direto da fonte</span>
+            <span class="splash__line" aria-hidden="true"></span>
           </p>
         </div>
         <div class="splash__spinner" role="status" aria-label="Carregando">
@@ -165,7 +166,7 @@
     <script>
       /* Skip splash on same-tab navigations / reloads within the session */
       try {
-        if (sessionStorage.getItem('tanakh-splash-seen') === '1') {
+        if (sessionStorage.getItem('tanakh-splash-seen-v2') === '1') {
           var s = document.getElementById('splash');
           if (s) s.remove();
         }

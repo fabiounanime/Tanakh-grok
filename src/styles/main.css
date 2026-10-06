@@ -2715,6 +2715,53 @@ html[data-theme='light'] .verse-orig {
   white-space: pre;
 }
 
+.splash__line {
+  display: block;
+  width: 4.5rem;
+  height: 1px;
+  margin: 0.7rem auto 0;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: center;
+}
+
+.splash--play .splash__art {
+  animation: splash-art-in 1.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.splash--play .splash__slogan-char {
+  animation: splash-letter-reveal 0.55s cubic-bezier(0.22, 1, 0.36, 1) var(--letter-delay) both;
+}
+
+.splash--play .splash__line {
+  animation: splash-line-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 2.15s both;
+}
+
+.splash--reduced .splash__art,
+.splash--reduced .splash__slogan,
+.splash--reduced .splash__slogan-char,
+.splash--reduced .splash__line,
+.splash--reduced .splash__spinner svg {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+@keyframes splash-art-in {
+  from { opacity: 0; transform: translateY(18px) scale(1.04); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes splash-letter-reveal {
+  from { opacity: 0; transform: translateY(0.7em); filter: blur(4px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes splash-line-in {
+  from { transform: scaleX(0); opacity: 0; }
+  to { transform: scaleX(1); opacity: 1; }
+}
+
 .splash__spinner {
   position: absolute;
   left: 50%;
@@ -2754,42 +2801,7 @@ html[data-theme='light'] .verse-orig {
   to { transform: rotate(360deg); }
 }
 
-/* Entrance: the slogan resolves one letter at a time after the art settles. */
-.splash--play .splash__art {
-  animation: splash-art-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both;
-}
-
-.splash--play .splash__slogan {
-  animation: splash-slogan-in 0.45s ease-out 0.95s both;
-}
-
-.splash--play .splash__slogan-char {
-  animation: splash-letter-reveal 0.55s cubic-bezier(0.22, 1, 0.36, 1) var(--letter-delay) both;
-}
-
-.splash--reduced .splash__art,
-.splash--reduced .splash__slogan,
-.splash--reduced .splash__slogan-char,
-.splash--reduced .splash__spinner svg {
-  opacity: 1;
-  transform: none;
-  animation: none;
-}
-
-@keyframes splash-art-in {
-  from { opacity: 0; transform: scale(0.985); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes splash-slogan-in {
-  from { opacity: 0; transform: translateY(0.35rem); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes splash-letter-reveal {
-  from { opacity: 0; transform: translateY(0.45em); filter: blur(3px); }
-  to { opacity: 1; transform: translateY(0); filter: blur(0); }
-}
+/* Entrance: art rises, then the slogan resolves one letter at a time. */
 
 /* Narrow screens use the portrait art edge-to-edge; desktop keeps the framed art. */
 @media (max-width: 767px) {

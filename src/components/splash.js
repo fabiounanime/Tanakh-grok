@@ -4,7 +4,7 @@
  * bundled so Workbox precaches them for offline.
  */
 
-const STORAGE_KEY = 'tanakh-splash-seen';
+const STORAGE_KEY = 'tanakh-splash-seen-v2';
 const SLOGAN = 'Sua fé, direto da fonte';
 const SPLASH_DURATION_MS = 6000;
 
@@ -67,6 +67,7 @@ function ensureSplash() {
       <div class="splash__content">
         <p class="splash__slogan" aria-label="${SLOGAN}">
           <span class="splash__slogan-text" aria-hidden="true">${SLOGAN}</span>
+          <span class="splash__line" aria-hidden="true"></span>
         </p>
       </div>
       <div class="splash__spinner" role="status" aria-label="Carregando">
