@@ -2423,6 +2423,9 @@ html[data-theme='light'] .verse-orig {
 .sheet__lex {
   margin-top: 0.65rem;
 }
+
+.sheet__snippet {
+  margin: 0.35rem 0 1rem;
   text-align: center;
   color: var(--ink-soft);
   font-size: 0.9rem;
