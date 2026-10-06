@@ -174,7 +174,14 @@ function paintDevocionais(root) {
         return;
       }
       if (!res.ok || !data.title || !data.body) {
-        say(data.detail ? `Não foi possível gerar: ${data.detail}` : 'Não foi possível gerar agora. Tente de novo.');
+        const detail = String(data.detail || '');
+        say(
+          /high demand|try again/i.test(detail)
+            ? 'O Gemini está cheio agora. Tente de novo em um minuto.'
+            : detail
+              ? `Não foi possível gerar: ${detail}`
+              : 'Não foi possível gerar agora. Tente de novo.'
+        );
         return;
       }
       const created = createDevocional({

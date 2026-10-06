@@ -38,7 +38,9 @@ title até 80 caracteres. related com no máximo 4 referências. movements com 3
     );
     payload = await response.json().catch(() => ({}));
     if (response.ok) break;
-    if (response.status !== 404) break;
+    const message = String(payload?.error?.message || '');
+    const busy = response.status === 429 || response.status === 503 || /high demand|try again/i.test(message);
+    if (!busy && response.status !== 404) break;
   }
 
   if (!response?.ok) {
