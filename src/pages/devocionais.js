@@ -174,7 +174,7 @@ function paintDevocionais(root) {
         return;
       }
       if (!res.ok || !data.title || !data.body) {
-        say('Não foi possível gerar agora. Tente de novo.');
+        say(data.detail ? `Não foi possível gerar: ${data.detail}` : 'Não foi possível gerar agora. Tente de novo.');
         return;
       }
       const created = createDevocional({

@@ -18,32 +18,39 @@ Devolva somente JSON com esta forma:
 {"title":"","theme":"","baseText":"","centralIdea":"","related":[""],"movements":[{"title":"","verse":"","observation":"","illustration":"","application":"","transition":""}],"application":"","conclusion":""}
 title até 80 caracteres. related com no máximo 4 referências. movements com 3 itens.`;
 
-  const response = await fetch(
-    'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent',
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-goog-api-key': env.GEMINI_API_KEY,
-      },
-      body: JSON.stringify({
-        contents: [{ role: 'user', parts: [{ text: `${prompt}\n\nPassagem ou tema:\n${passage}` }] }],
-        generationConfig: { temperature: 0.5, responseMimeType: 'application/json' },
-      }),
-    }
-  );
-
-  if (!response.ok) {
-    return Response.json({ error: 'ia' }, { status: 502 });
+  const models = ['gemini-3.8-flash', 'gemini-flash-latest', 'gemini-2.5-flash'];
+  let response;
+  let payload;
+  for (const model of models) {
+    response = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-goog-api-key': env.GEMINI_API_KEY,
+        },
+        body: JSON.stringify({
+          contents: [{ role: 'user', parts: [{ text: `${prompt}\n\nPassagem ou tema:\n${passage}` }] }],
+          generationConfig: { temperature: 0.5, responseMimeType: 'application/json' },
+        }),
+      }
+    );
+    payload = await response.json().catch(() => ({}));
+    if (response.ok) break;
+    if (response.status !== 404) break;
   }
 
-  const payload = await response.json();
+  if (!response?.ok) {
+    const detail = String(payload?.error?.message || '').slice(0, 180);
+    return Response.json({ error: 'ia', detail }, { status: 502 });
+  }
   const raw = (payload?.candidates?.[0]?.content?.parts || []).map((part) => part.text || '').join('');
   let parsed;
   try {
     parsed = JSON.parse(raw.replace(/^```json\s*|\s*```$/g, ''));
   } catch {
-    return Response.json({ error: 'formato' }, { status: 502 });
+    return Response.json({ error: 'formato', detail: 'O Gemini respondeu fora do formato esperado.' }, { status: 502 });
   }
 
   const title = String(parsed.title || '').trim().slice(0, 120);
