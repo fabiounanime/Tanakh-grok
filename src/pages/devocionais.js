@@ -12,6 +12,29 @@ import {
   restoreDevocionaisIfNeeded,
 } from '../utils/storage.js';
 
+function mapHtml(map) {
+  const nodes = Array.isArray(map?.nodes) ? map.nodes : [];
+  if (!nodes.length) return '';
+  const center = nodes.find((node) => !node.parentId) || nodes[0];
+  const branches = nodes.filter((node) => node.parentId);
+  return `
+    <section class="devo-map" aria-label="Mapa mental da devocional">
+      <h2>Mapa mental</h2>
+      <p class="devo-map__center">${escapeHtml(map.center || center.title)}</p>
+      <div class="devo-map__branches">
+        ${branches
+          .map(
+            (node) => `
+          <article class="devo-map__branch">
+            <strong>${escapeHtml(node.title)}</strong>
+            ${node.kicker ? `<span>${escapeHtml(node.kicker)}</span>` : ''}
+          </article>`
+          )
+          .join('')}
+      </div>
+    </section>`;
+}
+
 function escapeHtml(s) {
   return String(s)
     .replace(/&/g, '&amp;')
@@ -85,7 +108,7 @@ function paintDevocionais(root) {
       <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="ia-sheet-title">
         <div class="sheet__handle" aria-hidden="true"></div>
         <h3 class="sheet__title" id="ia-sheet-title">Devocional com IA</h3>
-        <p class="hint">Escreva uma passagem ou um tema. O texto entra como rascunho, para você revisar. Não substitui a tradução do app.</p>
+        <p class="hint">Escreva a passagem ou o tema. O Gemini monta uma devocional no estilo de pregação, com mapa mental. O texto entra como rascunho, para você revisar.</p>
         <label class="field">
           <span class="field__label">Passagem ou tema</span>
           <textarea class="field__textarea" data-ia-passage rows="5" maxlength="2000" placeholder="Ex.: Salmos 139,1-6"></textarea>
@@ -147,14 +170,19 @@ function paintDevocionais(root) {
       });
       const data = await res.json().catch(() => ({}));
       if (res.status === 503) {
-        say('A geração ainda não está ligada. No Cloudflare Pages, grave a variável XAI_API_KEY.');
+        say('A geração ainda não está ligada. No Cloudflare Pages, grave o segredo GEMINI_API_KEY.');
         return;
       }
       if (!res.ok || !data.title || !data.body) {
         say('Não foi possível gerar agora. Tente de novo.');
         return;
       }
-      const created = createDevocional({ title: data.title, body: data.body });
+      const created = createDevocional({
+        title: data.title,
+        body: data.body,
+        outline: data.outline || null,
+        map: data.map || null,
+      });
       navigate(`/devocionais/${created.id}`);
     } catch {
       say('Sem ligação com o servidor. Tente de novo.');
@@ -185,8 +213,10 @@ export function renderDevocionalEdit(root, { id, isNew }) {
         title: existing.title,
         body: existing.body,
         verseRefs: [...(existing.verseRefs || [])],
+        outline: existing.outline || null,
+        map: existing.map || null,
       }
-    : { title: '', body: '', verseRefs: [] };
+    : { title: '', body: '', verseRefs: [], outline: null, map: null };
 
   const paint = () => {
     const refsHtml = draft.verseRefs.length
@@ -223,6 +253,7 @@ export function renderDevocionalEdit(root, { id, isNew }) {
           <textarea class="field__textarea" data-body rows="8"
             placeholder="Escreva suas reflexões…">${escapeHtml(draft.body)}</textarea>
         </label>
+        ${mapHtml(draft.map)}
 
         <div class="section-head" style="margin-top:1.25rem">
           <h2>Versículos vinculados</h2>

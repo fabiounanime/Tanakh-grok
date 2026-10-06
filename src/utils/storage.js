@@ -319,13 +319,15 @@ export async function restoreDevocionaisIfNeeded() {
 }
 
 /** @returns {Devocional} */
-export function createDevocional({ title = '', body = '', verseRefs = [] } = {}) {
+export function createDevocional({ title = '', body = '', verseRefs = [], outline = null, map = null } = {}) {
   const now = new Date().toISOString();
   const item = {
     id: uid(),
     title: String(title || '').trim() || 'Sem título',
     body: String(body || ''),
     verseRefs: Array.isArray(verseRefs) ? verseRefs : [],
+    outline: outline && typeof outline === 'object' ? outline : null,
+    map: map && typeof map === 'object' ? map : null,
     createdAt: now,
     updatedAt: now,
   };

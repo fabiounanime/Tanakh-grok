@@ -515,6 +515,53 @@ html.is-installed .chrome-btn--install {
   min-height: 3.4rem;
 }
 
+.devo-map {
+  margin-top: 1.25rem;
+}
+
+.devo-map h2 {
+  margin: 0 0 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.devo-map__center {
+  margin: 0 0 0.75rem;
+  padding: 0.85rem 1rem;
+  border-radius: 16px;
+  background: var(--accent-hot);
+  color: var(--on-accent);
+  font-weight: 700;
+}
+
+.devo-map__branches {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.devo-map__branch {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.devo-map__branch strong {
+  font-size: 0.95rem;
+}
+
+.devo-map__branch span {
+  color: var(--ink-muted);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
 .devo-add {
   width: 3.4rem;
   height: 3.4rem;
